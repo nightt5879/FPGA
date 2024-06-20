@@ -1,0 +1,7 @@
+verilog xil_defaultlib --include "../../../../led.gen/sources_1/ip/ila/hdl/verilog" \
+"../../../../led.gen/sources_1/ip/ila/sim/ila.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

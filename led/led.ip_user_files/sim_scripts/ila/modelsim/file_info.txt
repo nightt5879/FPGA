@@ -1,0 +1,4 @@
+xpm_memory.sv,systemverilog,xpm,E:/vivado/Vivado/2024.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv,incdir="../../../../led.gen/sources_1/ip/ila/hdl/verilog"
+xpm_VCOMP.vhd,vhdl,xpm,E:/vivado/Vivado/2024.1/data/ip/xpm/xpm_VCOMP.vhd,incdir="../../../../led.gen/sources_1/ip/ila/hdl/verilog"
+ila.v,verilog,xil_defaultlib,../../../../led.gen/sources_1/ip/ila/sim/ila.v,incdir="../../../../led.gen/sources_1/ip/ila/hdl/verilog"
+glbl.v,Verilog,xil_defaultlib,glbl.v
