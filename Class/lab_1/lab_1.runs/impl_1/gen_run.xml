@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1727349477">
-  <File Type="OPT-HWDEF" Name="lab1_tb.hwdef"/>
-  <File Type="ROUTE-BUS-SKEW" Name="lab1_tb_bus_skew_routed.rpt"/>
-  <File Type="PA-DCP" Name="lab1_tb.dcp"/>
+<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1727351063">
   <File Type="ROUTE-PWR" Name="lab1_tb_power_routed.rpt"/>
   <File Type="PA-TCL" Name="lab1_tb.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="lab1_tb_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="lab1_tb_reports.tcl"/>
+  <File Type="OPT-RQA-PB" Name="lab1_tb_rqa_opted.pb"/>
+  <File Type="BITSTR-MMI" Name="lab1_tb.mmi"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="lab1_tb_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="lab1_tb_timing_summary_init.rpt"/>
-  <File Type="ROUTE-PWR-SUM" Name="lab1_tb_power_summary_routed.pb"/>
-  <File Type="OPT-RQA-PB" Name="lab1_tb_rqa_opted.pb"/>
-  <File Type="REPORTS-TCL" Name="lab1_tb_reports.tcl"/>
   <File Type="OPT-TIMING" Name="lab1_tb_timing_summary_opted.rpt"/>
   <File Type="OPT-DCP" Name="lab1_tb_opt.dcp"/>
   <File Type="OPT-DRC" Name="lab1_tb_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="lab1_tb.hwdef"/>
   <File Type="PWROPT-DCP" Name="lab1_tb_pwropt.dcp"/>
   <File Type="PWROPT-DRC" Name="lab1_tb_drc_pwropted.rpt"/>
   <File Type="PWROPT-TIMING" Name="lab1_tb_timing_summary_pwropted.rpt"/>
@@ -52,6 +51,7 @@
   <File Type="ROUTE-TIMING-RPX" Name="lab1_tb_timing_summary_routed.rpx"/>
   <File Type="ROUTE-SIMILARITY" Name="lab1_tb_incremental_reuse_routed.rpt"/>
   <File Type="ROUTE-CLK" Name="lab1_tb_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="lab1_tb_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="lab1_tb_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="lab1_tb_bus_skew_routed.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="lab1_tb_postroute_physopt.dcp"/>
@@ -65,7 +65,6 @@
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="lab1_tb_bus_skew_postroute_physopted.rpx"/>
   <File Type="BITSTR-NKY" Name="lab1_tb.nky"/>
   <File Type="BITSTR-BMM" Name="lab1_tb_bd.bmm"/>
-  <File Type="BITSTR-MMI" Name="lab1_tb.mmi"/>
   <File Type="PDI-FILE" Name="lab1_tb.pdi"/>
   <File Type="BOOT-PDI-FILE" Name="lab1_tb_boot.pdi"/>
   <File Type="PL-PDI-FILE" Name="lab1_tb_pld.pdi"/>

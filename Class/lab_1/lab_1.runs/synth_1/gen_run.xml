@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1727349327" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/lab1_tb.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1727351001" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/lab1_tb.dcp">
   <File Type="PA-TCL" Name="lab1_tb.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="lab1_tb_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="lab1_tb_reports.tcl"/>

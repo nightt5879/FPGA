@@ -3,8 +3,8 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Thu Sep 26 19:15:30 2024
-# Process ID: 26960
+# Start of session at: Thu Sep 26 19:43:25 2024
+# Process ID: 29272
 # Current directory: E:/robot/project/FPGA/Class/lab_1/lab_1.runs/synth_1
 # Command line: vivado.exe -log lab1_tb.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source lab1_tb.tcl
 # Log file: E:/robot/project/FPGA/Class/lab_1/lab_1.runs/synth_1/lab1_tb.vds
@@ -19,6 +19,6 @@
 # Host memory       :16487 MB
 # Swap memory       :19327 MB
 # Total Virtual     :35815 MB
-# Available Virtual :17278 MB
+# Available Virtual :15864 MB
 #-----------------------------------------------------------
 source lab1_tb.tcl -notrace
