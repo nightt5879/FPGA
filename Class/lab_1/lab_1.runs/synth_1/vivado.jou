@@ -3,11 +3,11 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Thu Sep 26 19:43:25 2024
-# Process ID: 29272
+# Start of session at: Sat Sep 28 20:36:50 2024
+# Process ID: 6900
 # Current directory: E:/robot/project/FPGA/Class/lab_1/lab_1.runs/synth_1
-# Command line: vivado.exe -log lab1_tb.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source lab1_tb.tcl
-# Log file: E:/robot/project/FPGA/Class/lab_1/lab_1.runs/synth_1/lab1_tb.vds
+# Command line: vivado.exe -log lab1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source lab1.tcl
+# Log file: E:/robot/project/FPGA/Class/lab_1/lab_1.runs/synth_1/lab1.vds
 # Journal file: E:/robot/project/FPGA/Class/lab_1/lab_1.runs/synth_1\vivado.jou
 # Running On        :nightt_insider
 # Platform          :Windows Server 2016 or Windows 10
@@ -19,6 +19,6 @@
 # Host memory       :16487 MB
 # Swap memory       :19327 MB
 # Total Virtual     :35815 MB
-# Available Virtual :15864 MB
+# Available Virtual :10123 MB
 #-----------------------------------------------------------
-source lab1_tb.tcl -notrace
+source lab1.tcl -notrace

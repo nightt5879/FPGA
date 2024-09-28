@@ -1,0 +1,3 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/robot/project/FPGA/Class/lab_1/lab_1.sim/sim_1/impl/timing/xsim/lab1_tb_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab1
+INFO: [VRFC 10-311] analyzing module glbl

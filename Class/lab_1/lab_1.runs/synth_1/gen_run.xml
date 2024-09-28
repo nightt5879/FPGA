@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1727351001" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/lab1_tb.dcp">
-  <File Type="PA-TCL" Name="lab1_tb.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="lab1_tb_drc_synth.rpt"/>
-  <File Type="REPORTS-TCL" Name="lab1_tb_reports.tcl"/>
-  <File Type="RDS-RDS" Name="lab1_tb.vds"/>
-  <File Type="RDS-UTIL" Name="lab1_tb_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="lab1_tb_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="lab1_tb.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="lab1_tb_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="lab1_tb_timing_summary_synth.pb"/>
+<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1727527006" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/lab1_tb.dcp">
+  <File Type="PA-TCL" Name="lab1.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="lab1_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="lab1_reports.tcl"/>
+  <File Type="RDS-RDS" Name="lab1.vds"/>
+  <File Type="RDS-UTIL" Name="lab1_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="lab1_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="lab1.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="lab1_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="lab1_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PPRDIR/lab1.v">
@@ -20,6 +20,7 @@
     </File>
     <File Path="$PPRDIR/lab1_tb.v">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -27,8 +28,7 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="lab1_tb"/>
-      <Option Name="TopAutoSet" Val="TRUE"/>
+      <Option Name="TopModule" Val="lab1"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
