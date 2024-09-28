@@ -1,7 +1,0 @@
-Running: xsim.dir/vtf_led_test_behav/xsimk.exe -simmode gui -wdb vtf_led_test_behav.wdb -simrunnum 0 -socket 61653
-Design successfully loaded
-Design Loading Memory Usage: 9624 KB (Peak: 9624 KB)
-Design Loading CPU Usage: 15 ms
-Simulation completed
-Simulation Memory Usage: 18340 KB (Peak: 18340 KB)
-Simulation CPU Usage: 10030 ms
