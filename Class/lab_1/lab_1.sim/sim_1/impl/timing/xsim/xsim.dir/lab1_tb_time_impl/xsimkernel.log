@@ -2,3 +2,6 @@ Running: xsim.dir/lab1_tb_time_impl/xsimk.exe -simmode gui -wdb lab1_tb_time_imp
 Design successfully loaded
 Design Loading Memory Usage: 8980 KB (Peak: 8980 KB)
 Design Loading CPU Usage: 0 ms
+Simulation completed
+Simulation Memory Usage: 9608 KB (Peak: 9608 KB)
+Simulation CPU Usage: 0 ms
