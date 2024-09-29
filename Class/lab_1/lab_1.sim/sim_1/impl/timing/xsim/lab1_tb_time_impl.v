@@ -2,7 +2,7 @@
 // Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-// Date        : Sat Sep 28 20:31:14 2024
+// Date        : Sun Sep 29 15:39:54 2024
 // Host        : nightt_insider running 64-bit major release  (build 9200)
 // Command     : write_verilog -mode timesim -nolib -sdf_anno true -force -file
 //               E:/robot/project/FPGA/Class/lab_1/lab_1.sim/sim_1/impl/timing/xsim/lab1_tb_time_impl.v
@@ -14,7 +14,7 @@
 `timescale 1 ps / 1 ps
 `define XIL_TIMING
 
-(* ECO_CHECKSUM = "98910e17" *) 
+(* ECO_CHECKSUM = "2d313c00" *) 
 (* NotValidForBitStream *)
 (* \DesignAttr:ENABLE_NOC_NETLIST_VIEW  *) 
 (* \DesignAttr:ENABLE_AIE_NETLIST_VIEW  *) 
@@ -27,7 +27,6 @@ module lab1
   wire [3:0]led;
   wire [3:0]led_OBUF;
   wire [3:0]swt;
-  wire [3:0]swt_IBUF;
 
 initial begin
  $sdf_annotate("lab1_tb_time_impl.sdf",,,,"tool_control");
@@ -35,54 +34,27 @@ end
   OBUF \led_OBUF[0]_inst 
        (.I(led_OBUF[0]),
         .O(led[0]));
-  (* SOFT_HLUTNM = "soft_lutpair1" *) 
-  LUT1 #(
-    .INIT(2'h1)) 
-    \led_OBUF[0]_inst_i_1 
-       (.I0(swt_IBUF[0]),
-        .O(led_OBUF[0]));
   OBUF \led_OBUF[1]_inst 
        (.I(led_OBUF[1]),
         .O(led[1]));
-  (* SOFT_HLUTNM = "soft_lutpair0" *) 
-  LUT2 #(
-    .INIT(4'h2)) 
-    \led_OBUF[1]_inst_i_1 
-       (.I0(swt_IBUF[1]),
-        .I1(swt_IBUF[2]),
-        .O(led_OBUF[1]));
   OBUF \led_OBUF[2]_inst 
        (.I(led_OBUF[2]),
         .O(led[2]));
-  (* SOFT_HLUTNM = "soft_lutpair0" *) 
-  LUT2 #(
-    .INIT(4'hE)) 
-    \led_OBUF[2]_inst_i_1 
-       (.I0(swt_IBUF[2]),
-        .I1(swt_IBUF[3]),
-        .O(led_OBUF[2]));
   OBUF \led_OBUF[3]_inst 
        (.I(led_OBUF[3]),
         .O(led[3]));
-  (* SOFT_HLUTNM = "soft_lutpair1" *) 
-  LUT2 #(
-    .INIT(4'h6)) 
-    \led_OBUF[3]_inst_i_1 
-       (.I0(swt_IBUF[1]),
-        .I1(swt_IBUF[0]),
-        .O(led_OBUF[3]));
   IBUF \swt_IBUF[0]_inst 
        (.I(swt[0]),
-        .O(swt_IBUF[0]));
+        .O(led_OBUF[0]));
   IBUF \swt_IBUF[1]_inst 
        (.I(swt[1]),
-        .O(swt_IBUF[1]));
+        .O(led_OBUF[1]));
   IBUF \swt_IBUF[2]_inst 
        (.I(swt[2]),
-        .O(swt_IBUF[2]));
+        .O(led_OBUF[2]));
   IBUF \swt_IBUF[3]_inst 
        (.I(swt[3]),
-        .O(swt_IBUF[3]));
+        .O(led_OBUF[3]));
 endmodule
 `ifndef GLBL
 `define GLBL

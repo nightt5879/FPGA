@@ -8,10 +8,11 @@ module lab1(
     output [3:0] led  // 修改为4个输出 LED
     );
 
-    // 修改后的逻辑部分，只控制 led[3:0]
-    assign led[0] = ~swt[0];                // led[0] 映射 swt[0] 的反相
-    assign led[1] = swt[1] & ~swt[2];       // led[1] 由 swt[1] 和 swt[2] 控制
-    assign led[2] = swt[2] | swt[3];        // led[2] 由 swt[2] 或 swt[3] 控制
-    assign led[3] = swt[0] ^ swt[1];        // led[3] 由 swt[0] 和 swt[1] 的异或控制
+    // 逻辑更改成直接每个LED对应每一个按键
+    // 需要注意的是按下按键是低电平，LED也是低电平亮灯，具体原因可以自行查阅数据手册
+    assign led[0] = swt[0];                
+    assign led[1] = swt[1];       
+    assign led[2] = swt[2];        
+    assign led[3] = swt[3];        
 
 endmodule

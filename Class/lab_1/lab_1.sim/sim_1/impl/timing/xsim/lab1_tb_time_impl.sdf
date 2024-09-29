@@ -1,7 +1,7 @@
 (DELAYFILE 
 (SDFVERSION "3.0" )
 (DESIGN "lab1")
-(DATE "Sat Sep 28 20:31:14 2024")
+(DATE "Sun Sep 29 15:39:54 2024")
 (VENDOR "XILINX")
 (PROGRAM "Vivado")
 (VERSION "2024.1")
@@ -18,33 +18,12 @@
   )
 )
 (CELL 
-  (CELLTYPE "LUT1")
-  (INSTANCE led_OBUF\[0\]_inst_i_1)
-  (DELAY 
-    (PATHPULSE (50.0))
-    (ABSOLUTE 
-      (IOPATH I0 O (95.0:118.0:118.0) (95.0:118.0:118.0))
-    )
-  )
-)
-(CELL 
   (CELLTYPE "OBUF")
   (INSTANCE led_OBUF\[1\]_inst)
   (DELAY 
     (PATHPULSE (50.0))
     (ABSOLUTE 
       (IOPATH I O (3335.8:3538.1:3538.1) (3335.8:3538.1:3538.1))
-    )
-  )
-)
-(CELL 
-  (CELLTYPE "LUT2")
-  (INSTANCE led_OBUF\[1\]_inst_i_1)
-  (DELAY 
-    (PATHPULSE (50.0))
-    (ABSOLUTE 
-      (IOPATH I1 O (122.0:152.0:152.0) (122.0:152.0:152.0))
-      (IOPATH I0 O (121.0:150.0:150.0) (121.0:150.0:150.0))
     )
   )
 )
@@ -59,34 +38,12 @@
   )
 )
 (CELL 
-  (CELLTYPE "LUT2")
-  (INSTANCE led_OBUF\[2\]_inst_i_1)
-  (DELAY 
-    (PATHPULSE (50.0))
-    (ABSOLUTE 
-      (IOPATH I1 O (100.0:124.0:124.0) (100.0:124.0:124.0))
-      (IOPATH I0 O (100.0:124.0:124.0) (100.0:124.0:124.0))
-    )
-  )
-)
-(CELL 
   (CELLTYPE "OBUF")
   (INSTANCE led_OBUF\[3\]_inst)
   (DELAY 
     (PATHPULSE (50.0))
     (ABSOLUTE 
       (IOPATH I O (3318.1:3520.2:3520.2) (3318.1:3520.2:3520.2))
-    )
-  )
-)
-(CELL 
-  (CELLTYPE "LUT2")
-  (INSTANCE led_OBUF\[3\]_inst_i_1)
-  (DELAY 
-    (PATHPULSE (50.0))
-    (ABSOLUTE 
-      (IOPATH I1 O (100.0:124.0:124.0) (100.0:124.0:124.0))
-      (IOPATH I0 O (100.0:124.0:124.0) (100.0:124.0:124.0))
     )
   )
 )
@@ -135,17 +92,10 @@
     (INSTANCE )
     (DELAY
       (ABSOLUTE
-      (INTERCONNECT led_OBUF\[0\]_inst_i_1/O led_OBUF\[0\]_inst/I (1612.9:1876.9:1876.9) (1612.9:1876.9:1876.9))
-      (INTERCONNECT led_OBUF\[1\]_inst_i_1/O led_OBUF\[1\]_inst/I (1723.1:2010.1:2010.1) (1723.1:2010.1:2010.1))
-      (INTERCONNECT led_OBUF\[2\]_inst_i_1/O led_OBUF\[2\]_inst/I (1448.2:1673.2:1673.2) (1448.2:1673.2:1673.2))
-      (INTERCONNECT led_OBUF\[3\]_inst_i_1/O led_OBUF\[3\]_inst/I (1560.6:1809.6:1809.6) (1560.6:1809.6:1809.6))
-      (INTERCONNECT swt_IBUF\[0\]_inst/O led_OBUF\[0\]_inst_i_1/I0 (861.9:1012.9:1012.9) (861.9:1012.9:1012.9))
-      (INTERCONNECT swt_IBUF\[0\]_inst/O led_OBUF\[3\]_inst_i_1/I1 (861.9:1012.9:1012.9) (861.9:1012.9:1012.9))
-      (INTERCONNECT swt_IBUF\[1\]_inst/O led_OBUF\[1\]_inst_i_1/I0 (1315.6:1555.6:1555.6) (1315.6:1555.6:1555.6))
-      (INTERCONNECT swt_IBUF\[1\]_inst/O led_OBUF\[3\]_inst_i_1/I0 (1079.7:1273.7:1273.7) (1079.7:1273.7:1273.7))
-      (INTERCONNECT swt_IBUF\[2\]_inst/O led_OBUF\[2\]_inst_i_1/I0 (1994.2:2381.2:2381.2) (1994.2:2381.2:2381.2))
-      (INTERCONNECT swt_IBUF\[2\]_inst/O led_OBUF\[1\]_inst_i_1/I1 (1994.2:2381.2:2381.2) (1994.2:2381.2:2381.2))
-      (INTERCONNECT swt_IBUF\[3\]_inst/O led_OBUF\[2\]_inst_i_1/I1 (1814.2:2146.2:2146.2) (1814.2:2146.2:2146.2))
+      (INTERCONNECT swt_IBUF\[0\]_inst/O led_OBUF\[0\]_inst/I (1700.2:1985.2:1985.2) (1700.2:1985.2:1985.2))
+      (INTERCONNECT swt_IBUF\[1\]_inst/O led_OBUF\[1\]_inst/I (1700.2:1985.2:1985.2) (1700.2:1985.2:1985.2))
+      (INTERCONNECT swt_IBUF\[2\]_inst/O led_OBUF\[2\]_inst/I (2846.7:3341.7:3341.7) (2846.7:3341.7:3341.7))
+      (INTERCONNECT swt_IBUF\[3\]_inst/O led_OBUF\[3\]_inst/I (2630.7:3095.7:3095.7) (2630.7:3095.7:3095.7))
       )
     )
 )

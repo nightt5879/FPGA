@@ -20,11 +20,12 @@ module lab1_tb();
     // 期望的 LED 输出逻辑
     function [3:0] expected_led;
        input [3:0] swt;
-    begin
-       expected_led[0] = ~swt[0];               // led[0] 映射 swt[0] 的反相
-       expected_led[1] = swt[1] & ~swt[2];      // led[1] 由 swt[1] 和 swt[2] 控制
-       expected_led[2] = swt[2] | swt[3];       // led[2] 由 swt[2] 或 swt[3] 控制
-       expected_led[3] = swt[0] ^ swt[1];       // led[3] 由 swt[0] 和 swt[1] 的异或控制
+    begin  // 逻辑也是一样的LED和按键同步
+    // 需要注意的是按下按键是低电平，LED也是低电平亮灯，具体原因可以自行查阅数据手册
+       expected_led[0] = swt[0];             
+       expected_led[1] = swt[1];      
+       expected_led[2] = swt[2];       
+       expected_led[3] = swt[3];       
     end
     endfunction
 

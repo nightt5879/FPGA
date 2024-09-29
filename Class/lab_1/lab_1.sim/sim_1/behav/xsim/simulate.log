@@ -1,1 +1,9 @@
 Time resolution is 1 ps
+LED output matched at time                60000 ns: expected = 0000, actual = 0000
+LED output matched at time               120000 ns: expected = 0001, actual = 0001
+LED output matched at time               180000 ns: expected = 0010, actual = 0010
+LED output matched at time               240000 ns: expected = 0011, actual = 0011
+LED output matched at time               300000 ns: expected = 0100, actual = 0100
+LED output matched at time               360000 ns: expected = 0101, actual = 0101
+LED output matched at time               420000 ns: expected = 0110, actual = 0110
+LED output matched at time               480000 ns: expected = 0111, actual = 0111
