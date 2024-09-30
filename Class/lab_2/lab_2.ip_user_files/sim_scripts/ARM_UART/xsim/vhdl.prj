@@ -1,0 +1,6 @@
+vhdl xil_defaultlib  \
+"../../../bd/ARM_UART/ip/ARM_UART_axi_uartlite_0_0/sim/ARM_UART_axi_uartlite_0_0.vhd" \
+"../../../bd/ARM_UART/ip/ARM_UART_rst_ps7_0_50M_2/sim/ARM_UART_rst_ps7_0_50M_2.vhd" \
+
+# Do not sort compile order
+nosort

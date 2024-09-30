@@ -57,9 +57,6 @@ if {$::dispatch::connected} {
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param chipscope.maxJobs 4
-set_param xicom.use_bs_reader 1
-set_msg_config -id {HDL 9-1061} -limit 100000
-set_msg_config -id {HDL 9-1654} -limit 100000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z010clg400-1
 
@@ -98,6 +95,8 @@ read_xdc E:/robot/project/FPGA/Class/lab_2/sources/uart_led_timing.xdc
 set_property used_in_implementation false [get_files E:/robot/project/FPGA/Class/lab_2/sources/uart_led_timing.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
+
+read_checkpoint -auto_incremental -incremental E:/robot/project/FPGA/Class/lab_2/lab_2.srcs/utils_1/imports/synth_1/uart_led.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

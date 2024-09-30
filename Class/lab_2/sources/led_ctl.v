@@ -35,7 +35,7 @@ module led_ctl (
                                  //  - valid when rx_data_rdy is asserted
   input            rx_data_rdy,  // Ready signal for rx_data
 
-  output reg [7:0] led_o         // The LED outputs
+  output reg [3:0] led_o         // The LED outputs
 );
 
 
@@ -64,7 +64,7 @@ module led_ctl (
     begin
       old_rx_data_rdy <= 1'b0;
       char_data       <= 8'b0;
-      led_o           <= 8'b0;
+      led_o           <= 4'b0;  // we need to make the led output 4 bits
     end
     else
     begin
@@ -78,10 +78,11 @@ module led_ctl (
       end
 
       // Output the normal data or the data with high and low swapped
+      // we only using the low 4 bits of the data
       if (btn_clk_rx)
-        led_o <= {char_data[3:0],char_data[7:4]};
+        led_o <= {char_data[1:0],char_data[3:2]};  
       else
-        led_o <= char_data;
+        led_o <= char_data[3:0];
     end // if !rst
   end // always
 

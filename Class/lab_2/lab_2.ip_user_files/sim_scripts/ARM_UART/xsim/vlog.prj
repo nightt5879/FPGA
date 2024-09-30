@@ -1,0 +1,9 @@
+verilog xil_defaultlib --include "E:/vivado/Vivado/2024.1/data/xilinx_vip/include" --include "../../../../lab_2.gen/sources_1/bd/ARM_UART/ipshared/ec67/hdl" --include "../../../../lab_2.gen/sources_1/bd/ARM_UART/ipshared/b28c/hdl" \
+"../../../bd/ARM_UART/ip/ARM_UART_processing_system7_0_0/sim/ARM_UART_processing_system7_0_0.v" \
+"../../../bd/ARM_UART/ip/ARM_UART_auto_pc_0/sim/ARM_UART_auto_pc_0.v" \
+"../../../bd/ARM_UART/sim/ARM_UART.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
