@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../UART_sample_2.srcs/sources_1/new/uart_loop.v" \
+"../../../../UART_sample_2.srcs/sources_1/new/uart_loopback_top.v" \
+"../../../../UART_sample_2.srcs/sources_1/new/uart_recv.v" \
+"../../../../UART_sample_2.srcs/sources_1/new/uart_send.v" \
+"../../../../UART_sample_2.srcs/sim_1/new/tb_uart_loopback_top.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

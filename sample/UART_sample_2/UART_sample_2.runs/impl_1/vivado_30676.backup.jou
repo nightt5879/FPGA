@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Mon Sep 30 16:50:37 2024
+# Process ID: 30676
+# Current directory: E:/robot/project/FPGA/sample/UART_sample_2/UART_sample_2.runs/impl_1
+# Command line: vivado.exe -log uart_loopback_top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source uart_loopback_top.tcl -notrace
+# Log file: E:/robot/project/FPGA/sample/UART_sample_2/UART_sample_2.runs/impl_1/uart_loopback_top.vdi
+# Journal file: E:/robot/project/FPGA/sample/UART_sample_2/UART_sample_2.runs/impl_1\vivado.jou
+# Running On        :nightt_insider
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :22631
+# Processor Detail  :AMD Ryzen 7 5800U with Radeon Graphics         
+# CPU Frequency     :1896 MHz
+# CPU Physical cores:8
+# CPU Logical cores :16
+# Host memory       :16487 MB
+# Swap memory       :20415 MB
+# Total Virtual     :36903 MB
+# Available Virtual :6624 MB
+#-----------------------------------------------------------
+source uart_loopback_top.tcl -notrace

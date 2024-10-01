@@ -1,0 +1,11 @@
+===================================
+Configuration Memory information
+===================================
+File Format        MCS
+Interface          SPIX1
+Size               256M
+Start Address      0x00000000
+End Address        0x0FFFFFFF
+
+Addr1         Addr2         Date                    File(s)
+0x00000000    0x001FCB9B    Oct  1 10:20:16 2024    E:/robot/project/FPGA/sample/UART_sample_2/UART_sample_2.runs/impl_1/uart_loopback_top.bit

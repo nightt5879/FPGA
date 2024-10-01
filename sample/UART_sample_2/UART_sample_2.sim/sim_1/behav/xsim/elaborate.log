@@ -1,0 +1,27 @@
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: E:/vivado/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_uart_loopback_top_behav xil_defaultlib.tb_uart_loopback_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-2861] module 'uart_loopback_top' does not have a parameter named SYS_CLK [E:/robot/project/FPGA/sample/UART_sample_2/UART_sample_2.srcs/sim_1/new/tb_uart_loopback_top.v:68]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "E:/robot/project/FPGA/sample/UART_sample_2/UART_sample_2.srcs/sources_1/new/uart_loopback_top.v" Line 1. Module uart_loopback_top doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/robot/project/FPGA/sample/UART_sample_2/UART_sample_2.srcs/sources_1/new/uart_recv.v" Line 1. Module uart_recv(UART_BPS=115200) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/robot/project/FPGA/sample/UART_sample_2/UART_sample_2.srcs/sources_1/new/uart_send.v" Line 1. Module uart_send(UART_BPS=115200) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/robot/project/FPGA/sample/UART_sample_2/UART_sample_2.srcs/sources_1/new/uart_loop.v" Line 1. Module uart_loop doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/robot/project/FPGA/sample/UART_sample_2/UART_sample_2.srcs/sources_1/new/uart_loopback_top.v" Line 1. Module uart_loopback_top doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/robot/project/FPGA/sample/UART_sample_2/UART_sample_2.srcs/sources_1/new/uart_recv.v" Line 1. Module uart_recv(UART_BPS=115200) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/robot/project/FPGA/sample/UART_sample_2/UART_sample_2.srcs/sources_1/new/uart_send.v" Line 1. Module uart_send(UART_BPS=115200) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/robot/project/FPGA/sample/UART_sample_2/UART_sample_2.srcs/sources_1/new/uart_loop.v" Line 1. Module uart_loop doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.uart_recv(UART_BPS=115200)
+Compiling module xil_defaultlib.uart_send(UART_BPS=115200)
+Compiling module xil_defaultlib.uart_loop
+Compiling module xil_defaultlib.uart_loopback_top
+Compiling module xil_defaultlib.tb_uart_loopback_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_uart_loopback_top_behav

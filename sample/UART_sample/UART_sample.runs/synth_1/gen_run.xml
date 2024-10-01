@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1727684846" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/UART_wrapper.dcp">
+  <File Type="PA-TCL" Name="UART_wrapper.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="UART_wrapper_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="UART_wrapper_reports.tcl"/>
+  <File Type="RDS-RDS" Name="UART_wrapper.vds"/>
+  <File Type="RDS-UTIL" Name="UART_wrapper_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="UART_wrapper_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="UART_wrapper.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="UART_wrapper_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="UART_wrapper_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/UART/UART.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PGENDIR/sources_1/bd/UART/hdl/UART_wrapper.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="UART_wrapper"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/UART_wrapper.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="UART_processing_system7_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="UART_rst_ps7_0_50M_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="UART_axi_uartlite_0_0"/>
+</GenRun>

@@ -1,0 +1,31 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.85",
+   "Default View_TopLeft":"11,-327",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.7.1 2023-07-26 3bc4126617 VDI=43 GEI=38 GUI=JA:21.0
+#  -string -flagsOSRD
+preplace port uart_rtl_0 -pg 1 -lvl 5 -x 1360 -y 70 -defaultsOSRD
+preplace port DDR -pg 1 -lvl 5 -x 1360 -y -200 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 5 -x 1360 -y 50 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 2 -x 470 -y -100 -defaultsOSRD
+preplace inst axi_uartlite_0 -pg 1 -lvl 1 -x 150 -y -100 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 4 -x 1190 -y -80 -defaultsOSRD
+preplace inst rst_ps7_0_50M -pg 1 -lvl 3 -x 850 -y -40 -defaultsOSRD
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 4 40 -20 270 0 680 90 1020
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 2 1 N -60
+preplace netloc rst_ps7_0_50M_peripheral_aresetn 1 0 4 30 100 NJ 100 NJ 100 1040
+preplace netloc processing_system7_0_M_AXI_GP0 1 2 2 680J -140 N
+preplace netloc ps7_0_axi_periph_M00_AXI 1 0 5 20 80 NJ 80 NJ 80 NJ 80 1340
+preplace netloc axi_uartlite_0_UART 1 1 4 260J 70 NJ 70 NJ 70 NJ
+preplace netloc processing_system7_0_DDR 1 2 3 670J -200 NJ -200 NJ
+preplace netloc processing_system7_0_FIXED_IO 1 2 3 670J 60 1030J 50 NJ
+levelinfo -pg 1 0 150 470 850 1190 1360
+pagesize -pg 1 -db -bbox -sgen 0 -430 1480 760
+"
+}
+{
+   "da_axi4_cnt":"1",
+   "da_board_cnt":"1",
+   "da_ps7_cnt":"1"
+}

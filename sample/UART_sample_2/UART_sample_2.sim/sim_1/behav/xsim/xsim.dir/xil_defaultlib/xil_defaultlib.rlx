@@ -1,0 +1,10 @@
+0.7
+2020.2
+May 22 2024
+19:03:11
+E:/robot/project/FPGA/sample/UART_sample_2/UART_sample_2.sim/sim_1/behav/xsim/glbl.v,1708598507,verilog,,,,glbl,,,,,,,,
+E:/robot/project/FPGA/sample/UART_sample_2/UART_sample_2.srcs/sim_1/new/tb_uart_loopback_top.v,1727686139,verilog,,,,tb_uart_loopback_top,,,,,,,,
+E:/robot/project/FPGA/sample/UART_sample_2/UART_sample_2.srcs/sources_1/new/uart_loop.v,1727685849,verilog,,E:/robot/project/FPGA/sample/UART_sample_2/UART_sample_2.srcs/sources_1/new/uart_loopback_top.v,,uart_loop,,,,,,,,
+E:/robot/project/FPGA/sample/UART_sample_2/UART_sample_2.srcs/sources_1/new/uart_loopback_top.v,1727685686,verilog,,E:/robot/project/FPGA/sample/UART_sample_2/UART_sample_2.srcs/sources_1/new/uart_recv.v,,uart_loopback_top,,,,,,,,
+E:/robot/project/FPGA/sample/UART_sample_2/UART_sample_2.srcs/sources_1/new/uart_recv.v,1727685766,verilog,,E:/robot/project/FPGA/sample/UART_sample_2/UART_sample_2.srcs/sources_1/new/uart_send.v,,uart_recv,,,,,,,,
+E:/robot/project/FPGA/sample/UART_sample_2/UART_sample_2.srcs/sources_1/new/uart_send.v,1727685805,verilog,,E:/robot/project/FPGA/sample/UART_sample_2/UART_sample_2.srcs/sim_1/new/tb_uart_loopback_top.v,,uart_send,,,,,,,,
