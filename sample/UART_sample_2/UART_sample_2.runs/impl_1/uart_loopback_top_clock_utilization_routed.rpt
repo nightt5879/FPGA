@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-| Date         : Mon Sep 30 16:48:04 2024
+| Date         : Tue Oct  1 18:15:02 2024
 | Host         : nightt_insider running 64-bit major release  (build 9200)
 | Command      : report_clock_utilization -file uart_loopback_top_clock_utilization_routed.rpt
 | Design       : uart_loopback_top

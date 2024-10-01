@@ -1,6 +1,6 @@
 -------------------------------------
 | Tool Version : Vivado v.2024.1
-| Date         : Mon Sep 30 16:47:47 2024
+| Date         : Tue Oct  1 18:14:47 2024
 | Host         : nightt_insider
 | Design       : design_1
 | Device       : xc7z010-clg400-1--
