@@ -41,3 +41,4 @@ set_property PACKAGE_PIN P16 [get_ports rst_pin]
 set_property IOSTANDARD LVCMOS33 [get_ports rst_pin]
 
 
+

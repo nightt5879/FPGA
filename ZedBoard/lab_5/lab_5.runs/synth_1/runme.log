@@ -1,0 +1,263 @@
+
+*** Running vivado
+    with args -log uart_led.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source uart_led.tcl
+
+
+
+****** Vivado v2024.1 (64-bit)
+  **** SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Thu Oct  3 20:44:28 2024
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source uart_led.tcl -notrace
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 628.750 ; gain = 201.621
+Command: synth_design -top uart_led -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Device 21-9227] Part: xc7z020clg484-1 does not have CEAM library.
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 15224
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1511.742 ; gain = 452.508
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'uart_led' [E:/robot/project/FPGA/ZedBoard/lab_5/lab_5.srcs/sources_1/imports/lab_5/uart_led.v:12]
+INFO: [Synth 8-6157] synthesizing module 'meta_harden' [E:/robot/project/FPGA/ZedBoard/lab_5/sources/meta_harden.v:27]
+INFO: [Synth 8-6155] done synthesizing module 'meta_harden' (0#1) [E:/robot/project/FPGA/ZedBoard/lab_5/sources/meta_harden.v:27]
+INFO: [Synth 8-6157] synthesizing module 'uart_rx' [E:/robot/project/FPGA/ZedBoard/lab_5/sources/uart_rx.v:37]
+	Parameter BAUD_RATE bound to: 115200 - type: integer 
+	Parameter CLOCK_RATE bound to: 100000000 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'uart_baud_gen' [E:/robot/project/FPGA/ZedBoard/lab_5/sources/uart_baud_gen.v:35]
+	Parameter BAUD_RATE bound to: 115200 - type: integer 
+	Parameter CLOCK_RATE bound to: 100000000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'uart_baud_gen' (0#1) [E:/robot/project/FPGA/ZedBoard/lab_5/sources/uart_baud_gen.v:35]
+INFO: [Synth 8-6157] synthesizing module 'uart_rx_ctl' [E:/robot/project/FPGA/ZedBoard/lab_5/sources/uart_rx_ctl.v:52]
+INFO: [Synth 8-6155] done synthesizing module 'uart_rx_ctl' (0#1) [E:/robot/project/FPGA/ZedBoard/lab_5/sources/uart_rx_ctl.v:52]
+INFO: [Synth 8-6155] done synthesizing module 'uart_rx' (0#1) [E:/robot/project/FPGA/ZedBoard/lab_5/sources/uart_rx.v:37]
+INFO: [Synth 8-6157] synthesizing module 'led_ctl' [E:/robot/project/FPGA/ZedBoard/lab_5/sources/led_ctl.v:27]
+INFO: [Synth 8-6155] done synthesizing module 'led_ctl' (0#1) [E:/robot/project/FPGA/ZedBoard/lab_5/sources/led_ctl.v:27]
+INFO: [Synth 8-6155] done synthesizing module 'uart_led' (0#1) [E:/robot/project/FPGA/ZedBoard/lab_5/lab_5.srcs/sources_1/imports/lab_5/uart_led.v:12]
+WARNING: [Synth 8-7129] Port btn in module uart_led is either unconnected or has no load
+WARNING: [Synth 8-7129] Port zed_pin in module uart_led is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1623.246 ; gain = 564.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1623.246 ; gain = 564.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1623.246 ; gain = 564.012
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1623.246 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/robot/project/FPGA/ZedBoard/lab_5/lab_5.srcs/constrs_1/new/uart_led.xdc]
+Finished Parsing XDC File [E:/robot/project/FPGA/ZedBoard/lab_5/lab_5.srcs/constrs_1/new/uart_led.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/robot/project/FPGA/ZedBoard/lab_5/lab_5.srcs/constrs_1/new/uart_led.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/uart_led_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/uart_led_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1717.328 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1717.328 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1717.328 ; gain = 658.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1717.328 ; gain = 658.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1717.328 ; gain = 658.094
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_rx_ctl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE1 |                               00 |                               00
+                  iSTATE |                               01 |                               01
+                 iSTATE0 |                               10 |                               10
+                 iSTATE2 |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'uart_rx_ctl'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1717.328 ; gain = 658.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    6 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 3     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   2 Input    8 Bit        Muxes := 3     
+	   2 Input    4 Bit        Muxes := 3     
+	   5 Input    4 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 3     
+	   5 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 5     
+	   4 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port btn in module uart_led is either unconnected or has no load
+WARNING: [Synth 8-7129] Port zed_pin in module uart_led is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1717.328 ; gain = 658.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1717.328 ; gain = 658.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1717.328 ; gain = 658.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1717.328 ; gain = 658.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1717.328 ; gain = 658.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1717.328 ; gain = 658.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1717.328 ; gain = 658.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1717.328 ; gain = 658.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1717.328 ; gain = 658.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1717.328 ; gain = 658.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     1|
+|2     |LUT1 |     1|
+|3     |LUT2 |     3|
+|4     |LUT3 |    13|
+|5     |LUT4 |     6|
+|6     |LUT5 |     4|
+|7     |LUT6 |    21|
+|8     |FDRE |    46|
+|9     |FDSE |     4|
+|10    |IBUF |     4|
+|11    |OBUF |     8|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1717.328 ; gain = 658.094
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:24 . Memory (MB): peak = 1717.328 ; gain = 564.012
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 1717.328 ; gain = 658.094
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1717.328 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1717.328 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: c454effd
+INFO: [Common 17-83] Releasing license: Synthesis
+28 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:32 . Memory (MB): peak = 1717.328 ; gain = 1088.578
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1717.328 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'E:/robot/project/FPGA/ZedBoard/lab_5/lab_5.runs/synth_1/uart_led.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file uart_led_utilization_synth.rpt -pb uart_led_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Oct  3 20:45:09 2024...

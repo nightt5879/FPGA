@@ -426,7 +426,20 @@ Currently not working, pending issue resolution!
 ### 3.5 Experiment 5
 > **Important Document:** [Lab 5 Manual](./datasheet/lab5.pdf)
 
-(In Development)
+This experiment primarily focuses on teaching how to use IO Planning for constraints. The code is identical to that used in Experiment 2.</p>
+Note: After renaming the top module, **you must also rename the top module in the project summary**, otherwise an error indicating the `ios` module could not be found will occur.</p>
+
+***Experimental Results**
+
+*Found Y9_PIN*
+![Clock path found Y9_PIN](./images/ZedBoard/lab_5/Y9_pin.jpg)
+
+*Finished All Settings*
+![All settings completed](./images/ZedBoard/lab_5/finish_all_setting.jpg)
+
+*Path 11*
+![Path 11](./images/ZedBoard/lab_5/path11.jpg)
+
 
 ### 3.6 Experiment 6
 > **Important Document:** [Lab 6 Manual](./datasheet/lab6.pdf)
