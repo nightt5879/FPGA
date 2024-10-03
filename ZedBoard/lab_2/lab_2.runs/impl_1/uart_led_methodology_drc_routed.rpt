@@ -1,0 +1,183 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Thu Oct  3 17:20:21 2024
+| Host         : nightt_insider running 64-bit major release  (build 9200)
+| Command      : report_methodology -file uart_led_methodology_drc_routed.rpt -pb uart_led_methodology_drc_routed.pb -rpx uart_led_methodology_drc_routed.rpx
+| Design       : uart_led
+| Device       : xc7z020clg484-1
+| Speed File   : -1
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 26
++-----------+----------+------------------------------------------+------------+
+| Rule      | Severity | Description                              | Violations |
++-----------+----------+------------------------------------------+------------+
+| TIMING-16 | Warning  | Large setup violation                    | 8          |
+| TIMING-18 | Warning  | Missing input or output delay            | 10         |
+| XDCH-2    | Warning  | Same min and max delay values on IO port | 8          |
++-----------+----------+------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-16#1 Warning
+Large setup violation  
+There is a large setup violation of -9.151 ns between led_ctl_i0/led_o_reg[7]/C (clocked by clk_pin) and led_pins[7] (clocked by virtual_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#2 Warning
+Large setup violation  
+There is a large setup violation of -9.161 ns between led_ctl_i0/led_o_reg[6]/C (clocked by clk_pin) and led_pins[6] (clocked by virtual_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#3 Warning
+Large setup violation  
+There is a large setup violation of -9.163 ns between led_ctl_i0/led_o_reg[1]/C (clocked by clk_pin) and led_pins[1] (clocked by virtual_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#4 Warning
+Large setup violation  
+There is a large setup violation of -9.170 ns between led_ctl_i0/led_o_reg[0]/C (clocked by clk_pin) and led_pins[0] (clocked by virtual_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#5 Warning
+Large setup violation  
+There is a large setup violation of -9.179 ns between led_ctl_i0/led_o_reg[2]/C (clocked by clk_pin) and led_pins[2] (clocked by virtual_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#6 Warning
+Large setup violation  
+There is a large setup violation of -9.179 ns between led_ctl_i0/led_o_reg[3]/C (clocked by clk_pin) and led_pins[3] (clocked by virtual_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#7 Warning
+Large setup violation  
+There is a large setup violation of -9.179 ns between led_ctl_i0/led_o_reg[5]/C (clocked by clk_pin) and led_pins[5] (clocked by virtual_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#8 Warning
+Large setup violation  
+There is a large setup violation of -9.247 ns between led_ctl_i0/led_o_reg[4]/C (clocked by clk_pin) and led_pins[4] (clocked by virtual_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on btn_pin relative to the rising and/or falling clock edge(s) of clk_pin.
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An input delay is missing on rst_pin relative to the rising and/or falling clock edge(s) of clk_pin.
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An output delay is missing on led_pins[0] relative to the rising and/or falling clock edge(s) of clk_pin.
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An output delay is missing on led_pins[1] relative to the rising and/or falling clock edge(s) of clk_pin.
+Related violations: <none>
+
+TIMING-18#5 Warning
+Missing input or output delay  
+An output delay is missing on led_pins[2] relative to the rising and/or falling clock edge(s) of clk_pin.
+Related violations: <none>
+
+TIMING-18#6 Warning
+Missing input or output delay  
+An output delay is missing on led_pins[3] relative to the rising and/or falling clock edge(s) of clk_pin.
+Related violations: <none>
+
+TIMING-18#7 Warning
+Missing input or output delay  
+An output delay is missing on led_pins[4] relative to the rising and/or falling clock edge(s) of clk_pin.
+Related violations: <none>
+
+TIMING-18#8 Warning
+Missing input or output delay  
+An output delay is missing on led_pins[5] relative to the rising and/or falling clock edge(s) of clk_pin.
+Related violations: <none>
+
+TIMING-18#9 Warning
+Missing input or output delay  
+An output delay is missing on led_pins[6] relative to the rising and/or falling clock edge(s) of clk_pin.
+Related violations: <none>
+
+TIMING-18#10 Warning
+Missing input or output delay  
+An output delay is missing on led_pins[7] relative to the rising and/or falling clock edge(s) of clk_pin.
+Related violations: <none>
+
+XDCH-2#1 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'led_pins[0]' relative to clock virtual_clock for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock virtual_clock 0.000 [get_ports {led_pins[*]}]
+E:/robot/project/FPGA/ZedBoard/lab_2/sources/uart_led_timing.xdc (Line: 16)
+Related violations: <none>
+
+XDCH-2#2 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'led_pins[1]' relative to clock virtual_clock for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock virtual_clock 0.000 [get_ports {led_pins[*]}]
+E:/robot/project/FPGA/ZedBoard/lab_2/sources/uart_led_timing.xdc (Line: 16)
+Related violations: <none>
+
+XDCH-2#3 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'led_pins[2]' relative to clock virtual_clock for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock virtual_clock 0.000 [get_ports {led_pins[*]}]
+E:/robot/project/FPGA/ZedBoard/lab_2/sources/uart_led_timing.xdc (Line: 16)
+Related violations: <none>
+
+XDCH-2#4 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'led_pins[3]' relative to clock virtual_clock for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock virtual_clock 0.000 [get_ports {led_pins[*]}]
+E:/robot/project/FPGA/ZedBoard/lab_2/sources/uart_led_timing.xdc (Line: 16)
+Related violations: <none>
+
+XDCH-2#5 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'led_pins[4]' relative to clock virtual_clock for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock virtual_clock 0.000 [get_ports {led_pins[*]}]
+E:/robot/project/FPGA/ZedBoard/lab_2/sources/uart_led_timing.xdc (Line: 16)
+Related violations: <none>
+
+XDCH-2#6 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'led_pins[5]' relative to clock virtual_clock for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock virtual_clock 0.000 [get_ports {led_pins[*]}]
+E:/robot/project/FPGA/ZedBoard/lab_2/sources/uart_led_timing.xdc (Line: 16)
+Related violations: <none>
+
+XDCH-2#7 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'led_pins[6]' relative to clock virtual_clock for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock virtual_clock 0.000 [get_ports {led_pins[*]}]
+E:/robot/project/FPGA/ZedBoard/lab_2/sources/uart_led_timing.xdc (Line: 16)
+Related violations: <none>
+
+XDCH-2#8 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'led_pins[7]' relative to clock virtual_clock for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock virtual_clock 0.000 [get_ports {led_pins[*]}]
+E:/robot/project/FPGA/ZedBoard/lab_2/sources/uart_led_timing.xdc (Line: 16)
+Related violations: <none>
+
+
