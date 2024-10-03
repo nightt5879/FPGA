@@ -111,6 +111,33 @@
 ### 3.1 实验 1
 > **重要文件：** [lab1 实验手册](./datasheet/lab1.pdf)
 
+**实验结果**
+
+以下图片和动画展示了实验的运行结果
+*行为仿真*
+
+![行为仿真结果](./images/ZedBoard/lab_1/behavioral_simulation.jpg)
+
+*项目概要*
+
+![项目概要](./images/ZedBoard/lab_1/project_summary.jpg)
+
+*综合后的电路图*
+
+![综合后的电路图](./images/ZedBoard/lab_1/schematic.jpg)
+
+*设备实现*
+
+![设备实现结果](./images/ZedBoard/lab_1/device.jpg)
+
+*后时序仿真*
+
+![时序仿真结果](./images/ZedBoard/lab_1/post_timing_sim.jpg)
+
+*最终测试*
+
+![最终测试](./images/ZedBoard/lab_1/test.gif)
+
 ### 3.2 实验 2
 > **重要文件：** [lab2 实验手册](./datasheet/lab2.pdf)
 
