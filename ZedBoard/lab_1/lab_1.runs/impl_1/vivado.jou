@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Thu Oct  3 10:19:36 2024
+# Process ID: 32392
+# Current directory: E:/robot/project/FPGA/ZedBoard/lab_1/lab_1.runs/impl_1
+# Command line: vivado.exe -log lab1.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source lab1.tcl -notrace
+# Log file: E:/robot/project/FPGA/ZedBoard/lab_1/lab_1.runs/impl_1/lab1.vdi
+# Journal file: E:/robot/project/FPGA/ZedBoard/lab_1/lab_1.runs/impl_1\vivado.jou
+# Running On        :nightt_insider
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :22631
+# Processor Detail  :AMD Ryzen 7 5800U with Radeon Graphics         
+# CPU Frequency     :1896 MHz
+# CPU Physical cores:8
+# CPU Logical cores :16
+# Host memory       :16487 MB
+# Swap memory       :18253 MB
+# Total Virtual     :34741 MB
+# Available Virtual :14307 MB
+#-----------------------------------------------------------
+source lab1.tcl -notrace
