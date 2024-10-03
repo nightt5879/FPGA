@@ -385,7 +385,38 @@ The following images and animations show the results of the experiment:
 ### 3.3 Experiment 3
 > **Important Document:** [Lab 3 Manual](./datasheet/lab3.pdf)
 
-(In Development)
+**Code Analysis**
+The code for this lab is the same as Lab 2, so it will not be repeated here.</p>
+
+**Experimental Results**
+
+*Timing Report*
+![Timing Report](./images/ZedBoard/lab_3/timing_report.jpg)
+
+*Output Data Path*
+![Output Data Path](./images/ZedBoard/lab_3/output_data_path.jpg)
+
+*Timing After Change*
+![Timing After Change](./images/ZedBoard/lab_3/timing_after_change.jpg)
+
+*Device Path*
+![Device Path](./images/ZedBoard/lab_3/device_path.jpg)
+
+*Project Summary*
+![Project Summary](./images/ZedBoard/lab_3/project_summary.jpg)
+
+*Timing Report Implementation*
+![Timing Report Implementation](./images/ZedBoard/lab_3/timing_report_imp.jpg)
+
+*Timing After Change Implementation*
+![Timing After Change Implementation](./images/ZedBoard/lab_3/timing_after_change_imp.jpg)
+
+*Clock Path*
+![Clock Path](./images/ZedBoard/lab_3/clk_path.png)
+
+*Final Test*
+Currently not working, pending issue resolution!
+
 
 ### 3.4 Experiment 4
 > **Important Document:** [Lab 4 Manual](./datasheet/lab4.pdf)

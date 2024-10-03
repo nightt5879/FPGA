@@ -366,7 +366,37 @@ clogb2(DIVIDER)的作用是计算DIVIDER的二进制位数，这样就可以得�
 ### 3.3 实验 3
 > **重要文件：** [lab3 实验手册](./datasheet/lab3.pdf)
 
-(正在开发中)
+**代码解析**
+代码部分和lab2一样，不赘述</p>
+
+**实验结果**
+
+*时序报告*
+![时序报告](./images/ZedBoard/lab_3/timing_report.jpg)
+
+*输出数据路径*
+![输出数据路径](./images/ZedBoard/lab_3/output_data_path.jpg)
+
+*修改后的时序*
+![修改后的时序](./images/ZedBoard/lab_3/timing_after_change.jpg)
+
+*设备路径*
+![设备路径](./images/ZedBoard/lab_3/device_path.jpg)
+
+*项目概要*
+![项目概要](./images/ZedBoard/lab_3/project_summary.jpg)
+
+*时序报告_imp*
+![时序报告实现](./images/ZedBoard/lab_3/timing_report_imp.jpg)
+
+*修改后的时序_imp"
+![修改后的时序实现](./images/ZedBoard/lab_3/timing_after_change_imp.jpg)
+
+*时钟路径*
+![时钟路径](./images/ZedBoard/lab_3/clk_path.png)
+
+*最终测试*
+不知道为什么用不了，待解决问题！！！！
 
 ### 3.4 实验 4
 > **重要文件：** [lab4 实验手册](./datasheet/lab4.pdf)
