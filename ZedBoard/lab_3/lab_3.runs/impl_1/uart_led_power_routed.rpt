@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-| Date             : Thu Oct  3 19:24:38 2024
+| Date             : Thu Oct  3 20:57:14 2024
 | Host             : nightt_insider running 64-bit major release  (build 9200)
 | Command          : report_power -file uart_led_power_routed.rpt -pb uart_led_power_summary_routed.pb -rpx uart_led_power_routed.rpx
 | Design           : uart_led
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.110        |
+| Total On-Chip Power (W)  | 0.114        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.004        |
+| Dynamic (W)              | 0.008        |
 | Device Static (W)        | 0.106        |
 | Effective TJA (C/W)      | 11.5         |
 | Max Ambient (C)          | 83.7         |
@@ -52,15 +52,15 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Clocks         |    <0.001 |        4 |       --- |             --- |
-| Slice Logic    |    <0.001 |      106 |       --- |             --- |
+| Clocks         |     0.001 |        4 |       --- |             --- |
+| Slice Logic    |    <0.001 |       98 |       --- |             --- |
 |   LUT as Logic |    <0.001 |       37 |     53200 |            0.07 |
-|   Register     |    <0.001 |       50 |    106400 |            0.05 |
+|   Register     |    <0.001 |       42 |    106400 |            0.04 |
 |   Others       |     0.000 |        8 |       --- |             --- |
-| Signals        |    <0.001 |       68 |       --- |             --- |
-| I/O            |     0.003 |       12 |       200 |            6.00 |
+| Signals        |    <0.001 |       76 |       --- |             --- |
+| I/O            |     0.006 |       12 |       200 |            6.00 |
 | Static Power   |     0.106 |          |           |                 |
-| Total          |     0.110 |          |           |                 |
+| Total          |     0.114 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -70,9 +70,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.009 |       0.001 |      0.007 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.009 |       0.002 |      0.007 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.010 |       0.000 |      0.010 |       NA    | Unspecified | NA         |
-| Vcco33    |       3.300 |     0.002 |       0.001 |      0.001 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     0.003 |       0.002 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -146,7 +146,7 @@ Table of Contents
 +----------+-----------+
 | Name     | Power (W) |
 +----------+-----------+
-| uart_led |     0.004 |
+| uart_led |     0.008 |
 +----------+-----------+
 
 

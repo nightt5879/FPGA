@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1727954564">
+<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1727960172">
   <File Type="ROUTE-PWR" Name="uart_led_power_routed.rpt"/>
   <File Type="PA-TCL" Name="uart_led.tcl"/>
   <File Type="ROUTE-PWR-SUM" Name="uart_led_power_summary_routed.pb"/>

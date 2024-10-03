@@ -406,7 +406,20 @@ clogb2(DIVIDER)的作用是计算DIVIDER的二进制位数，这样就可以得�
 ### 3.5 实验 5
 > **重要文件：** [lab5 实验手册](./datasheet/lab5.pdf)
 
-(正在开发中)
+该实验主要是教学使用IO Planing进行约束，代码和实验2是一样的。</p>
+需要注意的点：在top module改名后，**在project summary中的top module也要改名**，否则会出现找不到ios模块的错误。</p>
+
+***实验结果**
+
+*找到Y9_PIN*
+![时钟路径找到Y9_PIN](./images/ZedBoard/lab_5/Y9_pin.jpg)
+
+*完成所有设置*
+![完成所有设置](./images/ZedBoard/lab_5/finish_all_setting.jpg)
+
+*路径11*
+![路径11](./images/ZedBoard/lab_5/path11.jpg)
+
 
 ### 3.6 实验 6
 > **重要文件：** [lab6 实验手册](./datasheet/lab6.pdf)

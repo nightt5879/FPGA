@@ -17,3 +17,5 @@ set_output_delay -clock virtual_clock -2.000 [get_ports {led_pins[*]}]
 
 
 
+
+set_property IOB TRUE [get_ports {led_pins[*]}]
