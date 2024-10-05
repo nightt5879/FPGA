@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-| Date         : Thu Oct  3 17:20:21 2024
+| Date         : Sat Oct  5 11:02:16 2024
 | Host         : nightt_insider running 64-bit major release  (build 9200)
 | Command      : report_methodology -file uart_led_methodology_drc_routed.rpt -pb uart_led_methodology_drc_routed.pb -rpx uart_led_methodology_drc_routed.rpx
 | Design       : uart_led
@@ -71,7 +71,7 @@ Related violations: <none>
 
 TIMING-16#8 Warning
 Large setup violation  
-There is a large setup violation of -9.247 ns between led_ctl_i0/led_o_reg[4]/C (clocked by clk_pin) and led_pins[4] (clocked by virtual_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -9.185 ns between led_ctl_i0/led_o_reg[4]/C (clocked by clk_pin) and led_pins[4] (clocked by virtual_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-18#1 Warning

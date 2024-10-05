@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-| Date         : Thu Oct  3 17:20:21 2024
+| Date         : Sat Oct  5 11:02:17 2024
 | Host         : nightt_insider running 64-bit major release  (build 9200)
 | Command      : report_bus_skew -warn_on_violation -file uart_led_bus_skew_routed.rpt -pb uart_led_bus_skew_routed.pb -rpx uart_led_bus_skew_routed.rpx
 | Design       : uart_led

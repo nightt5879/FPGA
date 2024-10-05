@@ -3,8 +3,8 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Thu Oct  3 16:17:00 2024
-# Process ID: 28744
+# Start of session at: Sat Oct  5 11:00:14 2024
+# Process ID: 34052
 # Current directory: E:/robot/project/FPGA/ZedBoard/lab_2/lab_2.runs/synth_1
 # Command line: vivado.exe -log uart_led.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source uart_led.tcl
 # Log file: E:/robot/project/FPGA/ZedBoard/lab_2/lab_2.runs/synth_1/uart_led.vds
@@ -19,6 +19,6 @@
 # Host memory       :16487 MB
 # Swap memory       :18253 MB
 # Total Virtual     :34741 MB
-# Available Virtual :10419 MB
+# Available Virtual :12710 MB
 #-----------------------------------------------------------
 source uart_led.tcl -notrace

@@ -42,7 +42,7 @@ EAStep()
 }
 
 # pre-commands:
-/bin/touch .init_design.begin.rst
+/bin/touch .write_bitstream.begin.rst
 EAStep vivado -log uart_led.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source uart_led.tcl -notrace
 
 
