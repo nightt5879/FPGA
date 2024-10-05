@@ -17,6 +17,7 @@
     - [3.5 Experiment 5](#35-experiment-5)
     - [3.6 Experiment 6](#36-experiment-6)
   - [4. Course Design (In Development)](#4-course-design-in-development)
+- [Errata](#errata)
 
 # Front-end Design of Digital Integrated Circuits and High-level Synthesis
 ## 1. Preface
@@ -391,6 +392,10 @@ The following images and animations show the results of the experiment:
 *Checkpoint File*
 ![Checkpoint File](./images/ZedBoard/lab_2/checkpoint_file.jpg)
 
+*Final Test*
+
+![Final Test](./images/ZedBoard/lab_2/final.gif)
+
 ### 3.3 Experiment 3
 > **Important Document:** [Lab 3 Manual](./datasheet/lab3.pdf)
 
@@ -423,8 +428,9 @@ The code for this lab is the same as Lab 2, so it will not be repeated here.</p>
 *Clock Path*
 ![Clock Path](./images/ZedBoard/lab_3/clk_path.png)
 
-*Final Test*
-Currently not working, pending issue resolution!
+*Final Test*</p>
+The phenomenon is the same as in lab2. Please refer to the final test of lab2 for more details.</p>
+
 
 
 ### 3.4 Experiment 4
@@ -449,9 +455,26 @@ Note: After renaming the top module, **you must also rename the top module in th
 *Path 11*
 ![Path 11](./images/ZedBoard/lab_5/path11.jpg)
 
+*Final Test*</p>
+The phenomenon is the same as in lab2. Please refer to the final test of lab2 for more details.</p>
+
 
 ### 3.6 Experiment 6
 > **Important Document:** [Lab 6 Manual](./datasheet/lab6.pdf)
 
 ## 4. Course Design (In Development)
 
+# Errata
+In the top-level file `uart_led.v` of `lab2`, there is an error regarding the handling of the `rst_clk` signal:
+The error is caused by an inversion applied to the `rst_clk` signal in the design, which results in `rst_clk` being incorrectly inverted to high when the button is not pressed (default low level). This causes the reset signal to remain active, preventing the system from functioning properly in an idle state. Consequently, the system does not show the expected behavior without intervention, and the reset button must be manually pressed to observe the desired experimental effect.
+
+The specific issue is found on line 69 of `uart_led.v`:
+```verilog
+    .signal_src   (~rst_pin),
+```
+<sub>The same logic in lab3, lab5, and lab6 does not have this issue, as the inversion operation was not applied.</sub></p>
+- [ ] **Contact the instructor to correct the error**</p>  <!--Need to contact the instructor-->
+
+Erroneous logic experiment phenomenon:
+
+![Error Phenomenon](./images/err_test.gif)

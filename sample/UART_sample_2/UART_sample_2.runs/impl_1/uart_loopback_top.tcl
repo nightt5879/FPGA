@@ -106,6 +106,7 @@ set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
   set_param chipscope.maxJobs 4
+  set_param xicom.use_bs_reader 1
   set_param runs.launchOptions { -jobs 16  }
   open_checkpoint uart_loopback_top_routed.dcp
   set_property webtalk.parent_dir E:/robot/project/FPGA/sample/UART_sample_2/UART_sample_2.cache/wt [current_project]

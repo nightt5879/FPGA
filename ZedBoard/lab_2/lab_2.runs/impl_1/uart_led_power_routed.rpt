@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-| Date             : Thu Oct  3 17:20:21 2024
+| Date             : Sat Oct  5 11:02:17 2024
 | Host             : nightt_insider running 64-bit major release  (build 9200)
 | Command          : report_power -file uart_led_power_routed.rpt -pb uart_led_power_summary_routed.pb -rpx uart_led_power_routed.rpx
 | Design           : uart_led
@@ -52,12 +52,12 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Clocks         |     0.001 |        4 |       --- |             --- |
-| Slice Logic    |    <0.001 |      108 |       --- |             --- |
-|   LUT as Logic |    <0.001 |       38 |     53200 |            0.07 |
+| Clocks         |    <0.001 |        4 |       --- |             --- |
+| Slice Logic    |    <0.001 |      107 |       --- |             --- |
+|   LUT as Logic |    <0.001 |       37 |     53200 |            0.07 |
 |   Register     |    <0.001 |       50 |    106400 |            0.05 |
 |   Others       |     0.000 |        9 |       --- |             --- |
-| Signals        |    <0.001 |       76 |       --- |             --- |
+| Signals        |    <0.001 |       75 |       --- |             --- |
 | I/O            |     0.003 |       12 |       200 |            6.00 |
 | Static Power   |     0.106 |          |           |                 |
 | Total          |     0.110 |          |           |                 |

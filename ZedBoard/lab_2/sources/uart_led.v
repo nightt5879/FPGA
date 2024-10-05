@@ -66,7 +66,10 @@ module uart_led (
   meta_harden meta_harden_rst_i0 (
     .clk_dst      (clk_pin),
     .rst_dst      (1'b0),    // No reset on the hardener for reset!
-    .signal_src   (~rst_pin),
+// Original button logic: the button is low when pressed, high when released.
+// Modification: Since the button is low when not pressed, no need to invert the signal.
+// The reset is controlled directly using the button signal.
+    .signal_src   (rst_pin),  
     .signal_dst   (rst_clk_rx)
   );
 
