@@ -1,0 +1,291 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Sat Oct  5 15:23:35 2024
+# Process ID: 35164
+# Current directory: E:/robot/project/FPGA/ZedBoard/lab_6/lab_6.runs/synth_1
+# Command line: vivado.exe -log uart_led.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source uart_led.tcl
+# Log file: E:/robot/project/FPGA/ZedBoard/lab_6/lab_6.runs/synth_1/uart_led.vds
+# Journal file: E:/robot/project/FPGA/ZedBoard/lab_6/lab_6.runs/synth_1\vivado.jou
+# Running On        :nightt_insider
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :22631
+# Processor Detail  :AMD Ryzen 7 5800U with Radeon Graphics         
+# CPU Frequency     :1896 MHz
+# CPU Physical cores:8
+# CPU Logical cores :16
+# Host memory       :16487 MB
+# Swap memory       :18253 MB
+# Total Virtual     :34741 MB
+# Available Virtual :11306 MB
+#-----------------------------------------------------------
+source uart_led.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 631.082 ; gain = 200.336
+Command: read_checkpoint -auto_incremental -incremental E:/robot/project/FPGA/ZedBoard/lab_6/lab_6.srcs/utils_1/imports/synth_1/uart_led.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from E:/robot/project/FPGA/ZedBoard/lab_6/lab_6.srcs/utils_1/imports/synth_1/uart_led.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top uart_led -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Device 21-9227] Part: xc7z020clg484-1 does not have CEAM library.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 13756
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1545.461 ; gain = 453.441
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'uart_led' [E:/robot/project/FPGA/ZedBoard/lab_6/sources/uart_led.v:25]
+INFO: [Synth 8-6157] synthesizing module 'meta_harden' [E:/robot/project/FPGA/ZedBoard/lab_6/sources/meta_harden.v:27]
+INFO: [Synth 8-6155] done synthesizing module 'meta_harden' (0#1) [E:/robot/project/FPGA/ZedBoard/lab_6/sources/meta_harden.v:27]
+INFO: [Synth 8-6157] synthesizing module 'uart_rx' [E:/robot/project/FPGA/ZedBoard/lab_6/sources/uart_rx.v:37]
+	Parameter BAUD_RATE bound to: 115200 - type: integer 
+	Parameter CLOCK_RATE bound to: 100000000 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'uart_baud_gen' [E:/robot/project/FPGA/ZedBoard/lab_6/sources/uart_baud_gen.v:35]
+	Parameter BAUD_RATE bound to: 115200 - type: integer 
+	Parameter CLOCK_RATE bound to: 100000000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'uart_baud_gen' (0#1) [E:/robot/project/FPGA/ZedBoard/lab_6/sources/uart_baud_gen.v:35]
+INFO: [Synth 8-6157] synthesizing module 'uart_rx_ctl' [E:/robot/project/FPGA/ZedBoard/lab_6/sources/uart_rx_ctl.v:52]
+INFO: [Synth 8-6155] done synthesizing module 'uart_rx_ctl' (0#1) [E:/robot/project/FPGA/ZedBoard/lab_6/sources/uart_rx_ctl.v:52]
+INFO: [Synth 8-6155] done synthesizing module 'uart_rx' (0#1) [E:/robot/project/FPGA/ZedBoard/lab_6/sources/uart_rx.v:37]
+INFO: [Synth 8-6157] synthesizing module 'led_ctl' [E:/robot/project/FPGA/ZedBoard/lab_6/sources/led_ctl.v:27]
+INFO: [Synth 8-6155] done synthesizing module 'led_ctl' (0#1) [E:/robot/project/FPGA/ZedBoard/lab_6/sources/led_ctl.v:27]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [E:/robot/project/FPGA/ZedBoard/lab_6/sources/uart_led.v:104]
+INFO: [Synth 8-6157] synthesizing module 'ila_led' [E:/robot/project/FPGA/ZedBoard/lab_6/lab_6.runs/synth_1/.Xil/Vivado-35164-nightt_insider/realtime/ila_led_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ila_led' (0#1) [E:/robot/project/FPGA/ZedBoard/lab_6/lab_6.runs/synth_1/.Xil/Vivado-35164-nightt_insider/realtime/ila_led_stub.v:6]
+WARNING: [Synth 8-689] width (8) of port connection 'probe0' does not match port width (1) of module 'ila_led' [E:/robot/project/FPGA/ZedBoard/lab_6/sources/uart_led.v:108]
+WARNING: [Synth 8-689] width (1) of port connection 'probe1' does not match port width (8) of module 'ila_led' [E:/robot/project/FPGA/ZedBoard/lab_6/sources/uart_led.v:109]
+INFO: [Synth 8-6155] done synthesizing module 'uart_led' (0#1) [E:/robot/project/FPGA/ZedBoard/lab_6/sources/uart_led.v:25]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'led_ctl_i0'. This will prevent further optimization [E:/robot/project/FPGA/ZedBoard/lab_6/sources/uart_led.v:96]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_led_i0'. This will prevent further optimization [E:/robot/project/FPGA/ZedBoard/lab_6/sources/uart_led.v:104]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'uart_rx_i0'. This will prevent further optimization [E:/robot/project/FPGA/ZedBoard/lab_6/sources/uart_led.v:84]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1660.258 ; gain = 568.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1660.258 ; gain = 568.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1660.258 ; gain = 568.238
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1660.258 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/robot/project/FPGA/ZedBoard/lab_6/lab_6.gen/sources_1/ip/ila_led/ila_led/ila_led_in_context.xdc] for cell 'ila_led_i0'
+Finished Parsing XDC File [e:/robot/project/FPGA/ZedBoard/lab_6/lab_6.gen/sources_1/ip/ila_led/ila_led/ila_led_in_context.xdc] for cell 'ila_led_i0'
+Parsing XDC File [E:/robot/project/FPGA/ZedBoard/lab_6/sources/uart_led_pins.xdc]
+Finished Parsing XDC File [E:/robot/project/FPGA/ZedBoard/lab_6/sources/uart_led_pins.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/robot/project/FPGA/ZedBoard/lab_6/sources/uart_led_pins.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/uart_led_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/uart_led_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [E:/robot/project/FPGA/ZedBoard/lab_6/sources/uart_led_timing.xdc]
+Finished Parsing XDC File [E:/robot/project/FPGA/ZedBoard/lab_6/sources/uart_led_timing.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1730.352 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1730.352 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1730.352 ; gain = 638.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1730.352 ; gain = 638.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property MARK_DEBUG = true for rx_data[0]. (constraint file  E:/robot/project/FPGA/ZedBoard/lab_6/sources/uart_led_pins.xdc, line 40).
+Applied set_property KEEP_HIERARCHY = SOFT for ila_led_i0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1730.352 ; gain = 638.332
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_rx_ctl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE1 |                               00 |                               00
+                  iSTATE |                               01 |                               01
+                 iSTATE0 |                               10 |                               10
+                 iSTATE2 |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'uart_rx_ctl'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1730.352 ; gain = 638.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    6 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 3     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   2 Input    8 Bit        Muxes := 3     
+	   2 Input    4 Bit        Muxes := 3     
+	   5 Input    4 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 3     
+	   5 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 5     
+	   4 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 1730.352 ; gain = 638.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 1730.352 ; gain = 638.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 1730.352 ; gain = 638.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 1730.352 ; gain = 638.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:28 . Memory (MB): peak = 1730.352 ; gain = 638.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:28 . Memory (MB): peak = 1730.352 ; gain = 638.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:28 . Memory (MB): peak = 1730.352 ; gain = 638.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:28 . Memory (MB): peak = 1730.352 ; gain = 638.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:28 . Memory (MB): peak = 1730.352 ; gain = 638.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:28 . Memory (MB): peak = 1730.352 ; gain = 638.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |ila_led       |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |ila_led |     1|
+|2     |BUFG    |     1|
+|3     |LUT1    |     1|
+|4     |LUT2    |     3|
+|5     |LUT3    |    13|
+|6     |LUT4    |     6|
+|7     |LUT5    |     4|
+|8     |LUT6    |    21|
+|9     |FDRE    |    46|
+|10    |FDSE    |     4|
+|11    |IBUF    |     4|
+|12    |OBUF    |     8|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:28 . Memory (MB): peak = 1730.352 ; gain = 638.332
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:26 . Memory (MB): peak = 1730.352 ; gain = 568.238
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:28 . Memory (MB): peak = 1730.352 ; gain = 638.332
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1730.352 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1730.352 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: afa477ba
+INFO: [Common 17-83] Releasing license: Synthesis
+39 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:35 . Memory (MB): peak = 1730.352 ; gain = 1056.664
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1730.352 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'E:/robot/project/FPGA/ZedBoard/lab_6/lab_6.runs/synth_1/uart_led.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file uart_led_utilization_synth.rpt -pb uart_led_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Oct  5 15:24:21 2024...

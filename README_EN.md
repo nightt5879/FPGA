@@ -460,7 +460,17 @@ The phenomenon is the same as in lab2. Please refer to the final test of lab2 fo
 
 
 ### 3.6 Experiment 6
-> **Important Document:** [Lab 6 Manual](./datasheet/lab6.pdf)
+> **Important File:** [Lab 6 Experiment Manual](./datasheet/lab6.pdf)
+
+This experiment primarily teaches how to use Debug for troubleshooting, and the specific content is the same as Experiment 2.</p>
+
+**Experiment Results**
+
+*Debug Path*
+![Debug Path](./images/ZedBoard/lab_6/debug_path.jpg)
+
+*Waiting for Trigger*
+![Waiting for Trigger](./images/ZedBoard/lab_6/wait_for_trigger.jpg)
 
 ## 4. Course Design (In Development)
 
