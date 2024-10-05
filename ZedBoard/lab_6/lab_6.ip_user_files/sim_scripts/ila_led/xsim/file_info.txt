@@ -1,0 +1,2 @@
+ila_led.v,verilog,xil_defaultlib,../../../../lab_6.gen/sources_1/ip/ila_led/sim/ila_led.v,incdir="../../../../lab_6.gen/sources_1/ip/ila_led/hdl/verilog"
+glbl.v,Verilog,xil_defaultlib,glbl.v
