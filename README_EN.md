@@ -32,11 +32,9 @@ The purpose of this project is, firstly, to complete the six labs and the course
 - Vivado 2024.1
 - Chip: xc7z010clg400-1
   
-**PCB-Level Resources**:
-  - [Schematic](./datasheet/AX7010开发板原理图.pdf) (Very important, contains definitions of various pins)
+**AX7010 Documentation**
+  - [Schematic Diagram](./datasheet/AX7010开发板原理图.pdf) (This is quite important as it provides definitions for all the pins)
   - [PCB Design Guide](./datasheet/ug933-Zynq-7000-PCB.pdf)
-  
-**Chip-Level Resources**:
   - [Zynq-7000 Data Sheet](./datasheet/ds187-XC7Z010-XC7Z020-Data-Sheet.pdf)
   - [XADC User Guide](./datasheet/ug480_7Series_XADC.pdf)
   - [Technical Reference Manual (TRM)](./datasheet/ug585-Zynq-7000-TRM.pdf)
@@ -46,8 +44,19 @@ The purpose of this project is, firstly, to complete the six labs and the course
 **Board**:
 ![Board](./images/my_board.jpg)
 
+**ZedBoard Documentation**
+- [ZedBoard Schematic Diagram](./datasheet/AVNET%20Zedboard/zedbaord%20原理图.pdf)
+- [ZedBoard Zynq-7000 ARM FPGA Advanced Manual](./datasheet/AVNET%20Zedboard/ZedBoard%20Zynq-7000%20ARM%20FPGA进阶手册.pdf)
+- [ZedBoard User Hardware Manual](./datasheet/AVNET%20Zedboard/zedboard%20用户硬件手册.pdf)
+- [ZedBoard Schematic](./datasheet/AVNET%20Zedboard/ZedBoard_Schematic.pdf)
+- [ZedBoard Getting Started Guide](./datasheet/AVNET%20Zedboard/zedboard上手手册.pdf)
+- [Baseboard Schematic Diagram](./datasheet/AVNET%20Zedboard/底板原理图.pdf)
+- [Core Board Schematic Diagram](./datasheet/AVNET%20Zedboard/核心板原理图.pdf)
+- [Hands-on Manual (Step-by-Step)](./datasheet/AVNET%20Zedboard/上手手册（手把手）.pdf)
+
 **ZedBoard**:
 ![ZedBoard](./images/ZedBoard.jpg)
+
 
 ## 2. Lab Content
 ### 2.1 Lab 1

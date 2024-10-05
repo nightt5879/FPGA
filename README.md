@@ -29,12 +29,10 @@
 - Windows 11
 - Vivado 2024.1
 - Chip: xc7z010clg400-1
-  
-**PCB 级别资料**:
+
+**AX7010资料**
   - [原理图](./datasheet/AX7010开发板原理图.pdf)（比较重要的，能找到各种引脚的定义）
   - [PCB Design Guide](./datasheet/ug933-Zynq-7000-PCB.pdf)
-  
-**芯片级别资料**:
   - [Zynq-7000 Data Sheet](./datasheet/ds187-XC7Z010-XC7Z020-Data-Sheet.pdf)
   - [XADC User Guide](./datasheet/ug480_7Series_XADC.pdf)
   - [Technical Reference Manual (TRM)](./datasheet/ug585-Zynq-7000-TRM.pdf)
@@ -43,6 +41,17 @@
 
 **板子**:
 ![板子](./images/my_board.jpg)
+
+**ZedBoard资料**
+- [ZedBoard原理图](./datasheet/AVNET%20Zedboard/zedbaord%20原理图.pdf)
+- [ZedBoard Zynq-7000 ARM FPGA进阶手册](./datasheet/AVNET%20Zedboard/ZedBoard%20Zynq-7000%20ARM%20FPGA进阶手册.pdf)
+- [ZedBoard用户硬件手册](./datasheet/AVNET%20Zedboard/zedboard%20用户硬件手册.pdf)
+- [ZedBoard Schematic](./datasheet/AVNET%20Zedboard/ZedBoard_Schematic.pdf)
+- [ZedBoard上手手册](./datasheet/AVNET%20Zedboard/zedboard上手手册.pdf)
+- [底板原理图](./datasheet/AVNET%20Zedboard/底板原理图.pdf)
+- [核心板原理图](./datasheet/AVNET%20Zedboard/核心板原理图.pdf)
+- [上手手册（手把手）](./datasheet/AVNET%20Zedboard/上手手册（手把手）.pdf)
+
 
 **ZedBoard**:
 ![ZedBoard](./images/ZedBoard.jpg)
