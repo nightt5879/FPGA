@@ -4,11 +4,8 @@
     - [1.1 Software and Hardware Environment](#11-software-and-hardware-environment)
   - [2. Lab Content](#2-lab-content)
     - [2.1 Lab 1](#21-lab-1)
-    - [2.2 Lab 2](#22-lab-2)
-    - [2.3 Lab 3](#23-lab-3)
-    - [2.4 Lab 4](#24-lab-4)
-    - [2.5 Lab 5](#25-lab-5)
-    - [2.6 Lab 6](#26-lab-6)
+    - [2.2 Experiment 2](#22-experiment-2)
+    - [2.4 Experiment 4](#24-experiment-4)
   - [3. ZedBoard Experiments (Board Used in the Course)](#3-zedboard-experiments-board-used-in-the-course)
     - [3.1 Experiment 1](#31-experiment-1)
     - [3.2 Experiment 2](#32-experiment-2)
@@ -98,30 +95,17 @@ The following images and animation show the results of the experiment:
 
 ![Final Test](./images/lab1/finish.gif)
 
-### 2.2 Lab 2
-> **Important Document:** [Lab 2 Manual](./datasheet/lab2.pdf)
+### 2.2 Experiment 2
+> **Important File:** [Lab 2 Experiment Manual](./datasheet/lab2.pdf)
+<sub>Experiments 2, 3, 5, and 6 have the same code logic, but the instructional content differs. Therefore, only the implementation of Experiment 2 is presented here. The rest can be implemented similarly as long as the correct XDC file with appropriate pin assignments is used.</sub>
+(In Development)
 
-(In development)
+### 2.4 Experiment 4
+> **Important File:** [Lab 4 Experiment Manual](./datasheet/lab4.pdf)
 
-### 2.3 Lab 3
-> **Important Document:** [Lab 3 Manual](./datasheet/lab3.pdf)
+The original tutorial involves importing the provided IP core, with the goal of becoming familiar with IP core design. Here, we directly use the IP core to implement the PS UART function (same as in Experiment 2), which also helps in learning how to use IP cores effectively.</p>
+(In Development)
 
-(In development)
-
-### 2.4 Lab 4
-> **Important Document:** [Lab 4 Manual](./datasheet/lab4.pdf)
-
-(In development)
-
-### 2.5 Lab 5
-> **Important Document:** [Lab 5 Manual](./datasheet/lab5.pdf)
-
-(In development)
-
-### 2.6 Lab 6
-> **Important Document:** [Lab 6 Manual](./datasheet/lab6.pdf)
-
-(In development)
 ## 3. ZedBoard Experiments (Board Used in the Course)
 
 ### 3.1 Experiment 1
