@@ -2,6 +2,7 @@
 - [数字集成电路前端设计与高层次综合](#数字集成电路前端设计与高层次综合)
   - [1.写在前面](#1写在前面)
     - [1.1 软件硬件环境](#11-软件硬件环境)
+    - [1.2 注意事项](#12-注意事项)
   - [2.实验内容](#2实验内容)
     - [2.1 实验 1](#21-实验-1)
     - [2.2 实验 2](#22-实验-2)
@@ -15,6 +16,8 @@
     - [3.6 实验 6](#36-实验-6)
   - [4.课程设计（开发中）](#4课程设计开发中)
 - [勘误](#勘误)
+  - [错误1](#错误1)
+  - [错误2](#错误2)
 
 
 # 数字集成电路前端设计与高层次综合 
@@ -50,9 +53,14 @@
 - [核心板原理图](./datasheet/AVNET%20Zedboard/核心板原理图.pdf)
 - [上手手册（手把手）](./datasheet/AVNET%20Zedboard/上手手册（手把手）.pdf)
 
-
 **ZedBoard**:
 ![ZedBoard](./images/ZedBoard.jpg)
+
+### 1.2 注意事项
+这套实验除了实验1，余下的23456都需要使用到UART，通过XDC文件可以得知UART映射到的引脚是JA2与JA3，所以左上角USB的UART是没用的（这是PS配置的UART，不是PL的UART）。</p>
+正确的UART连线：</p>
+<sub>位置在板子的左下角，IO口可以看丝印</sub></p>
+![UART连线](./images/uart_link.jpg)
 
 ## 2.实验内容
 ### 2.1 实验 1
@@ -398,7 +406,33 @@ clogb2(DIVIDER)的作用是计算DIVIDER的二进制位数，这样就可以得�
 ### 3.4 实验 4
 > **重要文件：** [lab4 实验手册](./datasheet/lab4.pdf)
 
-(正在开发中)
+实验4主要是教学使用IP核，但是这里对于新版本的vivado存在一个兼容性问题，需要打开`IP Sources`, 右键`char_fifo`，选择`Upgrade IP`，然后再进行IP核的配置。</p>
+更改前会显示红色的锁定标志：</p>
+![更改前](./images/ZedBoard/lab_4/char_fifo_before.jpg)
+
+右键打开的锁定原因：</p>
+![锁定原因](./images/ZedBoard/lab_4/lock_reason.jpg)
+
+升级后的char_fifo：</p>
+这里多了两个端口，具体作用可以自己检索，这两个端口由于之前没有会报错未连接，不影响本身实验，忽略报错即可。</p>
+![升级后](./images/ZedBoard/lab_4/char_fifo_after.jpg)
+
+报错内容：</p>
+![报错内容](./images/ZedBoard/lab_4/error.jpg)
+
+*后续第五个大步骤的升级IP核心就不需要再次进行升级了，因为已经升级过了*。</p>
+
+**实验结果**
+
+*IP核心summary*
+![IP核心summary](./images/ZedBoard/lab_4/ip_clk_summary.jpg)
+
+*device与utilization*
+![device与utilization](./images/ZedBoard/lab_4/device_&_utilization.jpg)
+
+*最终测试*
+![最终测试](./images/ZedBoard/lab_4/final_test.png)
+
 
 ### 3.5 实验 5
 > **重要文件：** [lab5 实验手册](./datasheet/lab5.pdf)
@@ -437,6 +471,7 @@ clogb2(DIVIDER)的作用是计算DIVIDER的二进制位数，这样就可以得�
 ## 4.课程设计（开发中）
 
 # 勘误
+## 错误1
 在 `lab2` 的顶层文件 `uart_led.v` 中，存在一个关于 `rst_clk` 信号处理的错误：
 该错误源于在设计中对 `rst_clk` 信号应用了反转操作，导致按键未按下时（默认低电平），`rst_clk` 被错误地反转为高电平，使得复位信号始终处于激活状态。由于复位信号持续有效，系统在无操作状态下无法正常工作，必须手动按下复位键，才能看到期望的实验现象。</p>
 具体出现在`uart_led.v`的69行：
@@ -449,3 +484,9 @@ clogb2(DIVIDER)的作用是计算DIVIDER的二进制位数，这样就可以得�
 错误的逻辑实验现象:
 
 ![错误现象](./images/err_test.gif)
+
+## 错误2
+在lab4中步骤`2-2-4`与`2-2-5`并不需要进行操作，因为本身的`clk_core clk_core_i0`已经存在了，不需要再次添加。</p>
+- [ ] **联系老师更改错误**</p>  <!--需要联系老师-->
+
+![错误位置](./images/ZedBoard/lab_4/step_not_need.jpg)

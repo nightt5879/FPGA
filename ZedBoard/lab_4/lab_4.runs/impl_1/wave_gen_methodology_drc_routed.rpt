@@ -1,0 +1,176 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Wed Oct  9 15:15:07 2024
+| Host         : nightt_insider running 64-bit major release  (build 9200)
+| Command      : report_methodology -file wave_gen_methodology_drc_routed.rpt -pb wave_gen_methodology_drc_routed.pb -rpx wave_gen_methodology_drc_routed.rpx
+| Design       : wave_gen
+| Device       : xc7z020clg484-1
+| Speed File   : -1
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: checkpoint_wave_gen
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 20
++-----------+----------+-------------------------------------------------------------------------------------------------------+------------+
+| Rule      | Severity | Description                                                                                           | Violations |
++-----------+----------+-------------------------------------------------------------------------------------------------------+------------+
+| LUTAR-1   | Warning  | LUT drives async reset alert                                                                          | 1          |
+| TIMING-9  | Warning  | Unknown CDC Logic                                                                                     | 1          |
+| TIMING-10 | Warning  | Missing property on synchronizer                                                                      | 1          |
+| TIMING-47 | Warning  | False path, asynchronous clock group or max delay datapath only constraint between synchronous clocks | 2          |
+| XDCC-1    | Warning  | Scoped Clock constraint overwritten with the same name                                                | 1          |
+| XDCC-7    | Warning  | Scoped Clock constraint overwritten on the same source                                                | 1          |
+| XDCH-2    | Warning  | Same min and max delay values on IO port                                                              | 13         |
++-----------+----------+-------------------------------------------------------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell clk_gen_i0/rst_meta_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) rst_gen_i0/reset_bridge_clk_rx_i0/rst_dst_reg/PRE,
+rst_gen_i0/reset_bridge_clk_rx_i0/rst_meta_reg/PRE,
+rst_gen_i0/reset_bridge_clk_samp_i0/rst_dst_reg/PRE,
+rst_gen_i0/reset_bridge_clk_samp_i0/rst_meta_reg/PRE,
+rst_gen_i0/reset_bridge_clk_tx_i0/rst_dst_reg/PRE
+rst_gen_i0/reset_bridge_clk_tx_i0/rst_meta_reg/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+TIMING-9#1 Warning
+Unknown CDC Logic  
+One or more asynchronous Clock Domain Crossing has been detected between 2 clock domains through a set_false_path or a set_clock_groups or set_max_delay -datapath_only constraint but no double-registers logic synchronizer has been found on the side of the capture clock. It is recommended to run report_cdc for a complete and detailed CDC coverage. Please consider using XPM_CDC to avoid Critical severities
+Related violations: <none>
+
+TIMING-10#1 Warning
+Missing property on synchronizer  
+One or more logic synchronizer has been detected between 2 clock domains but the synchronizer does not have the property ASYNC_REG defined on one or both registers. It is recommended to run report_cdc for a complete and detailed CDC coverage
+Related violations: <none>
+
+TIMING-47#1 Warning
+False path, asynchronous clock group or max delay datapath only constraint between synchronous clocks  
+A False Path timing constraint is set between synchronous clocks clk_out2_clk_core and clk_pin (see constraint position 8 in the Timing Constraint window in Vivado IDE). Masking entire synchronous clock domains via  set_false_path, set_clock_groups or set_max_delay -datapath_only may result in failure in hardware.
+Related violations: <none>
+
+TIMING-47#2 Warning
+False path, asynchronous clock group or max delay datapath only constraint between synchronous clocks  
+A False Path timing constraint is set between synchronous clocks clk_out2_clk_core and clk_pin (see constraint position 9 in the Timing Constraint window in Vivado IDE). Masking entire synchronous clock domains via  set_false_path, set_clock_groups or set_max_delay -datapath_only may result in failure in hardware.
+Related violations: <none>
+
+XDCC-1#1 Warning
+Scoped Clock constraint overwritten with the same name  
+A new clock constraint create_clock overrides a previous scoped clock constraint with the same name. It is not recommended to override a scoped (typically an IP) clock constraint and could result in unexpected behaviors.
+New: create_clock -period 10.000 -name clk_pin -waveform {0.000 5.000} [get_ports clk_pin] (Source: E:/robot/project/FPGA/ZedBoard/lab4_sources/wave_gen_timing.xdc (Line: 3))
+Previous: create_clock -period 10.000 [get_ports clk_pin] (Source: E:/robot/project/FPGA/ZedBoard/lab_4/lab_4.gen/sources_1/ip/clk_core/clk_core.xdc (Line: 53))
+Related violations: <none>
+
+XDCC-7#1 Warning
+Scoped Clock constraint overwritten on the same source  
+A new clock constraint create_clock overrides a previous scoped clock constraint defined on the same source. It is not recommended to override a scoped (typically an IP) clock constraint and could result in unexpected behaviors.
+New: create_clock -period 10.000 -name clk_pin -waveform {0.000 5.000} [get_ports clk_pin] (Source: E:/robot/project/FPGA/ZedBoard/lab4_sources/wave_gen_timing.xdc (Line: 3))
+Previous: create_clock -period 10.000 [get_ports clk_pin] (Source: E:/robot/project/FPGA/ZedBoard/lab_4/lab_4.gen/sources_1/ip/clk_core/clk_core.xdc (Line: 53))
+Related violations: <none>
+
+XDCH-2#1 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'dac_clr_n_pin' relative to clock clk_pin for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock clk_pin 0.000 [all_outputs]
+E:/robot/project/FPGA/ZedBoard/lab4_sources/wave_gen_timing.xdc (Line: 11)
+Related violations: <none>
+
+XDCH-2#2 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'dac_cs_n_pin' relative to clock clk_pin for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock clk_pin 0.000 [all_outputs]
+E:/robot/project/FPGA/ZedBoard/lab4_sources/wave_gen_timing.xdc (Line: 11)
+Related violations: <none>
+
+XDCH-2#3 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'led_pins[0]' relative to clock clk_pin for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock clk_pin 0.000 [all_outputs]
+E:/robot/project/FPGA/ZedBoard/lab4_sources/wave_gen_timing.xdc (Line: 11)
+Related violations: <none>
+
+XDCH-2#4 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'led_pins[1]' relative to clock clk_pin for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock clk_pin 0.000 [all_outputs]
+E:/robot/project/FPGA/ZedBoard/lab4_sources/wave_gen_timing.xdc (Line: 11)
+Related violations: <none>
+
+XDCH-2#5 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'led_pins[2]' relative to clock clk_pin for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock clk_pin 0.000 [all_outputs]
+E:/robot/project/FPGA/ZedBoard/lab4_sources/wave_gen_timing.xdc (Line: 11)
+Related violations: <none>
+
+XDCH-2#6 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'led_pins[3]' relative to clock clk_pin for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock clk_pin 0.000 [all_outputs]
+E:/robot/project/FPGA/ZedBoard/lab4_sources/wave_gen_timing.xdc (Line: 11)
+Related violations: <none>
+
+XDCH-2#7 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'led_pins[4]' relative to clock clk_pin for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock clk_pin 0.000 [all_outputs]
+E:/robot/project/FPGA/ZedBoard/lab4_sources/wave_gen_timing.xdc (Line: 11)
+Related violations: <none>
+
+XDCH-2#8 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'led_pins[5]' relative to clock clk_pin for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock clk_pin 0.000 [all_outputs]
+E:/robot/project/FPGA/ZedBoard/lab4_sources/wave_gen_timing.xdc (Line: 11)
+Related violations: <none>
+
+XDCH-2#9 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'led_pins[6]' relative to clock clk_pin for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock clk_pin 0.000 [all_outputs]
+E:/robot/project/FPGA/ZedBoard/lab4_sources/wave_gen_timing.xdc (Line: 11)
+Related violations: <none>
+
+XDCH-2#10 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'led_pins[7]' relative to clock clk_pin for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock clk_pin 0.000 [all_outputs]
+E:/robot/project/FPGA/ZedBoard/lab4_sources/wave_gen_timing.xdc (Line: 11)
+Related violations: <none>
+
+XDCH-2#11 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'spi_clk_pin' relative to clock clk_pin for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock clk_pin -clock_fall -add_delay 0.000 [get_ports spi_clk_pin]
+E:/robot/project/FPGA/ZedBoard/lab4_sources/wave_gen_timing.xdc (Line: 14)
+Related violations: <none>
+
+XDCH-2#12 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'spi_mosi_pin' relative to clock clk_pin for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock clk_pin 0.000 [all_outputs]
+E:/robot/project/FPGA/ZedBoard/lab4_sources/wave_gen_timing.xdc (Line: 11)
+Related violations: <none>
+
+XDCH-2#13 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'txd_pin' relative to clock clk_pin for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock clk_pin 0.000 [all_outputs]
+E:/robot/project/FPGA/ZedBoard/lab4_sources/wave_gen_timing.xdc (Line: 11)
+Related violations: <none>
+
+

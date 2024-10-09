@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1728458025">
+  <File Type="OPT-HWDEF" Name="wave_gen.hwdef"/>
+  <File Type="ROUTE-BUS-SKEW" Name="wave_gen_bus_skew_routed.rpt"/>
+  <File Type="PA-DCP" Name="wave_gen.dcp"/>
+  <File Type="ROUTE-PWR" Name="wave_gen_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="wave_gen.tcl"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="wave_gen_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="wave_gen_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="wave_gen_power_summary_routed.pb"/>
+  <File Type="OPT-RQA-PB" Name="wave_gen_rqa_opted.pb"/>
+  <File Type="REPORTS-TCL" Name="wave_gen_reports.tcl"/>
+  <File Type="OPT-TIMING" Name="wave_gen_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="wave_gen_opt.dcp"/>
+  <File Type="OPT-DRC" Name="wave_gen_drc_opted.rpt"/>
+  <File Type="PWROPT-DCP" Name="wave_gen_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="wave_gen_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="wave_gen_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="wave_gen_placed.dcp"/>
+  <File Type="PLACE-IO" Name="wave_gen_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="wave_gen_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="wave_gen_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="wave_gen_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="wave_gen_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="wave_gen_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="wave_gen_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BIN" Name="wave_gen.bin"/>
+  <File Type="PLACE-TIMING" Name="wave_gen_timing_summary_placed.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="wave_gen_power_routed.rpx"/>
+  <File Type="PLACE-RQA-PB" Name="wave_gen_rqa_placed.pb"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="wave_gen_postplace_pwropt.dcp"/>
+  <File Type="BITSTR-MSK" Name="wave_gen.msk"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="wave_gen_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="wave_gen_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="wave_gen_drc_physopted.rpt"/>
+  <File Type="BITSTR-RBT" Name="wave_gen.rbt"/>
+  <File Type="PHYSOPT-TIMING" Name="wave_gen_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="wave_gen_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="wave_gen_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="wave_gen_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="wave_gen_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="wave_gen_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="wave_gen_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="wave_gen_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="wave_gen_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="wave_gen_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-RQS-PB" Name="wave_gen_rqs_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="wave_gen_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="wave_gen_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="wave_gen_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="wave_gen_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="wave_gen_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="wave_gen_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="wave_gen_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="wave_gen_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="wave_gen_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="wave_gen_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="wave_gen_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="wave_gen_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="wave_gen_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="wave_gen_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="wave_gen_bus_skew_postroute_physopted.rpt"/>
+  <File Type="BG-BIT" Name="wave_gen.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="wave_gen_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="wave_gen_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-NKY" Name="wave_gen.nky"/>
+  <File Type="BITSTR-BMM" Name="wave_gen_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="wave_gen.mmi"/>
+  <File Type="PDI-FILE" Name="wave_gen.pdi"/>
+  <File Type="BOOT-PDI-FILE" Name="wave_gen_boot.pdi"/>
+  <File Type="PL-PDI-FILE" Name="wave_gen_pld.pdi"/>
+  <File Type="RCFI_FILE" Name="wave_gen.rcfi"/>
+  <File Type="CFI_FILE" Name="wave_gen.cfi"/>
+  <File Type="RNPI_FILE" Name="wave_gen.rnpi"/>
+  <File Type="NPI_FILE" Name="wave_gen.npi"/>
+  <File Type="RBD_FILE" Name="wave_gen.rbd"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="wave_gen.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="wave_gen.sysdef"/>
+  <File Type="BG-BGN" Name="wave_gen.bgn"/>
+  <File Type="BG-DRC" Name="wave_gen.drc"/>
+  <File Type="RDI-RDI" Name="wave_gen.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="ROUTE-RQS" Name="wave_gen_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="wave_gen_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../lab4_sources/clk_div.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../lab4_sources/clk_gen.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../lab4_sources/clogb2.txt"/>
+    <File Path="$PPRDIR/../lab4_sources/clkx_bus.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../lab4_sources/cmd_parse.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../lab4_sources/dac_spi.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../lab4_sources/debouncer.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../lab4_sources/lb_ctl.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../lab4_sources/meta_harden.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../lab4_sources/out_ddr_flop.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../lab4_sources/reset_bridge.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../lab4_sources/resp_gen.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../lab4_sources/rst_gen.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../lab4_sources/samp_gen.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../lab4_sources/samp_ram.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../lab4_sources/to_bcd.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../lab4_sources/uart_baud_gen.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../lab4_sources/uart_rx.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../lab4_sources/uart_rx_ctl.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../lab4_sources/uart_tx.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../lab4_sources/uart_tx_ctl.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../lab4_sources/wave_gen.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="wave_gen"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/../lab4_sources/wave_gen_pins.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../lab4_sources/wave_gen_timing.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="clk_core"/>
+  <BlockFileSet Type="BlockSrcs" Name="char_fifo"/>
+</GenRun>

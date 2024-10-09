@@ -1,0 +1,100 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Wed Oct  9 15:08:11 2024
+| Host         : nightt_insider running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'char_fifo'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of char_fifo from xilinx.com:ip:fifo_generator:10.0 (Rev. 1) to xilinx.com:ip:fifo_generator:13.2 (Rev. 10)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'char_fifo'.
+
+
+-Upgrade has added interface 'FIFO_READ' (xilinx.com:interface:fifo_read:1.0)
+
+-Upgrade has added interface 'FIFO_WRITE' (xilinx.com:interface:fifo_write:1.0)
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'char_fifo'. These changes may impact your design.
+
+
+-Upgrade has added port 'rd_rst_busy'
+
+-Upgrade has added port 'wr_rst_busy'
+
+
+4. Upgrade messages
+-------------------
+
+Renamed parameter AXI_ADDRESS_WIDTH (instead of AXI_Address_Width) to ADDRESS_WIDTH
+Renamed parameter INTERFACE_TYPE (instead of Interface_Type) to INTERFACE_TYPE
+WARNING: there are only case-insensitive matches AXI_TYPE for parameter AXI_Type
+Added parameter DATA_WIDTH with value 64 (source 'default')
+Added parameter PROTOCOL with value AXI4 (source 'default')
+Set parameter ID_WIDTH to value 0 (source 'default')
+Set parameter ADDRESS_WIDTH to value 32 (source 'default')
+Removed parameter AXI_DATA_WIDTH (instead of AXI_Data_Width)
+Removed parameter AXI_TYPE (instead of AXI_Type)
+WARNING: there are only case-insensitive matches ENABLE_READ_CHANNEL for parameter Enable_Read_Channel
+WARNING: there are only case-insensitive matches ENABLE_WRITE_CHANNEL for parameter Enable_Write_Channel
+Added parameter READ_WRITE_MODE with value READ_WRITE (source 'default')
+Removed parameter ENABLE_READ_CHANNEL (instead of Enable_Read_Channel)
+Removed parameter ENABLE_WRITE_CHANNEL (instead of Enable_Write_Channel)
+Renamed parameter TID_WIDTH (instead of TID_Width) to TID_WIDTH
+Renamed parameter TKEEP_WIDTH (instead of TKEEP_Width) to TKEEP_WIDTH
+Renamed parameter TDEST_WIDTH (instead of TDEST_Width) to TDEST_WIDTH
+Renamed parameter TSTRB_WIDTH (instead of TSTRB_Width) to TSTRB_WIDTH
+Renamed parameter ENABLE_TSTROBE (instead of Enable_TSTROBE) to HAS_TSTRB
+Renamed parameter ENABLE_TKEEP (instead of Enable_TKEEP) to HAS_TKEEP
+Added parameter TDATA_NUM_BYTES with value 0 (source 'default')
+Set parameter TSTRB_WIDTH to value 0 (source 'default')
+Set parameter TKEEP_WIDTH to value 0 (source 'default')
+Set parameter TID_WIDTH to value 0 (source 'default')
+Set parameter TDEST_WIDTH to value 0 (source 'default')
+Removed parameter TDATA_WIDTH (instead of TDATA_Width)
+Removed parameter ENABLE_TDATA (instead of Enable_TDATA)
+WARNING: there are only case-insensitive matches USE_CLOCK_ENABLE for parameter Use_Clock_Enable
+Added parameter HAS_ACLKEN with value false (source 'default')
+Removed parameter USE_CLOCK_ENABLE (instead of Use_Clock_Enable)
+Removed parameter ENABLE_TID (instead of Enable_TID)
+Removed parameter ENABLE_TDEST (instead of Enable_TDEST)
+Renamed parameter TUSER_WIDTH (instead of TUSER_Width) to TUSER_WIDTH
+WARNING: there are only case-insensitive matches ENABLE_TUSER for parameter Enable_TUSER
+Set parameter TUSER_WIDTH to value 4 (source 'default')
+Removed parameter ENABLE_TUSER (instead of Enable_TUSER)
+WARNING: there are only case-insensitive matches ENABLE_AWUSER for parameter Enable_AWUSER
+Set parameter AWUSER_WIDTH (instead of AWUSER_Width) to value 0 (source 'default')
+Removed parameter ENABLE_AWUSER (instead of Enable_AWUSER)
+WARNING: there are only case-insensitive matches ENABLE_WUSER for parameter Enable_WUSER
+Set parameter WUSER_WIDTH (instead of WUSER_Width) to value 0 (source 'default')
+Removed parameter ENABLE_WUSER (instead of Enable_WUSER)
+WARNING: there are only case-insensitive matches ENABLE_BUSER for parameter Enable_BUSER
+Set parameter BUSER_WIDTH (instead of BUSER_Width) to value 0 (source 'default')
+Removed parameter ENABLE_BUSER (instead of Enable_BUSER)
+WARNING: there are only case-insensitive matches ENABLE_ARUSER for parameter Enable_ARUSER
+Set parameter ARUSER_WIDTH (instead of ARUSER_Width) to value 0 (source 'default')
+Removed parameter ENABLE_ARUSER (instead of Enable_ARUSER)
+WARNING: there are only case-insensitive matches ENABLE_RUSER for parameter Enable_RUSER
+Set parameter RUSER_WIDTH (instead of RUSER_Width) to value 0 (source 'default')
+Removed parameter ENABLE_RUSER (instead of Enable_RUSER)
+Added parameter asymmetric_port_width with value false (source 'default')
+Added parameter ecc_pipeline_reg with value false (source 'default')
+Added parameter dynamic_power_saving with value false (source 'default')
+WARNING: there are only case-insensitive matches FIFO_IMPLEMENTATION for parameter Fifo_Implementation
+WARNING: there are only case-insensitive matches FIFO_IMPLEMENTATION for parameter Fifo_Implementation
+

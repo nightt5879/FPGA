@@ -2,6 +2,7 @@
 - [Front-end Design of Digital Integrated Circuits and High-level Synthesis](#front-end-design-of-digital-integrated-circuits-and-high-level-synthesis)
   - [1. Preface](#1-preface)
     - [1.1 Software and Hardware Environment](#11-software-and-hardware-environment)
+    - [1.2 Precautions](#12-precautions)
   - [2. Lab Content](#2-lab-content)
     - [2.1 Lab 1](#21-lab-1)
     - [2.2 Experiment 2](#22-experiment-2)
@@ -54,6 +55,13 @@ The purpose of this project is, firstly, to complete the six labs and the course
 
 **ZedBoard**:
 ![ZedBoard](./images/ZedBoard.jpg)
+
+### 1.2 Precautions
+For this set of experiments, except for Experiment 1, the remaining experiments (2, 3, 4, 5, 6) all require the use of UART. From the XDC file, it can be determined that the UART is mapped to pins JA2 and JA3, so the UART connected to the top-left USB is not used (this is the PS-configured UART, not the PL-configured UART).</p>
+
+Correct UART connection:</p>
+<sub>Location is in the lower-left corner of the board, and the IO pins can be identified by the silk screen markings.</sub></p>
+![UART Connection](./images/uart_link.jpg)
 
 
 ## 2. Lab Content
@@ -420,7 +428,38 @@ The phenomenon is the same as in lab2. Please refer to the final test of lab2 fo
 ### 3.4 Experiment 4
 > **Important Document:** [Lab 4 Manual](./datasheet/lab4.pdf)
 
-(In Development)
+Experiment 4 primarily teaches how to use IP cores, but there is a compatibility issue with newer versions of Vivado. To resolve this, open `IP Sources`, right-click `char_fifo`, and select `Upgrade IP`, then proceed with configuring the IP core.
+
+Before upgrading, a red lock icon will be displayed:
+
+![Before Upgrade](./images/ZedBoard/lab_4/char_fifo_before.jpg)
+
+Right-click to see the lock reason:
+
+![Lock Reason](./images/ZedBoard/lab_4/lock_reason.jpg)
+
+Upgraded version of `char_fifo`:
+
+After upgrading, two new ports are added. You can look up their specific functions yourself. These two ports may generate connection errors since they didn't exist previously. You can safely ignore these errors as they do not impact the main experiment.
+
+![After Upgrade](./images/ZedBoard/lab_4/char_fifo_after.jpg)
+
+Error message:
+
+![Error Message](./images/ZedBoard/lab_4/error.jpg)
+
+*Note that in the subsequent fifth major step, you do not need to upgrade the IP core again, as it has already been upgraded.*
+
+**Experimental Results**
+
+*IP Core Summary*
+![IP Core Summary](./images/ZedBoard/lab_4/ip_clk_summary.jpg)
+
+*Device and Utilization*
+![Device and Utilization](./images/ZedBoard/lab_4/device_&_utilization.jpg)
+
+*Final Test*
+![Final Test](./images/ZedBoard/lab_4/final_test.png)
 
 ### 3.5 Experiment 5
 > **Important Document:** [Lab 5 Manual](./datasheet/lab5.pdf)

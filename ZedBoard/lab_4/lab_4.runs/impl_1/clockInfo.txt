@@ -1,0 +1,10 @@
+-------------------------------------
+| Tool Version : Vivado v.2024.1
+| Date         : Wed Oct  9 15:14:29 2024
+| Host         : nightt_insider
+| Design       : checkpoint_wave_gen
+| Device       : xc7z020-clg484-1--
+-------------------------------------
+
+For more information on clockInfo.txt clock routing debug file see https://support.xilinx.com/s/article/000035660?language=en_US
+
