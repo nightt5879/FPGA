@@ -1,0 +1,500 @@
+
+*** Running vivado
+    with args -log wave_gen.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source wave_gen.tcl
+
+
+
+****** Vivado v2024.1 (64-bit)
+  **** SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Wed Oct  9 15:11:11 2024
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source wave_gen.tcl -notrace
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 629.488 ; gain = 199.363
+Command: synth_design -top wave_gen -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Device 21-9227] Part: xc7z020clg484-1 does not have CEAM library.
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 15448
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1527.023 ; gain = 451.434
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-11065] parameter 'NSAMP_MIN' becomes localparam in 'cmd_parse' with formal parameter declaration list [E:/robot/project/FPGA/ZedBoard/lab4_sources/cmd_parse.v:87]
+WARNING: [Synth 8-11065] parameter 'NSAMP_MAX' becomes localparam in 'cmd_parse' with formal parameter declaration list [E:/robot/project/FPGA/ZedBoard/lab4_sources/cmd_parse.v:88]
+WARNING: [Synth 8-11065] parameter 'PRESCALE_MIN' becomes localparam in 'cmd_parse' with formal parameter declaration list [E:/robot/project/FPGA/ZedBoard/lab4_sources/cmd_parse.v:89]
+WARNING: [Synth 8-11065] parameter 'SPEED_MIN' becomes localparam in 'cmd_parse' with formal parameter declaration list [E:/robot/project/FPGA/ZedBoard/lab4_sources/cmd_parse.v:90]
+WARNING: [Synth 8-11065] parameter 'RAM_MAX' becomes localparam in 'cmd_parse' with formal parameter declaration list [E:/robot/project/FPGA/ZedBoard/lab4_sources/cmd_parse.v:91]
+WARNING: [Synth 8-11065] parameter 'SAMP_WID' becomes localparam in 'cmd_parse' with formal parameter declaration list [E:/robot/project/FPGA/ZedBoard/lab4_sources/cmd_parse.v:92]
+WARNING: [Synth 8-11065] parameter 'PRE_WID' becomes localparam in 'cmd_parse' with formal parameter declaration list [E:/robot/project/FPGA/ZedBoard/lab4_sources/cmd_parse.v:93]
+WARNING: [Synth 8-11065] parameter 'SPD_WID' becomes localparam in 'cmd_parse' with formal parameter declaration list [E:/robot/project/FPGA/ZedBoard/lab4_sources/cmd_parse.v:94]
+WARNING: [Synth 8-11065] parameter 'MAX_ARG_CH' becomes localparam in 'cmd_parse' with formal parameter declaration list [E:/robot/project/FPGA/ZedBoard/lab4_sources/cmd_parse.v:95]
+INFO: [Synth 8-11241] undeclared symbol 'start_spi', assumed default net type 'wire' [E:/robot/project/FPGA/ZedBoard/lab4_sources/dac_spi.v:85]
+INFO: [Synth 8-11241] undeclared symbol 'dac_clr_n_o', assumed default net type 'wire' [E:/robot/project/FPGA/ZedBoard/lab4_sources/wave_gen.v:191]
+INFO: [Synth 8-6157] synthesizing module 'wave_gen' [E:/robot/project/FPGA/ZedBoard/lab4_sources/wave_gen.v:32]
+INFO: [Synth 8-6157] synthesizing module 'IBUF' [E:/vivado/Vivado/2024.1/scripts/rt/data/unisim_comp.v:73643]
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (0#1) [E:/vivado/Vivado/2024.1/scripts/rt/data/unisim_comp.v:73643]
+INFO: [Synth 8-6157] synthesizing module 'OBUF' [E:/vivado/Vivado/2024.1/scripts/rt/data/unisim_comp.v:96458]
+INFO: [Synth 8-6155] done synthesizing module 'OBUF' (0#1) [E:/vivado/Vivado/2024.1/scripts/rt/data/unisim_comp.v:96458]
+INFO: [Synth 8-6157] synthesizing module 'clk_gen' [E:/robot/project/FPGA/ZedBoard/lab4_sources/clk_gen.v:33]
+INFO: [Synth 8-6157] synthesizing module 'clk_div' [E:/robot/project/FPGA/ZedBoard/lab4_sources/clk_div.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'clk_div' (0#1) [E:/robot/project/FPGA/ZedBoard/lab4_sources/clk_div.v:30]
+INFO: [Synth 8-6157] synthesizing module 'clk_core' [E:/robot/project/FPGA/ZedBoard/lab_4/lab_4.runs/synth_1/.Xil/Vivado-28300-nightt_insider/realtime/clk_core_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'clk_core' (0#1) [E:/robot/project/FPGA/ZedBoard/lab_4/lab_4.runs/synth_1/.Xil/Vivado-28300-nightt_insider/realtime/clk_core_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'BUFHCE' [E:/vivado/Vivado/2024.1/scripts/rt/data/unisim_comp.v:2209]
+	Parameter INIT_OUT bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'BUFHCE' (0#1) [E:/vivado/Vivado/2024.1/scripts/rt/data/unisim_comp.v:2209]
+INFO: [Synth 8-6155] done synthesizing module 'clk_gen' (0#1) [E:/robot/project/FPGA/ZedBoard/lab4_sources/clk_gen.v:33]
+INFO: [Synth 8-6157] synthesizing module 'rst_gen' [E:/robot/project/FPGA/ZedBoard/lab4_sources/rst_gen.v:26]
+INFO: [Synth 8-6157] synthesizing module 'reset_bridge' [E:/robot/project/FPGA/ZedBoard/lab4_sources/reset_bridge.v:35]
+INFO: [Synth 8-6155] done synthesizing module 'reset_bridge' (0#1) [E:/robot/project/FPGA/ZedBoard/lab4_sources/reset_bridge.v:35]
+INFO: [Synth 8-6155] done synthesizing module 'rst_gen' (0#1) [E:/robot/project/FPGA/ZedBoard/lab4_sources/rst_gen.v:26]
+INFO: [Synth 8-6157] synthesizing module 'uart_rx' [E:/robot/project/FPGA/ZedBoard/lab4_sources/uart_rx.v:37]
+	Parameter BAUD_RATE bound to: 115200 - type: integer 
+	Parameter CLOCK_RATE bound to: 100000000 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'meta_harden' [E:/robot/project/FPGA/ZedBoard/lab4_sources/meta_harden.v:27]
+INFO: [Synth 8-6155] done synthesizing module 'meta_harden' (0#1) [E:/robot/project/FPGA/ZedBoard/lab4_sources/meta_harden.v:27]
+INFO: [Synth 8-6157] synthesizing module 'uart_baud_gen' [E:/robot/project/FPGA/ZedBoard/lab4_sources/uart_baud_gen.v:35]
+	Parameter BAUD_RATE bound to: 115200 - type: integer 
+	Parameter CLOCK_RATE bound to: 100000000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'uart_baud_gen' (0#1) [E:/robot/project/FPGA/ZedBoard/lab4_sources/uart_baud_gen.v:35]
+INFO: [Synth 8-6157] synthesizing module 'uart_rx_ctl' [E:/robot/project/FPGA/ZedBoard/lab4_sources/uart_rx_ctl.v:52]
+INFO: [Synth 8-6155] done synthesizing module 'uart_rx_ctl' (0#1) [E:/robot/project/FPGA/ZedBoard/lab4_sources/uart_rx_ctl.v:52]
+INFO: [Synth 8-6155] done synthesizing module 'uart_rx' (0#1) [E:/robot/project/FPGA/ZedBoard/lab4_sources/uart_rx.v:37]
+INFO: [Synth 8-6157] synthesizing module 'cmd_parse' [E:/robot/project/FPGA/ZedBoard/lab4_sources/cmd_parse.v:37]
+	Parameter NSAMP_WID bound to: 10 - type: integer 
+	Parameter PW bound to: 3 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [E:/robot/project/FPGA/ZedBoard/lab4_sources/cmd_parse.v:365]
+INFO: [Synth 8-6155] done synthesizing module 'cmd_parse' (0#1) [E:/robot/project/FPGA/ZedBoard/lab4_sources/cmd_parse.v:37]
+INFO: [Synth 8-6157] synthesizing module 'samp_ram' [E:/robot/project/FPGA/ZedBoard/lab4_sources/samp_ram.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'samp_ram' (0#1) [E:/robot/project/FPGA/ZedBoard/lab4_sources/samp_ram.v:25]
+INFO: [Synth 8-6157] synthesizing module 'resp_gen' [E:/robot/project/FPGA/ZedBoard/lab4_sources/resp_gen.v:41]
+INFO: [Synth 8-6157] synthesizing module 'to_bcd' [E:/robot/project/FPGA/ZedBoard/lab4_sources/to_bcd.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'to_bcd' (0#1) [E:/robot/project/FPGA/ZedBoard/lab4_sources/to_bcd.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'resp_gen' (0#1) [E:/robot/project/FPGA/ZedBoard/lab4_sources/resp_gen.v:41]
+INFO: [Synth 8-6157] synthesizing module 'char_fifo' [E:/robot/project/FPGA/ZedBoard/lab_4/lab_4.runs/synth_1/.Xil/Vivado-28300-nightt_insider/realtime/char_fifo_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'char_fifo' (0#1) [E:/robot/project/FPGA/ZedBoard/lab_4/lab_4.runs/synth_1/.Xil/Vivado-28300-nightt_insider/realtime/char_fifo_stub.v:6]
+WARNING: [Synth 8-7071] port 'wr_rst_busy' of module 'char_fifo' is unconnected for instance 'char_fifo_i0' [E:/robot/project/FPGA/ZedBoard/lab4_sources/wave_gen.v:336]
+WARNING: [Synth 8-7071] port 'rd_rst_busy' of module 'char_fifo' is unconnected for instance 'char_fifo_i0' [E:/robot/project/FPGA/ZedBoard/lab4_sources/wave_gen.v:336]
+WARNING: [Synth 8-7023] instance 'char_fifo_i0' of module 'char_fifo' has 11 connections declared, but only 9 given [E:/robot/project/FPGA/ZedBoard/lab4_sources/wave_gen.v:336]
+INFO: [Synth 8-6157] synthesizing module 'uart_tx' [E:/robot/project/FPGA/ZedBoard/lab4_sources/uart_tx.v:35]
+	Parameter BAUD_RATE bound to: 115200 - type: integer 
+	Parameter CLOCK_RATE bound to: 100000000 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'uart_tx_ctl' [E:/robot/project/FPGA/ZedBoard/lab4_sources/uart_tx_ctl.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'uart_tx_ctl' (0#1) [E:/robot/project/FPGA/ZedBoard/lab4_sources/uart_tx_ctl.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'uart_tx' (0#1) [E:/robot/project/FPGA/ZedBoard/lab4_sources/uart_tx.v:35]
+INFO: [Synth 8-6157] synthesizing module 'lb_ctl' [E:/robot/project/FPGA/ZedBoard/lab4_sources/lb_ctl.v:32]
+INFO: [Synth 8-6157] synthesizing module 'debouncer' [E:/robot/project/FPGA/ZedBoard/lab4_sources/debouncer.v:26]
+	Parameter FILTER bound to: 200000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'debouncer' (0#1) [E:/robot/project/FPGA/ZedBoard/lab4_sources/debouncer.v:26]
+INFO: [Synth 8-6155] done synthesizing module 'lb_ctl' (0#1) [E:/robot/project/FPGA/ZedBoard/lab4_sources/lb_ctl.v:32]
+INFO: [Synth 8-6157] synthesizing module 'clkx_bus' [E:/robot/project/FPGA/ZedBoard/lab4_sources/clkx_bus.v:34]
+	Parameter PW bound to: 3 - type: integer 
+	Parameter WIDTH bound to: 11 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clkx_bus' (0#1) [E:/robot/project/FPGA/ZedBoard/lab4_sources/clkx_bus.v:34]
+INFO: [Synth 8-6157] synthesizing module 'clkx_bus__parameterized0' [E:/robot/project/FPGA/ZedBoard/lab4_sources/clkx_bus.v:34]
+	Parameter PW bound to: 3 - type: integer 
+	Parameter WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clkx_bus__parameterized0' (0#1) [E:/robot/project/FPGA/ZedBoard/lab4_sources/clkx_bus.v:34]
+INFO: [Synth 8-6157] synthesizing module 'samp_gen' [E:/robot/project/FPGA/ZedBoard/lab4_sources/samp_gen.v:43]
+	Parameter NSAMP_WID bound to: 10 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'samp_gen' (0#1) [E:/robot/project/FPGA/ZedBoard/lab4_sources/samp_gen.v:43]
+INFO: [Synth 8-6157] synthesizing module 'dac_spi' [E:/robot/project/FPGA/ZedBoard/lab4_sources/dac_spi.v:32]
+INFO: [Synth 8-6157] synthesizing module 'out_ddr_flop' [E:/robot/project/FPGA/ZedBoard/lab4_sources/out_ddr_flop.v:28]
+INFO: [Synth 8-6157] synthesizing module 'ODDR' [E:/vivado/Vivado/2024.1/scripts/rt/data/unisim_comp.v:100102]
+	Parameter DDR_CLK_EDGE bound to: OPPOSITE_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'ODDR' (0#1) [E:/vivado/Vivado/2024.1/scripts/rt/data/unisim_comp.v:100102]
+INFO: [Synth 8-6155] done synthesizing module 'out_ddr_flop' (0#1) [E:/robot/project/FPGA/ZedBoard/lab4_sources/out_ddr_flop.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'dac_spi' (0#1) [E:/robot/project/FPGA/ZedBoard/lab4_sources/dac_spi.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'wave_gen' (0#1) [E:/robot/project/FPGA/ZedBoard/lab4_sources/wave_gen.v:32]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1653.375 ; gain = 577.785
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1653.375 ; gain = 577.785
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1653.375 ; gain = 577.785
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 1653.375 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/robot/project/FPGA/ZedBoard/lab_4/lab_4.gen/sources_1/ip/clk_core/clk_core/clk_core_in_context.xdc] for cell 'clk_gen_i0/clk_core_i0'
+Finished Parsing XDC File [e:/robot/project/FPGA/ZedBoard/lab_4/lab_4.gen/sources_1/ip/clk_core/clk_core/clk_core_in_context.xdc] for cell 'clk_gen_i0/clk_core_i0'
+Parsing XDC File [e:/robot/project/FPGA/ZedBoard/lab4_sources/ip/char_fifo/char_fifo/char_fifo_in_context.xdc] for cell 'char_fifo_i0'
+Finished Parsing XDC File [e:/robot/project/FPGA/ZedBoard/lab4_sources/ip/char_fifo/char_fifo/char_fifo_in_context.xdc] for cell 'char_fifo_i0'
+Parsing XDC File [E:/robot/project/FPGA/ZedBoard/lab4_sources/wave_gen_pins.xdc]
+Finished Parsing XDC File [E:/robot/project/FPGA/ZedBoard/lab4_sources/wave_gen_pins.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/robot/project/FPGA/ZedBoard/lab4_sources/wave_gen_pins.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/wave_gen_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/wave_gen_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [E:/robot/project/FPGA/ZedBoard/lab4_sources/wave_gen_timing.xdc]
+WARNING: [Constraints 18-619] A clock with name 'clk_pin' already exists, overwriting the previous clock with the same name. [E:/robot/project/FPGA/ZedBoard/lab4_sources/wave_gen_timing.xdc:3]
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [E:/robot/project/FPGA/ZedBoard/lab4_sources/wave_gen_timing.xdc:19]
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [E:/robot/project/FPGA/ZedBoard/lab4_sources/wave_gen_timing.xdc:22]
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [E:/robot/project/FPGA/ZedBoard/lab4_sources/wave_gen_timing.xdc:25]
+INFO: [Vivado 12-2286] Implicit search of objects for pattern 'clkx_nsamp_i0/meta_harden_bus_new_i0/signal_meta_reg' matched to 'cell' objects. [E:/robot/project/FPGA/ZedBoard/lab4_sources/wave_gen_timing.xdc:29]
+Resolution: To avoid ambiguous patterns, provide proper objects using get commands e.g. [get_nets xyz].
+INFO: [Vivado 12-2286] Implicit search of objects for pattern 'clkx_nsamp_i0/meta_harden_bus_new_i0/signal_dst_reg' matched to 'cell' objects. [E:/robot/project/FPGA/ZedBoard/lab4_sources/wave_gen_timing.xdc:29]
+Resolution: To avoid ambiguous patterns, provide proper objects using get commands e.g. [get_nets xyz].
+INFO: [Vivado 12-2286] Implicit search of objects for pattern 'clkx_pre_i0/meta_harden_bus_new_i0/signal_meta_reg' matched to 'cell' objects. [E:/robot/project/FPGA/ZedBoard/lab4_sources/wave_gen_timing.xdc:30]
+Resolution: To avoid ambiguous patterns, provide proper objects using get commands e.g. [get_nets xyz].
+INFO: [Vivado 12-2286] Implicit search of objects for pattern 'clkx_pre_i0/meta_harden_bus_new_i0/signal_dst_reg' matched to 'cell' objects. [E:/robot/project/FPGA/ZedBoard/lab4_sources/wave_gen_timing.xdc:30]
+Resolution: To avoid ambiguous patterns, provide proper objects using get commands e.g. [get_nets xyz].
+INFO: [Vivado 12-2286] Implicit search of objects for pattern 'clkx_spd_i0/meta_harden_bus_new_i0/signal_meta_reg' matched to 'cell' objects. [E:/robot/project/FPGA/ZedBoard/lab4_sources/wave_gen_timing.xdc:31]
+Resolution: To avoid ambiguous patterns, provide proper objects using get commands e.g. [get_nets xyz].
+INFO: [Vivado 12-2286] Implicit search of objects for pattern 'clkx_spd_i0/meta_harden_bus_new_i0/signal_dst_reg' matched to 'cell' objects. [E:/robot/project/FPGA/ZedBoard/lab4_sources/wave_gen_timing.xdc:31]
+Resolution: To avoid ambiguous patterns, provide proper objects using get commands e.g. [get_nets xyz].
+INFO: [Vivado 12-2286] Implicit search of objects for pattern 'lb_ctl_i0/debouncer_i0/meta_harden_signal_in_i0/signal_meta_reg' matched to 'cell' objects. [E:/robot/project/FPGA/ZedBoard/lab4_sources/wave_gen_timing.xdc:32]
+Resolution: To avoid ambiguous patterns, provide proper objects using get commands e.g. [get_nets xyz].
+INFO: [Vivado 12-2286] Implicit search of objects for pattern 'lb_ctl_i0/debouncer_i0/meta_harden_signal_in_i0/signal_dst_reg' matched to 'cell' objects. [E:/robot/project/FPGA/ZedBoard/lab4_sources/wave_gen_timing.xdc:32]
+Resolution: To avoid ambiguous patterns, provide proper objects using get commands e.g. [get_nets xyz].
+INFO: [Vivado 12-2286] Implicit search of objects for pattern 'samp_gen_i0/meta_harden_samp_gen_go_i0/signal_meta_reg' matched to 'cell' objects. [E:/robot/project/FPGA/ZedBoard/lab4_sources/wave_gen_timing.xdc:33]
+Resolution: To avoid ambiguous patterns, provide proper objects using get commands e.g. [get_nets xyz].
+INFO: [Vivado 12-2286] Implicit search of objects for pattern 'samp_gen_i0/meta_harden_samp_gen_go_i0/signal_dst_reg' matched to 'cell' objects. [E:/robot/project/FPGA/ZedBoard/lab4_sources/wave_gen_timing.xdc:33]
+Resolution: To avoid ambiguous patterns, provide proper objects using get commands e.g. [get_nets xyz].
+INFO: [Vivado 12-2286] Implicit search of objects for pattern 'uart_rx_i0/meta_harden_rxd_i0/signal_meta_reg' matched to 'cell' objects. [E:/robot/project/FPGA/ZedBoard/lab4_sources/wave_gen_timing.xdc:34]
+Resolution: To avoid ambiguous patterns, provide proper objects using get commands e.g. [get_nets xyz].
+INFO: [Vivado 12-2286] Implicit search of objects for pattern 'uart_rx_i0/meta_harden_rxd_i0/signal_dst_reg' matched to 'cell' objects. [E:/robot/project/FPGA/ZedBoard/lab4_sources/wave_gen_timing.xdc:34]
+Resolution: To avoid ambiguous patterns, provide proper objects using get commands e.g. [get_nets xyz].
+INFO: [Vivado 12-2286] Implicit search of objects for pattern 'rst_gen_i0/reset_bridge_clk_rx_i0/rst_meta_reg' matched to 'cell' objects. [E:/robot/project/FPGA/ZedBoard/lab4_sources/wave_gen_timing.xdc:36]
+Resolution: To avoid ambiguous patterns, provide proper objects using get commands e.g. [get_nets xyz].
+INFO: [Vivado 12-2286] Implicit search of objects for pattern 'rst_gen_i0/reset_bridge_clk_rx_i0/rst_dst_reg' matched to 'cell' objects. [E:/robot/project/FPGA/ZedBoard/lab4_sources/wave_gen_timing.xdc:36]
+Resolution: To avoid ambiguous patterns, provide proper objects using get commands e.g. [get_nets xyz].
+INFO: [Vivado 12-2286] Implicit search of objects for pattern 'rst_gen_i0/reset_bridge_clk_tx_i0/rst_meta_reg' matched to 'cell' objects. [E:/robot/project/FPGA/ZedBoard/lab4_sources/wave_gen_timing.xdc:37]
+Resolution: To avoid ambiguous patterns, provide proper objects using get commands e.g. [get_nets xyz].
+INFO: [Vivado 12-2286] Implicit search of objects for pattern 'rst_gen_i0/reset_bridge_clk_tx_i0/rst_dst_reg' matched to 'cell' objects. [E:/robot/project/FPGA/ZedBoard/lab4_sources/wave_gen_timing.xdc:37]
+Resolution: To avoid ambiguous patterns, provide proper objects using get commands e.g. [get_nets xyz].
+INFO: [Vivado 12-2286] Implicit search of objects for pattern 'rst_gen_i0/reset_bridge_clk_samp_i0/rst_meta_reg' matched to 'cell' objects. [E:/robot/project/FPGA/ZedBoard/lab4_sources/wave_gen_timing.xdc:38]
+Resolution: To avoid ambiguous patterns, provide proper objects using get commands e.g. [get_nets xyz].
+INFO: [Vivado 12-2286] Implicit search of objects for pattern 'rst_gen_i0/reset_bridge_clk_samp_i0/rst_dst_reg' matched to 'cell' objects. [E:/robot/project/FPGA/ZedBoard/lab4_sources/wave_gen_timing.xdc:38]
+Resolution: To avoid ambiguous patterns, provide proper objects using get commands e.g. [get_nets xyz].
+Finished Parsing XDC File [E:/robot/project/FPGA/ZedBoard/lab4_sources/wave_gen_timing.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/robot/project/FPGA/ZedBoard/lab4_sources/wave_gen_timing.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/wave_gen_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/wave_gen_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1748.684 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1748.684 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1748.684 ; gain = 673.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1748.684 ; gain = 673.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk_pin. (constraint file  e:/robot/project/FPGA/ZedBoard/lab_4/lab_4.gen/sources_1/ip/clk_core/clk_core/clk_core_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_pin. (constraint file  e:/robot/project/FPGA/ZedBoard/lab_4/lab_4.gen/sources_1/ip/clk_core/clk_core/clk_core_in_context.xdc, line 5).
+Applied set_property IOB = TRUE for OBUF_txd. (constraint file  E:/robot/project/FPGA/ZedBoard/lab4_sources/wave_gen_pins.xdc, line 63).
+Applied set_property IOB = TRUE for OBUF_spi_clk. (constraint file  E:/robot/project/FPGA/ZedBoard/lab4_sources/wave_gen_pins.xdc, line 63).
+Applied set_property IOB = TRUE for OBUF_spi_mosi. (constraint file  E:/robot/project/FPGA/ZedBoard/lab4_sources/wave_gen_pins.xdc, line 63).
+Applied set_property IOB = TRUE for OBUF_dac_cs_n. (constraint file  E:/robot/project/FPGA/ZedBoard/lab4_sources/wave_gen_pins.xdc, line 63).
+Applied set_property IOB = TRUE for OBUF_dac_clr_n. (constraint file  E:/robot/project/FPGA/ZedBoard/lab4_sources/wave_gen_pins.xdc, line 63).
+Applied set_property IOB = TRUE for OBUF_led_i7. (constraint file  E:/robot/project/FPGA/ZedBoard/lab4_sources/wave_gen_pins.xdc, line 63).
+Applied set_property IOB = TRUE for OBUF_led_i6. (constraint file  E:/robot/project/FPGA/ZedBoard/lab4_sources/wave_gen_pins.xdc, line 63).
+Applied set_property IOB = TRUE for OBUF_led_i5. (constraint file  E:/robot/project/FPGA/ZedBoard/lab4_sources/wave_gen_pins.xdc, line 63).
+Applied set_property IOB = TRUE for OBUF_led_i4. (constraint file  E:/robot/project/FPGA/ZedBoard/lab4_sources/wave_gen_pins.xdc, line 63).
+Applied set_property IOB = TRUE for OBUF_led_i3. (constraint file  E:/robot/project/FPGA/ZedBoard/lab4_sources/wave_gen_pins.xdc, line 63).
+Applied set_property IOB = TRUE for OBUF_led_i2. (constraint file  E:/robot/project/FPGA/ZedBoard/lab4_sources/wave_gen_pins.xdc, line 63).
+Applied set_property IOB = TRUE for OBUF_led_i1. (constraint file  E:/robot/project/FPGA/ZedBoard/lab4_sources/wave_gen_pins.xdc, line 63).
+Applied set_property IOB = TRUE for OBUF_led_i0. (constraint file  E:/robot/project/FPGA/ZedBoard/lab4_sources/wave_gen_pins.xdc, line 63).
+Applied set_property KEEP_HIERARCHY = SOFT for clk_gen_i0/clk_core_i0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for char_fifo_i0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1748.684 ; gain = 673.094
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_rx_ctl'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'cmd_parse'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_tx_ctl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE1 |                               00 |                               00
+                  iSTATE |                               01 |                               01
+                 iSTATE0 |                               10 |                               10
+                 iSTATE2 |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'uart_rx_ctl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              000 |                              000
+                CMD_WAIT |                              001 |                              001
+                 GET_ARG |                              010 |                              010
+                READ_RAM |                              011 |                              011
+               READ_RAM2 |                              100 |                              100
+               SEND_RESP |                              101 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'cmd_parse'
+INFO: [Synth 8-3971] The signal "samp_ram:/mem_array_reg" was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE1 |                               00 |                               00
+                 iSTATE2 |                               01 |                               01
+                  iSTATE |                               10 |                               10
+                 iSTATE0 |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'uart_tx_ctl'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 1748.684 ; gain = 673.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   16 Bit       Adders := 1     
+	   2 Input   14 Bit       Adders := 6     
+	   2 Input   11 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 10    
+	   2 Input    8 Bit       Adders := 8     
+	   2 Input    7 Bit       Adders := 9     
+	   2 Input    6 Bit       Adders := 2     
+	   2 Input    5 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 12    
+	   2 Input    3 Bit       Adders := 3     
+	   2 Input    2 Bit       Adders := 4     
++---Registers : 
+	               28 Bit    Registers := 1     
+	               19 Bit    Registers := 1     
+	               16 Bit    Registers := 12    
+	               11 Bit    Registers := 3     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 5     
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 7     
+	                1 Bit    Registers := 64    
++---RAMs : 
+	              16K Bit	(1024 X 16 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input   19 Bit        Muxes := 2     
+	   6 Input   16 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 2     
+	   2 Input   11 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 12    
+	   7 Input    8 Bit        Muxes := 1     
+	  14 Input    8 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 3     
+	   3 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 5     
+	   5 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 3     
+	   7 Input    3 Bit        Muxes := 2     
+	   6 Input    3 Bit        Muxes := 4     
+	   3 Input    3 Bit        Muxes := 3     
+	   4 Input    2 Bit        Muxes := 3     
+	   2 Input    2 Bit        Muxes := 13    
+	   5 Input    2 Bit        Muxes := 1     
+	   7 Input    2 Bit        Muxes := 1     
+	   6 Input    2 Bit        Muxes := 1     
+	   3 Input    2 Bit        Muxes := 4     
+	   2 Input    1 Bit        Muxes := 57    
+	   4 Input    1 Bit        Muxes := 3     
+	   6 Input    1 Bit        Muxes := 28    
+	   7 Input    1 Bit        Muxes := 3     
+	   3 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-6014] Unused sequential element samp_ram_i0/mem_array_reg was removed. 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:38 . Memory (MB): peak = 1748.684 ; gain = 673.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++------------+---------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object                | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+---------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|wave_gen    | samp_ram_i0/mem_array_reg | 1 K x 16(WRITE_FIRST)  | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
++------------+---------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-565] redefining clock 'clk_pin'
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:43 . Memory (MB): peak = 1748.684 ; gain = 673.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:00:52 . Memory (MB): peak = 1814.926 ; gain = 739.336
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++------------+---------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object                | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+---------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|wave_gen    | samp_ram_i0/mem_array_reg | 1 K x 16(WRITE_FIRST)  | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
++------------+---------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance samp_ram_i0/mem_array_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:45 ; elapsed = 00:00:53 . Memory (MB): peak = 1814.926 ; gain = 739.336
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:49 ; elapsed = 00:00:57 . Memory (MB): peak = 1814.926 ; gain = 739.336
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:49 ; elapsed = 00:00:57 . Memory (MB): peak = 1814.926 ; gain = 739.336
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:49 ; elapsed = 00:00:57 . Memory (MB): peak = 1814.926 ; gain = 739.336
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:49 ; elapsed = 00:00:57 . Memory (MB): peak = 1814.926 ; gain = 739.336
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:49 ; elapsed = 00:00:57 . Memory (MB): peak = 1814.926 ; gain = 739.336
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:49 ; elapsed = 00:00:57 . Memory (MB): peak = 1814.926 ; gain = 739.336
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |char_fifo     |         1|
+|2     |clk_core      |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |char_fifo |     1|
+|2     |clk_core  |     1|
+|3     |BUFHCE    |     1|
+|4     |CARRY4    |    32|
+|5     |LUT1      |    56|
+|6     |LUT2      |    81|
+|7     |LUT3      |   155|
+|8     |LUT4      |    91|
+|9     |LUT5      |   122|
+|10    |LUT6      |   277|
+|11    |MUXF7     |     1|
+|12    |ODDR      |     1|
+|13    |RAMB18E1  |     1|
+|14    |FDPE      |     6|
+|15    |FDRE      |   412|
+|16    |FDSE      |    26|
+|17    |IBUF      |     3|
+|18    |OBUF      |    13|
++------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:49 ; elapsed = 00:00:57 . Memory (MB): peak = 1814.926 ; gain = 739.336
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:41 ; elapsed = 00:00:55 . Memory (MB): peak = 1814.926 ; gain = 644.027
+Synthesis Optimization Complete : Time (s): cpu = 00:00:50 ; elapsed = 00:00:58 . Memory (MB): peak = 1814.926 ; gain = 739.336
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1814.926 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 35 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1814.926 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 15a52a0b
+INFO: [Common 17-83] Releasing license: Synthesis
+104 Infos, 19 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:54 ; elapsed = 00:01:05 . Memory (MB): peak = 1814.926 ; gain = 1168.145
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1814.926 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'E:/robot/project/FPGA/ZedBoard/lab_4/lab_4.runs/synth_1/wave_gen.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file wave_gen_utilization_synth.rpt -pb wave_gen_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Oct  9 15:12:27 2024...
