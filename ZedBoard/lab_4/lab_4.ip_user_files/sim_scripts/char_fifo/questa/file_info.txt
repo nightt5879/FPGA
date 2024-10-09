@@ -1,3 +1,0 @@
-fifo_generator_v10_0.v,verilog,fifo_generator_v10_0,../../../../../lab4_sources/ip/char_fifo/fifo_generator_v10_0/simulation/fifo_generator_v10_0.v,
-char_fifo.v,verilog,xil_defaultlib,../../../../../lab4_sources/ip/char_fifo/sim/char_fifo.v,
-glbl.v,Verilog,xil_defaultlib,glbl.v
