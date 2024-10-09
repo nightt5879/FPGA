@@ -16,6 +16,8 @@
     - [3.6 Experiment 6](#36-experiment-6)
   - [4. Course Design (In Development)](#4-course-design-in-development)
 - [Errata](#errata)
+  - [Error 1](#error-1)
+  - [Error 2](#error-2)
 
 # Front-end Design of Digital Integrated Circuits and High-level Synthesis
 ## 1. Preface
@@ -498,6 +500,7 @@ This experiment primarily teaches how to use Debug for troubleshooting, and the 
 ## 4. Course Design (In Development)
 
 # Errata
+## Error 1
 In the top-level file `uart_led.v` of `lab2`, there is an error regarding the handling of the `rst_clk` signal:
 The error is caused by an inversion applied to the `rst_clk` signal in the design, which results in `rst_clk` being incorrectly inverted to high when the button is not pressed (default low level). This causes the reset signal to remain active, preventing the system from functioning properly in an idle state. Consequently, the system does not show the expected behavior without intervention, and the reset button must be manually pressed to observe the desired experimental effect.
 
@@ -511,3 +514,9 @@ The specific issue is found on line 69 of `uart_led.v`:
 Erroneous logic experiment phenomenon:
 
 ![Error Phenomenon](./images/err_test.gif)
+
+## Error 2
+In Lab 4, steps `2-2-4` and `2-2-5` do not need to be performed because the `clk_core clk_core_i0` already exists, and it does not need to be added again.</p>
+- [ ] **Contact the instructor to correct the error**</p>  <!--Need to contact the instructor-->
+
+![Error Location](./images/ZedBoard/lab_4/step_not_need.jpg)
