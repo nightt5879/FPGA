@@ -1,3 +1,0 @@
-relativeroot=E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul
-original_argv=-c --mode hls --config E:\robot\project\FPGA\ZedBoard\HLS_lab\lab1\matrixmul\hls_config.cfg --work_dir matrixmul 
-

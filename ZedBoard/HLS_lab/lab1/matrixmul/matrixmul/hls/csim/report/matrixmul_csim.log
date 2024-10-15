@@ -1,8 +1,0 @@
-INFO: [SIM 2] *************** CSIM start ***************
-INFO: [SIM 4] CSIM will launch CLANG as the compiler.
-   Compiling ../../../../../../../../../xup_high_level_synthesis_design_flow/source/lab1/matrixmul_test.cpp in debug mode
-csim.mk:88: recipe for target 'obj/matrixmul_test.o' failed
-clang++: error: no such file or directory: 'DHW_COSIM'
-make: *** [obj/matrixmul_test.o] Error 1
-ERR: [SIM 100] 'csim_design' failed: compilation error(s).
-INFO: [SIM 3] *************** CSIM finish ***************
