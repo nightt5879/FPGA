@@ -1,0 +1,41 @@
+INFO: [vitis-run 60-1548] Creating build summary session with primary output E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul/matrixmul\matrixmul.hlsrun_csim_summary, at 10/15/24 19:50:46
+INFO: [vitis-run 82-31] Launching vitis_hls: vitis_hls -nolog -run csim -work_dir E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul/matrixmul -config E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul/hls_config.cfg -cmdlineconfig E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul/matrixmul/hls/config.cmdline
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2024.1 (64-bit)
+  **** SW Build 5069499 on May 21 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Tue Oct 15 19:50:48 2024
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source E:/vivado/Vitis_HLS/2024.1/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] For user '14692' on host 'nightt_insider' (Windows NT_amd64 version 10.0) on Tue Oct 15 19:50:49 +0800 2024
+INFO: [HLS 200-10] In directory 'E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul'
+INFO: [HLS 200-2005] Using work_dir E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul/matrixmul 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+WARNING: [HLS 200-1921] Skipping unknown ini [hls] entry 'hls.c_compiler_path=E:/mingw64/bin/gcc.exe' from E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul/hls_config.cfg(13)
+WARNING: [HLS 200-1921] Skipping unknown ini [hls] entry 'hls.cpp_compiler_path=E:/mingw64/bin/g++.exe' from E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul/hls_config.cfg(14)
+INFO: [HLS 200-1465] Applying ini 'syn.file=E:/robot/project/xup_high_level_synthesis_design_flow/source/lab1/matrixmul.cpp' from E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file 'E:/robot/project/xup_high_level_synthesis_design_flow/source/lab1/matrixmul.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=E:/robot/project/xup_high_level_synthesis_design_flow/source/lab1/matrixmul_test.cpp' from E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding test bench file 'E:/robot/project/xup_high_level_synthesis_design_flow/source/lab1/matrixmul_test.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file_cflags=E:/robot/project/xup_high_level_synthesis_design_flow/source/lab1/matrixmul_test.cpp,DHW_COSIM' from E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul/hls_config.cfg(10)
+INFO: [HLS 200-1465] Applying ini 'syn.top=matrixmul' from E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xc7z020clg484-1' from E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1465] Applying ini 'clock=10ns' from E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul/hls_config.cfg(11)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1465] Applying ini 'csim.code_analyzer=1' from E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul/hls_config.cfg(12)
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul/hls_config.cfg(5)
+INFO: [SIM 211-200] Executing Code Analyzer instead of classic HLS C simulation
+INFO: [SIM 211-200] Compiling source code ../../../../../xup_high_level_synthesis_design_flow/source/lab1/matrixmul_test.cpp as test bench code with instrumentation
+INFO: [SIM 211-200] Compiling source code ../../../../../xup_high_level_synthesis_design_flow/source/lab1/matrixmul.cpp as test bench code with instrumentation
+clang: error: no such file or directory: 'DHW_COSIM'
+ERROR: [SIM 211-200] Code Analyzer execution failed. Consider running the classic C simulation instead by disabling the hls.csim.code_analyzer option in the config file.
+ERROR: Problem running csim: child process exited abnormally
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 0 seconds. Total elapsed time: 7.534 seconds; peak allocated memory: 259.445 MB.

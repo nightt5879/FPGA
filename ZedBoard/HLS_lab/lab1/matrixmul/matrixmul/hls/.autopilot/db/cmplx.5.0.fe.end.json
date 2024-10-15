@@ -1,0 +1,22 @@
+{
+    "0": {
+        "name": "matrixmul",
+        "file": "..\/..\/..\/..\/..\/xup_high_level_synthesis_design_flow\/source\/lab1\/matrixmul.cpp",
+        "fileloc": "31",
+        "instructions": "75",
+        "total_instructions": "75",
+        "calls": "",
+        "basicblocks": "3",
+        "loads": {
+            "L": "3",
+            "T": "6"
+        },
+        "stores": {
+            "L": "6",
+            "T": "1"
+        },
+        "loops": {
+            "L": "1"
+        }
+    }
+}

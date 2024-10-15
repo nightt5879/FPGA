@@ -1,0 +1,25 @@
+{
+    "rules": {
+        "['E:\\\\robot\\\\project\\\\FPGA\\\\ZedBoard\\\\HLS_lab\\\\lab1\\\\matrixmul\\\\matrixmul\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\build\\\\matrixmul.cpp.0.bc', 'E:\\\\robot\\\\project\\\\FPGA\\\\ZedBoard\\\\HLS_lab\\\\lab1\\\\matrixmul\\\\matrixmul\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\build\\\\matrixmul.cpp.0.bc.d']": {
+            "command": [
+                "e:\\vivado\\vitis_hls\\2024.1\\vcxx\\/libexec/clang.exe",
+                "-c",
+                "-emit-llvm",
+                "-MD",
+                "-MF",
+                "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab1\\matrixmul\\matrixmul\\hls\\csim\\code_analyzer\\.internal\\build\\matrixmul.cpp.0.bc.d",
+                "-fhls",
+                "-hls-syn-headers-dir=e:\\vivado\\vitis_hls\\2024.1\\vcxx\\data\\autopilot",
+                "-vitis-hls=E:\\vivado\\Vitis_HLS\\2024.1",
+                "--sysroot=E:\\vivado\\Vitis_HLS\\2024.1\\tps\\mingw\\10.0.0\\win64.o\\nt",
+                "-fhlstoplevel=matrixmul",
+                "-fslxtrace",
+                "../../../../../xup_high_level_synthesis_design_flow/source/lab1/matrixmul.cpp",
+                "-o",
+                "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab1\\matrixmul\\matrixmul\\hls\\csim\\code_analyzer\\.internal\\build\\matrixmul.cpp.0.bc"
+            ],
+            "exectime": 0.6438255310058594,
+            "cwd": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab1\\matrixmul"
+        }
+    }
+}
