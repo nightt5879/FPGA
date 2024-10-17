@@ -1,0 +1,70 @@
+INFO-FLOW: Workspace E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul/matrixmul/hls opened at Tue Oct 15 20:50:36 +0800 2024
+Execute     send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Execute   apply_ini E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul/hls_config.cfg 
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=E:/robot/project/FPGA/ZedBoard/HLS_lab/source/lab1/matrixmul.cpp' from E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul/hls_config.cfg(8) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=E:/robot/project/FPGA/ZedBoard/HLS_lab/source/lab1/matrixmul.cpp' from E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul/hls_config.cfg(8)
+Execute     add_files E:/robot/project/FPGA/ZedBoard/HLS_lab/source/lab1/matrixmul.cpp 
+INFO: [HLS 200-10] Adding design file 'E:/robot/project/FPGA/ZedBoard/HLS_lab/source/lab1/matrixmul.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=E:/robot/project/FPGA/ZedBoard/HLS_lab/source/lab1/matrixmul_test.cpp' from E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul/hls_config.cfg(9) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=E:/robot/project/FPGA/ZedBoard/HLS_lab/source/lab1/matrixmul_test.cpp' from E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul/hls_config.cfg(9)
+Execute     add_files -tb E:/robot/project/FPGA/ZedBoard/HLS_lab/source/lab1/matrixmul_test.cpp 
+INFO: [HLS 200-10] Adding test bench file 'E:/robot/project/FPGA/ZedBoard/HLS_lab/source/lab1/matrixmul_test.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file_cflags=E:/robot/project/FPGA/ZedBoard/HLS_lab/source/lab1/matrixmul_test.cpp,-DHW_COSIM' from E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul/hls_config.cfg(10) 
+INFO: [HLS 200-1465] Applying ini 'tb.file_cflags=E:/robot/project/FPGA/ZedBoard/HLS_lab/source/lab1/matrixmul_test.cpp,-DHW_COSIM' from E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul/hls_config.cfg(10)
+Execute     add_files -tb E:/robot/project/FPGA/ZedBoard/HLS_lab/source/lab1/matrixmul_test.cpp -appendflags -cflags -DHW_COSIM 
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.top=matrixmul' from E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul/hls_config.cfg(7) 
+INFO: [HLS 200-1465] Applying ini 'syn.top=matrixmul' from E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul/hls_config.cfg(7)
+Execute     set_top matrixmul 
+Execute     send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' from E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul/hls_config.cfg(4) 
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul/hls_config.cfg(4)
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1465@%s 'part=xc7z020clg484-1' from E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul/hls_config.cfg(1) 
+INFO: [HLS 200-1465] Applying ini 'part=xc7z020clg484-1' from E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul/hls_config.cfg(1)
+Execute     set_part xc7z020clg484-1 
+Execute       create_platform xc7z020clg484-1 -board  
+DBG:HLSDevice: Trying to load device library: E:/vivado\Vitis_HLS\2024.1\lib\win64.o\xv_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: E:/vivado/Vivado/2024.1/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+Command       create_platform done; 1.89 sec.
+Execute       source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/ip/util.gen 
+Execute         source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xc7z020-clg484-1 -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 2.082 sec.
+Execute     send_msg_by_id INFO @200-1465@%s 'clock=10ns' from E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul/hls_config.cfg(11) 
+INFO: [HLS 200-1465] Applying ini 'clock=10ns' from E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul/hls_config.cfg(11)
+Execute     create_clock -period 10ns 
+Execute       ap_set_clock -name default -period 10 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     send_msg_by_id INFO @200-1465@%s 'csim.code_analyzer=1' from E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul/hls_config.cfg(12) 
+INFO: [HLS 200-1465] Applying ini 'csim.code_analyzer=1' from E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul/hls_config.cfg(12)
+Execute     config_csim -code_analyzer=1 
+Execute     send_msg_by_id INFO @200-1465@%s 'package.output.format=ip_catalog' from E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul/hls_config.cfg(5) 
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul/hls_config.cfg(5)
+Execute     config_export -format=ip_catalog 
+Command   apply_ini done; 2.112 sec.
+Execute   apply_ini E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul/matrixmul/hls/config.cmdline 
+Execute   csim_design 
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
+INFO-FLOW: SLX proc replaces csim
+Command   csim_design done; 7.706 sec.
+Execute   close_project 
+Execute     close_solution 
+Execute       cleanup_all 
+Execute       cleanup_all 

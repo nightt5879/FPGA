@@ -1,0 +1,7 @@
+{
+  "workspaceRoot": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab1",
+  "mapping": {
+    "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\source\\lab1\\matrixmul_test.cpp": "matrixmul",
+    "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\source\\lab1\\matrixmul.cpp": "matrixmul"
+  }
+}

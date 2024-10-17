@@ -1,0 +1,80 @@
+<ENTRY>
+{
+ "thisFile": "E:/robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab1\\matrixmul\\matrixmul\\hls\\csim\\code_analyzer\\app.csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Tue Oct 15 20:50:41 2024",
+ "timestampMillis": "1728996641452",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [],
+  "toolVersion": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Tue Oct 15 20:50:41 2024",
+ "timestampMillis": "1728996641453",
+ "buildStep": {
+  "cmdId": "15d239a7-8af4-11ef-a4bb-744ca175a020",
+  "name": "vitis_c++",
+  "logFile": "",
+  "commandLine": "vitis_c++ code_analyzer",
+  "args": [
+   "code_analyzer"
+  ],
+  "iniFiles": [],
+  "cwd": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Oct 15 20:50:41 2024",
+ "timestampMillis": "1728996641454",
+ "status": {
+  "cmdId": "15d239a7-8af4-11ef-a4bb-744ca175a020",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Oct 15 20:50:45 2024",
+ "timestampMillis": "1728996645699",
+ "status": {
+  "cmdId": "15d239a7-8af4-11ef-a4bb-744ca175a020",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Oct 15 20:50:45 2024",
+ "timestampMillis": "1728996645700",
+ "report": {
+  "path": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab1\\matrixmul",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "VCXX_CODE_ANALYZER",
+  "cmdId": "15d239a7-8af4-11ef-a4bb-744ca175a020"
+ }
+}
+</ENTRY>

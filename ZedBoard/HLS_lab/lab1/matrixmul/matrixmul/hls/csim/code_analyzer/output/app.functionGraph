@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<callgraph:CallGraph xmlns:callgraph="http://www.xilinx.com/act/callgraph">
+  <DirectCall count="0" file="..\..\source\lab1\matrixmul_test.cpp" id="127" line="63">
+    <caller function="_f206"/>
+    <callee function="_f212"/>
+  </DirectCall>
+  <Function file="..\..\source\lab1\matrixmul_test.cpp" id="_f206" line="33" name="main"/>
+  <Function file="..\..\source\lab1\matrixmul.cpp" id="_f212" line="31" name="matrixmul"/>
+</callgraph:CallGraph>

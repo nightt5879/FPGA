@@ -1,0 +1,3 @@
+interfaceModel::INFOR: interfaceModel:0:0: note: Applying interface constraints on the variable a which has the interface type default
+interfaceModel::INFOR: interfaceModel:0:0: note: Applying interface constraints on the variable b which has the interface type default
+interfaceModel::INFOR: interfaceModel:0:0: note: Applying interface constraints on the variable res which has the interface type default
