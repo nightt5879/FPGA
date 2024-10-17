@@ -1,0 +1,6 @@
+   Build using "E:/vivado/Vitis_HLS/2024.1/vcxx/libexec/clang++"
+   Compiling matrixmul.cpp_pre.cpp.tb.cpp
+   Compiling apatb_matrixmul.cpp
+   Compiling matrixmul_test.cpp_pre.cpp.tb.cpp
+   Compiling apatb_matrixmul_ir.ll
+   Generating cosim.tv.exe

@@ -1,3 +1,3 @@
 XILINX_HLS='E:/vivado\Vitis_HLS\2024.1'
 XILINX_VITIS='E:/vivado\Vitis\2024.1'
-cmdline: 'E:\vivado\Vitis\2024.1\bin\xcd.bat' -p 60979 -t 14399fe8-8af4-11ef-bd09-744ca175a020
+cmdline: 'E:\vivado\Vitis\2024.1\bin\xcd.bat' -p 53891 -t 6426f93f-8c5a-11ef-8658-744ca175a020

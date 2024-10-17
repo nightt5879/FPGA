@@ -5,5 +5,6 @@
         "-IE:\\vivado\\Vitis_HLS\\2024.1\\include\\ap_sysc",
         "-IE:\\vivado\\Vitis_HLS\\2024.1\\win64\\tools\\auto_cc\\include",
         "-IE:\\vivado\\Vitis_HLS\\2024.1\\win64\\tools\\systemc\\include"
-    ]
+    ],
+    "TCFAdapter.steppingGranularity": "statement"
 }

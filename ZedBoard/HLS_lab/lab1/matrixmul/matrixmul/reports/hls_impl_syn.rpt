@@ -1,0 +1,229 @@
+================================================================
+== Vivado RTL Synthesis Results
+================================================================
++ General Information:
+    * Date:            Thu Oct 17 18:23:17 +0800 2024
+    * Version:         2024.1 (Build 5069499 on May 21 2024)
+    * Project:         matrixmul
+    * Solution:        hls (Vivado IP Flow Target)
+    * Product family:  zynq
+    * Target device:   xc7z020-clg484-1
+
+
+================================================================
+== Run Constraints & Options
+================================================================
++ Design Constraints & Options:
+    * RTL Synthesis target clock:  10 ns
+    * C-Synthesis target clock:    10 ns
+    * C-Synthesis uncertainty:     27%
+
++ RTL Synthesis Options:
+    * config_export -vivado_synth_strategy:     default
+    * config_export -vivado_synth_design_args:  -directive sdx_optimization_effort_high
+
++ Reporting Options:
+    * config_export -vivado_report_level:      2
+    * config_export -vivado_max_timing_paths:  10
+
+
+================================================================
+== RTL Synthesis Resource Summary
+================================================================
+LUT:              45
+FF:               38
+DSP:              3
+BRAM:             0
+URAM:             0
+SRL:              0
+
+
+================================================================
+== RTL Synthesis Timing Summary
+================================================================
+* Timing was met
++----------------+-------------+
+| Timing         | Period (ns) |
++----------------+-------------+
+| Target         | 10.000      |
+| Post-Synthesis | 3.884       |
++----------------+-------------+
+
+
+================================================================
+== RTL Synthesis Resources
+================================================================
++-----------------------------------+-----+----+-----+------+------+-----+--------+------+---------+----------+--------+
+| Name                              | LUT | FF | DSP | BRAM | URAM | SRL | Pragma | Impl | Latency | Variable | Source |
++-----------------------------------+-----+----+-----+------+------+-----+--------+------+---------+----------+--------+
+| inst                              | 45  | 38 | 3   |      |      |     |        |      |         |          |        |
+|   (inst)                          | 25  | 37 |     |      |      |     |        |      |         |          |        |
+|   flow_control_loop_pipe_U        | 9   | 1  |     |      |      |     |        |      |         |          |        |
+|   mac_muladd_8s_8s_16ns_16_4_1_U3 | 9   |    | 1   |      |      |     |        |      |         |          |        |
+|   mac_muladd_8s_8s_16s_16_4_1_U2  | 2   |    | 2   |      |      |     |        |      |         |          |        |
++-----------------------------------+-----+----+-----+------+------+-----+--------+------+---------+----------+--------+
+
+
+================================================================
+== RTL Synthesis Fail Fast
+================================================================
++-----------------------------------------------------------+-----------+--------+--------+
+| Criteria                                                  | Guideline | Actual | Status |
++-----------------------------------------------------------+-----------+--------+--------+
+| LUT                                                       | 70%       | 0.08%  | OK     |
+| FD                                                        | 50%       | 0.04%  | OK     |
+| LUTRAM+SRL                                                | 25%       | 0.00%  | OK     |
+| MUXF7                                                     | 15%       | 0.00%  | OK     |
+| DSP                                                       | 80%       | 1.36%  | OK     |
+| RAMB/FIFO                                                 | 80%       | 0.00%  | OK     |
+| DSP+RAMB+URAM (Avg)                                       | 70%       | 1.36%  | OK     |
+| BUFGCE* + BUFGCTRL                                        | 24        | 0      | OK     |
+| DONT_TOUCH (cells/nets)                                   | 0         | 0      | OK     |
+| MARK_DEBUG (nets)                                         | 0         | 0      | OK     |
+| Control Sets                                              | 998       | 5      | OK     |
+| Average Fanout for modules > 100k cells                   | 4         | 1.89   | OK     |
+| Max Average Fanout for modules > 100k cells               | 4         | 0      | OK     |
+| Non-FD high fanout nets > 10k loads                       | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+| TIMING-6 (No common primary clock between related clocks) | 0         | 0      | OK     |
+| TIMING-7 (No common node between related clocks)          | 0         | 0      | OK     |
+| TIMING-8 (No common period between related clocks)        | 0         | 0      | OK     |
+| TIMING-14 (LUT on the clock tree)                         | 0         | 0      | OK     |
+| TIMING-35 (No common node in paths with the same clock)   | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+| Number of paths above max LUT budgeting (0.575ns)         | 0         | 0      | OK     |
+| Number of paths above max Net budgeting (0.403ns)         | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+
+
+================================================================
+== RTL Synthesis Timing Paths
+================================================================
+* Timing was met
++-------+-------+--------------------+--------------------------------------------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
+| Path  | SLACK | STARTPOINT PIN     | ENDPOINT PIN                                                                                     | LOGIC LEVELS | MAX FANOUT | DATAPATH DELAY | DATAPATH LOGIC | DATAPATH NET |
+|       |       |                    |                                                                                                  |              |            |                |          DELAY |        DELAY |
++-------+-------+--------------------+--------------------------------------------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
+| Path1 | 7.008 | ap_CS_fsm_reg[1]/C | mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg/CEA1  |            1 |         18 |          2.411 |          0.813 |        1.598 |
+| Path2 | 7.008 | ap_CS_fsm_reg[1]/C | mac_muladd_8s_8s_16s_16_4_1_U2/matrixmul_mac_muladd_8s_8s_16s_16_4_1_DSP48_0_U/m_reg_reg/CEA1    |            1 |         18 |          2.411 |          0.813 |        1.598 |
+| Path3 | 7.121 | ap_CS_fsm_reg[0]/C | mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg/A[0]  |            1 |         44 |          2.433 |          0.813 |        1.620 |
+| Path4 | 7.121 | ap_CS_fsm_reg[0]/C | mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg/A[10] |            1 |         46 |          2.433 |          0.813 |        1.620 |
+| Path5 | 7.121 | ap_CS_fsm_reg[0]/C | mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg/A[11] |            1 |         46 |          2.433 |          0.813 |        1.620 |
++-------+-------+--------------------+--------------------------------------------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
+
+    +------------------------------------------------------------------------------------------------+----------------------+
+    | Path1 Cells                                                                                    | Primitive Type       |
+    +------------------------------------------------------------------------------------------------+----------------------+
+    | ap_CS_fsm_reg[1]                                                                               | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/b_ce0_INST_0  | LUT.others.LUT5      |
+    | mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg     | MULT.dsp.DSP48E1     |
+    | ap_CS_fsm_reg[1]                                                                               | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/b_ce0_INST_0  | LUT.others.LUT5      |
+    | mac_muladd_8s_8s_16s_16_4_1_U2/matrixmul_mac_muladd_8s_8s_16s_16_4_1_DSP48_0_U/m_reg_reg       | MULT.dsp.DSP48E1     |
+    | ap_CS_fsm_reg[0]                                                                               | FLOP_LATCH.flop.FDSE |
+    | mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg_i_8 | LUT.others.LUT4      |
+    | mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg     | MULT.dsp.DSP48E1     |
+    | ap_CS_fsm_reg[0]                                                                               | FLOP_LATCH.flop.FDSE |
+    | mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg_i_1 | LUT.others.LUT4      |
+    | mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg     | MULT.dsp.DSP48E1     |
+    | ap_CS_fsm_reg[0]                                                                               | FLOP_LATCH.flop.FDSE |
+    | mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg_i_1 | LUT.others.LUT4      |
+    | mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg     | MULT.dsp.DSP48E1     |
+    +------------------------------------------------------------------------------------------------+----------------------+
+
+    +------------------------------------------------------------------------------------------------+----------------------+
+    | Path2 Cells                                                                                    | Primitive Type       |
+    +------------------------------------------------------------------------------------------------+----------------------+
+    | ap_CS_fsm_reg[1]                                                                               | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/b_ce0_INST_0  | LUT.others.LUT5      |
+    | mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg     | MULT.dsp.DSP48E1     |
+    | ap_CS_fsm_reg[1]                                                                               | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/b_ce0_INST_0  | LUT.others.LUT5      |
+    | mac_muladd_8s_8s_16s_16_4_1_U2/matrixmul_mac_muladd_8s_8s_16s_16_4_1_DSP48_0_U/m_reg_reg       | MULT.dsp.DSP48E1     |
+    | ap_CS_fsm_reg[0]                                                                               | FLOP_LATCH.flop.FDSE |
+    | mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg_i_8 | LUT.others.LUT4      |
+    | mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg     | MULT.dsp.DSP48E1     |
+    | ap_CS_fsm_reg[0]                                                                               | FLOP_LATCH.flop.FDSE |
+    | mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg_i_1 | LUT.others.LUT4      |
+    | mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg     | MULT.dsp.DSP48E1     |
+    | ap_CS_fsm_reg[0]                                                                               | FLOP_LATCH.flop.FDSE |
+    | mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg_i_1 | LUT.others.LUT4      |
+    | mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg     | MULT.dsp.DSP48E1     |
+    +------------------------------------------------------------------------------------------------+----------------------+
+
+    +------------------------------------------------------------------------------------------------+----------------------+
+    | Path3 Cells                                                                                    | Primitive Type       |
+    +------------------------------------------------------------------------------------------------+----------------------+
+    | ap_CS_fsm_reg[1]                                                                               | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/b_ce0_INST_0  | LUT.others.LUT5      |
+    | mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg     | MULT.dsp.DSP48E1     |
+    | ap_CS_fsm_reg[1]                                                                               | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/b_ce0_INST_0  | LUT.others.LUT5      |
+    | mac_muladd_8s_8s_16s_16_4_1_U2/matrixmul_mac_muladd_8s_8s_16s_16_4_1_DSP48_0_U/m_reg_reg       | MULT.dsp.DSP48E1     |
+    | ap_CS_fsm_reg[0]                                                                               | FLOP_LATCH.flop.FDSE |
+    | mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg_i_8 | LUT.others.LUT4      |
+    | mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg     | MULT.dsp.DSP48E1     |
+    | ap_CS_fsm_reg[0]                                                                               | FLOP_LATCH.flop.FDSE |
+    | mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg_i_1 | LUT.others.LUT4      |
+    | mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg     | MULT.dsp.DSP48E1     |
+    | ap_CS_fsm_reg[0]                                                                               | FLOP_LATCH.flop.FDSE |
+    | mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg_i_1 | LUT.others.LUT4      |
+    | mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg     | MULT.dsp.DSP48E1     |
+    +------------------------------------------------------------------------------------------------+----------------------+
+
+    +------------------------------------------------------------------------------------------------+----------------------+
+    | Path4 Cells                                                                                    | Primitive Type       |
+    +------------------------------------------------------------------------------------------------+----------------------+
+    | ap_CS_fsm_reg[1]                                                                               | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/b_ce0_INST_0  | LUT.others.LUT5      |
+    | mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg     | MULT.dsp.DSP48E1     |
+    | ap_CS_fsm_reg[1]                                                                               | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/b_ce0_INST_0  | LUT.others.LUT5      |
+    | mac_muladd_8s_8s_16s_16_4_1_U2/matrixmul_mac_muladd_8s_8s_16s_16_4_1_DSP48_0_U/m_reg_reg       | MULT.dsp.DSP48E1     |
+    | ap_CS_fsm_reg[0]                                                                               | FLOP_LATCH.flop.FDSE |
+    | mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg_i_8 | LUT.others.LUT4      |
+    | mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg     | MULT.dsp.DSP48E1     |
+    | ap_CS_fsm_reg[0]                                                                               | FLOP_LATCH.flop.FDSE |
+    | mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg_i_1 | LUT.others.LUT4      |
+    | mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg     | MULT.dsp.DSP48E1     |
+    | ap_CS_fsm_reg[0]                                                                               | FLOP_LATCH.flop.FDSE |
+    | mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg_i_1 | LUT.others.LUT4      |
+    | mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg     | MULT.dsp.DSP48E1     |
+    +------------------------------------------------------------------------------------------------+----------------------+
+
+    +------------------------------------------------------------------------------------------------+----------------------+
+    | Path5 Cells                                                                                    | Primitive Type       |
+    +------------------------------------------------------------------------------------------------+----------------------+
+    | ap_CS_fsm_reg[1]                                                                               | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/b_ce0_INST_0  | LUT.others.LUT5      |
+    | mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg     | MULT.dsp.DSP48E1     |
+    | ap_CS_fsm_reg[1]                                                                               | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/b_ce0_INST_0  | LUT.others.LUT5      |
+    | mac_muladd_8s_8s_16s_16_4_1_U2/matrixmul_mac_muladd_8s_8s_16s_16_4_1_DSP48_0_U/m_reg_reg       | MULT.dsp.DSP48E1     |
+    | ap_CS_fsm_reg[0]                                                                               | FLOP_LATCH.flop.FDSE |
+    | mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg_i_8 | LUT.others.LUT4      |
+    | mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg     | MULT.dsp.DSP48E1     |
+    | ap_CS_fsm_reg[0]                                                                               | FLOP_LATCH.flop.FDSE |
+    | mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg_i_1 | LUT.others.LUT4      |
+    | mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg     | MULT.dsp.DSP48E1     |
+    | ap_CS_fsm_reg[0]                                                                               | FLOP_LATCH.flop.FDSE |
+    | mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg_i_1 | LUT.others.LUT4      |
+    | mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg     | MULT.dsp.DSP48E1     |
+    +------------------------------------------------------------------------------------------------+----------------------+
+
+
+================================================================
+== RTL Synthesis Vivado Reports
+================================================================
++--------------------------+------------------------------------------------------------------+
+| Report Type              | Report Location                                                  |
++--------------------------+------------------------------------------------------------------+
+| design_analysis          | impl/verilog/report/matrixmul_design_analysis_synth.rpt          |
+| failfast                 | impl/verilog/report/matrixmul_failfast_synth.rpt                 |
+| timing                   | impl/verilog/report/matrixmul_timing_synth.rpt                   |
+| timing_paths             | impl/verilog/report/matrixmul_timing_paths_synth.rpt             |
+| utilization              | impl/verilog/report/matrixmul_utilization_synth.rpt              |
+| utilization_hierarchical | impl/verilog/report/matrixmul_utilization_hierarchical_synth.rpt |
++--------------------------+------------------------------------------------------------------+
+
+

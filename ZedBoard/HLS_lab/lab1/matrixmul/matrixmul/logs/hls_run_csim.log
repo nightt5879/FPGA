@@ -1,16 +1,16 @@
-INFO: [vitis-run 60-1548] Creating build summary session with primary output E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul/matrixmul\matrixmul.hlsrun_csim_summary, at 10/15/24 20:50:32
-INFO: [vitis-run 82-31] Launching vitis_hls: vitis_hls -nolog -run csim -work_dir E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul/matrixmul -config E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul/hls_config.cfg -cmdlineconfig E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul/matrixmul/hls/config.cmdline
+INFO: [vitis-run 60-1548] Creating build summary session with primary output E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul/matrixmul\matrixmul.hlsrun_csim_summary, at 10/17/24 15:36:35
+INFO: [vitis-run 82-31] Launching vitis_hls: vitis_hls -nolog -run csim -work_dir E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul/matrixmul -config E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul/matrixmul/hls-debug.cfg -config E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul/hls_config.cfg -cmdlineconfig E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul/matrixmul/hls/config.cmdline
 
 ****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2024.1 (64-bit)
   **** SW Build 5069499 on May 21 2024
   **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
   **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-  **** Start of session at: Tue Oct 15 20:50:34 2024
+  **** Start of session at: Thu Oct 17 15:36:37 2024
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 
 source E:/vivado/Vitis_HLS/2024.1/scripts/vitis_hls/hls.tcl -notrace
-INFO: [HLS 200-10] For user '14692' on host 'nightt_insider' (Windows NT_amd64 version 10.0) on Tue Oct 15 20:50:35 +0800 2024
+INFO: [HLS 200-10] For user '14692' on host 'nightt_insider' (Windows NT_amd64 version 10.0) on Thu Oct 17 15:36:38 +0800 2024
 INFO: [HLS 200-10] In directory 'E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul'
 INFO: [HLS 200-2005] Using work_dir E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul/matrixmul 
 INFO: [HLS 200-1505] Using default flow_target 'vivado'
@@ -30,25 +30,21 @@ INFO: [HLS 200-1465] Applying ini 'clock=10ns' from E:/robot/project/FPGA/ZedBoa
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 INFO: [HLS 200-1465] Applying ini 'csim.code_analyzer=1' from E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul/hls_config.cfg(12)
 INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul/hls_config.cfg(5)
-INFO: [SIM 211-200] Executing Code Analyzer instead of classic HLS C simulation
-INFO: [SIM 211-200] Compiling source code ../../source/lab1/matrixmul.cpp as hardware code with instrumentation
-INFO: [SIM 211-200] Compiling source code ../../source/lab1/matrixmul_test.cpp as test bench code with instrumentation
-INFO: [SIM 211-200] Compiling source code ../../source/lab1/matrixmul.cpp as test bench code with instrumentation
-INFO: [SIM 211-200] Linking hardware code
-INFO: [SIM 211-200] Transforming hardware bitcode
-INFO: [SIM 211-200] Linking executable
-INFO: [SIM 211-200] Determining source code dependencies
-INFO: [SIM 211-200] Generating static call graph
-INFO: [SIM 211-200] Analyzing Interfaces
-INFO: [SIM 211-200] Running executable
-{
-{870,906,942}
-{1086,1131,1176}
-{1302,1356,1410}
-}
-Test passed.
-INFO: [SIM 211-200] Analyzing trace data
-INFO: [SIM 211-208] Running Code Analyzer
-INFO: [SIM 211-210] Code Analyzer finished
-INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 11.043 seconds; peak allocated memory: 247.730 MB.
-INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 16s
+INFO: [HLS 200-1465] Applying ini 'csim.O=0' from E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul/matrixmul/hls-debug.cfg(3)
+INFO: [HLS 200-1907] Replacing 'config_csim -O=0' with 'config_sim -O=0' in current solution file
+INFO: [HLS 200-1465] Applying ini 'csim.clean=1' from E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul/matrixmul/hls-debug.cfg(4)
+INFO: [HLS 200-1907] Replacing 'config_csim -O=0' with 'config_sim -O=0' in current solution file
+INFO: [HLS 200-1465] Applying ini 'csim.setup=1' from E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul/matrixmul/hls-debug.cfg(2)
+INFO: [HLS 200-1907] Replacing 'config_csim -O=0' with 'config_sim -O=0' in current solution file
+INFO: [SIM 211-200] Skipping execution of Code Analyzer due to 'setup' option, executing classic HLS C simulation
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+   Compiling ../../../../../../source/lab1/matrixmul_test.cpp in debug mode
+   Compiling ../../../../../../source/lab1/matrixmul.cpp in debug mode
+   Generating csim.exe
+INFO: [HLS 200-2035] Skipping execution of C Simulation due to 'setup' option
+INFO: [SIM 211-1] CSim file generation done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 0 seconds. Total elapsed time: 7.825 seconds; peak allocated memory: 246.660 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 13s

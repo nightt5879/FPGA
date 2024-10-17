@@ -20,3 +20,25 @@
 10/15/24 20:50:45: SERVER: destructor for server bound to port 60979
 10/15/24 20:50:45: Server exiting with status 0.
 10/15/24 20:50:45: Closing log file.
+10/17/24 15:35:35: Running xcd server. This server was NOT built by gradle, but presumably rdi.
+10/17/24 15:35:35: Server was asked to start on port: '53891'
+10/17/24 15:35:35: Server is using token UUID: '6426f93f-8c5a-11ef-8658-744ca175a020'
+10/17/24 15:35:35: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+10/17/24 15:35:35: Attempting to start server on port '53891'
+10/17/24 15:35:35: Running Dispatch Server
+10/17/24 15:35:35: Version 2.2.0
+10/17/24 15:35:35: Dispatch Server: Accepted socket connection from client
+10/17/24 15:35:35: Starting Socket connection
+10/17/24 15:35:35: EXCHANGE_TOKEN received, server token: 6426f93f-8c5a-11ef-8658-744ca175a020, passed token: 6426f93f-8c5a-11ef-8658-744ca175a020
+10/17/24 15:35:35: SESSION_MGR: creating session with session uuid: '27162f0a-9cd1-42df-a553-c9e20e4039de' and name 'Code Analyzer'
+10/17/24 15:35:35: KERNEL_SVC: creating session with uuid: '27162f0a-9cd1-42df-a553-c9e20e4039de' and name 'Code Analyzer'
+10/17/24 15:35:35: GUIDANCE_SMGR: creating guidance session with uuid: '27162f0a-9cd1-42df-a553-c9e20e4039de' and name 'Code Analyzer'
+10/17/24 15:35:35: SESSION_MGR: closing session for UUID '27162f0a-9cd1-42df-a553-c9e20e4039de' with name ''
+10/17/24 15:35:35: KERNEL_SVC: closing session for UUID '27162f0a-9cd1-42df-a553-c9e20e4039de' with name ''
+10/17/24 15:35:35: GUIDANCE_SMGR: closing session for UUID '27162f0a-9cd1-42df-a553-c9e20e4039de' with name ''
+10/17/24 15:35:35: STOP_SERVER received, server token: 6426f93f-8c5a-11ef-8658-744ca175a020, passed token: 6426f93f-8c5a-11ef-8658-744ca175a020
+10/17/24 15:35:35: Socket received request to stop server.
+10/17/24 15:35:35: Dispatch Server: do_await_stop
+10/17/24 15:35:35: SERVER: destructor for server bound to port 53891
+10/17/24 15:35:35: Server exiting with status 0.
+10/17/24 15:35:35: Closing log file.
