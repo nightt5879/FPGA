@@ -1,0 +1,58 @@
+dfgPass::INFOR: DFG Pass going to run on Module: E:\robot\project\FPGA\ZedBoard\HLS_lab\lab1\matrixmul\matrixmul\hls\csim\code_analyzer\.internal\instrument\app_0\project.symbols.bc
+dfgPass::INFOR:     Getting ProgramContainer for application app
+dfgPass::INFOR:     Parsing the provided input trace files...
+dfgPass::INFOR:     Initializing InstructionCounter...
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +1 is not an innermost loop
+dfgPass::VERBO:     +2 fails R.hasBlockSchema
+dfgPass::VERBO:     +3 is not an innermost loop
+dfgPass::VERBO:     +4 is not an innermost loop
+dfgPass::VERBO:       - BEFORE BREAK
+dfgPass::VERBO:       - for.cond6
+dfgPass::VERBO:         - memlocal of :k:0
+dfgPass::VERBO:         - LCV conditional branch 6:48
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:       - for.body8
+dfgPass::VERBO:         - memlocal of :i:0
+dfgPass::VERBO:         - memlocal of :k:0
+dfgPass::VERBO:         - memlocal offset is invalid:0:4
+dfgPass::VERBO:         - memlocal of :k:0
+dfgPass::VERBO:         - memlocal of :j:0
+dfgPass::VERBO:         - memlocal offset is invalid:0:4
+dfgPass::VERBO:         - memlocal of :i:0
+dfgPass::VERBO:         - memlocal of :j:0
+dfgPass::VERBO:         - memlocal offset is invalid:0:4
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:       - for.inc
+dfgPass::VERBO:         - memlocal of :k:0
+dfgPass::VERBO:         - memlocal of :k:1
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +1 is not an innermost loop
+dfgPass::VERBO:     +2 is not an innermost loop
+dfgPass::VERBO:       - BEFORE BREAK
+dfgPass::VERBO:       - for.cond6
+dfgPass::VERBO:         - memlocal of :k:0
+dfgPass::VERBO:         - LCV conditional branch 6:48
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:       - for.body8
+dfgPass::VERBO:         - memlocal of :a:0
+dfgPass::VERBO:         - memlocal of :i:0
+dfgPass::VERBO:         - memlocal of :k:0
+dfgPass::VERBO:         - memlocal of :b:0
+dfgPass::VERBO:         - memlocal of :k:0
+dfgPass::VERBO:         - memlocal of :j:0
+dfgPass::VERBO:         - memlocal of :res:0
+dfgPass::VERBO:         - memlocal of :i:0
+dfgPass::VERBO:         - memlocal of :j:0
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:       - for.inc
+dfgPass::VERBO:         - memlocal of :k:0
+dfgPass::VERBO:         - memlocal of :k:1
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::INFOR:     Parsing trace...
+dfgPass::INFOR:     End of the trace parse
+dfgPass::INFOR: Saving ProgramContainer...

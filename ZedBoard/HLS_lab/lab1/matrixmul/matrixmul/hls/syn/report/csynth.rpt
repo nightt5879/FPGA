@@ -1,0 +1,128 @@
+
+
+================================================================
+== Synthesis Summary Report of 'matrixmul'
+================================================================
++ General Information: 
+    * Date:           Thu Oct 17 16:12:24 2024
+    * Version:        2024.1 (Build 5069499 on May 21 2024)
+    * Project:        matrixmul
+    * Solution:       hls (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg484-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +-------------+------+------+---------+---------+----------+---------+------+----------+------+---------+-----------+-----------+-----+
+    |   Modules   | Issue|      | Latency | Latency | Iteration|         | Trip |          |      |         |           |           |     |
+    |   & Loops   | Type | Slack| (cycles)|   (ns)  |  Latency | Interval| Count| Pipelined| BRAM |   DSP   |     FF    |    LUT    | URAM|
+    +-------------+------+------+---------+---------+----------+---------+------+----------+------+---------+-----------+-----------+-----+
+    |+ matrixmul  |    II|  0.66|       24|  240.000|         -|       18|     -|    rewind|     -|  2 (~0%)|  126 (~0%)|  376 (~0%)|    -|
+    | o Row_Col   |    II|  7.30|       22|  220.000|         7|        2|     9|       yes|     -|        -|          -|          -|    -|
+    +-------------+------+------+---------+---------+----------+---------+------+----------+------+---------+-----------+-----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* AP_MEMORY
++--------------+-----------+----------+
+| Port         | Direction | Bitwidth |
++--------------+-----------+----------+
+| a_address0   | out       | 4        |
+| a_address1   | out       | 4        |
+| a_q0         | in        | 8        |
+| a_q1         | in        | 8        |
+| b_address0   | out       | 4        |
+| b_address1   | out       | 4        |
+| b_q0         | in        | 8        |
+| b_q1         | in        | 8        |
+| res_address0 | out       | 4        |
+| res_d0       | out       | 16       |
++--------------+-----------+----------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------------------------------+
+| Interface | Type       | Ports                             |
++-----------+------------+-----------------------------------+
+| ap_clk    | clock      | ap_clk                            |
+| ap_rst    | reset      | ap_rst                            |
+| ap_ctrl   | ap_ctrl_hs | ap_done ap_idle ap_ready ap_start |
++-----------+------------+-----------------------------------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+----------+
+| Argument | Direction | Datatype |
++----------+-----------+----------+
+| a        | in        | char*    |
+| b        | in        | char*    |
+| res      | out       | short*   |
++----------+-----------+----------+
+
+* SW-to-HW Mapping
++----------+--------------+---------+----------+
+| Argument | HW Interface | HW Type | HW Usage |
++----------+--------------+---------+----------+
+| a        | a_address0   | port    | offset   |
+| a        | a_ce0        | port    |          |
+| a        | a_q0         | port    |          |
+| a        | a_address1   | port    | offset   |
+| a        | a_ce1        | port    |          |
+| a        | a_q1         | port    |          |
+| b        | b_address0   | port    | offset   |
+| b        | b_ce0        | port    |          |
+| b        | b_q0         | port    |          |
+| b        | b_address1   | port    | offset   |
+| b        | b_ce1        | port    |          |
+| b        | b_q1         | port    |          |
+| res      | res_address0 | port    | offset   |
+| res      | res_ce0      | port    |          |
+| res      | res_we0      | port    |          |
+| res      | res_d0       | port    |          |
++----------+--------------+---------+----------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++-----------------------------------+-----+--------+-------------+--------+-----------+---------+
+| Name                              | DSP | Pragma | Variable    | Op     | Impl      | Latency |
++-----------------------------------+-----+--------+-------------+--------+-----------+---------+
+| + matrixmul                       | 2   |        |             |        |           |         |
+|   add_ln37_fu_185_p2              |     |        | add_ln37    | add    | fabric    | 0       |
+|   select_ln37_fu_191_p3           |     |        | select_ln37 | select | auto_sel  | 0       |
+|   i_fu_199_p3                     |     |        | i           | select | auto_sel  | 0       |
+|   empty_fu_240_p2                 |     |        | empty       | sub    | fabric    | 0       |
+|   empty_4_fu_309_p2               |     |        | empty_4     | add    | fabric    | 0       |
+|   empty_5_fu_251_p2               |     |        | empty_5     | add    | fabric    | 0       |
+|   add_ln43_2_fu_265_p2            |     |        | add_ln43_2  | add    | fabric    | 0       |
+|   add_ln43_3_fu_211_p2            |     |        | add_ln43_3  | add    | fabric    | 0       |
+|   add_ln43_4_fu_327_p2            |     |        | add_ln43_4  | add    | fabric    | 0       |
+|   mul_8s_8s_16_1_1_U1             |     |        | mul_ln43    | mul    | auto      | 0       |
+|   mac_muladd_8s_8s_16s_16_4_1_U2  | 1   |        | mul_ln43_1  | mul    | dsp_slice | 3       |
+|   mac_muladd_8s_8s_16ns_16_4_1_U3 | 1   |        | mul_ln43_2  | mul    | dsp_slice | 3       |
+|   mac_muladd_8s_8s_16s_16_4_1_U2  | 1   |        | add_ln43    | add    | dsp_slice | 3       |
+|   mac_muladd_8s_8s_16ns_16_4_1_U3 | 1   |        | add_ln43_1  | add    | dsp_slice | 3       |
+|   j_fu_276_p2                     |     |        | j           | add    | fabric    | 0       |
+|   add_ln37_1_fu_281_p2            |     |        | add_ln37_1  | add    | fabric    | 0       |
+|   icmp_ln39_fu_287_p2             |     |        | icmp_ln39   | seteq  | auto      | 0       |
+|   icmp_ln37_fu_293_p2             |     |        | icmp_ln37   | seteq  | auto      | 0       |
++-----------------------------------+-----+--------+-------------+--------+-----------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
+  No bind storage info in design
+
+================================================================
+== Pragma Report
+================================================================
+  No pragmas found
+

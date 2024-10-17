@@ -1,0 +1,130 @@
+#-----------------------------------------------------------
+# xsim v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Thu Oct 17 17:18:24 2024
+# Process ID: 20392
+# Current directory: E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul/matrixmul/hls/sim/verilog
+# Command line: xsim.exe -source {xsim.dir/matrixmul/xsim_script.tcl}
+# Log file: E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul/matrixmul/hls/sim/verilog/xsim.log
+# Journal file: E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul/matrixmul/hls/sim/verilog\xsim.jou
+# Running On        :nightt_insider
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :22631
+# Processor Detail  :AMD Ryzen 7 5800U with Radeon Graphics         
+# CPU Frequency     :1896 MHz
+# CPU Physical cores:8
+# CPU Logical cores :16
+# Host memory       :16487 MB
+# Swap memory       :18253 MB
+# Total Virtual     :34741 MB
+# Available Virtual :9035 MB
+#-----------------------------------------------------------
+start_gui
+source xsim.dir/matrixmul/xsim_script.tcl
+# set_param project.enableReportConfiguration 0
+# load_feature core
+# current_fileset
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at E:/vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at E:/vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at E:/vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at E:/vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at E:/vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at E:/vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at E:/vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at E:/vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at E:/vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/vivado/Vivado/2024.1/data/ip'.
+current_fileset: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1589.121 ; gain = 338.301
+# xsim {matrixmul} -view {{matrixmul_dataflow_ana.wcfg}} -tclbatch {matrixmul.tcl} -protoinst {matrixmul.protoinst}
+INFO: [Wavedata 42-565] Reading protoinst file matrixmul.protoinst
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_matrixmul_top/AESL_inst_matrixmul//AESL_inst_matrixmul_activity
+Time resolution is 1 ps
+open_wave_config matrixmul_dataflow_ana.wcfg
+source matrixmul.tcl
+## log_wave -r /
+WARNING: [Simtcl 6-197] One or more HDL objects could not be logged because of object type or size limitations.  To see details please rerun the command with -verbose (-v).
+## set designtopgroup [add_wave_group "Design Top Signals"]
+## set coutputgroup [add_wave_group "C Outputs" -into $designtopgroup]
+## set return_group [add_wave_group return(memory) -into $coutputgroup]
+## add_wave /apatb_matrixmul_top/AESL_inst_matrixmul/res_d0 -into $return_group -radix hex
+## add_wave /apatb_matrixmul_top/AESL_inst_matrixmul/res_we0 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_matrixmul_top/AESL_inst_matrixmul/res_ce0 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_matrixmul_top/AESL_inst_matrixmul/res_address0 -into $return_group -radix hex
+## set cinputgroup [add_wave_group "C Inputs" -into $designtopgroup]
+## set return_group [add_wave_group return(memory) -into $cinputgroup]
+## add_wave /apatb_matrixmul_top/AESL_inst_matrixmul/b_q1 -into $return_group -radix hex
+## add_wave /apatb_matrixmul_top/AESL_inst_matrixmul/b_ce1 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_matrixmul_top/AESL_inst_matrixmul/b_address1 -into $return_group -radix hex
+## add_wave /apatb_matrixmul_top/AESL_inst_matrixmul/b_q0 -into $return_group -radix hex
+## add_wave /apatb_matrixmul_top/AESL_inst_matrixmul/b_ce0 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_matrixmul_top/AESL_inst_matrixmul/b_address0 -into $return_group -radix hex
+## add_wave /apatb_matrixmul_top/AESL_inst_matrixmul/a_q1 -into $return_group -radix hex
+## add_wave /apatb_matrixmul_top/AESL_inst_matrixmul/a_ce1 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_matrixmul_top/AESL_inst_matrixmul/a_address1 -into $return_group -radix hex
+## add_wave /apatb_matrixmul_top/AESL_inst_matrixmul/a_q0 -into $return_group -radix hex
+## add_wave /apatb_matrixmul_top/AESL_inst_matrixmul/a_ce0 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_matrixmul_top/AESL_inst_matrixmul/a_address0 -into $return_group -radix hex
+## set blocksiggroup [add_wave_group "Block-level IO Handshake" -into $designtopgroup]
+## add_wave /apatb_matrixmul_top/AESL_inst_matrixmul/ap_start -into $blocksiggroup
+## add_wave /apatb_matrixmul_top/AESL_inst_matrixmul/ap_done -into $blocksiggroup
+## add_wave /apatb_matrixmul_top/AESL_inst_matrixmul/ap_idle -into $blocksiggroup
+## add_wave /apatb_matrixmul_top/AESL_inst_matrixmul/ap_ready -into $blocksiggroup
+## set resetgroup [add_wave_group "Reset" -into $designtopgroup]
+## add_wave /apatb_matrixmul_top/AESL_inst_matrixmul/ap_rst -into $resetgroup
+## set clockgroup [add_wave_group "Clock" -into $designtopgroup]
+## add_wave /apatb_matrixmul_top/AESL_inst_matrixmul/ap_clk -into $clockgroup
+## set testbenchgroup [add_wave_group "Test Bench Signals"]
+## set tbinternalsiggroup [add_wave_group "Internal Signals" -into $testbenchgroup]
+## set tb_simstatus_group [add_wave_group "Simulation Status" -into $tbinternalsiggroup]
+## set tb_portdepth_group [add_wave_group "Port Depth" -into $tbinternalsiggroup]
+## add_wave /apatb_matrixmul_top/AUTOTB_TRANSACTION_NUM -into $tb_simstatus_group -radix hex
+## add_wave /apatb_matrixmul_top/ready_cnt -into $tb_simstatus_group -radix hex
+## add_wave /apatb_matrixmul_top/done_cnt -into $tb_simstatus_group -radix hex
+## add_wave /apatb_matrixmul_top/LENGTH_a -into $tb_portdepth_group -radix hex
+## add_wave /apatb_matrixmul_top/LENGTH_b -into $tb_portdepth_group -radix hex
+## add_wave /apatb_matrixmul_top/LENGTH_res -into $tb_portdepth_group -radix hex
+## set tbcoutputgroup [add_wave_group "C Outputs" -into $testbenchgroup]
+## set tb_return_group [add_wave_group return(memory) -into $tbcoutputgroup]
+## add_wave /apatb_matrixmul_top/res_d0 -into $tb_return_group -radix hex
+## add_wave /apatb_matrixmul_top/res_we0 -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_matrixmul_top/res_ce0 -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_matrixmul_top/res_address0 -into $tb_return_group -radix hex
+## set tbcinputgroup [add_wave_group "C Inputs" -into $testbenchgroup]
+## set tb_return_group [add_wave_group return(memory) -into $tbcinputgroup]
+## add_wave /apatb_matrixmul_top/b_q1 -into $tb_return_group -radix hex
+## add_wave /apatb_matrixmul_top/b_ce1 -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_matrixmul_top/b_address1 -into $tb_return_group -radix hex
+## add_wave /apatb_matrixmul_top/b_q0 -into $tb_return_group -radix hex
+## add_wave /apatb_matrixmul_top/b_ce0 -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_matrixmul_top/b_address0 -into $tb_return_group -radix hex
+## add_wave /apatb_matrixmul_top/a_q1 -into $tb_return_group -radix hex
+## add_wave /apatb_matrixmul_top/a_ce1 -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_matrixmul_top/a_address1 -into $tb_return_group -radix hex
+## add_wave /apatb_matrixmul_top/a_q0 -into $tb_return_group -radix hex
+## add_wave /apatb_matrixmul_top/a_ce0 -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_matrixmul_top/a_address0 -into $tb_return_group -radix hex
+## save_wave_config matrixmul.wcfg
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 1 [0.00%] @ "125000"
+// RTL Simulation : 1 / 1 [100.00%] @ "365000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 425 ns : File "E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul/matrixmul/hls/sim/verilog/matrixmul.autotb.v" Line 337
+xsim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1664.250 ; gain = 75.066
+run 10 us
+run 500 us
+run 500 us
+save_wave_config {E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul/matrixmul/hls/sim/verilog/matrixmul.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting xsim at Thu Oct 17 18:12:29 2024...

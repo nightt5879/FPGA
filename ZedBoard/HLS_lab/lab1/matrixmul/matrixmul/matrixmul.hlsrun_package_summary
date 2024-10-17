@@ -1,0 +1,159 @@
+<ENTRY>
+{
+ "thisFile": "E:/robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab1\\matrixmul\\matrixmul\\matrixmul.hlsrun_package_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "10/17/24 18:14:23",
+ "timestampMillis": "2583210345",
+ "buildStep": {
+  "cmdId": "9c6472c4-71e0-4ca8-98c7-5443ae41f4b0",
+  "name": "vitis-run",
+  "logFile": "E:/robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab1\\matrixmul\\matrixmul\\logs\\matrixmul.steps.log",
+  "commandLine": "E:/vivado/Vitis/2024.1/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --package --config E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab1\\matrixmul\\hls_config.cfg --work_dir matrixmul ",
+  "args": [
+   "--mode",
+   "hls",
+   "--package",
+   "--config",
+   "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab1\\matrixmul\\hls_config.cfg",
+   "--work_dir",
+   "matrixmul"
+  ],
+  "iniFiles": [],
+  "cwd": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab1\\matrixmul"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "10/17/24 18:14:23",
+ "timestampMillis": "2583210345",
+ "status": {
+  "cmdId": "9c6472c4-71e0-4ca8-98c7-5443ae41f4b0",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "10/17/24 18:14:30",
+ "timestampMillis": "2583217813",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_IP",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "matrixmul",
+     "file": "E:/robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab1\\matrixmul\\matrixmul\\matrixmul.zip",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "E:/robot\\project\\FPGA\\ZedBoard\\HLS_lab\\source\\lab1\\matrixmul.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "10/17/24 18:14:30",
+ "timestampMillis": "2583217816",
+ "buildStep": {
+  "cmdId": "6f0ea3b1-13ee-4d93-b27c-a2dc0bd58394",
+  "name": "export_design",
+  "logFile": "E:/robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab1\\matrixmul\\matrixmul\\hls\\hls.log",
+  "commandLine": "export_design -flow none",
+  "args": [
+   "-flow",
+   "none"
+  ],
+  "iniFiles": [],
+  "cwd": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab1\\matrixmul"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "10/17/24 18:14:30",
+ "timestampMillis": "2583217816",
+ "status": {
+  "cmdId": "6f0ea3b1-13ee-4d93-b27c-a2dc0bd58394",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "10/17/24 18:14:49",
+ "timestampMillis": "2583236340",
+ "status": {
+  "cmdId": "6f0ea3b1-13ee-4d93-b27c-a2dc0bd58394",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "10/17/24 18:14:49",
+ "timestampMillis": "2583236607",
+ "status": {
+  "cmdId": "9c6472c4-71e0-4ca8-98c7-5443ae41f4b0",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "10/17/24 18:14:49",
+ "timestampMillis": "2583236607",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "10/17/24 18:14:49",
+ "timestampMillis": "2583236608",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

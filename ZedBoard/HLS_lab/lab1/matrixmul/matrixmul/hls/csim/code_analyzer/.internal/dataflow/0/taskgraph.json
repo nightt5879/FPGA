@@ -1,0 +1,589 @@
+[
+    {
+        "name": "_Z9matrixmulPA3_cS0_PA3_s",
+        "df_function": "%F212",
+        "df_type": "Function",
+        "project": "SLX",
+        "processes": {
+            "1": {
+                "id": "1",
+                "name": "Artificial<Start>",
+                "src_range": {
+                    "start_loc": {
+                        "file": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\source\\lab1\\matrixmul.cpp",
+                        "line": 31,
+                        "column": 1
+                    },
+                    "end_loc": {
+                        "file": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\source\\lab1\\matrixmul.cpp",
+                        "line": 47,
+                        "column": 1
+                    }
+                },
+                "display_name": "<START>",
+                "kind": "start"
+            },
+            "2": {
+                "id": "2",
+                "name": "Artificial<End>",
+                "src_range": {
+                    "start_loc": {
+                        "file": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\source\\lab1\\matrixmul.cpp",
+                        "line": 31,
+                        "column": 1
+                    },
+                    "end_loc": {
+                        "file": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\source\\lab1\\matrixmul.cpp",
+                        "line": 47,
+                        "column": 1
+                    }
+                },
+                "display_name": "<END>",
+                "kind": "end"
+            },
+            "3": {
+                "id": "3",
+                "name": "Region<OutlineCall(R2 matrixmul) BB 'codeRepl' [Loop] 'Outline_T3_F212_R2_Loop'>",
+                "src_range": {
+                    "start_loc": {
+                        "file": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\source\\lab1\\matrixmul.cpp",
+                        "line": 37,
+                        "column": 8
+                    },
+                    "end_loc": {
+                        "file": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\source\\lab1\\matrixmul.cpp",
+                        "line": 46,
+                        "column": 3
+                    }
+                },
+                "display_name": "Row",
+                "io_signatures": {
+                    "has_unresolved_accesses": false,
+                    "accesses": [
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\source\\lab1\\matrixmul.cpp",
+                                    "line": 34,
+                                    "column": 0
+                                },
+                                "id": "VId_18_[?(?,48)]dc[?(?,16)]",
+                                "name": "res[*][*]",
+                                "display_name": "result_t res[3][3]"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 18,
+                                                "is_exact": true
+                                            }
+                                        ]
+                                    },
+                                    "instr": "load",
+                                    "exec_count": 27
+                                }
+                            ],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 18,
+                                                "is_exact": true
+                                            }
+                                        ]
+                                    },
+                                    "instr": "store",
+                                    "exec_count": 9
+                                },
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 18,
+                                                "is_exact": true
+                                            }
+                                        ]
+                                    },
+                                    "instr": "store",
+                                    "exec_count": 27
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false,
+                            "arg_idx": 2
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\source\\lab1\\matrixmul.cpp",
+                                    "line": 32,
+                                    "column": 0
+                                },
+                                "id": "VId_16_[?(?,24)]dc[?(?,8)]",
+                                "name": "a[*][*]",
+                                "display_name": "mat_a_t a[3][3]"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 9,
+                                                "is_exact": true
+                                            }
+                                        ]
+                                    },
+                                    "instr": "load",
+                                    "exec_count": 27
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Ptr",
+                            "has_alias": false,
+                            "arg_idx": 0
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\source\\lab1\\matrixmul.cpp",
+                                    "line": 33,
+                                    "column": 0
+                                },
+                                "id": "VId_17_[?(?,24)]dc[?(?,8)]",
+                                "name": "b[*][*]",
+                                "display_name": "mat_b_t b[3][3]"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 9,
+                                                "is_exact": true
+                                            }
+                                        ]
+                                    },
+                                    "instr": "load",
+                                    "exec_count": 27
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Ptr",
+                            "has_alias": false,
+                            "arg_idx": 1
+                        }
+                    ]
+                },
+                "metrics": {
+                    "initiation_interval": 56
+                },
+                "subregions": [
+                    {
+                        "id": "%F213_R2",
+                        "description": "<loop 'Row'>",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\source\\lab1\\matrixmul.cpp",
+                                "line": 37,
+                                "column": 8
+                            },
+                            "end_loc": {
+                                "file": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\source\\lab1\\matrixmul.cpp",
+                                "line": 46,
+                                "column": 3
+                            }
+                        }
+                    }
+                ],
+                "subdataflow": [
+                    {
+                        "id": "%L6",
+                        "region_type": "Loop",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\source\\lab1\\matrixmul.cpp",
+                                "line": 37,
+                                "column": 8
+                            },
+                            "end_loc": {
+                                "file": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\source\\lab1\\matrixmul.cpp",
+                                "line": 46,
+                                "column": 3
+                            }
+                        }
+                    },
+                    {
+                        "id": "%L7",
+                        "region_type": "Loop",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\source\\lab1\\matrixmul.cpp",
+                                "line": 39,
+                                "column": 10
+                            },
+                            "end_loc": {
+                                "file": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\source\\lab1\\matrixmul.cpp",
+                                "line": 45,
+                                "column": 5
+                            }
+                        }
+                    },
+                    {
+                        "id": "%L8",
+                        "region_type": "Loop",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\source\\lab1\\matrixmul.cpp",
+                                "line": 42,
+                                "column": 16
+                            },
+                            "end_loc": {
+                                "file": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\source\\lab1\\matrixmul.cpp",
+                                "line": 44,
+                                "column": 7
+                            }
+                        }
+                    }
+                ],
+                "guidance": [
+                    {
+                        "type": "LoopGuidance",
+                        "ti": {
+                            "min": 54,
+                            "max": 54
+                        },
+                        "ii": {
+                            "min": 18,
+                            "max": 18
+                        },
+                        "effective_tc": {
+                            "min": 3,
+                            "max": 3
+                        },
+                        "tc": {
+                            "min": 3,
+                            "max": 3
+                        },
+                        "ureg_id": "%L6",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\source\\lab1\\matrixmul.cpp",
+                                "line": 37,
+                                "column": 8
+                            },
+                            "end_loc": {
+                                "file": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\source\\lab1\\matrixmul.cpp",
+                                "line": 46,
+                                "column": 3
+                            }
+                        },
+                        "details": []
+                    },
+                    {
+                        "type": "LoopGuidance",
+                        "ti": {
+                            "min": 18,
+                            "max": 18
+                        },
+                        "ii": {
+                            "min": 6,
+                            "max": 6
+                        },
+                        "effective_tc": {
+                            "min": 3,
+                            "max": 3
+                        },
+                        "tc": {
+                            "min": 3,
+                            "max": 3
+                        },
+                        "ureg_id": "%L7",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\source\\lab1\\matrixmul.cpp",
+                                "line": 39,
+                                "column": 10
+                            },
+                            "end_loc": {
+                                "file": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\source\\lab1\\matrixmul.cpp",
+                                "line": 45,
+                                "column": 5
+                            }
+                        },
+                        "details": [
+                            {
+                                "type": "MemPortContention",
+                                "available_ports": {
+                                    "min": 2,
+                                    "max": 2
+                                },
+                                "required_ports": {
+                                    "min": 2,
+                                    "max": 2
+                                },
+                                "ii_lower_bound": {
+                                    "min": 1,
+                                    "max": 1
+                                },
+                                "variable": {
+                                    "name": "res",
+                                    "display_name": "res",
+                                    "id": "19",
+                                    "location": {
+                                        "file": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\source\\lab1\\matrixmul.cpp",
+                                        "line": 34,
+                                        "column": 0
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "type": "LoopGuidance",
+                        "ti": {
+                            "min": 6,
+                            "max": 6
+                        },
+                        "ii": {
+                            "min": 2,
+                            "max": 2
+                        },
+                        "effective_tc": {
+                            "min": 3,
+                            "max": 3
+                        },
+                        "tc": {
+                            "min": 3,
+                            "max": 3
+                        },
+                        "ureg_id": "%L8",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\source\\lab1\\matrixmul.cpp",
+                                "line": 42,
+                                "column": 16
+                            },
+                            "end_loc": {
+                                "file": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\source\\lab1\\matrixmul.cpp",
+                                "line": 44,
+                                "column": 7
+                            }
+                        },
+                        "details": [
+                            {
+                                "type": "MemPortContention",
+                                "available_ports": {
+                                    "min": 2,
+                                    "max": 2
+                                },
+                                "required_ports": {
+                                    "min": 1,
+                                    "max": 1
+                                },
+                                "ii_lower_bound": {
+                                    "min": 1,
+                                    "max": 1
+                                },
+                                "variable": {
+                                    "name": "a",
+                                    "display_name": "a",
+                                    "id": "20",
+                                    "location": {
+                                        "file": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\source\\lab1\\matrixmul.cpp",
+                                        "line": 32,
+                                        "column": 0
+                                    }
+                                }
+                            },
+                            {
+                                "type": "MemPortContention",
+                                "available_ports": {
+                                    "min": 2,
+                                    "max": 2
+                                },
+                                "required_ports": {
+                                    "min": 1,
+                                    "max": 1
+                                },
+                                "ii_lower_bound": {
+                                    "min": 1,
+                                    "max": 1
+                                },
+                                "variable": {
+                                    "name": "b",
+                                    "display_name": "b",
+                                    "id": "21",
+                                    "location": {
+                                        "file": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\source\\lab1\\matrixmul.cpp",
+                                        "line": 33,
+                                        "column": 0
+                                    }
+                                }
+                            },
+                            {
+                                "type": "CyclicDependence",
+                                "ii_lower_bound": {
+                                    "min": 1,
+                                    "max": 1
+                                },
+                                "variables": [
+                                    {
+                                        "name": "i184 [phi]",
+                                        "id": "<unknown>",
+                                        "location": {
+                                            "file": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\source\\lab1\\matrixmul.cpp",
+                                            "line": 0,
+                                            "column": 0
+                                        }
+                                    },
+                                    {
+                                        "name": "add [add]",
+                                        "id": "<unknown>",
+                                        "location": {
+                                            "file": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\source\\lab1\\matrixmul.cpp",
+                                            "line": 43,
+                                            "column": 19
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "channels": {
+            "a[*][*]_RAW_1_3_#0": {
+                "name": "a[*][*]_RAW_1_3_#0",
+                "variable_id": "VId_16_[?(?,24)]dc[?(?,8)]",
+                "variable_name": "a[*][*]",
+                "declaration": "mat_a_t a[3][3]",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 8,
+                "src_loc": {
+                    "file": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\source\\lab1\\matrixmul.cpp",
+                    "line": 32,
+                    "column": 0
+                },
+                "metrics": {
+                    "volume": 216,
+                    "channel_rate": 3.857142857142857E0
+                },
+                "source": "1",
+                "sink": "3"
+            },
+            "b[*][*]_RAW_1_3_#1": {
+                "name": "b[*][*]_RAW_1_3_#1",
+                "variable_id": "VId_17_[?(?,24)]dc[?(?,8)]",
+                "variable_name": "b[*][*]",
+                "declaration": "mat_b_t b[3][3]",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 8,
+                "src_loc": {
+                    "file": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\source\\lab1\\matrixmul.cpp",
+                    "line": 33,
+                    "column": 0
+                },
+                "metrics": {
+                    "volume": 216,
+                    "channel_rate": 3.857142857142857E0
+                },
+                "source": "1",
+                "sink": "3"
+            },
+            "res[*][*]_RAW_1_3_#2": {
+                "name": "res[*][*]_RAW_1_3_#2",
+                "variable_id": "VId_18_[?(?,48)]dc[?(?,16)]",
+                "variable_name": "res[*][*]",
+                "declaration": "result_t res[3][3]",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\source\\lab1\\matrixmul.cpp",
+                    "line": 34,
+                    "column": 0
+                },
+                "source": "1",
+                "sink": "3"
+            },
+            "res[*][*]_WAW_1_3_#3": {
+                "name": "res[*][*]_WAW_1_3_#3",
+                "variable_id": "VId_18_[?(?,48)]dc[?(?,16)]",
+                "variable_name": "res[*][*]",
+                "declaration": "result_t res[3][3]",
+                "kind": "Ptr",
+                "dependence": "WAW",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\source\\lab1\\matrixmul.cpp",
+                    "line": 34,
+                    "column": 0
+                },
+                "source": "1",
+                "sink": "3"
+            },
+            "res[*][*]_RAW_3_2_#4": {
+                "name": "res[*][*]_RAW_3_2_#4",
+                "variable_id": "VId_18_[?(?,48)]dc[?(?,16)]",
+                "variable_name": "res[*][*]",
+                "declaration": "result_t res[3][3]",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 16,
+                "src_loc": {
+                    "file": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\source\\lab1\\matrixmul.cpp",
+                    "line": 34,
+                    "column": 0
+                },
+                "metrics": {
+                    "volume": 288,
+                    "channel_rate": 5.142857142857143E0
+                },
+                "source": "3",
+                "sink": "2"
+            },
+            "res[*][*]_RAR_3_2_#5": {
+                "name": "res[*][*]_RAR_3_2_#5",
+                "variable_id": "VId_18_[?(?,48)]dc[?(?,16)]",
+                "variable_name": "res[*][*]",
+                "declaration": "result_t res[3][3]",
+                "kind": "Ptr",
+                "dependence": "RAR",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\source\\lab1\\matrixmul.cpp",
+                    "line": 34,
+                    "column": 0
+                },
+                "source": "3",
+                "sink": "2"
+            }
+        },
+        "control": [
+            {
+                "source": "1",
+                "sink": "3"
+            },
+            {
+                "source": "3",
+                "sink": "2"
+            }
+        ]
+    }
+]

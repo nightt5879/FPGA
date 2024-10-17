@@ -1,0 +1,497 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Thu Oct 17 18:21:44 2024
+| Host         : nightt_insider running 64-bit major release  (build 9200)
+| Command      : report_timing -max_paths 10 -file ./report/matrixmul_timing_paths_synth.rpt
+| Design       : bd_0_wrapper
+| Device       : 7z020-clg484
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack (MET) :             7.008ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/ap_CS_fsm_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg/CEA1
+                            (rising edge-triggered cell DSP48E1 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        2.411ns  (logic 0.813ns (33.724%)  route 1.598ns (66.276%))
+  Logic Levels:           1  (LUT5=1)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=40, unset)           0.973     0.973    bd_0_i/hls_inst/inst/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/ap_CS_fsm_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.518     1.491 r  bd_0_i/hls_inst/inst/ap_CS_fsm_reg[1]/Q
+                         net (fo=18, unplaced)        0.798     2.289    bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/Q[1]
+                         LUT5 (Prop_lut5_I2_O)        0.295     2.584 r  bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/b_ce0_INST_0/O
+                         net (fo=2, unplaced)         0.800     3.384    bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/a_ce0
+                         DSP48E1                                      r  bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg/CEA1
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=40, unset)           0.924    10.924    bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/ap_clk
+                         DSP48E1                                      r  bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg/CLK
+                         clock pessimism              0.000    10.924    
+                         clock uncertainty           -0.035    10.889    
+                         DSP48E1 (Setup_dsp48e1_CLK_CEA1)
+                                                     -0.497    10.392    bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg
+  -------------------------------------------------------------------
+                         required time                         10.392    
+                         arrival time                          -3.384    
+  -------------------------------------------------------------------
+                         slack                                  7.008    
+
+Slack (MET) :             7.008ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/ap_CS_fsm_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16s_16_4_1_U2/matrixmul_mac_muladd_8s_8s_16s_16_4_1_DSP48_0_U/m_reg_reg/CEA1
+                            (rising edge-triggered cell DSP48E1 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        2.411ns  (logic 0.813ns (33.724%)  route 1.598ns (66.276%))
+  Logic Levels:           1  (LUT5=1)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=40, unset)           0.973     0.973    bd_0_i/hls_inst/inst/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/ap_CS_fsm_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.518     1.491 r  bd_0_i/hls_inst/inst/ap_CS_fsm_reg[1]/Q
+                         net (fo=18, unplaced)        0.798     2.289    bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/Q[1]
+                         LUT5 (Prop_lut5_I2_O)        0.295     2.584 r  bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/b_ce0_INST_0/O
+                         net (fo=2, unplaced)         0.800     3.384    bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16s_16_4_1_U2/matrixmul_mac_muladd_8s_8s_16s_16_4_1_DSP48_0_U/a_ce0
+                         DSP48E1                                      r  bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16s_16_4_1_U2/matrixmul_mac_muladd_8s_8s_16s_16_4_1_DSP48_0_U/m_reg_reg/CEA1
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=40, unset)           0.924    10.924    bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16s_16_4_1_U2/matrixmul_mac_muladd_8s_8s_16s_16_4_1_DSP48_0_U/ap_clk
+                         DSP48E1                                      r  bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16s_16_4_1_U2/matrixmul_mac_muladd_8s_8s_16s_16_4_1_DSP48_0_U/m_reg_reg/CLK
+                         clock pessimism              0.000    10.924    
+                         clock uncertainty           -0.035    10.889    
+                         DSP48E1 (Setup_dsp48e1_CLK_CEA1)
+                                                     -0.497    10.392    bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16s_16_4_1_U2/matrixmul_mac_muladd_8s_8s_16s_16_4_1_DSP48_0_U/m_reg_reg
+  -------------------------------------------------------------------
+                         required time                         10.392    
+                         arrival time                          -3.384    
+  -------------------------------------------------------------------
+                         slack                                  7.008    
+
+Slack (MET) :             7.121ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/ap_CS_fsm_reg[0]/C
+                            (rising edge-triggered cell FDSE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg/A[0]
+                            (rising edge-triggered cell DSP48E1 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        2.433ns  (logic 0.813ns (33.419%)  route 1.620ns (66.581%))
+  Logic Levels:           1  (LUT4=1)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=40, unset)           0.973     0.973    bd_0_i/hls_inst/inst/ap_clk
+                         FDSE                                         r  bd_0_i/hls_inst/inst/ap_CS_fsm_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+                         FDSE (Prop_fdse_C_Q)         0.518     1.491 r  bd_0_i/hls_inst/inst/ap_CS_fsm_reg[0]/Q
+                         net (fo=44, unplaced)        0.820     2.311    bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/Q[0]
+                         LUT4 (Prop_lut4_I1_O)        0.295     2.606 r  bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg_i_8/O
+                         net (fo=2, unplaced)         0.800     3.406    bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/A[0]
+                         DSP48E1                                      r  bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg/A[0]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=40, unset)           0.924    10.924    bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/ap_clk
+                         DSP48E1                                      r  bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg/CLK
+                         clock pessimism              0.000    10.924    
+                         clock uncertainty           -0.035    10.889    
+                         DSP48E1 (Setup_dsp48e1_CLK_A[0])
+                                                     -0.362    10.527    bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg
+  -------------------------------------------------------------------
+                         required time                         10.527    
+                         arrival time                          -3.406    
+  -------------------------------------------------------------------
+                         slack                                  7.121    
+
+Slack (MET) :             7.121ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/ap_CS_fsm_reg[0]/C
+                            (rising edge-triggered cell FDSE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg/A[10]
+                            (rising edge-triggered cell DSP48E1 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        2.433ns  (logic 0.813ns (33.419%)  route 1.620ns (66.581%))
+  Logic Levels:           1  (LUT4=1)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=40, unset)           0.973     0.973    bd_0_i/hls_inst/inst/ap_clk
+                         FDSE                                         r  bd_0_i/hls_inst/inst/ap_CS_fsm_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+                         FDSE (Prop_fdse_C_Q)         0.518     1.491 r  bd_0_i/hls_inst/inst/ap_CS_fsm_reg[0]/Q
+                         net (fo=44, unplaced)        0.820     2.311    bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/Q[0]
+                         LUT4 (Prop_lut4_I1_O)        0.295     2.606 r  bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg_i_1/O
+                         net (fo=46, unplaced)        0.800     3.406    bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/A[7]
+                         DSP48E1                                      r  bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg/A[10]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=40, unset)           0.924    10.924    bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/ap_clk
+                         DSP48E1                                      r  bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg/CLK
+                         clock pessimism              0.000    10.924    
+                         clock uncertainty           -0.035    10.889    
+                         DSP48E1 (Setup_dsp48e1_CLK_A[10])
+                                                     -0.362    10.527    bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg
+  -------------------------------------------------------------------
+                         required time                         10.527    
+                         arrival time                          -3.406    
+  -------------------------------------------------------------------
+                         slack                                  7.121    
+
+Slack (MET) :             7.121ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/ap_CS_fsm_reg[0]/C
+                            (rising edge-triggered cell FDSE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg/A[11]
+                            (rising edge-triggered cell DSP48E1 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        2.433ns  (logic 0.813ns (33.419%)  route 1.620ns (66.581%))
+  Logic Levels:           1  (LUT4=1)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=40, unset)           0.973     0.973    bd_0_i/hls_inst/inst/ap_clk
+                         FDSE                                         r  bd_0_i/hls_inst/inst/ap_CS_fsm_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+                         FDSE (Prop_fdse_C_Q)         0.518     1.491 r  bd_0_i/hls_inst/inst/ap_CS_fsm_reg[0]/Q
+                         net (fo=44, unplaced)        0.820     2.311    bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/Q[0]
+                         LUT4 (Prop_lut4_I1_O)        0.295     2.606 r  bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg_i_1/O
+                         net (fo=46, unplaced)        0.800     3.406    bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/A[7]
+                         DSP48E1                                      r  bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg/A[11]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=40, unset)           0.924    10.924    bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/ap_clk
+                         DSP48E1                                      r  bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg/CLK
+                         clock pessimism              0.000    10.924    
+                         clock uncertainty           -0.035    10.889    
+                         DSP48E1 (Setup_dsp48e1_CLK_A[11])
+                                                     -0.362    10.527    bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg
+  -------------------------------------------------------------------
+                         required time                         10.527    
+                         arrival time                          -3.406    
+  -------------------------------------------------------------------
+                         slack                                  7.121    
+
+Slack (MET) :             7.121ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/ap_CS_fsm_reg[0]/C
+                            (rising edge-triggered cell FDSE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg/A[12]
+                            (rising edge-triggered cell DSP48E1 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        2.433ns  (logic 0.813ns (33.419%)  route 1.620ns (66.581%))
+  Logic Levels:           1  (LUT4=1)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=40, unset)           0.973     0.973    bd_0_i/hls_inst/inst/ap_clk
+                         FDSE                                         r  bd_0_i/hls_inst/inst/ap_CS_fsm_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+                         FDSE (Prop_fdse_C_Q)         0.518     1.491 r  bd_0_i/hls_inst/inst/ap_CS_fsm_reg[0]/Q
+                         net (fo=44, unplaced)        0.820     2.311    bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/Q[0]
+                         LUT4 (Prop_lut4_I1_O)        0.295     2.606 r  bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg_i_1/O
+                         net (fo=46, unplaced)        0.800     3.406    bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/A[7]
+                         DSP48E1                                      r  bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg/A[12]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=40, unset)           0.924    10.924    bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/ap_clk
+                         DSP48E1                                      r  bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg/CLK
+                         clock pessimism              0.000    10.924    
+                         clock uncertainty           -0.035    10.889    
+                         DSP48E1 (Setup_dsp48e1_CLK_A[12])
+                                                     -0.362    10.527    bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg
+  -------------------------------------------------------------------
+                         required time                         10.527    
+                         arrival time                          -3.406    
+  -------------------------------------------------------------------
+                         slack                                  7.121    
+
+Slack (MET) :             7.121ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/ap_CS_fsm_reg[0]/C
+                            (rising edge-triggered cell FDSE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg/A[13]
+                            (rising edge-triggered cell DSP48E1 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        2.433ns  (logic 0.813ns (33.419%)  route 1.620ns (66.581%))
+  Logic Levels:           1  (LUT4=1)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=40, unset)           0.973     0.973    bd_0_i/hls_inst/inst/ap_clk
+                         FDSE                                         r  bd_0_i/hls_inst/inst/ap_CS_fsm_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+                         FDSE (Prop_fdse_C_Q)         0.518     1.491 r  bd_0_i/hls_inst/inst/ap_CS_fsm_reg[0]/Q
+                         net (fo=44, unplaced)        0.820     2.311    bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/Q[0]
+                         LUT4 (Prop_lut4_I1_O)        0.295     2.606 r  bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg_i_1/O
+                         net (fo=46, unplaced)        0.800     3.406    bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/A[7]
+                         DSP48E1                                      r  bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg/A[13]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=40, unset)           0.924    10.924    bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/ap_clk
+                         DSP48E1                                      r  bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg/CLK
+                         clock pessimism              0.000    10.924    
+                         clock uncertainty           -0.035    10.889    
+                         DSP48E1 (Setup_dsp48e1_CLK_A[13])
+                                                     -0.362    10.527    bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg
+  -------------------------------------------------------------------
+                         required time                         10.527    
+                         arrival time                          -3.406    
+  -------------------------------------------------------------------
+                         slack                                  7.121    
+
+Slack (MET) :             7.121ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/ap_CS_fsm_reg[0]/C
+                            (rising edge-triggered cell FDSE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg/A[14]
+                            (rising edge-triggered cell DSP48E1 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        2.433ns  (logic 0.813ns (33.419%)  route 1.620ns (66.581%))
+  Logic Levels:           1  (LUT4=1)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=40, unset)           0.973     0.973    bd_0_i/hls_inst/inst/ap_clk
+                         FDSE                                         r  bd_0_i/hls_inst/inst/ap_CS_fsm_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+                         FDSE (Prop_fdse_C_Q)         0.518     1.491 r  bd_0_i/hls_inst/inst/ap_CS_fsm_reg[0]/Q
+                         net (fo=44, unplaced)        0.820     2.311    bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/Q[0]
+                         LUT4 (Prop_lut4_I1_O)        0.295     2.606 r  bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg_i_1/O
+                         net (fo=46, unplaced)        0.800     3.406    bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/A[7]
+                         DSP48E1                                      r  bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg/A[14]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=40, unset)           0.924    10.924    bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/ap_clk
+                         DSP48E1                                      r  bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg/CLK
+                         clock pessimism              0.000    10.924    
+                         clock uncertainty           -0.035    10.889    
+                         DSP48E1 (Setup_dsp48e1_CLK_A[14])
+                                                     -0.362    10.527    bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg
+  -------------------------------------------------------------------
+                         required time                         10.527    
+                         arrival time                          -3.406    
+  -------------------------------------------------------------------
+                         slack                                  7.121    
+
+Slack (MET) :             7.121ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/ap_CS_fsm_reg[0]/C
+                            (rising edge-triggered cell FDSE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg/A[15]
+                            (rising edge-triggered cell DSP48E1 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        2.433ns  (logic 0.813ns (33.419%)  route 1.620ns (66.581%))
+  Logic Levels:           1  (LUT4=1)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=40, unset)           0.973     0.973    bd_0_i/hls_inst/inst/ap_clk
+                         FDSE                                         r  bd_0_i/hls_inst/inst/ap_CS_fsm_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+                         FDSE (Prop_fdse_C_Q)         0.518     1.491 r  bd_0_i/hls_inst/inst/ap_CS_fsm_reg[0]/Q
+                         net (fo=44, unplaced)        0.820     2.311    bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/Q[0]
+                         LUT4 (Prop_lut4_I1_O)        0.295     2.606 r  bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg_i_1/O
+                         net (fo=46, unplaced)        0.800     3.406    bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/A[7]
+                         DSP48E1                                      r  bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg/A[15]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=40, unset)           0.924    10.924    bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/ap_clk
+                         DSP48E1                                      r  bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg/CLK
+                         clock pessimism              0.000    10.924    
+                         clock uncertainty           -0.035    10.889    
+                         DSP48E1 (Setup_dsp48e1_CLK_A[15])
+                                                     -0.362    10.527    bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg
+  -------------------------------------------------------------------
+                         required time                         10.527    
+                         arrival time                          -3.406    
+  -------------------------------------------------------------------
+                         slack                                  7.121    
+
+Slack (MET) :             7.121ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/ap_CS_fsm_reg[0]/C
+                            (rising edge-triggered cell FDSE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg/A[16]
+                            (rising edge-triggered cell DSP48E1 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        2.433ns  (logic 0.813ns (33.419%)  route 1.620ns (66.581%))
+  Logic Levels:           1  (LUT4=1)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=40, unset)           0.973     0.973    bd_0_i/hls_inst/inst/ap_clk
+                         FDSE                                         r  bd_0_i/hls_inst/inst/ap_CS_fsm_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+                         FDSE (Prop_fdse_C_Q)         0.518     1.491 r  bd_0_i/hls_inst/inst/ap_CS_fsm_reg[0]/Q
+                         net (fo=44, unplaced)        0.820     2.311    bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/Q[0]
+                         LUT4 (Prop_lut4_I1_O)        0.295     2.606 r  bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg_i_1/O
+                         net (fo=46, unplaced)        0.800     3.406    bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/A[7]
+                         DSP48E1                                      r  bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg/A[16]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=40, unset)           0.924    10.924    bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/ap_clk
+                         DSP48E1                                      r  bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg/CLK
+                         clock pessimism              0.000    10.924    
+                         clock uncertainty           -0.035    10.889    
+                         DSP48E1 (Setup_dsp48e1_CLK_A[16])
+                                                     -0.362    10.527    bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg
+  -------------------------------------------------------------------
+                         required time                         10.527    
+                         arrival time                          -3.406    
+  -------------------------------------------------------------------
+                         slack                                  7.121    
+
+
+
+

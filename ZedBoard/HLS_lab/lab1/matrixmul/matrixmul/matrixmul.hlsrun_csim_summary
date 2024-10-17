@@ -1,0 +1,158 @@
+<ENTRY>
+{
+ "thisFile": "E:/robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab1\\matrixmul\\matrixmul\\matrixmul.hlsrun_csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "10/17/24 15:36:35",
+ "timestampMillis": "2573742465",
+ "buildStep": {
+  "cmdId": "fac463b8-c8dc-4f0d-a49d-89ba19d75268",
+  "name": "vitis-run",
+  "logFile": "E:/robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab1\\matrixmul\\matrixmul\\logs\\matrixmul.steps.log",
+  "commandLine": "E:/vivado/Vitis/2024.1/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --csim --config E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab1\\matrixmul\\matrixmul\\hls-debug.cfg --config E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab1\\matrixmul\\hls_config.cfg --work_dir matrixmul ",
+  "args": [
+   "--mode",
+   "hls",
+   "--csim",
+   "--config",
+   "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab1\\matrixmul\\matrixmul\\hls-debug.cfg",
+   "--config",
+   "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab1\\matrixmul\\hls_config.cfg",
+   "--work_dir",
+   "matrixmul"
+  ],
+  "iniFiles": [],
+  "cwd": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab1\\matrixmul"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "10/17/24 15:36:35",
+ "timestampMillis": "2573742465",
+ "status": {
+  "cmdId": "fac463b8-c8dc-4f0d-a49d-89ba19d75268",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "10/17/24 15:36:41",
+ "timestampMillis": "2573748426",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "matrixmul",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "E:/robot\\project\\FPGA\\ZedBoard\\HLS_lab\\source\\lab1\\matrixmul.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "10/17/24 15:36:41",
+ "timestampMillis": "2573748428",
+ "buildStep": {
+  "cmdId": "d769d634-ed03-4221-9438-7d69e5d84eaf",
+  "name": "csim_design",
+  "logFile": "E:/robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab1\\matrixmul\\matrixmul\\hls\\hls.log",
+  "commandLine": "csim_design",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab1\\matrixmul"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "10/17/24 15:36:41",
+ "timestampMillis": "2573748429",
+ "status": {
+  "cmdId": "d769d634-ed03-4221-9438-7d69e5d84eaf",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "10/17/24 15:36:45",
+ "timestampMillis": "2573752807",
+ "status": {
+  "cmdId": "d769d634-ed03-4221-9438-7d69e5d84eaf",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "10/17/24 15:36:46",
+ "timestampMillis": "2573753062",
+ "status": {
+  "cmdId": "fac463b8-c8dc-4f0d-a49d-89ba19d75268",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "10/17/24 15:36:46",
+ "timestampMillis": "2573753063",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "10/17/24 15:36:46",
+ "timestampMillis": "2573753063",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

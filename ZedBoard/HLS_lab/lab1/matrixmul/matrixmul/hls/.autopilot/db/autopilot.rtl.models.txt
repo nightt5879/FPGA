@@ -1,0 +1,5 @@
+matrixmul_mul_8s_8s_16_1_1
+matrixmul_mac_muladd_8s_8s_16s_16_4_1
+matrixmul_mac_muladd_8s_8s_16ns_16_4_1
+matrixmul_flow_control_loop_pipe
+matrixmul

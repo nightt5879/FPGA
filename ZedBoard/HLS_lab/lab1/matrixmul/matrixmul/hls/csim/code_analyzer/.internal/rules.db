@@ -1,0 +1,228 @@
+{
+    "rules": {
+        "['E:\\\\robot\\\\project\\\\FPGA\\\\ZedBoard\\\\HLS_lab\\\\lab1\\\\matrixmul\\\\matrixmul\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\build\\\\matrixmul.cpp.0.bc', 'E:\\\\robot\\\\project\\\\FPGA\\\\ZedBoard\\\\HLS_lab\\\\lab1\\\\matrixmul\\\\matrixmul\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\build\\\\matrixmul.cpp.0.bc.d']": {
+            "command": [
+                "e:\\vivado\\vitis_hls\\2024.1\\vcxx\\/libexec/clang.exe",
+                "-c",
+                "-emit-llvm",
+                "-MD",
+                "-MF",
+                "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab1\\matrixmul\\matrixmul\\hls\\csim\\code_analyzer\\.internal\\build\\matrixmul.cpp.0.bc.d",
+                "-fhls",
+                "-hls-syn-headers-dir=e:\\vivado\\vitis_hls\\2024.1\\vcxx\\data\\autopilot",
+                "-vitis-hls=E:\\vivado\\Vitis_HLS\\2024.1",
+                "--sysroot=E:\\vivado\\Vitis_HLS\\2024.1\\tps\\mingw\\10.0.0\\win64.o\\nt",
+                "-fhlstoplevel=matrixmul",
+                "-fslxtrace",
+                "../../source/lab1/matrixmul.cpp",
+                "-o",
+                "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab1\\matrixmul\\matrixmul\\hls\\csim\\code_analyzer\\.internal\\build\\matrixmul.cpp.0.bc"
+            ],
+            "exectime": 0.3492248058319092,
+            "cwd": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab1\\matrixmul"
+        },
+        "['E:\\\\robot\\\\project\\\\FPGA\\\\ZedBoard\\\\HLS_lab\\\\lab1\\\\matrixmul\\\\matrixmul\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\build\\\\matrixmul_test.cpp.0.o', 'E:\\\\robot\\\\project\\\\FPGA\\\\ZedBoard\\\\HLS_lab\\\\lab1\\\\matrixmul\\\\matrixmul\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\build\\\\matrixmul_test.cpp.0.o.d']": {
+            "command": [
+                "e:\\vivado\\vitis_hls\\2024.1\\vcxx\\/libexec/clang.exe",
+                "-c",
+                "-DHW_COSIM",
+                "-MD",
+                "-MF",
+                "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab1\\matrixmul\\matrixmul\\hls\\csim\\code_analyzer\\.internal\\build\\matrixmul_test.cpp.0.o.d",
+                "-fhls-tb",
+                "-hls-sim-headers-dir=e:\\vivado\\vitis_hls\\2024.1\\vcxx\\data\\include",
+                "-vitis-hls=E:\\vivado\\Vitis_HLS\\2024.1",
+                "--sysroot=E:\\vivado\\Vitis_HLS\\2024.1\\tps\\mingw\\10.0.0\\win64.o\\nt",
+                "-fhlstoplevel=matrixmul",
+                "-fslxskipfunctionbody",
+                "-fslxtrace",
+                "../../source/lab1/matrixmul_test.cpp",
+                "-o",
+                "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab1\\matrixmul\\matrixmul\\hls\\csim\\code_analyzer\\.internal\\build\\matrixmul_test.cpp.0.o"
+            ],
+            "exectime": 0.6452617645263672,
+            "cwd": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab1\\matrixmul"
+        },
+        "['E:\\\\robot\\\\project\\\\FPGA\\\\ZedBoard\\\\HLS_lab\\\\lab1\\\\matrixmul\\\\matrixmul\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\build\\\\matrixmul.cpp.0.o', 'E:\\\\robot\\\\project\\\\FPGA\\\\ZedBoard\\\\HLS_lab\\\\lab1\\\\matrixmul\\\\matrixmul\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\build\\\\matrixmul.cpp.0.o.d']": {
+            "command": [
+                "e:\\vivado\\vitis_hls\\2024.1\\vcxx\\/libexec/clang.exe",
+                "-c",
+                "-MD",
+                "-MF",
+                "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab1\\matrixmul\\matrixmul\\hls\\csim\\code_analyzer\\.internal\\build\\matrixmul.cpp.0.o.d",
+                "-fhls-tb",
+                "-hls-sim-headers-dir=e:\\vivado\\vitis_hls\\2024.1\\vcxx\\data\\include",
+                "-vitis-hls=E:\\vivado\\Vitis_HLS\\2024.1",
+                "--sysroot=E:\\vivado\\Vitis_HLS\\2024.1\\tps\\mingw\\10.0.0\\win64.o\\nt",
+                "-fhlstoplevel=matrixmul",
+                "-fslxskipfunctionbody",
+                "-fslxtrace",
+                "../../source/lab1/matrixmul.cpp",
+                "-o",
+                "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab1\\matrixmul\\matrixmul\\hls\\csim\\code_analyzer\\.internal\\build\\matrixmul.cpp.0.o"
+            ],
+            "exectime": 0.29070019721984863,
+            "cwd": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab1\\matrixmul"
+        },
+        "['E:\\\\robot\\\\project\\\\FPGA\\\\ZedBoard\\\\HLS_lab\\\\lab1\\\\matrixmul\\\\matrixmul\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\build\\\\syn_srcs.bc']": {
+            "command": [
+                "e:\\vivado\\vitis_hls\\2024.1\\vcxx\\/libexec/llvm-link.exe",
+                "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab1\\matrixmul\\matrixmul\\hls\\csim\\code_analyzer\\.internal\\build\\matrixmul.cpp.0.bc",
+                "-o",
+                "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab1\\matrixmul\\matrixmul\\hls\\csim\\code_analyzer\\.internal\\build\\syn_srcs.bc"
+            ],
+            "exectime": 0.04646897315979004,
+            "cwd": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab1\\matrixmul"
+        },
+        "['E:\\\\robot\\\\project\\\\FPGA\\\\ZedBoard\\\\HLS_lab\\\\lab1\\\\matrixmul\\\\matrixmul\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\build\\\\syn_srcs.opt.bc']": {
+            "command": [
+                "e:\\vivado\\vitis_hls\\2024.1\\vcxx\\/libexec/opt.exe",
+                "-check-single-toplevel",
+                "-make-non-toplevel-internal",
+                "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab1\\matrixmul\\matrixmul\\hls\\csim\\code_analyzer\\.internal\\build\\syn_srcs.bc",
+                "-o",
+                "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab1\\matrixmul\\matrixmul\\hls\\csim\\code_analyzer\\.internal\\build\\syn_srcs.opt.bc"
+            ],
+            "exectime": 0.16615080833435059,
+            "cwd": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab1\\matrixmul"
+        },
+        "['E:\\\\robot\\\\project\\\\FPGA\\\\ZedBoard\\\\HLS_lab\\\\lab1\\\\matrixmul\\\\matrixmul\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\build\\\\app.exe']": {
+            "command": [
+                "e:\\vivado\\vitis_hls\\2024.1\\vcxx\\/libexec/clang++.exe",
+                "-o",
+                "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab1\\matrixmul\\matrixmul\\hls\\csim\\code_analyzer\\.internal\\build\\app.exe",
+                "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab1\\matrixmul\\matrixmul\\hls\\csim\\code_analyzer\\.internal\\build\\matrixmul_test.cpp.0.o",
+                "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab1\\matrixmul\\matrixmul\\hls\\csim\\code_analyzer\\.internal\\build\\matrixmul.cpp.0.o",
+                "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab1\\matrixmul\\matrixmul\\hls\\csim\\code_analyzer\\.internal\\build\\syn_srcs.opt.bc",
+                "-fhls",
+                "-fhlstoplevel=matrixmul",
+                "-vitis-hls=E:\\vivado\\Vitis_HLS\\2024.1",
+                "-fslxtrace",
+                "-Wl,-mllvm,-profilerOutputDirectory=E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab1\\matrixmul\\matrixmul\\hls\\csim\\code_analyzer\\.internal\\profiler\\0",
+                "-fslxpthreads",
+                "-lpthread",
+                "--sysroot=E:\\vivado\\Vitis_HLS\\2024.1\\tps\\mingw\\10.0.0\\win64.o\\nt"
+            ],
+            "exectime": 0.8742847442626953,
+            "cwd": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab1\\matrixmul"
+        },
+        "['E:\\\\robot\\\\project\\\\FPGA\\\\ZedBoard\\\\HLS_lab\\\\lab1\\\\matrixmul\\\\matrixmul\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\instrument\\\\app_0\\\\binary_dependencies.json']": {
+            "command": [
+                "e:\\vivado\\vitis_hls\\2024.1\\vcxx\\libexec\\clang-scan-deps.exe",
+                "--compilation-database=E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab1\\matrixmul\\matrixmul\\hls\\csim\\code_analyzer\\.internal\\instrument\\app_0\\compile_commands.json",
+                "--format=vitiscxx",
+                "--reuse-filemanager=false",
+                "--output=E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab1\\matrixmul\\matrixmul\\hls\\csim\\code_analyzer\\.internal\\instrument\\app_0\\binary_dependencies.json"
+            ],
+            "exectime": 0.271744966506958,
+            "cwd": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab1\\matrixmul"
+        },
+        "['E:\\\\robot\\\\project\\\\FPGA\\\\ZedBoard\\\\HLS_lab\\\\lab1\\\\matrixmul\\\\matrixmul\\\\hls\\\\csim\\\\code_analyzer\\\\output\\\\app.functionGraph']": {
+            "command": [
+                "e:\\vivado\\vitis_hls\\2024.1\\vcxx\\/libexec/staticCallGraph.exe",
+                "-i",
+                "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab1\\matrixmul\\matrixmul\\hls\\csim\\code_analyzer\\.internal\\instrument\\app_0\\static.xml",
+                "-o",
+                "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab1\\matrixmul\\matrixmul\\hls\\csim\\code_analyzer\\output\\app.functionGraph"
+            ],
+            "exectime": 0.12648963928222656,
+            "cwd": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab1\\matrixmul"
+        },
+        "['E:\\\\robot\\\\project\\\\FPGA\\\\ZedBoard\\\\HLS_lab\\\\lab1\\\\matrixmul\\\\matrixmul\\\\hls\\\\csim\\\\code_analyzer\\\\output\\\\app.functionMapping']": {
+            "command": [
+                "e:\\vivado\\vitis_hls\\2024.1\\vcxx\\/libexec/functionMapper.exe",
+                "--static-xml",
+                "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab1\\matrixmul\\matrixmul\\hls\\csim\\code_analyzer\\.internal\\instrument\\app_0\\static.xml",
+                "--function-mapping",
+                "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab1\\matrixmul\\matrixmul\\hls\\csim\\code_analyzer\\output\\app.functionMapping",
+                "--ir-module",
+                "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab1\\matrixmul\\matrixmul\\hls\\csim\\code_analyzer\\.internal\\instrument\\app_0\\project.symbols.bc",
+                "--fn",
+                "212"
+            ],
+            "exectime": 0.11667203903198242,
+            "cwd": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab1\\matrixmul"
+        },
+        "['E:\\\\robot\\\\project\\\\FPGA\\\\ZedBoard\\\\HLS_lab\\\\lab1\\\\matrixmul\\\\matrixmul\\\\hls\\\\csim\\\\code_analyzer\\\\bin\\\\.tracing_stdout.txt', 'E:\\\\robot\\\\project\\\\FPGA\\\\ZedBoard\\\\HLS_lab\\\\lab1\\\\matrixmul\\\\matrixmul\\\\hls\\\\csim\\\\code_analyzer\\\\bin\\\\.tracing_stderr.txt']": {
+            "command": [
+                "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab1\\matrixmul\\matrixmul\\hls\\csim\\code_analyzer\\.internal\\build\\app.exe"
+            ],
+            "exectime": 0.09285569190979004,
+            "cwd": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab1\\matrixmul\\matrixmul\\hls\\csim\\code_analyzer\\tracing\\csim\\build"
+        },
+        "['E:\\\\robot\\\\project\\\\FPGA\\\\ZedBoard\\\\HLS_lab\\\\lab1\\\\matrixmul\\\\matrixmul\\\\hls\\\\csim\\\\code_analyzer\\\\output\\\\reduced_programmodel.app']": {
+            "command": [
+                "e:\\vivado\\vitis_hls\\2024.1\\vcxx\\/libexec/optimizer.exe",
+                "-DFGPass",
+                "-appName=app",
+                "-outputDir",
+                "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab1\\matrixmul\\matrixmul\\hls\\csim\\code_analyzer\\output",
+                "-logDir",
+                "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab1\\matrixmul\\matrixmul\\hls\\csim\\code_analyzer\\log",
+                "-pmout=E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab1\\matrixmul\\matrixmul\\hls\\csim\\code_analyzer\\output\\reduced_programmodel.app",
+                "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab1\\matrixmul\\matrixmul\\hls\\csim\\code_analyzer\\.internal\\instrument\\app_0\\project.symbols.bc",
+                "-staticFile",
+                "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab1\\matrixmul\\matrixmul\\hls\\csim\\code_analyzer\\.internal\\instrument\\app_0\\static.xml",
+                "-traceFile",
+                "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab1\\matrixmul\\matrixmul\\hls\\csim\\code_analyzer\\.internal\\profiler\\0\\app_0_0\\thread0000-trace.txt",
+                "-o",
+                "nul"
+            ],
+            "exectime": 0.21598005294799805,
+            "cwd": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab1\\matrixmul"
+        },
+        "['E:\\\\robot\\\\project\\\\FPGA\\\\ZedBoard\\\\HLS_lab\\\\lab1\\\\matrixmul\\\\matrixmul\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\dataflow\\\\0\\\\taskgraph.json']": {
+            "command": [
+                "e:\\vivado\\vitis_hls\\2024.1\\vcxx\\/libexec/parallelismSelector.exe",
+                "-g",
+                "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab1\\matrixmul\\matrixmul\\hls\\csim\\code_analyzer\\output\\reduced_programmodel.app",
+                "--basepath",
+                "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab1\\matrixmul",
+                "--static-xml",
+                "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab1\\matrixmul\\matrixmul\\hls\\csim\\code_analyzer\\.internal\\instrument\\app_0\\static.xml",
+                "--fpga-part",
+                "xc7z020-clg484-1",
+                "--device-totals",
+                "e:\\vivado\\vitis_hls\\2024.1\\vcxx\\data\\platform\\logic\\fpga.devicetotals",
+                "--clock-frequency",
+                "100.0",
+                "--out-dir",
+                "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab1\\matrixmul\\matrixmul\\hls\\csim\\code_analyzer\\output",
+                "--log-dir",
+                "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab1\\matrixmul\\matrixmul\\hls\\csim\\code_analyzer\\log",
+                "--mapping",
+                "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab1\\matrixmul\\matrixmul\\hls\\csim\\code_analyzer\\output\\app.functionMapping",
+                "--objective",
+                "none",
+                "--performance-target",
+                "target_both",
+                "--max-array-optimization-factor",
+                "1024",
+                "--complete-partition-limit",
+                "4",
+                "--lut-constraint",
+                "100.0",
+                "--ff-constraint",
+                "100.0",
+                "--dsp-constraint",
+                "100.0",
+                "--bram-constraint",
+                "100.0",
+                "--uram-constraint",
+                "100.0",
+                "--ir-module",
+                "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab1\\matrixmul\\matrixmul\\hls\\csim\\code_analyzer\\.internal\\instrument\\app_0\\project.symbols.bc",
+                "--max-iterations",
+                "1000",
+                "--max-iterations-branch-full-log",
+                "20",
+                "--df-id",
+                "0",
+                "--df-target",
+                "%F212"
+            ],
+            "exectime": 0.8892009258270264,
+            "cwd": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab1\\matrixmul"
+        }
+    }
+}

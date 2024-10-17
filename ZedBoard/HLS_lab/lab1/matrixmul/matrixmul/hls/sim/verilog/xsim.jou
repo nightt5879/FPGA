@@ -1,0 +1,32 @@
+#-----------------------------------------------------------
+# xsim v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Thu Oct 17 17:18:24 2024
+# Process ID: 20392
+# Current directory: E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul/matrixmul/hls/sim/verilog
+# Command line: xsim.exe -source {xsim.dir/matrixmul/xsim_script.tcl}
+# Log file: E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul/matrixmul/hls/sim/verilog/xsim.log
+# Journal file: E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul/matrixmul/hls/sim/verilog\xsim.jou
+# Running On        :nightt_insider
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :22631
+# Processor Detail  :AMD Ryzen 7 5800U with Radeon Graphics         
+# CPU Frequency     :1896 MHz
+# CPU Physical cores:8
+# CPU Logical cores :16
+# Host memory       :16487 MB
+# Swap memory       :18253 MB
+# Total Virtual     :34741 MB
+# Available Virtual :9035 MB
+#-----------------------------------------------------------
+start_gui
+source xsim.dir/matrixmul/xsim_script.tcl
+open_wave_config matrixmul_dataflow_ana.wcfg
+source matrixmul.tcl
+run 10 us
+run 500 us
+run 500 us
+save_wave_config {E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul/matrixmul/hls/sim/verilog/matrixmul.wcfg}
+close_sim

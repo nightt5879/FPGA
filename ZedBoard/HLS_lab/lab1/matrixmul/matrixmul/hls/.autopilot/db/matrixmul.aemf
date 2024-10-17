@@ -1,0 +1,946 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1729152744327">
+  <ports id="1" name="a" type="PortType" originalName="a" coreName="RAM" coreId="4294967295" bitwidth="8" iftype="IfTypeRegister" arraysize="9">
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+  </ports>
+  <ports id="2" name="b" type="PortType" originalName="b" coreName="RAM" coreId="4294967295" bitwidth="8" iftype="IfTypeRegister" arraysize="9">
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+  </ports>
+  <ports id="3" name="res" type="PortType" originalName="res" coreName="RAM" coreId="4294967295" bitwidth="16" direction="DirOut" iftype="IfTypeRegister" arraysize="9">
+    <dataInputObjs>getelementptr</dataInputObjs>
+  </ports>
+  <edges id="88" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="90" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="93" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="94" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="97" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="98" source_obj="//@regions.0/@basic_blocks.0/@node_objs.51" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="99" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="100" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="101" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="102" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="103" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="106" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <edges id="108" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <edges id="109" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="110" source_obj="//@regions.0/@basic_blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="111" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="112" source_obj="//@regions.0/@basic_blocks.0/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.7"/>
+  <edges id="115" source_obj="//@regions.0/@basic_blocks.0/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.8"/>
+  <edges id="117" source_obj="//@regions.0/@basic_blocks.0/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.9"/>
+  <edges id="118" source_obj="//@regions.0/@basic_blocks.0/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.9"/>
+  <edges id="119" source_obj="//@regions.0/@basic_blocks.0/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.10"/>
+  <edges id="120" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.11"/>
+  <edges id="123" source_obj="//@regions.0/@basic_blocks.0/@node_objs.10" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.11"/>
+  <edges id="124" source_obj="//@regions.0/@basic_blocks.0/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.12"/>
+  <edges id="127" source_obj="//@regions.0/@basic_blocks.0/@node_objs.12" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.13"/>
+  <edges id="128" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.14"/>
+  <edges id="130" source_obj="//@regions.0/@basic_blocks.0/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.14"/>
+  <edges id="131" source_obj="//@regions.0/@basic_blocks.0/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.15"/>
+  <edges id="134" source_obj="//@regions.0/@basic_blocks.0/@node_objs.15" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.16"/>
+  <edges id="135" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.17"/>
+  <edges id="137" source_obj="//@regions.0/@basic_blocks.0/@node_objs.16" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.17"/>
+  <edges id="138" source_obj="//@regions.0/@basic_blocks.0/@node_objs.11" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.18"/>
+  <edges id="139" source_obj="//@regions.0/@basic_blocks.0/@node_objs.18" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.19"/>
+  <edges id="140" source_obj="//@regions.0/@basic_blocks.0/@node_objs.14" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.20"/>
+  <edges id="141" source_obj="//@regions.0/@basic_blocks.0/@node_objs.20" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.21"/>
+  <edges id="142" source_obj="//@regions.0/@basic_blocks.0/@node_objs.17" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.22"/>
+  <edges id="143" source_obj="//@regions.0/@basic_blocks.0/@node_objs.22" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.23"/>
+  <edges id="144" source_obj="//@regions.0/@basic_blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.24"/>
+  <edges id="145" source_obj="//@regions.0/@basic_blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.25"/>
+  <edges id="146" source_obj="//@regions.0/@basic_blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.26"/>
+  <edges id="147" source_obj="//@ports.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.27"/>
+  <edges id="149" source_obj="//@regions.0/@basic_blocks.0/@node_objs.24" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.27"/>
+  <edges id="150" source_obj="//@regions.0/@basic_blocks.0/@node_objs.26" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.28"/>
+  <edges id="153" source_obj="//@regions.0/@basic_blocks.0/@node_objs.28" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.29"/>
+  <edges id="154" source_obj="//@ports.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.30"/>
+  <edges id="156" source_obj="//@regions.0/@basic_blocks.0/@node_objs.29" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.30"/>
+  <edges id="157" source_obj="//@regions.0/@basic_blocks.0/@node_objs.25" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.31"/>
+  <edges id="160" source_obj="//@regions.0/@basic_blocks.0/@node_objs.31" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.32"/>
+  <edges id="161" source_obj="//@ports.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.33"/>
+  <edges id="163" source_obj="//@regions.0/@basic_blocks.0/@node_objs.32" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.33"/>
+  <edges id="164" source_obj="//@regions.0/@basic_blocks.0/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.34"/>
+  <edges id="165" source_obj="//@regions.0/@basic_blocks.0/@node_objs.25" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.34"/>
+  <edges id="166" source_obj="//@regions.0/@basic_blocks.0/@node_objs.34" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.35"/>
+  <edges id="167" source_obj="//@regions.0/@basic_blocks.0/@node_objs.36" sink_obj="//@ports.2"/>
+  <edges id="169" source_obj="//@regions.0/@basic_blocks.0/@node_objs.35" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.36"/>
+  <edges id="170" source_obj="//@regions.0/@basic_blocks.0/@node_objs.27" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.37"/>
+  <edges id="171" source_obj="//@regions.0/@basic_blocks.0/@node_objs.37" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.38"/>
+  <edges id="172" source_obj="//@regions.0/@basic_blocks.0/@node_objs.30" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.39"/>
+  <edges id="173" source_obj="//@regions.0/@basic_blocks.0/@node_objs.39" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.40"/>
+  <edges id="174" source_obj="//@regions.0/@basic_blocks.0/@node_objs.33" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.41"/>
+  <edges id="175" source_obj="//@regions.0/@basic_blocks.0/@node_objs.41" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.42"/>
+  <edges id="176" source_obj="//@regions.0/@basic_blocks.0/@node_objs.38" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.43"/>
+  <edges id="177" source_obj="//@regions.0/@basic_blocks.0/@node_objs.19" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.43"/>
+  <edges id="178" source_obj="//@regions.0/@basic_blocks.0/@node_objs.42" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.44"/>
+  <edges id="179" source_obj="//@regions.0/@basic_blocks.0/@node_objs.23" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.44"/>
+  <edges id="180" source_obj="//@regions.0/@basic_blocks.0/@node_objs.40" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.45"/>
+  <edges id="181" source_obj="//@regions.0/@basic_blocks.0/@node_objs.21" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.45"/>
+  <edges id="182" source_obj="//@regions.0/@basic_blocks.0/@node_objs.43" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.46"/>
+  <edges id="183" source_obj="//@regions.0/@basic_blocks.0/@node_objs.44" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.46"/>
+  <edges id="184" source_obj="//@regions.0/@basic_blocks.0/@node_objs.46" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.47"/>
+  <edges id="185" source_obj="//@regions.0/@basic_blocks.0/@node_objs.45" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.47"/>
+  <edges id="186" source_obj="//@regions.0/@basic_blocks.0/@node_objs.47" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.48"/>
+  <edges id="187" source_obj="//@regions.0/@basic_blocks.0/@node_objs.36" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.48"/>
+  <edges id="188" source_obj="//@regions.0/@basic_blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.49"/>
+  <edges id="190" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.50"/>
+  <edges id="192" source_obj="//@regions.0/@basic_blocks.0/@node_objs.49" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.51"/>
+  <edges id="195" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.52"/>
+  <edges id="198" source_obj="//@regions.0/@basic_blocks.0/@node_objs.49" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.53"/>
+  <edges id="199" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.53"/>
+  <edges id="200" source_obj="//@regions.0/@basic_blocks.0/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.54"/>
+  <edges id="201" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.54"/>
+  <edges id="202" source_obj="//@regions.0/@basic_blocks.0/@node_objs.50" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.55"/>
+  <edges id="203" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.55"/>
+  <edges id="204" source_obj="//@regions.0/@basic_blocks.0/@node_objs.52" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.56"/>
+  <edges id="205" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.56"/>
+  <edges id="206" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.56"/>
+  <edges id="300" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0"/>
+  <edges id="301" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="302" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.0" is_back_edge="1"/>
+  <edges id="303" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.53"/>
+  <edges id="304" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.54"/>
+  <edges id="305" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.55"/>
+  <edges id="306" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="307" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.53"/>
+  <edges id="308" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="309" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.54"/>
+  <edges id="310" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="311" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.55"/>
+  <blocks id="18" name="entry" type="BlockType">
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>for.inc29</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="4" name="indvar_flatten1" coreId="4294967295" bitwidth="4" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="5" name="i2" coreId="4294967295" bitwidth="2" opcode="alloca" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="6" name="j3" coreId="4294967295" bitwidth="2" opcode="alloca" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="14" name="j3_write_ln0" coreId="4294967295" opcode="store" m_display="0" m_delay="1.58" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="15" name="i2_write_ln0" coreId="4294967295" opcode="store" m_display="0" m_delay="1.58" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="16" name="indvar_flatten1_write_ln0" coreId="4294967295" opcode="store" m_display="0" m_delay="1.58" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="17" name="br_ln0" coreId="4294967295" opcode="br" m_display="0" m_delay="1.58" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <controlInputObjs>for.inc29</controlInputObjs>
+    </node_objs>
+  </blocks>
+  <blocks id="81" name="for.end31" type="BlockType">
+    <controlInputObjs>for.inc29</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="80" name="_ln47" lineNumber="47" fileName="../../source/lab1/matrixmul.cpp" fileDirectory="../." coreId="4294967295" contextFuncName="matrixmul" opcode="ret" nodeLabel="6.0" m_display="0" m_delay="1.58" m_topoIndex="65" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../../source/lab1/matrixmul.cpp" linenumber="47" fileDirectory="E:\robot\project\FPGA\ZedBoard\HLS_lab\lab1\matrixmul" functionName="matrixmul"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="../../source/lab1/matrixmul.cpp">
+      <validLinenumbers>47</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <regions anchor_node="-1" region_type="8" interval="2" typeName="Pipeline" iiViolation="Resource Limitation;mFailedII=1;mDependenceDistancedII=-1;mLimitedResource=2;nodes=61__core/RAM/b//load/store,63__core/RAM/b//load/store,59__;" id="313" pipe_depth="7" RegionName="Row_Col">
+    <basic_blocks id="79" name="for.inc29" type="BlockType">
+      <controlInputObjs>entry</controlInputObjs>
+      <controlInputObjs>for.inc29</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>for.end31</controlOutputObjs>
+      <controlOutputObjs>for.inc29</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="19" name="icmp_ln394" lineNumber="39" fileName="../../source/lab1/matrixmul.cpp" fileDirectory="../." coreId="4294967295" contextFuncName="matrixmul" bitwidth="1" opcode="phi" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../source/lab1/matrixmul.cpp" linenumber="39" fileDirectory="E:\robot\project\FPGA\ZedBoard\HLS_lab\lab1\matrixmul" functionName="matrixmul"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <controlInputObjs>entry</controlInputObjs>
+        <controlInputObjs>for.inc29</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="20" name="indvar_flatten1_load" lineNumber="37" fileName="../../source/lab1/matrixmul.cpp" fileDirectory="../." coreId="4294967295" contextFuncName="matrixmul" bitwidth="4" opcode="load" nodeLabel="1.0" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../source/lab1/matrixmul.cpp" linenumber="37" fileDirectory="E:\robot\project\FPGA\ZedBoard\HLS_lab\lab1\matrixmul" functionName="matrixmul"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="21" name="i2_load" lineNumber="37" fileName="../../source/lab1/matrixmul.cpp" fileDirectory="../." coreId="4294967295" contextFuncName="matrixmul" bitwidth="2" opcode="load" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../source/lab1/matrixmul.cpp" linenumber="37" fileDirectory="E:\robot\project\FPGA\ZedBoard\HLS_lab\lab1\matrixmul" functionName="matrixmul"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="22" name="j3_load" lineNumber="37" fileName="../../source/lab1/matrixmul.cpp" fileDirectory="../." coreId="4294967295" contextFuncName="matrixmul" bitwidth="2" opcode="load" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../source/lab1/matrixmul.cpp" linenumber="37" fileDirectory="E:\robot\project\FPGA\ZedBoard\HLS_lab\lab1\matrixmul" functionName="matrixmul"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="23" name="add_ln37" lineNumber="37" fileName="../../source/lab1/matrixmul.cpp" fileDirectory="../." rtlName="add_ln37_fu_185_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="matrixmul" bitwidth="2" opcode="add" m_display="0" m_delay="1.56" m_topoIndex="11" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../source/lab1/matrixmul.cpp" linenumber="37" fileDirectory="E:\robot\project\FPGA\ZedBoard\HLS_lab\lab1\matrixmul" functionName="matrixmul"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="26" name="select_ln37" lineNumber="37" fileName="../../source/lab1/matrixmul.cpp" fileDirectory="../." rtlName="select_ln37_fu_191_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="matrixmul" bitwidth="2" opcode="select" m_display="0" m_delay="0.99" m_topoIndex="12" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../source/lab1/matrixmul.cpp" linenumber="37" fileDirectory="E:\robot\project\FPGA\ZedBoard\HLS_lab\lab1\matrixmul" functionName="matrixmul"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="27" name="i" lineNumber="37" fileName="../../source/lab1/matrixmul.cpp" fileDirectory="../." rtlName="i_fu_199_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="matrixmul" bitwidth="2" opcode="select" m_display="0" m_delay="0.99" m_topoIndex="13" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../source/lab1/matrixmul.cpp" linenumber="37" fileDirectory="E:\robot\project\FPGA\ZedBoard\HLS_lab\lab1\matrixmul" functionName="matrixmul"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="28" name="select_ln37_1_cast" lineNumber="37" fileName="../../source/lab1/matrixmul.cpp" fileDirectory="../." rtlName="select_ln37_1_cast_fu_230_p1" coreId="4294967295" contextFuncName="matrixmul" bitwidth="4" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="21" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../source/lab1/matrixmul.cpp" linenumber="37" fileDirectory="E:\robot\project\FPGA\ZedBoard\HLS_lab\lab1\matrixmul" functionName="matrixmul"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>sub</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="29" name="p_shl" lineNumber="37" fileName="../../source/lab1/matrixmul.cpp" fileDirectory="../." rtlName="p_shl_fu_233_p3" coreId="4294967295" contextFuncName="matrixmul" bitwidth="4" opcode="bitconcatenate" nodeLabel="1.0" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../source/lab1/matrixmul.cpp" linenumber="37" fileDirectory="E:\robot\project\FPGA\ZedBoard\HLS_lab\lab1\matrixmul" functionName="matrixmul"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>sub</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="30" name="empty" lineNumber="37" fileName="../../source/lab1/matrixmul.cpp" fileDirectory="../." rtlName="empty_fu_240_p2" coreName="Adder" implIndex="fabric" control="no" opType="sub" coreId="1" contextFuncName="matrixmul" bitwidth="4" opcode="sub" nodeLabel="1.0" m_display="0" m_delay="1.73" m_topoIndex="23" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../source/lab1/matrixmul.cpp" linenumber="37" fileDirectory="E:\robot\project\FPGA\ZedBoard\HLS_lab\lab1\matrixmul" functionName="matrixmul"/>
+        <dataInputObjs>bitconcatenate</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="31" name="p_cast" lineNumber="37" fileName="../../source/lab1/matrixmul.cpp" fileDirectory="../." rtlName="p_cast_fu_246_p1" coreId="4294967295" contextFuncName="matrixmul" bitwidth="64" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="24" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../source/lab1/matrixmul.cpp" linenumber="37" fileDirectory="E:\robot\project\FPGA\ZedBoard\HLS_lab\lab1\matrixmul" functionName="matrixmul"/>
+        <dataInputObjs>sub</dataInputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="32" name="a_addr" lineNumber="37" fileName="../../source/lab1/matrixmul.cpp" fileDirectory="../." coreId="4294967295" contextFuncName="matrixmul" bitwidth="4" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="25" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../source/lab1/matrixmul.cpp" linenumber="37" fileDirectory="E:\robot\project\FPGA\ZedBoard\HLS_lab\lab1\matrixmul" functionName="matrixmul"/>
+        <dataInputObjs>a</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="33" name="empty_4" lineNumber="37" fileName="../../source/lab1/matrixmul.cpp" fileDirectory="../." rtlName="empty_4_fu_309_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="matrixmul" bitwidth="4" opcode="add" nodeLabel="2.0" m_display="0" m_delay="1.73" m_topoIndex="43" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../source/lab1/matrixmul.cpp" linenumber="37" fileDirectory="E:\robot\project\FPGA\ZedBoard\HLS_lab\lab1\matrixmul" functionName="matrixmul"/>
+        <dataInputObjs>sub</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="34" name="p_cast6" lineNumber="37" fileName="../../source/lab1/matrixmul.cpp" fileDirectory="../." rtlName="p_cast6_fu_314_p1" coreId="4294967295" contextFuncName="matrixmul" bitwidth="64" opcode="zext" nodeLabel="2.0" m_display="0" m_topoIndex="44" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../source/lab1/matrixmul.cpp" linenumber="37" fileDirectory="E:\robot\project\FPGA\ZedBoard\HLS_lab\lab1\matrixmul" functionName="matrixmul"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="35" name="a_addr_1" lineNumber="37" fileName="../../source/lab1/matrixmul.cpp" fileDirectory="../." coreId="4294967295" contextFuncName="matrixmul" bitwidth="4" opcode="getelementptr" nodeLabel="2.0" m_display="0" m_topoIndex="45" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../source/lab1/matrixmul.cpp" linenumber="37" fileDirectory="E:\robot\project\FPGA\ZedBoard\HLS_lab\lab1\matrixmul" functionName="matrixmul"/>
+        <dataInputObjs>a</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="36" name="empty_5" lineNumber="37" fileName="../../source/lab1/matrixmul.cpp" fileDirectory="../." rtlName="empty_5_fu_251_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="matrixmul" bitwidth="4" opcode="add" nodeLabel="1.0" m_display="0" m_delay="1.73" m_topoIndex="26" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../source/lab1/matrixmul.cpp" linenumber="37" fileDirectory="E:\robot\project\FPGA\ZedBoard\HLS_lab\lab1\matrixmul" functionName="matrixmul"/>
+        <dataInputObjs>sub</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="37" name="p_cast7" lineNumber="37" fileName="../../source/lab1/matrixmul.cpp" fileDirectory="../." rtlName="p_cast7_fu_257_p1" coreId="4294967295" contextFuncName="matrixmul" bitwidth="64" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="27" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../source/lab1/matrixmul.cpp" linenumber="37" fileDirectory="E:\robot\project\FPGA\ZedBoard\HLS_lab\lab1\matrixmul" functionName="matrixmul"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="38" name="a_addr_2" lineNumber="37" fileName="../../source/lab1/matrixmul.cpp" fileDirectory="../." coreId="4294967295" contextFuncName="matrixmul" bitwidth="4" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="28" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../source/lab1/matrixmul.cpp" linenumber="37" fileDirectory="E:\robot\project\FPGA\ZedBoard\HLS_lab\lab1\matrixmul" functionName="matrixmul"/>
+        <dataInputObjs>a</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="39" name="a_load" lineNumber="37" fileName="../../source/lab1/matrixmul.cpp" fileDirectory="../." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="81" contextFuncName="matrixmul" bitwidth="8" opcode="load" nodeLabel="1.0" nodeLatency="1" m_display="0" m_delay="2.32" m_topoIndex="29" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../source/lab1/matrixmul.cpp" linenumber="37" fileDirectory="E:\robot\project\FPGA\ZedBoard\HLS_lab\lab1\matrixmul" functionName="matrixmul"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>sext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="40" name="conv" lineNumber="37" fileName="../../source/lab1/matrixmul.cpp" fileDirectory="../." coreId="4294967295" contextFuncName="matrixmul" bitwidth="16" opcode="sext" nodeLabel="4.0" m_display="0" m_topoIndex="57" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../source/lab1/matrixmul.cpp" linenumber="37" fileDirectory="E:\robot\project\FPGA\ZedBoard\HLS_lab\lab1\matrixmul" functionName="matrixmul"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="41" name="a_load_1" lineNumber="37" fileName="../../source/lab1/matrixmul.cpp" fileDirectory="../." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="81" contextFuncName="matrixmul" bitwidth="8" opcode="load" nodeLabel="2.0" nodeLatency="1" m_display="0" m_delay="2.32" m_topoIndex="46" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../source/lab1/matrixmul.cpp" linenumber="37" fileDirectory="E:\robot\project\FPGA\ZedBoard\HLS_lab\lab1\matrixmul" functionName="matrixmul"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>sext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="42" name="conv_1" lineNumber="37" fileName="../../source/lab1/matrixmul.cpp" fileDirectory="../." coreId="4294967295" contextFuncName="matrixmul" bitwidth="16" opcode="sext" nodeLabel="3.0" m_display="0" m_topoIndex="54" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../source/lab1/matrixmul.cpp" linenumber="37" fileDirectory="E:\robot\project\FPGA\ZedBoard\HLS_lab\lab1\matrixmul" functionName="matrixmul"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="43" name="a_load_2" lineNumber="37" fileName="../../source/lab1/matrixmul.cpp" fileDirectory="../." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="81" contextFuncName="matrixmul" bitwidth="8" opcode="load" nodeLabel="1.0" nodeLatency="1" m_display="0" m_delay="2.32" m_topoIndex="30" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../source/lab1/matrixmul.cpp" linenumber="37" fileDirectory="E:\robot\project\FPGA\ZedBoard\HLS_lab\lab1\matrixmul" functionName="matrixmul"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>sext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="44" name="conv_2" lineNumber="37" fileName="../../source/lab1/matrixmul.cpp" fileDirectory="../." coreId="4294967295" contextFuncName="matrixmul" bitwidth="16" opcode="sext" nodeLabel="2.0" m_display="0" m_topoIndex="47" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../source/lab1/matrixmul.cpp" linenumber="37" fileDirectory="E:\robot\project\FPGA\ZedBoard\HLS_lab\lab1\matrixmul" functionName="matrixmul"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="45" name="zext_ln39" lineNumber="39" fileName="../../source/lab1/matrixmul.cpp" fileDirectory="../." rtlName="zext_ln39_fu_323_p1" coreId="4294967295" contextFuncName="matrixmul" bitwidth="64" opcode="zext" nodeLabel="2.0" m_display="0" m_topoIndex="48" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../source/lab1/matrixmul.cpp" linenumber="39" fileDirectory="E:\robot\project\FPGA\ZedBoard\HLS_lab\lab1\matrixmul" functionName="matrixmul"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="46" name="zext_ln43" lineNumber="43" fileName="../../source/lab1/matrixmul.cpp" fileDirectory="../." rtlName="zext_ln43_fu_207_p1" coreId="4294967295" contextFuncName="matrixmul" bitwidth="4" opcode="zext" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../source/lab1/matrixmul.cpp" linenumber="43" fileDirectory="E:\robot\project\FPGA\ZedBoard\HLS_lab\lab1\matrixmul" functionName="matrixmul"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="47" name="zext_ln43_1" lineNumber="43" fileName="../../source/lab1/matrixmul.cpp" fileDirectory="../." rtlName="zext_ln43_1_fu_262_p1" coreId="4294967295" contextFuncName="matrixmul" bitwidth="3" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="31" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../source/lab1/matrixmul.cpp" linenumber="43" fileDirectory="E:\robot\project\FPGA\ZedBoard\HLS_lab\lab1\matrixmul" functionName="matrixmul"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="48" name="b_addr" lineNumber="43" fileName="../../source/lab1/matrixmul.cpp" fileDirectory="../." coreId="4294967295" contextFuncName="matrixmul" bitwidth="4" opcode="getelementptr" nodeLabel="2.0" m_display="0" m_topoIndex="49" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../source/lab1/matrixmul.cpp" linenumber="43" fileDirectory="E:\robot\project\FPGA\ZedBoard\HLS_lab\lab1\matrixmul" functionName="matrixmul"/>
+        <dataInputObjs>b</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="49" name="add_ln43_2" lineNumber="43" fileName="../../source/lab1/matrixmul.cpp" fileDirectory="../." rtlName="add_ln43_2_fu_265_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="matrixmul" bitwidth="3" opcode="add" nodeLabel="1.0" m_display="0" m_delay="1.65" m_topoIndex="32" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../source/lab1/matrixmul.cpp" linenumber="43" fileDirectory="E:\robot\project\FPGA\ZedBoard\HLS_lab\lab1\matrixmul" functionName="matrixmul"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="50" name="zext_ln43_2" lineNumber="43" fileName="../../source/lab1/matrixmul.cpp" fileDirectory="../." rtlName="zext_ln43_2_fu_271_p1" coreId="4294967295" contextFuncName="matrixmul" bitwidth="64" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="33" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../source/lab1/matrixmul.cpp" linenumber="43" fileDirectory="E:\robot\project\FPGA\ZedBoard\HLS_lab\lab1\matrixmul" functionName="matrixmul"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="51" name="b_addr_1" lineNumber="43" fileName="../../source/lab1/matrixmul.cpp" fileDirectory="../." coreId="4294967295" contextFuncName="matrixmul" bitwidth="4" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="34" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../source/lab1/matrixmul.cpp" linenumber="43" fileDirectory="E:\robot\project\FPGA\ZedBoard\HLS_lab\lab1\matrixmul" functionName="matrixmul"/>
+        <dataInputObjs>b</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="52" name="add_ln43_3" lineNumber="43" fileName="../../source/lab1/matrixmul.cpp" fileDirectory="../." rtlName="add_ln43_3_fu_211_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="matrixmul" bitwidth="4" opcode="add" m_display="0" m_delay="1.73" m_topoIndex="15" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../source/lab1/matrixmul.cpp" linenumber="43" fileDirectory="E:\robot\project\FPGA\ZedBoard\HLS_lab\lab1\matrixmul" functionName="matrixmul"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="53" name="zext_ln43_3" lineNumber="43" fileName="../../source/lab1/matrixmul.cpp" fileDirectory="../." rtlName="zext_ln43_3_fu_217_p1" coreId="4294967295" contextFuncName="matrixmul" bitwidth="64" opcode="zext" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../source/lab1/matrixmul.cpp" linenumber="43" fileDirectory="E:\robot\project\FPGA\ZedBoard\HLS_lab\lab1\matrixmul" functionName="matrixmul"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="54" name="b_addr_2" lineNumber="43" fileName="../../source/lab1/matrixmul.cpp" fileDirectory="../." coreId="4294967295" contextFuncName="matrixmul" bitwidth="4" opcode="getelementptr" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../source/lab1/matrixmul.cpp" linenumber="43" fileDirectory="E:\robot\project\FPGA\ZedBoard\HLS_lab\lab1\matrixmul" functionName="matrixmul"/>
+        <dataInputObjs>b</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="55" name="add_ln43_4" lineNumber="43" fileName="../../source/lab1/matrixmul.cpp" fileDirectory="../." rtlName="add_ln43_4_fu_327_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="matrixmul" bitwidth="4" opcode="add" nodeLabel="2.0" m_display="0" m_delay="1.73" m_topoIndex="50" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../source/lab1/matrixmul.cpp" linenumber="43" fileDirectory="E:\robot\project\FPGA\ZedBoard\HLS_lab\lab1\matrixmul" functionName="matrixmul"/>
+        <dataInputObjs>sub</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="56" name="zext_ln43_4" lineNumber="43" fileName="../../source/lab1/matrixmul.cpp" fileDirectory="../." rtlName="zext_ln43_4_fu_355_p1" coreId="4294967295" contextFuncName="matrixmul" bitwidth="64" opcode="zext" nodeLabel="6.0" m_display="0" m_topoIndex="62" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../source/lab1/matrixmul.cpp" linenumber="43" fileDirectory="E:\robot\project\FPGA\ZedBoard\HLS_lab\lab1\matrixmul" functionName="matrixmul"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="57" name="res_addr" lineNumber="43" fileName="../../source/lab1/matrixmul.cpp" fileDirectory="../." coreId="4294967295" contextFuncName="matrixmul" bitwidth="4" opcode="getelementptr" nodeLabel="6.0" m_display="0" m_topoIndex="63" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../source/lab1/matrixmul.cpp" linenumber="43" fileDirectory="E:\robot\project\FPGA\ZedBoard\HLS_lab\lab1\matrixmul" functionName="matrixmul"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>res</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="59" name="b_load" lineNumber="43" fileName="../../source/lab1/matrixmul.cpp" fileDirectory="../." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="81" contextFuncName="matrixmul" bitwidth="8" opcode="load" nodeLabel="2.0" nodeLatency="1" m_display="1" m_delay="2.32" m_isLCDNode="true" m_isStartOfPath="true" m_topoIndex="51" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../source/lab1/matrixmul.cpp" linenumber="43" fileDirectory="E:\robot\project\FPGA\ZedBoard\HLS_lab\lab1\matrixmul" functionName="matrixmul"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>sext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="60" name="sext_ln43" lineNumber="43" fileName="../../source/lab1/matrixmul.cpp" fileDirectory="../." coreId="4294967295" contextFuncName="matrixmul" bitwidth="16" opcode="sext" nodeLabel="4.0" m_display="0" m_topoIndex="58" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../source/lab1/matrixmul.cpp" linenumber="43" fileDirectory="E:\robot\project\FPGA\ZedBoard\HLS_lab\lab1\matrixmul" functionName="matrixmul"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="61" name="b_load_1" lineNumber="43" fileName="../../source/lab1/matrixmul.cpp" fileDirectory="../." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="81" contextFuncName="matrixmul" bitwidth="8" opcode="load" nodeLabel="1.0" nodeLatency="1" m_display="0" m_delay="2.32" m_topoIndex="35" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../source/lab1/matrixmul.cpp" linenumber="43" fileDirectory="E:\robot\project\FPGA\ZedBoard\HLS_lab\lab1\matrixmul" functionName="matrixmul"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>sext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="62" name="sext_ln43_1" lineNumber="43" fileName="../../source/lab1/matrixmul.cpp" fileDirectory="../." coreId="4294967295" contextFuncName="matrixmul" bitwidth="16" opcode="sext" nodeLabel="3.0" m_display="0" m_topoIndex="55" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../source/lab1/matrixmul.cpp" linenumber="43" fileDirectory="E:\robot\project\FPGA\ZedBoard\HLS_lab\lab1\matrixmul" functionName="matrixmul"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="63" name="b_load_2" lineNumber="43" fileName="../../source/lab1/matrixmul.cpp" fileDirectory="../." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="81" contextFuncName="matrixmul" bitwidth="8" opcode="load" nodeLatency="1" m_display="0" m_delay="2.32" m_topoIndex="18" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../source/lab1/matrixmul.cpp" linenumber="43" fileDirectory="E:\robot\project\FPGA\ZedBoard\HLS_lab\lab1\matrixmul" functionName="matrixmul"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>sext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="64" name="sext_ln43_2" lineNumber="43" fileName="../../source/lab1/matrixmul.cpp" fileDirectory="../." coreId="4294967295" contextFuncName="matrixmul" bitwidth="16" opcode="sext" nodeLabel="2.0" m_display="0" m_topoIndex="52" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../source/lab1/matrixmul.cpp" linenumber="43" fileDirectory="E:\robot\project\FPGA\ZedBoard\HLS_lab\lab1\matrixmul" functionName="matrixmul"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="65" name="mul_ln43" lineNumber="43" fileName="../../source/lab1/matrixmul.cpp" fileDirectory="../." rtlName="mul_8s_8s_16_1_1_U1" coreName="Multiplier" implIndex="auto" control="no" opType="mul" coreId="3" contextFuncName="matrixmul" bitwidth="16" opcode="mul" nodeLabel="4.0" m_display="0" m_delay="4.17" m_topoIndex="59" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../source/lab1/matrixmul.cpp" linenumber="43" fileDirectory="E:\robot\project\FPGA\ZedBoard\HLS_lab\lab1\matrixmul" functionName="matrixmul"/>
+        <dataInputObjs>sext</dataInputObjs>
+        <dataInputObjs>sext</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="66" name="mul_ln43_1" lineNumber="43" fileName="../../source/lab1/matrixmul.cpp" fileDirectory="../." rtlName="mac_muladd_8s_8s_16s_16_4_1_U2" coreName="DSP48" implIndex="dsp_slice" control="no" opType="mul" coreId="116" contextFuncName="matrixmul" bitwidth="16" opcode="mul" nodeLabel="2.0" nodeLatency="2" m_display="0" m_delay="1.05" m_topoIndex="53" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../source/lab1/matrixmul.cpp" linenumber="43" fileDirectory="E:\robot\project\FPGA\ZedBoard\HLS_lab\lab1\matrixmul" functionName="matrixmul"/>
+        <dataInputObjs>sext</dataInputObjs>
+        <dataInputObjs>sext</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="67" name="mul_ln43_2" lineNumber="43" fileName="../../source/lab1/matrixmul.cpp" fileDirectory="../." rtlName="mac_muladd_8s_8s_16ns_16_4_1_U3" coreName="DSP48" implIndex="dsp_slice" control="no" opType="mul" coreId="116" contextFuncName="matrixmul" bitwidth="16" opcode="mul" nodeLabel="3.0" nodeLatency="2" m_display="0" m_delay="1.05" m_topoIndex="56" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../source/lab1/matrixmul.cpp" linenumber="43" fileDirectory="E:\robot\project\FPGA\ZedBoard\HLS_lab\lab1\matrixmul" functionName="matrixmul"/>
+        <dataInputObjs>sext</dataInputObjs>
+        <dataInputObjs>sext</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="68" name="add_ln43" lineNumber="43" fileName="../../source/lab1/matrixmul.cpp" fileDirectory="../." rtlName="mac_muladd_8s_8s_16s_16_4_1_U2" coreName="DSP48" implIndex="dsp_slice" control="no" opType="add" coreId="116" contextFuncName="matrixmul" bitwidth="16" opcode="add" nodeLabel="4.0" nodeLatency="1" m_display="0" m_delay="2.1" m_topoIndex="60" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../source/lab1/matrixmul.cpp" linenumber="43" fileDirectory="E:\robot\project\FPGA\ZedBoard\HLS_lab\lab1\matrixmul" functionName="matrixmul"/>
+        <dataInputObjs>mul</dataInputObjs>
+        <dataInputObjs>mul</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="69" name="add_ln43_1" lineNumber="43" fileName="../../source/lab1/matrixmul.cpp" fileDirectory="../." rtlName="mac_muladd_8s_8s_16ns_16_4_1_U3" coreName="DSP48" implIndex="dsp_slice" control="no" opType="add" coreId="116" contextFuncName="matrixmul" bitwidth="16" opcode="add" nodeLabel="5.0" nodeLatency="1" m_display="0" m_delay="2.1" m_topoIndex="61" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../source/lab1/matrixmul.cpp" linenumber="43" fileDirectory="E:\robot\project\FPGA\ZedBoard\HLS_lab\lab1\matrixmul" functionName="matrixmul"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>mul</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="70" name="res_addr_write_ln43" lineNumber="43" fileName="../../source/lab1/matrixmul.cpp" fileDirectory="../." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="81" contextFuncName="matrixmul" opcode="store" nodeLabel="6.0" m_display="0" m_delay="2.32" m_topoIndex="64" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../source/lab1/matrixmul.cpp" linenumber="43" fileDirectory="E:\robot\project\FPGA\ZedBoard\HLS_lab\lab1\matrixmul" functionName="matrixmul"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>getelementptr</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="71" name="j" lineNumber="39" fileName="../../source/lab1/matrixmul.cpp" fileDirectory="../." rtlName="j_fu_276_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="matrixmul" bitwidth="2" opcode="add" nodeLabel="1.0" m_display="0" m_delay="1.56" m_topoIndex="36" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../source/lab1/matrixmul.cpp" linenumber="39" fileDirectory="E:\robot\project\FPGA\ZedBoard\HLS_lab\lab1\matrixmul" functionName="matrixmul"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="72" name="add_ln37_1" lineNumber="37" fileName="../../source/lab1/matrixmul.cpp" fileDirectory="../." rtlName="add_ln37_1_fu_281_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="matrixmul" bitwidth="4" opcode="add" nodeLabel="1.0" m_display="0" m_delay="1.73" m_topoIndex="37" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../source/lab1/matrixmul.cpp" linenumber="37" fileDirectory="E:\robot\project\FPGA\ZedBoard\HLS_lab\lab1\matrixmul" functionName="matrixmul"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="73" name="icmp_ln39" lineNumber="39" fileName="../../source/lab1/matrixmul.cpp" fileDirectory="../." rtlName="icmp_ln39_fu_287_p2" coreName="Cmp" implIndex="auto" control="no" opType="seteq" coreId="9" contextFuncName="matrixmul" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="1.56" m_topoIndex="38" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../source/lab1/matrixmul.cpp" linenumber="39" fileDirectory="E:\robot\project\FPGA\ZedBoard\HLS_lab\lab1\matrixmul" functionName="matrixmul"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="74" name="icmp_ln37" lineNumber="37" fileName="../../source/lab1/matrixmul.cpp" fileDirectory="../." rtlName="icmp_ln37_fu_293_p2" coreName="Cmp" implIndex="auto" control="no" opType="seteq" coreId="9" contextFuncName="matrixmul" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="1.73" m_topoIndex="39" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../source/lab1/matrixmul.cpp" linenumber="37" fileDirectory="E:\robot\project\FPGA\ZedBoard\HLS_lab\lab1\matrixmul" functionName="matrixmul"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="75" name="j3_write_ln39" lineNumber="39" fileName="../../source/lab1/matrixmul.cpp" fileDirectory="../." coreId="4294967295" contextFuncName="matrixmul" opcode="store" nodeLabel="1.0" m_display="0" m_delay="1.58" m_topoIndex="40" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../source/lab1/matrixmul.cpp" linenumber="39" fileDirectory="E:\robot\project\FPGA\ZedBoard\HLS_lab\lab1\matrixmul" functionName="matrixmul"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="76" name="i2_write_ln37" lineNumber="37" fileName="../../source/lab1/matrixmul.cpp" fileDirectory="../." coreId="4294967295" contextFuncName="matrixmul" opcode="store" m_display="0" m_delay="1.58" m_topoIndex="19" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../source/lab1/matrixmul.cpp" linenumber="37" fileDirectory="E:\robot\project\FPGA\ZedBoard\HLS_lab\lab1\matrixmul" functionName="matrixmul"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="77" name="indvar_flatten1_write_ln37" lineNumber="37" fileName="../../source/lab1/matrixmul.cpp" fileDirectory="../." coreId="4294967295" contextFuncName="matrixmul" opcode="store" nodeLabel="1.0" m_display="0" m_delay="1.58" m_topoIndex="41" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../source/lab1/matrixmul.cpp" linenumber="37" fileDirectory="E:\robot\project\FPGA\ZedBoard\HLS_lab\lab1\matrixmul" functionName="matrixmul"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="78" name="br_ln37" lineNumber="37" fileName="../../source/lab1/matrixmul.cpp" fileDirectory="../." coreId="4294967295" contextFuncName="matrixmul" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="42" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../source/lab1/matrixmul.cpp" linenumber="37" fileDirectory="E:\robot\project\FPGA\ZedBoard\HLS_lab\lab1\matrixmul" functionName="matrixmul"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <controlInputObjs>for.inc29</controlInputObjs>
+        <controlInputObjs>for.end31</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="../../source/lab1/matrixmul.cpp">
+        <validLinenumbers>39</validLinenumbers>
+        <validLinenumbers>37</validLinenumbers>
+        <validLinenumbers>43</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <ScheduleInfo time="5"/>
+  <ScheduleInfo time="6"/>
+  <regnodes realName="zext_ln43_reg_410">
+    <nodeIds>46</nodeIds>
+  </regnodes>
+  <regnodes realName="sext_ln43_1_reg_490">
+    <nodeIds>62</nodeIds>
+  </regnodes>
+  <regnodes realName="sext_ln43_2_reg_475">
+    <nodeIds>64</nodeIds>
+  </regnodes>
+  <regnodes realName="add_ln43_4_reg_470">
+    <nodeIds>55</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln37_reg_446">
+    <nodeIds>74</nodeIds>
+  </regnodes>
+  <regnodes realName="b_addr_2_reg_415">
+    <nodeIds>54</nodeIds>
+  </regnodes>
+  <regnodes realName="b_load_reg_485">
+    <nodeIds>59</nodeIds>
+  </regnodes>
+  <regnodes realName="conv_2_reg_460">
+    <nodeIds>44</nodeIds>
+  </regnodes>
+  <regnodes realName="b_addr_1_reg_436">
+    <nodeIds>51</nodeIds>
+  </regnodes>
+  <regnodes realName="empty_reg_420">
+    <nodeIds>30</nodeIds>
+  </regnodes>
+  <regnodes realName="mul_ln43_reg_495">
+    <nodeIds>65</nodeIds>
+  </regnodes>
+  <regnodes realName="conv_1_reg_480">
+    <nodeIds>42</nodeIds>
+  </regnodes>
+  <regnodes realName="reg_159">
+    <nodeIds>63</nodeIds>
+    <nodeIds>61</nodeIds>
+  </regnodes>
+  <regnodes realName="a_addr_1_reg_450">
+    <nodeIds>35</nodeIds>
+  </regnodes>
+  <regnodes realName="a_addr_2_reg_431">
+    <nodeIds>38</nodeIds>
+  </regnodes>
+  <regnodes realName="a_addr_reg_426">
+    <nodeIds>32</nodeIds>
+  </regnodes>
+  <regnodes realName="select_ln37_reg_397">
+    <nodeIds>26</nodeIds>
+  </regnodes>
+  <regnodes realName="b_addr_reg_465">
+    <nodeIds>48</nodeIds>
+  </regnodes>
+  <regnodes realName="add_ln43_reg_500">
+    <nodeIds>68</nodeIds>
+  </regnodes>
+  <regnodes realName="i2_reg_383">
+    <nodeIds>5</nodeIds>
+  </regnodes>
+  <regnodes realName="i_reg_404">
+    <nodeIds>27</nodeIds>
+  </regnodes>
+  <regnodes realName="a_load_reg_455">
+    <nodeIds>39</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln39_reg_441">
+    <nodeIds>73</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln394_reg_149">
+    <nodeIds>19</nodeIds>
+  </regnodes>
+  <regnodes realName="j3_reg_390">
+    <nodeIds>6</nodeIds>
+  </regnodes>
+  <regnodes realName="indvar_flatten1_reg_376">
+    <nodeIds>4</nodeIds>
+  </regnodes>
+  <expressionNodes realName="i_fu_199">
+    <nodeIds>27</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln394_phi_fu_152">
+    <nodeIds>19</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="j_fu_276">
+    <nodeIds>71</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln37_1_fu_281">
+    <nodeIds>72</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="b_addr_2_gep_fu_70">
+    <nodeIds>54</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="b_addr_gep_fu_128">
+    <nodeIds>48</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln43_2_fu_331">
+    <nodeIds>64</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="a_addr_2_gep_fu_94">
+    <nodeIds>38</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln43_2_fu_265">
+    <nodeIds>49</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="indvar_flatten1_fu_58">
+    <nodeIds>4</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="conv_2_fu_319">
+    <nodeIds>44</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln37_fu_293">
+    <nodeIds>74</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_cast_fu_246">
+    <nodeIds>31</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln37_fu_191">
+    <nodeIds>26</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln37_fu_185">
+    <nodeIds>23</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln43_fu_346">
+    <nodeIds>60</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln43_fu_207">
+    <nodeIds>46</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="empty_fu_240">
+    <nodeIds>30</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i2_fu_62">
+    <nodeIds>5</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="res_addr_gep_fu_136">
+    <nodeIds>57</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln43_4_fu_327">
+    <nodeIds>55</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln43_1_fu_262">
+    <nodeIds>47</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_cast6_fu_314">
+    <nodeIds>34</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="a_addr_gep_fu_87">
+    <nodeIds>32</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="empty_5_fu_251">
+    <nodeIds>36</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_shl_fu_233">
+    <nodeIds>29</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln39_fu_323">
+    <nodeIds>45</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_cast7_fu_257">
+    <nodeIds>37</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="a_addr_1_gep_fu_120">
+    <nodeIds>35</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln43_3_fu_211">
+    <nodeIds>52</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln43_4_fu_355">
+    <nodeIds>56</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln43_3_fu_217">
+    <nodeIds>53</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="mul_ln43_fu_349">
+    <nodeIds>65</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln39_fu_287">
+    <nodeIds>73</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="j3_fu_66">
+    <nodeIds>6</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="conv_1_fu_335">
+    <nodeIds>42</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln43_1_fu_339">
+    <nodeIds>62</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="b_addr_1_gep_fu_112">
+    <nodeIds>51</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="conv_fu_343">
+    <nodeIds>40</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln37_1_cast_fu_230">
+    <nodeIds>28</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="empty_4_fu_309">
+    <nodeIds>33</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln43_2_fu_271">
+    <nodeIds>50</nodeIds>
+  </expressionNodes>
+  <moduleNodes realName="grp_fu_359">
+    <nodeIds>66</nodeIds>
+    <nodeIds>68</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_fu_367">
+    <nodeIds>67</nodeIds>
+    <nodeIds>69</nodeIds>
+  </moduleNodes>
+  <ioNodes realName="store_ln0_store_fu_164">
+    <nodeIds>14</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln37_store_fu_304">
+    <nodeIds>77</nodeIds>
+  </ioNodes>
+  <ioNodes realName="i2_load_load_fu_179">
+    <nodeIds>21</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln0_store_fu_174">
+    <nodeIds>16</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln39_store_fu_299">
+    <nodeIds>75</nodeIds>
+  </ioNodes>
+  <ioNodes realName="indvar_flatten1_load_load_fu_227">
+    <nodeIds>20</nodeIds>
+  </ioNodes>
+  <ioNodes realName="j3_load_load_fu_182">
+    <nodeIds>22</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln0_store_fu_169">
+    <nodeIds>15</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln37_store_fu_222">
+    <nodeIds>76</nodeIds>
+  </ioNodes>
+  <memoryPorts dataString="a">
+    <nodeIds>43</nodeIds>
+    <nodeIds>41</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="a" portID="1">
+    <nodeIds>39</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="b">
+    <nodeIds>61</nodeIds>
+    <nodeIds>59</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="b" portID="1">
+    <nodeIds>63</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="res">
+    <nodeIds>70</nodeIds>
+  </memoryPorts>
+  <ioPorts name="a(p0)">
+    <contents name="load">
+      <nodeIds>43</nodeIds>
+      <nodeIds>41</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="a(p1)">
+    <contents name="load">
+      <nodeIds>39</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="b(p0)">
+    <contents name="load">
+      <nodeIds>61</nodeIds>
+      <nodeIds>59</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="b(p1)">
+    <contents name="load">
+      <nodeIds>63</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="res(p0)">
+    <contents name="store">
+      <nodeIds>70</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="4" stage="1" latency="1"/>
+      <operations id="5" stage="1" latency="1"/>
+      <operations id="6" stage="1" latency="1"/>
+      <operations id="7" stage="1" latency="1"/>
+      <operations id="8" stage="1" latency="1"/>
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="46" stage="1" latency="1"/>
+      <operations id="52" stage="1" latency="1"/>
+      <operations id="53" stage="1" latency="1"/>
+      <operations id="54" stage="1" latency="1"/>
+      <operations id="63" stage="2" latency="2"/>
+      <operations id="76" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="36" stage="1" latency="1"/>
+      <operations id="37" stage="1" latency="1"/>
+      <operations id="38" stage="1" latency="1"/>
+      <operations id="39" stage="2" latency="2"/>
+      <operations id="43" stage="2" latency="2"/>
+      <operations id="47" stage="1" latency="1"/>
+      <operations id="49" stage="1" latency="1"/>
+      <operations id="50" stage="1" latency="1"/>
+      <operations id="51" stage="1" latency="1"/>
+      <operations id="61" stage="2" latency="2"/>
+      <operations id="63" stage="1" latency="2"/>
+      <operations id="71" stage="1" latency="1"/>
+      <operations id="72" stage="1" latency="1"/>
+      <operations id="73" stage="1" latency="1"/>
+      <operations id="74" stage="1" latency="1"/>
+      <operations id="75" stage="1" latency="1"/>
+      <operations id="77" stage="1" latency="1"/>
+      <operations id="78" stage="1" latency="1"/>
+    </states>
+    <states id="3">
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="34" stage="1" latency="1"/>
+      <operations id="35" stage="1" latency="1"/>
+      <operations id="39" stage="1" latency="2"/>
+      <operations id="41" stage="2" latency="2"/>
+      <operations id="43" stage="1" latency="2"/>
+      <operations id="44" stage="1" latency="1"/>
+      <operations id="45" stage="1" latency="1"/>
+      <operations id="48" stage="1" latency="1"/>
+      <operations id="55" stage="1" latency="1"/>
+      <operations id="59" stage="2" latency="2"/>
+      <operations id="61" stage="1" latency="2"/>
+      <operations id="64" stage="1" latency="1"/>
+      <operations id="66" stage="3" latency="3"/>
+    </states>
+    <states id="4">
+      <operations id="41" stage="1" latency="2"/>
+      <operations id="42" stage="1" latency="1"/>
+      <operations id="59" stage="1" latency="2"/>
+      <operations id="62" stage="1" latency="1"/>
+      <operations id="66" stage="2" latency="3"/>
+      <operations id="67" stage="3" latency="3"/>
+    </states>
+    <states id="5">
+      <operations id="40" stage="1" latency="1"/>
+      <operations id="60" stage="1" latency="1"/>
+      <operations id="65" stage="1" latency="1"/>
+      <operations id="66" stage="1" latency="3"/>
+      <operations id="67" stage="2" latency="3"/>
+      <operations id="68" stage="2" latency="2"/>
+    </states>
+    <states id="6">
+      <operations id="67" stage="1" latency="3"/>
+      <operations id="68" stage="1" latency="2"/>
+      <operations id="69" stage="2" latency="2"/>
+    </states>
+    <states id="7">
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="56" stage="1" latency="1"/>
+      <operations id="57" stage="1" latency="1"/>
+      <operations id="58" stage="1" latency="1"/>
+      <operations id="69" stage="1" latency="2"/>
+      <operations id="70" stage="1" latency="1"/>
+      <operations id="80" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="5">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="5" outState="6">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="6" outState="7">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="matrixmul" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="24" mMaxLatency="24">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <subRegions>4</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>18</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="Row_Col" mII="2" mDepth="7" mMinTripCount="9" mMaxTripCount="9" mMinLatency="22" mMaxLatency="22" mType="1">
+      <basicBlocks>79</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="4" mTag="Return" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>81</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

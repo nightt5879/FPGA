@@ -1,0 +1,50 @@
+instrumenter::VERBO: [Instrumenter - Configuration] Variable Trace output filename not specified, defaulting to gvartrace.txt
+instrumenter::INFOR: [Instrumenter - Initialization] Checking for the existence of the required environment variables
+instrumenter::INFOR: [Instrumenter - Initialization] Loading the supported wrappers for standard library functions
+instrumenter::INFOR: [Instrumenter - Initialization] Adding static information
+instrumenter::VERBO: [Instrumenter - IRBuilder] Instruction has no debug information, defaulting to function/basic block info
+instrumenter::VERBO: [Instrumenter - IRBuilder] Instruction has no debug information, defaulting to function/basic block info
+instrumenter::VERBO: [Instrumenter - IRBuilder] Instruction has no debug information, defaulting to function/basic block info
+instrumenter::VERBO: [Instrumenter - IRBuilder] Instruction has no debug information, defaulting to function/basic block info
+instrumenter::VERBO: [Instrumenter - IRBuilder] Instruction has no debug information, defaulting to function/basic block info
+instrumenter::VERBO: [Instrumenter - IRBuilder] Instruction has no debug information, defaulting to function/basic block info
+instrumenter::VERBO: [Instrumenter - IRBuilder] Instruction has no debug information, defaulting to function/basic block info
+instrumenter::VERBO: [Instrumenter - IRBuilder] Instruction has no debug information, defaulting to function/basic block info
+instrumenter::VERBO: [Instrumenter - IRBuilder] Instruction has no debug information, defaulting to function/basic block info
+instrumenter::VERBO: [Instrumenter - IRBuilder] Instruction has no debug information, defaulting to function/basic block info
+instrumenter::VERBO: [Instrumenter - IRBuilder] Instruction has no debug information, defaulting to function/basic block info
+instrumenter::INFOR: [Instrumenter - Initialization] Finished adding static information
+instrumenter::VERBO: [Instrumenter - Finalize] Dumping static data to .... "E:\robot\project\FPGA\ZedBoard\HLS_lab\lab1\matrixmul\matrixmul\hls\csim\code_analyzer/.internal/instrument/app_0\static.xml"
+instrumenter::VERBO: [Instrumenter - GV] Global Variables Instrumentation
+instrumenter::VERBO: [Instrumenter - WARNING] Global value llvm.global_ctors is not instrumentable
+instrumenter::VERBO: [Instrumenter - WARNING] Global value __const.main.in_mat_a is not instrumentable
+instrumenter::VERBO: [Instrumenter - WARNING] Global value __const.main.in_mat_b is not instrumentable
+instrumenter::VERBO: [Instrumenter - WARNING] Global value .str is not instrumentable
+instrumenter::VERBO: [Instrumenter - WARNING] Global value .str.1 is not instrumentable
+instrumenter::VERBO: [Instrumenter - WARNING] Global value .str.2 is not instrumentable
+instrumenter::VERBO: [Instrumenter - WARNING] Global value .str.3 is not instrumentable
+instrumenter::VERBO: [Instrumenter - WARNING] Global value .str.4 is not instrumentable
+instrumenter::VERBO: [Instrumenter - WARNING] Global value .str.5 is not instrumentable
+instrumenter::VERBO: [Instrumenter - WARNING] Global value .str.6 is not instrumentable
+instrumenter::VERBO: spec:0:0: note: [Instrumenter - FN/BB] Function/BasicBlock profiling
+instrumenter::VERBO: [Instrumenter - FN/BB] Inserting profiling calls for function/basic-blocks
+instrumenter::INFOR: [Instrumenter - FN_TRACE] Adding the init function for the trace calls...
+instrumenter::VERBO: [Instrumenter - BB] Instrumenting the function: _GLOBAL__sub_I_matrixmul_test.cpp
+instrumenter::VERBO: [Instrumenter - BB] Instrumenting the function: __cxx_global_var_init
+instrumenter::VERBO: [Instrumenter - BB] Instrumenting the function: _ZNSt8ios_base4InitC1Ev
+instrumenter::VERBO: [Instrumenter - BB] Instrumenting the function: __dtor__ZStL8__ioinit
+instrumenter::VERBO: [Instrumenter - BB] Instrumenting the function: atexit
+instrumenter::VERBO: [Instrumenter - BB] Instrumenting the function: _ZNSt8ios_base4InitD1Ev
+instrumenter::VERBO: [Instrumenter - BB] Instrumenting the function: main
+instrumenter::VERBO: [Instrumenter - BB] Skipping Function llvm.dbg.declare
+instrumenter::VERBO: [Instrumenter - BB] Skipping Function llvm.vcxx.region.start
+instrumenter::VERBO: [Instrumenter - BB] Instrumenting the function: llvm.memcpy.p0i8.p0i8.i64
+instrumenter::VERBO: [Instrumenter - BB] Instrumenting the function: _ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc
+instrumenter::VERBO: [Instrumenter - BB] Instrumenting the function: _ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_
+instrumenter::VERBO: [Instrumenter - BB] Instrumenting the function: _ZNSolsEPFRSoS_E
+instrumenter::VERBO: [Instrumenter - BB] Instrumenting the function: _ZNSolsEs
+instrumenter::VERBO: [Instrumenter - BB] Instrumenting the function: _ZNSolsEi
+instrumenter::VERBO: [Instrumenter - BB] Instrumenting the function: _Z9matrixmulPA3_cS0_PA3_s
+instrumenter::VERBO: [Instrumenter - BB] Skipping Function llvm.dbg.label
+instrumenter::VERBO: [Instrumenter - BB] Skipping Function llvm.dbg.value
+instrumenter::VERBO: [Instrumenter - Finalize] Adding extra setup and memory access calls

@@ -1,0 +1,52 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Thu Oct 17 18:18:38 2024
+# Process ID: 45336
+# Current directory: E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul/matrixmul/hls/impl/ip
+# Command line: vivado.exe -notrace -mode batch -source run_ippack.tcl
+# Log file: E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul/matrixmul/hls/impl/ip/vivado.log
+# Journal file: E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul/matrixmul/hls/impl/ip\vivado.jou
+# Running On        :nightt_insider
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :22631
+# Processor Detail  :AMD Ryzen 7 5800U with Radeon Graphics         
+# CPU Frequency     :1896 MHz
+# CPU Physical cores:8
+# CPU Logical cores :16
+# Host memory       :16487 MB
+# Swap memory       :18253 MB
+# Total Virtual     :34741 MB
+# Available Virtual :8286 MB
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace
+INFO: calling package_hls_ip ip_types=vitis sysgen json_file=E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul/matrixmul/hls/hls_data.json outdir=E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul/matrixmul/hls/impl/ip srcdir=E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul/matrixmul/hls sort_interfaces_ports=false
+INFO: Copied 1 ipmisc file(s) to E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul/matrixmul/hls/impl/ip/misc
+INFO: Copied 5 verilog file(s) to E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul/matrixmul/hls/impl/ip/hdl/verilog
+INFO: Copied 5 vhdl file(s) to E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul/matrixmul/hls/impl/ip/hdl/vhdl
+ipx::create_core: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 649.578 ; gain = 192.672
+INFO: Import ports from HDL: E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul/matrixmul/hls/impl/ip/hdl/vhdl/matrixmul.vhd (matrixmul)
+INFO: Add clock interface ap_clk
+INFO: Add reset interface ap_rst
+INFO: Add ap_ctrl interface ap_ctrl
+INFO: Add data interface a_address0
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/vivado/Vivado/2024.1/data/ip'.
+INFO: Add data interface a_q0
+INFO: Add data interface a_address1
+INFO: Add data interface a_q1
+INFO: Add data interface b_address0
+INFO: Add data interface b_q0
+INFO: Add data interface b_address1
+INFO: Add data interface b_q1
+INFO: Add data interface res_address0
+INFO: Add data interface res_d0
+INFO: Calling post_process_vitis to specialize IP
+INFO: Calling post_process_sysgen to specialize IP
+Generating sysgen info xml from json file
+INFO: Created IP E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul/matrixmul/hls/impl/ip/component.xml
+INFO: Created IP archive E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul/matrixmul/hls/impl/ip/xilinx_com_hls_matrixmul_1_0.zip
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 17 18:18:50 2024...
