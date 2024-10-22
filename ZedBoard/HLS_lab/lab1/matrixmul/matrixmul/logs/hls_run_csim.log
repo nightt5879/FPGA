@@ -1,16 +1,16 @@
-INFO: [vitis-run 60-1548] Creating build summary session with primary output E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul/matrixmul\matrixmul.hlsrun_csim_summary, at 10/17/24 15:36:35
+INFO: [vitis-run 60-1548] Creating build summary session with primary output E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul/matrixmul\matrixmul.hlsrun_csim_summary, at 10/17/24 19:39:33
 INFO: [vitis-run 82-31] Launching vitis_hls: vitis_hls -nolog -run csim -work_dir E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul/matrixmul -config E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul/matrixmul/hls-debug.cfg -config E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul/hls_config.cfg -cmdlineconfig E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul/matrixmul/hls/config.cmdline
 
 ****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2024.1 (64-bit)
   **** SW Build 5069499 on May 21 2024
   **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
   **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-  **** Start of session at: Thu Oct 17 15:36:37 2024
+  **** Start of session at: Thu Oct 17 19:39:37 2024
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 
 source E:/vivado/Vitis_HLS/2024.1/scripts/vitis_hls/hls.tcl -notrace
-INFO: [HLS 200-10] For user '14692' on host 'nightt_insider' (Windows NT_amd64 version 10.0) on Thu Oct 17 15:36:38 +0800 2024
+INFO: [HLS 200-10] For user '14692' on host 'nightt_insider' (Windows NT_amd64 version 10.0) on Thu Oct 17 19:39:40 +0800 2024
 INFO: [HLS 200-10] In directory 'E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul'
 INFO: [HLS 200-2005] Using work_dir E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul/matrixmul 
 INFO: [HLS 200-1505] Using default flow_target 'vivado'
@@ -28,6 +28,8 @@ INFO: [HLS 200-1465] Applying ini 'part=xc7z020clg484-1' from E:/robot/project/F
 INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
 INFO: [HLS 200-1465] Applying ini 'clock=10ns' from E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul/hls_config.cfg(11)
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1465] Applying ini 'cosim.trace_level=all' from E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul/hls_config.cfg(13)
+INFO: [HLS 200-1465] Applying ini 'cosim.wave_debug=1' from E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul/hls_config.cfg(14)
 INFO: [HLS 200-1465] Applying ini 'csim.code_analyzer=1' from E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul/hls_config.cfg(12)
 INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul/hls_config.cfg(5)
 INFO: [HLS 200-1465] Applying ini 'csim.O=0' from E:/robot/project/FPGA/ZedBoard/HLS_lab/lab1/matrixmul/matrixmul/hls-debug.cfg(3)
@@ -46,5 +48,5 @@ INFO: [HLS 200-2036] Building debug C Simulation binaries
 INFO: [HLS 200-2035] Skipping execution of C Simulation due to 'setup' option
 INFO: [SIM 211-1] CSim file generation done with 0 errors.
 INFO: [SIM 211-3] *************** CSIM finish ***************
-INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 0 seconds. Total elapsed time: 7.825 seconds; peak allocated memory: 246.660 MB.
-INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 13s
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 0 seconds. Total elapsed time: 9.856 seconds; peak allocated memory: 260.770 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 17s

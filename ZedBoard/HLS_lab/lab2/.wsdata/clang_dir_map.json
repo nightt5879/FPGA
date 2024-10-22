@@ -1,0 +1,8 @@
+{
+  "workspaceRoot": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab2",
+  "mapping": {
+    "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\source\\lab2\\yuv_filter.c": "lab2",
+    "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\source\\lab2\\image_aux.c": "lab2",
+    "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\source\\lab2\\yuv_filter_test.c": "lab2"
+  }
+}
