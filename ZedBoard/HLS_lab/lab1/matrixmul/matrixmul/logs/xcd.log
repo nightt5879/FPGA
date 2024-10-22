@@ -254,3 +254,28 @@
 10/17/24 18:23:17: SERVER: destructor for server bound to port 57955
 10/17/24 18:23:17: Server exiting with status 0.
 10/17/24 18:23:17: Closing log file.
+10/17/24 19:39:32: Running xcd server. This server was NOT built by gradle, but presumably rdi.
+10/17/24 19:39:32: Server was asked to start on port: '54242'
+10/17/24 19:39:32: Server is using token UUID: '0c71fc86-870e-4ce0-b616-974d039d1cac'
+10/17/24 19:39:32: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+10/17/24 19:39:32: Attempting to start server on port '54242'
+10/17/24 19:39:32: Running Dispatch Server
+10/17/24 19:39:32: Version 2.2.0
+10/17/24 19:39:33: Dispatch Server: Accepted socket connection from client
+10/17/24 19:39:33: Starting Socket connection
+10/17/24 19:39:33: EXCHANGE_TOKEN received, server token: 0c71fc86-870e-4ce0-b616-974d039d1cac, passed token: 0c71fc86-870e-4ce0-b616-974d039d1cac
+10/17/24 19:39:33: DISPATCH_HANDLER: Adding handler from function makeHandler in library librdi_system_diagram failed with exception: Could not dynamically load librdi_system_diagram.dll
+10/17/24 19:39:33: SESSION_MGR: creating session with session uuid: 'f169ab42-7ab0-4ee3-ae39-5f9912bc1359' and name 'vitis-run_compile_matrixmul'
+10/17/24 19:39:33: KERNEL_SVC: creating session with uuid: 'f169ab42-7ab0-4ee3-ae39-5f9912bc1359' and name 'vitis-run_compile_matrixmul'
+10/17/24 19:39:33: GUIDANCE_SMGR: creating guidance session with uuid: 'f169ab42-7ab0-4ee3-ae39-5f9912bc1359' and name 'vitis-run_compile_matrixmul'
+10/17/24 19:39:44: Dispatch Server: Accepted socket connection from client
+10/17/24 19:39:44: Starting Socket connection
+10/17/24 19:39:48: SESSION_MGR: closing session for UUID 'f169ab42-7ab0-4ee3-ae39-5f9912bc1359' with name 'vitis-run_compile_matrixmul'
+10/17/24 19:39:48: KERNEL_SVC: closing session for UUID 'f169ab42-7ab0-4ee3-ae39-5f9912bc1359' with name 'vitis-run_compile_matrixmul'
+10/17/24 19:39:48: GUIDANCE_SMGR: closing session for UUID 'f169ab42-7ab0-4ee3-ae39-5f9912bc1359' with name 'vitis-run_compile_matrixmul'
+10/17/24 19:39:48: STOP_SERVER received, server token: 0c71fc86-870e-4ce0-b616-974d039d1cac, passed token: 0c71fc86-870e-4ce0-b616-974d039d1cac
+10/17/24 19:39:48: Socket received request to stop server.
+10/17/24 19:39:48: Dispatch Server: do_await_stop
+10/17/24 19:39:48: SERVER: destructor for server bound to port 54242
+10/17/24 19:39:48: Server exiting with status 0.
+10/17/24 19:39:48: Closing log file.

@@ -14,7 +14,12 @@
     - [3.4 Experiment 4](#34-experiment-4)
     - [3.5 Experiment 5](#35-experiment-5)
     - [3.6 Experiment 6](#36-experiment-6)
-  - [4. Course Design (In Development)](#4-course-design-in-development)
+  - [4. HLS Lab](#4-hls-lab)
+    - [4.1 Experiment 1](#41-experiment-1)
+    - [4.2 Experiment 2 (Linux issues)](#42-experiment-2-linux-issues)
+    - [4.3 Experiment 3 (Linux issues)](#43-experiment-3-linux-issues)
+    - [4.4 Experiment 4](#44-experiment-4)
+  - [5. Course Design (In Progress)](#5-course-design-in-progress)
 - [Errata](#errata)
   - [Error 1](#error-1)
   - [Error 2](#error-2)
@@ -497,7 +502,18 @@ This experiment primarily teaches how to use Debug for troubleshooting, and the 
 *Waiting for Trigger*
 ![Waiting for Trigger](./images/ZedBoard/lab_6/wait_for_trigger.jpg)
 
-## 4. Course Design (In Development)
+## 4. HLS Lab
+### 4.1 Experiment 1
+This experiment has several versions. First, there is the original version using Vivado HLS, which is suitable for older tools. Then, there is the Vitis HLS version, which is for newer tools. Finally, there is the latest version for Vitis, which I used to complete Experiment 1, and I have also prepared a tutorial document for it.
+
+> **Vitis Tutorial Document** [Vitis Lab 1 Development](./datasheet/lab1_vitis.pdf)
+
+### 4.2 Experiment 2 (Linux issues)
+### 4.3 Experiment 3 (Linux issues)
+### 4.4 Experiment 4
+
+## 5. Course Design (In Progress)
+
 
 # Errata
 ## Error 1
@@ -509,7 +525,7 @@ The specific issue is found on line 69 of `uart_led.v`:
     .signal_src   (~rst_pin),
 ```
 <sub>The same logic in lab3, lab5, and lab6 does not have this issue, as the inversion operation was not applied.</sub></p>
-- [ ] **Contact the instructor to correct the error**</p>  <!--Need to contact the instructor-->
+- [X] **Contact the instructor to correct the error**</p>  <!--Need to contact the instructor-->
 
 Erroneous logic experiment phenomenon:
 
@@ -517,6 +533,6 @@ Erroneous logic experiment phenomenon:
 
 ## Error 2
 In Lab 4, steps `2-2-4` and `2-2-5` do not need to be performed because the `clk_core clk_core_i0` already exists, and it does not need to be added again.</p>
-- [ ] **Contact the instructor to correct the error**</p>  <!--Need to contact the instructor-->
+- [X] **Contact the instructor to correct the error**</p>  <!--Need to contact the instructor-->
 
 ![Error Location](./images/ZedBoard/lab_4/step_not_need.jpg)

@@ -1,0 +1,157 @@
+<ENTRY>
+{
+ "thisFile": "E:/robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab2\\lab2\\lab2\\lab2.hlsrun_csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "10/17/24 21:24:43",
+ "timestampMillis": "2594630289",
+ "buildStep": {
+  "cmdId": "0711575c-bd6b-4375-ab3e-88ed57bc4ec0",
+  "name": "vitis-run",
+  "logFile": "E:/robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab2\\lab2\\lab2\\logs\\lab2.steps.log",
+  "commandLine": "E:/vivado/Vitis/2024.1/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --csim --config E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab2\\lab2\\hls_config.cfg --work_dir lab2 ",
+  "args": [
+   "--mode",
+   "hls",
+   "--csim",
+   "--config",
+   "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab2\\lab2\\hls_config.cfg",
+   "--work_dir",
+   "lab2"
+  ],
+  "iniFiles": [],
+  "cwd": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab2\\lab2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "10/17/24 21:24:43",
+ "timestampMillis": "2594630290",
+ "status": {
+  "cmdId": "0711575c-bd6b-4375-ab3e-88ed57bc4ec0",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "10/17/24 21:24:49",
+ "timestampMillis": "2594636211",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "yuv_filter",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "E:/robot\\project\\FPGA\\ZedBoard\\HLS_lab\\source\\lab2\\image_aux.c",
+     "E:/robot\\project\\FPGA\\ZedBoard\\HLS_lab\\source\\lab2\\yuv_filter.c"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "10/17/24 21:24:49",
+ "timestampMillis": "2594636213",
+ "buildStep": {
+  "cmdId": "ed7f8ca1-93d3-4650-b4aa-7681139409da",
+  "name": "csim_design",
+  "logFile": "E:/robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab2\\lab2\\lab2\\hls\\hls.log",
+  "commandLine": "csim_design",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab2\\lab2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "10/17/24 21:24:49",
+ "timestampMillis": "2594636213",
+ "status": {
+  "cmdId": "ed7f8ca1-93d3-4650-b4aa-7681139409da",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "10/17/24 21:24:51",
+ "timestampMillis": "2594638029",
+ "status": {
+  "cmdId": "ed7f8ca1-93d3-4650-b4aa-7681139409da",
+  "state": "CS_FAILED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "10/17/24 21:24:51",
+ "timestampMillis": "2594638294",
+ "status": {
+  "cmdId": "0711575c-bd6b-4375-ab3e-88ed57bc4ec0",
+  "state": "CS_FAILED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "10/17/24 21:24:51",
+ "timestampMillis": "2594638294",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "10/17/24 21:24:51",
+ "timestampMillis": "2594638295",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

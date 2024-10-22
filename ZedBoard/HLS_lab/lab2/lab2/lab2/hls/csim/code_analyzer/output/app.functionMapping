@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<cpuFpgaMapping:cpuFpgaMapping xmlns:cpuFpgaMapping="http://www.xilinx.com/act/cpuFpgaMapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.xilinx.com/act/cpuFpgaMapping cpuFPGAMapping.xsd">
+  <Function id="_f200" name="main">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f203" name="printf">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f206" name="image_read">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f208" name="fscanf">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f211" name="image_write">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f212" name="fprintf">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f213" name="rgb2yuv">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f214" name="yuv2rgb">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f215" name="yuv_scale">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f216" name="yuv_filter">
+    <MappedTo editable="true">
+      <Partition>FPGA</Partition>
+    </MappedTo>
+    <TopLevel>true</TopLevel>
+    <IsCalledByHwFn>false</IsCalledByHwFn>
+    <Interfaces>
+      <Return>
+        <Default/>
+      </Return>
+      <Argument declaration="in (image_t*)" id="_v74" name="in">
+        <Default/>
+      </Argument>
+      <Argument declaration="out (image_t*)" id="_v75" name="out">
+        <Default/>
+      </Argument>
+      <Argument declaration="Y_scale (yuv_scale_t)" id="_v76" name="Y_scale">
+        <Default/>
+      </Argument>
+      <Argument declaration="U_scale (yuv_scale_t)" id="_v77" name="U_scale">
+        <Default/>
+      </Argument>
+      <Argument declaration="V_scale (yuv_scale_t)" id="_v78" name="V_scale">
+        <Default/>
+      </Argument>
+    </Interfaces>
+  </Function>
+  <Function id="_f217" name="rgb2yuv">
+    <MappedTo editable="true">
+      <Partition>FPGA</Partition>
+    </MappedTo>
+    <TopLevel>false</TopLevel>
+    <IsCalledByHwFn>true</IsCalledByHwFn>
+  </Function>
+  <Function id="_f218" name="yuv_scale">
+    <MappedTo editable="true">
+      <Partition>FPGA</Partition>
+    </MappedTo>
+    <TopLevel>false</TopLevel>
+    <IsCalledByHwFn>true</IsCalledByHwFn>
+  </Function>
+  <Function id="_f219" name="yuv2rgb">
+    <MappedTo editable="true">
+      <Partition>FPGA</Partition>
+    </MappedTo>
+    <TopLevel>false</TopLevel>
+    <IsCalledByHwFn>true</IsCalledByHwFn>
+  </Function>
+</cpuFpgaMapping:cpuFpgaMapping>
