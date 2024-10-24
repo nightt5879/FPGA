@@ -1,0 +1,33 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="E:/robot/project/FPGA/ZedBoard/HLS_lab/source/fir/prj/hoisting/kernel/run_hls.tcl:38:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="fir_wrap" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=fir_wrap" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fir_hoisting.cpp:33:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fir_wrap" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi depth=100 port=y" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fir_hoisting.cpp:34:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fir_wrap" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi depth=100 port=x" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fir_hoisting.cpp:35:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fir_wrap" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi depth=99 port=coef" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fir_hoisting.cpp:36:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fir_wrap" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=len bundle=CTRL" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fir_hoisting.cpp:37:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fir_wrap" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=return bundle=CTRL" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fir_hoisting.cpp:49:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fir_wrap" ARG_PragmaIsValid="1" ARG_PragmaOptions="max=100 min=100" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="fir_hoisting.cpp:32:0" msg_body="Inlining function 'fir(int*, int)' into 'fir_wrap(int*, int*, int, int*)'">
+        <args Callee="fir(int*, int)" Callee-DebugLoc="File fir_hoisting.cpp Line 10 Column 0" Caller="fir_wrap(int*, int*, int, int*)" Caller-DebugLoc="File fir_hoisting.cpp Line 32 Column 0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-437" msg_severity="INFO" msg_loc="fir_hoisting.cpp:47:19" msg_body="Automatically disabling loop flattening for loop 'VITIS_LOOP_47_2'.">
+        <args LoopName="VITIS_LOOP_47_2"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="fir_hoisting.cpp:47:19" msg_body="loop_flatten 0 1 fir_wrap fir_hoisting.cpp:47:19VITIS_LOOP_47_2 fir_hoisting.cpp:47:19">
+        <args LoopLoc="fir_hoisting.cpp:47:19" LoopLoc-DebugLoc="File fir_hoisting.cpp Line 47 Column 19" LoopName="VITIS_LOOP_47_2" PragmaFunction="fir_wrap" PragmaIsAuto="1" PragmaOptions="0" PragmaSrcLoc="fir_hoisting.cpp:47:19" PragmaSrcLoc-DebugLoc="File fir_hoisting.cpp Line 47 Column 19" PragmaType="loop_flatten"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

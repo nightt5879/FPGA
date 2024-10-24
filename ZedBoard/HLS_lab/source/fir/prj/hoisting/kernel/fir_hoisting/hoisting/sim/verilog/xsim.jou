@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# xsim v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Thu Oct 24 17:34:40 2024
+# Process ID: 27584
+# Current directory: E:/robot/project/FPGA/ZedBoard/HLS_lab/source/fir/prj/hoisting/kernel/fir_hoisting/hoisting/sim/verilog
+# Command line: xsim.exe -mode tcl -source {xsim.dir/fir_wrap/xsim_script.tcl}
+# Log file: E:/robot/project/FPGA/ZedBoard/HLS_lab/source/fir/prj/hoisting/kernel/fir_hoisting/hoisting/sim/verilog/xsim.log
+# Journal file: E:/robot/project/FPGA/ZedBoard/HLS_lab/source/fir/prj/hoisting/kernel/fir_hoisting/hoisting/sim/verilog\xsim.jou
+# Running On        :nightt_insider
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :22631
+# Processor Detail  :AMD Ryzen 7 5800U with Radeon Graphics         
+# CPU Frequency     :1896 MHz
+# CPU Physical cores:8
+# CPU Logical cores :16
+# Host memory       :16487 MB
+# Swap memory       :17179 MB
+# Total Virtual     :33667 MB
+# Available Virtual :7596 MB
+#-----------------------------------------------------------
+source xsim.dir/fir_wrap/xsim_script.tcl
+source fir_wrap.tcl

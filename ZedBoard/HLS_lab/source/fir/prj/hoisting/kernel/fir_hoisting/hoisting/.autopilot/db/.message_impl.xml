@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Messages>
+	<Message severity="INFO" prefix="[IMPL 213-8]" key="IMPL_8_1776" tag="" content="Exporting RTL as a Vivado IP." resolution=""/>
+	<Message severity="INFO" prefix="[IMPL 213-8]" key="IMPL_8_1773" tag="" content="Starting RTL evaluation using Vivado ..." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-802]" key="HLS 200-802" tag="" content="Generated output file fir_hoisting/hoisting/impl/export.zip" resolution=""/>
+	<Message severity="WARNING" prefix="[HLS 200-484]" key="HLS 200-484" tag="" content="The &apos;export_design -evaluate&apos; command is deprecated and will be removed in a future release." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-2161]" key="HLS 200-2161" tag="" content="Finished Command export_design Elapsed time: 00:05:43; Allocated memory: 4.570 MB." resolution=""/>
+</Messages>

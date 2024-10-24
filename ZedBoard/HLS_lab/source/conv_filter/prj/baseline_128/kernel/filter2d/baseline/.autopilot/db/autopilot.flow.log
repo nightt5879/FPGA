@@ -1,0 +1,23 @@
+INFO-FLOW: Workspace E:/robot/project/FPGA/ZedBoard/HLS_lab/source/conv_filter/prj/baseline_128/kernel/filter2d/baseline opened at Thu Oct 24 17:28:37 +0800 2024
+Execute       send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     set_part xc7z020-clg484-1 
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg484-1 
+Execute       create_platform xc7z020-clg484-1 -board  
+DBG:HLSDevice: Trying to load device library: E:/vivado\Vitis_HLS\2024.1\lib\win64.o\xv_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: 
+ERROR: [Device 21-9286] Exception caught while reading special devices config file: ERROR: [Common 17-49] Internal Data Exception: Config data file does not exist: 'specdevice.cfg'
+Partial call stack:
+no stack trace available, please use hs_err_<pid>.dmp instead.
+
+ERROR: [HLS 200-1023] Part 'xc7z020-clg484-1' is not installed.
+Command       create_platform done; error code: 1; 
+INFO-FLOW: Caught error in set_part: command 'create_platform' returned error code
+    while executing
+"create_platform $value -board $board"
+    (procedure "ap_internal_set_part" line 27)
+    invoked from within
+"ap_internal_set_part "
+Command     set_part done; error code: 2; 
+Command   ap_source done; error code: 1; 
+Execute   cleanup_all 

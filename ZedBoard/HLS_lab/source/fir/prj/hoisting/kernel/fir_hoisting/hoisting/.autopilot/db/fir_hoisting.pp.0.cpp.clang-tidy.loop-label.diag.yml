@@ -1,0 +1,31 @@
+---
+MainSourceFile:  'E:/robot/project/FPGA/ZedBoard/HLS_lab/source/fir/prj/hoisting/kernel/fir_hoisting/hoisting/.autopilot/db/fir_hoisting.pp.0.cpp'
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_19_1:  '
+    FileOffset:      19
+    FilePath:        fir_hoisting.cpp
+    Replacements:    
+      - FilePath:        'E:\robot\project\FPGA\ZedBoard\HLS_lab\source\fir\prj\hoisting\kernel\fir_hoisting\hoisting\.autopilot\db\fir_hoisting.pp.0.cpp'
+        Offset:          9840
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_19_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_41_1:  '
+    FileOffset:      41
+    FilePath:        fir_hoisting.cpp
+    Replacements:    
+      - FilePath:        'E:\robot\project\FPGA\ZedBoard\HLS_lab\source\fir\prj\hoisting\kernel\fir_hoisting\hoisting\.autopilot\db\fir_hoisting.pp.0.cpp'
+        Offset:          10543
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_41_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_47_2:  '
+    FileOffset:      47
+    FilePath:        fir_hoisting.cpp
+    Replacements:    
+      - FilePath:        'E:\robot\project\FPGA\ZedBoard\HLS_lab\source\fir\prj\hoisting\kernel\fir_hoisting\hoisting\.autopilot\db\fir_hoisting.pp.0.cpp'
+        Offset:          10598
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_47_2: '
+...

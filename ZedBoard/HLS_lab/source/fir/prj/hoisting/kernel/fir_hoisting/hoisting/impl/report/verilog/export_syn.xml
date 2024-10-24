@@ -1,0 +1,170 @@
+<profile>
+  <RunData>
+    <RUN_TYPE>synth</RUN_TYPE>
+    <VIVADO_VERSION>v.2024.1</VIVADO_VERSION>
+    <ROOT_MODULE_CELL>bd_0_i/hls_inst</ROOT_MODULE_CELL>
+  </RunData>
+  <TimingReport>
+    <TargetClockPeriod>5.000</TargetClockPeriod>
+    <AchievedClockPeriod>4.957</AchievedClockPeriod>
+    <CLOCK_NAME>ap_clk</CLOCK_NAME>
+    <CP_FINAL>4.957</CP_FINAL>
+    <CP_ROUTE>NA</CP_ROUTE>
+    <CP_SYNTH>4.957</CP_SYNTH>
+    <CP_TARGET>5.000</CP_TARGET>
+    <SLACK_FINAL>0.043</SLACK_FINAL>
+    <SLACK_ROUTE/>
+    <SLACK_SYNTH>0.043</SLACK_SYNTH>
+    <TIMING_MET>TRUE</TIMING_MET>
+    <TNS_FINAL>0.000</TNS_FINAL>
+    <TNS_ROUTE>NA</TNS_ROUTE>
+    <TNS_SYNTH>0.000</TNS_SYNTH>
+    <WNS_FINAL>0.043</WNS_FINAL>
+    <WNS_ROUTE>NA</WNS_ROUTE>
+    <WNS_SYNTH>0.043</WNS_SYNTH>
+  </TimingReport>
+  <AreaReport>
+    <Resources>
+      <BRAM>4</BRAM>
+      <CLB>0</CLB>
+      <DSP>3</DSP>
+      <FF>2942</FF>
+      <LATCH>0</LATCH>
+      <LUT>1977</LUT>
+      <SRL>297</SRL>
+      <URAM>0</URAM>
+    </Resources>
+    <AvailableResources>
+      <BRAM>280</BRAM>
+      <CLB>0</CLB>
+      <DSP>220</DSP>
+      <FF>106400</FF>
+      <LUT>53200</LUT>
+      <URAM>0</URAM>
+    </AvailableResources>
+  </AreaReport>
+  <RtlModules>
+    <RtlModule CELL="inst" DEPTH="0" IS_TOP="1" TYPE="function" MODULENAME="fir_wrap" DISPNAME="inst" RTLNAME="fir_wrap">
+      <SubModules count="7">CTRL_s_axi_U c_U gmem_m_axi_U grp_fir_wrap_Pipeline_VITIS_LOOP_19_1_fu_190 grp_fir_wrap_Pipeline_VITIS_LOOP_41_1_fu_181 mul_32s_32s_32_5_1_U8 shift_reg_U</SubModules>
+      <Resources BRAM="4" DSP="3" FF="2942" LUT="1977"/>
+      <LocalResources FF="476" LUT="19"/>
+    </RtlModule>
+    <RtlModule CELL="inst/CTRL_s_axi_U" DEPTH="1" TYPE="resource" MODULENAME="CTRL_s_axi" DISPNAME="CTRL_s_axi_U" RTLNAME="fir_wrap_CTRL_s_axi">
+      <Resources FF="277" LUT="255"/>
+      <BindNode BINDTYPE="adapter" BRAM="0" BUNDLEDNAME="CTRL" DISPNAME="bind_adapter " DSP="0" ID="" IMPL="" LATENCY="" LOOP="" OPTYPE="" PRAGMA="" RTLNAME="CTRL_s_axi_U" SOURCE="" STORAGESIZE="" STORAGESUBTYPE="s_axilite" STORAGEUSAGE="interface" URAM="0" VARIABLE=""/>
+    </RtlModule>
+    <RtlModule CELL="inst/c_U" DEPTH="1" TYPE="resource" MODULENAME="c_RAM_AUTO_1R1W" DISPNAME="c_U" RTLNAME="fir_wrap_c_RAM_AUTO_1R1W">
+      <Resources BRAM="1"/>
+      <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="c_U" SOURCE="" STORAGESIZE="32 99 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="c" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/gmem_m_axi_U" DEPTH="1" TYPE="resource" MODULENAME="gmem_m_axi" DISPNAME="gmem_m_axi_U" RTLNAME="fir_wrap_gmem_m_axi">
+      <Resources BRAM="2" FF="1923" LUT="1483"/>
+      <BindNode BINDTYPE="adapter" BRAM="4" BUNDLEDNAME="gmem" DISPNAME="bind_adapter " DSP="0" ID="" IMPL="" LATENCY="" LOOP="" OPTYPE="" PRAGMA="" RTLNAME="gmem_m_axi_U" SOURCE="" STORAGESIZE="" STORAGESUBTYPE="m_axi" STORAGEUSAGE="interface" URAM="0" VARIABLE=""/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_fir_wrap_Pipeline_VITIS_LOOP_19_1_fu_190" DEPTH="1" TYPE="function" MODULENAME="fir_wrap_Pipeline_VITIS_LOOP_19_1" DISPNAME="grp_fir_wrap_Pipeline_VITIS_LOOP_19_1_fu_190" RTLNAME="fir_wrap_fir_wrap_Pipeline_VITIS_LOOP_19_1">
+      <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+      <Resources FF="167" LUT="155"/>
+      <LocalResources FF="165" LUT="125"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_fir_wrap_Pipeline_VITIS_LOOP_19_1_fu_190/flow_control_loop_pipe_sequential_init_U" DEPTH="2" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="fir_wrap_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="30"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_fir_wrap_Pipeline_VITIS_LOOP_41_1_fu_181" DEPTH="1" TYPE="function" MODULENAME="fir_wrap_Pipeline_VITIS_LOOP_41_1" DISPNAME="grp_fir_wrap_Pipeline_VITIS_LOOP_41_1_fu_181" RTLNAME="fir_wrap_fir_wrap_Pipeline_VITIS_LOOP_41_1">
+      <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+      <Resources FF="65" LUT="33"/>
+      <LocalResources FF="63" LUT="8"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_fir_wrap_Pipeline_VITIS_LOOP_41_1_fu_181/flow_control_loop_pipe_sequential_init_U" DEPTH="2" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="fir_wrap_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="25"/>
+    </RtlModule>
+    <RtlModule CELL="inst/mul_32s_32s_32_5_1_U8" DEPTH="1" TYPE="resource" MODULENAME="mul_32s_32s_32_5_1" DISPNAME="mul_32s_32s_32_5_1_U8" RTLNAME="fir_wrap_mul_32s_32s_32_5_1">
+      <Resources DSP="3" FF="34"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="3" ID="" IMPL="auto" LATENCY="4" LOOP="VITIS_LOOP_47_2" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_32s_32_5_1_U8" SOURCE="fir_hoisting.cpp:25" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln25" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/shift_reg_U" DEPTH="1" TYPE="resource" MODULENAME="shift_reg_RAM_AUTO_1R1W" DISPNAME="shift_reg_U" RTLNAME="fir_wrap_shift_reg_RAM_AUTO_1R1W">
+      <Resources BRAM="1" LUT="32"/>
+      <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="" RTLNAME="shift_reg_U" SOURCE="" STORAGESIZE="32 99 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_s2p" URAM="0" VARIABLE="shift_reg" VISIBLE="true"/>
+    </RtlModule>
+  </RtlModules>
+  <TimingPaths>
+    <TPATH DATAPATH_DELAY="4.704" DATAPATH_LOGIC_DELAY="1.185" DATAPATH_NET_DELAY="3.519" ENDPOINT_PIN="gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/data_p1_reg[10]/CE" LOGIC_LEVELS="4" MAX_FANOUT="174" SLACK="0.043" STARTPOINT_PIN="gmem_m_axi_U/bus_read/rreq_burst_conv/sect_total_reg[4]/C">
+      <CELL NAME="gmem_m_axi_U/bus_read/rreq_burst_conv/sect_total_reg[4]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="fir_wrap_gmem_m_axi.v" LINE_NUMBER="2052" MODULE_INSTNAME="gmem_m_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/sect_total[19]_i_5__0" PRIMITIVE_TYPE="LUT.others.LUT6" FILE_NAME="fir_wrap_gmem_m_axi.v" LINE_NUMBER="458" MODULE_INSTNAME="gmem_m_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/sect_total[19]_i_3__0" PRIMITIVE_TYPE="LUT.others.LUT4" FILE_NAME="fir_wrap_gmem_m_axi.v" LINE_NUMBER="458" MODULE_INSTNAME="gmem_m_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/sect_total[19]_i_1__0" PRIMITIVE_TYPE="LUT.others.LUT5" FILE_NAME="fir_wrap_gmem_m_axi.v" LINE_NUMBER="458" MODULE_INSTNAME="gmem_m_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/data_p1[95]_i_1__0" PRIMITIVE_TYPE="LUT.others.LUT4" FILE_NAME="fir_wrap_gmem_m_axi.v" LINE_NUMBER="458" MODULE_INSTNAME="gmem_m_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/data_p1_reg[10]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="fir_wrap_gmem_m_axi.v" LINE_NUMBER="2512" MODULE_INSTNAME="gmem_m_axi_U" IS_FUNCINST="0"/>
+      <MODULE_INSTANCES>gmem_m_axi_U</MODULE_INSTANCES>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="4.704" DATAPATH_LOGIC_DELAY="1.185" DATAPATH_NET_DELAY="3.519" ENDPOINT_PIN="gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/data_p1_reg[11]/CE" LOGIC_LEVELS="4" MAX_FANOUT="174" SLACK="0.043" STARTPOINT_PIN="gmem_m_axi_U/bus_read/rreq_burst_conv/sect_total_reg[4]/C">
+      <CELL NAME="gmem_m_axi_U/bus_read/rreq_burst_conv/sect_total_reg[4]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="fir_wrap_gmem_m_axi.v" LINE_NUMBER="2052" MODULE_INSTNAME="gmem_m_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/sect_total[19]_i_5__0" PRIMITIVE_TYPE="LUT.others.LUT6" FILE_NAME="fir_wrap_gmem_m_axi.v" LINE_NUMBER="458" MODULE_INSTNAME="gmem_m_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/sect_total[19]_i_3__0" PRIMITIVE_TYPE="LUT.others.LUT4" FILE_NAME="fir_wrap_gmem_m_axi.v" LINE_NUMBER="458" MODULE_INSTNAME="gmem_m_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/sect_total[19]_i_1__0" PRIMITIVE_TYPE="LUT.others.LUT5" FILE_NAME="fir_wrap_gmem_m_axi.v" LINE_NUMBER="458" MODULE_INSTNAME="gmem_m_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/data_p1[95]_i_1__0" PRIMITIVE_TYPE="LUT.others.LUT4" FILE_NAME="fir_wrap_gmem_m_axi.v" LINE_NUMBER="458" MODULE_INSTNAME="gmem_m_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/data_p1_reg[11]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="fir_wrap_gmem_m_axi.v" LINE_NUMBER="2512" MODULE_INSTNAME="gmem_m_axi_U" IS_FUNCINST="0"/>
+      <MODULE_INSTANCES>gmem_m_axi_U</MODULE_INSTANCES>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="4.704" DATAPATH_LOGIC_DELAY="1.185" DATAPATH_NET_DELAY="3.519" ENDPOINT_PIN="gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/data_p1_reg[12]/CE" LOGIC_LEVELS="4" MAX_FANOUT="174" SLACK="0.043" STARTPOINT_PIN="gmem_m_axi_U/bus_read/rreq_burst_conv/sect_total_reg[4]/C">
+      <CELL NAME="gmem_m_axi_U/bus_read/rreq_burst_conv/sect_total_reg[4]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="fir_wrap_gmem_m_axi.v" LINE_NUMBER="2052" MODULE_INSTNAME="gmem_m_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/sect_total[19]_i_5__0" PRIMITIVE_TYPE="LUT.others.LUT6" FILE_NAME="fir_wrap_gmem_m_axi.v" LINE_NUMBER="458" MODULE_INSTNAME="gmem_m_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/sect_total[19]_i_3__0" PRIMITIVE_TYPE="LUT.others.LUT4" FILE_NAME="fir_wrap_gmem_m_axi.v" LINE_NUMBER="458" MODULE_INSTNAME="gmem_m_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/sect_total[19]_i_1__0" PRIMITIVE_TYPE="LUT.others.LUT5" FILE_NAME="fir_wrap_gmem_m_axi.v" LINE_NUMBER="458" MODULE_INSTNAME="gmem_m_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/data_p1[95]_i_1__0" PRIMITIVE_TYPE="LUT.others.LUT4" FILE_NAME="fir_wrap_gmem_m_axi.v" LINE_NUMBER="458" MODULE_INSTNAME="gmem_m_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/data_p1_reg[12]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="fir_wrap_gmem_m_axi.v" LINE_NUMBER="2512" MODULE_INSTNAME="gmem_m_axi_U" IS_FUNCINST="0"/>
+      <MODULE_INSTANCES>gmem_m_axi_U</MODULE_INSTANCES>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="4.704" DATAPATH_LOGIC_DELAY="1.185" DATAPATH_NET_DELAY="3.519" ENDPOINT_PIN="gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/data_p1_reg[13]/CE" LOGIC_LEVELS="4" MAX_FANOUT="174" SLACK="0.043" STARTPOINT_PIN="gmem_m_axi_U/bus_read/rreq_burst_conv/sect_total_reg[4]/C">
+      <CELL NAME="gmem_m_axi_U/bus_read/rreq_burst_conv/sect_total_reg[4]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="fir_wrap_gmem_m_axi.v" LINE_NUMBER="2052" MODULE_INSTNAME="gmem_m_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/sect_total[19]_i_5__0" PRIMITIVE_TYPE="LUT.others.LUT6" FILE_NAME="fir_wrap_gmem_m_axi.v" LINE_NUMBER="458" MODULE_INSTNAME="gmem_m_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/sect_total[19]_i_3__0" PRIMITIVE_TYPE="LUT.others.LUT4" FILE_NAME="fir_wrap_gmem_m_axi.v" LINE_NUMBER="458" MODULE_INSTNAME="gmem_m_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/sect_total[19]_i_1__0" PRIMITIVE_TYPE="LUT.others.LUT5" FILE_NAME="fir_wrap_gmem_m_axi.v" LINE_NUMBER="458" MODULE_INSTNAME="gmem_m_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/data_p1[95]_i_1__0" PRIMITIVE_TYPE="LUT.others.LUT4" FILE_NAME="fir_wrap_gmem_m_axi.v" LINE_NUMBER="458" MODULE_INSTNAME="gmem_m_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/data_p1_reg[13]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="fir_wrap_gmem_m_axi.v" LINE_NUMBER="2512" MODULE_INSTNAME="gmem_m_axi_U" IS_FUNCINST="0"/>
+      <MODULE_INSTANCES>gmem_m_axi_U</MODULE_INSTANCES>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="4.704" DATAPATH_LOGIC_DELAY="1.185" DATAPATH_NET_DELAY="3.519" ENDPOINT_PIN="gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/data_p1_reg[14]/CE" LOGIC_LEVELS="4" MAX_FANOUT="174" SLACK="0.043" STARTPOINT_PIN="gmem_m_axi_U/bus_read/rreq_burst_conv/sect_total_reg[4]/C">
+      <CELL NAME="gmem_m_axi_U/bus_read/rreq_burst_conv/sect_total_reg[4]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="fir_wrap_gmem_m_axi.v" LINE_NUMBER="2052" MODULE_INSTNAME="gmem_m_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/sect_total[19]_i_5__0" PRIMITIVE_TYPE="LUT.others.LUT6" FILE_NAME="fir_wrap_gmem_m_axi.v" LINE_NUMBER="458" MODULE_INSTNAME="gmem_m_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/sect_total[19]_i_3__0" PRIMITIVE_TYPE="LUT.others.LUT4" FILE_NAME="fir_wrap_gmem_m_axi.v" LINE_NUMBER="458" MODULE_INSTNAME="gmem_m_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/sect_total[19]_i_1__0" PRIMITIVE_TYPE="LUT.others.LUT5" FILE_NAME="fir_wrap_gmem_m_axi.v" LINE_NUMBER="458" MODULE_INSTNAME="gmem_m_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/data_p1[95]_i_1__0" PRIMITIVE_TYPE="LUT.others.LUT4" FILE_NAME="fir_wrap_gmem_m_axi.v" LINE_NUMBER="458" MODULE_INSTNAME="gmem_m_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/data_p1_reg[14]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="fir_wrap_gmem_m_axi.v" LINE_NUMBER="2512" MODULE_INSTNAME="gmem_m_axi_U" IS_FUNCINST="0"/>
+      <MODULE_INSTANCES>gmem_m_axi_U</MODULE_INSTANCES>
+    </TPATH>
+  </TimingPaths>
+  <VivadoReportFiles>
+    <ReportFile TYPE="design_analysis" PATH="verilog/report/fir_wrap_design_analysis_synth.rpt"/>
+    <ReportFile TYPE="failfast" PATH="verilog/report/fir_wrap_failfast_synth.rpt"/>
+    <ReportFile TYPE="timing" PATH="verilog/report/fir_wrap_timing_synth.rpt"/>
+    <ReportFile TYPE="timing_paths" PATH="verilog/report/fir_wrap_timing_paths_synth.rpt"/>
+    <ReportFile TYPE="utilization" PATH="verilog/report/fir_wrap_utilization_synth.rpt"/>
+    <ReportFile TYPE="utilization_hierarchical" PATH="verilog/report/fir_wrap_utilization_hierarchical_synth.rpt"/>
+  </VivadoReportFiles>
+  <GeneralInfo NAME="General Information">
+    <item NAME="Date" VALUE="Thu Oct 24 17:40:28 +0800 2024"/>
+    <item NAME="Version" VALUE="2024.1 (Build 5069499 on May 21 2024)"/>
+    <item NAME="Project" VALUE="fir_hoisting"/>
+    <item NAME="Solution" VALUE="hoisting (Vivado IP Flow Target)"/>
+    <item NAME="Product family" VALUE="zynq"/>
+    <item NAME="Target device" VALUE="xc7z020-clg484-1"/>
+  </GeneralInfo>
+  <RunOptions NAME="Run Constraints &amp; Options">
+    <General NAME="Design Constraints &amp; Options">
+      <item NAME="RTL Synthesis target clock" VALUE="5 ns"/>
+      <item NAME="C-Synthesis target clock" VALUE="5 ns"/>
+      <item NAME="C-Synthesis uncertainty" VALUE="27%"/>
+      <item NAME="config_export -ip_xdc_file" VALUE=""/>
+      <item NAME="config_export -ip_xdc_ooc_file" VALUE=""/>
+    </General>
+    <Syn NAME="RTL Synthesis Options">
+      <item NAME="config_export -vivado_synth_strategy" VALUE="default"/>
+      <item NAME="config_export -vivado_synth_design_args" VALUE="-directive sdx_optimization_effort_high"/>
+    </Syn>
+    <Reporting NAME="Reporting Options">
+      <item NAME="config_export -vivado_report_level" VALUE="2"/>
+      <item NAME="config_export -vivado_max_timing_paths" VALUE="10"/>
+    </Reporting>
+  </RunOptions>
+</profile>
+

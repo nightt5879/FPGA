@@ -1,0 +1,52 @@
+'\gnu\microblaze\lin\bin\' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'\gnu\microblaze\nt\bin\' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'\gnuwin\bin\' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2024.1 (64-bit)
+  **** SW Build 5069499 on May 21 2024
+  **** Start of session at: Thu Oct 24 17:28:36 2024
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source E:/vivado/Vitis_HLS/2024.1/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] For user '14692' on host 'nightt_insider' (Windows NT_amd64 version 10.0) on Thu Oct 24 17:28:37 +0800 2024
+INFO: [HLS 200-10] In directory 'E:/robot/project/FPGA/ZedBoard/HLS_lab/source/conv_filter/prj/baseline_128/kernel'
+WARNING: [HLS 200-2053] The vitis_hls executable is deprecated. Consider using vitis-run --mode hls --tcl
+Sourcing Tcl script 'run_hls.tcl'
+INFO: [HLS 200-1510] Running: open_project -reset filter2d 
+INFO: [HLS 200-10] Opening and resetting project 'E:/robot/project/FPGA/ZedBoard/HLS_lab/source/conv_filter/prj/baseline_128/kernel/filter2d'.
+INFO: [HLS 200-1510] Running: add_files filter2d.cpp 
+INFO: [HLS 200-10] Adding design file 'filter2d.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb filter2d_test.cpp 
+INFO: [HLS 200-10] Adding test bench file 'filter2d_test.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb src.txt 
+INFO: [HLS 200-10] Adding test bench file 'src.txt' to the project
+INFO: [HLS 200-1510] Running: add_files -tb dst.txt 
+INFO: [HLS 200-10] Adding test bench file 'dst.txt' to the project
+INFO: [HLS 200-1510] Running: add_files filter2d_out.txt 
+INFO: [HLS 200-10] Adding design file 'filter2d_out.txt' to the project
+INFO: [HLS 200-1510] Running: set_top filter2d_accel 
+INFO: [HLS 200-1510] Running: open_solution -reset baseline -flow_target vivado 
+INFO: [HLS 200-10] Creating and opening solution 'E:/robot/project/FPGA/ZedBoard/HLS_lab/source/conv_filter/prj/baseline_128/kernel/filter2d/baseline'.
+INFO: [HLS 200-10] Cleaning up the solution database.
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg484-1 
+ERROR: [Device 21-9286] Exception caught while reading special devices config file: ERROR: [Common 17-49] Internal Data Exception: Config data file does not exist: 'specdevice.cfg'
+Partial call stack:
+no stack trace available, please use hs_err_<pid>.dmp instead.
+
+ERROR: failed to initialize device library PART info ERROR: [Common 17-49] Internal Data Exception: ArchXML: file does not exist: /parts/arch.xml
+
+ERROR: [HLS 200-1023] Part 'xc7z020-clg484-1' is not installed.
+command 'create_platform' returned error code
+    while executing
+"source run_hls.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel \#0 [list source $tclfile] "
+
+INFO: [HLS 200-112] Total CPU user time: 0 seconds. Total CPU system time: 0 seconds. Total elapsed time: 1.013 seconds; peak allocated memory: 29.172 MB.

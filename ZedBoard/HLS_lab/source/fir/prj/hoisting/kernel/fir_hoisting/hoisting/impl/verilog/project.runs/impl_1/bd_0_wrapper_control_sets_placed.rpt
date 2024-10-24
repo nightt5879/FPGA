@@ -1,0 +1,161 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Thu Oct 24 17:39:36 2024
+| Host         : nightt_insider running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file bd_0_wrapper_control_sets_placed.rpt
+| Design       : bd_0_wrapper
+| Device       : xc7z020
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    83 |
+|    Minimum number of control sets                        |    83 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   218 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    83 |
+| >= 0 to < 4        |     6 |
+| >= 4 to < 6        |    22 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     5 |
+| >= 10 to < 12      |     2 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    47 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              65 |           25 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             142 |           57 |
+| Yes          | No                    | No                     |            1158 |          287 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |            1577 |          358 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------+-----------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------+------------------+----------------+--------------+
+| Clock Signal |                                                  Enable Signal                                                  |                                                 Set/Reset Signal                                                 | Slice Load Count | Bel Load Count | Bels / Slice |
++--------------+-----------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------+------------------+----------------+--------------+
+|  ap_clk      | bd_0_i/hls_inst/inst/gmem_m_axi_U/store_unit/fifo_wrsp/U_fifo_srl/pop                                           | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_write/wreq_burst_conv/rs_req/SR[0]                                         |                1 |              1 |         1.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/gmem_m_axi_U/store_unit/fifo_wreq/U_fifo_srl/push                                          |                                                                                                                  |                1 |              1 |         1.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/rs_rdata/pop                                                         | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_write/wreq_burst_conv/rs_req/SR[0]                                         |                1 |              1 |         1.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/rreq_burst_conv/push                                                 |                                                                                                                  |                1 |              1 |         1.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_write/fifo_resp/U_fifo_srl/pop                                            | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_write/wreq_burst_conv/rs_req/SR[0]                                         |                1 |              1 |         1.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_write/wreq_burst_conv/push_0                                              |                                                                                                                  |                1 |              1 |         1.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/fifo_burst/raddr[3]_i_1__1_n_3                                       | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_write/wreq_burst_conv/rs_req/SR[0]                                         |                2 |              4 |         2.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/gmem_m_axi_U/store_unit/fifo_wrsp/U_fifo_srl/raddr_reg[0][0]                               | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_write/wreq_burst_conv/rs_req/SR[0]                                         |                1 |              4 |         4.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/gmem_m_axi_U/store_unit/fifo_wreq/mOutPtr[3]_i_1_n_3                                       | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_write/wreq_burst_conv/rs_req/SR[0]                                         |                1 |              4 |         4.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/gmem_m_axi_U/store_unit/user_resp/mOutPtr[3]_i_1__3_n_3                                    | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_write/wreq_burst_conv/rs_req/SR[0]                                         |                1 |              4 |         4.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_write/fifo_burst/U_fifo_srl/empty_n_reg[0]                                | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_write/wreq_burst_conv/rs_req/SR[0]                                         |                1 |              4 |         4.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/gmem_m_axi_U/load_unit_0/fifo_rreq/mOutPtr[3]_i_1__4_n_3                                   | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_write/wreq_burst_conv/rs_req/SR[0]                                         |                1 |              4 |         4.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_write/wreq_burst_conv/push                                                |                                                                                                                  |                1 |              4 |         4.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_write/fifo_resp/raddr[3]_i_1__2_n_3                                       | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_write/wreq_burst_conv/rs_req/SR[0]                                         |                1 |              4 |         4.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_write/fifo_burst/U_fifo_srl/pop_0                                         | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_write/wreq_burst_conv/rs_req/SR[0]                                         |                1 |              4 |         4.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_write/wreq_throttle/data_fifo/raddr[3]_i_1__4_n_3                         | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_write/wreq_burst_conv/rs_req/SR[0]                                         |                2 |              4 |         2.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/gmem_m_axi_U/store_unit/buff_wdata/U_fifo_mem/WEBWE[0]                                     | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_write/wreq_burst_conv/rs_req/SR[0]                                         |                1 |              4 |         4.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/CTRL_s_axi_U/waddr[5]_i_1__0_n_3                                                           |                                                                                                                  |                1 |              4 |         4.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_write/wreq_throttle/req_fifo/raddr[3]_i_1__3_n_3                          | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_write/wreq_burst_conv/rs_req/SR[0]                                         |                2 |              4 |         2.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/fifo_rctl/mOutPtr[4]_i_1__7_n_3                                      | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_write/wreq_burst_conv/rs_req/SR[0]                                         |                1 |              5 |         5.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_write/fifo_resp/mOutPtr[4]_i_1__4_n_3                                     | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_write/wreq_burst_conv/rs_req/SR[0]                                         |                1 |              5 |         5.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/gmem_m_axi_U/store_unit/fifo_wrsp/U_fifo_srl/s_ready_t_reg[0]                              | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_write/wreq_burst_conv/rs_req/SR[0]                                         |                2 |              5 |         2.50 |
+|  ap_clk      | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_write/wreq_throttle/data_fifo/mOutPtr[4]_i_1__6_n_3                       | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_write/wreq_burst_conv/rs_req/SR[0]                                         |                2 |              5 |         2.50 |
+|  ap_clk      | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_write/wreq_throttle/data_fifo/U_fifo_srl/WVALID_Dummy_reg[0]              | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_write/wreq_burst_conv/rs_req/SR[0]                                         |                2 |              5 |         2.50 |
+|  ap_clk      | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_write/wreq_throttle/req_fifo/mOutPtr[4]_i_1__5_n_3                        | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_write/wreq_burst_conv/rs_req/SR[0]                                         |                2 |              5 |         2.50 |
+|  ap_clk      | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/fifo_burst/mOutPtr[4]_i_1__3_n_3                                     | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_write/wreq_burst_conv/rs_req/SR[0]                                         |                1 |              5 |         5.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_write/fifo_burst/U_fifo_srl/E[0]                                          | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_write/wreq_burst_conv/rs_req/SR[0]                                         |                2 |              5 |         2.50 |
+|  ap_clk      | bd_0_i/hls_inst/inst/gmem_m_axi_U/store_unit/buff_wdata/mOutPtr[4]_i_1__1_n_3                                   | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_write/wreq_burst_conv/rs_req/SR[0]                                         |                1 |              5 |         5.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_fir_wrap_Pipeline_VITIS_LOOP_19_1_fu_190/i_fu_380                                      | bd_0_i/hls_inst/inst/grp_fir_wrap_Pipeline_VITIS_LOOP_19_1_fu_190/flow_control_loop_pipe_sequential_init_U/SR[0] |                1 |              7 |         7.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/rreq_burst_conv/could_multi_bursts.last_loop                         | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_write/wreq_burst_conv/rs_req/SR[0]                                         |                4 |              8 |         2.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_write/wreq_throttle/data_fifo/full_n_reg_1[0]                             | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_write/fifo_burst/U_fifo_srl/ap_rst_n_0[0]                                  |                3 |              8 |         2.67 |
+|  ap_clk      | bd_0_i/hls_inst/inst/gmem_m_axi_U/load_unit_0/buff_rdata/U_fifo_mem/WEBWE[0]                                    | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_write/wreq_burst_conv/rs_req/SR[0]                                         |                3 |              8 |         2.67 |
+|  ap_clk      | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_write/wreq_burst_conv/could_multi_bursts.last_loop                        | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_write/wreq_burst_conv/rs_req/SR[0]                                         |                3 |              8 |         2.67 |
+|  ap_clk      | bd_0_i/hls_inst/inst/gmem_m_axi_U/load_unit_0/buff_rdata/mOutPtr[8]_i_1_n_3                                     | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_write/wreq_burst_conv/rs_req/SR[0]                                         |                4 |              9 |         2.25 |
+|  ap_clk      | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_write/wreq_burst_conv/rs_req/p_15_in                                      | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_write/wreq_burst_conv/sect_addr_buf[11]_i_1_n_3                            |                2 |             10 |         5.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/p_15_in                                       | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/rreq_burst_conv/sect_addr_buf[11]_i_1__0_n_3                          |                2 |             10 |         5.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state20                                                                          |                                                                                                                  |                9 |             31 |         3.44 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_fir_wrap_Pipeline_VITIS_LOOP_19_1_fu_190/flow_control_loop_pipe_sequential_init_U/D[1] | bd_0_i/hls_inst/inst/CTRL_s_axi_U/SR[0]                                                                          |                8 |             31 |         3.88 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state11                                                                          | bd_0_i/hls_inst/inst/empty_21_reg_366[30]_i_1_n_3                                                                |                6 |             31 |         5.17 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state28                                                                          |                                                                                                                  |                5 |             32 |         6.40 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state29                                                                          |                                                                                                                  |                8 |             32 |         4.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/CTRL_s_axi_U/int_x[31]_i_1_n_3                                                             | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_write/wreq_burst_conv/rs_req/SR[0]                                         |                8 |             32 |         4.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/CTRL_s_axi_U/int_len[31]_i_1_n_3                                                           | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_write/wreq_burst_conv/rs_req/SR[0]                                         |                6 |             32 |         5.33 |
+|  ap_clk      | bd_0_i/hls_inst/inst/CTRL_s_axi_U/int_coef[63]_i_1_n_3                                                          | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_write/wreq_burst_conv/rs_req/SR[0]                                         |                8 |             32 |         4.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/CTRL_s_axi_U/ar_hs                                                                         |                                                                                                                  |               11 |             32 |         2.91 |
+|  ap_clk      | bd_0_i/hls_inst/inst/CTRL_s_axi_U/int_coef[31]_i_1_n_3                                                          | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_write/wreq_burst_conv/rs_req/SR[0]                                         |               10 |             32 |         3.20 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_fir_wrap_Pipeline_VITIS_LOOP_19_1_fu_190/acc_fu_3400_out                               | bd_0_i/hls_inst/inst/grp_fir_wrap_Pipeline_VITIS_LOOP_19_1_fu_190/flow_control_loop_pipe_sequential_init_U/SR[0] |                5 |             32 |         6.40 |
+|  ap_clk      | bd_0_i/hls_inst/inst/CTRL_s_axi_U/int_x[63]_i_1_n_3                                                             | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_write/wreq_burst_conv/rs_req/SR[0]                                         |                7 |             32 |         4.57 |
+|  ap_clk      | bd_0_i/hls_inst/inst/CTRL_s_axi_U/int_y[63]_i_1_n_3                                                             | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_write/wreq_burst_conv/rs_req/SR[0]                                         |                8 |             32 |         4.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/CTRL_s_axi_U/int_y[31]_i_1_n_3                                                             | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_write/wreq_burst_conv/rs_req/SR[0]                                         |                8 |             32 |         4.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/rs_rdata/load_p1                                                     |                                                                                                                  |               10 |             33 |         3.30 |
+|  ap_clk      | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/rs_rdata/load_p2                                                     |                                                                                                                  |                7 |             33 |         4.71 |
+|  ap_clk      | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_write/wreq_throttle/data_fifo/U_fifo_srl/pop                              | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_write/wreq_burst_conv/rs_req/SR[0]                                         |                5 |             37 |         7.40 |
+|  ap_clk      | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_write/wreq_throttle/data_fifo/U_fifo_srl/push                             |                                                                                                                  |                5 |             37 |         7.40 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_fir_wrap_Pipeline_VITIS_LOOP_19_1_fu_190/ap_CS_fsm_pp0_stage1                          |                                                                                                                  |               10 |             41 |         4.10 |
+|  ap_clk      | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/E[0]                                          | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_write/wreq_burst_conv/rs_req/SR[0]                                         |               15 |             53 |         3.53 |
+|  ap_clk      | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_write/wreq_burst_conv/rs_req/E[0]                                         | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_write/wreq_burst_conv/rs_req/SR[0]                                         |               15 |             53 |         3.53 |
+|  ap_clk      | bd_0_i/hls_inst/inst/gmem_m_axi_U/load_unit_0/buff_rdata/E[0]                                                   |                                                                                                                  |               14 |             61 |         4.36 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state23                                                                          |                                                                                                                  |               14 |             64 |         4.57 |
+|  ap_clk      |                                                                                                                 |                                                                                                                  |               25 |             65 |         2.60 |
+|  ap_clk      | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_write/wreq_throttle/req_fifo/U_fifo_srl/pop                               | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_write/wreq_burst_conv/rs_req/SR[0]                                         |                9 |             66 |         7.33 |
+|  ap_clk      | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_write/wreq_throttle/req_fifo/U_fifo_srl/push                              |                                                                                                                  |                9 |             66 |         7.33 |
+|  ap_clk      | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_write/wreq_throttle/data_fifo/U_fifo_srl/E[0]                             |                                                                                                                  |               19 |             66 |         3.47 |
+|  ap_clk      | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_write/wreq_throttle/rs_req/load_p1                                        |                                                                                                                  |               23 |             66 |         2.87 |
+|  ap_clk      | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_write/wreq_burst_conv/ost_ctrl_valid                                      | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_write/wreq_burst_conv/rs_req/SR[0]                                         |               18 |             71 |         3.94 |
+|  ap_clk      | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/rreq_burst_conv/ost_ctrl_valid                                       | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_write/wreq_burst_conv/rs_req/SR[0]                                         |               18 |             71 |         3.94 |
+|  ap_clk      | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/p_15_in                                       | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_write/wreq_burst_conv/rs_req/SR[0]                                         |               17 |             77 |         4.53 |
+|  ap_clk      | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_write/wreq_burst_conv/rs_req/p_15_in                                      | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_write/wreq_burst_conv/rs_req/SR[0]                                         |               19 |             77 |         4.05 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_fir_wrap_Pipeline_VITIS_LOOP_19_1_fu_190/ap_CS_fsm_pp0_stage0                          |                                                                                                                  |               19 |             78 |         4.11 |
+|  ap_clk      | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/load_p1                                       |                                                                                                                  |               24 |             92 |         3.83 |
+|  ap_clk      | bd_0_i/hls_inst/inst/gmem_m_axi_U/load_unit_0/tmp_valid_reg_0[0]                                                |                                                                                                                  |               20 |             92 |         4.60 |
+|  ap_clk      | bd_0_i/hls_inst/inst/gmem_m_axi_U/store_unit/E[0]                                                               |                                                                                                                  |               14 |             92 |         6.57 |
+|  ap_clk      | bd_0_i/hls_inst/inst/gmem_m_axi_U/store_unit/fifo_wrsp/E[0]                                                     | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_write/wreq_burst_conv/rs_req/SR[0]                                         |               19 |             92 |         4.84 |
+|  ap_clk      | bd_0_i/hls_inst/inst/gmem_m_axi_U/load_unit_0/fifo_rreq/E[0]                                                    | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_write/wreq_burst_conv/rs_req/SR[0]                                         |               20 |             92 |         4.60 |
+|  ap_clk      | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_write/wreq_burst_conv/rs_req/load_p1                                      |                                                                                                                  |               27 |             92 |         3.41 |
+|  ap_clk      | bd_0_i/hls_inst/inst/gmem_m_axi_U/store_unit/fifo_wreq/U_fifo_srl/pop                                           | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_write/wreq_burst_conv/rs_req/SR[0]                                         |               12 |             93 |         7.75 |
+|  ap_clk      | bd_0_i/hls_inst/inst/gmem_m_axi_U/store_unit/fifo_wreq/U_fifo_srl/push_0                                        |                                                                                                                  |               12 |             93 |         7.75 |
+|  ap_clk      | bd_0_i/hls_inst/inst/gmem_m_axi_U/load_unit_0/fifo_rreq/U_fifo_srl/push                                         |                                                                                                                  |               12 |             93 |         7.75 |
+|  ap_clk      | bd_0_i/hls_inst/inst/gmem_m_axi_U/load_unit_0/fifo_rreq/U_fifo_srl/pop                                          | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_write/wreq_burst_conv/rs_req/SR[0]                                         |               12 |             93 |         7.75 |
+|  ap_clk      | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_write/wreq_burst_conv/rs_req/next_req                                     | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_write/wreq_burst_conv/rs_req/SR[0]                                         |               27 |            112 |         4.15 |
+|  ap_clk      | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/next_req                                      | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_write/wreq_burst_conv/rs_req/SR[0]                                         |               25 |            112 |         4.48 |
+|  ap_clk      |                                                                                                                 | bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_write/wreq_burst_conv/rs_req/SR[0]                                         |               57 |            142 |         2.49 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state1                                                                           |                                                                                                                  |               52 |            218 |         4.19 |
++--------------+-----------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------+------------------+----------------+--------------+
+
+

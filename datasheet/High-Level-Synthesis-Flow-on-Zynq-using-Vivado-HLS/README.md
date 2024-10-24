@@ -5,8 +5,11 @@
 
 # 文件说明
 
+## official_source
+这是官方的Vitis HLS的source，**如果是使用Vitis_HLS的教程建议使用**，但是lab2与lab3存在无法在windows下运行的问题。
+
 ## origin
-这是最开始原始的文件，包含了最基本的Vivado HLS的.md文档和相关的图片，用以留档。
+这是最开始原始的文件，包含了最基本的Vivado HLS的.md文档和相关的图片，用以留档。**如果使用Vivado HLS建议使用**。
 
 ## slides
 这是课程的幻灯片，包含了课程的大纲和相关的内容（也是最开始的文件之一）。

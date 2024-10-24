@@ -1,0 +1,19 @@
+'\gnu\microblaze\lin\bin\' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'\gnu\microblaze\nt\bin\' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'\gnuwin\bin\' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2024.1 (64-bit)
+  **** SW Build 5069499 on May 21 2024
+  **** Start of session at: Thu Oct 24 17:30:51 2024
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source E:/vivado/Vitis_HLS/2024.1/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] For user '14692' on host 'nightt_insider' (Windows NT_amd64 version 10.0) on Thu Oct 24 17:30:52 +0800 2024
+INFO: [HLS 200-10] In directory 'E:/robot/project/FPGA/ZedBoard/HLS_lab/source/fir'
+WARNING: [HLS 200-2053] The vitis_hls executable is deprecated. Consider using vitis-run --mode hls --tcl
+ERROR: HLS Tcl script does not exist: run_hls.tcl
+INFO: [HLS 200-112] Total CPU user time: 0 seconds. Total CPU system time: 0 seconds. Total elapsed time: 0.975 seconds; peak allocated memory: 9.426 MB.

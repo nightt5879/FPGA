@@ -1,0 +1,15 @@
+E:\robot\project\FPGA\ZedBoard\HLS_lab\source\fir\prj\hoisting\kernel\fir_hoisting\hoisting\.autopilot\db\fir_hoisting.pp.0.cpp:187:5: warning: Added loop label VITIS_LOOP_19_1:   [xilinx-label-all-loops]
+    for (i = 99 - 1; i > 0; i--)
+    ^~~
+    VITIS_LOOP_19_1: 
+E:\robot\project\FPGA\ZedBoard\HLS_lab\source\fir\prj\hoisting\kernel\fir_hoisting\hoisting\.autopilot\db\fir_hoisting.pp.0.cpp:187:5: note: FIX-IT applied suggested code changes
+E:\robot\project\FPGA\ZedBoard\HLS_lab\source\fir\prj\hoisting\kernel\fir_hoisting\hoisting\.autopilot\db\fir_hoisting.pp.0.cpp:213:2: warning: Added loop label VITIS_LOOP_41_1:   [xilinx-label-all-loops]
+ for (int i =0; i < 99; i++)
+ ^~~
+ VITIS_LOOP_41_1: 
+E:\robot\project\FPGA\ZedBoard\HLS_lab\source\fir\prj\hoisting\kernel\fir_hoisting\hoisting\.autopilot\db\fir_hoisting.pp.0.cpp:213:2: note: FIX-IT applied suggested code changes
+E:\robot\project\FPGA\ZedBoard\HLS_lab\source\fir\prj\hoisting\kernel\fir_hoisting\hoisting\.autopilot\db\fir_hoisting.pp.0.cpp:219:2: warning: Added loop label VITIS_LOOP_47_2:   [xilinx-label-all-loops]
+ for (int i = 0; i < len; i++)
+ ^~~
+ VITIS_LOOP_47_2: 
+E:\robot\project\FPGA\ZedBoard\HLS_lab\source\fir\prj\hoisting\kernel\fir_hoisting\hoisting\.autopilot\db\fir_hoisting.pp.0.cpp:219:2: note: FIX-IT applied suggested code changes

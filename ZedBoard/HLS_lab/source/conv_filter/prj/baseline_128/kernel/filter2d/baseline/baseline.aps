@@ -1,0 +1,10 @@
+<AutoPilot:solution xmlns:AutoPilot="com.autoesl.autopilot.solution">
+    <name>
+        <value string="baseline"/>
+    </name>
+    <project>
+        <value string="filter2d"/>
+    </project>
+    <flowTarget value="vivado"/>
+</AutoPilot:solution>
+
