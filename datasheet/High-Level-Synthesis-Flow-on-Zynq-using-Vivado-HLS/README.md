@@ -1,60 +1,31 @@
-# High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS
+# 新版本HLS教程
+**特别说明**</p>
+[该HLS的官方仓库](https://github.com/Xilinx/xup_high_level_synthesis_design_flow)  
+[该课程的开发仓库](https://github.com/nighttt5879/FPGA_HLS_Tutorial)
 
-This course provides users with an understanding of high-level synthesis design methodologies necessary to develop digital systems using Vivado HLS 2018.2 version.
+# 文件说明
 
-## Required Setup
+## origin
+这是最开始原始的文件，包含了最基本的Vivado HLS的.md文档和相关的图片，用以留档。
 
-Clone this repository and then copy the **sources** directory as **labs** to a working directory. The recommended working directory is **c:/xup/hls**.  After copying the directory, all labs will be carried out in their respective folders located at **c:/xup/hls/labs**. 
+## slides
+这是课程的幻灯片，包含了课程的大纲和相关的内容（也是最开始的文件之一）。
 
----
-#### In the instructions for the labs;
+## source
+这是每个lab包含的source（在win下运行存在一点问题），也是原始文件之一。
 
-**{labs}** refers to **c:/xup/hls/labs**.
+## Vitis
+这个是使用Vitis进行开发的教程。
 
----
-**NOTE**
+## Vitis HLS
+这个是使用Vitis HLS进行开发的教程（来源于官方更新的教程）。
 
-Board support for the PYNQ-Z1/Z2 are not included in Vivado 2018.2 by default. The relevant files need to be extracted and saved to:
+## Vivado HLS
+这个是使用Vivado HLS进行开发的教程（是最开始的文件之一）。
 
- {Vivado installation}\data\boards\board_files\zynq
+# 更新说明
+**日期：** 2024年10月24日  
+**说明：** Xilinx的官方工具频繁更新，大致由**Vivado HLS > Vitis HLS > Vitis** 三个阶段。为了让同学们能够使用较新的工具，更新了一部分内容，包括官方更新的四个Vitis HLS 与自己编写的用 Vitis 开发Lab1的教程。
 
-These files can be downloaded from  
-
-PYNQ-Z1:[/board_files](https://www.xilinx.com/support/documentation/university/vivado/workshops/vivado-adv-embedded-design-zynq/materials/2018x/PYNQZ1/pynq-z1.zip). 
-
-PYNQ-Z2:[/board_files](https://www.xilinx.com/support/documentation/university/vivado/workshops/vivado-adv-embedded-design-zynq/materials/2018x/PYNQZ2/pynq-z2.zip). 
-
----
-
-## Hardware Setup
-
-**PYNQ-Z1/Z2**:  Connect the board to the PC using a micro USB cable. Make sure that a jumper is connected to JTAG (between JP1_1 and JP1_2) to use the board in the development mode. Also, make sure that another jumper is placed between J9_2 and J9_3 to select USB as a power source.
-
----
-
-## Labs Overview
-
-### Lab1:
-
-This lab provides a basic introduction to high-level synthesis using the Vivado HLS tool flow. You will use
-Vivado HLS in GUI mode to create a project. You will simulate, synthesize, perfrom design analysis, and implement the provided
-model.
-
-### Lab2:
-
-This lab introduces various techniques and directives which can be used in Vivado HLS to improve
-design performance. The design under consideration accepts an image in a (custom) RGB format,
-converts it to the Y’UV color space, applies a filter to the Y’UV image and converts it back to RGB.
-
-### Lab3:
-
-This lab introduces various techniques and directives which can be used in Vivado HLS to improve
-design performance as well as area and resource utilization. The design under consideration performs
-discrete cosine transformation (DCT) on an 8x8 block of data.
-
-### Lab4:
-
-This lab introduces a design flow to generate a IP-XACT adapter from a design using Vivado HLS and
-using the generated IP-XACT adapter in a processor system using IP Integrator in Vivado.
-
-**Note.** Since PYNQ-Z1 board does not have Audio CODEC chip, this lab cannot be ported/verfied on the board, though design flow is still applicable to the board.
+# 待解决问题
+- [ ] lab2与lab3的make file部分无法正常的在Windows下运行，需要修改
