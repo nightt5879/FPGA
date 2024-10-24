@@ -40,21 +40,24 @@ USE_SYSTEMC 				= false
 # ######################################################
 # Automatically setup the software paths
 SHELL           := sh
-KERNEL          := $(shell if [[ $$(uname -s) == Linux ]];then echo Linux; else echo Win; fi)
-ARCH            := $(shell if [[ $$(uname -m) =~ 64$$ ]];then echo x86_64; else echo x86; fi)
+KERNEL          := Win
+ARCH            := x86_64
 OS              := $(KERNEL)_$(ARCH)
-ifeq ($(KERNEL), Win)
-VIVADO_HLS_EXE_FILENAME := vivado_hls.bat
-APCC= $(VIVADO_HLS_ROOT)/$(OS)/bin/apcc_bin.exe
-else
-VIVADO_HLS_EXE_FILENAME := vivado_hls
-APCC:= apcc
-endif
-VIVADO_HLS_EXE   := $(shell which $(VIVADO_HLS_EXE_FILENAME))
-VIVADO_HLS_ROOT  := $(VIVADO_HLS_EXE:/bin/$(VIVADO_HLS_EXE_FILENAME)=)
-VIVADO_HLS_INC_PATH := $(VIVADO_HLS_ROOT)/include
-SYSTEMC_INC_PATH := $(VIVADO_HLS_ROOT)/$(OS)/tools/systemc/include
-SYSTEMC_LIB_PATH := $(VIVADO_HLS_ROOT)/$(OS)/tools/systemc/lib
+
+# Vitis HLS specific configuration
+VITIS_HLS_EXE_FILENAME := vitis_hls.exe  # For Windows; use vitis_hls for Linux
+APCC= $(VITIS_HLS_ROOT)/$(OS)/bin/apcc_bin.exe
+
+# Directly reference the Vitis HLS executable
+VITIS_HLS_EXE := E:/vivado/Vitis/2024.1/bin/vitis_hls.exe
+
+VITIS_HLS_ROOT := $(VITIS_HLS_EXE:/bin/$(VITIS_HLS_EXE_FILENAME)=)
+
+# Include and library paths
+VITIS_HLS_INC_PATH := $(VITIS_HLS_ROOT)/include
+SYSTEMC_INC_PATH := $(VITIS_HLS_ROOT)/$(OS)/tools/systemc/include
+SYSTEMC_LIB_PATH := $(VITIS_HLS_ROOT)/$(OS)/tools/systemc/lib
+
 
 # ######################################################
 # Setup C compiler and options
@@ -94,9 +97,8 @@ clean:
 VIVADO_HLS: $(DESIGN).tcl
 	vitis_hls $<
 
-sim: $(DESIGN).exe
-	./$(DESIGN).exe
-
+sim: $(DESIGN)
+	./$(DESIGN)
 
 $(DESIGN): $(OBJECTS)
 # Uses implicit recipes, i.e.:

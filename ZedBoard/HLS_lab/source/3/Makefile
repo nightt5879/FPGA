@@ -25,14 +25,14 @@
 # - assumes the design files are .c (update to .cpp for C++ and SystemC)
 # - assumes test bench is <design>_test.c
 
-DESIGN		 := yuv_filter
-SOURCES		 := $(DESIGN).c $(DESIGN)_test.c image_aux.c
-OBJECTS		 := $(SOURCES:.c=.o)
-INCLUDES		 := $(DESIGN).h image_aux.h
+DESIGN		 := dct
+SOURCES		 := $(DESIGN).cpp $(DESIGN)_test.cpp
+OBJECTS		 := $(SOURCES:.cpp=.o)
+INCLUDES		 := $(DESIGN).h
 CLEAN_FILES  := $(OBJECTS) $(DESIGN) $(DESIGN).exe
 CLEAN_FILES  += test_data/output.dat
 VIVADO_HLS_CLEANUP := $(DESIGN)_prj $(DESIGN).log vivado_hls.log 
-# Change to true if using ap[u]int in ISO-C project
+# Change to true if using ap[u]int in ISO-C project or ap_[u]int<> in C++
 USE_ARBITRARY_PRECISION = false
 # Change to true if using SystemC types or SC_MODULE, etc.
 USE_SYSTEMC 				= false
@@ -59,7 +59,7 @@ SYSTEMC_LIB_PATH := $(VIVADO_HLS_ROOT)/$(OS)/tools/systemc/lib
 # ######################################################
 # Setup C compiler and options
 #
-# Use APCC for ISO-C projects that use ap[u]int types; gcc otherwise
+# Use autocc for ISO-C projects that use ap[u]int types; gcc otherwise
 ifeq ($(USE_ARBITRARY_PRECISION),true)
 CC				:= $(APCC)
 CFLAGS		+= -DBIT_ACCURATE
@@ -75,7 +75,7 @@ CFLAGS		+= -I$(VIVADO_HLS_INC_PATH)
 CXXFLAGS		+= -ggdb
 CXXFLAGS		+= -I$(VIVADO_HLS_INC_PATH)
 # Linker flags
-LDFLAGS		+= -lm 
+LDFLAGS		+= -lm -lstdc++
 # # SystemC additional flags
 ifeq ($(USE_SYSTEMC), true)
 CXXFLAGS		+= -I$(SYSTEMC_INC_PATH)
@@ -92,11 +92,10 @@ clean:
 	rm -rf $(CLEAN_FILES) $(VIVADO_HLS_CLEANUP)
 
 VIVADO_HLS: $(DESIGN).tcl
-	vitis_hls $<
+	VIVADO_HLS $<
 
-sim: $(DESIGN).exe
-	./$(DESIGN).exe
-
+sim: $(DESIGN)
+	./$(DESIGN)
 
 $(DESIGN): $(OBJECTS)
 # Uses implicit recipes, i.e.:
