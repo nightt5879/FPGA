@@ -1,0 +1,132 @@
+<profile>
+<RunData>
+  <RUN_TYPE>impl</RUN_TYPE>
+  <VIVADO_VERSION>v.2024.1</VIVADO_VERSION>
+  <ROOT_MODULE_CELL>bd_0_i/hls_inst</ROOT_MODULE_CELL>
+</RunData>
+<TimingReport>
+  <TargetClockPeriod>5.000</TargetClockPeriod>
+  <AchievedClockPeriod>4.971</AchievedClockPeriod>
+  <CLOCK_NAME>ap_clk</CLOCK_NAME>
+  <CP_FINAL>4.971</CP_FINAL>
+  <CP_ROUTE>4.971</CP_ROUTE>
+  <CP_SYNTH>4.957</CP_SYNTH>
+  <CP_TARGET>5.000</CP_TARGET>
+  <SLACK_FINAL>0.029</SLACK_FINAL>
+  <SLACK_ROUTE>0.029</SLACK_ROUTE>
+  <SLACK_SYNTH>0.043</SLACK_SYNTH>
+  <TIMING_MET>TRUE</TIMING_MET>
+  <TNS_FINAL>0.000</TNS_FINAL>
+  <TNS_ROUTE>0.000</TNS_ROUTE>
+  <TNS_SYNTH>0.000</TNS_SYNTH>
+  <WNS_FINAL>0.029</WNS_FINAL>
+  <WNS_ROUTE>0.029</WNS_ROUTE>
+  <WNS_SYNTH>0.043</WNS_SYNTH>
+</TimingReport>
+<AreaReport>
+  <Resources>
+    <BRAM>4</BRAM>
+    <CLB>0</CLB>
+    <DSP>3</DSP>
+    <FF>2942</FF>
+    <LATCH>0</LATCH>
+    <LUT>1780</LUT>
+    <SLICE>748</SLICE>
+    <SRL>158</SRL>
+    <URAM>0</URAM>
+  </Resources>
+  <AvailableResources>
+    <BRAM>280</BRAM>
+    <CLB>0</CLB>
+    <DSP>220</DSP>
+    <FF>106400</FF>
+    <LUT>53200</LUT>
+    <SLICE>13300</SLICE>
+    <URAM>0</URAM>
+  </AvailableResources>
+</AreaReport>
+<RtlModules>
+  <RtlModule CELL="inst" DEPTH="0" FILE_NAME="bd_0_hls_inst_0.v" ORIG_REF_NAME="fir_wrap" TOP_CELL="bd_0_i/hls_inst/inst">
+    <SubModules count="7">CTRL_s_axi_U c_U gmem_m_axi_U grp_fir_wrap_Pipeline_VITIS_LOOP_19_1_fu_190 grp_fir_wrap_Pipeline_VITIS_LOOP_41_1_fu_181 mul_32s_32s_32_5_1_U8 shift_reg_U</SubModules>
+    <Resources BRAM="4" DSP="3" FF="2942" LUT="1780" LogicLUT="1622" RAMB18="4" SRL="158"/>
+    <LocalResources FF="476" LUT="19" LogicLUT="19"/>
+  </RtlModule>
+  <RtlModule CELL="inst/CTRL_s_axi_U" DEPTH="1" FILE_NAME="fir_wrap.v" ORIG_REF_NAME="fir_wrap_CTRL_s_axi">
+    <Resources FF="277" LUT="255" LogicLUT="255"/>
+  </RtlModule>
+  <RtlModule CELL="inst/c_U" DEPTH="1" FILE_NAME="fir_wrap.v" ORIG_REF_NAME="fir_wrap_c_RAM_AUTO_1R1W">
+    <Resources BRAM="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/gmem_m_axi_U" DEPTH="1" FILE_NAME="fir_wrap.v" ORIG_REF_NAME="fir_wrap_gmem_m_axi">
+    <Resources BRAM="2" FF="1923" LUT="1328" LogicLUT="1171" RAMB18="2" SRL="157"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fir_wrap_Pipeline_VITIS_LOOP_19_1_fu_190" DEPTH="1" FILE_NAME="fir_wrap.v" ORIG_REF_NAME="fir_wrap_fir_wrap_Pipeline_VITIS_LOOP_19_1">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="167" LUT="130" LogicLUT="129" SRL="1"/>
+    <LocalResources FF="165" LUT="100" LogicLUT="99" SRL="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fir_wrap_Pipeline_VITIS_LOOP_19_1_fu_190/flow_control_loop_pipe_sequential_init_U" DEPTH="2" FILE_NAME="fir_wrap_fir_wrap_Pipeline_VITIS_LOOP_19_1.v" ORIG_REF_NAME="fir_wrap_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="30" LogicLUT="30"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fir_wrap_Pipeline_VITIS_LOOP_41_1_fu_181" DEPTH="1" FILE_NAME="fir_wrap.v" ORIG_REF_NAME="fir_wrap_fir_wrap_Pipeline_VITIS_LOOP_41_1">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="65" LUT="33" LogicLUT="33"/>
+    <LocalResources FF="63" LUT="8" LogicLUT="8"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fir_wrap_Pipeline_VITIS_LOOP_41_1_fu_181/flow_control_loop_pipe_sequential_init_U" DEPTH="2" FILE_NAME="fir_wrap_fir_wrap_Pipeline_VITIS_LOOP_41_1.v" ORIG_REF_NAME="fir_wrap_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="25" LogicLUT="25"/>
+  </RtlModule>
+  <RtlModule CELL="inst/mul_32s_32s_32_5_1_U8" DEPTH="1" FILE_NAME="fir_wrap.v" ORIG_REF_NAME="fir_wrap_mul_32s_32s_32_5_1">
+    <Resources DSP="3" FF="34"/>
+  </RtlModule>
+  <RtlModule CELL="inst/shift_reg_U" DEPTH="1" FILE_NAME="fir_wrap.v" ORIG_REF_NAME="fir_wrap_shift_reg_RAM_AUTO_1R1W">
+    <Resources BRAM="1" LUT="16" LogicLUT="16" RAMB18="1"/>
+  </RtlModule>
+</RtlModules>
+<TimingPaths>
+  <TPATH DATAPATH_DELAY="4.474" DATAPATH_LOGIC_DELAY="0.853" DATAPATH_NET_DELAY="3.621" ENDPOINT_PIN="bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/data_p1_reg[14]/CE" LOGIC_LEVELS="3" MAX_FANOUT="174" SLACK="0.029" STARTPOINT_PIN="bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/rreq_burst_conv/could_multi_bursts.burst_valid_reg/C">
+    <CELL NAME="bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/rreq_burst_conv/could_multi_bursts.burst_valid_reg" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="fir_wrap_gmem_m_axi.v" LINE_NUMBER="2174"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/sect_addr_buf[63]_i_1" PRIMITIVE_TYPE="LUT.others.LUT6" FILE_NAME="fir_wrap_gmem_m_axi.v" LINE_NUMBER="458"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/sect_total[19]_i_1__0" PRIMITIVE_TYPE="LUT.others.LUT5" FILE_NAME="fir_wrap_gmem_m_axi.v" LINE_NUMBER="458"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/data_p1[95]_i_1__0" PRIMITIVE_TYPE="LUT.others.LUT4" FILE_NAME="fir_wrap_gmem_m_axi.v" LINE_NUMBER="458"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/data_p1_reg[14]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="fir_wrap_gmem_m_axi.v" LINE_NUMBER="2512"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="4.474" DATAPATH_LOGIC_DELAY="0.853" DATAPATH_NET_DELAY="3.621" ENDPOINT_PIN="bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/data_p1_reg[15]/CE" LOGIC_LEVELS="3" MAX_FANOUT="174" SLACK="0.029" STARTPOINT_PIN="bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/rreq_burst_conv/could_multi_bursts.burst_valid_reg/C">
+    <CELL NAME="bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/rreq_burst_conv/could_multi_bursts.burst_valid_reg" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="fir_wrap_gmem_m_axi.v" LINE_NUMBER="2174"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/sect_addr_buf[63]_i_1" PRIMITIVE_TYPE="LUT.others.LUT6" FILE_NAME="fir_wrap_gmem_m_axi.v" LINE_NUMBER="458"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/sect_total[19]_i_1__0" PRIMITIVE_TYPE="LUT.others.LUT5" FILE_NAME="fir_wrap_gmem_m_axi.v" LINE_NUMBER="458"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/data_p1[95]_i_1__0" PRIMITIVE_TYPE="LUT.others.LUT4" FILE_NAME="fir_wrap_gmem_m_axi.v" LINE_NUMBER="458"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/data_p1_reg[15]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="fir_wrap_gmem_m_axi.v" LINE_NUMBER="2512"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="4.474" DATAPATH_LOGIC_DELAY="0.853" DATAPATH_NET_DELAY="3.621" ENDPOINT_PIN="bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/data_p1_reg[16]/CE" LOGIC_LEVELS="3" MAX_FANOUT="174" SLACK="0.029" STARTPOINT_PIN="bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/rreq_burst_conv/could_multi_bursts.burst_valid_reg/C">
+    <CELL NAME="bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/rreq_burst_conv/could_multi_bursts.burst_valid_reg" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="fir_wrap_gmem_m_axi.v" LINE_NUMBER="2174"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/sect_addr_buf[63]_i_1" PRIMITIVE_TYPE="LUT.others.LUT6" FILE_NAME="fir_wrap_gmem_m_axi.v" LINE_NUMBER="458"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/sect_total[19]_i_1__0" PRIMITIVE_TYPE="LUT.others.LUT5" FILE_NAME="fir_wrap_gmem_m_axi.v" LINE_NUMBER="458"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/data_p1[95]_i_1__0" PRIMITIVE_TYPE="LUT.others.LUT4" FILE_NAME="fir_wrap_gmem_m_axi.v" LINE_NUMBER="458"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/data_p1_reg[16]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="fir_wrap_gmem_m_axi.v" LINE_NUMBER="2512"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="4.474" DATAPATH_LOGIC_DELAY="0.853" DATAPATH_NET_DELAY="3.621" ENDPOINT_PIN="bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/data_p1_reg[2]/CE" LOGIC_LEVELS="3" MAX_FANOUT="174" SLACK="0.029" STARTPOINT_PIN="bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/rreq_burst_conv/could_multi_bursts.burst_valid_reg/C">
+    <CELL NAME="bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/rreq_burst_conv/could_multi_bursts.burst_valid_reg" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="fir_wrap_gmem_m_axi.v" LINE_NUMBER="2174"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/sect_addr_buf[63]_i_1" PRIMITIVE_TYPE="LUT.others.LUT6" FILE_NAME="fir_wrap_gmem_m_axi.v" LINE_NUMBER="458"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/sect_total[19]_i_1__0" PRIMITIVE_TYPE="LUT.others.LUT5" FILE_NAME="fir_wrap_gmem_m_axi.v" LINE_NUMBER="458"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/data_p1[95]_i_1__0" PRIMITIVE_TYPE="LUT.others.LUT4" FILE_NAME="fir_wrap_gmem_m_axi.v" LINE_NUMBER="458"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/data_p1_reg[2]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="fir_wrap_gmem_m_axi.v" LINE_NUMBER="2512"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="4.474" DATAPATH_LOGIC_DELAY="0.853" DATAPATH_NET_DELAY="3.621" ENDPOINT_PIN="bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/data_p1_reg[74]/CE" LOGIC_LEVELS="3" MAX_FANOUT="174" SLACK="0.029" STARTPOINT_PIN="bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/rreq_burst_conv/could_multi_bursts.burst_valid_reg/C">
+    <CELL NAME="bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/rreq_burst_conv/could_multi_bursts.burst_valid_reg" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="fir_wrap_gmem_m_axi.v" LINE_NUMBER="2174"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/sect_addr_buf[63]_i_1" PRIMITIVE_TYPE="LUT.others.LUT6" FILE_NAME="fir_wrap_gmem_m_axi.v" LINE_NUMBER="458"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/sect_total[19]_i_1__0" PRIMITIVE_TYPE="LUT.others.LUT5" FILE_NAME="fir_wrap_gmem_m_axi.v" LINE_NUMBER="458"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/data_p1[95]_i_1__0" PRIMITIVE_TYPE="LUT.others.LUT4" FILE_NAME="fir_wrap_gmem_m_axi.v" LINE_NUMBER="458"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/gmem_m_axi_U/bus_read/rreq_burst_conv/rs_req/data_p1_reg[74]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="fir_wrap_gmem_m_axi.v" LINE_NUMBER="2512"/>
+  </TPATH>
+</TimingPaths>
+<VivadoReportFiles>
+  <ReportFile TYPE="design_analysis" PATH="verilog/report/fir_wrap_design_analysis_routed.rpt"/>
+  <ReportFile TYPE="failfast" PATH="verilog/report/fir_wrap_failfast_routed.rpt"/>
+  <ReportFile TYPE="status" PATH="verilog/report/fir_wrap_status_routed.rpt"/>
+  <ReportFile TYPE="timing" PATH="verilog/report/fir_wrap_timing_routed.rpt"/>
+  <ReportFile TYPE="timing_paths" PATH="verilog/report/fir_wrap_timing_paths_routed.rpt"/>
+  <ReportFile TYPE="utilization" PATH="verilog/report/fir_wrap_utilization_routed.rpt"/>
+  <ReportFile TYPE="utilization_hierarchical" PATH="verilog/report/fir_wrap_utilization_hierarchical_routed.rpt"/>
+</VivadoReportFiles>
+</profile>

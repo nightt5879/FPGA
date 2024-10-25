@@ -1,0 +1,77 @@
+INFO: [vitis-run 60-1548] Creating build summary session with primary output E:/robot/project/FPGA/ZedBoard/HLS_lab/lab4/fir/fir\fir.hlsrun_csim_summary, at 10/24/24 17:01:22
+INFO: [vitis-run 82-31] Launching vitis_hls: vitis_hls -nolog -run csim -work_dir E:/robot/project/FPGA/ZedBoard/HLS_lab/lab4/fir/fir -config E:/robot/project/FPGA/ZedBoard/HLS_lab/lab4/fir/hls_config.cfg -cmdlineconfig E:/robot/project/FPGA/ZedBoard/HLS_lab/lab4/fir/fir/hls/config.cmdline
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2024.1 (64-bit)
+  **** SW Build 5069499 on May 21 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Thu Oct 24 17:01:24 2024
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source E:/vivado/Vitis_HLS/2024.1/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] For user '14692' on host 'nightt_insider' (Windows NT_amd64 version 10.0) on Thu Oct 24 17:01:25 +0800 2024
+INFO: [HLS 200-10] In directory 'E:/robot/project/FPGA/ZedBoard/HLS_lab/lab4/fir'
+INFO: [HLS 200-2005] Using work_dir E:/robot/project/FPGA/ZedBoard/HLS_lab/lab4/fir/fir 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=E:/robot/project/FPGA/ZedBoard/HLS_lab/source/lab4/fir.c' from E:/robot/project/FPGA/ZedBoard/HLS_lab/lab4/fir/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file 'E:/robot/project/FPGA/ZedBoard/HLS_lab/source/lab4/fir.c' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=E:/robot/project/FPGA/ZedBoard/HLS_lab/source/lab4/fir_coef.dat' from E:/robot/project/FPGA/ZedBoard/HLS_lab/lab4/fir/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file 'E:/robot/project/FPGA/ZedBoard/HLS_lab/source/lab4/fir_coef.dat' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=E:/robot/project/FPGA/ZedBoard/HLS_lab/source/lab4/fir_test.c' from E:/robot/project/FPGA/ZedBoard/HLS_lab/lab4/fir/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding test bench file 'E:/robot/project/FPGA/ZedBoard/HLS_lab/source/lab4/fir_test.c' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=fir' from E:/robot/project/FPGA/ZedBoard/HLS_lab/lab4/fir/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from E:/robot/project/FPGA/ZedBoard/HLS_lab/lab4/fir/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xc7z020clg484-1' from E:/robot/project/FPGA/ZedBoard/HLS_lab/lab4/fir/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1465] Applying ini 'clock=10ns' from E:/robot/project/FPGA/ZedBoard/HLS_lab/lab4/fir/hls_config.cfg(11)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1465] Applying ini 'csim.code_analyzer=1' from E:/robot/project/FPGA/ZedBoard/HLS_lab/lab4/fir/hls_config.cfg(12)
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from E:/robot/project/FPGA/ZedBoard/HLS_lab/lab4/fir/hls_config.cfg(5)
+INFO: [SIM 211-200] Executing Code Analyzer instead of classic HLS C simulation
+INFO: [SIM 211-200] Compiling source code ../../source/lab4/fir.c as hardware code with instrumentation
+INFO: [SIM 211-200] Compiling source code ../../source/lab4/fir_test.c as test bench code with instrumentation
+INFO: [SIM 211-200] Compiling source code ../../source/lab4/fir.c as test bench code with instrumentation
+In file included from ../../source/lab4/fir.c:29:
+In file included from ../../source/lab4/fir.h:30:
+../../source/lab4/ap_cint.h:9:2: error: ERROR: [SIM 211-200] ap_cint.h is not supported by Code Analyzer C simulation
+#error ERROR: [SIM 211-200] ap_cint.h is not supported by Code Analyzer C simulation
+ ^
+In file included from ../../source/lab4/fir.c:29:
+../../source/lab4/fir.h:35:9: error: unknown type name 'ap_int'
+typedef ap_int<38>      acc_t;
+        ^
+../../source/lab4/fir.h:35:15: error: expected identifier or '('
+typedef ap_int<38>      acc_t;
+              ^
+../../source/lab4/fir.c:41:3: error: use of undeclared identifier 'acc_t'
+  acc_t acc;
+  ^
+../../source/lab4/fir.c:44:3: error: use of undeclared identifier 'acc'
+  acc=(acc_t)shift_reg[N-1]*(acc_t)c[N];
+  ^
+../../source/lab4/fir.c:44:8: error: use of undeclared identifier 'acc_t'
+  acc=(acc_t)shift_reg[N-1]*(acc_t)c[N];
+       ^
+../../source/lab4/fir.c:46:5: error: use of undeclared identifier 'acc'
+    acc+=(acc_t)shift_reg[i-1]*(acc_t)c[i];
+    ^
+../../source/lab4/fir.c:46:11: error: use of undeclared identifier 'acc_t'
+    acc+=(acc_t)shift_reg[i-1]*(acc_t)c[i];
+          ^
+../../source/lab4/fir.c:49:3: error: use of undeclared identifier 'acc'
+  acc+=(acc_t)x*(acc_t)c[0];
+  ^
+../../source/lab4/fir.c:49:9: error: use of undeclared identifier 'acc_t'
+  acc+=(acc_t)x*(acc_t)c[0];
+        ^
+../../source/lab4/fir.c:51:8: error: use of undeclared identifier 'acc'
+  *y = acc>>15;
+       ^
+11 errors generated.
+ERROR: [SIM 211-200] Code Analyzer execution failed. Consider running the classic C simulation instead by disabling the hls.csim.code_analyzer option in the config file.
+ERROR: Problem running csim: child process exited abnormally
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 0 seconds. Total elapsed time: 6.48 seconds; peak allocated memory: 246.355 MB.

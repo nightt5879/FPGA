@@ -1,0 +1,6 @@
+   Build using "E:/vivado/Vitis_HLS/2024.1/vcxx/libexec/clang++"
+   Compiling fir_tb.cpp_pre.cpp.tb.cpp
+   Compiling apatb_fir_wrap.cpp
+   Compiling fir_hoisting.cpp_pre.cpp.tb.cpp
+   Compiling apatb_fir_wrap_ir.ll
+   Generating cosim.tv.exe

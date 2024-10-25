@@ -1,0 +1,26 @@
+[
+  {
+    "directory": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab4\\fir",
+    "arguments": [
+      "E:\\vivado\\Vitis_HLS\\2024.1\\vcxx\\libexec\\clang++.exe",
+      "-fhls",
+      "-hls-syn-headers-dir=E:\\vivado\\Vitis_HLS\\2024.1\\common\\technology\\autopilot",
+      "",
+      "-c",
+      "E:/robot/project/FPGA/ZedBoard/HLS_lab/source/lab4/fir.c"
+    ],
+    "file": "E:/robot/project/FPGA/ZedBoard/HLS_lab/source/lab4/fir.c"
+  },
+  {
+    "directory": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab4\\fir",
+    "arguments": [
+      "E:\\vivado\\Vitis_HLS\\2024.1\\vcxx\\libexec\\clang++.exe",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=E:\\vivado\\Vitis_HLS\\2024.1\\include",
+      "",
+      "-c",
+      "E:/robot/project/FPGA/ZedBoard/HLS_lab/source/lab4/fir_test.c"
+    ],
+    "file": "E:/robot/project/FPGA/ZedBoard/HLS_lab/source/lab4/fir_test.c"
+  }
+]

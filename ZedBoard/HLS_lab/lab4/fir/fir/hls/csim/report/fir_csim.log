@@ -1,0 +1,7 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch CLANG as the compiler.
+   Compiling ../../../../../../source/lab4/fir_test.c in debug mode
+csim.mk:88: recipe for target 'obj/fir_test.o' failed
+ERR: [SIM 103] ../../../../../../source/lab4/ap_cint.h:9:2: error: ERROR: [SIM 211-200] ap_cint.h is not supported by Code Analyzer C simulation
+ERR: [SIM 100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 3] *************** CSIM finish ***************

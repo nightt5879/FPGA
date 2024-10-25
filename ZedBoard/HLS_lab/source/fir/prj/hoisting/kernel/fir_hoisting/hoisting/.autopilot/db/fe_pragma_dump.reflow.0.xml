@@ -1,0 +1,8 @@
+<pragmas>
+<pragma file="fir_hoisting.cpp" line="49" pragmaType="loop_tripcount" parentfunction="fir_wrap" min="100" max="100" avg="100"/>
+<pragma file="fir_hoisting.cpp" line="33" pragmaType="interface" parentfunction="fir_wrap" mode="m_axi" port="y" bundle="" offset="" name="" depth="100" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
+<pragma file="fir_hoisting.cpp" line="34" pragmaType="interface" parentfunction="fir_wrap" mode="m_axi" port="x" bundle="" offset="" name="" depth="100" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
+<pragma file="fir_hoisting.cpp" line="35" pragmaType="interface" parentfunction="fir_wrap" mode="m_axi" port="coef" bundle="" offset="" name="" depth="99" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
+<pragma file="fir_hoisting.cpp" line="36" pragmaType="interface" parentfunction="fir_wrap" mode="s_axilite" port="len" bundle="CTRL" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="fir_hoisting.cpp" line="37" pragmaType="interface" parentfunction="fir_wrap" mode="s_axilite" port="" bundle="CTRL" offset="-1" name="" clock="" impl="" register="0"/>
+</pragmas>

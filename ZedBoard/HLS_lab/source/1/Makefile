@@ -92,7 +92,7 @@ clean:
 	rm -rf $(CLEAN_FILES) $(VIVADO_HLS_CLEANUP)
 
 VIVADO_HLS: $(DESIGN).tcl
-	VIVADO_HLS $<
+	vitis_hls $<
 
 sim: $(DESIGN).exe
 	./$(DESIGN).exe

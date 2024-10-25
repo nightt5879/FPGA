@@ -1,0 +1,61 @@
+{
+    "1": {
+        "name": "fir_wrap_Pipeline_VITIS_LOOP_19_1",
+        "file": "fir_hoisting.cpp",
+        "fileloc": "51",
+        "instructions": "29",
+        "total_instructions": "29",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "G": "2",
+            "L": "3"
+        },
+        "stores": {
+            "G": "1",
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "2": {
+        "name": "fir_wrap_Pipeline_VITIS_LOOP_41_1",
+        "file": "fir_hoisting.cpp",
+        "fileloc": "41",
+        "instructions": "22",
+        "total_instructions": "22",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "G": "1",
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "0": {
+        "name": "fir_wrap",
+        "file": "fir_hoisting.cpp",
+        "fileloc": "31",
+        "instructions": "57",
+        "total_instructions": "108",
+        "calls": "2 1",
+        "basicblocks": "4",
+        "loads": {
+            "G": "1",
+            "L": "2"
+        },
+        "stores": {
+            "G": "1",
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    }
+}

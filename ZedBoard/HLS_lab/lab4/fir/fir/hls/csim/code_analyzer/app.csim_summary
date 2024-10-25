@@ -1,0 +1,66 @@
+<ENTRY>
+{
+ "thisFile": "E:/robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab4\\fir\\fir\\hls\\csim\\code_analyzer\\app.csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Thu Oct 24 17:09:02 2024",
+ "timestampMillis": "1729760942826",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [],
+  "toolVersion": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Thu Oct 24 17:09:02 2024",
+ "timestampMillis": "1729760942836",
+ "buildStep": {
+  "cmdId": "9cf22989-91e7-11ef-8055-744ca175a020",
+  "name": "vitis_c++",
+  "logFile": "",
+  "commandLine": "vitis_c++ code_analyzer",
+  "args": [
+   "code_analyzer"
+  ],
+  "iniFiles": [],
+  "cwd": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Oct 24 17:09:02 2024",
+ "timestampMillis": "1729760942836",
+ "status": {
+  "cmdId": "9cf22989-91e7-11ef-8055-744ca175a020",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Oct 24 17:09:02 2024",
+ "timestampMillis": "1729760942985",
+ "status": {
+  "cmdId": "9cf22989-91e7-11ef-8055-744ca175a020",
+  "state": "CS_FAILED"
+ }
+}
+</ENTRY>

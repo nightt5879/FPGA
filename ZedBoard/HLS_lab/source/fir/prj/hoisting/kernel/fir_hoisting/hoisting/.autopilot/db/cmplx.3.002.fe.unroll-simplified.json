@@ -1,0 +1,35 @@
+{
+  "0": {
+    "basicblocks": 6,
+    "calls": "1",
+    "file": "fir_hoisting.cpp",
+    "fileloc": 31,
+    "instructions": 33,
+    "loads": {
+      "L": 1,
+      "T": 2
+    },
+    "name": "fir_wrap",
+    "stores": {
+      "G": 1,
+      "T": 1
+    },
+    "total_instructions": 55
+  },
+  "1": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "fir_hoisting.cpp",
+    "fileloc": 9,
+    "instructions": 22,
+    "loads": {
+      "G": 3
+    },
+    "name": "fir",
+    "stores": {
+      "G": 2,
+      "L": 1
+    },
+    "total_instructions": 22
+  }
+}
