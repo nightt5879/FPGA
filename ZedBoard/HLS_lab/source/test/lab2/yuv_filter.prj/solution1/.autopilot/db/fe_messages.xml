@@ -1,0 +1,15 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/pynq_yuv_filter.tcl:37:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="yuv_filter" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=yuv_filter" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="yuv_filter.c:37:0" msg_body="Inlining function 'rgb2yuv' into 'yuv_filter'">
+        <args Callee="rgb2yuv" Callee-DebugLoc="File yuv_filter.c Line 59 Column 0" Caller="yuv_filter" Caller-DebugLoc="File yuv_filter.c Line 37 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="yuv_filter.c:37:0" msg_body="Inlining function 'yuv_scale' into 'yuv_filter'">
+        <args Callee="yuv_scale" Callee-DebugLoc="File yuv_filter.c Line 143 Column 0" Caller="yuv_filter" Caller-DebugLoc="File yuv_filter.c Line 37 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="yuv_filter.c:37:0" msg_body="Inlining function 'yuv2rgb' into 'yuv_filter'">
+        <args Callee="yuv2rgb" Callee-DebugLoc="File yuv_filter.c Line 97 Column 0" Caller="yuv_filter" Caller-DebugLoc="File yuv_filter.c Line 37 Column 0"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

@@ -1,0 +1,26 @@
+[
+  {
+    "directory": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab3\\dct",
+    "arguments": [
+      "E:\\vivado\\Vitis_HLS\\2024.1\\vcxx\\libexec\\clang++.exe",
+      "-fhls",
+      "-hls-syn-headers-dir=E:\\vivado\\Vitis_HLS\\2024.1\\common\\technology\\autopilot",
+      "",
+      "-c",
+      "E:/robot/project/FPGA/ZedBoard/HLS_lab/High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c"
+    ],
+    "file": "E:/robot/project/FPGA/ZedBoard/HLS_lab/High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c"
+  },
+  {
+    "directory": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab3\\dct",
+    "arguments": [
+      "E:\\vivado\\Vitis_HLS\\2024.1\\vcxx\\libexec\\clang++.exe",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=E:\\vivado\\Vitis_HLS\\2024.1\\include",
+      "",
+      "-c",
+      "E:/robot/project/FPGA/ZedBoard/HLS_lab/High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct_test.c"
+    ],
+    "file": "E:/robot/project/FPGA/ZedBoard/HLS_lab/High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct_test.c"
+  }
+]

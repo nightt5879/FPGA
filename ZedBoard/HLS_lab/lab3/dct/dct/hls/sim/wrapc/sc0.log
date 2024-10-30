@@ -1,0 +1,6 @@
+   Build using "E:/vivado/Vitis_HLS/2024.1/vcxx/libexec/clang++"
+   Compiling apatb_dct.cpp
+   Compiling dct.c_pre.c.tb.c
+   Compiling dct_test.c_pre.c.tb.c
+   Compiling apatb_dct_ir.ll
+   Generating cosim.tv.exe

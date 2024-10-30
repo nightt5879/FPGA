@@ -1,0 +1,682 @@
+INFO-FLOW: Workspace E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1 opened at Wed Oct 30 15:20:02 +0800 2024
+Execute       send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Execute     set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+Execute       create_platform xc7z020clg400-1 -board  
+DBG:HLSDevice: Trying to load device library: E:/vivado/Vitis_HLS/2024.1\lib\win64.o\xv_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: E:/vivado/Vivado/2024.1/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+Command       create_platform done; 5.645 sec.
+Execute       source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/ip/util.gen 
+Execute         source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.186 sec.
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 5.937 sec.
+Execute     create_clock -period 10 
+INFO: [HLS 200-1510] Running: create_clock -period 10 
+Execute       ap_set_clock -name default -period 10 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     csynth_design 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO-FLOW: Running SLX 'csynth' proc: ::SLX::run_csynth
+Execute       elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.128 seconds; current allocated memory: 256.000 MB.
+Execute         set_directive_top yuv_filter -name=yuv_filter 
+Execute         source E:/vivado/Vitis_HLS/2024.1/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute         source E:/vivado/Vitis_HLS/2024.1/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute           source E:/vivado/Vitis_HLS/2024.1/tps/tcl/tcllib1.11.1/try/try.tcl 
+INFO: [HLS 200-10] Analyzing design file 'yuv_filter.c' ... 
+INFO-FLOW: Compiling one TU...
+INFO-FLOW: Handling yuv_filter.c as C
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Command         ap_part_info done; 0.101 sec.
+INFO-FLOW: Running: GCC PP 39
+INFO-FLOW: Source preprocessing
+INFO-FLOW: run_clang exec: E:/vivado/Vitis_HLS/2024.1/win64/tools/clang-3.9-csynth/bin/clang yuv_filter.c -foptimization-record-file=E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/yuv_filter.c.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info --sysroot E:/vivado/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt -fhls -fno-exceptions -insert-hls-directive=E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/all.directive.json -E -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -Wdump-hls-pragmas -Wno-error=dump-hls-pragmas -hls-clock-period=10 -std=gnu99 -fgnu89-inline -target fpga64-xilinx-mingw32 -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I E:/vivado/Vitis_HLS/2024.1/common/technology/autopilot -I E:/vivado/Vitis_HLS/2024.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -I /usr/include/x86_64-linux-gnu -o E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/yuv_filter.pp.0.c {-hls-platform-db-name=E:/vivado/Vitis_HLS/2024.1\common/technology\xilinx/common/platform.db} -hls-platform-name=zynq_slow -device-resource-info=BRAM_280.000000_DSP_220.000000_FF_106400.000000_LUT_53200.000000_SLICE_13300.000000_URAM_0.000000 -device-name-info=xc7z020clg400-1 > E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/yuv_filter.c.clang.out.log 2> E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/yuv_filter.c.clang.err.log
+INFO-FLOW: Done: GCC PP 39 time: 0.5 seconds per iteration
+INFO-FLOW: Source syntax check for synthesis
+INFO-FLOW: run_clang exec: E:/vivado/Vitis_HLS/2024.1/win64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fsyntax-only -fhls -target fpga64-xilinx-linux-gnu E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/yuv_filter.pp.0.c {-hls-platform-db-name=E:/vivado/Vitis_HLS/2024.1\common/technology\xilinx/common/platform.db} -hls-platform-name=zynq_slow -device-resource-info=BRAM_280.000000_DSP_220.000000_FF_106400.000000_LUT_53200.000000_SLICE_13300.000000_URAM_0.000000 -device-name-info=xc7z020clg400-1 > E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/clang.out.log 2> E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/clang.err.log
+Execute         clang_tidy xilinx-systemc-detector -desc systemc-detector E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/yuv_filter.pp.0.c std=gnu99 -target fpga  -directive=E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec E:/vivado/Vitis_HLS/2024.1/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-systemc-detector -import-directive=E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/.systemc_flag -fix-errors E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/yuv_filter.pp.0.c -- -std=gnu99 -target fpga -fhls -ferror-limit=0
+Command         clang_tidy done; 0.163 sec.
+INFO-FLOW: Running: clang-tidy CDT preprocess 39
+Execute         clang_tidy xilinx-directive2pragma -desc directive2pragma E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/yuv_filter.pp.0.c std=gnu99 -target fpga  -directive=E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/all.directive.json 
+INFO-FLOW: exec E:/vivado/Vitis_HLS/2024.1/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-directive2pragma -import-directive=E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/all.directive.json -fix-errors E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/yuv_filter.pp.0.c -- -std=gnu99 -target fpga -fhls -ferror-limit=0
+INFO-FLOW: Done: clang-tidy CDT preprocess 39 time: 0.1 seconds per iteration
+INFO-FLOW: Calling xilinx-label-all-loops ... 
+INFO-FLOW: Calling xilinx-aggregate-on-hls-vector ... 
+Execute         clang_tidy -errorcheck -desc loop-label xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/yuv_filter.pp.0.c std=gnu99 -target fpga  
+INFO-FLOW: run_clang exec: E:/vivado/Vitis_HLS/2024.1/win64/tools/clang-3.9-csynth/bin/clang-tidy -export-fixes=E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/yuv_filter.pp.0.c.clang-tidy.loop-label.diag.yml -header-filter=.* --checks=-*,xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute -fix-errors E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/yuv_filter.pp.0.c -- -std=gnu99 -target fpga -fhls -ferror-limit=0 > E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/yuv_filter.pp.0.c.clang-tidy.loop-label.out.log 2> E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/yuv_filter.pp.0.c.clang-tidy.loop-label.err.log
+INFO-FLOW: run_clang exec: E:/vivado/Vitis_HLS/2024.1/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/yuv_filter.pp.0.c.xilinx-dataflow-lawyer.diag.yml E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/yuv_filter.pp.0.c -- -std=gnu99 -target fpga -fhls -ferror-limit=0 -fstrict-dataflow > E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/yuv_filter.pp.0.c.xilinx-dataflow-lawyer.out.log 2> E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/yuv_filter.pp.0.c.xilinx-dataflow-lawyer.err.log
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Command         ap_part_info done; 0.103 sec.
+INFO-FLOW: compiling source code to llvm bc
+INFO-FLOW: run_clang exec: E:/vivado/Vitis_HLS/2024.1/win64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/yuv_filter.pp.0.c.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -fhls -flto -fno-exceptions -Wno-error=c++11-narrowing -hls-emit-hint-scope E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/yuv_filter.pp.0.c -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -Wdump-hls-pragmas -Wno-error=dump-hls-pragmas -hls-clock-period=10 -std=gnu99 -fgnu89-inline -target fpga64-xilinx-linux-gnu -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I E:/vivado/Vitis_HLS/2024.1/common/technology/autopilot -I E:/vivado/Vitis_HLS/2024.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/yuv_filter.bc {-hls-platform-db-name=E:/vivado/Vitis_HLS/2024.1\common/technology\xilinx/common/platform.db} -hls-platform-name=zynq_slow -device-resource-info=BRAM_280.000000_DSP_220.000000_FF_106400.000000_LUT_53200.000000_SLICE_13300.000000_URAM_0.000000 -device-name-info=xc7z020clg400-1 > E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/yuv_filter.pp.0.c.clang.out.log 2> E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/yuv_filter.pp.0.c.clang.err.log
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 2.012 seconds; current allocated memory: 258.207 MB.
+INFO-FLOW: Linking Debug ...
+INFO-FLOW: Linking dut bc code.
+Execute         run_link_or_opt -out E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/a.g.ld.0.bc -args  "E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/yuv_filter.g.bc"  
+INFO-FLOW: run_clang exec: E:/vivado/Vitis_HLS/2024.1/win64/tools/clang-3.9-csynth/bin/llvm-link E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/yuv_filter.g.bc -o E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/a.g.ld.0.bc > E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/a.g.ld.0.bc.llvm-link.out.log 2> E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/a.g.ld.0.bc.llvm-link.err.log
+INFO-FLOW: 
+Command         run_link_or_opt done; 0.101 sec.
+Execute         run_link_or_opt -opt -out E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/a.g.ld.1.lower.bc -args E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics 
+INFO-FLOW: run_clang exec: E:/vivado/Vitis_HLS/2024.1/win64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/a.g.ld.1.lower.bc.opt.diag.yml E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics -o E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/a.g.ld.1.lower.bc > E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/a.g.ld.1.lower.bc.opt.out.log 2> E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/a.g.ld.1.lower.bc.opt.err.log
+INFO-FLOW: 
+INFO-FLOW: Running: gen_design_size_report post-opt
+INFO-FLOW: Done: gen_design_size_report post-opt time: 0 seconds per iteration
+Command         run_link_or_opt done; 0.148 sec.
+INFO-FLOW: Linking math bc lib
+Execute         run_link_or_opt -out E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/a.g.ld.2.m1.bc -args E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/a.g.ld.1.lower.bc -only-needed E:/vivado/Vitis_HLS/2024.1/win64/lib/libhlsm_39.bc E:/vivado/Vitis_HLS/2024.1/win64/lib/libhlsmc++_39.bc 
+INFO-FLOW: run_clang exec: E:/vivado/Vitis_HLS/2024.1/win64/tools/clang-3.9-csynth/bin/llvm-link E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/a.g.ld.1.lower.bc -only-needed E:/vivado/Vitis_HLS/2024.1/win64/lib/libhlsm_39.bc E:/vivado/Vitis_HLS/2024.1/win64/lib/libhlsmc++_39.bc -o E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/a.g.ld.2.m1.bc > E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/a.g.ld.2.m1.bc.llvm-link.out.log 2> E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/a.g.ld.2.m1.bc.llvm-link.err.log
+INFO-FLOW: 
+Command         run_link_or_opt done; 2.511 sec.
+Execute         run_link_or_opt -opt -out E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/a.g.ld.3.fpc.bc -args E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=yuv_filter -reflow-float-conversion 
+INFO-FLOW: run_clang exec: E:/vivado/Vitis_HLS/2024.1/win64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/a.g.ld.3.fpc.bc.opt.diag.yml E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=yuv_filter -reflow-float-conversion -o E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/a.g.ld.3.fpc.bc > E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/a.g.ld.3.fpc.bc.opt.out.log 2> E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/a.g.ld.3.fpc.bc.opt.err.log
+INFO-FLOW: 
+INFO-FLOW: Running: gen_design_size_report post-opt
+INFO-FLOW: Done: gen_design_size_report post-opt time: 0 seconds per iteration
+Command         run_link_or_opt done; 1.204 sec.
+Execute         run_link_or_opt -out E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/a.g.ld.4.m2.bc -args E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/a.g.ld.3.fpc.bc -only-needed E:/vivado/Vitis_HLS/2024.1/win64/lib/libfloatconversion_39.bc 
+INFO-FLOW: run_clang exec: E:/vivado/Vitis_HLS/2024.1/win64/tools/clang-3.9-csynth/bin/llvm-link E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/a.g.ld.3.fpc.bc -only-needed E:/vivado/Vitis_HLS/2024.1/win64/lib/libfloatconversion_39.bc -o E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/a.g.ld.4.m2.bc > E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/a.g.ld.4.m2.bc.llvm-link.out.log 2> E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/a.g.ld.4.m2.bc.llvm-link.err.log
+INFO-FLOW: 
+Execute         run_link_or_opt -opt -out E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/a.g.ld.5.gdce.bc -args E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/a.g.ld.4.m2.bc -reflow-globaldce -hls-top-function-name=yuv_filter 
+INFO-FLOW: run_clang exec: E:/vivado/Vitis_HLS/2024.1/win64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/a.g.ld.5.gdce.bc.opt.diag.yml E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/a.g.ld.4.m2.bc -reflow-globaldce -hls-top-function-name=yuv_filter -o E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/a.g.ld.5.gdce.bc > E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/a.g.ld.5.gdce.bc.opt.out.log 2> E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/a.g.ld.5.gdce.bc.opt.err.log
+INFO-FLOW: 
+INFO-FLOW: Running: gen_design_size_report post-opt
+INFO-FLOW: Done: gen_design_size_report post-opt time: 0 seconds per iteration
+Execute         send_msg_by_id INFO @200-777@%s Vivado 
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+Execute         is_m_axi_addr64 
+INFO-FLOW: Doing LTO.
+INFO-FLOW: run_clang (background poll_ms 5000) exec: E:/vivado/Vitis_HLS/2024.1/win64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/a.g.ld.0.bc.clang.reflow.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fhls -mllvm -hls-top-function-name=yuv_filter -mllvm -hls-db-dir -mllvm E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db -emit-llvm -c -target fpga64-xilinx-none -mllvm -xcl-xmlinfo=E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/kernel.internal.xml -mllvm -top-io-mapping-info=E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/top-io-fe.xml -mllvm -hls-bitcode-version=3.1 -mllvm -reflow-enable-slave-interface-default-setting=true -mllvm -gen-kernel-xml=false -mllvm -default-maxi-offset=slave -mllvm -maxi-latency=0 -mllvm -hls-maxi-data-size-in-bits=8 -mllvm -hls-maxi-max-data-size-in-bits=1024 -mllvm -hls-max-widen-size-in-bits=0 -mllvm -xcl-kernel-max-mem-ports=0 -mllvm -maxi-read-trans=16 -mllvm -maxi-write-trans=16 -mllvm -maxi-read-burst-len=16 -mllvm -maxi-write-burst-len=16 -mllvm -reflow-enable-saxi-64bits=0 -mllvm -reflow-basic-block-instr-threshold=200000 -mllvm -reflow-auto-pipeline-threshold=64 -mllvm -reflow-enable-maxi-auto-id-channel=0 -mllvm -enable-fp-thr=0 -mllvm -reflow-bdd-simplify-threshold=1048576 -mllvm -reflow-fanout-threshold=16 -mllvm -reflow-complete-threshold=4 -mllvm -reflow-array-promotion-threshold=64 -mllvm -assume-maxi-align=1 -mllvm -reflow-enable-dataflow-strict-mode-checking=1 -ftime-report -mllvm -time-passes -mllvm -reflow-auto-array-partition-mode=default -mllvm -reflow-enable-auto-small-array-partition=true -mllvm -reflow-enable-auto-array-partition-for-flatten=true -mllvm -reflow-enable-auto-parallel-performance-driven=true -mllvm -reflow-enable-partition-for-automation=true -mllvm -reflow-aggregate-bitwidth-threshold=4096 -mllvm -reflow-reserved-saxilite-registers=0 -mllvm -enable-reflow-auto-loop-pipeline -mllvm -reflow-max-unroll-threshold=409600 -mllvm -auto-unroll-tripcount-threshold=0 -mllvm -reflow-assume-no-address-wrap=true -mllvm -reflow-enable-occurrence-inference=true -mllvm -reflow-emit-hint-scope=true -mllvm -reflow-enable-codegen-with-if=true -mllvm -hls -mllvm -disable-inlined-alloca-merging=true -mllvm -default-clock-period=10 -mllvm -use_read_first_ram_in_loop=1 -mllvm -default-clock-uncertainty=2.7 -x ir E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/a.g.ld.5.gdce.bc -o E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/a.g.lto.bc {-hls-platform-db-name=E:/vivado/Vitis_HLS/2024.1\common/technology\xilinx/common/platform.db} -hls-platform-name=zynq_slow -device-resource-info=BRAM_280.000000_DSP_220.000000_FF_106400.000000_LUT_53200.000000_SLICE_13300.000000_URAM_0.000000 -device-name-info=xc7z020clg400-1 2> E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/a.g.ld.0.bc.clang.reflow.err.log bg_poll_cmd: ::AP::poll_clang_39_closed_source
+Execute         send_msg_by_id INFO @200-1995@%s%s%s 455 Compile/Link E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 455 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/syn/report/csynth_design_size.rpt
+Execute         send_msg_by_id INFO @200-1995@%s%s%s 326 Unroll/Inline (step 1) E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 326 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/syn/report/csynth_design_size.rpt
+Execute         send_msg_by_id INFO @200-1995@%s%s%s 197 Unroll/Inline (step 2) E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 197 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/syn/report/csynth_design_size.rpt
+Execute         send_msg_by_id INFO @200-1995@%s%s%s 197 Unroll/Inline (step 3) E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 197 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/syn/report/csynth_design_size.rpt
+Execute         send_msg_by_id INFO @200-1995@%s%s%s 183 Unroll/Inline (step 4) E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 183 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/syn/report/csynth_design_size.rpt
+Execute         send_msg_by_id INFO @200-1995@%s%s%s 176 Array/Struct (step 1) E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 176 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/syn/report/csynth_design_size.rpt
+Execute         send_msg_by_id INFO @200-1995@%s%s%s 176 Array/Struct (step 2) E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 176 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/syn/report/csynth_design_size.rpt
+Execute         send_msg_by_id INFO @200-1995@%s%s%s 176 Array/Struct (step 3) E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 176 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/syn/report/csynth_design_size.rpt
+Execute         send_msg_by_id INFO @200-1995@%s%s%s 176 Array/Struct (step 4) E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 176 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/syn/report/csynth_design_size.rpt
+Execute         send_msg_by_id INFO @200-1995@%s%s%s 181 Array/Struct (step 5) E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 181 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/syn/report/csynth_design_size.rpt
+Execute         send_msg_by_id INFO @200-1995@%s%s%s 181 Performance (step 1) E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 181 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/syn/report/csynth_design_size.rpt
+Execute         send_msg_by_id INFO @200-1995@%s%s%s 179 Performance (step 2) E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 179 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/syn/report/csynth_design_size.rpt
+Execute         send_msg_by_id INFO @200-1995@%s%s%s 174 Performance (step 3) E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 174 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/syn/report/csynth_design_size.rpt
+Execute         send_msg_by_id INFO @200-1995@%s%s%s 174 Performance (step 4) E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 174 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/syn/report/csynth_design_size.rpt
+Execute         send_msg_by_id INFO @200-1995@%s%s%s 200 HW Transforms (step 1) E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 200 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/syn/report/csynth_design_size.rpt
+Execute         send_msg_by_id INFO @200-1995@%s%s%s 215 HW Transforms (step 2) E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 215 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/syn/report/csynth_design_size.rpt
+Execute         source E:/vivado/Vitis_HLS/2024.1/tps/tcl/tcllib1.11.1/yaml/yaml.tcl 
+INFO: [HLS 214-210] Disaggregating variable 'out'
+INFO: [HLS 214-210] Disaggregating variable 'out_channels'
+INFO: [HLS 214-210] Disaggregating variable 'in'
+INFO: [HLS 214-210] Disaggregating variable 'in_channels'
+INFO: [HLS 214-178] Inlining function 'rgb2yuv' into 'yuv_filter' (yuv_filter.c:37:0)
+INFO: [HLS 214-178] Inlining function 'yuv_scale' into 'yuv_filter' (yuv_filter.c:37:0)
+INFO: [HLS 214-178] Inlining function 'yuv2rgb' into 'yuv_filter' (yuv_filter.c:37:0)
+INFO: [HLS 214-376] automatically set the pipeline for Loop< RGB2YUV_LOOP_Y> at yuv_filter.c:78:7 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< YUV_SCALE_LOOP_Y> at yuv_filter.c:158:7 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< YUV2RGB_LOOP_Y> at yuv_filter.c:118:7 
+INFO-FLOW: DBG:PUTS: copy_raw_kernel_xml ap_link_39: kernel.xml not generated: E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/kernel.internal.xml
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 9.491 seconds; current allocated memory: 260.102 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.002 seconds; current allocated memory: 260.102 MB.
+Execute         opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
+Execute           cleanup_all_models 
+INFO: [HLS 200-10] Starting code transformations ...
+INFO-FLOW: Running Standard Transforms...
+Execute           transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top yuv_filter -deadargelim -mem2reg -instcombine -dce -presyn-prepare -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -promote-dbg-pointer -norm-name E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/a.g.0.bc -o E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/a.g.1.bc -f -phase std-opt 
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.103 seconds; current allocated memory: 265.105 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO-FLOW: Checking Synthesizability 1/2..
+Execute           transform -hls -syn-check -check-rec-only -scalarrepl -norm-name -dce -mem2reg -instcombine -directive-preproc -mem2reg -dse -dce -dce -pag -array-normalize -instcombine -dce -array-seg-normalize -instcombine -dce -data-pack -instcombine -dce -inst-simplify -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -resolve-double-ptr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -directive-preproc -mem2reg -dse -dce -globaldce E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/a.g.1.bc -o E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/a.g.2.prechk.bc -f 
+INFO-FLOW: Checking Synthesizability 2/2..
+Execute           transform -syn-check E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/a.g.2.prechk.bc -o E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/a.g.2.bc -f -phase syn-check 
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.048 seconds; current allocated memory: 267.238 MB.
+INFO-FLOW: Compiler optimizing ...
+INFO-FLOW: Share syncheck's 1.bc for syn flow: copy E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/a.g.1.bc to E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/a.o.1.bc
+INFO-FLOW: Presyn 1...
+Execute           transform -hls -tmp E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db -interface-port-rename -directive-preproc -mem2reg -dse -dce -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -dce -resource-proc -clib-intrinsic-prepare -dce -func-buffer -dce -pag -array-normalize -func-legal -instcombine -gvn -constprop -dce -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -ptrArgReplace -mem2reg -dce -array-seg-normalize -deadargelim -instcombine -dce -directive-preproc -mem2reg -dse -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -loop-simplify -loop-bound -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -duplicate-dataflow-processes -globaldce -instcombine -array-partition -prepare-dynamic-array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -dce -global-constprop -deadargelim -mem2reg -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -lcssa -loop-simplify -phi-select-elim -promote-global-argument -ptrArgReplace -mem2reg -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -dce -norm-name -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -accesses-merge -function-inline -complex-op-raise -inst-simplify -globaldce -func-legal -dce -loop-bound -arraycheck -bitwidthmin2 -bitwidthmin2 -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -duplicate-dataflow-processes -check-dataflow-syntax -legalize-stream-variable -globaldce -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -hls-dead-arg-elim -deadargelim -directive-preproc -canonicalize-dataflow -dce -globaldce -scalar-preprocessing -scalar-propagation2 -scalar-stream -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -clean-array-spec -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -hls-display -norm-name E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/a.o.1.bc -o E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/a.o.1.tmp.bc -f 
+INFO-FLOW: Presyn 2...
+Execute           transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin2 -bitwidthmin2 -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -barrier -norm-name E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/a.o.1.tmp.bc -o E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/a.o.2.bc -f -phase presyn 
+INFO: [XFORM 203-11] Balancing expressions in function 'yuv_filter' (yuv_filter.c:30:7)...9 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.109 seconds; current allocated memory: 289.480 MB.
+Execute           transform -hls -auto-function-inline -globaldce -ptrArgReplace -mem2reg -dce -reset-lda -loop-simplify -indvars -aggr-aa -licm -loop-dep -loop-bound -licm -loop-simplify -loop-sink-hoist -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg-lite -loop-simplify -array-burst -promote-global-argument -dce -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -inst-simplify -cfgopt -simplifycfg-lite -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -deadargelim -dce -canonicalize-dataflow -dce -deadargelim -globaldce -mem2reg -bram-byte-enable -inst-simplify -inst-rectify -instcombine -adce -deadargelim -load-elim -read-loop-dep -loop-simplify -loop-extract-inner -directive-preproc -bitwidthmin2 -bitwidthmin2 -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable-spec-prop -mul2addshift -deadargelim -inst-simplify -dce -mem2reg -instcombine -gvn -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg-lite -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -complex-op-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -float-op-raise -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg-lite -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg-lite -loop-simplify -mergereturn -inst-simplify -inst-rectify -globaldce -dce -load-elim -bitop-lower -float-op-raise -fma-raise -loop-rewind -pointer-simplify -dce -cfgopt -dce -loop-bound -loop-dep -read-loop-dep -dce -dyn-mem-reuse -dce -recurrence-min -dce -share-scalar-alloca -deadargelim -dce -check-stream -norm-name -legalize -inst-clarity -bitwidth -dce -validate-dataflow -dump-loop-dep-to-ir -check-all-ssdm -dump-complexity-metric E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/a.o.2.bc -o E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+INFO: [HLS 200-2061] Successfully converted nested loops 'RGB2YUV_LOOP_X'(yuv_filter.c:75:4) and 'RGB2YUV_LOOP_Y'(yuv_filter.c:78:7) in function 'yuv_filter' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'YUV_SCALE_LOOP_X'(yuv_filter.c:155:4) and 'YUV_SCALE_LOOP_Y'(yuv_filter.c:158:7) in function 'yuv_filter' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'YUV2RGB_LOOP_X'(yuv_filter.c:115:4) and 'YUV2RGB_LOOP_Y'(yuv_filter.c:118:7) in function 'yuv_filter' into perfectly nested loops.
+INFO: [XFORM 203-541] Flattening a loop nest 'RGB2YUV_LOOP_X' (yuv_filter.c:75:4) in function 'yuv_filter'.
+INFO: [XFORM 203-541] Flattening a loop nest 'YUV_SCALE_LOOP_X' (yuv_filter.c:155:4) in function 'yuv_filter'.
+INFO: [XFORM 203-541] Flattening a loop nest 'YUV2RGB_LOOP_X' (yuv_filter.c:115:4) in function 'yuv_filter'.
+Execute             auto_get_db
+Command           transform done; 0.145 sec.
+INFO-FLOW: Building ssdm...
+Execute           transform -hls -cdfg-build E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/a.o.3.bc -o E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.198 seconds; current allocated memory: 310.625 MB.
+INFO-FLOW: Finish building internal data model.
+Command         opt_and_import_c done; 0.464 sec.
+Command       elaborate done; 12.011 sec.
+Execute       ap_eval exec zip -j E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/dut.hcp $dbDir/a.o.3.bc $dbDir/${topname}.rtl_wrap.cfg.tcl $dbDir/apatb_${topname}.cpp $dbDir/apatb_${topname}_util.cpp $dbDir/apatb_${topname}_ir.ll $dbDir/mapper_${topname}.cpp $dbDir/top-io-fe.xml $dbDir/kernel.internal.xml $workdir/../hls.app 
+Command       ap_eval done; 0.147 sec.
+Execute       autosyn -from_csynth_design=1 
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO-FLOW: Synthesizing C/C++ design ...
+INFO: [HLS 200-10] Synthesizing 'yuv_filter' ...
+Execute         ap_set_top_model yuv_filter 
+Execute         get_model_list yuv_filter -filter all-wo-channel -topdown 
+Execute         preproc_iomode -model yuv_filter 
+Execute         preproc_iomode -model yuv_filter_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y 
+Execute         preproc_iomode -model yuv_filter_Pipeline_YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y 
+Execute         preproc_iomode -model yuv_filter_Pipeline_RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y 
+Execute         get_model_list yuv_filter -filter all-wo-channel 
+INFO-FLOW: Model list for configure: yuv_filter_Pipeline_RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y yuv_filter_Pipeline_YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y yuv_filter_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y yuv_filter
+INFO-FLOW: Configuring Module : yuv_filter_Pipeline_RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y ...
+Execute         set_default_model yuv_filter_Pipeline_RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y 
+Execute         apply_spec_resource_limit yuv_filter_Pipeline_RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y 
+INFO-FLOW: Configuring Module : yuv_filter_Pipeline_YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y ...
+Execute         set_default_model yuv_filter_Pipeline_YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y 
+Execute         apply_spec_resource_limit yuv_filter_Pipeline_YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y 
+INFO-FLOW: Configuring Module : yuv_filter_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y ...
+Execute         set_default_model yuv_filter_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y 
+Execute         apply_spec_resource_limit yuv_filter_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y 
+INFO-FLOW: Configuring Module : yuv_filter ...
+Execute         set_default_model yuv_filter 
+Execute         apply_spec_resource_limit yuv_filter 
+INFO-FLOW: Model list for preprocess: yuv_filter_Pipeline_RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y yuv_filter_Pipeline_YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y yuv_filter_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y yuv_filter
+INFO-FLOW: Preprocessing Module: yuv_filter_Pipeline_RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y ...
+Execute         set_default_model yuv_filter_Pipeline_RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y 
+Execute         cdfg_preprocess -model yuv_filter_Pipeline_RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y 
+Execute         rtl_gen_preprocess yuv_filter_Pipeline_RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y 
+INFO-FLOW: Preprocessing Module: yuv_filter_Pipeline_YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y ...
+Execute         set_default_model yuv_filter_Pipeline_YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y 
+Execute         cdfg_preprocess -model yuv_filter_Pipeline_YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y 
+Execute         rtl_gen_preprocess yuv_filter_Pipeline_YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y 
+INFO-FLOW: Preprocessing Module: yuv_filter_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y ...
+Execute         set_default_model yuv_filter_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y 
+Execute         cdfg_preprocess -model yuv_filter_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y 
+Execute         rtl_gen_preprocess yuv_filter_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y 
+INFO-FLOW: Preprocessing Module: yuv_filter ...
+Execute         set_default_model yuv_filter 
+Execute         cdfg_preprocess -model yuv_filter 
+Execute         rtl_gen_preprocess yuv_filter 
+INFO-FLOW: Model list for synthesis: yuv_filter_Pipeline_RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y yuv_filter_Pipeline_YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y yuv_filter_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y yuv_filter
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'yuv_filter_Pipeline_RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute         set_default_model yuv_filter_Pipeline_RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y 
+Execute         schedule -model yuv_filter_Pipeline_RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln85) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln84) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln83_1) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 8, loop 'RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y'
+INFO: [SCHED 204-11] Finished scheduling.
+Command         schedule done; 0.191 sec.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.401 seconds; current allocated memory: 314.660 MB.
+Execute         syn_report -verbosereport -o E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/yuv_filter_Pipeline_RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y.verbose.sched.rpt 
+Execute           list_part -family xc7z020-clg400-1 
+Execute             ap_family_info -name xc7z020-clg400-1 -data names 
+Execute             ap_part_info -quiet -name xc7z020-clg400-1 -data family 
+Execute         db_write -o E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/yuv_filter_Pipeline_RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y.sched.adb -f 
+INFO-FLOW: Finish scheduling yuv_filter_Pipeline_RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y.
+Execute         set_default_model yuv_filter_Pipeline_RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y 
+Execute         bind -model yuv_filter_Pipeline_RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.102 seconds; current allocated memory: 315.891 MB.
+Execute         syn_report -verbosereport -o E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/yuv_filter_Pipeline_RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y.verbose.bind.rpt 
+Execute           list_part -family xc7z020-clg400-1 
+Execute             ap_family_info -name xc7z020-clg400-1 -data names 
+Execute             ap_part_info -quiet -name xc7z020-clg400-1 -data family 
+Execute         db_write -o E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/yuv_filter_Pipeline_RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y.bind.adb -f 
+INFO-FLOW: Finish binding yuv_filter_Pipeline_RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'yuv_filter_Pipeline_YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute         set_default_model yuv_filter_Pipeline_YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y 
+Execute         schedule -model yuv_filter_Pipeline_YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 6, loop 'YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.121 seconds; current allocated memory: 316.000 MB.
+Execute         syn_report -verbosereport -o E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/yuv_filter_Pipeline_YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y.verbose.sched.rpt 
+Execute           list_part -family xc7z020-clg400-1 
+Execute             ap_family_info -name xc7z020-clg400-1 -data names 
+Execute             ap_part_info -quiet -name xc7z020-clg400-1 -data family 
+Execute         db_write -o E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/yuv_filter_Pipeline_YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y.sched.adb -f 
+INFO-FLOW: Finish scheduling yuv_filter_Pipeline_YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y.
+Execute         set_default_model yuv_filter_Pipeline_YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y 
+Execute         bind -model yuv_filter_Pipeline_YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.073 seconds; current allocated memory: 316.250 MB.
+Execute         syn_report -verbosereport -o E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/yuv_filter_Pipeline_YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y.verbose.bind.rpt 
+Execute           list_part -family xc7z020-clg400-1 
+Execute             ap_family_info -name xc7z020-clg400-1 -data names 
+Execute             ap_part_info -quiet -name xc7z020-clg400-1 -data family 
+Execute         db_write -o E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/yuv_filter_Pipeline_YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y.bind.adb -f 
+INFO-FLOW: Finish binding yuv_filter_Pipeline_YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'yuv_filter_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute         set_default_model yuv_filter_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y 
+Execute         schedule -model yuv_filter_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln127_1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln127) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln126_1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln126) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 10, loop 'YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y'
+INFO: [SCHED 204-11] Finished scheduling.
+Command         schedule done; 0.103 sec.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.166 seconds; current allocated memory: 316.781 MB.
+Execute         syn_report -verbosereport -o E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/yuv_filter_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y.verbose.sched.rpt 
+Execute           list_part -family xc7z020-clg400-1 
+Execute             ap_family_info -name xc7z020-clg400-1 -data names 
+Execute             ap_part_info -quiet -name xc7z020-clg400-1 -data family 
+Execute         db_write -o E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/yuv_filter_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y.sched.adb -f 
+INFO-FLOW: Finish scheduling yuv_filter_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y.
+Execute         set_default_model yuv_filter_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y 
+Execute         bind -model yuv_filter_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.087 seconds; current allocated memory: 316.918 MB.
+Execute         syn_report -verbosereport -o E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/yuv_filter_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y.verbose.bind.rpt 
+Execute           list_part -family xc7z020-clg400-1 
+Execute             ap_family_info -name xc7z020-clg400-1 -data names 
+Execute             ap_part_info -quiet -name xc7z020-clg400-1 -data family 
+Execute         db_write -o E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/yuv_filter_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y.bind.adb -f 
+INFO-FLOW: Finish binding yuv_filter_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'yuv_filter' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute         set_default_model yuv_filter 
+Execute         schedule -model yuv_filter 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.094 seconds; current allocated memory: 317.180 MB.
+Execute         syn_report -verbosereport -o E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/yuv_filter.verbose.sched.rpt 
+Execute           list_part -family xc7z020-clg400-1 
+Execute             ap_family_info -name xc7z020-clg400-1 -data names 
+Execute             ap_part_info -quiet -name xc7z020-clg400-1 -data family 
+Execute         db_write -o E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/yuv_filter.sched.adb -f 
+INFO-FLOW: Finish scheduling yuv_filter.
+Execute         set_default_model yuv_filter 
+Execute         bind -model yuv_filter 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.074 seconds; current allocated memory: 317.344 MB.
+Execute         syn_report -verbosereport -o E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/yuv_filter.verbose.bind.rpt 
+Execute           list_part -family xc7z020-clg400-1 
+Execute             ap_family_info -name xc7z020-clg400-1 -data names 
+Execute             ap_part_info -quiet -name xc7z020-clg400-1 -data family 
+Execute         db_write -o E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/yuv_filter.bind.adb -f 
+INFO-FLOW: Finish binding yuv_filter.
+Execute         get_model_list yuv_filter -filter all-wo-channel 
+INFO-FLOW: Preprocessing for RTLGen ...
+Execute         rtl_gen_preprocess yuv_filter_Pipeline_RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y 
+Execute         rtl_gen_preprocess yuv_filter_Pipeline_YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y 
+Execute         rtl_gen_preprocess yuv_filter_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y 
+Execute         rtl_gen_preprocess yuv_filter 
+INFO-FLOW: Model list for RTL generation: yuv_filter_Pipeline_RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y yuv_filter_Pipeline_YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y yuv_filter_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y yuv_filter
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'yuv_filter_Pipeline_RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute         create_rtl_model yuv_filter_Pipeline_RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y -top_prefix yuv_filter_ -sub_prefix yuv_filter_ -mg_file E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/yuv_filter_Pipeline_RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y.compgen.tcl 
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'yuv_filter_Pipeline_RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y' pipeline 'RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_8ns_5ns_8ns_13_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_8ns_7ns_16ns_16_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_8ns_7s_16s_16_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_8ns_8s_16_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'yuv_filter_Pipeline_RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y'.
+Command         create_rtl_model done; 0.131 sec.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.205 seconds; current allocated memory: 319.949 MB.
+Execute         source E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/yuv_filter.rtl_wrap.cfg.tcl 
+Execute         gen_rtl yuv_filter_Pipeline_RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y -style xilinx -f -lang vhdl -o E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/syn/vhdl/yuv_filter_yuv_filter_Pipeline_RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y 
+Execute         gen_rtl yuv_filter_Pipeline_RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y -style xilinx -f -lang vlog -o E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/syn/verilog/yuv_filter_yuv_filter_Pipeline_RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y 
+Execute         syn_report -csynth -model yuv_filter_Pipeline_RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y -o E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/syn/report/yuv_filter_Pipeline_RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y_csynth.rpt 
+Execute           list_part -family xc7z020-clg400-1 
+Execute             ap_family_info -name xc7z020-clg400-1 -data names 
+Execute             ap_part_info -quiet -name xc7z020-clg400-1 -data family 
+Execute         syn_report -rtlxml -model yuv_filter_Pipeline_RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y -o E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/syn/report/yuv_filter_Pipeline_RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y_csynth.xml 
+Execute           list_part -family xc7z020-clg400-1 
+Execute             ap_family_info -name xc7z020-clg400-1 -data names 
+Execute             ap_part_info -quiet -name xc7z020-clg400-1 -data family 
+Execute         syn_report -verbosereport -model yuv_filter_Pipeline_RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y -o E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/yuv_filter_Pipeline_RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y.verbose.rpt 
+Execute           list_part -family xc7z020-clg400-1 
+Execute             ap_family_info -name xc7z020-clg400-1 -data names 
+Execute             ap_part_info -quiet -name xc7z020-clg400-1 -data family 
+Execute         db_write -model yuv_filter_Pipeline_RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y -f -o E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/yuv_filter_Pipeline_RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y.adb 
+Execute         db_write -model yuv_filter_Pipeline_RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y -bindview -o E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/design.bindinfo.xml 
+Execute         gen_tb_info yuv_filter_Pipeline_RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y -p E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db -o E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/yuv_filter_Pipeline_RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'yuv_filter_Pipeline_YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute         create_rtl_model yuv_filter_Pipeline_YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y -top_prefix yuv_filter_ -sub_prefix yuv_filter_ -mg_file E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/yuv_filter_Pipeline_YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y.compgen.tcl 
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'yuv_filter_Pipeline_YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y' pipeline 'YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mul_8ns_8ns_15_1_1': 3 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'yuv_filter_Pipeline_YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 0.279 seconds; current allocated memory: 322.828 MB.
+Execute         source E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/yuv_filter.rtl_wrap.cfg.tcl 
+Execute         gen_rtl yuv_filter_Pipeline_YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y -style xilinx -f -lang vhdl -o E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/syn/vhdl/yuv_filter_yuv_filter_Pipeline_YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y 
+Execute         gen_rtl yuv_filter_Pipeline_YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y -style xilinx -f -lang vlog -o E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/syn/verilog/yuv_filter_yuv_filter_Pipeline_YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y 
+Execute         syn_report -csynth -model yuv_filter_Pipeline_YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y -o E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/syn/report/yuv_filter_Pipeline_YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y_csynth.rpt 
+Execute           list_part -family xc7z020-clg400-1 
+Execute             ap_family_info -name xc7z020-clg400-1 -data names 
+Execute             ap_part_info -quiet -name xc7z020-clg400-1 -data family 
+Execute         syn_report -rtlxml -model yuv_filter_Pipeline_YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y -o E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/syn/report/yuv_filter_Pipeline_YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y_csynth.xml 
+Execute           list_part -family xc7z020-clg400-1 
+Execute             ap_family_info -name xc7z020-clg400-1 -data names 
+Execute             ap_part_info -quiet -name xc7z020-clg400-1 -data family 
+Execute         syn_report -verbosereport -model yuv_filter_Pipeline_YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y -o E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/yuv_filter_Pipeline_YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y.verbose.rpt 
+Execute           list_part -family xc7z020-clg400-1 
+Execute             ap_family_info -name xc7z020-clg400-1 -data names 
+Execute             ap_part_info -quiet -name xc7z020-clg400-1 -data family 
+Execute         db_write -model yuv_filter_Pipeline_YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y -f -o E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/yuv_filter_Pipeline_YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y.adb 
+Execute         db_write -model yuv_filter_Pipeline_YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y -bindview -o E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/design.bindinfo.xml 
+Execute         gen_tb_info yuv_filter_Pipeline_YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y -p E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db -o E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/yuv_filter_Pipeline_YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'yuv_filter_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute         create_rtl_model yuv_filter_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y -top_prefix yuv_filter_ -sub_prefix yuv_filter_ -mg_file E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/yuv_filter_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y.compgen.tcl 
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'yuv_filter_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y' pipeline 'YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_8s_8s_18s_18_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_9ns_8s_18s_18_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_9s_8s_18s_18_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_9s_9ns_8ns_18_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'yuv_filter_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y'.
+Command         create_rtl_model done; 0.101 sec.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.326 seconds; current allocated memory: 324.859 MB.
+Execute         source E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/yuv_filter.rtl_wrap.cfg.tcl 
+Execute         gen_rtl yuv_filter_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y -style xilinx -f -lang vhdl -o E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/syn/vhdl/yuv_filter_yuv_filter_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y 
+Execute         gen_rtl yuv_filter_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y -style xilinx -f -lang vlog -o E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/syn/verilog/yuv_filter_yuv_filter_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y 
+Execute         syn_report -csynth -model yuv_filter_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y -o E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/syn/report/yuv_filter_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y_csynth.rpt 
+Execute           list_part -family xc7z020-clg400-1 
+Execute             ap_family_info -name xc7z020-clg400-1 -data names 
+Execute             ap_part_info -quiet -name xc7z020-clg400-1 -data family 
+Execute         syn_report -rtlxml -model yuv_filter_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y -o E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/syn/report/yuv_filter_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y_csynth.xml 
+Execute           list_part -family xc7z020-clg400-1 
+Execute             ap_family_info -name xc7z020-clg400-1 -data names 
+Execute             ap_part_info -quiet -name xc7z020-clg400-1 -data family 
+Execute         syn_report -verbosereport -model yuv_filter_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y -o E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/yuv_filter_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y.verbose.rpt 
+Execute           list_part -family xc7z020-clg400-1 
+Execute             ap_family_info -name xc7z020-clg400-1 -data names 
+Execute             ap_part_info -quiet -name xc7z020-clg400-1 -data family 
+Execute         db_write -model yuv_filter_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y -f -o E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/yuv_filter_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y.adb 
+Execute         db_write -model yuv_filter_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y -bindview -o E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/design.bindinfo.xml 
+Execute         gen_tb_info yuv_filter_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y -p E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db -o E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/yuv_filter_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'yuv_filter' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute         create_rtl_model yuv_filter -top_prefix  -sub_prefix yuv_filter_ -mg_file E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/yuv_filter.compgen.tcl 
+INFO: [RTGEN 206-500] Setting interface mode on port 'yuv_filter/in_channels_ch1' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'yuv_filter/in_channels_ch2' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'yuv_filter/in_channels_ch3' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'yuv_filter/in_width' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'yuv_filter/in_height' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'yuv_filter/out_channels_ch1' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'yuv_filter/out_channels_ch2' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'yuv_filter/out_channels_ch3' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'yuv_filter/out_width' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'yuv_filter/out_height' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'yuv_filter/Y_scale' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'yuv_filter/U_scale' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'yuv_filter/V_scale' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'yuv_filter' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Generating core module 'mul_16ns_16ns_32_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'yuv_filter'.
+INFO: [RTMG 210-278] Implementing memory 'yuv_filter_p_yuv_channels_ch1_RAM_AUTO_1R1W' using auto RAMs.
+Command         create_rtl_model done; 0.249 sec.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.523 seconds; current allocated memory: 327.762 MB.
+Execute         source E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/yuv_filter.rtl_wrap.cfg.tcl 
+Execute         gen_rtl yuv_filter -istop -style xilinx -f -lang vhdl -o E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/syn/vhdl/yuv_filter 
+Execute         gen_rtl yuv_filter -istop -style xilinx -f -lang vlog -o E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/syn/verilog/yuv_filter 
+Execute         syn_report -csynth -model yuv_filter -o E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/syn/report/yuv_filter_csynth.rpt 
+Execute           list_part -family xc7z020-clg400-1 
+Execute             ap_family_info -name xc7z020-clg400-1 -data names 
+Execute             ap_part_info -quiet -name xc7z020-clg400-1 -data family 
+Execute         syn_report -rtlxml -model yuv_filter -o E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/syn/report/yuv_filter_csynth.xml 
+Execute           list_part -family xc7z020-clg400-1 
+Execute             ap_family_info -name xc7z020-clg400-1 -data names 
+Execute             ap_part_info -quiet -name xc7z020-clg400-1 -data family 
+Execute         syn_report -verbosereport -model yuv_filter -o E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/yuv_filter.verbose.rpt 
+Execute           list_part -family xc7z020-clg400-1 
+Execute             ap_family_info -name xc7z020-clg400-1 -data names 
+Execute             ap_part_info -quiet -name xc7z020-clg400-1 -data family 
+Execute         db_write -model yuv_filter -f -o E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/yuv_filter.adb 
+Execute         db_write -model yuv_filter -bindview -o E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/design.bindinfo.xml 
+Execute         gen_tb_info yuv_filter -p E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db -o E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/yuv_filter 
+Execute         export_constraint_db -f -tool general -o E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/yuv_filter.constraint.tcl 
+Execute         syn_report -designview -model yuv_filter -o E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/yuv_filter.design.xml 
+Execute         syn_report -csynthDesign -model yuv_filter -o E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/syn/report/csynth.rpt -MHOut E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/kernel_module_hierarchy.tcl 
+Execute           list_part -family xc7z020-clg400-1 
+Execute             ap_family_info -name xc7z020-clg400-1 -data names 
+Execute             ap_part_info -quiet -name xc7z020-clg400-1 -data family 
+Execute         syn_report -wcfg -model yuv_filter -o E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/yuv_filter_dataflow_ana.wcfg 
+Execute         syn_report -protoinst -model yuv_filter -o E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/yuv_filter.protoinst 
+Execute         sc_get_clocks yuv_filter 
+Execute         sc_get_portdomain yuv_filter 
+INFO-FLOW: Model list for RTL component generation: yuv_filter_Pipeline_RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y yuv_filter_Pipeline_YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y yuv_filter_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y yuv_filter
+INFO-FLOW: Handling components in module [yuv_filter_Pipeline_RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y] ... 
+Execute         source E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/yuv_filter_Pipeline_RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y.compgen.tcl 
+INFO-FLOW: Found component yuv_filter_mul_8ns_8s_16_1_1.
+INFO-FLOW: Append model yuv_filter_mul_8ns_8s_16_1_1
+INFO-FLOW: Found component yuv_filter_mac_muladd_8ns_5ns_8ns_13_4_1.
+INFO-FLOW: Append model yuv_filter_mac_muladd_8ns_5ns_8ns_13_4_1
+INFO-FLOW: Found component yuv_filter_mac_muladd_8ns_7s_16s_16_4_1.
+INFO-FLOW: Append model yuv_filter_mac_muladd_8ns_7s_16s_16_4_1
+INFO-FLOW: Found component yuv_filter_mac_muladd_8ns_7ns_16ns_16_4_1.
+INFO-FLOW: Append model yuv_filter_mac_muladd_8ns_7ns_16ns_16_4_1
+INFO-FLOW: Found component yuv_filter_flow_control_loop_pipe_sequential_init.
+INFO-FLOW: Append model yuv_filter_flow_control_loop_pipe_sequential_init
+INFO-FLOW: Handling components in module [yuv_filter_Pipeline_YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y] ... 
+Execute         source E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/yuv_filter_Pipeline_YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y.compgen.tcl 
+INFO-FLOW: Found component yuv_filter_mul_8ns_8ns_15_1_1.
+INFO-FLOW: Append model yuv_filter_mul_8ns_8ns_15_1_1
+INFO-FLOW: Found component yuv_filter_flow_control_loop_pipe_sequential_init.
+INFO-FLOW: Append model yuv_filter_flow_control_loop_pipe_sequential_init
+INFO-FLOW: Handling components in module [yuv_filter_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y] ... 
+Execute         source E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/yuv_filter_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y.compgen.tcl 
+INFO-FLOW: Found component yuv_filter_mac_muladd_9s_9ns_8ns_18_4_1.
+INFO-FLOW: Append model yuv_filter_mac_muladd_9s_9ns_8ns_18_4_1
+INFO-FLOW: Found component yuv_filter_mac_muladd_9ns_8s_18s_18_4_1.
+INFO-FLOW: Append model yuv_filter_mac_muladd_9ns_8s_18s_18_4_1
+INFO-FLOW: Found component yuv_filter_mac_muladd_9s_8s_18s_18_4_1.
+INFO-FLOW: Append model yuv_filter_mac_muladd_9s_8s_18s_18_4_1
+INFO-FLOW: Found component yuv_filter_mac_muladd_8s_8s_18s_18_4_1.
+INFO-FLOW: Append model yuv_filter_mac_muladd_8s_8s_18s_18_4_1
+INFO-FLOW: Found component yuv_filter_flow_control_loop_pipe_sequential_init.
+INFO-FLOW: Append model yuv_filter_flow_control_loop_pipe_sequential_init
+INFO-FLOW: Handling components in module [yuv_filter] ... 
+Execute         source E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/yuv_filter.compgen.tcl 
+INFO-FLOW: Found component yuv_filter_mul_16ns_16ns_32_1_1.
+INFO-FLOW: Append model yuv_filter_mul_16ns_16ns_32_1_1
+INFO-FLOW: Found component yuv_filter_p_yuv_channels_ch1_RAM_AUTO_1R1W.
+INFO-FLOW: Append model yuv_filter_p_yuv_channels_ch1_RAM_AUTO_1R1W
+INFO-FLOW: Append model yuv_filter_Pipeline_RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y
+INFO-FLOW: Append model yuv_filter_Pipeline_YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y
+INFO-FLOW: Append model yuv_filter_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y
+INFO-FLOW: Append model yuv_filter
+INFO-FLOW: Generating RTL model list ...
+INFO-FLOW: All models in this session: yuv_filter_mul_8ns_8s_16_1_1 yuv_filter_mac_muladd_8ns_5ns_8ns_13_4_1 yuv_filter_mac_muladd_8ns_7s_16s_16_4_1 yuv_filter_mac_muladd_8ns_7ns_16ns_16_4_1 yuv_filter_flow_control_loop_pipe_sequential_init yuv_filter_mul_8ns_8ns_15_1_1 yuv_filter_flow_control_loop_pipe_sequential_init yuv_filter_mac_muladd_9s_9ns_8ns_18_4_1 yuv_filter_mac_muladd_9ns_8s_18s_18_4_1 yuv_filter_mac_muladd_9s_8s_18s_18_4_1 yuv_filter_mac_muladd_8s_8s_18s_18_4_1 yuv_filter_flow_control_loop_pipe_sequential_init yuv_filter_mul_16ns_16ns_32_1_1 yuv_filter_p_yuv_channels_ch1_RAM_AUTO_1R1W yuv_filter_Pipeline_RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y yuv_filter_Pipeline_YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y yuv_filter_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y yuv_filter
+INFO-FLOW: Generating E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/autopilot.rtl.models.txt file...
+INFO-FLOW: To file: write model yuv_filter_mul_8ns_8s_16_1_1
+INFO-FLOW: To file: write model yuv_filter_mac_muladd_8ns_5ns_8ns_13_4_1
+INFO-FLOW: To file: write model yuv_filter_mac_muladd_8ns_7s_16s_16_4_1
+INFO-FLOW: To file: write model yuv_filter_mac_muladd_8ns_7ns_16ns_16_4_1
+INFO-FLOW: To file: write model yuv_filter_flow_control_loop_pipe_sequential_init
+INFO-FLOW: To file: write model yuv_filter_mul_8ns_8ns_15_1_1
+INFO-FLOW: To file: write model yuv_filter_flow_control_loop_pipe_sequential_init
+INFO-FLOW: To file: write model yuv_filter_mac_muladd_9s_9ns_8ns_18_4_1
+INFO-FLOW: To file: write model yuv_filter_mac_muladd_9ns_8s_18s_18_4_1
+INFO-FLOW: To file: write model yuv_filter_mac_muladd_9s_8s_18s_18_4_1
+INFO-FLOW: To file: write model yuv_filter_mac_muladd_8s_8s_18s_18_4_1
+INFO-FLOW: To file: write model yuv_filter_flow_control_loop_pipe_sequential_init
+INFO-FLOW: To file: write model yuv_filter_mul_16ns_16ns_32_1_1
+INFO-FLOW: To file: write model yuv_filter_p_yuv_channels_ch1_RAM_AUTO_1R1W
+INFO-FLOW: To file: write model yuv_filter_Pipeline_RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y
+INFO-FLOW: To file: write model yuv_filter_Pipeline_YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y
+INFO-FLOW: To file: write model yuv_filter_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y
+INFO-FLOW: To file: write model yuv_filter
+INFO-FLOW: Generating E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/autopilot.rtl.models.tcl file...
+INFO-FLOW: Finished generating RTL model list.
+
+
+INFO-FLOW: RTL Generation done.
+INFO-FLOW: CAS Generation done.
+INFO-FLOW: CBC Generation done.
+INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::auto_generate_csynth_design
+INFO-FLOW: DBG:PUTS: read_platform_lib E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/global.setting.tcl
+Execute         source E:/vivado/Vitis_HLS/2024.1/common/technology/generic/autopilot/common.gen 
+Execute           source E:/vivado/Vitis_HLS/2024.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute         source E:/vivado/Vitis_HLS/2024.1/common/technology/generic/autopilot/op.gen 
+Execute         source E:/vivado/Vitis_HLS/2024.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute         source E:/vivado/Vitis_HLS/2024.1/common/technology/generic/autopilot/interface.gen 
+Execute         source E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/global.setting.tcl 
+Execute         source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/common/xilinx.gen 
+Execute           source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/interface/plb46.gen 
+Execute           source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/interface/axi4.gen 
+Execute           source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/ip/util.gen 
+Execute           source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfft.gen 
+Execute           source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfir.gen 
+Execute           source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:PUTS:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::generate_ip_cores gen_sim_model='1' gen_fp_models='0' gen_for_export='0' dstSCDir='' dstVhdlDir='E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/vhdl' dstVlogDir='E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/vlog' tclDir='E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db' modelList='yuv_filter_mul_8ns_8s_16_1_1
+yuv_filter_mac_muladd_8ns_5ns_8ns_13_4_1
+yuv_filter_mac_muladd_8ns_7s_16s_16_4_1
+yuv_filter_mac_muladd_8ns_7ns_16ns_16_4_1
+yuv_filter_flow_control_loop_pipe_sequential_init
+yuv_filter_mul_8ns_8ns_15_1_1
+yuv_filter_flow_control_loop_pipe_sequential_init
+yuv_filter_mac_muladd_9s_9ns_8ns_18_4_1
+yuv_filter_mac_muladd_9ns_8s_18s_18_4_1
+yuv_filter_mac_muladd_9s_8s_18s_18_4_1
+yuv_filter_mac_muladd_8s_8s_18s_18_4_1
+yuv_filter_flow_control_loop_pipe_sequential_init
+yuv_filter_mul_16ns_16ns_32_1_1
+yuv_filter_p_yuv_channels_ch1_RAM_AUTO_1R1W
+yuv_filter_Pipeline_RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y
+yuv_filter_Pipeline_YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y
+yuv_filter_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y
+yuv_filter
+' expOnly='0'
+Execute         source E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/global.setting.tcl 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Command         ap_part_info done; 0.102 sec.
+Execute         source E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/global.setting.tcl 
+Execute         source E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/global.setting.tcl 
+Execute         source E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/yuv_filter_Pipeline_RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y.compgen.tcl 
+Execute         source E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/yuv_filter_Pipeline_YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y.compgen.tcl 
+Execute         source E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/yuv_filter_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y.compgen.tcl 
+Execute         source E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/yuv_filter.compgen.tcl 
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.746 seconds; current allocated memory: 331.637 MB.
+INFO-FLOW: DBG:PROC: ::HLSREPORTS::create_csynth_xml bind_info_var='bind_info' RtlSubPrefix='yuv_filter_' outfile=''
+INFO-FLOW: Running: create_csynth_xml read xml data
+INFO-FLOW: Done: create_csynth_xml read xml data time: 0 seconds per iteration
+INFO-FLOW: Running: create_csynth_xml bind info
+INFO-FLOW: Done: create_csynth_xml bind info time: 0 seconds per iteration
+INFO-FLOW: Running: create_csynth_xml config info
+INFO-FLOW: Done: create_csynth_xml config info time: 0.2 seconds per iteration
+INFO-FLOW: Running: create_csynth_xml write xml
+INFO-FLOW: Done: create_csynth_xml write xml time: 0 seconds per iteration
+INFO-FLOW: DBG:PUTS:      create_csynth_xml wrote csynth_xml=E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/syn/report/csynth.xml
+INFO-FLOW: DBG:PROC: ::AP::DESIGN_DATA::generate_json generate_bd_files='0' generate_xo_files='0' modelList='yuv_filter_mul_8ns_8s_16_1_1
+yuv_filter_mac_muladd_8ns_5ns_8ns_13_4_1
+yuv_filter_mac_muladd_8ns_7s_16s_16_4_1
+yuv_filter_mac_muladd_8ns_7ns_16ns_16_4_1
+yuv_filter_flow_control_loop_pipe_sequential_init
+yuv_filter_mul_8ns_8ns_15_1_1
+yuv_filter_flow_control_loop_pipe_sequential_init
+yuv_filter_mac_muladd_9s_9ns_8ns_18_4_1
+yuv_filter_mac_muladd_9ns_8s_18s_18_4_1
+yuv_filter_mac_muladd_9s_8s_18s_18_4_1
+yuv_filter_mac_muladd_8s_8s_18s_18_4_1
+yuv_filter_flow_control_loop_pipe_sequential_init
+yuv_filter_mul_16ns_16ns_32_1_1
+yuv_filter_p_yuv_channels_ch1_RAM_AUTO_1R1W
+yuv_filter_Pipeline_RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y
+yuv_filter_Pipeline_YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y
+yuv_filter_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y
+yuv_filter
+' rtl_lang='both' bootstrap_tcl='false' outdir='' outfilename=''
+Execute         source E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/global.setting.tcl 
+Execute         source E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/global.setting.tcl 
+Execute         source E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/top-io-be.tcl 
+Execute         source E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/yuv_filter.tbgen.tcl 
+Execute         source E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/yuv_filter.rtl_wrap.cfg.tcl 
+Execute         source E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/yuv_filter.compgen.dataonly.tcl 
+Execute         source E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/yuv_filter_Pipeline_RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y.tbgen.tcl 
+Execute         source E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/yuv_filter_Pipeline_YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y.tbgen.tcl 
+Execute         source E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/yuv_filter_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y.tbgen.tcl 
+Execute         source E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/yuv_filter.tbgen.tcl 
+Execute         source E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/global.setting.tcl 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Command         ap_part_info done; 0.103 sec.
+Execute         source E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/yuv_filter.constraint.tcl 
+Execute         sc_get_clocks yuv_filter 
+Execute         source E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PROC: ::HLSREPORTS::add_csynth_report_sections bind_info_dict='adapter_nodes {} cache_nodes {} report_dict {TOPINST yuv_filter MODULE2INSTS {yuv_filter yuv_filter yuv_filter_Pipeline_RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y grp_yuv_filter_Pipeline_RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y_fu_129 yuv_filter_Pipeline_YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y grp_yuv_filter_Pipeline_YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y_fu_144 yuv_filter_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y grp_yuv_filter_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y_fu_159} INST2MODULE {yuv_filter yuv_filter grp_yuv_filter_Pipeline_RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y_fu_129 yuv_filter_Pipeline_RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y grp_yuv_filter_Pipeline_YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y_fu_144 yuv_filter_Pipeline_YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y grp_yuv_filter_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y_fu_159 yuv_filter_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y} INSTDATA {yuv_filter {DEPTH 1 CHILDREN {grp_yuv_filter_Pipeline_RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y_fu_129 grp_yuv_filter_Pipeline_YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y_fu_144 grp_yuv_filter_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y_fu_159}} grp_yuv_filter_Pipeline_RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y_fu_129 {DEPTH 2 CHILDREN {}} grp_yuv_filter_Pipeline_YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y_fu_144 {DEPTH 2 CHILDREN {}} grp_yuv_filter_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y_fu_159 {DEPTH 2 CHILDREN {}}} MODULEDATA {yuv_filter_Pipeline_RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y {BINDINFO {{BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE seteq PRAGMA {} RTLNAME icmp_ln75_fu_230_p2 SOURCE yuv_filter.c:75 VARIABLE icmp_ln75 LOOP RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op seteq} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln75_1_fu_236_p2 SOURCE yuv_filter.c:75 VARIABLE add_ln75_1 LOOP RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln75_fu_253_p2 SOURCE yuv_filter.c:75 VARIABLE add_ln75 LOOP RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE seteq PRAGMA {} RTLNAME icmp_ln78_fu_259_p2 SOURCE yuv_filter.c:78 VARIABLE icmp_ln78 LOOP RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op seteq} VISIBLE false} {BINDTYPE op ID {} IMPL auto_sel LATENCY 0 OPTYPE select PRAGMA {} RTLNAME select_ln60_fu_264_p3 SOURCE yuv_filter.c:60 VARIABLE select_ln60 LOOP RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op select} VISIBLE false} {BINDTYPE op ID {} IMPL auto_sel LATENCY 0 OPTYPE select PRAGMA {} RTLNAME select_ln75_fu_272_p3 SOURCE yuv_filter.c:75 VARIABLE select_ln75 LOOP RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op select} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln83_3_fu_363_p2 SOURCE yuv_filter.c:83 VARIABLE add_ln83_3 LOOP RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE mul PRAGMA {} RTLNAME mac_muladd_8ns_5ns_8ns_13_4_1_U3 SOURCE yuv_filter.c:83 VARIABLE mul_ln83 LOOP RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln83_4_fu_466_p2 SOURCE yuv_filter.c:83 VARIABLE add_ln83_4 LOOP RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE add PRAGMA {} RTLNAME mac_muladd_8ns_5ns_8ns_13_4_1_U3 SOURCE yuv_filter.c:83 VARIABLE add_ln83_1 LOOP RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME Y_fu_552_p2 SOURCE yuv_filter.c:83 VARIABLE Y LOOP RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE mul PRAGMA {} RTLNAME mul_8ns_8s_16_1_1_U1 SOURCE yuv_filter.c:84 VARIABLE mul_ln84 LOOP RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul} VISIBLE true} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE mul PRAGMA {} RTLNAME mac_muladd_8ns_7s_16s_16_4_1_U4 SOURCE yuv_filter.c:84 VARIABLE mul_ln84_1 LOOP RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul} VISIBLE true} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE sext PRAGMA {} RTLNAME mac_muladd_8ns_7s_16s_16_4_1_U4 SOURCE yuv_filter.c:84 VARIABLE sext_ln84 LOOP RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op sext} VISIBLE false} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE add PRAGMA {} RTLNAME mac_muladd_8ns_7s_16s_16_4_1_U4 SOURCE yuv_filter.c:84 VARIABLE add_ln84 LOOP RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln84_2_fu_503_p2 SOURCE yuv_filter.c:84 VARIABLE add_ln84_2 LOOP RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE xor PRAGMA {} RTLNAME xor_ln84_fu_558_p2 SOURCE yuv_filter.c:84 VARIABLE xor_ln84 LOOP RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op xor} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE mul PRAGMA {} RTLNAME mul_8ns_8s_16_1_1_U2 SOURCE yuv_filter.c:85 VARIABLE mul_ln85 LOOP RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME sub_ln85_fu_415_p2 SOURCE yuv_filter.c:85 VARIABLE sub_ln85 LOOP RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op sub} VISIBLE true} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE mul PRAGMA {} RTLNAME mac_muladd_8ns_7ns_16ns_16_4_1_U5 SOURCE yuv_filter.c:85 VARIABLE mul_ln85_1 LOOP RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul} VISIBLE true} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE zext PRAGMA {} RTLNAME mac_muladd_8ns_7ns_16ns_16_4_1_U5 SOURCE yuv_filter.c:85 VARIABLE zext_ln85 LOOP RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op zext} VISIBLE false} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE add PRAGMA {} RTLNAME mac_muladd_8ns_7ns_16ns_16_4_1_U5 SOURCE yuv_filter.c:85 VARIABLE add_ln85 LOOP RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln85_2_fu_529_p2 SOURCE yuv_filter.c:85 VARIABLE add_ln85_2 LOOP RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE xor PRAGMA {} RTLNAME xor_ln85_fu_571_p2 SOURCE yuv_filter.c:85 VARIABLE xor_ln85 LOOP RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op xor} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln78_fu_320_p2 SOURCE yuv_filter.c:78 VARIABLE add_ln78 LOOP RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true}} AREA {DSP 3 BRAM 0 URAM 0}} yuv_filter_Pipeline_YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y {BINDINFO {{BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE seteq PRAGMA {} RTLNAME icmp_ln155_fu_218_p2 SOURCE yuv_filter.c:155 VARIABLE icmp_ln155 LOOP YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op seteq} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln155_1_fu_224_p2 SOURCE yuv_filter.c:155 VARIABLE add_ln155_1 LOOP YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln155_fu_241_p2 SOURCE yuv_filter.c:155 VARIABLE add_ln155 LOOP YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE seteq PRAGMA {} RTLNAME icmp_ln158_fu_247_p2 SOURCE yuv_filter.c:158 VARIABLE icmp_ln158 LOOP YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op seteq} VISIBLE false} {BINDTYPE op ID {} IMPL auto_sel LATENCY 0 OPTYPE select PRAGMA {} RTLNAME select_ln144_fu_252_p3 SOURCE yuv_filter.c:144 VARIABLE select_ln144 LOOP YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op select} VISIBLE false} {BINDTYPE op ID {} IMPL auto_sel LATENCY 0 OPTYPE select PRAGMA {} RTLNAME select_ln155_fu_260_p3 SOURCE yuv_filter.c:155 VARIABLE select_ln155 LOOP YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op select} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE mul PRAGMA {} RTLNAME mul_8ns_8ns_15_1_1_U18 SOURCE yuv_filter.c:163 VARIABLE mul_ln163 LOOP YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE mul PRAGMA {} RTLNAME mul_8ns_8ns_15_1_1_U19 SOURCE yuv_filter.c:164 VARIABLE mul_ln164 LOOP YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE mul PRAGMA {} RTLNAME mul_8ns_8ns_15_1_1_U20 SOURCE yuv_filter.c:165 VARIABLE mul_ln165 LOOP YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln158_fu_308_p2 SOURCE yuv_filter.c:158 VARIABLE add_ln158 LOOP YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true}} AREA {DSP 0 BRAM 0 URAM 0}} yuv_filter_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y {BINDINFO {{BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE seteq PRAGMA {} RTLNAME icmp_ln115_fu_234_p2 SOURCE yuv_filter.c:115 VARIABLE icmp_ln115 LOOP YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op seteq} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln115_1_fu_240_p2 SOURCE yuv_filter.c:115 VARIABLE add_ln115_1 LOOP YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln115_fu_257_p2 SOURCE yuv_filter.c:115 VARIABLE add_ln115 LOOP YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE seteq PRAGMA {} RTLNAME icmp_ln118_fu_263_p2 SOURCE yuv_filter.c:118 VARIABLE icmp_ln118 LOOP YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op seteq} VISIBLE false} {BINDTYPE op ID {} IMPL auto_sel LATENCY 0 OPTYPE select PRAGMA {} RTLNAME select_ln98_fu_268_p3 SOURCE yuv_filter.c:98 VARIABLE select_ln98 LOOP YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op select} VISIBLE false} {BINDTYPE op ID {} IMPL auto_sel LATENCY 0 OPTYPE select PRAGMA {} RTLNAME select_ln115_fu_276_p3 SOURCE yuv_filter.c:115 VARIABLE select_ln115 LOOP YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op select} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME C_fu_348_p2 SOURCE yuv_filter.c:123 VARIABLE C LOOP YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE xor PRAGMA {} RTLNAME xor_ln124_fu_400_p2 SOURCE yuv_filter.c:124 VARIABLE xor_ln124 LOOP YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op xor} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE xor PRAGMA {} RTLNAME xor_ln125_fu_366_p2 SOURCE yuv_filter.c:125 VARIABLE xor_ln125 LOOP YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op xor} VISIBLE false} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE mul PRAGMA {} RTLNAME mac_muladd_9s_9ns_8ns_18_4_1_U33 SOURCE yuv_filter.c:126 VARIABLE mul_ln126 LOOP YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul} VISIBLE true} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE add PRAGMA {} RTLNAME mac_muladd_9s_9ns_8ns_18_4_1_U33 SOURCE yuv_filter.c:126 VARIABLE add_ln126 LOOP YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE mul PRAGMA {} RTLNAME mac_muladd_9ns_8s_18s_18_4_1_U34 SOURCE yuv_filter.c:126 VARIABLE mul_ln126_1 LOOP YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul} VISIBLE true} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE add PRAGMA {} RTLNAME mac_muladd_9ns_8s_18s_18_4_1_U34 SOURCE yuv_filter.c:126 VARIABLE add_ln126_1 LOOP YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE seteq PRAGMA {} RTLNAME icmp_ln126_fu_480_p2 SOURCE yuv_filter.c:126 VARIABLE icmp_ln126 LOOP YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op seteq} VISIBLE false} {BINDTYPE op ID {} IMPL auto_sel LATENCY 0 OPTYPE select PRAGMA {} RTLNAME select_ln126_fu_502_p3 SOURCE yuv_filter.c:126 VARIABLE select_ln126 LOOP YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op select} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE or PRAGMA {} RTLNAME or_ln126_fu_510_p2 SOURCE yuv_filter.c:126 VARIABLE or_ln126 LOOP YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op or} VISIBLE false} {BINDTYPE op ID {} IMPL auto_sel LATENCY 0 OPTYPE select PRAGMA {} RTLNAME R_fu_516_p3 SOURCE yuv_filter.c:126 VARIABLE R LOOP YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op select} VISIBLE false} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE mul PRAGMA {} RTLNAME mac_muladd_9s_8s_18s_18_4_1_U35 SOURCE yuv_filter.c:127 VARIABLE mul_ln127 LOOP YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul} VISIBLE true} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE sext PRAGMA {} RTLNAME mac_muladd_9s_8s_18s_18_4_1_U35 SOURCE yuv_filter.c:127 VARIABLE sext_ln127_2 LOOP YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op sext} VISIBLE false} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE mul PRAGMA {} RTLNAME mac_muladd_8s_8s_18s_18_4_1_U36 SOURCE yuv_filter.c:127 VARIABLE mul_ln127_1 LOOP YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul} VISIBLE true} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE sext PRAGMA {} RTLNAME mac_muladd_8s_8s_18s_18_4_1_U36 SOURCE yuv_filter.c:127 VARIABLE sext_ln127_3 LOOP YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op sext} VISIBLE false} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE add PRAGMA {} RTLNAME mac_muladd_9s_8s_18s_18_4_1_U35 SOURCE yuv_filter.c:127 VARIABLE add_ln127 LOOP YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE add PRAGMA {} RTLNAME mac_muladd_8s_8s_18s_18_4_1_U36 SOURCE yuv_filter.c:127 VARIABLE add_ln127_1 LOOP YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE seteq PRAGMA {} RTLNAME icmp_ln127_fu_577_p2 SOURCE yuv_filter.c:127 VARIABLE icmp_ln127 LOOP YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op seteq} VISIBLE false} {BINDTYPE op ID {} IMPL auto_sel LATENCY 0 OPTYPE select PRAGMA {} RTLNAME select_ln127_fu_599_p3 SOURCE yuv_filter.c:127 VARIABLE select_ln127 LOOP YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op select} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE or PRAGMA {} RTLNAME or_ln127_fu_607_p2 SOURCE yuv_filter.c:127 VARIABLE or_ln127 LOOP YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op or} VISIBLE false} {BINDTYPE op ID {} IMPL auto_sel LATENCY 0 OPTYPE select PRAGMA {} RTLNAME G_fu_613_p3 SOURCE yuv_filter.c:127 VARIABLE G LOOP YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op select} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE setgt PRAGMA {} RTLNAME icmp_ln128_fu_524_p2 SOURCE yuv_filter.c:128 VARIABLE icmp_ln128 LOOP YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op setgt} VISIBLE false} {BINDTYPE op ID {} IMPL auto_sel LATENCY 0 OPTYPE select PRAGMA {} RTLNAME select_ln128_fu_545_p3 SOURCE yuv_filter.c:128 VARIABLE select_ln128 LOOP YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op select} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE or PRAGMA {} RTLNAME or_ln128_fu_553_p2 SOURCE yuv_filter.c:128 VARIABLE or_ln128 LOOP YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op or} VISIBLE false} {BINDTYPE op ID {} IMPL auto_sel LATENCY 0 OPTYPE select PRAGMA {} RTLNAME B_fu_559_p3 SOURCE yuv_filter.c:128 VARIABLE B LOOP YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op select} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln118_fu_324_p2 SOURCE yuv_filter.c:118 VARIABLE add_ln118 LOOP YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true}} AREA {DSP 4 BRAM 0 URAM 0}} yuv_filter {BINDINFO {{BINDTYPE storage ID {} IMPL auto LATENCY 1 OPTYPE ram_1p PRAGMA {} RTLNAME p_yuv_channels_ch1_U SOURCE yuv_filter.c:43 VARIABLE p_yuv_channels_ch1 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 2048 URAM 0 STORAGESUBTYPE {} STORAGESIZE {8 2457600 1} STORAGEUSAGE {ram_1p array} DISPNAME {bind_storage ram_1p} VISIBLE true} {BINDTYPE storage ID {} IMPL auto LATENCY 1 OPTYPE ram_1p PRAGMA {} RTLNAME p_yuv_channels_ch2_U SOURCE yuv_filter.c:43 VARIABLE p_yuv_channels_ch2 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 2048 URAM 0 STORAGESUBTYPE {} STORAGESIZE {8 2457600 1} STORAGEUSAGE {ram_1p array} DISPNAME {bind_storage ram_1p} VISIBLE true} {BINDTYPE storage ID {} IMPL auto LATENCY 1 OPTYPE ram_1p PRAGMA {} RTLNAME p_yuv_channels_ch3_U SOURCE yuv_filter.c:43 VARIABLE p_yuv_channels_ch3 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 2048 URAM 0 STORAGESUBTYPE {} STORAGESIZE {8 2457600 1} STORAGEUSAGE {ram_1p array} DISPNAME {bind_storage ram_1p} VISIBLE true} {BINDTYPE storage ID {} IMPL auto LATENCY 1 OPTYPE ram_1p PRAGMA {} RTLNAME p_scale_channels_ch1_U SOURCE yuv_filter.c:44 VARIABLE p_scale_channels_ch1 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 2048 URAM 0 STORAGESUBTYPE {} STORAGESIZE {8 2457600 1} STORAGEUSAGE {ram_1p array} DISPNAME {bind_storage ram_1p} VISIBLE true} {BINDTYPE storage ID {} IMPL auto LATENCY 1 OPTYPE ram_1p PRAGMA {} RTLNAME p_scale_channels_ch2_U SOURCE yuv_filter.c:44 VARIABLE p_scale_channels_ch2 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 2048 URAM 0 STORAGESUBTYPE {} STORAGESIZE {8 2457600 1} STORAGEUSAGE {ram_1p array} DISPNAME {bind_storage ram_1p} VISIBLE true} {BINDTYPE storage ID {} IMPL auto LATENCY 1 OPTYPE ram_1p PRAGMA {} RTLNAME p_scale_channels_ch3_U SOURCE yuv_filter.c:44 VARIABLE p_scale_channels_ch3 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 2048 URAM 0 STORAGESUBTYPE {} STORAGESIZE {8 2457600 1} STORAGEUSAGE {ram_1p array} DISPNAME {bind_storage ram_1p} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE seteq PRAGMA {} RTLNAME icmp_ln75_fu_188_p2 SOURCE yuv_filter.c:75 VARIABLE icmp_ln75 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op seteq} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE mul PRAGMA {} RTLNAME mul_16ns_16ns_32_1_1_U49 SOURCE yuv_filter.c:30 VARIABLE mul_ln30 LOOP {} BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul} VISIBLE true}} AREA {DSP 8 BRAM 12288 URAM 0}}}}'
+INFO-FLOW: DBG:PUTS:      update_csynth_reports json2rpt_hw_sw_interfaces
+INFO-FLOW: Running: gen_csynth_sec_pragma
+INFO-FLOW: Done: gen_csynth_sec_pragma time: 0 seconds per iteration
+INFO-FLOW: DBG:PUTS:      update_csynth_reports wrote xml
+INFO-FLOW: DBG:PUTS:      update_csynth_reports appended to csynth rpt file
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.758 seconds; current allocated memory: 335.035 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for yuv_filter.
+INFO: [VLOG 209-307] Generating Verilog RTL for yuv_filter.
+Execute         syn_report -model yuv_filter -printsummary 
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 143.67 MHz
+Command       autosyn done; 3.952 sec.
+Command     csynth_design done; 16.217 sec.
+INFO: [HLS 200-2161] Finished Command csynth_design Elapsed time: 00:00:16; Allocated memory: 79.398 MB.
+Execute     cleanup_all 

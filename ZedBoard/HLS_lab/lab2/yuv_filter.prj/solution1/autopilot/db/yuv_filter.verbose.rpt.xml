@@ -1,0 +1,177 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'yuv_filter'" level="0">
+<item name = "Date">Wed Oct 30 15:20:23 2024
+</item>
+<item name = "Version">2024.1 (Build 5069499 on May 21 2024)</item>
+<item name = "Project">yuv_filter.prj</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg400-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 6.960 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">5, 12884508705, 50.000 ns, 128.845 sec, 6, 12884508706, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_yuv_filter_Pipeline_RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y_fu_129">yuv_filter_Pipeline_RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y, 2, 4294836233, 20.000 ns, 42.948 sec, 1, 4294836226, loop auto-rewind stp(delay=0 clock cycles(s))</column>
+<column name="grp_yuv_filter_Pipeline_YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y_fu_144">yuv_filter_Pipeline_YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y, 2, 4294836231, 20.000 ns, 42.948 sec, 1, 4294836226, loop auto-rewind stp(delay=0 clock cycles(s))</column>
+<column name="grp_yuv_filter_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y_fu_159">yuv_filter_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y, 2, 4294836235, 20.000 ns, 42.948 sec, 1, 4294836226, loop auto-rewind stp(delay=0 clock cycles(s))</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 25, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, 8, 839, 1514, -</column>
+<column name="Memory">12288, -, 0, 0, 0</column>
+<column name="Multiplexer">-, -, 0, 278, -</column>
+<column name="Register">-, -, 43, -, -</column>
+<specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
+<specialColumn name="Utilization (%)">4388, 3, ~0, 3, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="mul_16ns_16ns_32_1_1_U49">mul_16ns_16ns_32_1_1, 0, 1, 0, 6, 0</column>
+<column name="grp_yuv_filter_Pipeline_RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y_fu_129">yuv_filter_Pipeline_RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y, 0, 3, 347, 640, 0</column>
+<column name="grp_yuv_filter_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y_fu_159">yuv_filter_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y, 0, 4, 237, 434, 0</column>
+<column name="grp_yuv_filter_Pipeline_YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y_fu_144">yuv_filter_Pipeline_YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y, 0, 0, 255, 434, 0</column>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+<column name="p_yuv_channels_ch1_U">p_yuv_channels_ch1_RAM_AUTO_1R1W, 2048, 0, 0, 0, 2457600, 8, 1, 19660800</column>
+<column name="p_yuv_channels_ch2_U">p_yuv_channels_ch1_RAM_AUTO_1R1W, 2048, 0, 0, 0, 2457600, 8, 1, 19660800</column>
+<column name="p_yuv_channels_ch3_U">p_yuv_channels_ch1_RAM_AUTO_1R1W, 2048, 0, 0, 0, 2457600, 8, 1, 19660800</column>
+<column name="p_scale_channels_ch1_U">p_yuv_channels_ch1_RAM_AUTO_1R1W, 2048, 0, 0, 0, 2457600, 8, 1, 19660800</column>
+<column name="p_scale_channels_ch2_U">p_yuv_channels_ch1_RAM_AUTO_1R1W, 2048, 0, 0, 0, 2457600, 8, 1, 19660800</column>
+<column name="p_scale_channels_ch3_U">p_yuv_channels_ch1_RAM_AUTO_1R1W, 2048, 0, 0, 0, 2457600, 8, 1, 19660800</column>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="ap_block_state7_on_subcall_done">and, 0, 0, 2, 1, 1</column>
+<column name="icmp_ln75_fu_188_p2">icmp, 0, 0, 23, 16, 1</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_NS_fsm">42, 8, 1, 8</column>
+<column name="out_width">14, 3, 16, 48</column>
+<column name="p_scale_channels_ch1_address0">14, 3, 22, 66</column>
+<column name="p_scale_channels_ch1_ce0">14, 3, 1, 3</column>
+<column name="p_scale_channels_ch1_we0">9, 2, 1, 2</column>
+<column name="p_scale_channels_ch2_address0">14, 3, 22, 66</column>
+<column name="p_scale_channels_ch2_ce0">14, 3, 1, 3</column>
+<column name="p_scale_channels_ch2_we0">9, 2, 1, 2</column>
+<column name="p_scale_channels_ch3_address0">14, 3, 22, 66</column>
+<column name="p_scale_channels_ch3_ce0">14, 3, 1, 3</column>
+<column name="p_scale_channels_ch3_we0">9, 2, 1, 2</column>
+<column name="p_yuv_channels_ch1_address0">14, 3, 22, 66</column>
+<column name="p_yuv_channels_ch1_ce0">14, 3, 1, 3</column>
+<column name="p_yuv_channels_ch1_we0">9, 2, 1, 2</column>
+<column name="p_yuv_channels_ch2_address0">14, 3, 22, 66</column>
+<column name="p_yuv_channels_ch2_ce0">14, 3, 1, 3</column>
+<column name="p_yuv_channels_ch2_we0">9, 2, 1, 2</column>
+<column name="p_yuv_channels_ch3_address0">14, 3, 22, 66</column>
+<column name="p_yuv_channels_ch3_ce0">14, 3, 1, 3</column>
+<column name="p_yuv_channels_ch3_we0">9, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">7, 0, 7, 0</column>
+<column name="grp_yuv_filter_Pipeline_RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y_fu_129_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_yuv_filter_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y_fu_159_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_yuv_filter_Pipeline_YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y_fu_144_ap_start_reg">1, 0, 1, 0</column>
+<column name="icmp_ln75_reg_229">1, 0, 1, 0</column>
+<column name="mul_ln30_reg_207">32, 0, 32, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, yuv_filter, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, yuv_filter, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, yuv_filter, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, yuv_filter, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, yuv_filter, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, yuv_filter, return value</column>
+<column name="in_channels_ch1_address0">out, 22, ap_memory, in_channels_ch1, array</column>
+<column name="in_channels_ch1_ce0">out, 1, ap_memory, in_channels_ch1, array</column>
+<column name="in_channels_ch1_q0">in, 8, ap_memory, in_channels_ch1, array</column>
+<column name="in_channels_ch2_address0">out, 22, ap_memory, in_channels_ch2, array</column>
+<column name="in_channels_ch2_ce0">out, 1, ap_memory, in_channels_ch2, array</column>
+<column name="in_channels_ch2_q0">in, 8, ap_memory, in_channels_ch2, array</column>
+<column name="in_channels_ch3_address0">out, 22, ap_memory, in_channels_ch3, array</column>
+<column name="in_channels_ch3_ce0">out, 1, ap_memory, in_channels_ch3, array</column>
+<column name="in_channels_ch3_q0">in, 8, ap_memory, in_channels_ch3, array</column>
+<column name="in_width">in, 16, ap_none, in_width, pointer</column>
+<column name="in_height">in, 16, ap_none, in_height, pointer</column>
+<column name="out_channels_ch1_address0">out, 22, ap_memory, out_channels_ch1, array</column>
+<column name="out_channels_ch1_ce0">out, 1, ap_memory, out_channels_ch1, array</column>
+<column name="out_channels_ch1_we0">out, 1, ap_memory, out_channels_ch1, array</column>
+<column name="out_channels_ch1_d0">out, 8, ap_memory, out_channels_ch1, array</column>
+<column name="out_channels_ch2_address0">out, 22, ap_memory, out_channels_ch2, array</column>
+<column name="out_channels_ch2_ce0">out, 1, ap_memory, out_channels_ch2, array</column>
+<column name="out_channels_ch2_we0">out, 1, ap_memory, out_channels_ch2, array</column>
+<column name="out_channels_ch2_d0">out, 8, ap_memory, out_channels_ch2, array</column>
+<column name="out_channels_ch3_address0">out, 22, ap_memory, out_channels_ch3, array</column>
+<column name="out_channels_ch3_ce0">out, 1, ap_memory, out_channels_ch3, array</column>
+<column name="out_channels_ch3_we0">out, 1, ap_memory, out_channels_ch3, array</column>
+<column name="out_channels_ch3_d0">out, 8, ap_memory, out_channels_ch3, array</column>
+<column name="out_width">out, 16, ap_vld, out_width, pointer</column>
+<column name="out_width_ap_vld">out, 1, ap_vld, out_width, pointer</column>
+<column name="out_height">out, 16, ap_vld, out_height, pointer</column>
+<column name="out_height_ap_vld">out, 1, ap_vld, out_height, pointer</column>
+<column name="Y_scale">in, 8, ap_none, Y_scale, scalar</column>
+<column name="U_scale">in, 8, ap_none, U_scale, scalar</column>
+<column name="V_scale">in, 8, ap_none, V_scale, scalar</column>
+</table>
+</item>
+</section>
+</profile>

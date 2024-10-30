@@ -1,0 +1,123 @@
+{
+    "1": {
+        "name": "dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop",
+        "file": "..\/..\/High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS\/source\/lab3\/dct.c",
+        "fileloc": "87",
+        "instructions": "100",
+        "total_instructions": "100",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "G": "8",
+            "L": "11"
+        },
+        "stores": {
+            "L": "7"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "2": {
+        "name": "dct_Pipeline_RD_Loop_Row_RD_Loop_Col",
+        "file": "..\/..\/High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS\/source\/lab3\/dct.c",
+        "fileloc": "85",
+        "instructions": "61",
+        "total_instructions": "61",
+        "calls": "",
+        "basicblocks": "13",
+        "loads": {
+            "L": "3",
+            "T": "1"
+        },
+        "stores": {
+            "L": "14"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "0": {
+        "name": "dct",
+        "file": "dct.c",
+        "fileloc": "78",
+        "instructions": "31",
+        "total_instructions": "427",
+        "calls": "2 1 5 4 3 6",
+        "basicblocks": "1"
+    },
+    "3": {
+        "name": "dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop",
+        "file": "..\/..\/High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS\/source\/lab3\/dct.c",
+        "fileloc": "87",
+        "instructions": "40",
+        "total_instructions": "40",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "4"
+        },
+        "stores": {
+            "L": "7"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "4": {
+        "name": "dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop",
+        "file": "..\/..\/High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS\/source\/lab3\/dct.c",
+        "fileloc": "87",
+        "instructions": "100",
+        "total_instructions": "100",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "G": "8",
+            "L": "11"
+        },
+        "stores": {
+            "L": "7"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "5": {
+        "name": "dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop",
+        "file": "..\/..\/High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS\/source\/lab3\/dct.c",
+        "fileloc": "87",
+        "instructions": "59",
+        "total_instructions": "59",
+        "calls": "",
+        "basicblocks": "13",
+        "loads": {
+            "L": "4"
+        },
+        "stores": {
+            "L": "14"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "6": {
+        "name": "dct_Pipeline_WR_Loop_Row_WR_Loop_Col",
+        "file": "..\/..\/High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS\/source\/lab3\/dct.c",
+        "fileloc": "90",
+        "instructions": "36",
+        "total_instructions": "36",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "4"
+        },
+        "stores": {
+            "L": "6",
+            "T": "1"
+        },
+        "loops": {
+            "L": "1"
+        }
+    }
+}

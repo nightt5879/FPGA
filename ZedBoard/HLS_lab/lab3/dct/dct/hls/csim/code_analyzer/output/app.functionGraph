@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<callgraph:CallGraph xmlns:callgraph="http://www.xilinx.com/act/callgraph">
+  <DirectCall count="0" file="..\..\High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS\source\lab3\dct_test.c" id="88" line="30">
+    <caller function="_f200"/>
+    <callee function="_f212"/>
+  </DirectCall>
+  <DirectCall count="0" file="..\..\High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS\source\lab3\dct.c" id="324" line="33">
+    <caller function="_f209"/>
+    <callee function="_f208"/>
+  </DirectCall>
+  <DirectCall count="0" file="..\..\High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS\source\lab3\dct.c" id="403" line="44">
+    <caller function="_f209"/>
+    <callee function="_f208"/>
+  </DirectCall>
+  <DirectCall count="0" file="..\..\High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS\source\lab3\dct.c" id="608" line="85">
+    <caller function="_f212"/>
+    <callee function="_f213"/>
+  </DirectCall>
+  <DirectCall count="0" file="..\..\High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS\source\lab3\dct.c" id="612" line="87">
+    <caller function="_f212"/>
+    <callee function="_f214"/>
+  </DirectCall>
+  <DirectCall count="0" file="..\..\High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS\source\lab3\dct.c" id="616" line="90">
+    <caller function="_f212"/>
+    <callee function="_f215"/>
+  </DirectCall>
+  <DirectCall count="0" file="..\..\High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS\source\lab3\dct.c" id="721" line="33">
+    <caller function="_f214"/>
+    <callee function="_f216"/>
+  </DirectCall>
+  <DirectCall count="0" file="..\..\High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS\source\lab3\dct.c" id="800" line="44">
+    <caller function="_f214"/>
+    <callee function="_f216"/>
+  </DirectCall>
+  <Function file="..\..\High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS\source\lab3\dct_test.c" id="_f200" line="9" name="main"/>
+  <Function file="..\..\High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS\source\lab3\dct.c" id="_f208" line="4" name="dct_1d"/>
+  <Function file="..\..\High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS\source\lab3\dct.c" id="_f209" line="23" name="dct_2d"/>
+  <Function file="..\..\High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS\source\lab3\dct.c" id="_f210" line="54" name="read_data"/>
+  <Function file="..\..\High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS\source\lab3\dct.c" id="_f211" line="66" name="write_data"/>
+  <Function file="..\..\High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS\source\lab3\dct.c" id="_f212" line="78" name="dct"/>
+  <Function file="..\..\High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS\source\lab3\dct.c" id="_f213" line="54" name="read_data"/>
+  <Function file="..\..\High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS\source\lab3\dct.c" id="_f214" line="23" name="dct_2d"/>
+  <Function file="..\..\High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS\source\lab3\dct.c" id="_f215" line="66" name="write_data"/>
+  <Function file="..\..\High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS\source\lab3\dct.c" id="_f216" line="4" name="dct_1d"/>
+</callgraph:CallGraph>

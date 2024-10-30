@@ -1,0 +1,94 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Wed Oct 30 16:36:41 2024
+| Host         : nightt_insider running 64-bit major release  (build 9200)
+| Command      : report_utilization -hierarchical -hierarchical_depth 6 -file ./report/dct_utilization_hierarchical_routed.rpt
+| Design       : bd_0_wrapper
+| Device       : xc7z020clg484-1
+| Speed File   : -1
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++-------------------------------------------------------------------------------+----------------------------------------------------------------------------+------------+------------+---------+------+-----+--------+--------+------------+
+|                                    Instance                                   |                                   Module                                   | Total LUTs | Logic LUTs | LUTRAMs | SRLs | FFs | RAMB36 | RAMB18 | DSP Blocks |
++-------------------------------------------------------------------------------+----------------------------------------------------------------------------+------------+------------+---------+------+-----+--------+--------+------------+
+| bd_0_wrapper                                                                  |                                                                      (top) |        621 |        349 |     256 |   16 | 376 |      0 |      3 |         16 |
+|   bd_0_i                                                                      |                                                                       bd_0 |        621 |        349 |     256 |   16 | 376 |      0 |      3 |         16 |
+|     hls_inst                                                                  |                                                            bd_0_hls_inst_0 |        621 |        349 |     256 |   16 | 376 |      0 |      3 |         16 |
+|       inst                                                                    |                                                        bd_0_hls_inst_0_dct |        621 |        349 |     256 |   16 | 376 |      0 |      3 |         16 |
+|         (inst)                                                                |                                                        bd_0_hls_inst_0_dct |          1 |          1 |       0 |    0 |  18 |      0 |      0 |          0 |
+|         buf_2d_in_10_U                                                        |                                bd_0_hls_inst_0_dct_col_inbuf_RAM_AUTO_1R1W |         16 |          0 |      16 |    0 |   0 |      0 |      0 |          0 |
+|         buf_2d_in_11_U                                                        |                              bd_0_hls_inst_0_dct_col_inbuf_RAM_AUTO_1R1W_0 |         16 |          0 |      16 |    0 |   0 |      0 |      0 |          0 |
+|         buf_2d_in_12_U                                                        |                              bd_0_hls_inst_0_dct_col_inbuf_RAM_AUTO_1R1W_1 |         16 |          0 |      16 |    0 |   0 |      0 |      0 |          0 |
+|         buf_2d_in_13_U                                                        |                              bd_0_hls_inst_0_dct_col_inbuf_RAM_AUTO_1R1W_2 |         16 |          0 |      16 |    0 |   0 |      0 |      0 |          0 |
+|         buf_2d_in_14_U                                                        |                              bd_0_hls_inst_0_dct_col_inbuf_RAM_AUTO_1R1W_3 |         16 |          0 |      16 |    0 |   0 |      0 |      0 |          0 |
+|         buf_2d_in_8_U                                                         |                              bd_0_hls_inst_0_dct_col_inbuf_RAM_AUTO_1R1W_4 |         16 |          0 |      16 |    0 |   0 |      0 |      0 |          0 |
+|         buf_2d_in_9_U                                                         |                              bd_0_hls_inst_0_dct_col_inbuf_RAM_AUTO_1R1W_5 |         16 |          0 |      16 |    0 |   0 |      0 |      0 |          0 |
+|         buf_2d_in_U                                                           |                              bd_0_hls_inst_0_dct_col_inbuf_RAM_AUTO_1R1W_6 |         16 |          0 |      16 |    0 |   0 |      0 |      0 |          0 |
+|         buf_2d_out_U                                                          |                               bd_0_hls_inst_0_dct_row_outbuf_RAM_AUTO_1R1W |          0 |          0 |       0 |    0 |   0 |      0 |      1 |          0 |
+|         col_inbuf_1_U                                                         |                              bd_0_hls_inst_0_dct_col_inbuf_RAM_AUTO_1R1W_7 |         16 |          0 |      16 |    0 |   0 |      0 |      0 |          0 |
+|         col_inbuf_2_U                                                         |                              bd_0_hls_inst_0_dct_col_inbuf_RAM_AUTO_1R1W_8 |         16 |          0 |      16 |    0 |   0 |      0 |      0 |          0 |
+|         col_inbuf_3_U                                                         |                              bd_0_hls_inst_0_dct_col_inbuf_RAM_AUTO_1R1W_9 |         16 |          0 |      16 |    0 |   0 |      0 |      0 |          0 |
+|         col_inbuf_4_U                                                         |                             bd_0_hls_inst_0_dct_col_inbuf_RAM_AUTO_1R1W_10 |         16 |          0 |      16 |    0 |   0 |      0 |      0 |          0 |
+|         col_inbuf_5_U                                                         |                             bd_0_hls_inst_0_dct_col_inbuf_RAM_AUTO_1R1W_11 |         16 |          0 |      16 |    0 |   0 |      0 |      0 |          0 |
+|         col_inbuf_6_U                                                         |                             bd_0_hls_inst_0_dct_col_inbuf_RAM_AUTO_1R1W_12 |         16 |          0 |      16 |    0 |   0 |      0 |      0 |          0 |
+|         col_inbuf_7_U                                                         |                             bd_0_hls_inst_0_dct_col_inbuf_RAM_AUTO_1R1W_13 |         16 |          0 |      16 |    0 |   0 |      0 |      0 |          0 |
+|         col_inbuf_U                                                           |                             bd_0_hls_inst_0_dct_col_inbuf_RAM_AUTO_1R1W_14 |         16 |          0 |      16 |    0 |   0 |      0 |      0 |          0 |
+|         col_outbuf_U                                                          |                            bd_0_hls_inst_0_dct_row_outbuf_RAM_AUTO_1R1W_15 |          0 |          0 |       0 |    0 |   0 |      0 |      1 |          0 |
+|         dct_1d_dct_coeff_table_0_U                                            |                   bd_0_hls_inst_0_dct_dct_1d_dct_coeff_table_0_ROM_AUTO_1R |          1 |          1 |       0 |    0 |  13 |      0 |      0 |          0 |
+|         dct_1d_dct_coeff_table_1_U                                            |                   bd_0_hls_inst_0_dct_dct_1d_dct_coeff_table_1_ROM_AUTO_1R |          0 |          0 |       0 |    0 |  11 |      0 |      0 |          0 |
+|         dct_1d_dct_coeff_table_2_U                                            |                   bd_0_hls_inst_0_dct_dct_1d_dct_coeff_table_2_ROM_AUTO_1R |          1 |          1 |       0 |    0 |  12 |      0 |      0 |          0 |
+|         dct_1d_dct_coeff_table_3_U                                            |                   bd_0_hls_inst_0_dct_dct_1d_dct_coeff_table_3_ROM_AUTO_1R |          1 |          1 |       0 |    0 |  10 |      0 |      0 |          0 |
+|         grp_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop_fu_190                   |               bd_0_hls_inst_0_dct_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop |        157 |        149 |       0 |    8 |  82 |      0 |      0 |          8 |
+|           (grp_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop_fu_190)               |               bd_0_hls_inst_0_dct_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop |        119 |        111 |       0 |    8 |  80 |      0 |      0 |          0 |
+|           flow_control_loop_pipe_sequential_init_U                            |              bd_0_hls_inst_0_dct_flow_control_loop_pipe_sequential_init_25 |         11 |         11 |       0 |    0 |   2 |      0 |      0 |          0 |
+|           mac_muladd_16s_15s_13ns_29_4_1_U52                                  |                      bd_0_hls_inst_0_dct_mac_muladd_16s_15s_13ns_29_4_1_26 |         11 |         11 |       0 |    0 |   0 |      0 |      0 |          1 |
+|             dct_mac_muladd_16s_15s_13ns_29_4_1_DSP48_0_U                      |              bd_0_hls_inst_0_dct_mac_muladd_16s_15s_13ns_29_4_1_DSP48_0_35 |         11 |         11 |       0 |    0 |   0 |      0 |      0 |          1 |
+|           mac_muladd_16s_15s_29ns_29_4_1_U54                                  |                      bd_0_hls_inst_0_dct_mac_muladd_16s_15s_29ns_29_4_1_27 |          6 |          6 |       0 |    0 |   0 |      0 |      0 |          1 |
+|             dct_mac_muladd_16s_15s_29ns_29_4_1_DSP48_0_U                      |              bd_0_hls_inst_0_dct_mac_muladd_16s_15s_29ns_29_4_1_DSP48_0_34 |          6 |          6 |       0 |    0 |   0 |      0 |      0 |          1 |
+|           mac_muladd_16s_15s_29s_29_4_1_U53                                   |                       bd_0_hls_inst_0_dct_mac_muladd_16s_15s_29s_29_4_1_28 |         11 |         11 |       0 |    0 |   0 |      0 |      0 |          2 |
+|             dct_mac_muladd_16s_15s_29s_29_4_1_DSP48_0_U                       |               bd_0_hls_inst_0_dct_mac_muladd_16s_15s_29s_29_4_1_DSP48_0_33 |         11 |         11 |       0 |    0 |   0 |      0 |      0 |          2 |
+|           mac_muladd_16s_15s_29s_29_4_1_U55                                   |                       bd_0_hls_inst_0_dct_mac_muladd_16s_15s_29s_29_4_1_29 |          0 |          0 |       0 |    0 |   0 |      0 |      0 |          2 |
+|             dct_mac_muladd_16s_15s_29s_29_4_1_DSP48_0_U                       |               bd_0_hls_inst_0_dct_mac_muladd_16s_15s_29s_29_4_1_DSP48_0_32 |          0 |          0 |       0 |    0 |   0 |      0 |      0 |          2 |
+|           mac_muladd_16s_15s_29s_29_4_1_U56                                   |                       bd_0_hls_inst_0_dct_mac_muladd_16s_15s_29s_29_4_1_30 |          1 |          1 |       0 |    0 |   0 |      0 |      0 |          2 |
+|             dct_mac_muladd_16s_15s_29s_29_4_1_DSP48_0_U                       |               bd_0_hls_inst_0_dct_mac_muladd_16s_15s_29s_29_4_1_DSP48_0_31 |          1 |          1 |       0 |    0 |   0 |      0 |      0 |          2 |
+|         grp_dct_Pipeline_RD_Loop_Row_RD_Loop_Col_fu_126                       |                   bd_0_hls_inst_0_dct_dct_Pipeline_RD_Loop_Row_RD_Loop_Col |         28 |         28 |       0 |    0 |  36 |      0 |      0 |          0 |
+|           (grp_dct_Pipeline_RD_Loop_Row_RD_Loop_Col_fu_126)                   |                   bd_0_hls_inst_0_dct_dct_Pipeline_RD_Loop_Row_RD_Loop_Col |         16 |         16 |       0 |    0 |  34 |      0 |      0 |          0 |
+|           flow_control_loop_pipe_sequential_init_U                            |              bd_0_hls_inst_0_dct_flow_control_loop_pipe_sequential_init_24 |         12 |         12 |       0 |    0 |   2 |      0 |      0 |          0 |
+|         grp_dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop_fu_148                   |               bd_0_hls_inst_0_dct_dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop |        104 |         96 |       0 |    8 |  86 |      0 |      0 |          8 |
+|           (grp_dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop_fu_148)               |               bd_0_hls_inst_0_dct_dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop |         89 |         81 |       0 |    8 |  84 |      0 |      0 |          0 |
+|           flow_control_loop_pipe_sequential_init_U                            |              bd_0_hls_inst_0_dct_flow_control_loop_pipe_sequential_init_19 |         11 |         11 |       0 |    0 |   2 |      0 |      0 |          0 |
+|           mac_muladd_16s_15s_13ns_29_4_1_U13                                  |                         bd_0_hls_inst_0_dct_mac_muladd_16s_15s_13ns_29_4_1 |          0 |          0 |       0 |    0 |   0 |      0 |      0 |          1 |
+|             dct_mac_muladd_16s_15s_13ns_29_4_1_DSP48_0_U                      |                 bd_0_hls_inst_0_dct_mac_muladd_16s_15s_13ns_29_4_1_DSP48_0 |          0 |          0 |       0 |    0 |   0 |      0 |      0 |          1 |
+|           mac_muladd_16s_15s_29ns_29_4_1_U15                                  |                         bd_0_hls_inst_0_dct_mac_muladd_16s_15s_29ns_29_4_1 |          0 |          0 |       0 |    0 |   0 |      0 |      0 |          1 |
+|             dct_mac_muladd_16s_15s_29ns_29_4_1_DSP48_0_U                      |                 bd_0_hls_inst_0_dct_mac_muladd_16s_15s_29ns_29_4_1_DSP48_0 |          0 |          0 |       0 |    0 |   0 |      0 |      0 |          1 |
+|           mac_muladd_16s_15s_29s_29_4_1_U14                                   |                          bd_0_hls_inst_0_dct_mac_muladd_16s_15s_29s_29_4_1 |          3 |          3 |       0 |    0 |   0 |      0 |      0 |          2 |
+|             dct_mac_muladd_16s_15s_29s_29_4_1_DSP48_0_U                       |               bd_0_hls_inst_0_dct_mac_muladd_16s_15s_29s_29_4_1_DSP48_0_23 |          3 |          3 |       0 |    0 |   0 |      0 |      0 |          2 |
+|           mac_muladd_16s_15s_29s_29_4_1_U16                                   |                       bd_0_hls_inst_0_dct_mac_muladd_16s_15s_29s_29_4_1_20 |          0 |          0 |       0 |    0 |   0 |      0 |      0 |          2 |
+|             dct_mac_muladd_16s_15s_29s_29_4_1_DSP48_0_U                       |               bd_0_hls_inst_0_dct_mac_muladd_16s_15s_29s_29_4_1_DSP48_0_22 |          0 |          0 |       0 |    0 |   0 |      0 |      0 |          2 |
+|           mac_muladd_16s_15s_29s_29_4_1_U17                                   |                       bd_0_hls_inst_0_dct_mac_muladd_16s_15s_29s_29_4_1_21 |          1 |          1 |       0 |    0 |   0 |      0 |      0 |          2 |
+|             dct_mac_muladd_16s_15s_29s_29_4_1_DSP48_0_U                       |                  bd_0_hls_inst_0_dct_mac_muladd_16s_15s_29s_29_4_1_DSP48_0 |          1 |          1 |       0 |    0 |   0 |      0 |      0 |          2 |
+|         grp_dct_Pipeline_WR_Loop_Row_WR_Loop_Col_fu_225                       |                   bd_0_hls_inst_0_dct_dct_Pipeline_WR_Loop_Row_WR_Loop_Col |         23 |         23 |       0 |    0 |  33 |      0 |      0 |          0 |
+|           (grp_dct_Pipeline_WR_Loop_Row_WR_Loop_Col_fu_225)                   |                   bd_0_hls_inst_0_dct_dct_Pipeline_WR_Loop_Row_WR_Loop_Col |         11 |         11 |       0 |    0 |  31 |      0 |      0 |          0 |
+|           flow_control_loop_pipe_sequential_init_U                            |              bd_0_hls_inst_0_dct_flow_control_loop_pipe_sequential_init_18 |         12 |         12 |       0 |    0 |   2 |      0 |      0 |          0 |
+|         grp_dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop_fu_219     | bd_0_hls_inst_0_dct_dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop |         26 |         26 |       0 |    0 |  40 |      0 |      0 |          0 |
+|           (grp_dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop_fu_219) | bd_0_hls_inst_0_dct_dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop |         15 |         15 |       0 |    0 |  38 |      0 |      0 |          0 |
+|           flow_control_loop_pipe_sequential_init_U                            |              bd_0_hls_inst_0_dct_flow_control_loop_pipe_sequential_init_17 |         11 |         11 |       0 |    0 |   2 |      0 |      0 |          0 |
+|         grp_dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop_fu_177     | bd_0_hls_inst_0_dct_dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop |         30 |         30 |       0 |    0 |  35 |      0 |      0 |          0 |
+|           (grp_dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop_fu_177) | bd_0_hls_inst_0_dct_dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop |         19 |         19 |       0 |    0 |  33 |      0 |      0 |          0 |
+|           flow_control_loop_pipe_sequential_init_U                            |                 bd_0_hls_inst_0_dct_flow_control_loop_pipe_sequential_init |         11 |         11 |       0 |    0 |   2 |      0 |      0 |          0 |
+|         row_outbuf_U                                                          |                            bd_0_hls_inst_0_dct_row_outbuf_RAM_AUTO_1R1W_16 |          0 |          0 |       0 |    0 |   0 |      0 |      1 |          0 |
++-------------------------------------------------------------------------------+----------------------------------------------------------------------------+------------+------------+---------+------+-----+--------+--------+------------+
+* Note: The sum of lower-level cells may be larger than their parent cells total, due to cross-hierarchy LUT combining
+
+

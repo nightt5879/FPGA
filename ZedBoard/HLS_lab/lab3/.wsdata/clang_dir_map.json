@@ -1,0 +1,7 @@
+{
+  "workspaceRoot": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab3",
+  "mapping": {
+    "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS\\source\\lab3\\dct.c": "dct",
+    "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS\\source\\lab3\\dct_test.c": "dct"
+  }
+}

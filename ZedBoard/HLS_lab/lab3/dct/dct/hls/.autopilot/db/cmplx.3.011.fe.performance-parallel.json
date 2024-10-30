@@ -1,0 +1,20 @@
+{
+  "0": {
+    "basicblocks": 25,
+    "calls": "",
+    "file": "dct.c",
+    "fileloc": 78,
+    "instructions": 231,
+    "loads": {
+      "G": 16,
+      "L": 19,
+      "T": 1
+    },
+    "name": "dct",
+    "stores": {
+      "L": 5,
+      "T": 1
+    },
+    "total_instructions": 231
+  }
+}
