@@ -1,0 +1,626 @@
+[
+    {
+        "name": "dct",
+        "df_function": "%F212",
+        "df_type": "Function",
+        "project": "SLX",
+        "processes": {
+            "1": {
+                "id": "1",
+                "name": "Artificial<Start>",
+                "src_range": {
+                    "start_loc": {
+                        "file": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS\\source\\lab3\\dct.c",
+                        "line": 78,
+                        "column": 1
+                    },
+                    "end_loc": {
+                        "file": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS\\source\\lab3\\dct.c",
+                        "line": 91,
+                        "column": 1
+                    }
+                },
+                "display_name": "<START>",
+                "kind": "start"
+            },
+            "2": {
+                "id": "2",
+                "name": "Artificial<End>",
+                "src_range": {
+                    "start_loc": {
+                        "file": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS\\source\\lab3\\dct.c",
+                        "line": 78,
+                        "column": 1
+                    },
+                    "end_loc": {
+                        "file": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS\\source\\lab3\\dct.c",
+                        "line": 91,
+                        "column": 1
+                    }
+                },
+                "display_name": "<END>",
+                "kind": "end"
+            },
+            "3": {
+                "id": "3",
+                "name": "Region<OutlineCall(R2 dct) BB 'codeRepl' [Atomic,Call] 'Outline_T3_F212_R2_Call'>",
+                "src_range": {
+                    "start_loc": {
+                        "file": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS\\source\\lab3\\dct.c",
+                        "line": 85,
+                        "column": 4
+                    },
+                    "end_loc": {
+                        "file": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS\\source\\lab3\\dct.c",
+                        "line": 85,
+                        "column": 30
+                    }
+                },
+                "display_name": "Process 1",
+                "io_signatures": {
+                    "has_unresolved_accesses": false,
+                    "accesses": [
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS\\source\\lab3\\dct.c",
+                                    "line": 81,
+                                    "column": 10
+                                },
+                                "id": "VId_41_[?(?,128)][?(?,16)]",
+                                "name": "buf_2d_in[*][*]",
+                                "display_name": "short buf_2d_in[8][8]"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 128,
+                                                "is_exact": true
+                                            }
+                                        ]
+                                    },
+                                    "instr": "store",
+                                    "exec_count": 64
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS\\source\\lab3\\dct.c",
+                                    "line": 78,
+                                    "column": 0
+                                },
+                                "id": "VId_39_[?(?,16)]dc",
+                                "name": "input[*]",
+                                "display_name": "short input[64]"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 128,
+                                                "is_exact": true
+                                            }
+                                        ]
+                                    },
+                                    "instr": "load",
+                                    "exec_count": 64
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Ptr",
+                            "has_alias": false,
+                            "arg_idx": 0
+                        }
+                    ]
+                },
+                "metrics": {
+                    "initiation_interval": 131
+                },
+                "subregions": [
+                    {
+                        "id": "%F217_R1",
+                        "description": "<function entry>",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS\\source\\lab3\\dct.c",
+                                "line": 85,
+                                "column": 21
+                            },
+                            "end_loc": {
+                                "file": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS\\source\\lab3\\dct.c",
+                                "line": 85,
+                                "column": 21
+                            }
+                        }
+                    },
+                    {
+                        "id": "%F217_R2",
+                        "description": "<call 'read_data'>",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS\\source\\lab3\\dct.c",
+                                "line": 85,
+                                "column": 4
+                            },
+                            "end_loc": {
+                                "file": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS\\source\\lab3\\dct.c",
+                                "line": 85,
+                                "column": 30
+                            }
+                        }
+                    }
+                ],
+                "subdataflow": [
+                    {
+                        "id": "%F213",
+                        "region_type": "Function",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS\\source\\lab3\\dct.c",
+                                "line": 85,
+                                "column": 4
+                            },
+                            "end_loc": {
+                                "file": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS\\source\\lab3\\dct.c",
+                                "line": 85,
+                                "column": 30
+                            }
+                        }
+                    }
+                ],
+                "guidance": [
+                    {
+                        "type": "CallGuidance",
+                        "ti": {
+                            "min": 130,
+                            "max": 130
+                        },
+                        "ureg_id": "%F213",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS\\source\\lab3\\dct.c",
+                                "line": 85,
+                                "column": 4
+                            },
+                            "end_loc": {
+                                "file": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS\\source\\lab3\\dct.c",
+                                "line": 85,
+                                "column": 30
+                            }
+                        }
+                    }
+                ]
+            },
+            "4": {
+                "id": "4",
+                "name": "Region<OutlineCall(R3 dct) BB 'codeRepl1' [Atomic,Call] 'Outline_T4_F212_R3_Call'>",
+                "src_range": {
+                    "start_loc": {
+                        "file": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS\\source\\lab3\\dct.c",
+                        "line": 87,
+                        "column": 4
+                    },
+                    "end_loc": {
+                        "file": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS\\source\\lab3\\dct.c",
+                        "line": 87,
+                        "column": 32
+                    }
+                },
+                "display_name": "Process 2",
+                "io_signatures": {
+                    "has_unresolved_accesses": false,
+                    "accesses": [
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS\\source\\lab3\\dct.c",
+                                    "line": 81,
+                                    "column": 10
+                                },
+                                "id": "VId_41_[?(?,128)][?(?,16)]",
+                                "name": "buf_2d_in[*][*]",
+                                "display_name": "short buf_2d_in[8][8]"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "load",
+                                    "exec_count": 512
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS\\source\\lab3\\dct.c",
+                                    "line": 82,
+                                    "column": 10
+                                },
+                                "id": "VId_42_[?(?,128)][?(?,16)]",
+                                "name": "buf_2d_out[*][*]",
+                                "display_name": "short buf_2d_out[8][8]"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 128,
+                                                "is_exact": true
+                                            }
+                                        ]
+                                    },
+                                    "instr": "store",
+                                    "exec_count": 64
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        }
+                    ]
+                },
+                "metrics": {
+                    "initiation_interval": 2342
+                },
+                "subregions": [
+                    {
+                        "id": "%F218_R1",
+                        "description": "<function entry>",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS\\source\\lab3\\dct.c",
+                                "line": 87,
+                                "column": 11
+                            },
+                            "end_loc": {
+                                "file": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS\\source\\lab3\\dct.c",
+                                "line": 87,
+                                "column": 22
+                            }
+                        }
+                    },
+                    {
+                        "id": "%F218_R2",
+                        "description": "<call 'dct_2d'>",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS\\source\\lab3\\dct.c",
+                                "line": 87,
+                                "column": 4
+                            },
+                            "end_loc": {
+                                "file": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS\\source\\lab3\\dct.c",
+                                "line": 87,
+                                "column": 32
+                            }
+                        }
+                    }
+                ],
+                "subdataflow": [
+                    {
+                        "id": "%F214",
+                        "region_type": "Function",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS\\source\\lab3\\dct.c",
+                                "line": 87,
+                                "column": 4
+                            },
+                            "end_loc": {
+                                "file": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS\\source\\lab3\\dct.c",
+                                "line": 87,
+                                "column": 32
+                            }
+                        }
+                    }
+                ],
+                "guidance": [
+                    {
+                        "type": "CallGuidance",
+                        "ti": {
+                            "min": 2341,
+                            "max": 2341
+                        },
+                        "ureg_id": "%F214",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS\\source\\lab3\\dct.c",
+                                "line": 87,
+                                "column": 4
+                            },
+                            "end_loc": {
+                                "file": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS\\source\\lab3\\dct.c",
+                                "line": 87,
+                                "column": 32
+                            }
+                        }
+                    }
+                ]
+            },
+            "5": {
+                "id": "5",
+                "name": "Region<OutlineCall(R4 dct) BB 'codeRepl2' [Atomic,Call] 'Outline_T5_F212_R4_Call'>",
+                "src_range": {
+                    "start_loc": {
+                        "file": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS\\source\\lab3\\dct.c",
+                        "line": 90,
+                        "column": 4
+                    },
+                    "end_loc": {
+                        "file": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS\\source\\lab3\\dct.c",
+                        "line": 90,
+                        "column": 33
+                    }
+                },
+                "display_name": "Process 3",
+                "io_signatures": {
+                    "has_unresolved_accesses": false,
+                    "accesses": [
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS\\source\\lab3\\dct.c",
+                                    "line": 82,
+                                    "column": 10
+                                },
+                                "id": "VId_42_[?(?,128)][?(?,16)]",
+                                "name": "buf_2d_out[*][*]",
+                                "display_name": "short buf_2d_out[8][8]"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 128,
+                                                "is_exact": true
+                                            }
+                                        ]
+                                    },
+                                    "instr": "load",
+                                    "exec_count": 64
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS\\source\\lab3\\dct.c",
+                                    "line": 78,
+                                    "column": 0
+                                },
+                                "id": "VId_40_[?(?,16)]dc",
+                                "name": "output[*]",
+                                "display_name": "short output[64]"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 128,
+                                                "is_exact": true
+                                            }
+                                        ]
+                                    },
+                                    "instr": "store",
+                                    "exec_count": 64
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false,
+                            "arg_idx": 1
+                        }
+                    ]
+                },
+                "metrics": {
+                    "initiation_interval": 131
+                },
+                "subregions": [
+                    {
+                        "id": "%F219_R1",
+                        "description": "<function entry>",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS\\source\\lab3\\dct.c",
+                                "line": 90,
+                                "column": 15
+                            },
+                            "end_loc": {
+                                "file": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS\\source\\lab3\\dct.c",
+                                "line": 90,
+                                "column": 15
+                            }
+                        }
+                    },
+                    {
+                        "id": "%F219_R2",
+                        "description": "<call 'write_data'>",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS\\source\\lab3\\dct.c",
+                                "line": 90,
+                                "column": 4
+                            },
+                            "end_loc": {
+                                "file": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS\\source\\lab3\\dct.c",
+                                "line": 90,
+                                "column": 33
+                            }
+                        }
+                    }
+                ],
+                "subdataflow": [
+                    {
+                        "id": "%F215",
+                        "region_type": "Function",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS\\source\\lab3\\dct.c",
+                                "line": 90,
+                                "column": 4
+                            },
+                            "end_loc": {
+                                "file": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS\\source\\lab3\\dct.c",
+                                "line": 90,
+                                "column": 33
+                            }
+                        }
+                    }
+                ],
+                "guidance": [
+                    {
+                        "type": "CallGuidance",
+                        "ti": {
+                            "min": 130,
+                            "max": 130
+                        },
+                        "ureg_id": "%F215",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS\\source\\lab3\\dct.c",
+                                "line": 90,
+                                "column": 4
+                            },
+                            "end_loc": {
+                                "file": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS\\source\\lab3\\dct.c",
+                                "line": 90,
+                                "column": 33
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "channels": {
+            "input[*]_RAW_1_3_#0": {
+                "name": "input[*]_RAW_1_3_#0",
+                "variable_id": "VId_39_[?(?,16)]dc",
+                "variable_name": "input[*]",
+                "declaration": "short input[64]",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 16,
+                "src_loc": {
+                    "file": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS\\source\\lab3\\dct.c",
+                    "line": 78,
+                    "column": 0
+                },
+                "metrics": {
+                    "volume": 1024,
+                    "channel_rate": 4.372331340734415E-1
+                },
+                "source": "1",
+                "sink": "3"
+            },
+            "buf_2d_in[*][*]_RAW_3_4_#1": {
+                "name": "buf_2d_in[*][*]_RAW_3_4_#1",
+                "variable_id": "VId_41_[?(?,128)][?(?,16)]",
+                "variable_name": "buf_2d_in[*][*]",
+                "declaration": "short buf_2d_in[8][8]",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 16,
+                "src_loc": {
+                    "file": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS\\source\\lab3\\dct.c",
+                    "line": 81,
+                    "column": 10
+                },
+                "metrics": {
+                    "volume": 8192,
+                    "channel_rate": 3.497865072587532E0
+                },
+                "source": "3",
+                "sink": "4"
+            },
+            "buf_2d_out[*][*]_RAW_4_5_#2": {
+                "name": "buf_2d_out[*][*]_RAW_4_5_#2",
+                "variable_id": "VId_42_[?(?,128)][?(?,16)]",
+                "variable_name": "buf_2d_out[*][*]",
+                "declaration": "short buf_2d_out[8][8]",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 16,
+                "src_loc": {
+                    "file": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS\\source\\lab3\\dct.c",
+                    "line": 82,
+                    "column": 10
+                },
+                "metrics": {
+                    "volume": 1024,
+                    "channel_rate": 4.372331340734415E-1
+                },
+                "source": "4",
+                "sink": "5"
+            },
+            "output[*]_RAW_5_2_#3": {
+                "name": "output[*]_RAW_5_2_#3",
+                "variable_id": "VId_40_[?(?,16)]dc",
+                "variable_name": "output[*]",
+                "declaration": "short output[64]",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 16,
+                "src_loc": {
+                    "file": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS\\source\\lab3\\dct.c",
+                    "line": 78,
+                    "column": 0
+                },
+                "metrics": {
+                    "volume": 1024,
+                    "channel_rate": 4.372331340734415E-1
+                },
+                "source": "5",
+                "sink": "2"
+            }
+        },
+        "control": [
+            {
+                "source": "3",
+                "sink": "4"
+            },
+            {
+                "source": "4",
+                "sink": "5"
+            },
+            {
+                "source": "1",
+                "sink": "3"
+            },
+            {
+                "source": "5",
+                "sink": "2"
+            }
+        ]
+    }
+]

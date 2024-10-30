@@ -1,0 +1,271 @@
+<ENTRY>
+{
+ "thisFile": "E:/robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab3\\dct\\dct\\dct.hlsrun_impl_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "10/30/24 16:29:58",
+ "timestampMillis": "3700145013",
+ "buildStep": {
+  "cmdId": "fc17b8b4-4faa-4453-8c76-b9629ca74c5c",
+  "name": "vitis-run",
+  "logFile": "E:/robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab3\\dct\\dct\\logs\\dct.steps.log",
+  "commandLine": "E:/vivado/Vitis/2024.1/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --impl --config E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab3\\dct\\hls_config.cfg --work_dir dct ",
+  "args": [
+   "--mode",
+   "hls",
+   "--impl",
+   "--config",
+   "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab3\\dct\\hls_config.cfg",
+   "--work_dir",
+   "dct"
+  ],
+  "iniFiles": [],
+  "cwd": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab3\\dct"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "10/30/24 16:29:58",
+ "timestampMillis": "3700145013",
+ "status": {
+  "cmdId": "fc17b8b4-4faa-4453-8c76-b9629ca74c5c",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "10/30/24 16:30:05",
+ "timestampMillis": "3700152272",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_IMPL",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "dct",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "E:/robot\\project\\FPGA\\ZedBoard\\HLS_lab\\High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS\\source\\lab3\\dct.c"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "10/30/24 16:30:05",
+ "timestampMillis": "3700152273",
+ "buildStep": {
+  "cmdId": "e27e2a83-18bd-4879-a6e7-8a4265230dca",
+  "name": "export_design",
+  "logFile": "E:/robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab3\\dct\\dct\\hls\\hls.log",
+  "commandLine": "export_design -flow impl",
+  "args": [
+   "-flow",
+   "impl"
+  ],
+  "iniFiles": [],
+  "cwd": "E:\\robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab3\\dct"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "10/30/24 16:30:05",
+ "timestampMillis": "3700152274",
+ "status": {
+  "cmdId": "e27e2a83-18bd-4879-a6e7-8a4265230dca",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "10/30/24 16:30:05",
+ "timestampMillis": "3700152275",
+ "report": {
+  "path": "E:/robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab3\\dct\\dct\\hls\\impl\\verilog",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "10/30/24 16:30:05",
+ "timestampMillis": "3700152276",
+ "report": {
+  "path": "E:/robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab3\\dct\\dct\\hls\\impl\\report\\verilog\\export_syn.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "10/30/24 16:30:05",
+ "timestampMillis": "3700152276",
+ "report": {
+  "path": "E:/robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab3\\dct\\dct\\hls\\impl\\report\\verilog\\export_syn.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "10/30/24 16:30:05",
+ "timestampMillis": "3700152276",
+ "report": {
+  "path": "E:/robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab3\\dct\\dct\\hls\\impl\\verilog",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "10/30/24 16:30:05",
+ "timestampMillis": "3700152277",
+ "report": {
+  "path": "E:/robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab3\\dct\\dct\\hls\\impl\\report\\verilog\\export_impl.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "10/30/24 16:30:05",
+ "timestampMillis": "3700152277",
+ "report": {
+  "path": "E:/robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab3\\dct\\dct\\hls\\impl\\report\\verilog\\export_impl.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "10/30/24 16:36:48",
+ "timestampMillis": "3700555982",
+ "report": {
+  "path": "E:/robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab3\\dct\\dct\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "10/30/24 16:36:48",
+ "timestampMillis": "3700555983",
+ "report": {
+  "path": "E:/robot\\project\\FPGA\\ZedBoard\\HLS_lab\\lab3\\dct\\dct\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "10/30/24 16:36:48",
+ "timestampMillis": "3700555983",
+ "status": {
+  "cmdId": "e27e2a83-18bd-4879-a6e7-8a4265230dca",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "10/30/24 16:36:49",
+ "timestampMillis": "3700556329",
+ "status": {
+  "cmdId": "fc17b8b4-4faa-4453-8c76-b9629ca74c5c",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "10/30/24 16:36:49",
+ "timestampMillis": "3700556331",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "10/30/24 16:36:49",
+ "timestampMillis": "3700556331",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

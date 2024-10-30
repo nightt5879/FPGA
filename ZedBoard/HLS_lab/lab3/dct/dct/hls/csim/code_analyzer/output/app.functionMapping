@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<cpuFpgaMapping:cpuFpgaMapping xmlns:cpuFpgaMapping="http://www.xilinx.com/act/cpuFpgaMapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.xilinx.com/act/cpuFpgaMapping cpuFPGAMapping.xsd">
+  <Function id="_f200" name="main">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f202" name="fscanf">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f204" name="printf">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f208" name="dct_1d">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f209" name="dct_2d">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f210" name="read_data">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f211" name="write_data">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f212" name="dct">
+    <MappedTo editable="true">
+      <Partition>FPGA</Partition>
+    </MappedTo>
+    <TopLevel>true</TopLevel>
+    <IsCalledByHwFn>false</IsCalledByHwFn>
+    <Interfaces>
+      <Return>
+        <Default/>
+      </Return>
+      <Argument declaration="input (short*)" id="_v39" name="input">
+        <Default/>
+      </Argument>
+      <Argument declaration="output (short*)" id="_v40" name="output">
+        <Default/>
+      </Argument>
+    </Interfaces>
+  </Function>
+  <Function id="_f213" name="read_data">
+    <MappedTo editable="true">
+      <Partition>FPGA</Partition>
+    </MappedTo>
+    <TopLevel>false</TopLevel>
+    <IsCalledByHwFn>true</IsCalledByHwFn>
+  </Function>
+  <Function id="_f214" name="dct_2d">
+    <MappedTo editable="true">
+      <Partition>FPGA</Partition>
+    </MappedTo>
+    <TopLevel>false</TopLevel>
+    <IsCalledByHwFn>true</IsCalledByHwFn>
+  </Function>
+  <Function id="_f215" name="write_data">
+    <MappedTo editable="true">
+      <Partition>FPGA</Partition>
+    </MappedTo>
+    <TopLevel>false</TopLevel>
+    <IsCalledByHwFn>true</IsCalledByHwFn>
+  </Function>
+  <Function id="_f216" name="dct_1d">
+    <MappedTo editable="true">
+      <Partition>FPGA</Partition>
+    </MappedTo>
+    <TopLevel>false</TopLevel>
+    <IsCalledByHwFn>true</IsCalledByHwFn>
+  </Function>
+</cpuFpgaMapping:cpuFpgaMapping>

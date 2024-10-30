@@ -1,0 +1,361 @@
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c, 
+                   Line: 25, Column: 0 }
+Function:        dct_2d
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          dct_1d
+    DebugLoc:        { File: ../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c, 
+                       Line: 5, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          dct_2d
+    DebugLoc:        { File: ../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c, 
+                       Line: 25, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c, 
+                   Line: 79, Column: 0 }
+Function:        dct
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          read_data
+    DebugLoc:        { File: ../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c, 
+                       Line: 55, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          dct
+    DebugLoc:        { File: ../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c, 
+                       Line: 79, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c, 
+                   Line: 79, Column: 0 }
+Function:        dct
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          dct_2d
+    DebugLoc:        { File: ../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c, 
+                       Line: 25, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          dct
+    DebugLoc:        { File: ../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c, 
+                       Line: 79, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c, 
+                   Line: 79, Column: 0 }
+Function:        dct
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          write_data
+    DebugLoc:        { File: ../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c, 
+                       Line: 67, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          dct
+    DebugLoc:        { File: ../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c, 
+                       Line: 79, Column: 0 }
+  - String:          ''''
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        RD_Loop_Col
+  - String:          '> at '
+  - LoopLoc:         '../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c:61:7'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        DCT_Outer_Loop
+  - String:          '> at '
+  - LoopLoc:         '../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c:13:4'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        Xpose_Row_Inner_Loop
+  - String:          '> at '
+  - LoopLoc:         '../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c:39:7'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        DCT_Outer_Loop
+  - String:          '> at '
+  - LoopLoc:         '../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c:13:4'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        Xpose_Col_Inner_Loop
+  - String:          '> at '
+  - LoopLoc:         '../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c:50:7'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        WR_Loop_Col
+  - String:          '> at '
+  - LoopLoc:         '../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c:73:7'
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c, 
+                   Line: 15, Column: 7 }
+Function:        dct
+Args:            
+  - String:          'Loop '''
+  - LoopName:        DCT_Inner_Loop
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c, 
+                   Line: 15, Column: 7 }
+Function:        dct
+Args:            
+  - String:          'Loop '''
+  - LoopName:        DCT_Inner_Loop
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c, 
+                   Line: 79, Column: 0 }
+Function:        dct
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        DCT_Inner_Loop
+  - String:          ''' ('
+  - LoopLoc:         '../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c:15:7'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dct
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c, 
+                   Line: 79, Column: 0 }
+Function:        dct
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        DCT_Inner_Loop
+  - String:          ''' ('
+  - LoopLoc:         '../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c:15:7'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dct
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: ../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c, 
+                   Line: 8, Column: 0 }
+Function:        dct
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=2 type=complete  variable=dct_1d.dct_coeff_table'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  dct
+  - String:          ' '
+  - varLoc:          '../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c:8:0'
+  - String:          ' '
+  - VarName:         dct_1d.dct_coeff_table
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: ../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c, 
+                   Line: 8, Column: 0 }
+Function:        dct
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '2'
+  - String:          ''' for array '''
+  - Name:            dct_1d.dct_coeff_table
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: ../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c, 
+                   Line: 27, Column: 33 }
+Function:        dct
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=2 type=complete  variable=col_inbuf.i'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  dct
+  - String:          ' '
+  - varLoc:          '../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c:27:33'
+  - String:          ' '
+  - VarName:         col_inbuf.i
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: ../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c, 
+                   Line: 27, Column: 33 }
+Function:        dct
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '2'
+  - String:          ''' for array '''
+  - Name:            col_inbuf.i
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: ../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c, 
+                   Line: 81, Column: 10 }
+Function:        dct
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=2 type=complete  variable=buf_2d_in'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  dct
+  - String:          ' '
+  - varLoc:          '../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c:81:10'
+  - String:          ' '
+  - VarName:         buf_2d_in
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: ../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c, 
+                   Line: 81, Column: 10 }
+Function:        dct
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '2'
+  - String:          ''' for array '''
+  - Name:            buf_2d_in
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c, 
+                   Line: 8, Column: 0 }
+Function:        dct
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          dct_1d.dct_coeff_table
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c, 
+                   Line: 27, Column: 33 }
+Function:        dct
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          col_inbuf.i
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c, 
+                   Line: 81, Column: 10 }
+Function:        dct
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          buf_2d_in
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...

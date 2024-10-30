@@ -1,0 +1,325 @@
+
+
+================================================================
+== Vitis HLS Report for 'yuv_filter_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y'
+================================================================
+* Date:           Wed Oct 30 15:20:21 2024
+
+* Version:        2024.1 (Build 5069499 on May 21 2024)
+* Project:        yuv_filter.prj
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  6.960 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+------------+-----------+------------+-----+------------+-----------------------------------------------+
+    |   Latency (cycles)   |   Latency (absolute)   |     Interval     |                    Pipeline                   |
+    |   min   |     max    |    min    |     max    | min |     max    |                      Type                     |
+    +---------+------------+-----------+------------+-----+------------+-----------------------------------------------+
+    |        2|  4294836235|  20.000 ns|  42.948 sec|    1|  4294836226|  loop auto-rewind stp(delay=0 clock cycles(s))|
+    +---------+------------+-----------+------------+-----+------------+-----------------------------------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +---------------------------------+---------+------------+----------+-----------+-----------+----------------+----------+
+        |                                 |   Latency (cycles)   | Iteration|  Initiation Interval  |      Trip      |          |
+        |            Loop Name            |   min   |     max    |  Latency |  achieved |   target  |      Count     | Pipelined|
+        +---------------------------------+---------+------------+----------+-----------+-----------+----------------+----------+
+        |- YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y  |        0|  4294836233|        10|          1|          1|  0 ~ 4294836225|       yes|
+        +---------------------------------+---------+------------+----------+-----------+-----------+----------------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 10
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 10
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 10, States = { 1 2 3 4 5 6 7 8 9 10 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 5.72>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%y = alloca i32 1" [yuv_filter.c:98->yuv_filter.c:51]   --->   Operation 13 'alloca' 'y' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%x = alloca i32 1" [yuv_filter.c:98->yuv_filter.c:51]   --->   Operation 14 'alloca' 'x' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%indvar_flatten13 = alloca i32 1"   --->   Operation 15 'alloca' 'indvar_flatten13' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %out_channels_ch3, void @empty, i32 0, i32 0, void @empty_0, i32 4294967295, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 16 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %out_channels_ch2, void @empty, i32 0, i32 0, void @empty_0, i32 4294967295, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 17 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %out_channels_ch1, void @empty, i32 0, i32 0, void @empty_0, i32 4294967295, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 18 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%height_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %height"   --->   Operation 19 'read' 'height_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%mul_ln30_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %mul_ln30"   --->   Operation 20 'read' 'mul_ln30_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (1.58ns)   --->   "%store_ln0 = store i32 0, i32 %indvar_flatten13"   --->   Operation 21 'store' 'store_ln0' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 22 [1/1] (1.58ns)   --->   "%store_ln98 = store i16 0, i16 %x" [yuv_filter.c:98->yuv_filter.c:51]   --->   Operation 22 'store' 'store_ln98' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 23 [1/1] (1.58ns)   --->   "%store_ln98 = store i16 0, i16 %y" [yuv_filter.c:98->yuv_filter.c:51]   --->   Operation 23 'store' 'store_ln98' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.body10.i"   --->   Operation 24 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%indvar_flatten13_load = load i32 %indvar_flatten13" [yuv_filter.c:115->yuv_filter.c:51]   --->   Operation 25 'load' 'indvar_flatten13_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (2.55ns)   --->   "%icmp_ln115 = icmp_eq  i32 %indvar_flatten13_load, i32 %mul_ln30_read" [yuv_filter.c:115->yuv_filter.c:51]   --->   Operation 26 'icmp' 'icmp_ln115' <Predicate = true> <Delay = 2.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 27 [1/1] (2.55ns)   --->   "%add_ln115_1 = add i32 %indvar_flatten13_load, i32 1" [yuv_filter.c:115->yuv_filter.c:51]   --->   Operation 27 'add' 'add_ln115_1' <Predicate = true> <Delay = 2.55> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%br_ln115 = br i1 %icmp_ln115, void %for.inc174.i.loopexit, void %yuv2rgb.exit.loopexit.exitStub" [yuv_filter.c:115->yuv_filter.c:51]   --->   Operation 28 'br' 'br_ln115' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (1.58ns)   --->   "%store_ln115 = store i32 %add_ln115_1, i32 %indvar_flatten13" [yuv_filter.c:115->yuv_filter.c:51]   --->   Operation 29 'store' 'store_ln115' <Predicate = (!icmp_ln115)> <Delay = 1.58>
+
+State 2 <SV = 1> <Delay = 6.96>
+ST_2 : Operation 30 [1/1] (0.00ns)   --->   "%y_load = load i16 %y" [yuv_filter.c:118->yuv_filter.c:51]   --->   Operation 30 'load' 'y_load' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 31 [1/1] (0.00ns)   --->   "%x_load = load i16 %x" [yuv_filter.c:115->yuv_filter.c:51]   --->   Operation 31 'load' 'x_load' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 32 [1/1] (2.07ns)   --->   "%add_ln115 = add i16 %x_load, i16 1" [yuv_filter.c:115->yuv_filter.c:51]   --->   Operation 32 'add' 'add_ln115' <Predicate = true> <Delay = 2.07> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 33 [1/1] (2.07ns)   --->   "%icmp_ln118 = icmp_eq  i16 %y_load, i16 %height_read" [yuv_filter.c:118->yuv_filter.c:51]   --->   Operation 33 'icmp' 'icmp_ln118' <Predicate = true> <Delay = 2.07> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 34 [1/1] (0.80ns)   --->   "%select_ln98 = select i1 %icmp_ln118, i16 0, i16 %y_load" [yuv_filter.c:98->yuv_filter.c:51]   --->   Operation 34 'select' 'select_ln98' <Predicate = true> <Delay = 0.80> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 35 [1/1] (0.80ns)   --->   "%select_ln115 = select i1 %icmp_ln118, i16 %add_ln115, i16 %x_load" [yuv_filter.c:115->yuv_filter.c:51]   --->   Operation 35 'select' 'select_ln115' <Predicate = true> <Delay = 0.80> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 36 [1/1] (0.00ns)   --->   "%trunc_ln129 = trunc i16 %select_ln115" [yuv_filter.c:129->yuv_filter.c:51]   --->   Operation 36 'trunc' 'trunc_ln129' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 37 [1/1] (0.00ns)   --->   "%p_shl2 = bitconcatenate i22 @_ssdm_op_BitConcatenate.i22.i12.i10, i12 %trunc_ln129, i10 0" [yuv_filter.c:118->yuv_filter.c:51]   --->   Operation 37 'bitconcatenate' 'p_shl2' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 38 [1/1] (0.00ns)   --->   "%trunc_ln129_1 = trunc i16 %select_ln115" [yuv_filter.c:129->yuv_filter.c:51]   --->   Operation 38 'trunc' 'trunc_ln129_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 39 [1/1] (0.00ns)   --->   "%p_shl3 = bitconcatenate i22 @_ssdm_op_BitConcatenate.i22.i14.i8, i14 %trunc_ln129_1, i8 0" [yuv_filter.c:118->yuv_filter.c:51]   --->   Operation 39 'bitconcatenate' 'p_shl3' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 40 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln118_1 = add i22 %p_shl2, i22 %p_shl3" [yuv_filter.c:118->yuv_filter.c:51]   --->   Operation 40 'add' 'add_ln118_1' <Predicate = true> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.98> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_2 : Operation 41 [1/1] (0.00ns)   --->   "%zext_ln129 = zext i16 %select_ln98" [yuv_filter.c:129->yuv_filter.c:51]   --->   Operation 41 'zext' 'zext_ln129' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 42 [1/1] (4.07ns) (root node of TernaryAdder)   --->   "%add_ln129 = add i22 %add_ln118_1, i22 %zext_ln129" [yuv_filter.c:129->yuv_filter.c:51]   --->   Operation 42 'add' 'add_ln129' <Predicate = true> <Delay = 4.07> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.98> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_2 : Operation 43 [1/1] (2.07ns)   --->   "%add_ln118 = add i16 %select_ln98, i16 1" [yuv_filter.c:118->yuv_filter.c:51]   --->   Operation 43 'add' 'add_ln118' <Predicate = true> <Delay = 2.07> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 44 [1/1] (1.58ns)   --->   "%store_ln98 = store i16 %select_ln115, i16 %x" [yuv_filter.c:98->yuv_filter.c:51]   --->   Operation 44 'store' 'store_ln98' <Predicate = true> <Delay = 1.58>
+ST_2 : Operation 45 [1/1] (1.58ns)   --->   "%store_ln98 = store i16 %add_ln118, i16 %y" [yuv_filter.c:98->yuv_filter.c:51]   --->   Operation 45 'store' 'store_ln98' <Predicate = true> <Delay = 1.58>
+
+State 3 <SV = 2> <Delay = 3.25>
+ST_3 : Operation 46 [1/1] (0.00ns)   --->   "%zext_ln129_1 = zext i22 %add_ln129" [yuv_filter.c:129->yuv_filter.c:51]   --->   Operation 46 'zext' 'zext_ln129_1' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 47 [1/1] (0.00ns)   --->   "%p_scale_channels_ch1_addr = getelementptr i8 %p_scale_channels_ch1, i64 0, i64 %zext_ln129_1" [yuv_filter.c:120->yuv_filter.c:51]   --->   Operation 47 'getelementptr' 'p_scale_channels_ch1_addr' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 48 [2/2] (3.25ns)   --->   "%Y = load i22 %p_scale_channels_ch1_addr" [yuv_filter.c:120->yuv_filter.c:51]   --->   Operation 48 'load' 'Y' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 2457600> <RAM>
+
+State 4 <SV = 3> <Delay = 6.21>
+ST_4 : Operation 49 [1/1] (0.00ns)   --->   "%p_scale_channels_ch3_addr = getelementptr i8 %p_scale_channels_ch3, i64 0, i64 %zext_ln129_1" [yuv_filter.c:122->yuv_filter.c:51]   --->   Operation 49 'getelementptr' 'p_scale_channels_ch3_addr' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 50 [1/2] (3.25ns)   --->   "%Y = load i22 %p_scale_channels_ch1_addr" [yuv_filter.c:120->yuv_filter.c:51]   --->   Operation 50 'load' 'Y' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 2457600> <RAM>
+ST_4 : Operation 51 [2/2] (3.25ns)   --->   "%V = load i22 %p_scale_channels_ch3_addr" [yuv_filter.c:122->yuv_filter.c:51]   --->   Operation 51 'load' 'V' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 2457600> <RAM>
+ST_4 : Operation 52 [1/1] (0.00ns)   --->   "%zext_ln123 = zext i8 %Y" [yuv_filter.c:123->yuv_filter.c:51]   --->   Operation 52 'zext' 'zext_ln123' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 53 [1/1] (1.91ns)   --->   "%C = add i9 %zext_ln123, i9 496" [yuv_filter.c:123->yuv_filter.c:51]   --->   Operation 53 'add' 'C' <Predicate = true> <Delay = 1.91> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.91> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 54 [1/1] (0.00ns)   --->   "%sext_ln126 = sext i9 %C" [yuv_filter.c:126->yuv_filter.c:51]   --->   Operation 54 'sext' 'sext_ln126' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 55 [3/3] (1.05ns) (grouped into DSP with root node add_ln126)   --->   "%mul_ln126 = mul i18 %sext_ln126, i18 298" [yuv_filter.c:126->yuv_filter.c:51]   --->   Operation 55 'mul' 'mul_ln126' <Predicate = true> <Delay = 1.05> <CoreInst = "DSP48">   --->   Core 116 'DSP48' <Latency = 3> <II = 1> <Delay = 2.15> <IPBlock> <Opcode : '' 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+
+State 5 <SV = 4> <Delay = 5.28>
+ST_5 : Operation 56 [1/1] (0.00ns)   --->   "%p_scale_channels_ch2_addr = getelementptr i8 %p_scale_channels_ch2, i64 0, i64 %zext_ln129_1" [yuv_filter.c:121->yuv_filter.c:51]   --->   Operation 56 'getelementptr' 'p_scale_channels_ch2_addr' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 57 [2/2] (3.25ns)   --->   "%U = load i22 %p_scale_channels_ch2_addr" [yuv_filter.c:121->yuv_filter.c:51]   --->   Operation 57 'load' 'U' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 2457600> <RAM>
+ST_5 : Operation 58 [1/2] (3.25ns)   --->   "%V = load i22 %p_scale_channels_ch3_addr" [yuv_filter.c:122->yuv_filter.c:51]   --->   Operation 58 'load' 'V' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 2457600> <RAM>
+ST_5 : Operation 59 [1/1] (0.00ns)   --->   "%bit_sel4 = bitselect i1 @_ssdm_op_BitSelect.i1.i8.i8, i8 %V, i8 7" [yuv_filter.c:125->yuv_filter.c:51]   --->   Operation 59 'bitselect' 'bit_sel4' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 60 [1/1] (0.97ns)   --->   "%xor_ln125 = xor i1 %bit_sel4, i1 1" [yuv_filter.c:125->yuv_filter.c:51]   --->   Operation 60 'xor' 'xor_ln125' <Predicate = true> <Delay = 0.97> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 61 [1/1] (0.00ns)   --->   "%trunc_ln125 = trunc i8 %V" [yuv_filter.c:125->yuv_filter.c:51]   --->   Operation 61 'trunc' 'trunc_ln125' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 62 [1/1] (0.00ns)   --->   "%E = bitconcatenate i8 @_ssdm_op_BitConcatenate.i8.i1.i7, i1 %xor_ln125, i7 %trunc_ln125" [yuv_filter.c:125->yuv_filter.c:51]   --->   Operation 62 'bitconcatenate' 'E' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 63 [2/3] (1.05ns) (grouped into DSP with root node add_ln126)   --->   "%mul_ln126 = mul i18 %sext_ln126, i18 298" [yuv_filter.c:126->yuv_filter.c:51]   --->   Operation 63 'mul' 'mul_ln126' <Predicate = true> <Delay = 1.05> <CoreInst = "DSP48">   --->   Core 116 'DSP48' <Latency = 3> <II = 1> <Delay = 2.15> <IPBlock> <Opcode : '' 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_5 : Operation 64 [1/1] (0.00ns)   --->   "%sext_ln126_1 = sext i8 %E" [yuv_filter.c:126->yuv_filter.c:51]   --->   Operation 64 'sext' 'sext_ln126_1' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 65 [1/1] (0.00ns)   --->   "%sext_ln126_3 = sext i8 %E" [yuv_filter.c:126->yuv_filter.c:51]   --->   Operation 65 'sext' 'sext_ln126_3' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 66 [3/3] (1.05ns) (grouped into DSP with root node add_ln126_1)   --->   "%mul_ln126_1 = mul i18 %sext_ln126_3, i18 409" [yuv_filter.c:126->yuv_filter.c:51]   --->   Operation 66 'mul' 'mul_ln126_1' <Predicate = true> <Delay = 1.05> <CoreInst = "DSP48">   --->   Core 116 'DSP48' <Latency = 3> <II = 1> <Delay = 2.15> <IPBlock> <Opcode : '' 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_5 : Operation 67 [3/3] (1.05ns) (grouped into DSP with root node add_ln127)   --->   "%mul_ln127 = mul i17 %sext_ln126_1, i17 130864" [yuv_filter.c:127->yuv_filter.c:51]   --->   Operation 67 'mul' 'mul_ln127' <Predicate = true> <Delay = 1.05> <CoreInst = "DSP48">   --->   Core 116 'DSP48' <Latency = 3> <II = 1> <Delay = 2.15> <IPBlock> <Opcode : '' 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+
+State 6 <SV = 5> <Delay = 5.28>
+ST_6 : Operation 68 [1/2] (3.25ns)   --->   "%U = load i22 %p_scale_channels_ch2_addr" [yuv_filter.c:121->yuv_filter.c:51]   --->   Operation 68 'load' 'U' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 2457600> <RAM>
+ST_6 : Operation 69 [1/1] (0.00ns)   --->   "%bit_sel7 = bitselect i1 @_ssdm_op_BitSelect.i1.i8.i8, i8 %U, i8 7" [yuv_filter.c:124->yuv_filter.c:51]   --->   Operation 69 'bitselect' 'bit_sel7' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 70 [1/1] (0.97ns)   --->   "%xor_ln124 = xor i1 %bit_sel7, i1 1" [yuv_filter.c:124->yuv_filter.c:51]   --->   Operation 70 'xor' 'xor_ln124' <Predicate = true> <Delay = 0.97> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 71 [1/1] (0.00ns)   --->   "%trunc_ln124 = trunc i8 %U" [yuv_filter.c:124->yuv_filter.c:51]   --->   Operation 71 'trunc' 'trunc_ln124' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 72 [1/1] (0.00ns)   --->   "%D = bitconcatenate i8 @_ssdm_op_BitConcatenate.i8.i1.i7, i1 %xor_ln124, i7 %trunc_ln124" [yuv_filter.c:124->yuv_filter.c:51]   --->   Operation 72 'bitconcatenate' 'D' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 73 [1/3] (0.00ns) (grouped into DSP with root node add_ln126)   --->   "%mul_ln126 = mul i18 %sext_ln126, i18 298" [yuv_filter.c:126->yuv_filter.c:51]   --->   Operation 73 'mul' 'mul_ln126' <Predicate = true> <Delay = 0.00> <CoreInst = "DSP48">   --->   Core 116 'DSP48' <Latency = 3> <II = 1> <Delay = 2.15> <IPBlock> <Opcode : '' 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_6 : Operation 74 [2/2] (2.10ns) (root node of the DSP)   --->   "%add_ln126 = add i18 %mul_ln126, i18 128" [yuv_filter.c:126->yuv_filter.c:51]   --->   Operation 74 'add' 'add_ln126' <Predicate = true> <Delay = 2.10> <CoreInst = "DSP48">   --->   Core 116 'DSP48' <Latency = 3> <II = 1> <Delay = 2.15> <IPBlock> <Opcode : '' 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_6 : Operation 75 [2/3] (1.05ns) (grouped into DSP with root node add_ln126_1)   --->   "%mul_ln126_1 = mul i18 %sext_ln126_3, i18 409" [yuv_filter.c:126->yuv_filter.c:51]   --->   Operation 75 'mul' 'mul_ln126_1' <Predicate = true> <Delay = 1.05> <CoreInst = "DSP48">   --->   Core 116 'DSP48' <Latency = 3> <II = 1> <Delay = 2.15> <IPBlock> <Opcode : '' 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_6 : Operation 76 [1/1] (0.00ns)   --->   "%sext_ln127 = sext i8 %D" [yuv_filter.c:127->yuv_filter.c:51]   --->   Operation 76 'sext' 'sext_ln127' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 77 [2/3] (1.05ns) (grouped into DSP with root node add_ln127)   --->   "%mul_ln127 = mul i17 %sext_ln126_1, i17 130864" [yuv_filter.c:127->yuv_filter.c:51]   --->   Operation 77 'mul' 'mul_ln127' <Predicate = true> <Delay = 1.05> <CoreInst = "DSP48">   --->   Core 116 'DSP48' <Latency = 3> <II = 1> <Delay = 2.15> <IPBlock> <Opcode : '' 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_6 : Operation 78 [3/3] (1.05ns) (grouped into DSP with root node add_ln127_1)   --->   "%mul_ln127_1 = mul i16 %sext_ln127, i16 65436" [yuv_filter.c:127->yuv_filter.c:51]   --->   Operation 78 'mul' 'mul_ln127_1' <Predicate = true> <Delay = 1.05> <CoreInst = "DSP48">   --->   Core 116 'DSP48' <Latency = 3> <II = 1> <Delay = 2.15> <IPBlock> <Opcode : '' 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+
+State 7 <SV = 6> <Delay = 6.06>
+ST_7 : Operation 79 [1/2] (2.10ns) (root node of the DSP)   --->   "%add_ln126 = add i18 %mul_ln126, i18 128" [yuv_filter.c:126->yuv_filter.c:51]   --->   Operation 79 'add' 'add_ln126' <Predicate = true> <Delay = 2.10> <CoreInst = "DSP48">   --->   Core 116 'DSP48' <Latency = 3> <II = 1> <Delay = 2.15> <IPBlock> <Opcode : '' 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_7 : Operation 80 [1/1] (0.00ns)   --->   "%sext_ln126_4 = sext i18 %add_ln126" [yuv_filter.c:126->yuv_filter.c:51]   --->   Operation 80 'sext' 'sext_ln126_4' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 81 [1/3] (0.00ns) (grouped into DSP with root node add_ln126_1)   --->   "%mul_ln126_1 = mul i18 %sext_ln126_3, i18 409" [yuv_filter.c:126->yuv_filter.c:51]   --->   Operation 81 'mul' 'mul_ln126_1' <Predicate = true> <Delay = 0.00> <CoreInst = "DSP48">   --->   Core 116 'DSP48' <Latency = 3> <II = 1> <Delay = 2.15> <IPBlock> <Opcode : '' 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_7 : Operation 82 [2/2] (2.10ns) (root node of the DSP)   --->   "%add_ln126_1 = add i18 %mul_ln126_1, i18 %add_ln126" [yuv_filter.c:126->yuv_filter.c:51]   --->   Operation 82 'add' 'add_ln126_1' <Predicate = true> <Delay = 2.10> <CoreInst = "DSP48">   --->   Core 116 'DSP48' <Latency = 3> <II = 1> <Delay = 2.15> <IPBlock> <Opcode : '' 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_7 : Operation 83 [1/3] (0.00ns) (grouped into DSP with root node add_ln127)   --->   "%mul_ln127 = mul i17 %sext_ln126_1, i17 130864" [yuv_filter.c:127->yuv_filter.c:51]   --->   Operation 83 'mul' 'mul_ln127' <Predicate = true> <Delay = 0.00> <CoreInst = "DSP48">   --->   Core 116 'DSP48' <Latency = 3> <II = 1> <Delay = 2.15> <IPBlock> <Opcode : '' 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_7 : Operation 84 [1/1] (0.00ns) (grouped into DSP with root node add_ln127)   --->   "%sext_ln127_2 = sext i17 %mul_ln127" [yuv_filter.c:127->yuv_filter.c:51]   --->   Operation 84 'sext' 'sext_ln127_2' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 85 [2/3] (1.05ns) (grouped into DSP with root node add_ln127_1)   --->   "%mul_ln127_1 = mul i16 %sext_ln127, i16 65436" [yuv_filter.c:127->yuv_filter.c:51]   --->   Operation 85 'mul' 'mul_ln127_1' <Predicate = true> <Delay = 1.05> <CoreInst = "DSP48">   --->   Core 116 'DSP48' <Latency = 3> <II = 1> <Delay = 2.15> <IPBlock> <Opcode : '' 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_7 : Operation 86 [2/2] (2.10ns) (root node of the DSP)   --->   "%add_ln127 = add i18 %add_ln126, i18 %sext_ln127_2" [yuv_filter.c:127->yuv_filter.c:51]   --->   Operation 86 'add' 'add_ln127' <Predicate = true> <Delay = 2.10> <CoreInst = "DSP48">   --->   Core 116 'DSP48' <Latency = 3> <II = 1> <Delay = 2.15> <IPBlock> <Opcode : '' 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_7 : Operation 87 [1/1] (0.00ns)   --->   "%tmp_4 = bitconcatenate i17 @_ssdm_op_BitConcatenate.i17.i1.i7.i9, i1 %xor_ln124, i7 %trunc_ln124, i9 0" [yuv_filter.c:128->yuv_filter.c:51]   --->   Operation 87 'bitconcatenate' 'tmp_4' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 88 [1/1] (0.00ns)   --->   "%sext_ln128_1 = sext i17 %tmp_4" [yuv_filter.c:128->yuv_filter.c:51]   --->   Operation 88 'sext' 'sext_ln128_1' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 89 [1/1] (0.00ns)   --->   "%tmp_5 = bitconcatenate i10 @_ssdm_op_BitConcatenate.i10.i1.i7.i2, i1 %xor_ln124, i7 %trunc_ln124, i2 0" [yuv_filter.c:128->yuv_filter.c:51]   --->   Operation 89 'bitconcatenate' 'tmp_5' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 90 [1/1] (0.00ns)   --->   "%sext_ln128_2 = sext i10 %tmp_5" [yuv_filter.c:128->yuv_filter.c:51]   --->   Operation 90 'sext' 'sext_ln128_2' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 91 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln128_1 = add i19 %sext_ln128_1, i19 %sext_ln128_2" [yuv_filter.c:128->yuv_filter.c:51]   --->   Operation 91 'add' 'add_ln128_1' <Predicate = true> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.98> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_7 : Operation 92 [1/1] (3.96ns) (root node of TernaryAdder)   --->   "%add_ln128 = add i19 %add_ln128_1, i19 %sext_ln126_4" [yuv_filter.c:128->yuv_filter.c:51]   --->   Operation 92 'add' 'add_ln128' <Predicate = true> <Delay = 3.96> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.98> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_7 : Operation 93 [1/1] (0.00ns)   --->   "%tmp_6 = partselect i3 @_ssdm_op_PartSelect.i3.i19.i32.i32, i19 %add_ln128, i32 16, i32 18" [yuv_filter.c:128->yuv_filter.c:51]   --->   Operation 93 'partselect' 'tmp_6' <Predicate = true> <Delay = 0.00>
+
+State 8 <SV = 7> <Delay = 6.15>
+ST_8 : Operation 94 [1/1] (0.00ns)   --->   "%out_channels_ch3_addr = getelementptr i8 %out_channels_ch3, i64 0, i64 %zext_ln129_1" [yuv_filter.c:131->yuv_filter.c:51]   --->   Operation 94 'getelementptr' 'out_channels_ch3_addr' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 95 [1/2] (2.10ns) (root node of the DSP)   --->   "%add_ln126_1 = add i18 %mul_ln126_1, i18 %add_ln126" [yuv_filter.c:126->yuv_filter.c:51]   --->   Operation 95 'add' 'add_ln126_1' <Predicate = true> <Delay = 2.10> <CoreInst = "DSP48">   --->   Core 116 'DSP48' <Latency = 3> <II = 1> <Delay = 2.15> <IPBlock> <Opcode : '' 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_8 : Operation 96 [1/1] (0.00ns)   --->   "%tmp = partselect i2 @_ssdm_op_PartSelect.i2.i18.i32.i32, i18 %add_ln126_1, i32 16, i32 17" [yuv_filter.c:126->yuv_filter.c:51]   --->   Operation 96 'partselect' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 97 [1/1] (1.56ns)   --->   "%icmp_ln126 = icmp_eq  i2 %tmp, i2 1" [yuv_filter.c:126->yuv_filter.c:51]   --->   Operation 97 'icmp' 'icmp_ln126' <Predicate = true> <Delay = 1.56> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.56> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 98 [1/1] (0.00ns) (grouped into LUT with out node R)   --->   "%tmp_1 = bitselect i1 @_ssdm_op_BitSelect.i1.i18.i32, i18 %add_ln126_1, i32 17" [yuv_filter.c:126->yuv_filter.c:51]   --->   Operation 98 'bitselect' 'tmp_1' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 99 [1/1] (0.00ns) (grouped into LUT with out node R)   --->   "%trunc_ln4 = partselect i8 @_ssdm_op_PartSelect.i8.i18.i32.i32, i18 %add_ln126_1, i32 8, i32 15" [yuv_filter.c:126->yuv_filter.c:51]   --->   Operation 99 'partselect' 'trunc_ln4' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 100 [1/1] (0.00ns) (grouped into LUT with out node R)   --->   "%select_ln126 = select i1 %icmp_ln126, i8 255, i8 0" [yuv_filter.c:126->yuv_filter.c:51]   --->   Operation 100 'select' 'select_ln126' <Predicate = true> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_8 : Operation 101 [1/1] (0.00ns) (grouped into LUT with out node R)   --->   "%or_ln126 = or i1 %icmp_ln126, i1 %tmp_1" [yuv_filter.c:126->yuv_filter.c:51]   --->   Operation 101 'or' 'or_ln126' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 102 [1/1] (1.24ns) (out node of the LUT)   --->   "%R = select i1 %or_ln126, i8 %select_ln126, i8 %trunc_ln4" [yuv_filter.c:126->yuv_filter.c:51]   --->   Operation 102 'select' 'R' <Predicate = true> <Delay = 1.24> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 1.24> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_8 : Operation 103 [1/3] (0.00ns) (grouped into DSP with root node add_ln127_1)   --->   "%mul_ln127_1 = mul i16 %sext_ln127, i16 65436" [yuv_filter.c:127->yuv_filter.c:51]   --->   Operation 103 'mul' 'mul_ln127_1' <Predicate = true> <Delay = 0.00> <CoreInst = "DSP48">   --->   Core 116 'DSP48' <Latency = 3> <II = 1> <Delay = 2.15> <IPBlock> <Opcode : '' 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_8 : Operation 104 [1/1] (0.00ns) (grouped into DSP with root node add_ln127_1)   --->   "%sext_ln127_3 = sext i16 %mul_ln127_1" [yuv_filter.c:127->yuv_filter.c:51]   --->   Operation 104 'sext' 'sext_ln127_3' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 105 [1/2] (2.10ns) (root node of the DSP)   --->   "%add_ln127 = add i18 %add_ln126, i18 %sext_ln127_2" [yuv_filter.c:127->yuv_filter.c:51]   --->   Operation 105 'add' 'add_ln127' <Predicate = true> <Delay = 2.10> <CoreInst = "DSP48">   --->   Core 116 'DSP48' <Latency = 3> <II = 1> <Delay = 2.15> <IPBlock> <Opcode : '' 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_8 : Operation 106 [2/2] (2.10ns) (root node of the DSP)   --->   "%add_ln127_1 = add i18 %add_ln127, i18 %sext_ln127_3" [yuv_filter.c:127->yuv_filter.c:51]   --->   Operation 106 'add' 'add_ln127_1' <Predicate = true> <Delay = 2.10> <CoreInst = "DSP48">   --->   Core 116 'DSP48' <Latency = 3> <II = 1> <Delay = 2.15> <IPBlock> <Opcode : '' 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_8 : Operation 107 [1/1] (1.65ns)   --->   "%icmp_ln128 = icmp_sgt  i3 %tmp_6, i3 0" [yuv_filter.c:128->yuv_filter.c:51]   --->   Operation 107 'icmp' 'icmp_ln128' <Predicate = true> <Delay = 1.65> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.65> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 108 [1/1] (0.00ns) (grouped into LUT with out node B)   --->   "%tmp_7 = bitselect i1 @_ssdm_op_BitSelect.i1.i19.i32, i19 %add_ln128, i32 18" [yuv_filter.c:128->yuv_filter.c:51]   --->   Operation 108 'bitselect' 'tmp_7' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 109 [1/1] (0.00ns) (grouped into LUT with out node B)   --->   "%trunc_ln6 = partselect i8 @_ssdm_op_PartSelect.i8.i19.i32.i32, i19 %add_ln128, i32 8, i32 15" [yuv_filter.c:128->yuv_filter.c:51]   --->   Operation 109 'partselect' 'trunc_ln6' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 110 [1/1] (0.00ns) (grouped into LUT with out node B)   --->   "%select_ln128 = select i1 %icmp_ln128, i8 255, i8 0" [yuv_filter.c:128->yuv_filter.c:51]   --->   Operation 110 'select' 'select_ln128' <Predicate = true> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_8 : Operation 111 [1/1] (0.00ns) (grouped into LUT with out node B)   --->   "%or_ln128 = or i1 %icmp_ln128, i1 %tmp_7" [yuv_filter.c:128->yuv_filter.c:51]   --->   Operation 111 'or' 'or_ln128' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 112 [1/1] (1.24ns) (out node of the LUT)   --->   "%B = select i1 %or_ln128, i8 %select_ln128, i8 %trunc_ln6" [yuv_filter.c:128->yuv_filter.c:51]   --->   Operation 112 'select' 'B' <Predicate = true> <Delay = 1.24> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 1.24> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_8 : Operation 113 [1/1] (3.25ns)   --->   "%store_ln131 = store i8 %B, i22 %out_channels_ch3_addr" [yuv_filter.c:131->yuv_filter.c:51]   --->   Operation 113 'store' 'store_ln131' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 2457600> <RAM>
+
+State 9 <SV = 8> <Delay = 4.91>
+ST_9 : Operation 114 [1/1] (0.00ns)   --->   "%out_channels_ch1_addr = getelementptr i8 %out_channels_ch1, i64 0, i64 %zext_ln129_1" [yuv_filter.c:129->yuv_filter.c:51]   --->   Operation 114 'getelementptr' 'out_channels_ch1_addr' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 115 [1/2] (2.10ns) (root node of the DSP)   --->   "%add_ln127_1 = add i18 %add_ln127, i18 %sext_ln127_3" [yuv_filter.c:127->yuv_filter.c:51]   --->   Operation 115 'add' 'add_ln127_1' <Predicate = true> <Delay = 2.10> <CoreInst = "DSP48">   --->   Core 116 'DSP48' <Latency = 3> <II = 1> <Delay = 2.15> <IPBlock> <Opcode : '' 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_9 : Operation 116 [1/1] (0.00ns)   --->   "%tmp_2 = partselect i2 @_ssdm_op_PartSelect.i2.i18.i32.i32, i18 %add_ln127_1, i32 16, i32 17" [yuv_filter.c:127->yuv_filter.c:51]   --->   Operation 116 'partselect' 'tmp_2' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 117 [1/1] (1.56ns)   --->   "%icmp_ln127 = icmp_eq  i2 %tmp_2, i2 1" [yuv_filter.c:127->yuv_filter.c:51]   --->   Operation 117 'icmp' 'icmp_ln127' <Predicate = true> <Delay = 1.56> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.56> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 118 [1/1] (0.00ns) (grouped into LUT with out node G)   --->   "%tmp_3 = bitselect i1 @_ssdm_op_BitSelect.i1.i18.i32, i18 %add_ln127_1, i32 17" [yuv_filter.c:127->yuv_filter.c:51]   --->   Operation 118 'bitselect' 'tmp_3' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 119 [1/1] (0.00ns) (grouped into LUT with out node G)   --->   "%trunc_ln5 = partselect i8 @_ssdm_op_PartSelect.i8.i18.i32.i32, i18 %add_ln127_1, i32 8, i32 15" [yuv_filter.c:127->yuv_filter.c:51]   --->   Operation 119 'partselect' 'trunc_ln5' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 120 [1/1] (0.00ns) (grouped into LUT with out node G)   --->   "%select_ln127 = select i1 %icmp_ln127, i8 255, i8 0" [yuv_filter.c:127->yuv_filter.c:51]   --->   Operation 120 'select' 'select_ln127' <Predicate = true> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_9 : Operation 121 [1/1] (0.00ns) (grouped into LUT with out node G)   --->   "%or_ln127 = or i1 %icmp_ln127, i1 %tmp_3" [yuv_filter.c:127->yuv_filter.c:51]   --->   Operation 121 'or' 'or_ln127' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 122 [1/1] (1.24ns) (out node of the LUT)   --->   "%G = select i1 %or_ln127, i8 %select_ln127, i8 %trunc_ln5" [yuv_filter.c:127->yuv_filter.c:51]   --->   Operation 122 'select' 'G' <Predicate = true> <Delay = 1.24> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 1.24> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_9 : Operation 123 [1/1] (3.25ns)   --->   "%store_ln129 = store i8 %R, i22 %out_channels_ch1_addr" [yuv_filter.c:129->yuv_filter.c:51]   --->   Operation 123 'store' 'store_ln129' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 2457600> <RAM>
+ST_9 : Operation 130 [1/1] (1.58ns)   --->   "%ret_ln0 = ret"   --->   Operation 130 'ret' 'ret_ln0' <Predicate = (icmp_ln115)> <Delay = 1.58>
+
+State 10 <SV = 9> <Delay = 3.25>
+ST_10 : Operation 124 [1/1] (0.00ns)   --->   "%specloopname_ln0 = specloopname void @_ssdm_op_SpecLoopName, void @YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y_str"   --->   Operation 124 'specloopname' 'specloopname_ln0' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 125 [1/1] (0.00ns)   --->   "%speclooptripcount_ln0 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 0, i64 4294836225, i64 1073676289"   --->   Operation 125 'speclooptripcount' 'speclooptripcount_ln0' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 126 [1/1] (0.00ns)   --->   "%out_channels_ch2_addr = getelementptr i8 %out_channels_ch2, i64 0, i64 %zext_ln129_1" [yuv_filter.c:130->yuv_filter.c:51]   --->   Operation 126 'getelementptr' 'out_channels_ch2_addr' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 127 [1/1] (0.00ns)   --->   "%specpipeline_ln98 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_0" [yuv_filter.c:98->yuv_filter.c:51]   --->   Operation 127 'specpipeline' 'specpipeline_ln98' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 128 [1/1] (3.25ns)   --->   "%store_ln130 = store i8 %G, i22 %out_channels_ch2_addr" [yuv_filter.c:130->yuv_filter.c:51]   --->   Operation 128 'store' 'store_ln130' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 2457600> <RAM>
+ST_10 : Operation 129 [1/1] (0.00ns)   --->   "%br_ln118 = br void %for.body10.i" [yuv_filter.c:118->yuv_filter.c:51]   --->   Operation 129 'br' 'br_ln118' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 5.728ns
+The critical path consists of the following:
+	'store' operation 0 bit ('store_ln0') of constant 0 on local variable 'indvar_flatten13' [17]  (1.588 ns)
+	'load' operation 32 bit ('indvar_flatten13_load', yuv_filter.c:115->yuv_filter.c:51) on local variable 'indvar_flatten13' [22]  (0.000 ns)
+	'icmp' operation 1 bit ('icmp_ln115', yuv_filter.c:115->yuv_filter.c:51) [23]  (2.552 ns)
+	'store' operation 0 bit ('store_ln115', yuv_filter.c:115->yuv_filter.c:51) of variable 'add_ln115_1', yuv_filter.c:115->yuv_filter.c:51 on local variable 'indvar_flatten13' [109]  (1.588 ns)
+
+ <State 2>: 6.960ns
+The critical path consists of the following:
+	'load' operation 16 bit ('y_load', yuv_filter.c:118->yuv_filter.c:51) on local variable 'y', yuv_filter.c:98->yuv_filter.c:51 [27]  (0.000 ns)
+	'icmp' operation 1 bit ('icmp_ln118', yuv_filter.c:118->yuv_filter.c:51) [32]  (2.077 ns)
+	'select' operation 16 bit ('select_ln115', yuv_filter.c:115->yuv_filter.c:51) [34]  (0.805 ns)
+	'add' operation 22 bit ('add_ln118_1', yuv_filter.c:118->yuv_filter.c:51) [39]  (0.000 ns)
+	'add' operation 22 bit ('add_ln129', yuv_filter.c:129->yuv_filter.c:51) [41]  (4.079 ns)
+
+ <State 3>: 3.254ns
+The critical path consists of the following:
+	'getelementptr' operation 22 bit ('p_scale_channels_ch1_addr', yuv_filter.c:120->yuv_filter.c:51) [46]  (0.000 ns)
+	'load' operation 8 bit ('Y', yuv_filter.c:120->yuv_filter.c:51) on array 'p_scale_channels_ch1' [50]  (3.254 ns)
+
+ <State 4>: 6.219ns
+The critical path consists of the following:
+	'load' operation 8 bit ('Y', yuv_filter.c:120->yuv_filter.c:51) on array 'p_scale_channels_ch1' [50]  (3.254 ns)
+	'add' operation 9 bit ('C', yuv_filter.c:123->yuv_filter.c:51) [54]  (1.915 ns)
+	'mul' operation 18 bit of DSP[67] ('mul_ln126', yuv_filter.c:126->yuv_filter.c:51) [64]  (1.050 ns)
+
+ <State 5>: 5.282ns
+The critical path consists of the following:
+	'load' operation 8 bit ('V', yuv_filter.c:122->yuv_filter.c:51) on array 'p_scale_channels_ch3' [52]  (3.254 ns)
+	'xor' operation 1 bit ('xor_ln125', yuv_filter.c:125->yuv_filter.c:51) [60]  (0.978 ns)
+	'mul' operation 18 bit of DSP[70] ('mul_ln126_1', yuv_filter.c:126->yuv_filter.c:51) [69]  (1.050 ns)
+
+ <State 6>: 5.282ns
+The critical path consists of the following:
+	'load' operation 8 bit ('U', yuv_filter.c:121->yuv_filter.c:51) on array 'p_scale_channels_ch2' [51]  (3.254 ns)
+	'xor' operation 1 bit ('xor_ln124', yuv_filter.c:124->yuv_filter.c:51) [56]  (0.978 ns)
+	'mul' operation 16 bit of DSP[84] ('mul_ln127_1', yuv_filter.c:127->yuv_filter.c:51) [81]  (1.050 ns)
+
+ <State 7>: 6.062ns
+The critical path consists of the following:
+	'add' operation 18 bit of DSP[67] ('add_ln126', yuv_filter.c:126->yuv_filter.c:51) [67]  (2.100 ns)
+	'add' operation 19 bit ('add_ln128', yuv_filter.c:128->yuv_filter.c:51) [97]  (3.962 ns)
+
+ <State 8>: 6.152ns
+The critical path consists of the following:
+	'icmp' operation 1 bit ('icmp_ln128', yuv_filter.c:128->yuv_filter.c:51) [99]  (1.650 ns)
+	'or' operation 1 bit ('or_ln128', yuv_filter.c:128->yuv_filter.c:51) [103]  (0.000 ns)
+	'select' operation 8 bit ('B', yuv_filter.c:128->yuv_filter.c:51) [104]  (1.248 ns)
+	'store' operation 0 bit ('store_ln131', yuv_filter.c:131->yuv_filter.c:51) of variable 'B', yuv_filter.c:128->yuv_filter.c:51 on array 'out_channels_ch3' [107]  (3.254 ns)
+
+ <State 9>: 4.913ns
+The critical path consists of the following:
+	'add' operation 18 bit of DSP[84] ('add_ln127_1', yuv_filter.c:127->yuv_filter.c:51) [84]  (2.100 ns)
+	'icmp' operation 1 bit ('icmp_ln127', yuv_filter.c:127->yuv_filter.c:51) [86]  (1.565 ns)
+	'select' operation 8 bit ('select_ln127', yuv_filter.c:127->yuv_filter.c:51) [89]  (0.000 ns)
+	'select' operation 8 bit ('G', yuv_filter.c:127->yuv_filter.c:51) [91]  (1.248 ns)
+
+ <State 10>: 3.254ns
+The critical path consists of the following:
+	'getelementptr' operation 22 bit ('out_channels_ch2_addr', yuv_filter.c:130->yuv_filter.c:51) [44]  (0.000 ns)
+	'store' operation 0 bit ('store_ln130', yuv_filter.c:130->yuv_filter.c:51) of variable 'G', yuv_filter.c:127->yuv_filter.c:51 on array 'out_channels_ch2' [106]  (3.254 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

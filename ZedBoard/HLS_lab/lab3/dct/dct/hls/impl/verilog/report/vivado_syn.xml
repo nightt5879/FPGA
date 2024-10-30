@@ -1,0 +1,245 @@
+<profile>
+<RunData>
+  <RUN_TYPE>synth</RUN_TYPE>
+  <VIVADO_VERSION>v.2024.1</VIVADO_VERSION>
+  <ROOT_MODULE_CELL>bd_0_i/hls_inst</ROOT_MODULE_CELL>
+</RunData>
+<TimingReport>
+  <TargetClockPeriod>10.000</TargetClockPeriod>
+  <AchievedClockPeriod>4.932</AchievedClockPeriod>
+  <CLOCK_NAME>ap_clk</CLOCK_NAME>
+  <CP_FINAL>4.932</CP_FINAL>
+  <CP_ROUTE>NA</CP_ROUTE>
+  <CP_SYNTH>4.932</CP_SYNTH>
+  <CP_TARGET>10.000</CP_TARGET>
+  <SLACK_FINAL>5.068</SLACK_FINAL>
+  <SLACK_ROUTE></SLACK_ROUTE>
+  <SLACK_SYNTH>5.068</SLACK_SYNTH>
+  <TIMING_MET>TRUE</TIMING_MET>
+  <TNS_FINAL>0.000</TNS_FINAL>
+  <TNS_ROUTE>NA</TNS_ROUTE>
+  <TNS_SYNTH>0.000</TNS_SYNTH>
+  <WNS_FINAL>5.068</WNS_FINAL>
+  <WNS_ROUTE>NA</WNS_ROUTE>
+  <WNS_SYNTH>5.068</WNS_SYNTH>
+</TimingReport>
+<AreaReport>
+  <Resources>
+    <BRAM>3</BRAM>
+    <CLB>0</CLB>
+    <DSP>16</DSP>
+    <FF>376</FF>
+    <LATCH>0</LATCH>
+    <LUT>647</LUT>
+    <SRL>16</SRL>
+    <URAM>0</URAM>
+  </Resources>
+  <AvailableResources>
+    <BRAM>280</BRAM>
+    <CLB>0</CLB>
+    <DSP>220</DSP>
+    <FF>106400</FF>
+    <LUT>53200</LUT>
+    <URAM>0</URAM>
+  </AvailableResources>
+</AreaReport>
+<RtlModules>
+  <RtlModule CELL="inst" DEPTH="0" FILE_NAME="bd_0_hls_inst_0.v" ORIG_REF_NAME="dct" TOP_CELL="bd_0_i/hls_inst/inst">
+    <SubModules count="29">buf_2d_in_10_U buf_2d_in_11_U buf_2d_in_12_U buf_2d_in_13_U buf_2d_in_14_U buf_2d_in_8_U buf_2d_in_9_U buf_2d_in_U buf_2d_out_U col_inbuf_1_U col_inbuf_2_U col_inbuf_3_U col_inbuf_4_U col_inbuf_5_U col_inbuf_6_U col_inbuf_7_U col_inbuf_U col_outbuf_U dct_1d_dct_coeff_table_0_U dct_1d_dct_coeff_table_1_U dct_1d_dct_coeff_table_2_U dct_1d_dct_coeff_table_3_U grp_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop_fu_190 grp_dct_Pipeline_RD_Loop_Row_RD_Loop_Col_fu_126 grp_dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop_fu_148 grp_dct_Pipeline_WR_Loop_Row_WR_Loop_Col_fu_225 grp_dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop_fu_219 grp_dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop_fu_177 row_outbuf_U</SubModules>
+    <Resources BRAM="3" DSP="16" FF="376" LUT="647" LUTRAM="256" LogicLUT="375" RAMB18="3" SRL="16"/>
+    <LocalResources FF="18" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/buf_2d_in_10_U" DEPTH="1" FILE_NAME="dct.v" ORIG_REF_NAME="dct_col_inbuf_RAM_AUTO_1R1W">
+    <Resources LUT="16" LUTRAM="16"/>
+  </RtlModule>
+  <RtlModule CELL="inst/buf_2d_in_11_U" DEPTH="1" FILE_NAME="dct.v" ORIG_REF_NAME="dct_col_inbuf_RAM_AUTO_1R1W">
+    <Resources LUT="16" LUTRAM="16"/>
+  </RtlModule>
+  <RtlModule CELL="inst/buf_2d_in_12_U" DEPTH="1" FILE_NAME="dct.v" ORIG_REF_NAME="dct_col_inbuf_RAM_AUTO_1R1W">
+    <Resources LUT="16" LUTRAM="16"/>
+  </RtlModule>
+  <RtlModule CELL="inst/buf_2d_in_13_U" DEPTH="1" FILE_NAME="dct.v" ORIG_REF_NAME="dct_col_inbuf_RAM_AUTO_1R1W">
+    <Resources LUT="16" LUTRAM="16"/>
+  </RtlModule>
+  <RtlModule CELL="inst/buf_2d_in_14_U" DEPTH="1" FILE_NAME="dct.v" ORIG_REF_NAME="dct_col_inbuf_RAM_AUTO_1R1W">
+    <Resources LUT="16" LUTRAM="16"/>
+  </RtlModule>
+  <RtlModule CELL="inst/buf_2d_in_8_U" DEPTH="1" FILE_NAME="dct.v" ORIG_REF_NAME="dct_col_inbuf_RAM_AUTO_1R1W">
+    <Resources LUT="16" LUTRAM="16"/>
+  </RtlModule>
+  <RtlModule CELL="inst/buf_2d_in_9_U" DEPTH="1" FILE_NAME="dct.v" ORIG_REF_NAME="dct_col_inbuf_RAM_AUTO_1R1W">
+    <Resources LUT="16" LUTRAM="16"/>
+  </RtlModule>
+  <RtlModule CELL="inst/buf_2d_in_U" DEPTH="1" FILE_NAME="dct.v" ORIG_REF_NAME="dct_col_inbuf_RAM_AUTO_1R1W">
+    <Resources LUT="16" LUTRAM="16"/>
+  </RtlModule>
+  <RtlModule CELL="inst/buf_2d_out_U" DEPTH="1" FILE_NAME="dct.v" ORIG_REF_NAME="dct_row_outbuf_RAM_AUTO_1R1W">
+    <Resources BRAM="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/col_inbuf_1_U" DEPTH="1" FILE_NAME="dct.v" ORIG_REF_NAME="dct_col_inbuf_RAM_AUTO_1R1W">
+    <Resources LUT="16" LUTRAM="16"/>
+  </RtlModule>
+  <RtlModule CELL="inst/col_inbuf_2_U" DEPTH="1" FILE_NAME="dct.v" ORIG_REF_NAME="dct_col_inbuf_RAM_AUTO_1R1W">
+    <Resources LUT="16" LUTRAM="16"/>
+  </RtlModule>
+  <RtlModule CELL="inst/col_inbuf_3_U" DEPTH="1" FILE_NAME="dct.v" ORIG_REF_NAME="dct_col_inbuf_RAM_AUTO_1R1W">
+    <Resources LUT="16" LUTRAM="16"/>
+  </RtlModule>
+  <RtlModule CELL="inst/col_inbuf_4_U" DEPTH="1" FILE_NAME="dct.v" ORIG_REF_NAME="dct_col_inbuf_RAM_AUTO_1R1W">
+    <Resources LUT="16" LUTRAM="16"/>
+  </RtlModule>
+  <RtlModule CELL="inst/col_inbuf_5_U" DEPTH="1" FILE_NAME="dct.v" ORIG_REF_NAME="dct_col_inbuf_RAM_AUTO_1R1W">
+    <Resources LUT="16" LUTRAM="16"/>
+  </RtlModule>
+  <RtlModule CELL="inst/col_inbuf_6_U" DEPTH="1" FILE_NAME="dct.v" ORIG_REF_NAME="dct_col_inbuf_RAM_AUTO_1R1W">
+    <Resources LUT="16" LUTRAM="16"/>
+  </RtlModule>
+  <RtlModule CELL="inst/col_inbuf_7_U" DEPTH="1" FILE_NAME="dct.v" ORIG_REF_NAME="dct_col_inbuf_RAM_AUTO_1R1W">
+    <Resources LUT="16" LUTRAM="16"/>
+  </RtlModule>
+  <RtlModule CELL="inst/col_inbuf_U" DEPTH="1" FILE_NAME="dct.v" ORIG_REF_NAME="dct_col_inbuf_RAM_AUTO_1R1W">
+    <Resources LUT="16" LUTRAM="16"/>
+  </RtlModule>
+  <RtlModule CELL="inst/col_outbuf_U" DEPTH="1" FILE_NAME="dct.v" ORIG_REF_NAME="dct_row_outbuf_RAM_AUTO_1R1W">
+    <Resources BRAM="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/dct_1d_dct_coeff_table_0_U" DEPTH="1" FILE_NAME="dct.v" ORIG_REF_NAME="dct_dct_1d_dct_coeff_table_0_ROM_AUTO_1R">
+    <Resources FF="13" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/dct_1d_dct_coeff_table_1_U" DEPTH="1" FILE_NAME="dct.v" ORIG_REF_NAME="dct_dct_1d_dct_coeff_table_1_ROM_AUTO_1R">
+    <Resources FF="11"/>
+  </RtlModule>
+  <RtlModule CELL="inst/dct_1d_dct_coeff_table_2_U" DEPTH="1" FILE_NAME="dct.v" ORIG_REF_NAME="dct_dct_1d_dct_coeff_table_2_ROM_AUTO_1R">
+    <Resources FF="12" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/dct_1d_dct_coeff_table_3_U" DEPTH="1" FILE_NAME="dct.v" ORIG_REF_NAME="dct_dct_1d_dct_coeff_table_3_ROM_AUTO_1R">
+    <Resources FF="10" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop_fu_190" DEPTH="1" FILE_NAME="dct.v" ORIG_REF_NAME="dct_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop">
+    <SubModules count="6">flow_control_loop_pipe_sequential_init_U mac_muladd_16s_15s_13ns_29_4_1_U52 mac_muladd_16s_15s_29ns_29_4_1_U54 mac_muladd_16s_15s_29s_29_4_1_U53 mac_muladd_16s_15s_29s_29_4_1_U55 mac_muladd_16s_15s_29s_29_4_1_U56</SubModules>
+    <Resources DSP="8" FF="82" LUT="165" LogicLUT="157" SRL="8"/>
+    <LocalResources FF="80" LUT="124" LogicLUT="116" SRL="8"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop_fu_190/flow_control_loop_pipe_sequential_init_U" DEPTH="2" FILE_NAME="dct_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop.v" ORIG_REF_NAME="dct_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="11" LogicLUT="11"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop_fu_190/mac_muladd_16s_15s_13ns_29_4_1_U52" DEPTH="2" FILE_NAME="dct_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop.v" ORIG_REF_NAME="dct_mac_muladd_16s_15s_13ns_29_4_1">
+    <Resources DSP="1" LUT="12" LogicLUT="12"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop_fu_190/mac_muladd_16s_15s_29ns_29_4_1_U54" DEPTH="2" FILE_NAME="dct_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop.v" ORIG_REF_NAME="dct_mac_muladd_16s_15s_29ns_29_4_1">
+    <Resources DSP="1" LUT="6" LogicLUT="6"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop_fu_190/mac_muladd_16s_15s_29s_29_4_1_U53" DEPTH="2" FILE_NAME="dct_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop.v" ORIG_REF_NAME="dct_mac_muladd_16s_15s_29s_29_4_1">
+    <Resources DSP="2" LUT="11" LogicLUT="11"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop_fu_190/mac_muladd_16s_15s_29s_29_4_1_U55" DEPTH="2" FILE_NAME="dct_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop.v" ORIG_REF_NAME="dct_mac_muladd_16s_15s_29s_29_4_1">
+    <Resources DSP="2"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop_fu_190/mac_muladd_16s_15s_29s_29_4_1_U56" DEPTH="2" FILE_NAME="dct_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop.v" ORIG_REF_NAME="dct_mac_muladd_16s_15s_29s_29_4_1">
+    <Resources DSP="2" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_dct_Pipeline_RD_Loop_Row_RD_Loop_Col_fu_126" DEPTH="1" FILE_NAME="dct.v" ORIG_REF_NAME="dct_dct_Pipeline_RD_Loop_Row_RD_Loop_Col">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="36" LUT="28" LogicLUT="28"/>
+    <LocalResources FF="34" LUT="16" LogicLUT="16"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_dct_Pipeline_RD_Loop_Row_RD_Loop_Col_fu_126/flow_control_loop_pipe_sequential_init_U" DEPTH="2" FILE_NAME="dct_dct_Pipeline_RD_Loop_Row_RD_Loop_Col.v" ORIG_REF_NAME="dct_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="12" LogicLUT="12"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop_fu_148" DEPTH="1" FILE_NAME="dct.v" ORIG_REF_NAME="dct_dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop">
+    <SubModules count="6">flow_control_loop_pipe_sequential_init_U mac_muladd_16s_15s_13ns_29_4_1_U13 mac_muladd_16s_15s_29ns_29_4_1_U15 mac_muladd_16s_15s_29s_29_4_1_U14 mac_muladd_16s_15s_29s_29_4_1_U16 mac_muladd_16s_15s_29s_29_4_1_U17</SubModules>
+    <Resources DSP="8" FF="86" LUT="108" LogicLUT="100" SRL="8"/>
+    <LocalResources FF="84" LUT="93" LogicLUT="85" SRL="8"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop_fu_148/flow_control_loop_pipe_sequential_init_U" DEPTH="2" FILE_NAME="dct_dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop.v" ORIG_REF_NAME="dct_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="11" LogicLUT="11"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop_fu_148/mac_muladd_16s_15s_13ns_29_4_1_U13" DEPTH="2" FILE_NAME="dct_dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop.v" ORIG_REF_NAME="dct_mac_muladd_16s_15s_13ns_29_4_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop_fu_148/mac_muladd_16s_15s_29ns_29_4_1_U15" DEPTH="2" FILE_NAME="dct_dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop.v" ORIG_REF_NAME="dct_mac_muladd_16s_15s_29ns_29_4_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop_fu_148/mac_muladd_16s_15s_29s_29_4_1_U14" DEPTH="2" FILE_NAME="dct_dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop.v" ORIG_REF_NAME="dct_mac_muladd_16s_15s_29s_29_4_1">
+    <Resources DSP="2" LUT="3" LogicLUT="3"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop_fu_148/mac_muladd_16s_15s_29s_29_4_1_U16" DEPTH="2" FILE_NAME="dct_dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop.v" ORIG_REF_NAME="dct_mac_muladd_16s_15s_29s_29_4_1">
+    <Resources DSP="2"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop_fu_148/mac_muladd_16s_15s_29s_29_4_1_U17" DEPTH="2" FILE_NAME="dct_dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop.v" ORIG_REF_NAME="dct_mac_muladd_16s_15s_29s_29_4_1">
+    <Resources DSP="2" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_dct_Pipeline_WR_Loop_Row_WR_Loop_Col_fu_225" DEPTH="1" FILE_NAME="dct.v" ORIG_REF_NAME="dct_dct_Pipeline_WR_Loop_Row_WR_Loop_Col">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="33" LUT="26" LogicLUT="26"/>
+    <LocalResources FF="31" LUT="14" LogicLUT="14"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_dct_Pipeline_WR_Loop_Row_WR_Loop_Col_fu_225/flow_control_loop_pipe_sequential_init_U" DEPTH="2" FILE_NAME="dct_dct_Pipeline_WR_Loop_Row_WR_Loop_Col.v" ORIG_REF_NAME="dct_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="12" LogicLUT="12"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop_fu_219" DEPTH="1" FILE_NAME="dct.v" ORIG_REF_NAME="dct_dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="40" LUT="29" LogicLUT="29"/>
+    <LocalResources FF="38" LUT="18" LogicLUT="18"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop_fu_219/flow_control_loop_pipe_sequential_init_U" DEPTH="2" FILE_NAME="dct_dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop.v" ORIG_REF_NAME="dct_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="11" LogicLUT="11"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop_fu_177" DEPTH="1" FILE_NAME="dct.v" ORIG_REF_NAME="dct_dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="35" LUT="31" LogicLUT="31"/>
+    <LocalResources FF="33" LUT="20" LogicLUT="20"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop_fu_177/flow_control_loop_pipe_sequential_init_U" DEPTH="2" FILE_NAME="dct_dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop.v" ORIG_REF_NAME="dct_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="11" LogicLUT="11"/>
+  </RtlModule>
+  <RtlModule CELL="inst/row_outbuf_U" DEPTH="1" FILE_NAME="dct.v" ORIG_REF_NAME="dct_row_outbuf_RAM_AUTO_1R1W">
+    <Resources BRAM="1" RAMB18="1"/>
+  </RtlModule>
+</RtlModules>
+<TimingPaths>
+  <TPATH DATAPATH_DELAY="4.486" DATAPATH_LOGIC_DELAY="1.218" DATAPATH_NET_DELAY="3.268" ENDPOINT_PIN="bd_0_i/hls_inst/inst/grp_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop_fu_190/mac_muladd_16s_15s_13ns_29_4_1_U52/dct_mac_muladd_16s_15s_13ns_29_4_1_DSP48_0_U/p_reg_reg/A[0]" LOGIC_LEVELS="3" MAX_FANOUT="16" SLACK="5.068" STARTPOINT_PIN="bd_0_i/hls_inst/inst/grp_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop_fu_190/i_fu_82_reg[1]/C">
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop_fu_190/i_fu_82_reg[1]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="dct_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop.v" LINE_NUMBER="503"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop_fu_190/zext_ln43_reg_595[1]_i_1" PRIMITIVE_TYPE="LUT.others.LUT6" FILE_NAME="dct_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop.v" LINE_NUMBER="419"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop_fu_190/ram_reg_0_7_0_0_i_3__1" PRIMITIVE_TYPE="LUT.others.LUT3" FILE_NAME="dct_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop.v" LINE_NUMBER="419"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/col_inbuf_7_U/ram_reg_0_7_0_0/SP" PRIMITIVE_TYPE="DMEM.dram.RAM32X1S" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop_fu_190/mac_muladd_16s_15s_13ns_29_4_1_U52/dct_mac_muladd_16s_15s_13ns_29_4_1_DSP48_0_U/p_reg_reg" PRIMITIVE_TYPE="MULT.dsp.DSP48E1" FILE_NAME="dct_mac_muladd_16s_15s_13ns_29_4_1.v" LINE_NUMBER="35"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="4.486" DATAPATH_LOGIC_DELAY="1.218" DATAPATH_NET_DELAY="3.268" ENDPOINT_PIN="bd_0_i/hls_inst/inst/grp_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop_fu_190/mac_muladd_16s_15s_13ns_29_4_1_U52/dct_mac_muladd_16s_15s_13ns_29_4_1_DSP48_0_U/p_reg_reg/A[10]" LOGIC_LEVELS="3" MAX_FANOUT="16" SLACK="5.068" STARTPOINT_PIN="bd_0_i/hls_inst/inst/grp_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop_fu_190/i_fu_82_reg[1]/C">
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop_fu_190/i_fu_82_reg[1]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="dct_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop.v" LINE_NUMBER="503"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop_fu_190/zext_ln43_reg_595[1]_i_1" PRIMITIVE_TYPE="LUT.others.LUT6" FILE_NAME="dct_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop.v" LINE_NUMBER="419"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop_fu_190/ram_reg_0_7_0_0_i_3__1" PRIMITIVE_TYPE="LUT.others.LUT3" FILE_NAME="dct_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop.v" LINE_NUMBER="419"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/col_inbuf_7_U/ram_reg_0_7_10_10/SP" PRIMITIVE_TYPE="DMEM.dram.RAM32X1S" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop_fu_190/mac_muladd_16s_15s_13ns_29_4_1_U52/dct_mac_muladd_16s_15s_13ns_29_4_1_DSP48_0_U/p_reg_reg" PRIMITIVE_TYPE="MULT.dsp.DSP48E1" FILE_NAME="dct_mac_muladd_16s_15s_13ns_29_4_1.v" LINE_NUMBER="35"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="4.486" DATAPATH_LOGIC_DELAY="1.218" DATAPATH_NET_DELAY="3.268" ENDPOINT_PIN="bd_0_i/hls_inst/inst/grp_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop_fu_190/mac_muladd_16s_15s_13ns_29_4_1_U52/dct_mac_muladd_16s_15s_13ns_29_4_1_DSP48_0_U/p_reg_reg/A[11]" LOGIC_LEVELS="3" MAX_FANOUT="16" SLACK="5.068" STARTPOINT_PIN="bd_0_i/hls_inst/inst/grp_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop_fu_190/i_fu_82_reg[1]/C">
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop_fu_190/i_fu_82_reg[1]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="dct_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop.v" LINE_NUMBER="503"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop_fu_190/zext_ln43_reg_595[1]_i_1" PRIMITIVE_TYPE="LUT.others.LUT6" FILE_NAME="dct_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop.v" LINE_NUMBER="419"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop_fu_190/ram_reg_0_7_0_0_i_3__1" PRIMITIVE_TYPE="LUT.others.LUT3" FILE_NAME="dct_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop.v" LINE_NUMBER="419"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/col_inbuf_7_U/ram_reg_0_7_11_11/SP" PRIMITIVE_TYPE="DMEM.dram.RAM32X1S" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop_fu_190/mac_muladd_16s_15s_13ns_29_4_1_U52/dct_mac_muladd_16s_15s_13ns_29_4_1_DSP48_0_U/p_reg_reg" PRIMITIVE_TYPE="MULT.dsp.DSP48E1" FILE_NAME="dct_mac_muladd_16s_15s_13ns_29_4_1.v" LINE_NUMBER="35"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="4.486" DATAPATH_LOGIC_DELAY="1.218" DATAPATH_NET_DELAY="3.268" ENDPOINT_PIN="bd_0_i/hls_inst/inst/grp_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop_fu_190/mac_muladd_16s_15s_13ns_29_4_1_U52/dct_mac_muladd_16s_15s_13ns_29_4_1_DSP48_0_U/p_reg_reg/A[12]" LOGIC_LEVELS="3" MAX_FANOUT="16" SLACK="5.068" STARTPOINT_PIN="bd_0_i/hls_inst/inst/grp_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop_fu_190/i_fu_82_reg[1]/C">
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop_fu_190/i_fu_82_reg[1]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="dct_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop.v" LINE_NUMBER="503"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop_fu_190/zext_ln43_reg_595[1]_i_1" PRIMITIVE_TYPE="LUT.others.LUT6" FILE_NAME="dct_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop.v" LINE_NUMBER="419"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop_fu_190/ram_reg_0_7_0_0_i_3__1" PRIMITIVE_TYPE="LUT.others.LUT3" FILE_NAME="dct_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop.v" LINE_NUMBER="419"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/col_inbuf_7_U/ram_reg_0_7_12_12/SP" PRIMITIVE_TYPE="DMEM.dram.RAM32X1S" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop_fu_190/mac_muladd_16s_15s_13ns_29_4_1_U52/dct_mac_muladd_16s_15s_13ns_29_4_1_DSP48_0_U/p_reg_reg" PRIMITIVE_TYPE="MULT.dsp.DSP48E1" FILE_NAME="dct_mac_muladd_16s_15s_13ns_29_4_1.v" LINE_NUMBER="35"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="4.486" DATAPATH_LOGIC_DELAY="1.218" DATAPATH_NET_DELAY="3.268" ENDPOINT_PIN="bd_0_i/hls_inst/inst/grp_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop_fu_190/mac_muladd_16s_15s_13ns_29_4_1_U52/dct_mac_muladd_16s_15s_13ns_29_4_1_DSP48_0_U/p_reg_reg/A[13]" LOGIC_LEVELS="3" MAX_FANOUT="16" SLACK="5.068" STARTPOINT_PIN="bd_0_i/hls_inst/inst/grp_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop_fu_190/i_fu_82_reg[1]/C">
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop_fu_190/i_fu_82_reg[1]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="dct_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop.v" LINE_NUMBER="503"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop_fu_190/zext_ln43_reg_595[1]_i_1" PRIMITIVE_TYPE="LUT.others.LUT6" FILE_NAME="dct_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop.v" LINE_NUMBER="419"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop_fu_190/ram_reg_0_7_0_0_i_3__1" PRIMITIVE_TYPE="LUT.others.LUT3" FILE_NAME="dct_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop.v" LINE_NUMBER="419"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/col_inbuf_7_U/ram_reg_0_7_13_13/SP" PRIMITIVE_TYPE="DMEM.dram.RAM32X1S" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop_fu_190/mac_muladd_16s_15s_13ns_29_4_1_U52/dct_mac_muladd_16s_15s_13ns_29_4_1_DSP48_0_U/p_reg_reg" PRIMITIVE_TYPE="MULT.dsp.DSP48E1" FILE_NAME="dct_mac_muladd_16s_15s_13ns_29_4_1.v" LINE_NUMBER="35"/>
+  </TPATH>
+</TimingPaths>
+<VivadoReportFiles>
+  <ReportFile TYPE="design_analysis" PATH="verilog/report/dct_design_analysis_synth.rpt"/>
+  <ReportFile TYPE="failfast" PATH="verilog/report/dct_failfast_synth.rpt"/>
+  <ReportFile TYPE="timing" PATH="verilog/report/dct_timing_synth.rpt"/>
+  <ReportFile TYPE="timing_paths" PATH="verilog/report/dct_timing_paths_synth.rpt"/>
+  <ReportFile TYPE="utilization" PATH="verilog/report/dct_utilization_synth.rpt"/>
+  <ReportFile TYPE="utilization_hierarchical" PATH="verilog/report/dct_utilization_hierarchical_synth.rpt"/>
+</VivadoReportFiles>
+</profile>

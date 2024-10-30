@@ -1,0 +1,49 @@
+{
+	"version": "1.0",
+	"modules": {
+		"yuv_filter": {
+			"proto_instances": {
+				"/AESL_inst_yuv_filter_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_yuv_filter_Pipeline_RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y_fu_129/grp_yuv_filter_Pipeline_RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y_fu_129_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_yuv_filter_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y_fu_159/grp_yuv_filter_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y_fu_159_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_yuv_filter_Pipeline_YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y_fu_144/grp_yuv_filter_Pipeline_YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y_fu_144_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				}
+			}
+		}
+	}
+}

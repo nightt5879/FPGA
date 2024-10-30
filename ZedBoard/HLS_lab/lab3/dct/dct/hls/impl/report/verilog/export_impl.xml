@@ -1,0 +1,318 @@
+<profile>
+  <RunData>
+    <RUN_TYPE>impl</RUN_TYPE>
+    <VIVADO_VERSION>v.2024.1</VIVADO_VERSION>
+    <ROOT_MODULE_CELL>bd_0_i/hls_inst</ROOT_MODULE_CELL>
+  </RunData>
+  <TimingReport>
+    <TargetClockPeriod>10.000</TargetClockPeriod>
+    <AchievedClockPeriod>6.666</AchievedClockPeriod>
+    <CLOCK_NAME>ap_clk</CLOCK_NAME>
+    <CP_FINAL>6.666</CP_FINAL>
+    <CP_ROUTE>6.666</CP_ROUTE>
+    <CP_SYNTH>4.932</CP_SYNTH>
+    <CP_TARGET>10.000</CP_TARGET>
+    <SLACK_FINAL>3.334</SLACK_FINAL>
+    <SLACK_ROUTE>3.334</SLACK_ROUTE>
+    <SLACK_SYNTH>5.068</SLACK_SYNTH>
+    <TIMING_MET>TRUE</TIMING_MET>
+    <TNS_FINAL>0.000</TNS_FINAL>
+    <TNS_ROUTE>0.000</TNS_ROUTE>
+    <TNS_SYNTH>0.000</TNS_SYNTH>
+    <WNS_FINAL>3.334</WNS_FINAL>
+    <WNS_ROUTE>3.334</WNS_ROUTE>
+    <WNS_SYNTH>5.068</WNS_SYNTH>
+  </TimingReport>
+  <AreaReport>
+    <Resources>
+      <BRAM>3</BRAM>
+      <CLB>0</CLB>
+      <DSP>16</DSP>
+      <FF>376</FF>
+      <LATCH>0</LATCH>
+      <LUT>621</LUT>
+      <SLICE>218</SLICE>
+      <SRL>16</SRL>
+      <URAM>0</URAM>
+    </Resources>
+    <AvailableResources>
+      <BRAM>280</BRAM>
+      <CLB>0</CLB>
+      <DSP>220</DSP>
+      <FF>106400</FF>
+      <LUT>53200</LUT>
+      <SLICE>13300</SLICE>
+      <URAM>0</URAM>
+    </AvailableResources>
+  </AreaReport>
+  <RtlModules>
+    <RtlModule CELL="inst" DEPTH="0" IS_TOP="1" TYPE="function" MODULENAME="dct" DISPNAME="inst" RTLNAME="dct">
+      <SubModules count="29">buf_2d_in_10_U buf_2d_in_11_U buf_2d_in_12_U buf_2d_in_13_U buf_2d_in_14_U buf_2d_in_8_U buf_2d_in_9_U buf_2d_in_U buf_2d_out_U col_inbuf_1_U col_inbuf_2_U col_inbuf_3_U col_inbuf_4_U col_inbuf_5_U col_inbuf_6_U col_inbuf_7_U col_inbuf_U col_outbuf_U dct_1d_dct_coeff_table_0_U dct_1d_dct_coeff_table_1_U dct_1d_dct_coeff_table_2_U dct_1d_dct_coeff_table_3_U grp_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop_fu_190 grp_dct_Pipeline_RD_Loop_Row_RD_Loop_Col_fu_126 grp_dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop_fu_148 grp_dct_Pipeline_WR_Loop_Row_WR_Loop_Col_fu_225 grp_dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop_fu_219 grp_dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop_fu_177 row_outbuf_U</SubModules>
+      <Resources BRAM="3" DSP="16" FF="376" LUT="621"/>
+      <LocalResources FF="18" LUT="1"/>
+    </RtlModule>
+    <RtlModule CELL="inst/buf_2d_in_10_U" DEPTH="1" TYPE="resource" MODULENAME="col_inbuf_RAM_AUTO_1R1W" DISPNAME="buf_2d_in_10_U" RTLNAME="dct_col_inbuf_RAM_AUTO_1R1W">
+      <Resources LUT="16"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="buf_2d_in_10_U" SOURCE="../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c:81" STORAGESIZE="16 8 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="buf_2d_in_10" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/buf_2d_in_11_U" DEPTH="1" TYPE="resource" MODULENAME="col_inbuf_RAM_AUTO_1R1W" DISPNAME="buf_2d_in_11_U" RTLNAME="dct_col_inbuf_RAM_AUTO_1R1W">
+      <Resources LUT="16"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="buf_2d_in_11_U" SOURCE="../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c:81" STORAGESIZE="16 8 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="buf_2d_in_11" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/buf_2d_in_12_U" DEPTH="1" TYPE="resource" MODULENAME="col_inbuf_RAM_AUTO_1R1W" DISPNAME="buf_2d_in_12_U" RTLNAME="dct_col_inbuf_RAM_AUTO_1R1W">
+      <Resources LUT="16"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="buf_2d_in_12_U" SOURCE="../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c:81" STORAGESIZE="16 8 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="buf_2d_in_12" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/buf_2d_in_13_U" DEPTH="1" TYPE="resource" MODULENAME="col_inbuf_RAM_AUTO_1R1W" DISPNAME="buf_2d_in_13_U" RTLNAME="dct_col_inbuf_RAM_AUTO_1R1W">
+      <Resources LUT="16"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="buf_2d_in_13_U" SOURCE="../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c:81" STORAGESIZE="16 8 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="buf_2d_in_13" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/buf_2d_in_14_U" DEPTH="1" TYPE="resource" MODULENAME="col_inbuf_RAM_AUTO_1R1W" DISPNAME="buf_2d_in_14_U" RTLNAME="dct_col_inbuf_RAM_AUTO_1R1W">
+      <Resources LUT="16"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="buf_2d_in_14_U" SOURCE="../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c:81" STORAGESIZE="16 8 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="buf_2d_in_14" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/buf_2d_in_8_U" DEPTH="1" TYPE="resource" MODULENAME="col_inbuf_RAM_AUTO_1R1W" DISPNAME="buf_2d_in_8_U" RTLNAME="dct_col_inbuf_RAM_AUTO_1R1W">
+      <Resources LUT="16"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="buf_2d_in_8_U" SOURCE="../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c:81" STORAGESIZE="16 8 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="buf_2d_in_8" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/buf_2d_in_9_U" DEPTH="1" TYPE="resource" MODULENAME="col_inbuf_RAM_AUTO_1R1W" DISPNAME="buf_2d_in_9_U" RTLNAME="dct_col_inbuf_RAM_AUTO_1R1W">
+      <Resources LUT="16"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="buf_2d_in_9_U" SOURCE="../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c:81" STORAGESIZE="16 8 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="buf_2d_in_9" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/buf_2d_in_U" DEPTH="1" TYPE="resource" MODULENAME="col_inbuf_RAM_AUTO_1R1W" DISPNAME="buf_2d_in_U" RTLNAME="dct_col_inbuf_RAM_AUTO_1R1W">
+      <Resources LUT="16"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="buf_2d_in_U" SOURCE="../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c:81" STORAGESIZE="16 8 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="buf_2d_in" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/buf_2d_out_U" DEPTH="1" TYPE="resource" MODULENAME="row_outbuf_RAM_AUTO_1R1W" DISPNAME="buf_2d_out_U" RTLNAME="dct_row_outbuf_RAM_AUTO_1R1W">
+      <Resources BRAM="1"/>
+      <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="buf_2d_out_U" SOURCE="../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c:82" STORAGESIZE="16 64 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="buf_2d_out" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/col_inbuf_1_U" DEPTH="1" TYPE="resource" MODULENAME="col_inbuf_RAM_AUTO_1R1W" DISPNAME="col_inbuf_1_U" RTLNAME="dct_col_inbuf_RAM_AUTO_1R1W">
+      <Resources LUT="16"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="col_inbuf_1_U" SOURCE="../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c:27" STORAGESIZE="16 8 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="col_inbuf_1" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/col_inbuf_2_U" DEPTH="1" TYPE="resource" MODULENAME="col_inbuf_RAM_AUTO_1R1W" DISPNAME="col_inbuf_2_U" RTLNAME="dct_col_inbuf_RAM_AUTO_1R1W">
+      <Resources LUT="16"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="col_inbuf_2_U" SOURCE="../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c:27" STORAGESIZE="16 8 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="col_inbuf_2" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/col_inbuf_3_U" DEPTH="1" TYPE="resource" MODULENAME="col_inbuf_RAM_AUTO_1R1W" DISPNAME="col_inbuf_3_U" RTLNAME="dct_col_inbuf_RAM_AUTO_1R1W">
+      <Resources LUT="16"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="col_inbuf_3_U" SOURCE="../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c:27" STORAGESIZE="16 8 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="col_inbuf_3" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/col_inbuf_4_U" DEPTH="1" TYPE="resource" MODULENAME="col_inbuf_RAM_AUTO_1R1W" DISPNAME="col_inbuf_4_U" RTLNAME="dct_col_inbuf_RAM_AUTO_1R1W">
+      <Resources LUT="16"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="col_inbuf_4_U" SOURCE="../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c:27" STORAGESIZE="16 8 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="col_inbuf_4" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/col_inbuf_5_U" DEPTH="1" TYPE="resource" MODULENAME="col_inbuf_RAM_AUTO_1R1W" DISPNAME="col_inbuf_5_U" RTLNAME="dct_col_inbuf_RAM_AUTO_1R1W">
+      <Resources LUT="16"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="col_inbuf_5_U" SOURCE="../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c:27" STORAGESIZE="16 8 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="col_inbuf_5" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/col_inbuf_6_U" DEPTH="1" TYPE="resource" MODULENAME="col_inbuf_RAM_AUTO_1R1W" DISPNAME="col_inbuf_6_U" RTLNAME="dct_col_inbuf_RAM_AUTO_1R1W">
+      <Resources LUT="16"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="col_inbuf_6_U" SOURCE="../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c:27" STORAGESIZE="16 8 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="col_inbuf_6" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/col_inbuf_7_U" DEPTH="1" TYPE="resource" MODULENAME="col_inbuf_RAM_AUTO_1R1W" DISPNAME="col_inbuf_7_U" RTLNAME="dct_col_inbuf_RAM_AUTO_1R1W">
+      <Resources LUT="16"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="col_inbuf_7_U" SOURCE="../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c:27" STORAGESIZE="16 8 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="col_inbuf_7" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/col_inbuf_U" DEPTH="1" TYPE="resource" MODULENAME="col_inbuf_RAM_AUTO_1R1W" DISPNAME="col_inbuf_U" RTLNAME="dct_col_inbuf_RAM_AUTO_1R1W">
+      <Resources LUT="16"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="col_inbuf_U" SOURCE="../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c:27" STORAGESIZE="16 8 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="col_inbuf" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/col_outbuf_U" DEPTH="1" TYPE="resource" MODULENAME="row_outbuf_RAM_AUTO_1R1W" DISPNAME="col_outbuf_U" RTLNAME="dct_row_outbuf_RAM_AUTO_1R1W">
+      <Resources BRAM="1"/>
+      <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="col_outbuf_U" SOURCE="../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c:27" STORAGESIZE="16 64 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="col_outbuf" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/dct_1d_dct_coeff_table_0_U" DEPTH="1" TYPE="rtl" MODULENAME="dct_1d_dct_coeff_table_0_ROM_AUTO_1R" DISPNAME="1d_dct_coeff_table_0_U" RTLNAME="dct_dct_1d_dct_coeff_table_0_ROM_AUTO_1R">
+      <Resources FF="13" LUT="1"/>
+    </RtlModule>
+    <RtlModule CELL="inst/dct_1d_dct_coeff_table_1_U" DEPTH="1" TYPE="rtl" MODULENAME="dct_1d_dct_coeff_table_1_ROM_AUTO_1R" DISPNAME="1d_dct_coeff_table_1_U" RTLNAME="dct_dct_1d_dct_coeff_table_1_ROM_AUTO_1R">
+      <Resources FF="11"/>
+    </RtlModule>
+    <RtlModule CELL="inst/dct_1d_dct_coeff_table_2_U" DEPTH="1" TYPE="rtl" MODULENAME="dct_1d_dct_coeff_table_2_ROM_AUTO_1R" DISPNAME="1d_dct_coeff_table_2_U" RTLNAME="dct_dct_1d_dct_coeff_table_2_ROM_AUTO_1R">
+      <Resources FF="12" LUT="1"/>
+    </RtlModule>
+    <RtlModule CELL="inst/dct_1d_dct_coeff_table_3_U" DEPTH="1" TYPE="rtl" MODULENAME="dct_1d_dct_coeff_table_3_ROM_AUTO_1R" DISPNAME="1d_dct_coeff_table_3_U" RTLNAME="dct_dct_1d_dct_coeff_table_3_ROM_AUTO_1R">
+      <Resources FF="10" LUT="1"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop_fu_190" DEPTH="1" TYPE="function" MODULENAME="dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop" DISPNAME="grp_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop_fu_190" RTLNAME="dct_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop">
+      <SubModules count="6">flow_control_loop_pipe_sequential_init_U mac_muladd_16s_15s_13ns_29_4_1_U52 mac_muladd_16s_15s_29ns_29_4_1_U54 mac_muladd_16s_15s_29s_29_4_1_U53 mac_muladd_16s_15s_29s_29_4_1_U55 mac_muladd_16s_15s_29s_29_4_1_U56</SubModules>
+      <Resources DSP="8" FF="82" LUT="157"/>
+      <LocalResources FF="80" LUT="119"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop_fu_190/flow_control_loop_pipe_sequential_init_U" DEPTH="2" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="dct_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="11"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop_fu_190/mac_muladd_16s_15s_13ns_29_4_1_U52" DEPTH="2" TYPE="resource" MODULENAME="mac_muladd_16s_15s_13ns_29_4_1" DISPNAME="mac_muladd_16s_15s_13ns_29_4_1_U52" RTLNAME="dct_mac_muladd_16s_15s_13ns_29_4_1">
+      <Resources DSP="1" LUT="11"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="Col_DCT_Loop_DCT_Outer_Loop" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_15s_13ns_29_4_1_U52" SOURCE="../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c:19" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln19" VISIBLE="true"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="Col_DCT_Loop_DCT_Outer_Loop" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_15s_13ns_29_4_1_U52" SOURCE="../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c:19" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln19_12" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop_fu_190/mac_muladd_16s_15s_29ns_29_4_1_U54" DEPTH="2" TYPE="resource" MODULENAME="mac_muladd_16s_15s_29ns_29_4_1" DISPNAME="mac_muladd_16s_15s_29ns_29_4_1_U54" RTLNAME="dct_mac_muladd_16s_15s_29ns_29_4_1">
+      <Resources DSP="1" LUT="6"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="Col_DCT_Loop_DCT_Outer_Loop" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_15s_29ns_29_4_1_U54" SOURCE="../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c:19" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln19_13" VISIBLE="true"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="Col_DCT_Loop_DCT_Outer_Loop" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_15s_29ns_29_4_1_U54" SOURCE="../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c:19" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln19_13" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop_fu_190/mac_muladd_16s_15s_29s_29_4_1_U53" DEPTH="2" TYPE="resource" MODULENAME="mac_muladd_16s_15s_29s_29_4_1" DISPNAME="mac_muladd_16s_15s_29s_29_4_1_U53" RTLNAME="dct_mac_muladd_16s_15s_29s_29_4_1">
+      <Resources DSP="2" LUT="11"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="Col_DCT_Loop_DCT_Outer_Loop" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_15s_29s_29_4_1_U53" SOURCE="../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c:19" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln19_10" VISIBLE="true"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="Col_DCT_Loop_DCT_Outer_Loop" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_15s_29s_29_4_1_U53" SOURCE="../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c:19" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln19_11" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop_fu_190/mac_muladd_16s_15s_29s_29_4_1_U55" DEPTH="2" TYPE="resource" MODULENAME="mac_muladd_16s_15s_29s_29_4_1" DISPNAME="mac_muladd_16s_15s_29s_29_4_1_U55" RTLNAME="dct_mac_muladd_16s_15s_29s_29_4_1">
+      <Resources DSP="2"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="Col_DCT_Loop_DCT_Outer_Loop" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_15s_29s_29_4_1_U55" SOURCE="../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c:19" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln19_9" VISIBLE="true"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="Col_DCT_Loop_DCT_Outer_Loop" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_15s_29s_29_4_1_U55" SOURCE="../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c:19" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln19_8" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop_fu_190/mac_muladd_16s_15s_29s_29_4_1_U56" DEPTH="2" TYPE="resource" MODULENAME="mac_muladd_16s_15s_29s_29_4_1" DISPNAME="mac_muladd_16s_15s_29s_29_4_1_U56" RTLNAME="dct_mac_muladd_16s_15s_29s_29_4_1">
+      <Resources DSP="2" LUT="1"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="Col_DCT_Loop_DCT_Outer_Loop" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_15s_29s_29_4_1_U56" SOURCE="../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c:19" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln19_11" VISIBLE="true"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="Col_DCT_Loop_DCT_Outer_Loop" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_15s_29s_29_4_1_U56" SOURCE="../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c:19" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln19_9" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_dct_Pipeline_RD_Loop_Row_RD_Loop_Col_fu_126" DEPTH="1" TYPE="function" MODULENAME="dct_Pipeline_RD_Loop_Row_RD_Loop_Col" DISPNAME="grp_dct_Pipeline_RD_Loop_Row_RD_Loop_Col_fu_126" RTLNAME="dct_dct_Pipeline_RD_Loop_Row_RD_Loop_Col">
+      <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+      <Resources FF="36" LUT="28"/>
+      <LocalResources FF="34" LUT="16"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_dct_Pipeline_RD_Loop_Row_RD_Loop_Col_fu_126/flow_control_loop_pipe_sequential_init_U" DEPTH="2" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="dct_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="12"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop_fu_148" DEPTH="1" TYPE="function" MODULENAME="dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop" DISPNAME="grp_dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop_fu_148" RTLNAME="dct_dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop">
+      <SubModules count="6">flow_control_loop_pipe_sequential_init_U mac_muladd_16s_15s_13ns_29_4_1_U13 mac_muladd_16s_15s_29ns_29_4_1_U15 mac_muladd_16s_15s_29s_29_4_1_U14 mac_muladd_16s_15s_29s_29_4_1_U16 mac_muladd_16s_15s_29s_29_4_1_U17</SubModules>
+      <Resources DSP="8" FF="86" LUT="104"/>
+      <LocalResources FF="84" LUT="89"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop_fu_148/flow_control_loop_pipe_sequential_init_U" DEPTH="2" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="dct_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="11"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop_fu_148/mac_muladd_16s_15s_13ns_29_4_1_U13" DEPTH="2" TYPE="resource" MODULENAME="mac_muladd_16s_15s_13ns_29_4_1" DISPNAME="mac_muladd_16s_15s_13ns_29_4_1_U13" RTLNAME="dct_mac_muladd_16s_15s_13ns_29_4_1">
+      <Resources DSP="1"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="Row_DCT_Loop_DCT_Outer_Loop" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_15s_13ns_29_4_1_U13" SOURCE="../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c:19" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln19" VISIBLE="true"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="Row_DCT_Loop_DCT_Outer_Loop" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_15s_13ns_29_4_1_U13" SOURCE="../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c:19" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln19_4" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop_fu_148/mac_muladd_16s_15s_29ns_29_4_1_U15" DEPTH="2" TYPE="resource" MODULENAME="mac_muladd_16s_15s_29ns_29_4_1" DISPNAME="mac_muladd_16s_15s_29ns_29_4_1_U15" RTLNAME="dct_mac_muladd_16s_15s_29ns_29_4_1">
+      <Resources DSP="1"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="Row_DCT_Loop_DCT_Outer_Loop" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_15s_29ns_29_4_1_U15" SOURCE="../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c:19" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln19_6" VISIBLE="true"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="Row_DCT_Loop_DCT_Outer_Loop" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_15s_29ns_29_4_1_U15" SOURCE="../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c:19" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln19_5" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop_fu_148/mac_muladd_16s_15s_29s_29_4_1_U14" DEPTH="2" TYPE="resource" MODULENAME="mac_muladd_16s_15s_29s_29_4_1" DISPNAME="mac_muladd_16s_15s_29s_29_4_1_U14" RTLNAME="dct_mac_muladd_16s_15s_29s_29_4_1">
+      <Resources DSP="2" LUT="3"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="Row_DCT_Loop_DCT_Outer_Loop" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_15s_29s_29_4_1_U14" SOURCE="../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c:19" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln19_3" VISIBLE="true"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="Row_DCT_Loop_DCT_Outer_Loop" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_15s_29s_29_4_1_U14" SOURCE="../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c:19" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln19_3" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop_fu_148/mac_muladd_16s_15s_29s_29_4_1_U16" DEPTH="2" TYPE="resource" MODULENAME="mac_muladd_16s_15s_29s_29_4_1" DISPNAME="mac_muladd_16s_15s_29s_29_4_1_U16" RTLNAME="dct_mac_muladd_16s_15s_29s_29_4_1">
+      <Resources DSP="2"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="Row_DCT_Loop_DCT_Outer_Loop" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_15s_29s_29_4_1_U16" SOURCE="../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c:19" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln19_2" VISIBLE="true"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="Row_DCT_Loop_DCT_Outer_Loop" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_15s_29s_29_4_1_U16" SOURCE="../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c:19" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln19" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop_fu_148/mac_muladd_16s_15s_29s_29_4_1_U17" DEPTH="2" TYPE="resource" MODULENAME="mac_muladd_16s_15s_29s_29_4_1" DISPNAME="mac_muladd_16s_15s_29s_29_4_1_U17" RTLNAME="dct_mac_muladd_16s_15s_29s_29_4_1">
+      <Resources DSP="2" LUT="1"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="Row_DCT_Loop_DCT_Outer_Loop" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_15s_29s_29_4_1_U17" SOURCE="../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c:19" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln19_4" VISIBLE="true"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="Row_DCT_Loop_DCT_Outer_Loop" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_15s_29s_29_4_1_U17" SOURCE="../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c:19" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln19_1" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_dct_Pipeline_WR_Loop_Row_WR_Loop_Col_fu_225" DEPTH="1" TYPE="function" MODULENAME="dct_Pipeline_WR_Loop_Row_WR_Loop_Col" DISPNAME="grp_dct_Pipeline_WR_Loop_Row_WR_Loop_Col_fu_225" RTLNAME="dct_dct_Pipeline_WR_Loop_Row_WR_Loop_Col">
+      <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+      <Resources FF="33" LUT="23"/>
+      <LocalResources FF="31" LUT="11"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_dct_Pipeline_WR_Loop_Row_WR_Loop_Col_fu_225/flow_control_loop_pipe_sequential_init_U" DEPTH="2" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="dct_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="12"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop_fu_219" DEPTH="1" TYPE="function" MODULENAME="dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop" DISPNAME="grp_dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop_fu_219" RTLNAME="dct_dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop">
+      <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+      <Resources FF="40" LUT="26"/>
+      <LocalResources FF="38" LUT="15"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop_fu_219/flow_control_loop_pipe_sequential_init_U" DEPTH="2" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="dct_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="11"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop_fu_177" DEPTH="1" TYPE="function" MODULENAME="dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop" DISPNAME="grp_dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop_fu_177" RTLNAME="dct_dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop">
+      <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+      <Resources FF="35" LUT="30"/>
+      <LocalResources FF="33" LUT="19"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop_fu_177/flow_control_loop_pipe_sequential_init_U" DEPTH="2" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="dct_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="11"/>
+    </RtlModule>
+    <RtlModule CELL="inst/row_outbuf_U" DEPTH="1" TYPE="resource" MODULENAME="row_outbuf_RAM_AUTO_1R1W" DISPNAME="row_outbuf_U" RTLNAME="dct_row_outbuf_RAM_AUTO_1R1W">
+      <Resources BRAM="1"/>
+      <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="row_outbuf_U" SOURCE="../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c:26" STORAGESIZE="16 64 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="row_outbuf" VISIBLE="true"/>
+    </RtlModule>
+  </RtlModules>
+  <TimingPaths>
+    <TPATH DATAPATH_DELAY="6.220" DATAPATH_LOGIC_DELAY="0.690" DATAPATH_NET_DELAY="5.530" ENDPOINT_PIN="grp_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop_fu_190/mac_muladd_16s_15s_29s_29_4_1_U55/dct_mac_muladd_16s_15s_29s_29_4_1_DSP48_0_U/m_reg_reg/A[12]" LOGIC_LEVELS="2" MAX_FANOUT="98" SLACK="3.334" STARTPOINT_PIN="ap_CS_fsm_reg[7]/C">
+      <CELL NAME="ap_CS_fsm_reg[7]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="dct.v" LINE_NUMBER="985"/>
+      <CELL NAME="grp_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop_fu_190/ram_reg_0_7_0_0_i_3" PRIMITIVE_TYPE="LUT.others.LUT3" FILE_NAME="dct_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop.v" LINE_NUMBER="419" MODULE_INSTNAME="grp_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop_fu_190" IS_FUNCINST="0"/>
+      <CELL NAME="col_inbuf_1_U/ram_reg_0_7_12_12/SP" PRIMITIVE_TYPE="DMEM.dram.RAM32X1S" FILE_NAME="" LINE_NUMBER="" MODULE_INSTNAME="col_inbuf_1_U" IS_FUNCINST="0"/>
+      <CELL NAME="grp_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop_fu_190/mac_muladd_16s_15s_29s_29_4_1_U55/dct_mac_muladd_16s_15s_29s_29_4_1_DSP48_0_U/m_reg_reg" PRIMITIVE_TYPE="MULT.dsp.DSP48E1" FILE_NAME="dct_mac_muladd_16s_15s_29s_29_4_1.v" LINE_NUMBER="35" MODULE_INSTNAME="mac_muladd_16s_15s_29s_29_4_1_U55" IS_FUNCINST="0"/>
+      <MODULE_INSTANCES>grp_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop_fu_190 col_inbuf_1_U mac_muladd_16s_15s_29s_29_4_1_U55 grp_dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop_fu_148 buf_2d_in_10_U mac_muladd_16s_15s_29s_29_4_1_U17</MODULE_INSTANCES>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="6.099" DATAPATH_LOGIC_DELAY="0.704" DATAPATH_NET_DELAY="5.395" ENDPOINT_PIN="grp_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop_fu_190/mac_muladd_16s_15s_29s_29_4_1_U55/dct_mac_muladd_16s_15s_29s_29_4_1_DSP48_0_U/m_reg_reg/A[0]" LOGIC_LEVELS="2" MAX_FANOUT="98" SLACK="3.455" STARTPOINT_PIN="ap_CS_fsm_reg[7]/C">
+      <CELL NAME="ap_CS_fsm_reg[7]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="dct.v" LINE_NUMBER="985"/>
+      <CELL NAME="grp_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop_fu_190/ram_reg_0_7_0_0_i_3" PRIMITIVE_TYPE="LUT.others.LUT3" FILE_NAME="dct_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop.v" LINE_NUMBER="419" MODULE_INSTNAME="grp_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop_fu_190" IS_FUNCINST="0"/>
+      <CELL NAME="col_inbuf_1_U/ram_reg_0_7_0_0/SP" PRIMITIVE_TYPE="DMEM.dram.RAM32X1S" FILE_NAME="" LINE_NUMBER="" MODULE_INSTNAME="col_inbuf_1_U" IS_FUNCINST="0"/>
+      <CELL NAME="grp_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop_fu_190/mac_muladd_16s_15s_29s_29_4_1_U55/dct_mac_muladd_16s_15s_29s_29_4_1_DSP48_0_U/m_reg_reg" PRIMITIVE_TYPE="MULT.dsp.DSP48E1" FILE_NAME="dct_mac_muladd_16s_15s_29s_29_4_1.v" LINE_NUMBER="35" MODULE_INSTNAME="mac_muladd_16s_15s_29s_29_4_1_U55" IS_FUNCINST="0"/>
+      <MODULE_INSTANCES>grp_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop_fu_190 col_inbuf_1_U mac_muladd_16s_15s_29s_29_4_1_U55 grp_dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop_fu_148 buf_2d_in_10_U mac_muladd_16s_15s_29s_29_4_1_U17</MODULE_INSTANCES>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="6.080" DATAPATH_LOGIC_DELAY="0.720" DATAPATH_NET_DELAY="5.360" ENDPOINT_PIN="grp_dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop_fu_148/mac_muladd_16s_15s_29s_29_4_1_U17/dct_mac_muladd_16s_15s_29s_29_4_1_DSP48_0_U/m_reg_reg/A[20]" LOGIC_LEVELS="2" MAX_FANOUT="64" SLACK="3.474" STARTPOINT_PIN="ap_CS_fsm_reg[3]/C">
+      <CELL NAME="ap_CS_fsm_reg[3]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="dct.v" LINE_NUMBER="985"/>
+      <CELL NAME="grp_dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop_fu_148/ram_reg_0_7_0_0_i_3__2" PRIMITIVE_TYPE="LUT.others.LUT3" FILE_NAME="dct_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop.v" LINE_NUMBER="419" MODULE_INSTNAME="grp_dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop_fu_148" IS_FUNCINST="0"/>
+      <CELL NAME="buf_2d_in_10_U/ram_reg_0_7_15_15/SP" PRIMITIVE_TYPE="DMEM.dram.RAM32X1S" FILE_NAME="" LINE_NUMBER="" MODULE_INSTNAME="buf_2d_in_10_U" IS_FUNCINST="0"/>
+      <CELL NAME="grp_dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop_fu_148/mac_muladd_16s_15s_29s_29_4_1_U17/dct_mac_muladd_16s_15s_29s_29_4_1_DSP48_0_U/m_reg_reg" PRIMITIVE_TYPE="MULT.dsp.DSP48E1" FILE_NAME="dct_mac_muladd_16s_15s_29s_29_4_1.v" LINE_NUMBER="35" MODULE_INSTNAME="mac_muladd_16s_15s_29s_29_4_1_U17" IS_FUNCINST="0"/>
+      <MODULE_INSTANCES>grp_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop_fu_190 col_inbuf_1_U mac_muladd_16s_15s_29s_29_4_1_U55 grp_dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop_fu_148 buf_2d_in_10_U mac_muladd_16s_15s_29s_29_4_1_U17</MODULE_INSTANCES>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="6.080" DATAPATH_LOGIC_DELAY="0.720" DATAPATH_NET_DELAY="5.360" ENDPOINT_PIN="grp_dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop_fu_148/mac_muladd_16s_15s_29s_29_4_1_U17/dct_mac_muladd_16s_15s_29s_29_4_1_DSP48_0_U/m_reg_reg/A[21]" LOGIC_LEVELS="2" MAX_FANOUT="64" SLACK="3.474" STARTPOINT_PIN="ap_CS_fsm_reg[3]/C">
+      <CELL NAME="ap_CS_fsm_reg[3]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="dct.v" LINE_NUMBER="985"/>
+      <CELL NAME="grp_dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop_fu_148/ram_reg_0_7_0_0_i_3__2" PRIMITIVE_TYPE="LUT.others.LUT3" FILE_NAME="dct_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop.v" LINE_NUMBER="419" MODULE_INSTNAME="grp_dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop_fu_148" IS_FUNCINST="0"/>
+      <CELL NAME="buf_2d_in_10_U/ram_reg_0_7_15_15/SP" PRIMITIVE_TYPE="DMEM.dram.RAM32X1S" FILE_NAME="" LINE_NUMBER="" MODULE_INSTNAME="buf_2d_in_10_U" IS_FUNCINST="0"/>
+      <CELL NAME="grp_dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop_fu_148/mac_muladd_16s_15s_29s_29_4_1_U17/dct_mac_muladd_16s_15s_29s_29_4_1_DSP48_0_U/m_reg_reg" PRIMITIVE_TYPE="MULT.dsp.DSP48E1" FILE_NAME="dct_mac_muladd_16s_15s_29s_29_4_1.v" LINE_NUMBER="35" MODULE_INSTNAME="mac_muladd_16s_15s_29s_29_4_1_U17" IS_FUNCINST="0"/>
+      <MODULE_INSTANCES>grp_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop_fu_190 col_inbuf_1_U mac_muladd_16s_15s_29s_29_4_1_U55 grp_dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop_fu_148 buf_2d_in_10_U mac_muladd_16s_15s_29s_29_4_1_U17</MODULE_INSTANCES>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="6.080" DATAPATH_LOGIC_DELAY="0.720" DATAPATH_NET_DELAY="5.360" ENDPOINT_PIN="grp_dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop_fu_148/mac_muladd_16s_15s_29s_29_4_1_U17/dct_mac_muladd_16s_15s_29s_29_4_1_DSP48_0_U/m_reg_reg/A[22]" LOGIC_LEVELS="2" MAX_FANOUT="64" SLACK="3.474" STARTPOINT_PIN="ap_CS_fsm_reg[3]/C">
+      <CELL NAME="ap_CS_fsm_reg[3]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="dct.v" LINE_NUMBER="985"/>
+      <CELL NAME="grp_dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop_fu_148/ram_reg_0_7_0_0_i_3__2" PRIMITIVE_TYPE="LUT.others.LUT3" FILE_NAME="dct_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop.v" LINE_NUMBER="419" MODULE_INSTNAME="grp_dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop_fu_148" IS_FUNCINST="0"/>
+      <CELL NAME="buf_2d_in_10_U/ram_reg_0_7_15_15/SP" PRIMITIVE_TYPE="DMEM.dram.RAM32X1S" FILE_NAME="" LINE_NUMBER="" MODULE_INSTNAME="buf_2d_in_10_U" IS_FUNCINST="0"/>
+      <CELL NAME="grp_dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop_fu_148/mac_muladd_16s_15s_29s_29_4_1_U17/dct_mac_muladd_16s_15s_29s_29_4_1_DSP48_0_U/m_reg_reg" PRIMITIVE_TYPE="MULT.dsp.DSP48E1" FILE_NAME="dct_mac_muladd_16s_15s_29s_29_4_1.v" LINE_NUMBER="35" MODULE_INSTNAME="mac_muladd_16s_15s_29s_29_4_1_U17" IS_FUNCINST="0"/>
+      <MODULE_INSTANCES>grp_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop_fu_190 col_inbuf_1_U mac_muladd_16s_15s_29s_29_4_1_U55 grp_dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop_fu_148 buf_2d_in_10_U mac_muladd_16s_15s_29s_29_4_1_U17</MODULE_INSTANCES>
+    </TPATH>
+  </TimingPaths>
+  <VivadoReportFiles>
+    <ReportFile TYPE="design_analysis" PATH="verilog/report/dct_design_analysis_routed.rpt"/>
+    <ReportFile TYPE="failfast" PATH="verilog/report/dct_failfast_routed.rpt"/>
+    <ReportFile TYPE="status" PATH="verilog/report/dct_status_routed.rpt"/>
+    <ReportFile TYPE="timing" PATH="verilog/report/dct_timing_routed.rpt"/>
+    <ReportFile TYPE="timing_paths" PATH="verilog/report/dct_timing_paths_routed.rpt"/>
+    <ReportFile TYPE="utilization" PATH="verilog/report/dct_utilization_routed.rpt"/>
+    <ReportFile TYPE="utilization_hierarchical" PATH="verilog/report/dct_utilization_hierarchical_routed.rpt"/>
+  </VivadoReportFiles>
+  <GeneralInfo NAME="General Information">
+    <item NAME="Date" VALUE="Wed Oct 30 16:36:48 +0800 2024"/>
+    <item NAME="Version" VALUE="2024.1 (Build 5069499 on May 21 2024)"/>
+    <item NAME="Project" VALUE="dct"/>
+    <item NAME="Solution" VALUE="hls (Vivado IP Flow Target)"/>
+    <item NAME="Product family" VALUE="zynq"/>
+    <item NAME="Target device" VALUE="xc7z020-clg484-1"/>
+  </GeneralInfo>
+  <RunOptions NAME="Run Constraints &amp; Options">
+    <General NAME="Design Constraints &amp; Options">
+      <item NAME="Place &amp; Route target clock" VALUE="10 ns"/>
+      <item NAME="C-Synthesis target clock" VALUE="10 ns"/>
+      <item NAME="C-Synthesis uncertainty" VALUE="27%"/>
+      <item NAME="config_export -ip_xdc_file" VALUE=""/>
+      <item NAME="config_export -ip_xdc_ooc_file" VALUE=""/>
+    </General>
+    <Syn NAME="RTL Synthesis Options">
+      <item NAME="config_export -vivado_synth_strategy" VALUE="default"/>
+      <item NAME="config_export -vivado_synth_design_args" VALUE="-directive sdx_optimization_effort_high"/>
+    </Syn>
+    <Impl NAME="Place &amp; Route Options">
+      <item NAME="config_export -vivado_impl_strategy" VALUE="default"/>
+      <item NAME="config_export -vivado_phys_opt" VALUE="auto"/>
+      <item NAME="config_export -vivado_pblock" VALUE=""/>
+    </Impl>
+    <Reporting NAME="Reporting Options">
+      <item NAME="config_export -vivado_report_level" VALUE="2"/>
+      <item NAME="config_export -vivado_max_timing_paths" VALUE="10"/>
+    </Reporting>
+  </RunOptions>
+</profile>
+

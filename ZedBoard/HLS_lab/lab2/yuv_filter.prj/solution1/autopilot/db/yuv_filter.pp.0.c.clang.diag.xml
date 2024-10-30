@@ -1,0 +1,23 @@
+<dict>
+  <key>main-file</key>
+  <string>E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/yuv_filter.prj/solution1/.autopilot/db/yuv_filter.pp.0.c</string>
+  <key>diagnostics</key>
+  <array>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>E:/robot/project/FPGA/ZedBoard/HLS_lab/source/test/lab2/pynq_yuv_filter.tcl</string>
+      <key>line</key>
+      <integer>37</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=top_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=yuv_filter_XLX_SEP_ PragmaOptions=name=yuv_filter_XLX_SEP_</string>
+      <key>ID</key>
+      <integer>5471</integer>
+      <key>WarningOption</key>
+      <string>dump-hls-pragmas</string>
+    </dict>
+  </array>
+</dict>

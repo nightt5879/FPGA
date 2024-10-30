@@ -1,0 +1,141 @@
+    *** *** *** *** 
+    Results are good 
+    *** *** *** *** 
+
+E:\robot\project\FPGA\ZedBoard\HLS_lab\lab3\dct\dct\hls\sim\verilog>set PATH= 
+
+E:\robot\project\FPGA\ZedBoard\HLS_lab\lab3\dct\dct\hls\sim\verilog>call E:/vivado/Vivado/2024.1/bin/xelab xil_defaultlib.apatb_dct_top glbl -Oenable_linking_all_libraries  -prj dct.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm  -L floating_point_v7_0_23 -L floating_point_v7_1_18 --lib "ieee_proposed=./ieee_proposed" -s dct  
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: E:/vivado/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_dct_top glbl -Oenable_linking_all_libraries -prj dct.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_0_23 -L floating_point_v7_1_18 --lib ieee_proposed=./ieee_proposed -s dct 
+Multi-threading is on. Using 14 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/robot/project/FPGA/ZedBoard/HLS_lab/lab3/dct/dct/hls/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/robot/project/FPGA/ZedBoard/HLS_lab/lab3/dct/dct/hls/sim/verilog/AESL_automem_input_r.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_input_r
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/robot/project/FPGA/ZedBoard/HLS_lab/lab3/dct/dct/hls/sim/verilog/AESL_automem_output_r.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_output_r
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/robot/project/FPGA/ZedBoard/HLS_lab/lab3/dct/dct/hls/sim/verilog/dct.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_dct_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/robot/project/FPGA/ZedBoard/HLS_lab/lab3/dct/dct/hls/sim/verilog/dct.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/robot/project/FPGA/ZedBoard/HLS_lab/lab3/dct/dct/hls/sim/verilog/dct_col_inbuf_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_col_inbuf_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/robot/project/FPGA/ZedBoard/HLS_lab/lab3/dct/dct/hls/sim/verilog/dct_dct_1d_dct_coeff_table_0_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_dct_1d_dct_coeff_table_0_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/robot/project/FPGA/ZedBoard/HLS_lab/lab3/dct/dct/hls/sim/verilog/dct_dct_1d_dct_coeff_table_1_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_dct_1d_dct_coeff_table_1_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/robot/project/FPGA/ZedBoard/HLS_lab/lab3/dct/dct/hls/sim/verilog/dct_dct_1d_dct_coeff_table_2_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_dct_1d_dct_coeff_table_2_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/robot/project/FPGA/ZedBoard/HLS_lab/lab3/dct/dct/hls/sim/verilog/dct_dct_1d_dct_coeff_table_3_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_dct_1d_dct_coeff_table_3_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/robot/project/FPGA/ZedBoard/HLS_lab/lab3/dct/dct/hls/sim/verilog/dct_dct_1d_dct_coeff_table_4_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_dct_1d_dct_coeff_table_4_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/robot/project/FPGA/ZedBoard/HLS_lab/lab3/dct/dct/hls/sim/verilog/dct_dct_1d_dct_coeff_table_5_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_dct_1d_dct_coeff_table_5_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/robot/project/FPGA/ZedBoard/HLS_lab/lab3/dct/dct/hls/sim/verilog/dct_dct_1d_dct_coeff_table_6_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_dct_1d_dct_coeff_table_6_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/robot/project/FPGA/ZedBoard/HLS_lab/lab3/dct/dct/hls/sim/verilog/dct_dct_1d_dct_coeff_table_7_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_dct_1d_dct_coeff_table_7_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/robot/project/FPGA/ZedBoard/HLS_lab/lab3/dct/dct/hls/sim/verilog/dct_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/robot/project/FPGA/ZedBoard/HLS_lab/lab3/dct/dct/hls/sim/verilog/dct_dct_Pipeline_RD_Loop_Row_RD_Loop_Col.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_dct_Pipeline_RD_Loop_Row_RD_Loop_Col
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/robot/project/FPGA/ZedBoard/HLS_lab/lab3/dct/dct/hls/sim/verilog/dct_dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/robot/project/FPGA/ZedBoard/HLS_lab/lab3/dct/dct/hls/sim/verilog/dct_dct_Pipeline_WR_Loop_Row_WR_Loop_Col.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_dct_Pipeline_WR_Loop_Row_WR_Loop_Col
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/robot/project/FPGA/ZedBoard/HLS_lab/lab3/dct/dct/hls/sim/verilog/dct_dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/robot/project/FPGA/ZedBoard/HLS_lab/lab3/dct/dct/hls/sim/verilog/dct_dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/robot/project/FPGA/ZedBoard/HLS_lab/lab3/dct/dct/hls/sim/verilog/dct_flow_control_loop_pipe_sequential_init.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_flow_control_loop_pipe_sequential_init
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/robot/project/FPGA/ZedBoard/HLS_lab/lab3/dct/dct/hls/sim/verilog/dct_mac_muladd_16s_15s_13ns_29_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_mac_muladd_16s_15s_13ns_29_4_1_DSP48_0
+INFO: [VRFC 10-311] analyzing module dct_mac_muladd_16s_15s_13ns_29_4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/robot/project/FPGA/ZedBoard/HLS_lab/lab3/dct/dct/hls/sim/verilog/dct_mac_muladd_16s_15s_29ns_29_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_mac_muladd_16s_15s_29ns_29_4_1_DSP48_0
+INFO: [VRFC 10-311] analyzing module dct_mac_muladd_16s_15s_29ns_29_4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/robot/project/FPGA/ZedBoard/HLS_lab/lab3/dct/dct/hls/sim/verilog/dct_mac_muladd_16s_15s_29s_29_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_mac_muladd_16s_15s_29s_29_4_1_DSP48_0
+INFO: [VRFC 10-311] analyzing module dct_mac_muladd_16s_15s_29s_29_4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/robot/project/FPGA/ZedBoard/HLS_lab/lab3/dct/dct/hls/sim/verilog/dct_mul_14ns_16s_29_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_mul_14ns_16s_29_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/robot/project/FPGA/ZedBoard/HLS_lab/lab3/dct/dct/hls/sim/verilog/dct_mul_15s_16s_29_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_mul_15s_16s_29_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/robot/project/FPGA/ZedBoard/HLS_lab/lab3/dct/dct/hls/sim/verilog/dct_row_outbuf_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_row_outbuf_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/robot/project/FPGA/ZedBoard/HLS_lab/lab3/dct/dct/hls/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.dct_dct_1d_dct_coeff_table_0_ROM...
+Compiling module xil_defaultlib.dct_dct_1d_dct_coeff_table_1_ROM...
+Compiling module xil_defaultlib.dct_dct_1d_dct_coeff_table_2_ROM...
+Compiling module xil_defaultlib.dct_dct_1d_dct_coeff_table_3_ROM...
+Compiling module xil_defaultlib.dct_dct_1d_dct_coeff_table_4_ROM...
+Compiling module xil_defaultlib.dct_dct_1d_dct_coeff_table_5_ROM...
+Compiling module xil_defaultlib.dct_dct_1d_dct_coeff_table_6_ROM...
+Compiling module xil_defaultlib.dct_dct_1d_dct_coeff_table_7_ROM...
+Compiling module xil_defaultlib.dct_row_outbuf_RAM_AUTO_1R1W
+Compiling module xil_defaultlib.dct_col_inbuf_RAM_AUTO_1R1W
+Compiling module xil_defaultlib.dct_flow_control_loop_pipe_seque...
+Compiling module xil_defaultlib.dct_dct_Pipeline_RD_Loop_Row_RD_...
+Compiling module xil_defaultlib.dct_mul_15s_16s_29_1_1(NUM_STAGE...
+Compiling module xil_defaultlib.dct_mul_14ns_16s_29_1_1(NUM_STAG...
+Compiling module xil_defaultlib.dct_mac_muladd_16s_15s_13ns_29_4...
+Compiling module xil_defaultlib.dct_mac_muladd_16s_15s_13ns_29_4...
+Compiling module xil_defaultlib.dct_mac_muladd_16s_15s_29s_29_4_...
+Compiling module xil_defaultlib.dct_mac_muladd_16s_15s_29s_29_4_...
+Compiling module xil_defaultlib.dct_mac_muladd_16s_15s_29ns_29_4...
+Compiling module xil_defaultlib.dct_mac_muladd_16s_15s_29ns_29_4...
+Compiling module xil_defaultlib.dct_dct_Pipeline_Row_DCT_Loop_DC...
+Compiling module xil_defaultlib.dct_dct_Pipeline_Xpose_Row_Outer...
+Compiling module xil_defaultlib.dct_dct_Pipeline_Col_DCT_Loop_DC...
+Compiling module xil_defaultlib.dct_dct_Pipeline_Xpose_Col_Outer...
+Compiling module xil_defaultlib.dct_dct_Pipeline_WR_Loop_Row_WR_...
+Compiling module xil_defaultlib.dct
+Compiling module xil_defaultlib.AESL_automem_input_r
+Compiling module xil_defaultlib.AESL_automem_output_r
+Compiling module xil_defaultlib.nodf_module_intf_default
+Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=1)
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.apatb_dct_top
+Compiling module work.glbl
+Built simulation snapshot dct
+
+****** xsim v2024.1 (64-bit)
+  **** SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Wed Oct 30 16:27:17 2024
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/dct/xsim_script.tcl
+# xsim {dct} -autoloadwcfg -tclbatch {dct.tcl}
+Time resolution is 1 ps
+source dct.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 1 [0.00%] @ "125000"
+// RTL Simulation : 1 / 1 [100.00%] @ "4315000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 4375 ns : File "E:/robot/project/FPGA/ZedBoard/HLS_lab/lab3/dct/dct/hls/sim/verilog/dct.autotb.v" Line 268
+## quit
+INFO: [Common 17-206] Exiting xsim at Wed Oct 30 16:27:22 2024...
+    *** *** *** *** 
+    Results are good 
+    *** *** *** *** 

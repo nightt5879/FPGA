@@ -1,0 +1,37 @@
+[
+    {
+        "action": "merge",
+        "srcTask": "3",
+        "targetTask": "4"
+    },
+    {
+        "action": "merge",
+        "srcTask": "4",
+        "targetTask": "3"
+    },
+    {
+        "action": "merge",
+        "srcTask": "4",
+        "targetTask": "5"
+    },
+    {
+        "action": "merge",
+        "srcTask": "5",
+        "targetTask": "4"
+    },
+    {
+        "action": "inline",
+        "task": "3",
+        "inlineRegion": "2"
+    },
+    {
+        "action": "inline",
+        "task": "4",
+        "inlineRegion": "2"
+    },
+    {
+        "action": "inline",
+        "task": "5",
+        "inlineRegion": "2"
+    }
+]

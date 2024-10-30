@@ -1,0 +1,51 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="directive:1:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="dct" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=dct" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c:25:0" msg_body="Inlining function 'dct_1d' into 'dct_2d'">
+        <args Callee="dct_1d" Callee-DebugLoc="File ../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c Line 5 Column 0" Caller="dct_2d" Caller-DebugLoc="File ../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c Line 25 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c:79:0" msg_body="Inlining function 'read_data' into 'dct'">
+        <args Callee="read_data" Callee-DebugLoc="File ../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c Line 55 Column 0" Caller="dct" Caller-DebugLoc="File ../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c Line 79 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c:79:0" msg_body="Inlining function 'dct_2d' into 'dct'">
+        <args Callee="dct_2d" Callee-DebugLoc="File ../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c Line 25 Column 0" Caller="dct" Caller-DebugLoc="File ../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c Line 79 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c:79:0" msg_body="Inlining function 'write_data' into 'dct'">
+        <args Callee="write_data" Callee-DebugLoc="File ../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c Line 67 Column 0" Caller="dct" Caller-DebugLoc="File ../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c Line 79 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c:15:7" msg_body="Loop 'DCT_Inner_Loop' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="DCT_Inner_Loop"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c:79:0" msg_body="Unrolling loop 'DCT_Inner_Loop' (../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c:15:7) in function 'dct' completely with a factor of 8">
+        <args Factor="8" LoopLoc="../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c:15:7" LoopName="DCT_Inner_Loop"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c:8:0" msg_body="array_partition dim=2 type=complete  variable=dct_1d.dct_coeff_table 1 dct ../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c:8:0 dct_1d.dct_coeff_table">
+        <args PragmaFunction="dct" PragmaIsAuto="1" PragmaOptions="dim=2 type=complete  variable=dct_1d.dct_coeff_table" PragmaType="array_partition" VarName="dct_1d.dct_coeff_table" varLoc="../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c:8:0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c:8:0" msg_body="Inferring pragma 'array_partition type=complete dim=2' for array 'dct_1d.dct_coeff_table' due to pipeline pragma">
+        <args Dim="2" Mode="complete" Name="dct_1d.dct_coeff_table" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c:27:33" msg_body="array_partition dim=2 type=complete  variable=col_inbuf.i 1 dct ../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c:27:33 col_inbuf.i">
+        <args PragmaFunction="dct" PragmaIsAuto="1" PragmaOptions="dim=2 type=complete  variable=col_inbuf.i" PragmaType="array_partition" VarName="col_inbuf.i" varLoc="../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c:27:33"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c:27:33" msg_body="Inferring pragma 'array_partition type=complete dim=2' for array 'col_inbuf.i' due to pipeline pragma">
+        <args Dim="2" Mode="complete" Name="col_inbuf.i" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c:81:10" msg_body="array_partition dim=2 type=complete  variable=buf_2d_in 1 dct ../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c:81:10 buf_2d_in">
+        <args PragmaFunction="dct" PragmaIsAuto="1" PragmaOptions="dim=2 type=complete  variable=buf_2d_in" PragmaType="array_partition" VarName="buf_2d_in" varLoc="../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c:81:10"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c:81:10" msg_body="Inferring pragma 'array_partition type=complete dim=2' for array 'buf_2d_in' due to pipeline pragma">
+        <args Dim="2" Mode="complete" Name="buf_2d_in" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c:8:0" msg_body="Applying array_partition to 'dct_1d.dct_coeff_table': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="dct_1d.dct_coeff_table"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c:27:33" msg_body="Applying array_partition to 'col_inbuf.i': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="col_inbuf.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../../High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/source/lab3/dct.c:81:10" msg_body="Applying array_partition to 'buf_2d_in': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="buf_2d_in"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

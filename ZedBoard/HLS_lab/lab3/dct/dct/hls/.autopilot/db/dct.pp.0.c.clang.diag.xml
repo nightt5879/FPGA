@@ -1,0 +1,23 @@
+<dict>
+  <key>main-file</key>
+  <string>E:/robot/project/FPGA/ZedBoard/HLS_lab/lab3/dct/dct/hls/.autopilot/db/dct.pp.0.c</string>
+  <key>diagnostics</key>
+  <array>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>directive</string>
+      <key>line</key>
+      <integer>1</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=top_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=dct_XLX_SEP_ PragmaOptions=name=dct_XLX_SEP_</string>
+      <key>ID</key>
+      <integer>5471</integer>
+      <key>WarningOption</key>
+      <string>dump-hls-pragmas</string>
+    </dict>
+  </array>
+</dict>

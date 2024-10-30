@@ -1,0 +1,108 @@
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+Function:        apatb_yuv_filter_ir
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            out
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+Function:        apatb_yuv_filter_ir
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            out_channels
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+Function:        apatb_yuv_filter_ir
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            in
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+Function:        apatb_yuv_filter_ir
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            in_channels
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: yuv_filter.c, Line: 37, Column: 0 }
+Function:        yuv_filter
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          rgb2yuv
+    DebugLoc:        { File: yuv_filter.c, Line: 59, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          yuv_filter
+    DebugLoc:        { File: yuv_filter.c, Line: 37, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: yuv_filter.c, Line: 37, Column: 0 }
+Function:        yuv_filter
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          yuv_scale
+    DebugLoc:        { File: yuv_filter.c, Line: 143, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          yuv_filter
+    DebugLoc:        { File: yuv_filter.c, Line: 37, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: yuv_filter.c, Line: 37, Column: 0 }
+Function:        yuv_filter
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          yuv2rgb
+    DebugLoc:        { File: yuv_filter.c, Line: 97, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          yuv_filter
+    DebugLoc:        { File: yuv_filter.c, Line: 37, Column: 0 }
+  - String:          ''''
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        RGB2YUV_LOOP_Y
+  - String:          '> at '
+  - LoopLoc:         'yuv_filter.c:78:7'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        YUV_SCALE_LOOP_Y
+  - String:          '> at '
+  - LoopLoc:         'yuv_filter.c:158:7'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        YUV2RGB_LOOP_Y
+  - String:          '> at '
+  - LoopLoc:         'yuv_filter.c:118:7'
+  - String:          ' '
+...
