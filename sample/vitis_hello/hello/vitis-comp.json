@@ -1,0 +1,15 @@
+{
+  "name": "hello",
+  "type": "HOST",
+  "platform": "E:\\robot\\project\\FPGA\\sample\\ps_hello_world\\hello_world\\export\\hello_world\\hello_world.xpfm",
+  "domain": "standalone_ps7_cortexa9_0",
+  "cpuInstance": "ps7_cortexa9_0",
+  "cpuType": "cortex-a9",
+  "os": "standalone",
+  "configuration": {
+    "componentType": "HOST",
+    "hostToolchainConfigurations": []
+  },
+  "domainRealName": "standalone_ps7_cortexa9_0",
+  "applicationFlow": "EMBEDDED"
+}
