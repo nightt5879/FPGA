@@ -1,0 +1,7 @@
+verilog xil_defaultlib --include "E:/vivado/Vivado/2024.1/data/xilinx_vip/include" --include "../../../ipstatic/hdl" \
+"../../../../URAT_PS.gen/sources_1/ip/processing_system7_0/sim/processing_system7_0.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
