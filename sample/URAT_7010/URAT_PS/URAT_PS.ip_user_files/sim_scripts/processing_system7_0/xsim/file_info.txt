@@ -1,2 +1,0 @@
-processing_system7_0.v,verilog,xil_defaultlib,../../../../URAT_PS.gen/sources_1/ip/processing_system7_0/sim/processing_system7_0.v,incdir="../../../ipstatic/hdl"incdir="../../../ipstatic/hdl"
-glbl.v,Verilog,xil_defaultlib,glbl.v
