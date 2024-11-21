@@ -1,0 +1,6 @@
+//arch = zynq; split = false; format = BIN
+the_ROM_image:
+{
+	[bootloader]E:\robot\project\FPGA\sample\ps_hello_world\hello_world\export\hello_world\sw\boot\fsbl.elf
+	E:\robot\project\FPGA\sample\vitis_hello\hello\build\hello.elf
+}
