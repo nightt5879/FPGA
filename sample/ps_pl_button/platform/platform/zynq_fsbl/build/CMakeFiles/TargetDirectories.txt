@@ -1,3 +1,0 @@
-E:/robot/project/FPGA/sample/ps_pl_button/platform/platform/zynq_fsbl/build/CMakeFiles/fsbl.elf.dir
-E:/robot/project/FPGA/sample/ps_pl_button/platform/platform/zynq_fsbl/build/CMakeFiles/edit_cache.dir
-E:/robot/project/FPGA/sample/ps_pl_button/platform/platform/zynq_fsbl/build/CMakeFiles/rebuild_cache.dir
