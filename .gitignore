@@ -1,3 +1,4 @@
 # Auto detect text files and perform LF normalization
 * text=auto
 final_product/data/
+/finial_product/data
