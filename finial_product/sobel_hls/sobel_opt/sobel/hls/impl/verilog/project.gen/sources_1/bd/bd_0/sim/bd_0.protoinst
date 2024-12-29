@@ -1,0 +1,80 @@
+{
+	"version": "1.0",
+	"modules": {
+		"bd_0": {
+			"proto_instances": {
+				"/hls_inst/m_axi_gmem": {
+					"interface": "xilinx.com:interface:aximm:1.0",
+					"ports": {
+						"ACLK": { "actual": "ap_clk"},
+						"ARADDR": { "actual": "m_axi_gmem_ARADDR[63:0]"},
+						"ARBURST": { "actual": "m_axi_gmem_ARBURST[1:0]"},
+						"ARCACHE": { "actual": "m_axi_gmem_ARCACHE[3:0]"},
+						"ARESETN": { "actual": "ap_rst_n"},
+						"ARID": { "actual": "m_axi_gmem_ARID[0:0]"},
+						"ARLEN": { "actual": "m_axi_gmem_ARLEN[7:0]"},
+						"ARLOCK": { "actual": "m_axi_gmem_ARLOCK[1:0]"},
+						"ARPROT": { "actual": "m_axi_gmem_ARPROT[2:0]"},
+						"ARQOS": { "actual": "m_axi_gmem_ARQOS[3:0]"},
+						"ARREADY": { "actual": "m_axi_gmem_ARREADY"},
+						"ARREGION": { "actual": "m_axi_gmem_ARREGION[3:0]"},
+						"ARSIZE": { "actual": "m_axi_gmem_ARSIZE[2:0]"},
+						"ARVALID": { "actual": "m_axi_gmem_ARVALID"},
+						"AWADDR": { "actual": "m_axi_gmem_AWADDR[63:0]"},
+						"AWBURST": { "actual": "m_axi_gmem_AWBURST[1:0]"},
+						"AWCACHE": { "actual": "m_axi_gmem_AWCACHE[3:0]"},
+						"AWID": { "actual": "m_axi_gmem_AWID[0:0]"},
+						"AWLEN": { "actual": "m_axi_gmem_AWLEN[7:0]"},
+						"AWLOCK": { "actual": "m_axi_gmem_AWLOCK[1:0]"},
+						"AWPROT": { "actual": "m_axi_gmem_AWPROT[2:0]"},
+						"AWQOS": { "actual": "m_axi_gmem_AWQOS[3:0]"},
+						"AWREADY": { "actual": "m_axi_gmem_AWREADY"},
+						"AWREGION": { "actual": "m_axi_gmem_AWREGION[3:0]"},
+						"AWSIZE": { "actual": "m_axi_gmem_AWSIZE[2:0]"},
+						"AWVALID": { "actual": "m_axi_gmem_AWVALID"},
+						"BID": { "actual": "m_axi_gmem_BID[0:0]"},
+						"BREADY": { "actual": "m_axi_gmem_BREADY"},
+						"BRESP": { "actual": "m_axi_gmem_BRESP[1:0]"},
+						"BVALID": { "actual": "m_axi_gmem_BVALID"},
+						"RDATA": { "actual": "m_axi_gmem_RDATA[31:0]"},
+						"RID": { "actual": "m_axi_gmem_RID[0:0]"},
+						"RLAST": { "actual": "m_axi_gmem_RLAST"},
+						"RREADY": { "actual": "m_axi_gmem_RREADY"},
+						"RRESP": { "actual": "m_axi_gmem_RRESP[1:0]"},
+						"RVALID": { "actual": "m_axi_gmem_RVALID"},
+						"WDATA": { "actual": "m_axi_gmem_WDATA[31:0]"},
+						"WID": { "actual": "m_axi_gmem_WID[0:0]"},
+						"WLAST": { "actual": "m_axi_gmem_WLAST"},
+						"WREADY": { "actual": "m_axi_gmem_WREADY"},
+						"WSTRB": { "actual": "m_axi_gmem_WSTRB[3:0]"},
+						"WVALID": { "actual": "m_axi_gmem_WVALID"}
+					}
+				},
+				"/hls_inst/s_axi_CTRL": {
+					"interface": "xilinx.com:interface:aximm:1.0",
+					"ports": {
+						"ACLK": { "actual": "ap_clk"},
+						"ARADDR": { "actual": "s_axi_CTRL_ARADDR[5:0]"},
+						"ARESETN": { "actual": "ap_rst_n"},
+						"ARREADY": { "actual": "s_axi_CTRL_ARREADY"},
+						"ARVALID": { "actual": "s_axi_CTRL_ARVALID"},
+						"AWADDR": { "actual": "s_axi_CTRL_AWADDR[5:0]"},
+						"AWREADY": { "actual": "s_axi_CTRL_AWREADY"},
+						"AWVALID": { "actual": "s_axi_CTRL_AWVALID"},
+						"BREADY": { "actual": "s_axi_CTRL_BREADY"},
+						"BRESP": { "actual": "s_axi_CTRL_BRESP[1:0]"},
+						"BVALID": { "actual": "s_axi_CTRL_BVALID"},
+						"RDATA": { "actual": "s_axi_CTRL_RDATA[31:0]"},
+						"RREADY": { "actual": "s_axi_CTRL_RREADY"},
+						"RRESP": { "actual": "s_axi_CTRL_RRESP[1:0]"},
+						"RVALID": { "actual": "s_axi_CTRL_RVALID"},
+						"WDATA": { "actual": "s_axi_CTRL_WDATA[31:0]"},
+						"WREADY": { "actual": "s_axi_CTRL_WREADY"},
+						"WSTRB": { "actual": "s_axi_CTRL_WSTRB[3:0]"},
+						"WVALID": { "actual": "s_axi_CTRL_WVALID"}
+					}
+				}
+			}
+		}
+	}
+}

@@ -2658,3 +2658,266 @@ Execute   close_project
 Execute     close_solution 
 Execute       cleanup_all 
 Execute       cleanup_all 
+INFO-FLOW: Workspace E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls opened at Sun Dec 29 10:48:55 +0800 2024
+Execute     source E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls/.autopilot/db/global.setting.tcl 
+Execute     set_part xc7z020-clg400-1 
+Execute       create_platform xc7z020-clg400-1 -board  
+DBG:HLSDevice: Trying to load device library: E:/vivado\Vitis_HLS\2024.1\lib\win64.o\xv_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: E:/vivado/Vivado/2024.1/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+Command       create_platform done; 1.796 sec.
+Execute       source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/ip/util.gen 
+Execute         source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 1.961 sec.
+Execute     send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Command   open_solution done; 1.984 sec.
+Execute   apply_ini E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/hls_config.cfg 
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=E:/robot/project/FPGA/finial_product/sobel_hls/source/sobel.hpp' from E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/hls_config.cfg(8) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=E:/robot/project/FPGA/finial_product/sobel_hls/source/sobel.hpp' from E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/hls_config.cfg(8)
+Execute     add_files E:/robot/project/FPGA/finial_product/sobel_hls/source/sobel.hpp 
+INFO: [HLS 200-10] Adding design file 'E:/robot/project/FPGA/finial_product/sobel_hls/source/sobel.hpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=E:/robot/project/FPGA/finial_product/sobel_hls/source/sobel_base.cpp' from E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/hls_config.cfg(9) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=E:/robot/project/FPGA/finial_product/sobel_hls/source/sobel_base.cpp' from E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/hls_config.cfg(9)
+Execute     add_files E:/robot/project/FPGA/finial_product/sobel_hls/source/sobel_base.cpp 
+INFO: [HLS 200-10] Adding design file 'E:/robot/project/FPGA/finial_product/sobel_hls/source/sobel_base.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=E:/robot/project/FPGA/finial_product/sobel_hls/source/sobel_tb.cpp' from E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/hls_config.cfg(10) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=E:/robot/project/FPGA/finial_product/sobel_hls/source/sobel_tb.cpp' from E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/hls_config.cfg(10)
+Execute     add_files -tb E:/robot/project/FPGA/finial_product/sobel_hls/source/sobel_tb.cpp 
+INFO: [HLS 200-10] Adding test bench file 'E:/robot/project/FPGA/finial_product/sobel_hls/source/sobel_tb.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.top=sobel' from E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/hls_config.cfg(7) 
+INFO: [HLS 200-1465] Applying ini 'syn.top=sobel' from E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/hls_config.cfg(7)
+Execute     set_top sobel 
+Execute     send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' from E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/hls_config.cfg(4) 
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/hls_config.cfg(4)
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1465@%s 'part=xc7z020clg400-1' from E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/hls_config.cfg(1) 
+INFO: [HLS 200-1465] Applying ini 'part=xc7z020clg400-1' from E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/hls_config.cfg(1)
+Execute     set_part xc7z020clg400-1 
+Execute       create_platform xc7z020clg400-1 -board  
+Command       create_platform done; 0.197 sec.
+Execute       source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/ip/util.gen 
+Execute         source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 0.35 sec.
+Execute     send_msg_by_id INFO @200-1465@%s 'csim.code_analyzer=0' from E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/hls_config.cfg(11) 
+INFO: [HLS 200-1465] Applying ini 'csim.code_analyzer=0' from E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/hls_config.cfg(11)
+Execute     config_csim -code_analyzer=0 
+Execute     send_msg_by_id INFO @200-1465@%s 'package.output.format=ip_catalog' from E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/hls_config.cfg(5) 
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/hls_config.cfg(5)
+Execute     config_export -format=ip_catalog 
+Command   apply_ini done; 0.372 sec.
+Execute   apply_ini E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls/config.cmdline 
+Execute   export_design -flow impl 
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     config_export -flow=impl 
+INFO-FLOW: DBG:PUTS: export_design_wrap: -flow impl -format ip_catalog -rtl verilog
+Execute     source E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS:   auto_impl: pack: -export -rtl verilog
+INFO-FLOW: DBG:PROC: ::AESL_AUTOIMPL::auto_impl args='-export -rtl verilog'
+Execute     source E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls/.autopilot/db/global.setting.tcl 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO-FLOW: DBG:PUTS: automg_wrap -export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag
+INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::auto_generate args='-export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag'
+INFO-FLOW: DBG:PUTS:     auto_generate -export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag
+Execute     source E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS: read_platform_lib E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls/.autopilot/db/global.setting.tcl
+Execute     source E:/vivado/Vitis_HLS/2024.1/common/technology/generic/autopilot/common.gen 
+Execute       source E:/vivado/Vitis_HLS/2024.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source E:/vivado/Vitis_HLS/2024.1/common/technology/generic/autopilot/op.gen 
+Execute     source E:/vivado/Vitis_HLS/2024.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source E:/vivado/Vitis_HLS/2024.1/common/technology/generic/autopilot/interface.gen 
+Execute     source E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls/.autopilot/db/global.setting.tcl 
+Execute     source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/common/xilinx.gen 
+Execute       source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/interface/plb46.gen 
+Execute       source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/interface/axi4.gen 
+Execute       source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/interface/saxilite.gen 
+Execute       source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/ip/util.gen 
+Execute       source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfft.gen 
+Execute       source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfir.gen 
+Execute       source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:PUTS:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+INFO-FLOW: DBG:PUTS:       initCTypeInfo top_module=sobel xml_exists=1
+Execute     source E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls/.autopilot/db/sobel.rtl_wrap.cfg.tcl 
+Execute     source E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls/.autopilot/db/sobel.rtl_wrap.cfg.tcl 
+Execute     source E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls/.autopilot/db/sobel.rtl_wrap.cfg.tcl 
+Execute     source E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls/.autopilot/db/sobel.tbgen.tcl 
+Execute     source E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls/.autopilot/db/sobel.tbgen.tcl 
+Execute     source E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls/.autopilot/db/sobel.tbgen.tcl 
+Execute     source E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls/.autopilot/db/global.setting.tcl 
+Execute     source E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls/.autopilot/db/sobel.tbgen.tcl 
+INFO-FLOW: DBG:PUTS:       cosim_export_main adding deadlock detection to sobel
+INFO-FLOW: DBG:PUTS:       generate_datafile_ip_script ip_types={vitis sysgen} #gSsdmPorts=0
+INFO-FLOW: DBG:PUTS: Skipping loadAnalyze_DB, #g_database=5
+INFO-FLOW: DBG:PUTS:       generate_json generate_bd_files=0 generate_xo_files=false #modelList=7 #gSsdmPorts=0
+INFO-FLOW: DBG:PROC: ::AP::DESIGN_DATA::generate_json generate_bd_files='0' generate_xo_files='false' modelList='sobel_mul_31ns_32s_63_2_1
+sobel_flow_control_loop_pipe_sequential_init
+sobel_mul_32ns_32ns_64_2_1
+sobel_gmem_m_axi
+sobel_CTRL_s_axi
+sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2
+sobel
+' rtl_lang='vlog' bootstrap_tcl='false' outdir='' outfilename=''
+Execute     source E:/vivado/Vitis_HLS/2024.1/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute     source E:/vivado/Vitis_HLS/2024.1/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute     source E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls/.autopilot/db/global.setting.tcl 
+Execute     source E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls/.autopilot/db/global.setting.tcl 
+Execute     source E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls/.autopilot/db/top-io-be.tcl 
+Execute     source E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls/.autopilot/db/sobel.tbgen.tcl 
+Execute     source E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls/.autopilot/db/sobel.compgen.dataonly.tcl 
+Execute     source E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls/.autopilot/db/sobel.compgen.dataonly.tcl 
+Execute     source E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls/.autopilot/db/sobel.rtl_wrap.cfg.tcl 
+Execute     source E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls/.autopilot/db/sobel.compgen.dataonly.tcl 
+Execute     source E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls/.autopilot/db/sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2.tbgen.tcl 
+Execute     source E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls/.autopilot/db/sobel.tbgen.tcl 
+Execute     source E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls/.autopilot/db/global.setting.tcl 
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls/.autopilot/db/sobel.constraint.tcl 
+Execute     sc_get_clocks sobel 
+Execute     source E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS:       generate_syn_sh
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS:       generate_imp_constraints
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls/.autopilot/db/sobel.constraint.tcl 
+Execute     source E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls/.autopilot/db/sobel.tbgen.tcl 
+INFO-FLOW: DBG:PUTS:       delete-temp-dirs (skipped for debug)
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO-FLOW: DBG:PUTS: read_platform_lib E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls/.autopilot/db/global.setting.tcl
+Execute     source E:/vivado/Vitis_HLS/2024.1/common/technology/generic/autopilot/common.gen 
+Execute       source E:/vivado/Vitis_HLS/2024.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source E:/vivado/Vitis_HLS/2024.1/common/technology/generic/autopilot/op.gen 
+Execute     source E:/vivado/Vitis_HLS/2024.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source E:/vivado/Vitis_HLS/2024.1/common/technology/generic/autopilot/interface.gen 
+Execute     source E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls/.autopilot/db/global.setting.tcl 
+Execute     source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/common/xilinx.gen 
+Execute       source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/interface/plb46.gen 
+Execute       source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/interface/axi4.gen 
+Execute       source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/interface/saxilite.gen 
+Execute       source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/ip/util.gen 
+Execute       source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfft.gen 
+Execute       source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfir.gen 
+Execute       source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:PUTS:     IP package: exec E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls/impl/ip/pack.bat
+INFO-FLOW: DBG:PUTS:     IP package: success E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls/impl/ip/pack.bat
+INFO-FLOW: DBG:PUTS:   auto_impl: eval: -flow impl -rtl verilog
+INFO-FLOW: DBG:PROC: ::AESL_AUTOIMPL::auto_impl args='-flow impl -rtl verilog'
+Execute     source E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls/.autopilot/db/global.setting.tcl 
+INFO: [IMPL 213-8] Starting RTL evaluation using Vivado ...
+INFO-FLOW: DBG:PUTS: automg_wrap -rtl vlog -tool Vivado -impltomg_flag
+INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::auto_generate args='-rtl vlog -tool Vivado -impltomg_flag'
+INFO-FLOW: DBG:PUTS:     auto_generate -rtl vlog -tool Vivado -impltomg_flag
+Execute     source E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS: read_platform_lib E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls/.autopilot/db/global.setting.tcl
+Execute     source E:/vivado/Vitis_HLS/2024.1/common/technology/generic/autopilot/common.gen 
+Execute       source E:/vivado/Vitis_HLS/2024.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source E:/vivado/Vitis_HLS/2024.1/common/technology/generic/autopilot/op.gen 
+Execute     source E:/vivado/Vitis_HLS/2024.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source E:/vivado/Vitis_HLS/2024.1/common/technology/generic/autopilot/interface.gen 
+Execute     source E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls/.autopilot/db/global.setting.tcl 
+Execute     source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/common/xilinx.gen 
+Execute       source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/interface/plb46.gen 
+Execute       source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/interface/axi4.gen 
+Execute       source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/interface/saxilite.gen 
+Execute       source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/ip/util.gen 
+Execute       source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfft.gen 
+Execute       source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfir.gen 
+Execute       source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:PUTS:       generate_syn_sh
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS:       generate_imp_constraints
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls/.autopilot/db/sobel.constraint.tcl 
+Execute     source E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls/.autopilot/db/sobel.tbgen.tcl 
+INFO-FLOW: DBG:PUTS:       delete-temp-dirs (skipped for debug)
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO-FLOW: DBG:PUTS: read_platform_lib E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls/.autopilot/db/global.setting.tcl
+Execute     source E:/vivado/Vitis_HLS/2024.1/common/technology/generic/autopilot/common.gen 
+Execute       source E:/vivado/Vitis_HLS/2024.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source E:/vivado/Vitis_HLS/2024.1/common/technology/generic/autopilot/op.gen 
+Execute     source E:/vivado/Vitis_HLS/2024.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source E:/vivado/Vitis_HLS/2024.1/common/technology/generic/autopilot/interface.gen 
+Execute     source E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls/.autopilot/db/global.setting.tcl 
+Execute     source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/common/xilinx.gen 
+Execute       source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/interface/plb46.gen 
+Execute       source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/interface/axi4.gen 
+Execute       source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/interface/saxilite.gen 
+Execute       source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/ip/util.gen 
+Execute       source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfft.gen 
+Execute       source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfir.gen 
+Execute       source E:/vivado/Vitis_HLS/2024.1/common/technology/xilinx/DSP48/dsp48.gen 
+Execute     source E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls/.autopilot/db/autopilot.rtl.models.tcl 
+Execute     source E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls/.autopilot/db/global.setting.tcl 
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO-FLOW: DBG:PUTS: debug_in_auto_impl: vlog exec E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls/impl/verilog/impl.bat
+INFO-FLOW: DBG:PROC: ::HLSREPORTS::auto_impl_report topinfo_dict='RtlTopPrefix {} RtlSubPrefix sobel_ TopModuleNoPrefix sobel TopModuleWithPrefix sobel' export_design_flow='impl' impl_dir='E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls/impl' lang='verilog' out_dir=''
+INFO-FLOW: DBG:PUTS:     auto_impl_report: impl processing xml
+Execute     ap_part_info -quiet -data family -name xc7z020-clg400-1 
+INFO-FLOW: DBG:PUTS:     writing export xml file: E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls/impl/report/verilog/export_impl.xml
+INFO-FLOW: DBG:PROC: ::HLSREPORTS::auto_impl_report_txt xml_root='domNode00000166983FFDF4' export_design_flow='impl' export_rpt='E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls/impl/report/verilog/export_impl.rpt' rpt_txt_var=''
+INFO-FLOW: DBG:PUTS:     wrote export rpt file: export_impl.rpt
+INFO-FLOW: DBG:PUTS:     auto_impl_report: syn processing xml
+Execute     ap_part_info -quiet -data family -name xc7z020-clg400-1 
+INFO-FLOW: DBG:PUTS:     writing export xml file: E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls/impl/report/verilog/export_syn.xml
+INFO-FLOW: DBG:PROC: ::HLSREPORTS::auto_impl_report_txt xml_root='domNode00000166983C5924' export_design_flow='syn' export_rpt='E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls/impl/report/verilog/export_syn.rpt' rpt_txt_var=''
+INFO-FLOW: DBG:PUTS:     wrote export rpt file: export_syn.rpt
+Execute     send_msg_by_id INFO @200-802@%s sobel/sobel.zip 
+INFO: [HLS 200-802] Generated output file sobel/sobel.zip
+Command   export_design done; 307.154 sec.
+Execute   close_project 
+Execute     close_solution 
+Execute       cleanup_all 
+Execute       cleanup_all 

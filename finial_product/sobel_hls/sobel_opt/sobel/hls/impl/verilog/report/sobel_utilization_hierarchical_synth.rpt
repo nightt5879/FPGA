@@ -1,0 +1,65 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Sun Dec 29 10:52:04 2024
+| Host         : nightt_insider running 64-bit major release  (build 9200)
+| Command      : report_utilization -hierarchical -hierarchical_depth 6 -file ./report/sobel_utilization_hierarchical_synth.rpt
+| Design       : bd_0_wrapper
+| Device       : xc7z020clg400-1
+| Speed File   : -1
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++----------------------------------------------------------------------+----------------------------------------------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+|                               Instance                               |                                Module                                | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs | RAMB36 | RAMB18 | DSP Blocks |
++----------------------------------------------------------------------+----------------------------------------------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+| bd_0_wrapper                                                         |                                                                (top) |       2801 |       2491 |       0 |  310 | 3723 |      0 |      2 |          8 |
+|   bd_0_i                                                             |                                                                 bd_0 |       2801 |       2491 |       0 |  310 | 3723 |      0 |      2 |          8 |
+|     hls_inst                                                         |                                                      bd_0_hls_inst_0 |       2801 |       2491 |       0 |  310 | 3723 |      0 |      2 |          8 |
+|       (hls_inst)                                                     |                                                      bd_0_hls_inst_0 |          0 |          0 |       0 |    0 |    0 |      0 |      0 |          0 |
+|       inst                                                           |                                                bd_0_hls_inst_0_sobel |       2801 |       2491 |       0 |  310 | 3723 |      0 |      2 |          8 |
+|         (inst)                                                       |                                                bd_0_hls_inst_0_sobel |          0 |          0 |       0 |    0 |  293 |      0 |      0 |          0 |
+|         CTRL_s_axi_U                                                 |                                     bd_0_hls_inst_0_sobel_CTRL_s_axi |        414 |        414 |       0 |    0 |  245 |      0 |      0 |          0 |
+|         gmem_m_axi_U                                                 |                                     bd_0_hls_inst_0_sobel_gmem_m_axi |       1555 |       1246 |       0 |  309 | 2157 |      0 |      2 |          0 |
+|           bus_read                                                   |                                bd_0_hls_inst_0_sobel_gmem_m_axi_read |        365 |        364 |       0 |    1 |  566 |      0 |      0 |          0 |
+|             fifo_burst                                               |              bd_0_hls_inst_0_sobel_gmem_m_axi_fifo__parameterized2_4 |         18 |         17 |       0 |    1 |   13 |      0 |      0 |          0 |
+|             fifo_rctl                                                |              bd_0_hls_inst_0_sobel_gmem_m_axi_fifo__parameterized2_5 |          9 |          9 |       0 |    0 |    8 |      0 |      0 |          0 |
+|             rreq_burst_conv                                          |                   bd_0_hls_inst_0_sobel_gmem_m_axi_burst_converter_6 |        299 |        299 |       0 |    0 |  474 |      0 |      0 |          0 |
+|             rs_rdata                                                 |                         bd_0_hls_inst_0_sobel_gmem_m_axi_reg_slice_7 |         39 |         39 |       0 |    0 |   71 |      0 |      0 |          0 |
+|           bus_write                                                  |                               bd_0_hls_inst_0_sobel_gmem_m_axi_write |        609 |        501 |       0 |  108 |  882 |      0 |      0 |          0 |
+|             (bus_write)                                              |                               bd_0_hls_inst_0_sobel_gmem_m_axi_write |          6 |          6 |       0 |    0 |   46 |      0 |      0 |          0 |
+|             fifo_burst                                               |                bd_0_hls_inst_0_sobel_gmem_m_axi_fifo__parameterized6 |         27 |         23 |       0 |    4 |   16 |      0 |      0 |          0 |
+|             fifo_resp                                                |              bd_0_hls_inst_0_sobel_gmem_m_axi_fifo__parameterized2_2 |         18 |         17 |       0 |    1 |   13 |      0 |      0 |          0 |
+|             rs_resp                                                  |           bd_0_hls_inst_0_sobel_gmem_m_axi_reg_slice__parameterized2 |          4 |          4 |       0 |    0 |    5 |      0 |      0 |          0 |
+|             wreq_burst_conv                                          |                     bd_0_hls_inst_0_sobel_gmem_m_axi_burst_converter |        332 |        332 |       0 |    0 |  532 |      0 |      0 |          0 |
+|             wreq_throttle                                            |                            bd_0_hls_inst_0_sobel_gmem_m_axi_throttle |        222 |        119 |       0 |  103 |  270 |      0 |      0 |          0 |
+|           load_unit_0                                                |                                bd_0_hls_inst_0_sobel_gmem_m_axi_load |        247 |        177 |       0 |   70 |  304 |      0 |      1 |          0 |
+|             (load_unit_0)                                            |                                bd_0_hls_inst_0_sobel_gmem_m_axi_load |          1 |          1 |       0 |    0 |  105 |      0 |      0 |          0 |
+|             buff_rdata                                               |                bd_0_hls_inst_0_sobel_gmem_m_axi_fifo__parameterized5 |         48 |         48 |       0 |    0 |   36 |      0 |      1 |          0 |
+|             bus_wide_gen.rreq_offset                                 |                bd_0_hls_inst_0_sobel_gmem_m_axi_fifo__parameterized4 |         35 |         31 |       0 |    4 |   16 |      0 |      0 |          0 |
+|             bus_wide_gen.rs_tmp_rdata                                |                           bd_0_hls_inst_0_sobel_gmem_m_axi_reg_slice |         82 |         82 |       0 |    0 |   71 |      0 |      0 |          0 |
+|             fifo_rreq                                                |              bd_0_hls_inst_0_sobel_gmem_m_axi_fifo__parameterized0_0 |         81 |         15 |       0 |   66 |   76 |      0 |      0 |          0 |
+|           store_unit                                                 |                               bd_0_hls_inst_0_sobel_gmem_m_axi_store |        334 |        204 |       0 |  130 |  405 |      0 |      1 |          0 |
+|             (store_unit)                                             |                               bd_0_hls_inst_0_sobel_gmem_m_axi_store |         60 |         60 |       0 |    0 |  206 |      0 |      0 |          0 |
+|             buff_wdata                                               |                bd_0_hls_inst_0_sobel_gmem_m_axi_fifo__parameterized1 |         46 |         46 |       0 |    0 |   28 |      0 |      1 |          0 |
+|             bus_wide_gen.wreq_offset                                 |                                bd_0_hls_inst_0_sobel_gmem_m_axi_fifo |         56 |         22 |       0 |   34 |   46 |      0 |      0 |          0 |
+|             fifo_wreq                                                |                bd_0_hls_inst_0_sobel_gmem_m_axi_fifo__parameterized0 |        145 |         50 |       0 |   95 |  105 |      0 |      0 |          0 |
+|             fifo_wrsp                                                |                bd_0_hls_inst_0_sobel_gmem_m_axi_fifo__parameterized2 |         21 |         20 |       0 |    1 |   13 |      0 |      0 |          0 |
+|             user_resp                                                |                bd_0_hls_inst_0_sobel_gmem_m_axi_fifo__parameterized3 |          6 |          6 |       0 |    0 |    7 |      0 |      0 |          0 |
+|         grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94     | bd_0_hls_inst_0_sobel_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2 |        785 |        784 |       0 |    1 |  994 |      0 |      0 |          4 |
+|           (grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94) | bd_0_hls_inst_0_sobel_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2 |        711 |        710 |       0 |    1 |  958 |      0 |      0 |          0 |
+|           flow_control_loop_pipe_sequential_init_U                   |         bd_0_hls_inst_0_sobel_flow_control_loop_pipe_sequential_init |          8 |          8 |       0 |    0 |    2 |      0 |      0 |          0 |
+|           mul_31ns_32s_63_2_1_U1                                     |                            bd_0_hls_inst_0_sobel_mul_31ns_32s_63_2_1 |         66 |         66 |       0 |    0 |   34 |      0 |      0 |          4 |
+|         mul_32ns_32ns_64_2_1_U12                                     |                           bd_0_hls_inst_0_sobel_mul_32ns_32ns_64_2_1 |         47 |         47 |       0 |    0 |   34 |      0 |      0 |          4 |
++----------------------------------------------------------------------+----------------------------------------------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+
+

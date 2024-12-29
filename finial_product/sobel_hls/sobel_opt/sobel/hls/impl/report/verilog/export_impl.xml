@@ -1,0 +1,201 @@
+<profile>
+  <RunData>
+    <RUN_TYPE>impl</RUN_TYPE>
+    <VIVADO_VERSION>v.2024.1</VIVADO_VERSION>
+    <ROOT_MODULE_CELL>bd_0_i/hls_inst</ROOT_MODULE_CELL>
+  </RunData>
+  <TimingReport>
+    <TargetClockPeriod>10.000</TargetClockPeriod>
+    <AchievedClockPeriod>8.341</AchievedClockPeriod>
+    <CLOCK_NAME>ap_clk</CLOCK_NAME>
+    <CP_FINAL>8.341</CP_FINAL>
+    <CP_ROUTE>8.341</CP_ROUTE>
+    <CP_SYNTH>6.554</CP_SYNTH>
+    <CP_TARGET>10.000</CP_TARGET>
+    <SLACK_FINAL>1.659</SLACK_FINAL>
+    <SLACK_ROUTE>1.659</SLACK_ROUTE>
+    <SLACK_SYNTH>3.446</SLACK_SYNTH>
+    <TIMING_MET>TRUE</TIMING_MET>
+    <TNS_FINAL>0.000</TNS_FINAL>
+    <TNS_ROUTE>0.000</TNS_ROUTE>
+    <TNS_SYNTH>0.000</TNS_SYNTH>
+    <WNS_FINAL>1.659</WNS_FINAL>
+    <WNS_ROUTE>1.659</WNS_ROUTE>
+    <WNS_SYNTH>3.446</WNS_SYNTH>
+  </TimingReport>
+  <AreaReport>
+    <Resources>
+      <BRAM>2</BRAM>
+      <CLB>0</CLB>
+      <DSP>8</DSP>
+      <FF>3723</FF>
+      <LATCH>0</LATCH>
+      <LUT>2623</LUT>
+      <SLICE>1042</SLICE>
+      <SRL>166</SRL>
+      <URAM>0</URAM>
+    </Resources>
+    <AvailableResources>
+      <BRAM>280</BRAM>
+      <CLB>0</CLB>
+      <DSP>220</DSP>
+      <FF>106400</FF>
+      <LUT>53200</LUT>
+      <SLICE>13300</SLICE>
+      <URAM>0</URAM>
+    </AvailableResources>
+  </AreaReport>
+  <RtlModules>
+    <RtlModule CELL="inst" DEPTH="0" IS_TOP="1" TYPE="function" MODULENAME="sobel" DISPNAME="inst" RTLNAME="sobel">
+      <SubModules count="4">CTRL_s_axi_U gmem_m_axi_U grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94 mul_32ns_32ns_64_2_1_U12</SubModules>
+      <Resources BRAM="2" DSP="8" FF="3723" LUT="2623"/>
+      <LocalResources FF="293"/>
+    </RtlModule>
+    <RtlModule CELL="inst/CTRL_s_axi_U" DEPTH="1" TYPE="resource" MODULENAME="CTRL_s_axi" DISPNAME="CTRL_s_axi_U" RTLNAME="sobel_CTRL_s_axi">
+      <Resources FF="245" LUT="411"/>
+      <BindNode BINDTYPE="adapter" BRAM="0" BUNDLEDNAME="CTRL" DISPNAME="bind_adapter " DSP="0" ID="" IMPL="" LATENCY="" LOOP="" OPTYPE="" PRAGMA="" RTLNAME="CTRL_s_axi_U" SOURCE="" STORAGESIZE="" STORAGESUBTYPE="s_axilite" STORAGEUSAGE="interface" URAM="0" VARIABLE=""/>
+    </RtlModule>
+    <RtlModule CELL="inst/gmem_m_axi_U" DEPTH="1" TYPE="resource" MODULENAME="gmem_m_axi" DISPNAME="gmem_m_axi_U" RTLNAME="sobel_gmem_m_axi">
+      <Resources BRAM="2" FF="2157" LUT="1396"/>
+      <BindNode BINDTYPE="adapter" BRAM="2" BUNDLEDNAME="gmem" DISPNAME="bind_adapter " DSP="0" ID="" IMPL="" LATENCY="" LOOP="" OPTYPE="" PRAGMA="" RTLNAME="gmem_m_axi_U" SOURCE="" STORAGESIZE="" STORAGESUBTYPE="m_axi" STORAGEUSAGE="interface" URAM="0" VARIABLE=""/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94" DEPTH="1" TYPE="function" MODULENAME="sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2" DISPNAME="grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94" RTLNAME="sobel_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2">
+      <SubModules count="2">flow_control_loop_pipe_sequential_init_U mul_31ns_32s_63_2_1_U1</SubModules>
+      <Resources DSP="4" FF="994" LUT="769"/>
+      <LocalResources FF="958" LUT="699"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94/flow_control_loop_pipe_sequential_init_U" DEPTH="2" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="sobel_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="8"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94/mul_31ns_32s_63_2_1_U1" DEPTH="2" TYPE="resource" MODULENAME="mul_31ns_32s_63_2_1" DISPNAME="mul_31ns_32s_63_2_1_U1" RTLNAME="sobel_mul_31ns_32s_63_2_1">
+      <Resources DSP="4" FF="34" LUT="66"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="4" ID="" IMPL="auto" LATENCY="1" LOOP="VITIS_LOOP_77_1_VITIS_LOOP_80_2" OPTYPE="mul" PRAGMA="" RTLNAME="mul_31ns_32s_63_2_1_U1" SOURCE="../source/sobel_base.cpp:77" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln77" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/mul_32ns_32ns_64_2_1_U12" DEPTH="1" TYPE="resource" MODULENAME="mul_32ns_32ns_64_2_1" DISPNAME="mul_32ns_32ns_64_2_1_U12" RTLNAME="sobel_mul_32ns_32ns_64_2_1">
+      <Resources DSP="4" FF="34" LUT="47"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="4" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32ns_32ns_64_2_1_U12" SOURCE="../source/sobel_base.cpp:66" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln66" VISIBLE="true"/>
+    </RtlModule>
+  </RtlModules>
+  <TimingPaths>
+    <TPATH DATAPATH_DELAY="7.750" DATAPATH_LOGIC_DELAY="3.484" DATAPATH_NET_DELAY="4.266" ENDPOINT_PIN="mul_32ns_32ns_64_2_1_U12/tmp_product/RSTA" LOGIC_LEVELS="11" MAX_FANOUT="35" SLACK="1.659" STARTPOINT_PIN="CTRL_s_axi_U/int_cols_reg[1]/C">
+      <CELL NAME="CTRL_s_axi_U/int_cols_reg[1]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="sobel_CTRL_s_axi.v" LINE_NUMBER="282" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="CTRL_s_axi_U/sub2_reg_227[4]_i_5" PRIMITIVE_TYPE="LUT.others.LUT1" FILE_NAME="sobel_CTRL_s_axi.v" LINE_NUMBER="150" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="CTRL_s_axi_U/sub2_reg_227_reg[4]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sobel_CTRL_s_axi.v" LINE_NUMBER="150" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="CTRL_s_axi_U/sub2_reg_227_reg[8]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sobel_CTRL_s_axi.v" LINE_NUMBER="150" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="CTRL_s_axi_U/sub2_reg_227_reg[12]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sobel_CTRL_s_axi.v" LINE_NUMBER="150" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="CTRL_s_axi_U/sub2_reg_227_reg[16]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sobel_CTRL_s_axi.v" LINE_NUMBER="150" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="CTRL_s_axi_U/sub2_reg_227_reg[20]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sobel_CTRL_s_axi.v" LINE_NUMBER="150" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="CTRL_s_axi_U/sub2_reg_227_reg[24]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sobel_CTRL_s_axi.v" LINE_NUMBER="150" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="CTRL_s_axi_U/tmp_product_i_68" PRIMITIVE_TYPE="LUT.others.LUT2" FILE_NAME="sobel_CTRL_s_axi.v" LINE_NUMBER="150" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="CTRL_s_axi_U/tmp_product_i_49" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sobel_CTRL_s_axi.v" LINE_NUMBER="150" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="CTRL_s_axi_U/tmp_product_i_12" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sobel_CTRL_s_axi.v" LINE_NUMBER="150" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="CTRL_s_axi_U/tmp_product_i_1__0" PRIMITIVE_TYPE="LUT.others.LUT2" FILE_NAME="sobel_CTRL_s_axi.v" LINE_NUMBER="150" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="mul_32ns_32ns_64_2_1_U12/tmp_product" PRIMITIVE_TYPE="MULT.dsp.DSP48E1" FILE_NAME="sobel_mul_32ns_32ns_64_2_1.v" LINE_NUMBER="47" MODULE_INSTNAME="mul_32ns_32ns_64_2_1_U12" IS_FUNCINST="0"/>
+      <MODULE_INSTANCES>CTRL_s_axi_U mul_32ns_32ns_64_2_1_U12</MODULE_INSTANCES>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="7.637" DATAPATH_LOGIC_DELAY="3.484" DATAPATH_NET_DELAY="4.153" ENDPOINT_PIN="mul_32ns_32ns_64_2_1_U12/buff0_reg/RSTB" LOGIC_LEVELS="11" MAX_FANOUT="35" SLACK="1.736" STARTPOINT_PIN="CTRL_s_axi_U/int_cols_reg[1]/C">
+      <CELL NAME="CTRL_s_axi_U/int_cols_reg[1]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="sobel_CTRL_s_axi.v" LINE_NUMBER="282" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="CTRL_s_axi_U/sub2_reg_227[4]_i_5" PRIMITIVE_TYPE="LUT.others.LUT1" FILE_NAME="sobel_CTRL_s_axi.v" LINE_NUMBER="150" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="CTRL_s_axi_U/sub2_reg_227_reg[4]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sobel_CTRL_s_axi.v" LINE_NUMBER="150" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="CTRL_s_axi_U/sub2_reg_227_reg[8]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sobel_CTRL_s_axi.v" LINE_NUMBER="150" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="CTRL_s_axi_U/sub2_reg_227_reg[12]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sobel_CTRL_s_axi.v" LINE_NUMBER="150" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="CTRL_s_axi_U/sub2_reg_227_reg[16]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sobel_CTRL_s_axi.v" LINE_NUMBER="150" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="CTRL_s_axi_U/sub2_reg_227_reg[20]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sobel_CTRL_s_axi.v" LINE_NUMBER="150" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="CTRL_s_axi_U/sub2_reg_227_reg[24]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sobel_CTRL_s_axi.v" LINE_NUMBER="150" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="CTRL_s_axi_U/tmp_product_i_68" PRIMITIVE_TYPE="LUT.others.LUT2" FILE_NAME="sobel_CTRL_s_axi.v" LINE_NUMBER="150" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="CTRL_s_axi_U/tmp_product_i_49" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sobel_CTRL_s_axi.v" LINE_NUMBER="150" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="CTRL_s_axi_U/tmp_product_i_12" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sobel_CTRL_s_axi.v" LINE_NUMBER="150" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="CTRL_s_axi_U/tmp_product_i_1__0" PRIMITIVE_TYPE="LUT.others.LUT2" FILE_NAME="sobel_CTRL_s_axi.v" LINE_NUMBER="150" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="mul_32ns_32ns_64_2_1_U12/buff0_reg" PRIMITIVE_TYPE="MULT.dsp.DSP48E1" FILE_NAME="sobel_mul_32ns_32ns_64_2_1.v" LINE_NUMBER="47" MODULE_INSTNAME="mul_32ns_32ns_64_2_1_U12" IS_FUNCINST="0"/>
+      <MODULE_INSTANCES>CTRL_s_axi_U mul_32ns_32ns_64_2_1_U12</MODULE_INSTANCES>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="7.607" DATAPATH_LOGIC_DELAY="3.484" DATAPATH_NET_DELAY="4.123" ENDPOINT_PIN="mul_32ns_32ns_64_2_1_U12/buff0_reg__0/RSTB" LOGIC_LEVELS="11" MAX_FANOUT="35" SLACK="1.766" STARTPOINT_PIN="CTRL_s_axi_U/int_cols_reg[1]/C">
+      <CELL NAME="CTRL_s_axi_U/int_cols_reg[1]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="sobel_CTRL_s_axi.v" LINE_NUMBER="282" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="CTRL_s_axi_U/sub2_reg_227[4]_i_5" PRIMITIVE_TYPE="LUT.others.LUT1" FILE_NAME="sobel_CTRL_s_axi.v" LINE_NUMBER="150" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="CTRL_s_axi_U/sub2_reg_227_reg[4]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sobel_CTRL_s_axi.v" LINE_NUMBER="150" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="CTRL_s_axi_U/sub2_reg_227_reg[8]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sobel_CTRL_s_axi.v" LINE_NUMBER="150" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="CTRL_s_axi_U/sub2_reg_227_reg[12]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sobel_CTRL_s_axi.v" LINE_NUMBER="150" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="CTRL_s_axi_U/sub2_reg_227_reg[16]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sobel_CTRL_s_axi.v" LINE_NUMBER="150" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="CTRL_s_axi_U/sub2_reg_227_reg[20]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sobel_CTRL_s_axi.v" LINE_NUMBER="150" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="CTRL_s_axi_U/sub2_reg_227_reg[24]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sobel_CTRL_s_axi.v" LINE_NUMBER="150" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="CTRL_s_axi_U/tmp_product_i_68" PRIMITIVE_TYPE="LUT.others.LUT2" FILE_NAME="sobel_CTRL_s_axi.v" LINE_NUMBER="150" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="CTRL_s_axi_U/tmp_product_i_49" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sobel_CTRL_s_axi.v" LINE_NUMBER="150" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="CTRL_s_axi_U/tmp_product_i_12" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sobel_CTRL_s_axi.v" LINE_NUMBER="150" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="CTRL_s_axi_U/tmp_product_i_1__0" PRIMITIVE_TYPE="LUT.others.LUT2" FILE_NAME="sobel_CTRL_s_axi.v" LINE_NUMBER="150" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="mul_32ns_32ns_64_2_1_U12/buff0_reg__0" PRIMITIVE_TYPE="MULT.dsp.DSP48E1" FILE_NAME="sobel_mul_32ns_32ns_64_2_1.v" LINE_NUMBER="47" MODULE_INSTNAME="mul_32ns_32ns_64_2_1_U12" IS_FUNCINST="0"/>
+      <MODULE_INSTANCES>CTRL_s_axi_U mul_32ns_32ns_64_2_1_U12</MODULE_INSTANCES>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="7.552" DATAPATH_LOGIC_DELAY="3.484" DATAPATH_NET_DELAY="4.068" ENDPOINT_PIN="mul_32ns_32ns_64_2_1_U12/tmp_product__0/RSTB" LOGIC_LEVELS="11" MAX_FANOUT="35" SLACK="1.821" STARTPOINT_PIN="CTRL_s_axi_U/int_cols_reg[1]/C">
+      <CELL NAME="CTRL_s_axi_U/int_cols_reg[1]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="sobel_CTRL_s_axi.v" LINE_NUMBER="282" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="CTRL_s_axi_U/sub2_reg_227[4]_i_5" PRIMITIVE_TYPE="LUT.others.LUT1" FILE_NAME="sobel_CTRL_s_axi.v" LINE_NUMBER="150" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="CTRL_s_axi_U/sub2_reg_227_reg[4]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sobel_CTRL_s_axi.v" LINE_NUMBER="150" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="CTRL_s_axi_U/sub2_reg_227_reg[8]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sobel_CTRL_s_axi.v" LINE_NUMBER="150" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="CTRL_s_axi_U/sub2_reg_227_reg[12]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sobel_CTRL_s_axi.v" LINE_NUMBER="150" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="CTRL_s_axi_U/sub2_reg_227_reg[16]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sobel_CTRL_s_axi.v" LINE_NUMBER="150" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="CTRL_s_axi_U/sub2_reg_227_reg[20]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sobel_CTRL_s_axi.v" LINE_NUMBER="150" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="CTRL_s_axi_U/sub2_reg_227_reg[24]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sobel_CTRL_s_axi.v" LINE_NUMBER="150" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="CTRL_s_axi_U/tmp_product_i_68" PRIMITIVE_TYPE="LUT.others.LUT2" FILE_NAME="sobel_CTRL_s_axi.v" LINE_NUMBER="150" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="CTRL_s_axi_U/tmp_product_i_49" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sobel_CTRL_s_axi.v" LINE_NUMBER="150" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="CTRL_s_axi_U/tmp_product_i_12" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sobel_CTRL_s_axi.v" LINE_NUMBER="150" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="CTRL_s_axi_U/tmp_product_i_1__0" PRIMITIVE_TYPE="LUT.others.LUT2" FILE_NAME="sobel_CTRL_s_axi.v" LINE_NUMBER="150" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="mul_32ns_32ns_64_2_1_U12/tmp_product__0" PRIMITIVE_TYPE="MULT.dsp.DSP48E1" FILE_NAME="sobel_mul_32ns_32ns_64_2_1.v" LINE_NUMBER="47" MODULE_INSTNAME="mul_32ns_32ns_64_2_1_U12" IS_FUNCINST="0"/>
+      <MODULE_INSTANCES>CTRL_s_axi_U mul_32ns_32ns_64_2_1_U12</MODULE_INSTANCES>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="6.962" DATAPATH_LOGIC_DELAY="3.484" DATAPATH_NET_DELAY="3.478" ENDPOINT_PIN="empty_reg_232_reg[25]/R" LOGIC_LEVELS="11" MAX_FANOUT="35" SLACK="2.525" STARTPOINT_PIN="CTRL_s_axi_U/int_cols_reg[1]/C">
+      <CELL NAME="CTRL_s_axi_U/int_cols_reg[1]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="sobel_CTRL_s_axi.v" LINE_NUMBER="282" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="CTRL_s_axi_U/sub2_reg_227[4]_i_5" PRIMITIVE_TYPE="LUT.others.LUT1" FILE_NAME="sobel_CTRL_s_axi.v" LINE_NUMBER="150" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="CTRL_s_axi_U/sub2_reg_227_reg[4]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sobel_CTRL_s_axi.v" LINE_NUMBER="150" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="CTRL_s_axi_U/sub2_reg_227_reg[8]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sobel_CTRL_s_axi.v" LINE_NUMBER="150" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="CTRL_s_axi_U/sub2_reg_227_reg[12]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sobel_CTRL_s_axi.v" LINE_NUMBER="150" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="CTRL_s_axi_U/sub2_reg_227_reg[16]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sobel_CTRL_s_axi.v" LINE_NUMBER="150" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="CTRL_s_axi_U/sub2_reg_227_reg[20]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sobel_CTRL_s_axi.v" LINE_NUMBER="150" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="CTRL_s_axi_U/sub2_reg_227_reg[24]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sobel_CTRL_s_axi.v" LINE_NUMBER="150" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="CTRL_s_axi_U/tmp_product_i_68" PRIMITIVE_TYPE="LUT.others.LUT2" FILE_NAME="sobel_CTRL_s_axi.v" LINE_NUMBER="150" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="CTRL_s_axi_U/tmp_product_i_49" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sobel_CTRL_s_axi.v" LINE_NUMBER="150" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="CTRL_s_axi_U/tmp_product_i_12" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sobel_CTRL_s_axi.v" LINE_NUMBER="150" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="CTRL_s_axi_U/tmp_product_i_1__0" PRIMITIVE_TYPE="LUT.others.LUT2" FILE_NAME="sobel_CTRL_s_axi.v" LINE_NUMBER="150" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="empty_reg_232_reg[25]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="sobel.v" LINE_NUMBER="335"/>
+      <MODULE_INSTANCES>CTRL_s_axi_U mul_32ns_32ns_64_2_1_U12</MODULE_INSTANCES>
+    </TPATH>
+  </TimingPaths>
+  <VivadoReportFiles>
+    <ReportFile TYPE="design_analysis" PATH="verilog/report/sobel_design_analysis_routed.rpt"/>
+    <ReportFile TYPE="failfast" PATH="verilog/report/sobel_failfast_routed.rpt"/>
+    <ReportFile TYPE="status" PATH="verilog/report/sobel_status_routed.rpt"/>
+    <ReportFile TYPE="timing" PATH="verilog/report/sobel_timing_routed.rpt"/>
+    <ReportFile TYPE="timing_paths" PATH="verilog/report/sobel_timing_paths_routed.rpt"/>
+    <ReportFile TYPE="utilization" PATH="verilog/report/sobel_utilization_routed.rpt"/>
+    <ReportFile TYPE="utilization_hierarchical" PATH="verilog/report/sobel_utilization_hierarchical_routed.rpt"/>
+  </VivadoReportFiles>
+  <GeneralInfo NAME="General Information">
+    <item NAME="Date" VALUE="Sun Dec 29 10:54:05 +0800 2024"/>
+    <item NAME="Version" VALUE="2024.1 (Build 5069499 on May 21 2024)"/>
+    <item NAME="Project" VALUE="sobel"/>
+    <item NAME="Solution" VALUE="hls (Vivado IP Flow Target)"/>
+    <item NAME="Product family" VALUE="zynq"/>
+    <item NAME="Target device" VALUE="xc7z020-clg400-1"/>
+  </GeneralInfo>
+  <RunOptions NAME="Run Constraints &amp; Options">
+    <General NAME="Design Constraints &amp; Options">
+      <item NAME="Place &amp; Route target clock" VALUE="10 ns"/>
+      <item NAME="C-Synthesis target clock" VALUE=""/>
+      <item NAME="C-Synthesis uncertainty" VALUE="27%"/>
+      <item NAME="config_export -ip_xdc_file" VALUE=""/>
+      <item NAME="config_export -ip_xdc_ooc_file" VALUE=""/>
+    </General>
+    <Syn NAME="RTL Synthesis Options">
+      <item NAME="config_export -vivado_synth_strategy" VALUE="default"/>
+      <item NAME="config_export -vivado_synth_design_args" VALUE="-directive sdx_optimization_effort_high"/>
+    </Syn>
+    <Impl NAME="Place &amp; Route Options">
+      <item NAME="config_export -vivado_impl_strategy" VALUE="default"/>
+      <item NAME="config_export -vivado_phys_opt" VALUE="auto"/>
+      <item NAME="config_export -vivado_pblock" VALUE=""/>
+    </Impl>
+    <Reporting NAME="Reporting Options">
+      <item NAME="config_export -vivado_report_level" VALUE="2"/>
+      <item NAME="config_export -vivado_max_timing_paths" VALUE="10"/>
+    </Reporting>
+  </RunOptions>
+</profile>
+

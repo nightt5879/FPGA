@@ -3,8 +3,8 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Sun Dec 29 10:45:40 2024
-# Process ID: 23240
+# Start of session at: Sun Dec 29 10:49:01 2024
+# Process ID: 3316
 # Current directory: E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls/impl/ip
 # Command line: vivado.exe -notrace -mode batch -source run_ippack.tcl
 # Log file: E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls/impl/ip/vivado.log
@@ -19,7 +19,7 @@
 # Host memory       :16487 MB
 # Swap memory       :25769 MB
 # Total Virtual     :42257 MB
-# Available Virtual :11695 MB
+# Available Virtual :11654 MB
 #-----------------------------------------------------------
 source run_ippack.tcl -notrace
 INFO: calling package_hls_ip ip_types=vitis sysgen json_file=E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls/hls_data.json outdir=E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls/impl/ip srcdir=E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls sort_interfaces_ports=false
@@ -27,7 +27,7 @@ INFO: Copied 1 ipmisc file(s) to E:/robot/project/FPGA/finial_product/sobel_hls/
 INFO: Copied 7 verilog file(s) to E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls/impl/ip/hdl/verilog
 INFO: Copied 7 vhdl file(s) to E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls/impl/ip/hdl/vhdl
 INFO: Copied 10 swdriver file(s) to E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls/impl/ip/drivers
-ipx::create_core: Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 650.996 ; gain = 194.512
+ipx::create_core: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 651.215 ; gain = 194.578
 INFO: Import ports from HDL: E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls/impl/ip/hdl/vhdl/sobel.vhd (sobel)
 INFO: Add axi4lite interface s_axi_CTRL
 INFO: Add clock interface ap_clk
@@ -42,4 +42,4 @@ INFO: Calling post_process_sysgen to specialize IP
 Generating sysgen info xml from json file
 INFO: Created IP E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls/impl/ip/component.xml
 INFO: Created IP archive E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls/impl/ip/xilinx_com_hls_sobel_1_0.zip
-INFO: [Common 17-206] Exiting Vivado at Sun Dec 29 10:45:59 2024...
+INFO: [Common 17-206] Exiting Vivado at Sun Dec 29 10:49:12 2024...

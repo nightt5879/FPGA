@@ -1,0 +1,272 @@
+<ENTRY>
+{
+ "thisFile": "E:/robot\\project\\FPGA\\finial_product\\sobel_hls\\sobel_opt\\sobel\\sobel.hlsrun_impl_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "12/29/24 10:48:53",
+ "timestampMillis": "273745552",
+ "buildStep": {
+  "cmdId": "0f22a77a-c0bb-4c4c-8fd2-9a1973933e63",
+  "name": "vitis-run",
+  "logFile": "E:/robot\\project\\FPGA\\finial_product\\sobel_hls\\sobel_opt\\sobel\\logs\\sobel.steps.log",
+  "commandLine": "E:/vivado/Vitis/2024.1/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --impl --config E:\\robot\\project\\FPGA\\finial_product\\sobel_hls\\sobel_opt\\hls_config.cfg --work_dir sobel ",
+  "args": [
+   "--mode",
+   "hls",
+   "--impl",
+   "--config",
+   "E:\\robot\\project\\FPGA\\finial_product\\sobel_hls\\sobel_opt\\hls_config.cfg",
+   "--work_dir",
+   "sobel"
+  ],
+  "iniFiles": [],
+  "cwd": "E:\\robot\\project\\FPGA\\finial_product\\sobel_hls\\sobel_opt"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "12/29/24 10:48:53",
+ "timestampMillis": "273745552",
+ "status": {
+  "cmdId": "0f22a77a-c0bb-4c4c-8fd2-9a1973933e63",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "12/29/24 10:48:58",
+ "timestampMillis": "273750728",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_IMPL",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "sobel",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "E:/robot\\project\\FPGA\\finial_product\\sobel_hls\\source\\sobel.hpp",
+     "E:/robot\\project\\FPGA\\finial_product\\sobel_hls\\source\\sobel_base.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "12/29/24 10:48:58",
+ "timestampMillis": "273750728",
+ "buildStep": {
+  "cmdId": "95aea043-3d48-428e-ab1b-1ebbfe248c69",
+  "name": "export_design",
+  "logFile": "E:/robot\\project\\FPGA\\finial_product\\sobel_hls\\sobel_opt\\sobel\\hls\\hls.log",
+  "commandLine": "export_design -flow impl",
+  "args": [
+   "-flow",
+   "impl"
+  ],
+  "iniFiles": [],
+  "cwd": "E:\\robot\\project\\FPGA\\finial_product\\sobel_hls\\sobel_opt"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "12/29/24 10:48:58",
+ "timestampMillis": "273750729",
+ "status": {
+  "cmdId": "95aea043-3d48-428e-ab1b-1ebbfe248c69",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "12/29/24 10:48:58",
+ "timestampMillis": "273750730",
+ "report": {
+  "path": "E:/robot\\project\\FPGA\\finial_product\\sobel_hls\\sobel_opt\\sobel\\hls\\impl\\verilog",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "12/29/24 10:48:58",
+ "timestampMillis": "273750730",
+ "report": {
+  "path": "E:/robot\\project\\FPGA\\finial_product\\sobel_hls\\sobel_opt\\sobel\\hls\\impl\\report\\verilog\\export_syn.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "12/29/24 10:48:58",
+ "timestampMillis": "273750731",
+ "report": {
+  "path": "E:/robot\\project\\FPGA\\finial_product\\sobel_hls\\sobel_opt\\sobel\\hls\\impl\\report\\verilog\\export_syn.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "12/29/24 10:48:58",
+ "timestampMillis": "273750731",
+ "report": {
+  "path": "E:/robot\\project\\FPGA\\finial_product\\sobel_hls\\sobel_opt\\sobel\\hls\\impl\\verilog",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "12/29/24 10:48:58",
+ "timestampMillis": "273750731",
+ "report": {
+  "path": "E:/robot\\project\\FPGA\\finial_product\\sobel_hls\\sobel_opt\\sobel\\hls\\impl\\report\\verilog\\export_impl.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "12/29/24 10:48:58",
+ "timestampMillis": "273750732",
+ "report": {
+  "path": "E:/robot\\project\\FPGA\\finial_product\\sobel_hls\\sobel_opt\\sobel\\hls\\impl\\report\\verilog\\export_impl.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "12/29/24 10:54:05",
+ "timestampMillis": "274057885",
+ "report": {
+  "path": "E:/robot\\project\\FPGA\\finial_product\\sobel_hls\\sobel_opt\\sobel\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "12/29/24 10:54:05",
+ "timestampMillis": "274057886",
+ "report": {
+  "path": "E:/robot\\project\\FPGA\\finial_product\\sobel_hls\\sobel_opt\\sobel\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "12/29/24 10:54:05",
+ "timestampMillis": "274057886",
+ "status": {
+  "cmdId": "95aea043-3d48-428e-ab1b-1ebbfe248c69",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "12/29/24 10:54:05",
+ "timestampMillis": "274058142",
+ "status": {
+  "cmdId": "0f22a77a-c0bb-4c4c-8fd2-9a1973933e63",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "12/29/24 10:54:05",
+ "timestampMillis": "274058143",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "12/29/24 10:54:05",
+ "timestampMillis": "274058143",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
