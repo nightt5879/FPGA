@@ -1,0 +1,45 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Sun Dec 29 10:45:40 2024
+# Process ID: 23240
+# Current directory: E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls/impl/ip
+# Command line: vivado.exe -notrace -mode batch -source run_ippack.tcl
+# Log file: E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls/impl/ip/vivado.log
+# Journal file: E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls/impl/ip\vivado.jou
+# Running On        :nightt_insider
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :22631
+# Processor Detail  :AMD Ryzen 7 5800U with Radeon Graphics         
+# CPU Frequency     :1896 MHz
+# CPU Physical cores:8
+# CPU Logical cores :16
+# Host memory       :16487 MB
+# Swap memory       :25769 MB
+# Total Virtual     :42257 MB
+# Available Virtual :11695 MB
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace
+INFO: calling package_hls_ip ip_types=vitis sysgen json_file=E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls/hls_data.json outdir=E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls/impl/ip srcdir=E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls sort_interfaces_ports=false
+INFO: Copied 1 ipmisc file(s) to E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls/impl/ip/misc
+INFO: Copied 7 verilog file(s) to E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls/impl/ip/hdl/verilog
+INFO: Copied 7 vhdl file(s) to E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls/impl/ip/hdl/vhdl
+INFO: Copied 10 swdriver file(s) to E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls/impl/ip/drivers
+ipx::create_core: Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 650.996 ; gain = 194.512
+INFO: Import ports from HDL: E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls/impl/ip/hdl/vhdl/sobel.vhd (sobel)
+INFO: Add axi4lite interface s_axi_CTRL
+INFO: Add clock interface ap_clk
+INFO: Add reset interface ap_rst_n
+INFO: Add interrupt interface interrupt
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/vivado/Vivado/2024.1/data/ip'.
+INFO: Add axi4full interface m_axi_gmem
+INFO: Calling post_process_vitis to specialize IP
+INFO: Calling post_process_sysgen to specialize IP
+Generating sysgen info xml from json file
+INFO: Created IP E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls/impl/ip/component.xml
+INFO: Created IP archive E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls/impl/ip/xilinx_com_hls_sobel_1_0.zip
+INFO: [Common 17-206] Exiting Vivado at Sun Dec 29 10:45:59 2024...

@@ -1,0 +1,29 @@
+{
+    "1": {
+        "name": "sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2",
+        "file": "..\/source\/sobel_base.cpp",
+        "fileloc": "74",
+        "instructions": "141",
+        "total_instructions": "141",
+        "calls": "",
+        "basicblocks": "8",
+        "loads": {
+            "L": "4"
+        },
+        "stores": {
+            "L": "8"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "0": {
+        "name": "sobel",
+        "file": "sobel_base.cpp",
+        "fileloc": "66",
+        "instructions": "36",
+        "total_instructions": "177",
+        "calls": "1",
+        "basicblocks": "1"
+    }
+}

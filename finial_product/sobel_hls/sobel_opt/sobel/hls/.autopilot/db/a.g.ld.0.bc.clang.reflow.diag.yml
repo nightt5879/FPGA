@@ -1,0 +1,472 @@
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../source/sobel_base.cpp, Line: 53, Column: 0 }
+Function:        _ZL15sobel3x3_kernelPA3_h
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'Gradient_X(unsigned char (*) [3])'
+    DebugLoc:        { File: ../source/sobel_base.cpp, Line: 9, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'sobel3x3_kernel(unsigned char (*) [3])'
+    DebugLoc:        { File: ../source/sobel_base.cpp, Line: 53, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../source/sobel_base.cpp, Line: 53, Column: 0 }
+Function:        _ZL15sobel3x3_kernelPA3_h
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'Gradient_Y(unsigned char (*) [3])'
+    DebugLoc:        { File: ../source/sobel_base.cpp, Line: 31, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'sobel3x3_kernel(unsigned char (*) [3])'
+    DebugLoc:        { File: ../source/sobel_base.cpp, Line: 53, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../source/sobel_base.cpp, Line: 67, Column: 0 }
+Function:        _Z5sobelPhS_ii
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'sobel3x3_kernel(unsigned char (*) [3])'
+    DebugLoc:        { File: ../source/sobel_base.cpp, Line: 53, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'sobel(unsigned char*, unsigned char*, int, int)'
+    DebugLoc:        { File: ../source/sobel_base.cpp, Line: 67, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: ../source/sobel_base.cpp, Line: 88, Column: 28 }
+Function:        _Z5sobelPhS_ii
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '3'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        scevgepseq
+  - ArrayName:       src
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_88_4
+  - String:          ' '
+  - LoopLoc:         '../source/sobel_base.cpp:88:28'
+  - String:          ' '
+  - Function:        'sobel(unsigned char*, unsigned char*, int, int)'
+    DebugLoc:        { File: ../source/sobel_base.cpp, Line: 67, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: ../source/sobel_base.cpp, Line: 91, Column: 37 }
+  - OrigDirection:   read
+  - OrigID:          for.inc.load.6
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: ../source/sobel_base.cpp, Line: 80, Column: 19 }
+Function:        _Z5sobelPhS_ii
+Args:            
+  - String:          'Sequential '
+  - Direction:       write
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        scevgep5seq
+  - ArrayName:       dst
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_80_2
+  - String:          ' '
+  - LoopLoc:         '../source/sobel_base.cpp:80:19'
+  - String:          ' '
+  - Function:        'sobel(unsigned char*, unsigned char*, int, int)'
+    DebugLoc:        { File: ../source/sobel_base.cpp, Line: 67, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      store
+    DebugLoc:        { File: ../source/sobel_base.cpp, Line: 96, Column: 36 }
+  - OrigDirection:   write
+  - OrigID:          for.inc27.store.75
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            IncompatibleStride
+DebugLoc:        { File: ../source/sobel_base.cpp, Line: 88, Column: 28 }
+Function:        _Z5sobelPhS_ii
+Args:            
+  - String:          Stride is incompatible
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: ../source/sobel_base.cpp, Line: 88, Column: 28 }
+  - OrigDirection:   read
+  - OrigID:          scevgepseq
+  - ArrayName:       src
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_86_3
+  - String:          ' '
+  - LoopLoc:         '../source/sobel_base.cpp:86:24'
+  - String:          ' '
+  - Function:        'sobel(unsigned char*, unsigned char*, int, int)'
+    DebugLoc:        { File: ../source/sobel_base.cpp, Line: 67, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            IncompatibleStride
+DebugLoc:        { File: ../source/sobel_base.cpp, Line: 80, Column: 19 }
+Function:        _Z5sobelPhS_ii
+Args:            
+  - String:          Stride is incompatible
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: ../source/sobel_base.cpp, Line: 80, Column: 19 }
+  - OrigDirection:   write
+  - OrigID:          scevgep5seq
+  - ArrayName:       dst
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_77_1
+  - String:          ' '
+  - LoopLoc:         '../source/sobel_base.cpp:77:20'
+  - String:          ' '
+  - Function:        'sobel(unsigned char*, unsigned char*, int, int)'
+    DebugLoc:        { File: ../source/sobel_base.cpp, Line: 67, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: ../source/sobel_base.cpp, Line: 80, Column: 19 }
+Function:        _Z5sobelPhS_ii
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i8
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: ../source/sobel_base.cpp, Line: 80, Column: 19 }
+  - OrigDirection:   write
+  - OrigID:          scevgep5seq
+  - ArrayName:       dst
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_80_2
+  - String:          ' '
+  - LoopLoc:         '../source/sobel_base.cpp:80:19'
+  - String:          ' '
+  - Function:        'sobel(unsigned char*, unsigned char*, int, int)'
+    DebugLoc:        { File: ../source/sobel_base.cpp, Line: 67, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: ../source/sobel_base.cpp, Line: 88, Column: 28 }
+Function:        _Z5sobelPhS_ii
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i8
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: ../source/sobel_base.cpp, Line: 88, Column: 28 }
+  - OrigDirection:   read
+  - OrigID:          scevgepseq
+  - ArrayName:       src
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_88_4
+  - String:          ' '
+  - LoopLoc:         '../source/sobel_base.cpp:88:28'
+  - String:          ' '
+  - Function:        'sobel(unsigned char*, unsigned char*, int, int)'
+    DebugLoc:        { File: ../source/sobel_base.cpp, Line: 67, Column: 0 }
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_80_2
+  - String:          '> at '
+  - LoopLoc:         '../source/sobel_base.cpp:80:19'
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../source/sobel_base.cpp, Line: 86, Column: 24 }
+Function:        _Z5sobelPhS_ii
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_86_3
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../source/sobel_base.cpp, Line: 88, Column: 28 }
+Function:        _Z5sobelPhS_ii
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_88_4
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/sobel_base.cpp, Line: 67, Column: 0 }
+Function:        _Z5sobelPhS_ii
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_86_3
+  - String:          ''' ('
+  - LoopLoc:         '../source/sobel_base.cpp:86:24'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          sobel
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/sobel_base.cpp, Line: 67, Column: 0 }
+Function:        _Z5sobelPhS_ii
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_88_4
+  - String:          ''' ('
+  - LoopLoc:         '../source/sobel_base.cpp:88:28'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          sobel
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/sobel_base.cpp, Line: 67, Column: 0 }
+Function:        _Z5sobelPhS_ii
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_88_4
+  - String:          ''' ('
+  - LoopLoc:         '../source/sobel_base.cpp:88:28'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          sobel
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/sobel_base.cpp, Line: 67, Column: 0 }
+Function:        _Z5sobelPhS_ii
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_88_4
+  - String:          ''' ('
+  - LoopLoc:         '../source/sobel_base.cpp:88:28'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          sobel
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: ../source/sobel_base.cpp, Line: 80, Column: 19 }
+Function:        _Z5sobelPhS_ii
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length and bit width '
+  - Width:           '8'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_80_2
+  - String:          ' '
+  - LoopLoc:         '../source/sobel_base.cpp:80:19'
+  - String:          ' '
+  - Function:        'sobel(unsigned char*, unsigned char*, int, int)'
+    DebugLoc:        { File: ../source/sobel_base.cpp, Line: 67, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: ../source/sobel_base.cpp, Line: 80, Column: 19 }
+Function:        _Z5sobelPhS_ii
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length and bit width '
+  - Width:           '8'
+  - String:          ' in loop '''
+  - LoopName:        VITIS_LOOP_80_2
+  - String:          '''('
+  - LoopLoc:         '../source/sobel_base.cpp:80:19'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: ../source/sobel_base.cpp, Line: 88, Column: 28 }
+Function:        _Z5sobelPhS_ii
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '3'
+  - String:          ' and bit width '
+  - Width:           '8'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq1
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - Function:        'sobel(unsigned char*, unsigned char*, int, int)'
+    DebugLoc:        { File: ../source/sobel_base.cpp, Line: 67, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: ../source/sobel_base.cpp, Line: 88, Column: 28 }
+Function:        _Z5sobelPhS_ii
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '3'
+  - String:          ' and bit width '
+  - Width:           '8'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: ../source/sobel_base.cpp, Line: 88, Column: 28 }
+Function:        _Z5sobelPhS_ii
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '3'
+  - String:          ' and bit width '
+  - Width:           '8'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq2
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - Function:        'sobel(unsigned char*, unsigned char*, int, int)'
+    DebugLoc:        { File: ../source/sobel_base.cpp, Line: 67, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: ../source/sobel_base.cpp, Line: 88, Column: 28 }
+Function:        _Z5sobelPhS_ii
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '3'
+  - String:          ' and bit width '
+  - Width:           '8'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: ../source/sobel_base.cpp, Line: 88, Column: 28 }
+Function:        _Z5sobelPhS_ii
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '3'
+  - String:          ' and bit width '
+  - Width:           '8'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq3
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - Function:        'sobel(unsigned char*, unsigned char*, int, int)'
+    DebugLoc:        { File: ../source/sobel_base.cpp, Line: 67, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: ../source/sobel_base.cpp, Line: 88, Column: 28 }
+Function:        _Z5sobelPhS_ii
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '3'
+  - String:          ' and bit width '
+  - Width:           '8'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...

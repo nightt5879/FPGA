@@ -1,0 +1,21 @@
+<cosim_options>
+    <option name="argv" tcl="config_cosim -argv" ini="cosim.argv"></option>
+    <option name="compiled_library_dir" tcl="config_cosim -compiled_library_dir" ini="cosim.compiled_library_dir"></option>
+    <option name="coverage" tcl="config_cosim -coverage" ini="cosim.coverage"></option>
+    <option name="disable_binary_tv" tcl="config_cosim -disable_binary_tv" ini="cosim.disable_binary_tv"></option>
+    <option name="disable_deadlock_detection" tcl="config_cosim -disable_deadlock_detection" ini="cosim.disable_deadlock_detection"></option>
+    <option name="disable_dependency_check" tcl="config_cosim -disable_dependency_check" ini="cosim.disable_dependency_check"></option>
+    <option name="enable_dataflow_profiling" tcl="config_cosim -enable_dataflow_profiling" ini="cosim.enable_dataflow_profiling"></option>
+    <option name="enable_fifo_sizing" tcl="config_cosim -enable_fifo_sizing" ini="cosim.enable_fifo_sizing"></option>
+    <option name="enable_tasks_with_m_axi" tcl="config_cosim -enable_tasks_with_m_axi" ini="cosim.enable_tasks_with_m_axi"></option>
+    <option name="hwemu_trace_dir" tcl="config_cosim -hwemu_trace_dir" ini="cosim.hwemu_trace_dir"></option>
+    <option name="random_stall" tcl="config_cosim -random_stall" ini="cosim.random_stall"></option>
+    <option name="rtl" tcl="config_cosim -rtl" ini="cosim.rtl">verilog</option>
+    <option name="setup" tcl="config_cosim -setup" ini="cosim.setup"></option>
+    <option name="stable_axilite_update" tcl="config_cosim -stable_axilite_update" ini="cosim.stable_axilite_update"></option>
+    <option name="tool" tcl="config_cosim -tool" ini="cosim.tool">xsim</option>
+    <option name="trace_level" tcl="config_cosim -trace_level" ini="cosim.trace_level">none</option>
+    <option name="user_stall" tcl="config_cosim -user_stall" ini="cosim.user_stall"></option>
+    <option name="wave_debug" tcl="config_cosim -wave_debug" ini="cosim.wave_debug"></option>
+</cosim_options>
+

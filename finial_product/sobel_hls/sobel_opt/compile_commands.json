@@ -1,0 +1,26 @@
+[
+  {
+    "directory": "E:\\robot\\project\\FPGA\\finial_product\\sobel_hls\\sobel_opt",
+    "arguments": [
+      "E:\\vivado\\Vitis_HLS\\2024.1\\vcxx\\libexec\\clang++.exe",
+      "-fhls",
+      "-hls-syn-headers-dir=E:\\vivado\\Vitis_HLS\\2024.1\\common\\technology\\autopilot",
+      "",
+      "-c",
+      "E:/robot/project/FPGA/finial_product/sobel_hls/source/sobel_base.cpp"
+    ],
+    "file": "E:/robot/project/FPGA/finial_product/sobel_hls/source/sobel_base.cpp"
+  },
+  {
+    "directory": "E:\\robot\\project\\FPGA\\finial_product\\sobel_hls\\sobel_opt",
+    "arguments": [
+      "E:\\vivado\\Vitis_HLS\\2024.1\\vcxx\\libexec\\clang++.exe",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=E:\\vivado\\Vitis_HLS\\2024.1\\include",
+      "",
+      "-c",
+      "E:/robot/project/FPGA/finial_product/sobel_hls/source/sobel_tb.cpp"
+    ],
+    "file": "E:/robot/project/FPGA/finial_product/sobel_hls/source/sobel_tb.cpp"
+  }
+]

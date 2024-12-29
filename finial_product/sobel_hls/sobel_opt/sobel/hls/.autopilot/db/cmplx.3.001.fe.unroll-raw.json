@@ -1,0 +1,51 @@
+{
+  "0": {
+    "basicblocks": 14,
+    "calls": "2",
+    "file": "sobel_base.cpp",
+    "fileloc": 66,
+    "instructions": 60,
+    "loads": {
+      "T": 1
+    },
+    "name": "sobel",
+    "stores": {
+      "L": 1,
+      "T": 1
+    },
+    "total_instructions": 144
+  },
+  "1": {
+    "basicblocks": 6,
+    "calls": "",
+    "file": "sobel_base.cpp",
+    "fileloc": 8,
+    "instructions": 36,
+    "loads": {
+      "L": 6
+    },
+    "name": "Gradient_X",
+    "total_instructions": 36
+  },
+  "2": {
+    "basicblocks": 4,
+    "calls": "1 3",
+    "file": "sobel_base.cpp",
+    "fileloc": 52,
+    "instructions": 12,
+    "name": "sobel3x3_kernel",
+    "total_instructions": 84
+  },
+  "3": {
+    "basicblocks": 6,
+    "calls": "",
+    "file": "sobel_base.cpp",
+    "fileloc": 30,
+    "instructions": 36,
+    "loads": {
+      "L": 6
+    },
+    "name": "Gradient_Y",
+    "total_instructions": 36
+  }
+}

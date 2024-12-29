@@ -1,0 +1,36 @@
+INFO: [vitis-run 60-1548] Creating build summary session with primary output E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel\sobel.hlsrun_cosim_summary, at 12/29/24 10:19:10
+INFO: [vitis-run 82-31] Launching vitis_hls: vitis_hls -nolog -run cosim -work_dir E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel -config E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/hls_config.cfg -cmdlineconfig E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls/config.cmdline
+INFO: [HLS 200-10] For user '14692' on host 'nightt_insider' (Windows NT_amd64 version 10.0) on Sun Dec 29 10:19:13 +0800 2024
+INFO: [HLS 200-10] In directory 'E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt'
+INFO: [HLS 200-2005] Using work_dir E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel 
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=E:/robot/project/FPGA/finial_product/sobel_hls/source/sobel.hpp' from E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file 'E:/robot/project/FPGA/finial_product/sobel_hls/source/sobel.hpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=E:/robot/project/FPGA/finial_product/sobel_hls/source/sobel_base.cpp' from E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file 'E:/robot/project/FPGA/finial_product/sobel_hls/source/sobel_base.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=E:/robot/project/FPGA/finial_product/sobel_hls/source/sobel_tb.cpp' from E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding test bench file 'E:/robot/project/FPGA/finial_product/sobel_hls/source/sobel_tb.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=sobel' from E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xc7z020clg400-1' from E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/hls_config.cfg(1)
+INFO: [HLS 200-1465] Applying ini 'csim.code_analyzer=0' from E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/hls_config.cfg(11)
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/hls_config.cfg(5)
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+   Build using "E:/vivado/Vitis_HLS/2024.1/vcxx/libexec/clang++"
+   Compiling sobel_tb.cpp_pre.cpp.tb.cpp
+   Compiling apatb_sobel.cpp
+   Compiling sobel_base.cpp_pre.cpp.tb.cpp
+   Compiling apatb_sobel_ir.ll
+   Generating cosim.tv.exe
+INFO: [COSIM 212-302] Starting C TB testing ... 
+ERROR: [COSIM 212-360] Aborting co-simulation: C TB simulation failed.
+ERROR: [COSIM 212-320] C TB testing failed, stop generating test vectors. Please check C TB or re-run cosim.
+ERROR: [COSIM 212-5] *** C/RTL co-simulation file generation failed. ***
+ERROR: [COSIM 212-4] *** C/RTL co-simulation finished: FAIL ***
+ERROR: 
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 1 seconds. Total elapsed time: 15.788 seconds; peak allocated memory: 310.012 MB.

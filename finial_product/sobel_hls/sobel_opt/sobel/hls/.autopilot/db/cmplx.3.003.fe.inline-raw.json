@@ -1,0 +1,19 @@
+{
+  "0": {
+    "basicblocks": 13,
+    "calls": "",
+    "file": "sobel_base.cpp",
+    "fileloc": 66,
+    "instructions": 121,
+    "loads": {
+      "L": 12,
+      "T": 1
+    },
+    "name": "sobel",
+    "stores": {
+      "L": 1,
+      "T": 1
+    },
+    "total_instructions": 121
+  }
+}

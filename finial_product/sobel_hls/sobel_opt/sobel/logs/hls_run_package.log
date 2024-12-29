@@ -1,0 +1,56 @@
+INFO: [vitis-run 60-1548] Creating build summary session with primary output E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel\sobel.hlsrun_package_summary, at 12/29/24 10:45:30
+INFO: [vitis-run 82-31] Launching vitis_hls: vitis_hls -nolog -run package -work_dir E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel -config E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/hls_config.cfg -cmdlineconfig E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls/config.cmdline
+INFO: [HLS 200-10] For user '14692' on host 'nightt_insider' (Windows NT_amd64 version 10.0) on Sun Dec 29 10:45:33 +0800 2024
+INFO: [HLS 200-10] In directory 'E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt'
+INFO: [HLS 200-2005] Using work_dir E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel 
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=E:/robot/project/FPGA/finial_product/sobel_hls/source/sobel.hpp' from E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file 'E:/robot/project/FPGA/finial_product/sobel_hls/source/sobel.hpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=E:/robot/project/FPGA/finial_product/sobel_hls/source/sobel_base.cpp' from E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file 'E:/robot/project/FPGA/finial_product/sobel_hls/source/sobel_base.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=E:/robot/project/FPGA/finial_product/sobel_hls/source/sobel_tb.cpp' from E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding test bench file 'E:/robot/project/FPGA/finial_product/sobel_hls/source/sobel_tb.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=sobel' from E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xc7z020clg400-1' from E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/hls_config.cfg(1)
+INFO: [HLS 200-1465] Applying ini 'csim.code_analyzer=0' from E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/hls_config.cfg(11)
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/hls_config.cfg(5)
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2024.1 (64-bit)
+  **** SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Sun Dec 29 10:45:40 2024
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: calling package_hls_ip ip_types=vitis sysgen json_file=E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls/hls_data.json outdir=E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls/impl/ip srcdir=E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls sort_interfaces_ports=false
+INFO: Copied 1 ipmisc file(s) to E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls/impl/ip/misc
+INFO: Copied 7 verilog file(s) to E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls/impl/ip/hdl/verilog
+INFO: Copied 7 vhdl file(s) to E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls/impl/ip/hdl/vhdl
+INFO: Copied 10 swdriver file(s) to E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls/impl/ip/drivers
+ipx::create_core: Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 650.996 ; gain = 194.512
+INFO: Import ports from HDL: E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls/impl/ip/hdl/vhdl/sobel.vhd (sobel)
+INFO: Add axi4lite interface s_axi_CTRL
+INFO: Add clock interface ap_clk
+INFO: Add reset interface ap_rst_n
+INFO: Add interrupt interface interrupt
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/vivado/Vivado/2024.1/data/ip'.
+INFO: Add axi4full interface m_axi_gmem
+INFO: Calling post_process_vitis to specialize IP
+INFO: Calling post_process_sysgen to specialize IP
+Generating sysgen info xml from json file
+INFO: Created IP E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls/impl/ip/component.xml
+INFO: Created IP archive E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls/impl/ip/xilinx_com_hls_sobel_1_0.zip
+INFO: [Common 17-206] Exiting Vivado at Sun Dec 29 10:45:59 2024...
+INFO: [HLS 200-802] Generated output file sobel/sobel.zip
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 27.233 seconds; peak allocated memory: 303.887 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 31s

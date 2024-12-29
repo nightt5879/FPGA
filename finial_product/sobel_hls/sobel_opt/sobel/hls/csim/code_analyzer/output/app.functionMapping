@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<cpuFpgaMapping:cpuFpgaMapping xmlns:cpuFpgaMapping="http://www.xilinx.com/act/cpuFpgaMapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.xilinx.com/act/cpuFpgaMapping cpuFPGAMapping.xsd">
+  <Function id="_f206" name="main">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f222" name="fprintf">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f232" name="sobel">
+    <MappedTo editable="true">
+      <Partition>FPGA</Partition>
+    </MappedTo>
+    <TopLevel>true</TopLevel>
+    <IsCalledByHwFn>false</IsCalledByHwFn>
+    <Interfaces>
+      <Return>
+        <PragmaOrigin id="_fi232_return">
+          <CodeSection beginColumn="0" beginLine="72" endColumn="0" endLine="72" file="..\source\sobel_base.cpp"/>
+        </PragmaOrigin>
+        <AXI-Lite>
+          <Depth/>
+          <Name/>
+          <Register>false</Register>
+          <Offset/>
+          <Clock/>
+          <Bundle>CTRL</Bundle>
+          <PortBitwidth>32</PortBitwidth>
+        </AXI-Lite>
+      </Return>
+      <Argument declaration="src (PIXEL*)" id="_v30" name="src">
+        <PragmaOrigin id="_fi232_30">
+          <CodeSection beginColumn="0" beginLine="68" endColumn="0" endLine="68" file="..\source\sobel_base.cpp"/>
+        </PragmaOrigin>
+        <AXI>
+          <Depth>921600</Depth>
+          <Name/>
+          <Offset>default</Offset>
+          <NumReadOutstanding/>
+          <NumWriteOutstanding/>
+          <MaxReadBurstLength/>
+          <MaxWriteBurstLength/>
+          <Bundle>0</Bundle>
+          <PortBitwidth>128</PortBitwidth>
+        </AXI>
+      </Argument>
+      <Argument declaration="dst (PIXEL*)" id="_v31" name="dst">
+        <PragmaOrigin id="_fi232_31">
+          <CodeSection beginColumn="0" beginLine="69" endColumn="0" endLine="69" file="..\source\sobel_base.cpp"/>
+        </PragmaOrigin>
+        <AXI>
+          <Depth>917604</Depth>
+          <Name/>
+          <Offset>default</Offset>
+          <NumReadOutstanding/>
+          <NumWriteOutstanding/>
+          <MaxReadBurstLength/>
+          <MaxWriteBurstLength/>
+          <Bundle>0</Bundle>
+          <PortBitwidth>128</PortBitwidth>
+        </AXI>
+      </Argument>
+      <Argument declaration="rows (int)" id="_v32" name="rows">
+        <PragmaOrigin id="_fi232_32">
+          <CodeSection beginColumn="0" beginLine="70" endColumn="0" endLine="70" file="..\source\sobel_base.cpp"/>
+        </PragmaOrigin>
+        <AXI-Lite>
+          <Depth/>
+          <Name/>
+          <Register>false</Register>
+          <Offset/>
+          <Clock/>
+          <Bundle>CTRL</Bundle>
+          <PortBitwidth>32</PortBitwidth>
+        </AXI-Lite>
+      </Argument>
+      <Argument declaration="cols (int)" id="_v33" name="cols">
+        <PragmaOrigin id="_fi232_33">
+          <CodeSection beginColumn="0" beginLine="71" endColumn="0" endLine="71" file="..\source\sobel_base.cpp"/>
+        </PragmaOrigin>
+        <AXI-Lite>
+          <Depth/>
+          <Name/>
+          <Register>false</Register>
+          <Offset/>
+          <Clock/>
+          <Bundle>CTRL</Bundle>
+          <PortBitwidth>32</PortBitwidth>
+        </AXI-Lite>
+      </Argument>
+    </Interfaces>
+  </Function>
+  <Function id="_f233" name="sobel3x3_kernel">
+    <MappedTo editable="true">
+      <Partition>FPGA</Partition>
+    </MappedTo>
+    <TopLevel>false</TopLevel>
+    <IsCalledByHwFn>true</IsCalledByHwFn>
+  </Function>
+  <Function id="_f234" name="Gradient_X">
+    <MappedTo editable="true">
+      <Partition>FPGA</Partition>
+    </MappedTo>
+    <TopLevel>false</TopLevel>
+    <IsCalledByHwFn>true</IsCalledByHwFn>
+  </Function>
+  <Function id="_f235" name="Gradient_Y">
+    <MappedTo editable="true">
+      <Partition>FPGA</Partition>
+    </MappedTo>
+    <TopLevel>false</TopLevel>
+    <IsCalledByHwFn>true</IsCalledByHwFn>
+  </Function>
+</cpuFpgaMapping:cpuFpgaMapping>

@@ -1,0 +1,5 @@
+instrumenter::INFOR: [Instrumenter - Initialization] Checking for the existence of the required environment variables
+instrumenter::INFOR: [Instrumenter - Initialization] Loading the supported wrappers for standard library functions
+instrumenter::INFOR: [Instrumenter - Initialization] Adding static information
+instrumenter::INFOR: [Instrumenter - Initialization] Finished adding static information
+instrumenter::INFOR: [Instrumenter - FN_TRACE] Adding the init function for the trace calls...

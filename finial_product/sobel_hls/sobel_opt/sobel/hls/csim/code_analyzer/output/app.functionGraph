@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<callgraph:CallGraph xmlns:callgraph="http://www.xilinx.com/act/callgraph">
+  <DirectCall count="0" file="..\source\sobel_tb.cpp" id="102" line="51">
+    <caller function="_f206"/>
+    <callee function="_f232"/>
+  </DirectCall>
+  <DirectCall count="0" file="..\source\sobel_base.cpp" id="441" line="94">
+    <caller function="_f232"/>
+    <callee function="_f233"/>
+  </DirectCall>
+  <DirectCall count="0" file="..\source\sobel_base.cpp" id="485" line="56">
+    <caller function="_f233"/>
+    <callee function="_f234"/>
+  </DirectCall>
+  <DirectCall count="0" file="..\source\sobel_base.cpp" id="489" line="57">
+    <caller function="_f233"/>
+    <callee function="_f235"/>
+  </DirectCall>
+  <Function file="..\source\sobel_tb.cpp" id="_f206" line="16" name="main"/>
+  <Function file="..\source\sobel_base.cpp" id="_f232" line="66" name="sobel"/>
+  <Function file="..\source\sobel_base.cpp" id="_f233" line="52" name="sobel3x3_kernel"/>
+  <Function file="..\source\sobel_base.cpp" id="_f234" line="8" name="Gradient_X"/>
+  <Function file="..\source\sobel_base.cpp" id="_f235" line="30" name="Gradient_Y"/>
+</callgraph:CallGraph>

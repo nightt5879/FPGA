@@ -1,0 +1,7 @@
+{
+  "workspaceRoot": "E:\\robot\\project\\FPGA\\finial_product\\sobel_hls",
+  "mapping": {
+    "source\\sobel_tb.cpp": "sobel_opt",
+    "source\\sobel_base.cpp": "sobel_opt"
+  }
+}
