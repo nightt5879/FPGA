@@ -13,7 +13,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94/grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_activity": {
+				"grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94/grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},

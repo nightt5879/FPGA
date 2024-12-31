@@ -1,9 +1,9 @@
 <pragmas>
-<pragma file="../source/sobel_base.cpp" line="79" pragmaType="loop_tripcount" parentfunction="sobel" min="1" max="720" avg="360"/>
-<pragma file="../source/sobel_base.cpp" line="82" pragmaType="loop_tripcount" parentfunction="sobel" min="1" max="1280" avg="640"/>
-<pragma file="../source/sobel_base.cpp" line="68" pragmaType="interface" parentfunction="sobel" mode="m_axi" port="src" bundle="" offset="" name="" depth="921600" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
-<pragma file="../source/sobel_base.cpp" line="69" pragmaType="interface" parentfunction="sobel" mode="m_axi" port="dst" bundle="" offset="" name="" depth="917604" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
-<pragma file="../source/sobel_base.cpp" line="70" pragmaType="interface" parentfunction="sobel" mode="s_axilite" port="rows" bundle="CTRL" offset="-1" name="" clock="" impl="" register="0"/>
-<pragma file="../source/sobel_base.cpp" line="71" pragmaType="interface" parentfunction="sobel" mode="s_axilite" port="cols" bundle="CTRL" offset="-1" name="" clock="" impl="" register="0"/>
-<pragma file="../source/sobel_base.cpp" line="72" pragmaType="interface" parentfunction="sobel" mode="s_axilite" port="" bundle="CTRL" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="../source/sobel_base.cpp" line="102" pragmaType="loop_tripcount" parentfunction="sobel" min="1" max="720" avg="360"/>
+<pragma file="../source/sobel_base.cpp" line="105" pragmaType="loop_tripcount" parentfunction="sobel" min="1" max="1280" avg="640"/>
+<pragma file="../source/sobel_base.cpp" line="91" pragmaType="interface" parentfunction="sobel" mode="m_axi" port="src" bundle="" offset="" name="" depth="921600" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
+<pragma file="../source/sobel_base.cpp" line="92" pragmaType="interface" parentfunction="sobel" mode="m_axi" port="dst" bundle="" offset="" name="" depth="917604" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
+<pragma file="../source/sobel_base.cpp" line="93" pragmaType="interface" parentfunction="sobel" mode="s_axilite" port="rows" bundle="CTRL" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="../source/sobel_base.cpp" line="94" pragmaType="interface" parentfunction="sobel" mode="s_axilite" port="cols" bundle="CTRL" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="../source/sobel_base.cpp" line="95" pragmaType="interface" parentfunction="sobel" mode="s_axilite" port="" bundle="CTRL" offset="-1" name="" clock="" impl="" register="0"/>
 </pragmas>

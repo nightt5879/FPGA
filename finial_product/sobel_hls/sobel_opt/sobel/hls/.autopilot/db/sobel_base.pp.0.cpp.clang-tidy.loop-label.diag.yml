@@ -47,39 +47,39 @@ Diagnostics:
         Length:          0
         ReplacementText: 'VITIS_LOOP_1247_1: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_77_1:  '
-    FileOffset:      77
+    Message:         'Added loop label VITIS_LOOP_100_1:  '
+    FileOffset:      100
     FilePath:        'E:\robot\project\FPGA\finial_product\sobel_hls\source\sobel_base.cpp'
     Replacements:    
       - FilePath:        'E:\robot\project\FPGA\finial_product\sobel_hls\sobel_opt\sobel\hls\.autopilot\db\sobel_base.pp.0.cpp'
-        Offset:          1699420
+        Offset:          1699424
         Length:          0
-        ReplacementText: 'VITIS_LOOP_77_1: '
+        ReplacementText: 'VITIS_LOOP_100_1: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_80_2:  '
-    FileOffset:      80
+    Message:         'Added loop label VITIS_LOOP_103_2:  '
+    FileOffset:      103
     FilePath:        'E:\robot\project\FPGA\finial_product\sobel_hls\source\sobel_base.cpp'
     Replacements:    
       - FilePath:        'E:\robot\project\FPGA\finial_product\sobel_hls\sobel_opt\sobel\hls\.autopilot\db\sobel_base.pp.0.cpp'
-        Offset:          1699500
+        Offset:          1699504
         Length:          0
-        ReplacementText: 'VITIS_LOOP_80_2: '
+        ReplacementText: 'VITIS_LOOP_103_2: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_86_3:  '
-    FileOffset:      86
+    Message:         'Added loop label VITIS_LOOP_109_3:  '
+    FileOffset:      109
     FilePath:        'E:\robot\project\FPGA\finial_product\sobel_hls\source\sobel_base.cpp'
     Replacements:    
       - FilePath:        'E:\robot\project\FPGA\finial_product\sobel_hls\sobel_opt\sobel\hls\.autopilot\db\sobel_base.pp.0.cpp'
-        Offset:          1699603
+        Offset:          1699607
         Length:          0
-        ReplacementText: 'VITIS_LOOP_86_3: '
+        ReplacementText: 'VITIS_LOOP_109_3: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_88_4:  '
-    FileOffset:      88
+    Message:         'Added loop label VITIS_LOOP_111_4:  '
+    FileOffset:      111
     FilePath:        'E:\robot\project\FPGA\finial_product\sobel_hls\source\sobel_base.cpp'
     Replacements:    
       - FilePath:        'E:\robot\project\FPGA\finial_product\sobel_hls\sobel_opt\sobel\hls\.autopilot\db\sobel_base.pp.0.cpp'
-        Offset:          1699644
+        Offset:          1699648
         Length:          0
-        ReplacementText: 'VITIS_LOOP_88_4: '
+        ReplacementText: 'VITIS_LOOP_111_4: '
 ...

@@ -19,27 +19,27 @@
         </SummaryOfTimingAnalysis>
         <SummaryOfOverallLatency>
             <unit>clock cycles</unit>
-            <Best-caseLatency>35</Best-caseLatency>
-            <Average-caseLatency>2073626</Average-caseLatency>
-            <Worst-caseLatency>8294426</Worst-caseLatency>
-            <Best-caseRealTimeLatency>0.350 us</Best-caseRealTimeLatency>
+            <Best-caseLatency>36</Best-caseLatency>
+            <Average-caseLatency>2073627</Average-caseLatency>
+            <Worst-caseLatency>8294427</Worst-caseLatency>
+            <Best-caseRealTimeLatency>0.360 us</Best-caseRealTimeLatency>
             <Average-caseRealTimeLatency>20.736 ms</Average-caseRealTimeLatency>
             <Worst-caseRealTimeLatency>82.944 ms</Worst-caseRealTimeLatency>
-            <Interval-min>36</Interval-min>
-            <Interval-max>8294427</Interval-max>
+            <Interval-min>37</Interval-min>
+            <Interval-max>8294428</Interval-max>
         </SummaryOfOverallLatency>
         <SummaryOfViolations>
             <IssueType>-</IssueType>
             <ViolationType>-</ViolationType>
-            <SourceLocation>../source/sobel_base.cpp:66</SourceLocation>
+            <SourceLocation>../source/sobel_base.cpp:62</SourceLocation>
         </SummaryOfViolations>
     </PerformanceEstimates>
     <AreaEstimates>
         <Resources>
             <BRAM_18K>2</BRAM_18K>
             <DSP>8</DSP>
-            <FF>3014</FF>
-            <LUT>3334</LUT>
+            <FF>3023</FF>
+            <LUT>3390</LUT>
             <URAM>0</URAM>
         </Resources>
         <AvailableResources>
@@ -817,21 +817,21 @@
             <ModuleName>sobel</ModuleName>
             <InstancesList>
                 <Instance>
-                    <InstName>grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94</InstName>
-                    <ModuleName>sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2</ModuleName>
+                    <InstName>grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94</InstName>
+                    <ModuleName>sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2</ModuleName>
                     <IsCompInst>true</IsCompInst>
                     <ID>94</ID>
-                    <BindInstances>icmp_ln77_fu_282_p2 icmp_ln80_fu_294_p2 add_ln77_fu_331_p2 xor_ln77_fu_299_p2 or_ln77_fu_305_p2 select_ln77_fu_377_p3 add_ln77_1_fu_311_p2 select_ln77_1_fu_317_p3 mul_31ns_32s_63_2_1_U1 add_ln77_2_fu_387_p2 add_ln86_2_fu_369_p2 empty_20_fu_436_p2 empty_22_fu_447_p2 empty_23_fu_454_p2 S00_fu_509_p2 icmp_ln23_fu_596_p2 xor_ln27_fu_606_p2 select_ln27_fu_612_p3 or_ln27_fu_620_p2 g_x_fu_626_p3 add_ln34_1_fu_542_p2 add_ln34_fu_552_p2 add_ln39_fu_654_p2 icmp_ln45_fu_688_p2 xor_ln49_fu_697_p2 select_ln49_fu_702_p3 or_ln49_fu_710_p2 g_y_fu_714_p3 sobel_1_fu_729_p2 temp_fu_734_p2 sobel_2_fu_748_p3 add_ln80_fu_325_p2 select_ln80_fu_340_p3 add_ln80_1_fu_422_p2 icmp_ln80_1_fu_350_p2</BindInstances>
+                    <BindInstances>icmp_ln100_fu_282_p2 icmp_ln103_fu_294_p2 add_ln100_fu_331_p2 xor_ln100_fu_299_p2 or_ln100_fu_305_p2 select_ln100_fu_377_p3 add_ln100_1_fu_311_p2 select_ln100_1_fu_317_p3 mul_31ns_32s_63_2_1_U1 add_ln100_2_fu_387_p2 add_ln109_2_fu_369_p2 empty_20_fu_436_p2 empty_22_fu_447_p2 empty_23_fu_454_p2 S00_fu_509_p2 neg_fu_582_p2 abscond_fu_588_p2 out_pix_3_fu_594_p3 icmp_ln21_fu_662_p2 g_x_fu_667_p3 add_ln32_1_fu_542_p2 add_ln32_fu_552_p2 add_ln37_fu_636_p2 neg2_fu_674_p2 abscond3_fu_656_p2 out_pix_6_fu_679_p3 icmp_ln41_fu_699_p2 g_y_fu_705_p3 sobel_1_fu_721_p2 temp_fu_727_p2 sobel_2_fu_741_p3 add_ln103_fu_325_p2 select_ln103_fu_340_p3 add_ln103_1_fu_422_p2 icmp_ln103_1_fu_350_p2</BindInstances>
                 </Instance>
             </InstancesList>
-            <BindInstances>sub_fu_112_p2 sub2_fu_118_p2 icmp_fu_134_p2 add_ln77_fu_144_p2 empty_fu_150_p3 icmp17_fu_168_p2 add_ln77_1_fu_174_p2 select_ln77_fu_180_p3 add_ln77_2_fu_188_p2 select_ln77_1_fu_194_p3 mul_32ns_32ns_64_2_1_U12 CTRL_s_axi_U gmem_m_axi_U</BindInstances>
+            <BindInstances>sub_fu_112_p2 sub2_fu_118_p2 icmp_fu_134_p2 add_ln100_fu_144_p2 empty_fu_150_p3 icmp17_fu_168_p2 add_ln100_1_fu_174_p2 select_ln100_fu_180_p3 add_ln100_2_fu_188_p2 select_ln100_1_fu_194_p3 mul_32ns_32ns_64_2_1_U12 CTRL_s_axi_U gmem_m_axi_U</BindInstances>
         </TopModule>
     </RTLDesignHierarchy>
     <ModuleInformation>
         <Module>
-            <Name>sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2</Name>
+            <Name>sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2</Name>
             <Loops>
-                <VITIS_LOOP_77_1_VITIS_LOOP_80_2/>
+                <VITIS_LOOP_100_1_VITIS_LOOP_103_2/>
             </Loops>
             <PerformanceEstimates>
                 <SummaryOfTimingAnalysis>
@@ -840,18 +840,18 @@
                     <EstimatedClockPeriod>7.300</EstimatedClockPeriod>
                 </SummaryOfTimingAnalysis>
                 <SummaryOfOverallLatency>
-                    <Best-caseLatency>31</Best-caseLatency>
-                    <Average-caseLatency>2073622</Average-caseLatency>
-                    <Worst-caseLatency>8294422</Worst-caseLatency>
-                    <Best-caseRealTimeLatency>0.310 us</Best-caseRealTimeLatency>
+                    <Best-caseLatency>32</Best-caseLatency>
+                    <Average-caseLatency>2073623</Average-caseLatency>
+                    <Worst-caseLatency>8294423</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.320 us</Best-caseRealTimeLatency>
                     <Average-caseRealTimeLatency>20.736 ms</Average-caseRealTimeLatency>
                     <Worst-caseRealTimeLatency>82.944 ms</Worst-caseRealTimeLatency>
                     <PipelineInitiationInterval>18 ~ 8294409</PipelineInitiationInterval>
                     <PipelineType>loop auto-rewind (delay=0 clock cycles(s))</PipelineType>
                 </SummaryOfOverallLatency>
                 <SummaryOfLoopLatency>
-                    <VITIS_LOOP_77_1_VITIS_LOOP_80_2>
-                        <Name>VITIS_LOOP_77_1_VITIS_LOOP_80_2</Name>
+                    <VITIS_LOOP_100_1_VITIS_LOOP_103_2>
+                        <Name>VITIS_LOOP_100_1_VITIS_LOOP_103_2</Name>
                         <Slack>7.30</Slack>
                         <TripCount>
                             <range>
@@ -859,25 +859,25 @@
                                 <max>921600</max>
                             </range>
                         </TripCount>
-                        <Latency>29 ~ 8294420</Latency>
-                        <AbsoluteTimeLatency>0.290 us ~ 82.944 ms</AbsoluteTimeLatency>
+                        <Latency>30 ~ 8294421</Latency>
+                        <AbsoluteTimeLatency>0.300 us ~ 82.944 ms</AbsoluteTimeLatency>
                         <PipelineII>9</PipelineII>
-                        <PipelineDepth>30</PipelineDepth>
+                        <PipelineDepth>31</PipelineDepth>
                         <PipelineType>yes</PipelineType>
                         <InstanceList/>
-                    </VITIS_LOOP_77_1_VITIS_LOOP_80_2>
+                    </VITIS_LOOP_100_1_VITIS_LOOP_103_2>
                 </SummaryOfLoopLatency>
                 <SummaryOfViolations>
                     <IssueType>-</IssueType>
                     <ViolationType>-</ViolationType>
-                    <SourceLocation>../source/sobel_base.cpp:74</SourceLocation>
+                    <SourceLocation>../source/sobel_base.cpp:97</SourceLocation>
                     <SummaryOfLoopViolations>
-                        <VITIS_LOOP_77_1_VITIS_LOOP_80_2>
-                            <Name>VITIS_LOOP_77_1_VITIS_LOOP_80_2</Name>
+                        <VITIS_LOOP_100_1_VITIS_LOOP_103_2>
+                            <Name>VITIS_LOOP_100_1_VITIS_LOOP_103_2</Name>
                             <IssueType>II Violation</IssueType>
                             <ViolationType>Resource Limitation</ViolationType>
-                            <SourceLocation>../source/sobel_base.cpp:80</SourceLocation>
-                        </VITIS_LOOP_77_1_VITIS_LOOP_80_2>
+                            <SourceLocation>../source/sobel_base.cpp:103</SourceLocation>
+                        </VITIS_LOOP_100_1_VITIS_LOOP_103_2>
                     </SummaryOfLoopViolations>
                 </SummaryOfViolations>
             </PerformanceEstimates>
@@ -886,12 +886,12 @@
                     <DSP>4</DSP>
                     <AVAIL_DSP>220</AVAIL_DSP>
                     <UTIL_DSP>1</UTIL_DSP>
-                    <FF>1380</FF>
+                    <FF>1389</FF>
                     <AVAIL_FF>106400</AVAIL_FF>
                     <UTIL_FF>1</UTIL_FF>
-                    <LUT>1576</LUT>
+                    <LUT>1632</LUT>
                     <AVAIL_LUT>53200</AVAIL_LUT>
-                    <UTIL_LUT>2</UTIL_LUT>
+                    <UTIL_LUT>3</UTIL_LUT>
                     <BRAM_18K>0</BRAM_18K>
                     <AVAIL_BRAM>280</AVAIL_BRAM>
                     <UTIL_BRAM>0</UTIL_BRAM>
@@ -901,41 +901,41 @@
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_77_1_VITIS_LOOP_80_2" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln77_fu_282_p2" SOURCE="../source/sobel_base.cpp:77" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln77" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op setlt" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_77_1_VITIS_LOOP_80_2" OPTYPE="setlt" PRAGMA="" RTLNAME="icmp_ln80_fu_294_p2" SOURCE="../source/sobel_base.cpp:80" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln80" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_77_1_VITIS_LOOP_80_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln77_fu_331_p2" SOURCE="../source/sobel_base.cpp:77" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln77" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_77_1_VITIS_LOOP_80_2" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln77_fu_299_p2" SOURCE="../source/sobel_base.cpp:77" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln77" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_77_1_VITIS_LOOP_80_2" OPTYPE="or" PRAGMA="" RTLNAME="or_ln77_fu_305_p2" SOURCE="../source/sobel_base.cpp:77" STORAGESUBTYPE="" URAM="0" VARIABLE="or_ln77" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="VITIS_LOOP_77_1_VITIS_LOOP_80_2" OPTYPE="select" PRAGMA="" RTLNAME="select_ln77_fu_377_p3" SOURCE="../source/sobel_base.cpp:77" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln77" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_77_1_VITIS_LOOP_80_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln77_1_fu_311_p2" SOURCE="../source/sobel_base.cpp:77" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln77_1" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="VITIS_LOOP_77_1_VITIS_LOOP_80_2" OPTYPE="select" PRAGMA="" RTLNAME="select_ln77_1_fu_317_p3" SOURCE="../source/sobel_base.cpp:77" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln77_1" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="4" ID="" IMPL="auto" LATENCY="1" LOOP="VITIS_LOOP_77_1_VITIS_LOOP_80_2" OPTYPE="mul" PRAGMA="" RTLNAME="mul_31ns_32s_63_2_1_U1" SOURCE="../source/sobel_base.cpp:77" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln77" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_77_1_VITIS_LOOP_80_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln77_2_fu_387_p2" SOURCE="../source/sobel_base.cpp:77" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln77_2" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_77_1_VITIS_LOOP_80_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln86_2_fu_369_p2" SOURCE="../source/sobel_base.cpp:86" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln86_2" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_77_1_VITIS_LOOP_80_2" OPTYPE="add" PRAGMA="" RTLNAME="empty_20_fu_436_p2" SOURCE="../source/sobel_base.cpp:86" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_20" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_77_1_VITIS_LOOP_80_2" OPTYPE="add" PRAGMA="" RTLNAME="empty_22_fu_447_p2" SOURCE="../source/sobel_base.cpp:86" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_22" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_77_1_VITIS_LOOP_80_2" OPTYPE="add" PRAGMA="" RTLNAME="empty_23_fu_454_p2" SOURCE="../source/sobel_base.cpp:86" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_23" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_77_1_VITIS_LOOP_80_2" OPTYPE="sub" PRAGMA="" RTLNAME="S00_fu_509_p2" SOURCE="../source/sobel_base.cpp:13" STORAGESUBTYPE="" URAM="0" VARIABLE="S00" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op setgt" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_77_1_VITIS_LOOP_80_2" OPTYPE="setgt" PRAGMA="" RTLNAME="icmp_ln23_fu_596_p2" SOURCE="../source/sobel_base.cpp:23" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln23" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_77_1_VITIS_LOOP_80_2" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln27_fu_606_p2" SOURCE="../source/sobel_base.cpp:27" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln27" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="VITIS_LOOP_77_1_VITIS_LOOP_80_2" OPTYPE="select" PRAGMA="" RTLNAME="select_ln27_fu_612_p3" SOURCE="../source/sobel_base.cpp:27" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln27" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_77_1_VITIS_LOOP_80_2" OPTYPE="or" PRAGMA="" RTLNAME="or_ln27_fu_620_p2" SOURCE="../source/sobel_base.cpp:27" STORAGESUBTYPE="" URAM="0" VARIABLE="or_ln27" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="VITIS_LOOP_77_1_VITIS_LOOP_80_2" OPTYPE="select" PRAGMA="" RTLNAME="g_x_fu_626_p3" SOURCE="../source/sobel_base.cpp:27" STORAGESUBTYPE="" URAM="0" VARIABLE="g_x" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_77_1_VITIS_LOOP_80_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln34_1_fu_542_p2" SOURCE="../source/sobel_base.cpp:34" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln34_1" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_77_1_VITIS_LOOP_80_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln34_fu_552_p2" SOURCE="../source/sobel_base.cpp:34" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln34" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_77_1_VITIS_LOOP_80_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln39_fu_654_p2" SOURCE="../source/sobel_base.cpp:39" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln39" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op setgt" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_77_1_VITIS_LOOP_80_2" OPTYPE="setgt" PRAGMA="" RTLNAME="icmp_ln45_fu_688_p2" SOURCE="../source/sobel_base.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln45" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_77_1_VITIS_LOOP_80_2" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln49_fu_697_p2" SOURCE="../source/sobel_base.cpp:49" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln49" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="VITIS_LOOP_77_1_VITIS_LOOP_80_2" OPTYPE="select" PRAGMA="" RTLNAME="select_ln49_fu_702_p3" SOURCE="../source/sobel_base.cpp:49" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln49" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_77_1_VITIS_LOOP_80_2" OPTYPE="or" PRAGMA="" RTLNAME="or_ln49_fu_710_p2" SOURCE="../source/sobel_base.cpp:49" STORAGESUBTYPE="" URAM="0" VARIABLE="or_ln49" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="VITIS_LOOP_77_1_VITIS_LOOP_80_2" OPTYPE="select" PRAGMA="" RTLNAME="g_y_fu_714_p3" SOURCE="../source/sobel_base.cpp:49" STORAGESUBTYPE="" URAM="0" VARIABLE="g_y" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_77_1_VITIS_LOOP_80_2" OPTYPE="add" PRAGMA="" RTLNAME="sobel_1_fu_729_p2" SOURCE="../source/sobel_base.cpp:58" STORAGESUBTYPE="" URAM="0" VARIABLE="sobel_1" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_77_1_VITIS_LOOP_80_2" OPTYPE="add" PRAGMA="" RTLNAME="temp_fu_734_p2" SOURCE="../source/sobel_base.cpp:58" STORAGESUBTYPE="" URAM="0" VARIABLE="temp" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="VITIS_LOOP_77_1_VITIS_LOOP_80_2" OPTYPE="select" PRAGMA="" RTLNAME="sobel_2_fu_748_p3" SOURCE="../source/sobel_base.cpp:59" STORAGESUBTYPE="" URAM="0" VARIABLE="sobel_2" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_77_1_VITIS_LOOP_80_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln80_fu_325_p2" SOURCE="../source/sobel_base.cpp:80" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln80" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="VITIS_LOOP_77_1_VITIS_LOOP_80_2" OPTYPE="select" PRAGMA="" RTLNAME="select_ln80_fu_340_p3" SOURCE="../source/sobel_base.cpp:80" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln80" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_77_1_VITIS_LOOP_80_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln80_1_fu_422_p2" SOURCE="../source/sobel_base.cpp:80" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln80_1" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op setlt" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_77_1_VITIS_LOOP_80_2" OPTYPE="setlt" PRAGMA="" RTLNAME="icmp_ln80_1_fu_350_p2" SOURCE="../source/sobel_base.cpp:80" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln80_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_100_1_VITIS_LOOP_103_2" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln100_fu_282_p2" SOURCE="../source/sobel_base.cpp:100" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln100" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op setlt" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_100_1_VITIS_LOOP_103_2" OPTYPE="setlt" PRAGMA="" RTLNAME="icmp_ln103_fu_294_p2" SOURCE="../source/sobel_base.cpp:103" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln103" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_100_1_VITIS_LOOP_103_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln100_fu_331_p2" SOURCE="../source/sobel_base.cpp:100" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln100" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_100_1_VITIS_LOOP_103_2" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln100_fu_299_p2" SOURCE="../source/sobel_base.cpp:100" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln100" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_100_1_VITIS_LOOP_103_2" OPTYPE="or" PRAGMA="" RTLNAME="or_ln100_fu_305_p2" SOURCE="../source/sobel_base.cpp:100" STORAGESUBTYPE="" URAM="0" VARIABLE="or_ln100" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="VITIS_LOOP_100_1_VITIS_LOOP_103_2" OPTYPE="select" PRAGMA="" RTLNAME="select_ln100_fu_377_p3" SOURCE="../source/sobel_base.cpp:100" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln100" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_100_1_VITIS_LOOP_103_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln100_1_fu_311_p2" SOURCE="../source/sobel_base.cpp:100" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln100_1" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="VITIS_LOOP_100_1_VITIS_LOOP_103_2" OPTYPE="select" PRAGMA="" RTLNAME="select_ln100_1_fu_317_p3" SOURCE="../source/sobel_base.cpp:100" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln100_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="4" ID="" IMPL="auto" LATENCY="1" LOOP="VITIS_LOOP_100_1_VITIS_LOOP_103_2" OPTYPE="mul" PRAGMA="" RTLNAME="mul_31ns_32s_63_2_1_U1" SOURCE="../source/sobel_base.cpp:100" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln100" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_100_1_VITIS_LOOP_103_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln100_2_fu_387_p2" SOURCE="../source/sobel_base.cpp:100" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln100_2" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_100_1_VITIS_LOOP_103_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln109_2_fu_369_p2" SOURCE="../source/sobel_base.cpp:109" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln109_2" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_100_1_VITIS_LOOP_103_2" OPTYPE="add" PRAGMA="" RTLNAME="empty_20_fu_436_p2" SOURCE="../source/sobel_base.cpp:109" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_20" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_100_1_VITIS_LOOP_103_2" OPTYPE="add" PRAGMA="" RTLNAME="empty_22_fu_447_p2" SOURCE="../source/sobel_base.cpp:109" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_22" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_100_1_VITIS_LOOP_103_2" OPTYPE="add" PRAGMA="" RTLNAME="empty_23_fu_454_p2" SOURCE="../source/sobel_base.cpp:109" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_23" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_100_1_VITIS_LOOP_103_2" OPTYPE="sub" PRAGMA="" RTLNAME="S00_fu_509_p2" SOURCE="../source/sobel_base.cpp:13" STORAGESUBTYPE="" URAM="0" VARIABLE="S00" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_100_1_VITIS_LOOP_103_2" OPTYPE="sub" PRAGMA="" RTLNAME="neg_fu_582_p2" SOURCE="../source/sobel_base.cpp:14" STORAGESUBTYPE="" URAM="0" VARIABLE="neg" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op setgt" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_100_1_VITIS_LOOP_103_2" OPTYPE="setgt" PRAGMA="" RTLNAME="abscond_fu_588_p2" SOURCE="../source/sobel_base.cpp:17" STORAGESUBTYPE="" URAM="0" VARIABLE="abscond" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="VITIS_LOOP_100_1_VITIS_LOOP_103_2" OPTYPE="select" PRAGMA="" RTLNAME="out_pix_3_fu_594_p3" SOURCE="../source/sobel_base.cpp:17" STORAGESUBTYPE="" URAM="0" VARIABLE="out_pix_3" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op setne" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_100_1_VITIS_LOOP_103_2" OPTYPE="setne" PRAGMA="" RTLNAME="icmp_ln21_fu_662_p2" SOURCE="../source/sobel_base.cpp:21" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln21" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="VITIS_LOOP_100_1_VITIS_LOOP_103_2" OPTYPE="select" PRAGMA="" RTLNAME="g_x_fu_667_p3" SOURCE="../source/sobel_base.cpp:25" STORAGESUBTYPE="" URAM="0" VARIABLE="g_x" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_100_1_VITIS_LOOP_103_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln32_1_fu_542_p2" SOURCE="../source/sobel_base.cpp:32" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln32_1" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_100_1_VITIS_LOOP_103_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln32_fu_552_p2" SOURCE="../source/sobel_base.cpp:32" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln32" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_100_1_VITIS_LOOP_103_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln37_fu_636_p2" SOURCE="../source/sobel_base.cpp:37" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln37" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_100_1_VITIS_LOOP_103_2" OPTYPE="sub" PRAGMA="" RTLNAME="neg2_fu_674_p2" SOURCE="../source/sobel_base.cpp:34" STORAGESUBTYPE="" URAM="0" VARIABLE="neg2" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op setgt" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_100_1_VITIS_LOOP_103_2" OPTYPE="setgt" PRAGMA="" RTLNAME="abscond3_fu_656_p2" SOURCE="../source/sobel_base.cpp:37" STORAGESUBTYPE="" URAM="0" VARIABLE="abscond3" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="VITIS_LOOP_100_1_VITIS_LOOP_103_2" OPTYPE="select" PRAGMA="" RTLNAME="out_pix_6_fu_679_p3" SOURCE="../source/sobel_base.cpp:37" STORAGESUBTYPE="" URAM="0" VARIABLE="out_pix_6" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op setne" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_100_1_VITIS_LOOP_103_2" OPTYPE="setne" PRAGMA="" RTLNAME="icmp_ln41_fu_699_p2" SOURCE="../source/sobel_base.cpp:41" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln41" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="VITIS_LOOP_100_1_VITIS_LOOP_103_2" OPTYPE="select" PRAGMA="" RTLNAME="g_y_fu_705_p3" SOURCE="../source/sobel_base.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="g_y" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_100_1_VITIS_LOOP_103_2" OPTYPE="add" PRAGMA="" RTLNAME="sobel_1_fu_721_p2" SOURCE="../source/sobel_base.cpp:54" STORAGESUBTYPE="" URAM="0" VARIABLE="sobel_1" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_100_1_VITIS_LOOP_103_2" OPTYPE="add" PRAGMA="" RTLNAME="temp_fu_727_p2" SOURCE="../source/sobel_base.cpp:54" STORAGESUBTYPE="" URAM="0" VARIABLE="temp" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="VITIS_LOOP_100_1_VITIS_LOOP_103_2" OPTYPE="select" PRAGMA="" RTLNAME="sobel_2_fu_741_p3" SOURCE="../source/sobel_base.cpp:55" STORAGESUBTYPE="" URAM="0" VARIABLE="sobel_2" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_100_1_VITIS_LOOP_103_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln103_fu_325_p2" SOURCE="../source/sobel_base.cpp:103" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln103" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="VITIS_LOOP_100_1_VITIS_LOOP_103_2" OPTYPE="select" PRAGMA="" RTLNAME="select_ln103_fu_340_p3" SOURCE="../source/sobel_base.cpp:103" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln103" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_100_1_VITIS_LOOP_103_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln103_1_fu_422_p2" SOURCE="../source/sobel_base.cpp:103" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln103_1" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op setlt" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_100_1_VITIS_LOOP_103_2" OPTYPE="setlt" PRAGMA="" RTLNAME="icmp_ln103_1_fu_350_p2" SOURCE="../source/sobel_base.cpp:103" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln103_1" VISIBLE="false"/>
             </BindNodes>
         </Module>
         <Module>
@@ -947,19 +947,19 @@
                     <EstimatedClockPeriod>7.300</EstimatedClockPeriod>
                 </SummaryOfTimingAnalysis>
                 <SummaryOfOverallLatency>
-                    <Best-caseLatency>35</Best-caseLatency>
-                    <Average-caseLatency>2073626</Average-caseLatency>
-                    <Worst-caseLatency>8294426</Worst-caseLatency>
-                    <Best-caseRealTimeLatency>0.350 us</Best-caseRealTimeLatency>
+                    <Best-caseLatency>36</Best-caseLatency>
+                    <Average-caseLatency>2073627</Average-caseLatency>
+                    <Worst-caseLatency>8294427</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.360 us</Best-caseRealTimeLatency>
                     <Average-caseRealTimeLatency>20.736 ms</Average-caseRealTimeLatency>
                     <Worst-caseRealTimeLatency>82.944 ms</Worst-caseRealTimeLatency>
-                    <PipelineInitiationInterval>36 ~ 8294427</PipelineInitiationInterval>
+                    <PipelineInitiationInterval>37 ~ 8294428</PipelineInitiationInterval>
                     <PipelineType>no</PipelineType>
                 </SummaryOfOverallLatency>
                 <SummaryOfViolations>
                     <IssueType>-</IssueType>
                     <ViolationType>-</ViolationType>
-                    <SourceLocation>../source/sobel_base.cpp:66</SourceLocation>
+                    <SourceLocation>../source/sobel_base.cpp:62</SourceLocation>
                 </SummaryOfViolations>
             </PerformanceEstimates>
             <AreaEstimates>
@@ -970,10 +970,10 @@
                     <DSP>8</DSP>
                     <AVAIL_DSP>220</AVAIL_DSP>
                     <UTIL_DSP>3</UTIL_DSP>
-                    <FF>3014</FF>
+                    <FF>3023</FF>
                     <AVAIL_FF>106400</AVAIL_FF>
                     <UTIL_FF>2</UTIL_FF>
-                    <LUT>3334</LUT>
+                    <LUT>3390</LUT>
                     <AVAIL_LUT>53200</AVAIL_LUT>
                     <UTIL_LUT>6</UTIL_LUT>
                     <URAM>0</URAM>
@@ -982,17 +982,17 @@
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="sub_fu_112_p2" SOURCE="../source/sobel_base.cpp:66" STORAGESUBTYPE="" URAM="0" VARIABLE="sub" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="sub2_fu_118_p2" SOURCE="../source/sobel_base.cpp:66" STORAGESUBTYPE="" URAM="0" VARIABLE="sub2" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op setgt" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="setgt" PRAGMA="" RTLNAME="icmp_fu_134_p2" SOURCE="../source/sobel_base.cpp:66" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln77_fu_144_p2" SOURCE="../source/sobel_base.cpp:77" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln77" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="empty_fu_150_p3" SOURCE="../source/sobel_base.cpp:66" STORAGESUBTYPE="" URAM="0" VARIABLE="empty" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op setgt" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="setgt" PRAGMA="" RTLNAME="icmp17_fu_168_p2" SOURCE="../source/sobel_base.cpp:66" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp17" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln77_1_fu_174_p2" SOURCE="../source/sobel_base.cpp:77" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln77_1" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="select_ln77_fu_180_p3" SOURCE="../source/sobel_base.cpp:77" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln77" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln77_2_fu_188_p2" SOURCE="../source/sobel_base.cpp:77" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln77_2" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="select_ln77_1_fu_194_p3" SOURCE="../source/sobel_base.cpp:77" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln77_1" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="4" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32ns_32ns_64_2_1_U12" SOURCE="../source/sobel_base.cpp:66" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln66" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="sub_fu_112_p2" SOURCE="../source/sobel_base.cpp:62" STORAGESUBTYPE="" URAM="0" VARIABLE="sub" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="sub2_fu_118_p2" SOURCE="../source/sobel_base.cpp:62" STORAGESUBTYPE="" URAM="0" VARIABLE="sub2" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op setgt" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="setgt" PRAGMA="" RTLNAME="icmp_fu_134_p2" SOURCE="../source/sobel_base.cpp:62" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln100_fu_144_p2" SOURCE="../source/sobel_base.cpp:100" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln100" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="empty_fu_150_p3" SOURCE="../source/sobel_base.cpp:62" STORAGESUBTYPE="" URAM="0" VARIABLE="empty" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op setgt" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="setgt" PRAGMA="" RTLNAME="icmp17_fu_168_p2" SOURCE="../source/sobel_base.cpp:62" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp17" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln100_1_fu_174_p2" SOURCE="../source/sobel_base.cpp:100" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln100_1" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="select_ln100_fu_180_p3" SOURCE="../source/sobel_base.cpp:100" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln100" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln100_2_fu_188_p2" SOURCE="../source/sobel_base.cpp:100" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln100_2" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="select_ln100_1_fu_194_p3" SOURCE="../source/sobel_base.cpp:100" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln100_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="4" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32ns_32ns_64_2_1_U12" SOURCE="../source/sobel_base.cpp:62" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln62" VISIBLE="true"/>
                 <BindNode BINDTYPE="adapter" BRAM="0" BUNDLEDNAME="CTRL" DISPNAME="bind_adapter " DSP="0" ID="" IMPL="" LATENCY="" LOOP="" OPTYPE="" PRAGMA="" RTLNAME="CTRL_s_axi_U" SOURCE="" STORAGESIZE="" STORAGESUBTYPE="s_axilite" STORAGEUSAGE="interface" URAM="0" VARIABLE=""/>
                 <BindNode BINDTYPE="adapter" BRAM="2" BUNDLEDNAME="gmem" DISPNAME="bind_adapter " DSP="0" ID="" IMPL="" LATENCY="" LOOP="" OPTYPE="" PRAGMA="" RTLNAME="gmem_m_axi_U" SOURCE="" STORAGESIZE="" STORAGESUBTYPE="m_axi" STORAGEUSAGE="interface" URAM="0" VARIABLE=""/>
             </BindNodes>
@@ -1292,31 +1292,31 @@
             <item name="Inferred Burst Summary">
                 <table>
                     <keys size="6">HW Interface, Direction, Length, Width, Loop, Loop Location</keys>
-                    <column name="m_axi_gmem">write, variable, 8, VITIS_LOOP_80_2, ../source/sobel_base.cpp:80:19</column>
+                    <column name="m_axi_gmem">write, variable, 8, VITIS_LOOP_103_2, ../source/sobel_base.cpp:103:20</column>
                     <column name="m_axi_gmem">read, 3, 8, , </column>
                 </table>
             </item>
             <item name="All M_AXI Variable Accesses">
                 <table>
                     <keys size="10">HW Interface, Variable, Access Location, Direction, Burst Status, Length, Loop, Loop Location, Resolution, Problem</keys>
-                    <column name="m_axi_gmem">src, ../source/sobel_base.cpp:91:37, read, Widen Fail, , VITIS_LOOP_88_4, ../source/sobel_base.cpp:88:28, 214-353, Could not widen since type i8 size is greater than or equal to the max_widen_bitwidth threshold of 0</column>
-                    <column name="m_axi_gmem">src, ../source/sobel_base.cpp:91:37, read, Fail, , VITIS_LOOP_86_3, ../source/sobel_base.cpp:86:24, 214-230, Stride is incompatible</column>
-                    <column name="m_axi_gmem">src, ../source/sobel_base.cpp:91:37, read, Inferred, 3, VITIS_LOOP_88_4, ../source/sobel_base.cpp:88:28, , </column>
-                    <column name="m_axi_gmem">dst, ../source/sobel_base.cpp:96:36, write, Widen Fail, , VITIS_LOOP_80_2, ../source/sobel_base.cpp:80:19, 214-353, Could not widen since type i8 size is greater than or equal to the max_widen_bitwidth threshold of 0</column>
-                    <column name="m_axi_gmem">dst, ../source/sobel_base.cpp:96:36, write, Fail, , VITIS_LOOP_77_1, ../source/sobel_base.cpp:77:20, 214-230, Stride is incompatible</column>
-                    <column name="m_axi_gmem">dst, ../source/sobel_base.cpp:96:36, write, Inferred, variable, VITIS_LOOP_80_2, ../source/sobel_base.cpp:80:19, , </column>
+                    <column name="m_axi_gmem">src, ../source/sobel_base.cpp:114:37, read, Widen Fail, , VITIS_LOOP_111_4, ../source/sobel_base.cpp:111:29, 214-353, Could not widen since type i8 size is greater than or equal to the max_widen_bitwidth threshold of 0</column>
+                    <column name="m_axi_gmem">src, ../source/sobel_base.cpp:114:37, read, Fail, , VITIS_LOOP_109_3, ../source/sobel_base.cpp:109:25, 214-230, Stride is incompatible</column>
+                    <column name="m_axi_gmem">src, ../source/sobel_base.cpp:114:37, read, Inferred, 3, VITIS_LOOP_111_4, ../source/sobel_base.cpp:111:29, , </column>
+                    <column name="m_axi_gmem">dst, ../source/sobel_base.cpp:119:36, write, Widen Fail, , VITIS_LOOP_103_2, ../source/sobel_base.cpp:103:20, 214-353, Could not widen since type i8 size is greater than or equal to the max_widen_bitwidth threshold of 0</column>
+                    <column name="m_axi_gmem">dst, ../source/sobel_base.cpp:119:36, write, Fail, , VITIS_LOOP_100_1, ../source/sobel_base.cpp:100:21, 214-230, Stride is incompatible</column>
+                    <column name="m_axi_gmem">dst, ../source/sobel_base.cpp:119:36, write, Inferred, variable, VITIS_LOOP_103_2, ../source/sobel_base.cpp:103:20, , </column>
                 </table>
             </item>
         </section>
     </ReportBurst>
     <PragmaReport>
-        <Pragma type="interface" location="../source/sobel_base.cpp:68" status="valid" parentFunction="sobel" variable="src" isDirective="0" options="m_axi port=src depth=921600"/>
-        <Pragma type="interface" location="../source/sobel_base.cpp:69" status="valid" parentFunction="sobel" variable="dst" isDirective="0" options="m_axi port=dst depth=917604"/>
-        <Pragma type="interface" location="../source/sobel_base.cpp:70" status="valid" parentFunction="sobel" variable="rows" isDirective="0" options="s_axilite port=rows bundle=CTRL"/>
-        <Pragma type="interface" location="../source/sobel_base.cpp:71" status="valid" parentFunction="sobel" variable="cols" isDirective="0" options="s_axilite port=cols bundle=CTRL"/>
-        <Pragma type="interface" location="../source/sobel_base.cpp:72" status="valid" parentFunction="sobel" variable="return" isDirective="0" options="s_axilite port=return bundle=CTRL"/>
-        <Pragma type="loop_tripcount" location="../source/sobel_base.cpp:79" status="valid" parentFunction="sobel" variable="" isDirective="0" options="min=1 max=720"/>
-        <Pragma type="loop_tripcount" location="../source/sobel_base.cpp:82" status="valid" parentFunction="sobel" variable="" isDirective="0" options="min=1 max=1280"/>
+        <Pragma type="interface" location="../source/sobel_base.cpp:91" status="valid" parentFunction="sobel" variable="src" isDirective="0" options="m_axi port=src depth=921600"/>
+        <Pragma type="interface" location="../source/sobel_base.cpp:92" status="valid" parentFunction="sobel" variable="dst" isDirective="0" options="m_axi port=dst depth=917604"/>
+        <Pragma type="interface" location="../source/sobel_base.cpp:93" status="valid" parentFunction="sobel" variable="rows" isDirective="0" options="s_axilite port=rows bundle=CTRL"/>
+        <Pragma type="interface" location="../source/sobel_base.cpp:94" status="valid" parentFunction="sobel" variable="cols" isDirective="0" options="s_axilite port=cols bundle=CTRL"/>
+        <Pragma type="interface" location="../source/sobel_base.cpp:95" status="valid" parentFunction="sobel" variable="return" isDirective="0" options="s_axilite port=return bundle=CTRL"/>
+        <Pragma type="loop_tripcount" location="../source/sobel_base.cpp:102" status="valid" parentFunction="sobel" variable="" isDirective="0" options="min=1 max=720"/>
+        <Pragma type="loop_tripcount" location="../source/sobel_base.cpp:105" status="valid" parentFunction="sobel" variable="" isDirective="0" options="min=1 max=1280"/>
     </PragmaReport>
 </profile>
 

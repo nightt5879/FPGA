@@ -3,5 +3,5 @@ sobel_flow_control_loop_pipe_sequential_init
 sobel_mul_32ns_32ns_64_2_1
 sobel_gmem_m_axi
 sobel_CTRL_s_axi
-sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2
+sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2
 sobel

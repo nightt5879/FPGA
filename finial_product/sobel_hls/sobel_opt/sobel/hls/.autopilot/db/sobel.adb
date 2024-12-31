@@ -203,7 +203,7 @@
               <name>cols_read</name>
               <fileName>../source/sobel_base.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>66</lineNumber>
+              <lineNumber>62</lineNumber>
               <contextFuncName>sobel</contextFuncName>
               <contextNormFuncName>sobel</contextNormFuncName>
               <inlineStackInfo>
@@ -219,7 +219,7 @@
                         <first>../source/sobel_base.cpp</first>
                         <second>sobel</second>
                       </first>
-                      <second>66</second>
+                      <second>62</second>
                     </item>
                   </second>
                 </item>
@@ -260,7 +260,7 @@
               <name>rows_read</name>
               <fileName>../source/sobel_base.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>66</lineNumber>
+              <lineNumber>62</lineNumber>
               <contextFuncName>sobel</contextFuncName>
               <contextNormFuncName>sobel</contextNormFuncName>
               <inlineStackInfo>
@@ -276,7 +276,7 @@
                         <first>../source/sobel_base.cpp</first>
                         <second>sobel</second>
                       </first>
-                      <second>66</second>
+                      <second>62</second>
                     </item>
                   </second>
                 </item>
@@ -317,7 +317,7 @@
               <name>dst_read</name>
               <fileName>../source/sobel_base.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>66</lineNumber>
+              <lineNumber>62</lineNumber>
               <contextFuncName>sobel</contextFuncName>
               <contextNormFuncName>sobel</contextNormFuncName>
               <inlineStackInfo>
@@ -333,7 +333,7 @@
                         <first>../source/sobel_base.cpp</first>
                         <second>sobel</second>
                       </first>
-                      <second>66</second>
+                      <second>62</second>
                     </item>
                   </second>
                 </item>
@@ -374,7 +374,7 @@
               <name>src_read</name>
               <fileName>../source/sobel_base.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>66</lineNumber>
+              <lineNumber>62</lineNumber>
               <contextFuncName>sobel</contextFuncName>
               <contextNormFuncName>sobel</contextNormFuncName>
               <inlineStackInfo>
@@ -390,7 +390,7 @@
                         <first>../source/sobel_base.cpp</first>
                         <second>sobel</second>
                       </first>
-                      <second>66</second>
+                      <second>62</second>
                     </item>
                   </second>
                 </item>
@@ -431,7 +431,7 @@
               <name>sub</name>
               <fileName>../source/sobel_base.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>66</lineNumber>
+              <lineNumber>62</lineNumber>
               <contextFuncName>sobel</contextFuncName>
               <contextNormFuncName>sobel</contextNormFuncName>
               <inlineStackInfo>
@@ -447,7 +447,7 @@
                         <first>../source/sobel_base.cpp</first>
                         <second>sobel</second>
                       </first>
-                      <second>66</second>
+                      <second>62</second>
                     </item>
                   </second>
                 </item>
@@ -488,7 +488,7 @@
               <name>sub2</name>
               <fileName>../source/sobel_base.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>66</lineNumber>
+              <lineNumber>62</lineNumber>
               <contextFuncName>sobel</contextFuncName>
               <contextNormFuncName>sobel</contextNormFuncName>
               <inlineStackInfo>
@@ -504,7 +504,7 @@
                         <first>../source/sobel_base.cpp</first>
                         <second>sobel</second>
                       </first>
-                      <second>66</second>
+                      <second>62</second>
                     </item>
                   </second>
                 </item>
@@ -545,7 +545,7 @@
               <name>tmp</name>
               <fileName>../source/sobel_base.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>66</lineNumber>
+              <lineNumber>62</lineNumber>
               <contextFuncName>sobel</contextFuncName>
               <contextNormFuncName>sobel</contextNormFuncName>
               <inlineStackInfo>
@@ -561,7 +561,7 @@
                         <first>../source/sobel_base.cpp</first>
                         <second>sobel</second>
                       </first>
-                      <second>66</second>
+                      <second>62</second>
                     </item>
                   </second>
                 </item>
@@ -604,7 +604,7 @@
               <name>icmp</name>
               <fileName>../source/sobel_base.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>66</lineNumber>
+              <lineNumber>62</lineNumber>
               <contextFuncName>sobel</contextFuncName>
               <contextNormFuncName>sobel</contextNormFuncName>
               <inlineStackInfo>
@@ -620,7 +620,7 @@
                         <first>../source/sobel_base.cpp</first>
                         <second>sobel</second>
                       </first>
-                      <second>66</second>
+                      <second>62</second>
                     </item>
                   </second>
                 </item>
@@ -658,10 +658,10 @@
             <Obj>
               <type>0</type>
               <id>28</id>
-              <name>trunc_ln77</name>
+              <name>trunc_ln100</name>
               <fileName>../source/sobel_base.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>77</lineNumber>
+              <lineNumber>100</lineNumber>
               <contextFuncName>sobel</contextFuncName>
               <contextNormFuncName>sobel</contextNormFuncName>
               <inlineStackInfo>
@@ -677,13 +677,13 @@
                         <first>../source/sobel_base.cpp</first>
                         <second>sobel</second>
                       </first>
-                      <second>77</second>
+                      <second>100</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>trunc_ln77_fu_140_p1</rtlName>
+              <rtlName>trunc_ln100_fu_140_p1</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -714,10 +714,10 @@
             <Obj>
               <type>0</type>
               <id>29</id>
-              <name>add_ln77</name>
+              <name>add_ln100</name>
               <fileName>../source/sobel_base.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>77</lineNumber>
+              <lineNumber>100</lineNumber>
               <contextFuncName>sobel</contextFuncName>
               <contextNormFuncName>sobel</contextNormFuncName>
               <inlineStackInfo>
@@ -733,13 +733,13 @@
                         <first>../source/sobel_base.cpp</first>
                         <second>sobel</second>
                       </first>
-                      <second>77</second>
+                      <second>100</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>add_ln77_fu_144_p2</rtlName>
+              <rtlName>add_ln100_fu_144_p2</rtlName>
               <control>auto</control>
               <opType>add</opType>
               <implIndex>fabric</implIndex>
@@ -774,7 +774,7 @@
               <name>empty</name>
               <fileName>../source/sobel_base.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>66</lineNumber>
+              <lineNumber>62</lineNumber>
               <contextFuncName>sobel</contextFuncName>
               <contextNormFuncName>sobel</contextNormFuncName>
               <inlineStackInfo>
@@ -790,7 +790,7 @@
                         <first>../source/sobel_base.cpp</first>
                         <second>sobel</second>
                       </first>
-                      <second>66</second>
+                      <second>62</second>
                     </item>
                   </second>
                 </item>
@@ -829,10 +829,10 @@
             <Obj>
               <type>0</type>
               <id>31</id>
-              <name>tmp_5</name>
+              <name>tmp_3</name>
               <fileName>../source/sobel_base.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>66</lineNumber>
+              <lineNumber>62</lineNumber>
               <contextFuncName>sobel</contextFuncName>
               <contextNormFuncName>sobel</contextNormFuncName>
               <inlineStackInfo>
@@ -848,13 +848,13 @@
                         <first>../source/sobel_base.cpp</first>
                         <second>sobel</second>
                       </first>
-                      <second>66</second>
+                      <second>62</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_5_fu_158_p4</rtlName>
+              <rtlName>tmp_3_fu_158_p4</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -891,7 +891,7 @@
               <name>icmp17</name>
               <fileName>../source/sobel_base.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>66</lineNumber>
+              <lineNumber>62</lineNumber>
               <contextFuncName>sobel</contextFuncName>
               <contextNormFuncName>sobel</contextNormFuncName>
               <inlineStackInfo>
@@ -907,7 +907,7 @@
                         <first>../source/sobel_base.cpp</first>
                         <second>sobel</second>
                       </first>
-                      <second>66</second>
+                      <second>62</second>
                     </item>
                   </second>
                 </item>
@@ -945,10 +945,10 @@
             <Obj>
               <type>0</type>
               <id>33</id>
-              <name>add_ln77_1</name>
+              <name>add_ln100_1</name>
               <fileName>../source/sobel_base.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>77</lineNumber>
+              <lineNumber>100</lineNumber>
               <contextFuncName>sobel</contextFuncName>
               <contextNormFuncName>sobel</contextNormFuncName>
               <inlineStackInfo>
@@ -964,13 +964,13 @@
                         <first>../source/sobel_base.cpp</first>
                         <second>sobel</second>
                       </first>
-                      <second>77</second>
+                      <second>100</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>add_ln77_1_fu_174_p2</rtlName>
+              <rtlName>add_ln100_1_fu_174_p2</rtlName>
               <control>auto</control>
               <opType>add</opType>
               <implIndex>fabric</implIndex>
@@ -1002,10 +1002,10 @@
             <Obj>
               <type>0</type>
               <id>34</id>
-              <name>select_ln77</name>
+              <name>select_ln100</name>
               <fileName>../source/sobel_base.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>77</lineNumber>
+              <lineNumber>100</lineNumber>
               <contextFuncName>sobel</contextFuncName>
               <contextNormFuncName>sobel</contextNormFuncName>
               <inlineStackInfo>
@@ -1021,13 +1021,13 @@
                         <first>../source/sobel_base.cpp</first>
                         <second>sobel</second>
                       </first>
-                      <second>77</second>
+                      <second>100</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>select_ln77_fu_180_p3</rtlName>
+              <rtlName>select_ln100_fu_180_p3</rtlName>
               <control>auto</control>
               <opType>select</opType>
               <implIndex>auto_sel</implIndex>
@@ -1060,10 +1060,10 @@
             <Obj>
               <type>0</type>
               <id>35</id>
-              <name>add_ln77_2</name>
+              <name>add_ln100_2</name>
               <fileName>../source/sobel_base.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>77</lineNumber>
+              <lineNumber>100</lineNumber>
               <contextFuncName>sobel</contextFuncName>
               <contextNormFuncName>sobel</contextNormFuncName>
               <inlineStackInfo>
@@ -1079,13 +1079,13 @@
                         <first>../source/sobel_base.cpp</first>
                         <second>sobel</second>
                       </first>
-                      <second>77</second>
+                      <second>100</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>add_ln77_2_fu_188_p2</rtlName>
+              <rtlName>add_ln100_2_fu_188_p2</rtlName>
               <control>auto</control>
               <opType>add</opType>
               <implIndex>fabric</implIndex>
@@ -1117,10 +1117,10 @@
             <Obj>
               <type>0</type>
               <id>36</id>
-              <name>select_ln77_1</name>
+              <name>select_ln100_1</name>
               <fileName>../source/sobel_base.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>77</lineNumber>
+              <lineNumber>100</lineNumber>
               <contextFuncName>sobel</contextFuncName>
               <contextNormFuncName>sobel</contextNormFuncName>
               <inlineStackInfo>
@@ -1136,13 +1136,13 @@
                         <first>../source/sobel_base.cpp</first>
                         <second>sobel</second>
                       </first>
-                      <second>77</second>
+                      <second>100</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>select_ln77_1_fu_194_p3</rtlName>
+              <rtlName>select_ln100_1_fu_194_p3</rtlName>
               <control>auto</control>
               <opType>select</opType>
               <implIndex>auto_sel</implIndex>
@@ -1175,10 +1175,10 @@
             <Obj>
               <type>0</type>
               <id>37</id>
-              <name>zext_ln66</name>
+              <name>zext_ln62</name>
               <fileName>../source/sobel_base.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>66</lineNumber>
+              <lineNumber>62</lineNumber>
               <contextFuncName>sobel</contextFuncName>
               <contextNormFuncName>sobel</contextNormFuncName>
               <inlineStackInfo>
@@ -1194,7 +1194,7 @@
                         <first>../source/sobel_base.cpp</first>
                         <second>sobel</second>
                       </first>
-                      <second>66</second>
+                      <second>62</second>
                     </item>
                   </second>
                 </item>
@@ -1231,10 +1231,10 @@
             <Obj>
               <type>0</type>
               <id>38</id>
-              <name>zext_ln66_1</name>
+              <name>zext_ln62_1</name>
               <fileName>../source/sobel_base.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>66</lineNumber>
+              <lineNumber>62</lineNumber>
               <contextFuncName>sobel</contextFuncName>
               <contextNormFuncName>sobel</contextNormFuncName>
               <inlineStackInfo>
@@ -1250,7 +1250,7 @@
                         <first>../source/sobel_base.cpp</first>
                         <second>sobel</second>
                       </first>
-                      <second>66</second>
+                      <second>62</second>
                     </item>
                   </second>
                 </item>
@@ -1287,10 +1287,10 @@
             <Obj>
               <type>0</type>
               <id>39</id>
-              <name>mul_ln66</name>
+              <name>mul_ln62</name>
               <fileName>../source/sobel_base.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>66</lineNumber>
+              <lineNumber>62</lineNumber>
               <contextFuncName>sobel</contextFuncName>
               <contextNormFuncName>sobel</contextNormFuncName>
               <inlineStackInfo>
@@ -1306,7 +1306,7 @@
                         <first>../source/sobel_base.cpp</first>
                         <second>sobel</second>
                       </first>
-                      <second>66</second>
+                      <second>62</second>
                     </item>
                   </second>
                 </item>
@@ -1344,10 +1344,10 @@
             <Obj>
               <type>0</type>
               <id>40</id>
-              <name>_ln66</name>
+              <name>_ln62</name>
               <fileName>../source/sobel_base.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>66</lineNumber>
+              <lineNumber>62</lineNumber>
               <contextFuncName>sobel</contextFuncName>
               <contextNormFuncName>sobel</contextNormFuncName>
               <inlineStackInfo>
@@ -1363,13 +1363,13 @@
                         <first>../source/sobel_base.cpp</first>
                         <second>sobel</second>
                       </first>
-                      <second>66</second>
+                      <second>62</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94</rtlName>
+              <rtlName>grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -1409,10 +1409,10 @@
             <Obj>
               <type>0</type>
               <id>41</id>
-              <name>_ln102</name>
+              <name>_ln125</name>
               <fileName>../source/sobel_base.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>102</lineNumber>
+              <lineNumber>125</lineNumber>
               <contextFuncName>sobel</contextFuncName>
               <contextNormFuncName>sobel</contextNormFuncName>
               <inlineStackInfo>
@@ -1428,7 +1428,7 @@
                         <first>../source/sobel_base.cpp</first>
                         <second>sobel</second>
                       </first>
-                      <second>102</second>
+                      <second>125</second>
                     </item>
                   </second>
                 </item>
@@ -1685,7 +1685,7 @@
             <Obj>
               <type>2</type>
               <id>97</id>
-              <name>sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2</name>
+              <name>sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -1709,7 +1709,7 @@
             <bitwidth>0</bitwidth>
           </Value>
           <const_type>6</const_type>
-          <content>&lt;constant:sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2&gt;</content>
+          <content>&lt;constant:sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2&gt;</content>
         </item>
       </consts>
       <blocks class_id="17" tracking_level="0" version="0">
@@ -2130,8 +2130,8 @@
         <mDepth>-1</mDepth>
         <mMinTripCount>-1</mMinTripCount>
         <mMaxTripCount>-1</mMaxTripCount>
-        <mMinLatency>35</mMinLatency>
-        <mMaxLatency>8294426</mMaxLatency>
+        <mMinLatency>36</mMinLatency>
+        <mMaxLatency>8294427</mMaxLatency>
         <mIsDfPipe>0</mIsDfPipe>
         <mDfPipe class_id="-1"/>
       </item>
@@ -2474,7 +2474,7 @@
           </second>
         </item>
         <item>
-          <first>grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94 (sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2)</first>
+          <first>grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94 (sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2)</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -2484,11 +2484,11 @@
             </item>
             <item>
               <first>FF</first>
-              <second>1380</second>
+              <second>1389</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>1576</second>
+              <second>1632</second>
             </item>
           </second>
         </item>
@@ -2516,7 +2516,7 @@
         <count>10</count>
         <item_version>0</item_version>
         <item>
-          <first>add_ln77_1_fu_174_p2 ( + ) </first>
+          <first>add_ln100_1_fu_174_p2 ( + ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -2539,7 +2539,7 @@
           </second>
         </item>
         <item>
-          <first>add_ln77_2_fu_188_p2 ( + ) </first>
+          <first>add_ln100_2_fu_188_p2 ( + ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -2562,7 +2562,7 @@
           </second>
         </item>
         <item>
-          <first>add_ln77_fu_144_p2 ( + ) </first>
+          <first>add_ln100_fu_144_p2 ( + ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -2658,7 +2658,7 @@
           </second>
         </item>
         <item>
-          <first>select_ln77_1_fu_194_p3 ( select ) </first>
+          <first>select_ln100_1_fu_194_p3 ( select ) </first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -2685,7 +2685,7 @@
           </second>
         </item>
         <item>
-          <first>select_ln77_fu_180_p3 ( select ) </first>
+          <first>select_ln100_fu_180_p3 ( select ) </first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -3012,7 +3012,7 @@
           </second>
         </item>
         <item>
-          <first>grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_ap_start_reg</first>
+          <first>grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_ap_start_reg</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -3031,7 +3031,7 @@
           </second>
         </item>
         <item>
-          <first>mul_ln66_reg_257</first>
+          <first>mul_ln62_reg_257</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -3050,7 +3050,7 @@
           </second>
         </item>
         <item>
-          <first>select_ln77_1_reg_242</first>
+          <first>select_ln100_1_reg_242</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -3069,7 +3069,7 @@
           </second>
         </item>
         <item>
-          <first>select_ln77_reg_237</first>
+          <first>select_ln100_reg_237</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -3144,7 +3144,7 @@
           </second>
         </item>
         <item>
-          <first>grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94</first>
+          <first>grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
@@ -3162,7 +3162,7 @@
         <count>2</count>
         <item_version>0</item_version>
         <item class_id="40" tracking_level="0" version="0">
-          <first>grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94 (sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2)</first>
+          <first>grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94 (sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -3182,7 +3182,7 @@
         <count>10</count>
         <item_version>0</item_version>
         <item>
-          <first>add_ln77_1_fu_174_p2 ( + ) </first>
+          <first>add_ln100_1_fu_174_p2 ( + ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -3190,7 +3190,7 @@
           </second>
         </item>
         <item>
-          <first>add_ln77_2_fu_188_p2 ( + ) </first>
+          <first>add_ln100_2_fu_188_p2 ( + ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -3198,7 +3198,7 @@
           </second>
         </item>
         <item>
-          <first>add_ln77_fu_144_p2 ( + ) </first>
+          <first>add_ln100_fu_144_p2 ( + ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -3230,7 +3230,7 @@
           </second>
         </item>
         <item>
-          <first>select_ln77_1_fu_194_p3 ( select ) </first>
+          <first>select_ln100_1_fu_194_p3 ( select ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -3238,7 +3238,7 @@
           </second>
         </item>
         <item>
-          <first>select_ln77_fu_180_p3 ( select ) </first>
+          <first>select_ln100_fu_180_p3 ( select ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -3622,7 +3622,7 @@
       <count>15</count>
       <item_version>0</item_version>
       <item class_id="52" tracking_level="0" version="0">
-        <first>add_ln77_1_fu_174</first>
+        <first>add_ln100_1_fu_174</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -3630,7 +3630,7 @@
         </second>
       </item>
       <item>
-        <first>add_ln77_2_fu_188</first>
+        <first>add_ln100_2_fu_188</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -3638,7 +3638,7 @@
         </second>
       </item>
       <item>
-        <first>add_ln77_fu_144</first>
+        <first>add_ln100_fu_144</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -3670,7 +3670,7 @@
         </second>
       </item>
       <item>
-        <first>select_ln77_1_fu_194</first>
+        <first>select_ln100_1_fu_194</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -3678,7 +3678,7 @@
         </second>
       </item>
       <item>
-        <first>select_ln77_fu_180</first>
+        <first>select_ln100_fu_180</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -3702,7 +3702,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_5_fu_158</first>
+        <first>tmp_3_fu_158</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -3718,7 +3718,7 @@
         </second>
       </item>
       <item>
-        <first>trunc_ln77_fu_140</first>
+        <first>trunc_ln100_fu_140</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -3726,7 +3726,7 @@
         </second>
       </item>
       <item>
-        <first>zext_ln66_1_fu_206</first>
+        <first>zext_ln62_1_fu_206</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -3734,7 +3734,7 @@
         </second>
       </item>
       <item>
-        <first>zext_ln66_fu_202</first>
+        <first>zext_ln62_fu_202</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -3755,7 +3755,7 @@
         </second>
       </item>
       <item>
-        <first>grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94</first>
+        <first>grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>
@@ -3920,7 +3920,7 @@
         </second>
       </item>
       <item>
-        <first>mul_ln66_reg_257</first>
+        <first>mul_ln62_reg_257</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -3928,7 +3928,7 @@
         </second>
       </item>
       <item>
-        <first>select_ln77_1_reg_242</first>
+        <first>select_ln100_1_reg_242</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -3936,7 +3936,7 @@
         </second>
       </item>
       <item>
-        <first>select_ln77_reg_237</first>
+        <first>select_ln100_reg_237</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -3960,7 +3960,7 @@
         </second>
       </item>
       <item>
-        <first>zext_ln66_1_reg_252</first>
+        <first>zext_ln62_1_reg_252</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -3968,7 +3968,7 @@
         </second>
       </item>
       <item>
-        <first>zext_ln66_reg_247</first>
+        <first>zext_ln62_reg_247</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

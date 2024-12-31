@@ -16,11 +16,9 @@ static PIXEL Gradient_X(PIXEL WB[3][3])
 	out_pix = out_pix + A00;
 	out_pix = out_pix - S00;
 
-	if(out_pix < 0)
-	{
-		out_pix = 0;
-	}
-	else if(out_pix>255)
+    out_pix = abs(out_pix);
+
+	if(out_pix>255)
 	{
 		out_pix = 255;
 	}
@@ -38,11 +36,9 @@ static PIXEL Gradient_Y(PIXEL WB[3][3])
 	out_pix = out_pix + A00;
 	out_pix = out_pix - S00;
 
-	if(out_pix < 0)
-	{
-		out_pix = 0;
-	}
-	else if(out_pix > 255)
+    out_pix = abs(out_pix);
+
+	if(out_pix > 255)
 	{
 		out_pix = 255;
 	}
@@ -65,6 +61,33 @@ static PIXEL sobel3x3_kernel(PIXEL WB[3][3])
 //void sobel(hls::stream<trans_pkt>& src, hls::stream<trans_pkt>& dst, int rows, int cols)
 void sobel(PIXEL* src, PIXEL* dst, int rows, int cols)
 {
+//         int row, col;  
+//     PIXEL sobel_kernel[3][3];  
+//     for(row = 0; row < rows+1; row++)  
+//     {  
+// #pragma HLS LOOP_TRIPCOUNT min=1 max=720  
+//         for(col = 0; col < cols+1; col++)  
+//         {  
+// #pragma HLS LOOP_TRIPCOUNT min=1 max=1280  
+//             PIXEL _sobel;  
+  
+//             if(row<=1 || col<=1 || row>(rows-1) || col>(cols-1))  
+//                 _sobel = 0;  
+// 	        else  
+// 	        {  
+// 	            for(int i=0; i<3; i++)  
+// 	            {  
+// 	                for(int j=0; j<3; j++)  
+// 	                {  
+// 	                    sobel_kernel[i][j] = src[(row+i-1)*cols+(col+j-1)];  
+// 	                }  
+// 	            }  
+// 	            _sobel = sobel3x3_kernel(sobel_kernel);  
+// 	       }  
+// 	        if(row>1 && col>1)  
+// 	        dst[(row-1)*cols+(col-1)] = _sobel;  
+// 	    }  
+// 	}  
 #pragma HLS INTERFACE m_axi port=src depth=921600
 #pragma HLS INTERFACE m_axi port=dst depth=917604
 #pragma HLS INTERFACE s_axilite port=rows  bundle=CTRL
@@ -100,3 +123,34 @@ void sobel(PIXEL* src, PIXEL* dst, int rows, int cols)
 	}
 
 }
+
+// void naive_sobel(PIXEL* src, PIXEL* dst, int rows, int cols)  
+// {  
+//     int row, col;  
+//     PIXEL sobel_kernel[3][3];  
+//     for(row = 0; row < rows+1; row++)  
+//     {  
+// #pragma HLS LOOP_TRIPCOUNT min=1 max=720  
+//         for(col = 0; col < cols+1; col++)  
+//         {  
+// #pragma HLS LOOP_TRIPCOUNT min=1 max=1280  
+//             PIXEL _sobel;  
+  
+//             if(row<=1 || col<=1 || row>(rows-1) || col>(cols-1))  
+//                 _sobel = 0;  
+// 	        else  
+// 	        {  
+// 	            for(int i=0; i<3; i++)  
+// 	            {  
+// 	                for(int j=0; j<3; j++)  
+// 	                {  
+// 	                    sobel_kernel[i][j] = src[(row+i-1)*cols+(col+j-1)];  
+// 	                }  
+// 	            }  
+// 	            _sobel = sobel3x3_kernel(sobel_kernel);  
+// 	       }  
+// 	        if(row>1 && col>1)  
+// 	        dst[(row-1)*cols+(col-1)] = _sobel;  
+// 	    }  
+// 	}  
+// }

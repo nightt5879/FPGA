@@ -3407,7 +3407,7 @@ window.onload = function () { addSorting(); }
 <center><h1>Design Guidance Report</h1></center><center><table class="header" border="0">
 <tr><td><b>Copyright</b></td><td>Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.</td></tr>
 <tr><td><b>Tool Version</b></td><td>xcd v.2024.1 (win64) Build 0 </td></tr>
-<tr><td><b>Date</b></td><td>Sun Dec 29 09:48:56 2024</td></tr>
+<tr><td><b>Date</b></td><td>Tue Dec 31 10:15:07 2024</td></tr>
 <tr><td><b>Host</b></td><td>nightt_insider running 64-bit major release  (build 9200)</td></tr>
 <tr><td><b>Command</b></td><td>E:/vivado/Vitis/2024.1/bin/unwrapped/win64.o/v++.exe  -c --mode hls --config E:\robot\project\FPGA\finial_product\sobel_hls\sobel_opt\hls_config.cfg --work_dir sobel </td></tr>
 </table></center><br>
@@ -3434,13 +3434,46 @@ window.onload = function () { addSorting(); }
 <th align="left" width="380">Resolution</th>
 </tr>
 <tr>
+<td align="left">6</td>
+<td align="left">Throughput</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.sobel.Throughput</td>
+<td align="left">The II Violation in module 'sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2' (loop 'VITIS_LOOP_100_1_VITIS_LOOP_103_2'): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1) between bus request operation ('empty_27', <a href="file:///E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt\../source/sobel_base.cpp#line=111">sobel_base.cpp</a>) on port 'gmem' (<a href="file:///E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt\../source/sobel_base.cpp#line=111">sobel_base.cpp</a>) and bus request operation ('empty_21', <a href="file:///E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt\../source/sobel_base.cpp#line=111">sobel_base.cpp</a>) on port 'gmem' (<a href="file:///E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt\../source/sobel_base.cpp#line=111">sobel_base.cpp</a>).
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">4</td>
+<td align="left">Throughput</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.sobel.Throughput</td>
+<td align="left">The II Violation in module 'sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2' (loop 'VITIS_LOOP_100_1_VITIS_LOOP_103_2'): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1) between bus read operation ('sobel_kernel', <a href="file:///E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt\../source/sobel_base.cpp#line=114">sobel_base.cpp</a>) on port 'gmem' (<a href="file:///E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt\../source/sobel_base.cpp#line=114">sobel_base.cpp</a>) and bus read operation ('sobel_kernel', <a href="file:///E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt\../source/sobel_base.cpp#line=114">sobel_base.cpp</a>) on port 'gmem' (<a href="file:///E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt\../source/sobel_base.cpp#line=114">sobel_base.cpp</a>).
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">12</td>
+<td align="left">Kernel</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.sobel.Kernel</td>
+<td align="left">**** Estimated Fmax: 136.99 MHz
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
 <td align="left">5</td>
 <td align="left">Throughput</td>
 <td align="left">WARNING</td>
 <td align="left"><undefined></td>
 <td align="left">HLS Throughput Related</td>
 <td align="left">Accelerator.sobel.Throughput</td>
-<td align="left">The II Violation in module 'sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2' (loop 'VITIS_LOOP_77_1_VITIS_LOOP_80_2'): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1) between bus request operation ('empty_24', <a href="file:///E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt\../source/sobel_base.cpp#line=88">sobel_base.cpp</a>) on port 'gmem' (<a href="file:///E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt\../source/sobel_base.cpp#line=88">sobel_base.cpp</a>) and bus request operation ('empty_21', <a href="file:///E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt\../source/sobel_base.cpp#line=88">sobel_base.cpp</a>) on port 'gmem' (<a href="file:///E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt\../source/sobel_base.cpp#line=88">sobel_base.cpp</a>).
+<td align="left">The II Violation in module 'sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2' (loop 'VITIS_LOOP_100_1_VITIS_LOOP_103_2'): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1) between bus request operation ('empty_24', <a href="file:///E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt\../source/sobel_base.cpp#line=111">sobel_base.cpp</a>) on port 'gmem' (<a href="file:///E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt\../source/sobel_base.cpp#line=111">sobel_base.cpp</a>) and bus request operation ('empty_21', <a href="file:///E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt\../source/sobel_base.cpp#line=111">sobel_base.cpp</a>) on port 'gmem' (<a href="file:///E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt\../source/sobel_base.cpp#line=111">sobel_base.cpp</a>).
 </td>
 <td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
@@ -3451,7 +3484,40 @@ window.onload = function () { addSorting(); }
 <td align="left"><undefined></td>
 <td align="left">HLS Interface Related</td>
 <td align="left">Accelerator.sobel.Interface</td>
-<td align="left">Multiple burst reads of length 3 and bit width 8 has been inferred on bundle 'gmem'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (<a href="file:///E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt\../source/sobel_base.cpp#line=88">sobel_base.cpp</a>)
+<td align="left">Multiple burst reads of length 3 and bit width 8 has been inferred on bundle 'gmem'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (<a href="file:///E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt\../source/sobel_base.cpp#line=111">sobel_base.cpp</a>)
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">8</td>
+<td align="left">Kernel</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.sobel.Kernel</td>
+<td align="left">The II Violation in module 'sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2' (loop 'VITIS_LOOP_100_1_VITIS_LOOP_103_2'): Unable to schedule bus read operation ('sobel_kernel', <a href="file:///E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt\../source/sobel_base.cpp#line=114">sobel_base.cpp</a>) on port 'gmem' (<a href="file:///E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt\../source/sobel_base.cpp#line=114">sobel_base.cpp</a>) due to limited memory ports (II = 8). Please consider using a memory core with more ports or partitioning the array.
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">7</td>
+<td align="left">Kernel</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.sobel.Kernel</td>
+<td align="left">The II Violation in module 'sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2' (loop 'VITIS_LOOP_100_1_VITIS_LOOP_103_2'): Unable to schedule bus read operation ('sobel_kernel', <a href="file:///E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt\../source/sobel_base.cpp#line=114">sobel_base.cpp</a>) on port 'gmem' (<a href="file:///E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt\../source/sobel_base.cpp#line=114">sobel_base.cpp</a>) due to limited memory ports (II = 7). Please consider using a memory core with more ports or partitioning the array.
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">11</td>
+<td align="left">Kernel</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.sobel.Kernel</td>
+<td align="left">**** Loop Constraint Status: All loop constraints were NOT satisfied.
 </td>
 <td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
@@ -3462,29 +3528,7 @@ window.onload = function () { addSorting(); }
 <td align="left"><undefined></td>
 <td align="left">HLS Throughput Related</td>
 <td align="left">Accelerator.sobel.Throughput</td>
-<td align="left">Pipelining result : Target II = NA, Final II = 9, Depth = 31, loop 'VITIS_LOOP_77_1_VITIS_LOOP_80_2'
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">6</td>
-<td align="left">Throughput</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.sobel.Throughput</td>
-<td align="left">The II Violation in module 'sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2' (loop 'VITIS_LOOP_77_1_VITIS_LOOP_80_2'): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1) between bus request operation ('empty_27', <a href="file:///E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt\../source/sobel_base.cpp#line=88">sobel_base.cpp</a>) on port 'gmem' (<a href="file:///E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt\../source/sobel_base.cpp#line=88">sobel_base.cpp</a>) and bus request operation ('empty_21', <a href="file:///E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt\../source/sobel_base.cpp#line=88">sobel_base.cpp</a>) on port 'gmem' (<a href="file:///E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt\../source/sobel_base.cpp#line=88">sobel_base.cpp</a>).
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">1</td>
-<td align="left">Interface</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Interface Related</td>
-<td align="left">Accelerator.sobel.Interface</td>
-<td align="left">Multiple burst writes of variable length and bit width 8 in loop 'VITIS_LOOP_80_2'(<a href="file:///E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt\../source/sobel_base.cpp#line=80">sobel_base.cpp</a>) has been inferred on bundle 'gmem'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (<a href="file:///E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt\../source/sobel_base.cpp#line=80">sobel_base.cpp</a>)
+<td align="left">Pipelining result : Target II = NA, Final II = 9, Depth = 32, loop 'VITIS_LOOP_100_1_VITIS_LOOP_103_2'
 </td>
 <td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
@@ -3506,62 +3550,18 @@ window.onload = function () { addSorting(); }
 <td align="left"><undefined></td>
 <td align="left">HLS Throughput Related</td>
 <td align="left">Accelerator.sobel.Throughput</td>
-<td align="left">The II Violation in module 'sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2' (loop 'VITIS_LOOP_77_1_VITIS_LOOP_80_2'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between bus read operation ('sobel_kernel', <a href="file:///E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt\../source/sobel_base.cpp#line=91">sobel_base.cpp</a>) on port 'gmem' (<a href="file:///E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt\../source/sobel_base.cpp#line=91">sobel_base.cpp</a>) and bus read operation ('sobel_kernel', <a href="file:///E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt\../source/sobel_base.cpp#line=91">sobel_base.cpp</a>) on port 'gmem' (<a href="file:///E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt\../source/sobel_base.cpp#line=91">sobel_base.cpp</a>).
+<td align="left">The II Violation in module 'sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2' (loop 'VITIS_LOOP_100_1_VITIS_LOOP_103_2'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between bus read operation ('sobel_kernel', <a href="file:///E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt\../source/sobel_base.cpp#line=114">sobel_base.cpp</a>) on port 'gmem' (<a href="file:///E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt\../source/sobel_base.cpp#line=114">sobel_base.cpp</a>) and bus read operation ('sobel_kernel', <a href="file:///E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt\../source/sobel_base.cpp#line=114">sobel_base.cpp</a>) on port 'gmem' (<a href="file:///E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt\../source/sobel_base.cpp#line=114">sobel_base.cpp</a>).
 </td>
 <td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
 <tr>
-<td align="left">4</td>
-<td align="left">Throughput</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.sobel.Throughput</td>
-<td align="left">The II Violation in module 'sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2' (loop 'VITIS_LOOP_77_1_VITIS_LOOP_80_2'): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1) between bus read operation ('sobel_kernel', <a href="file:///E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt\../source/sobel_base.cpp#line=91">sobel_base.cpp</a>) on port 'gmem' (<a href="file:///E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt\../source/sobel_base.cpp#line=91">sobel_base.cpp</a>) and bus read operation ('sobel_kernel', <a href="file:///E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt\../source/sobel_base.cpp#line=91">sobel_base.cpp</a>) on port 'gmem' (<a href="file:///E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt\../source/sobel_base.cpp#line=91">sobel_base.cpp</a>).
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">7</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.sobel.Kernel</td>
-<td align="left">The II Violation in module 'sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2' (loop 'VITIS_LOOP_77_1_VITIS_LOOP_80_2'): Unable to schedule bus read operation ('sobel_kernel', <a href="file:///E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt\../source/sobel_base.cpp#line=91">sobel_base.cpp</a>) on port 'gmem' (<a href="file:///E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt\../source/sobel_base.cpp#line=91">sobel_base.cpp</a>) due to limited memory ports (II = 7). Please consider using a memory core with more ports or partitioning the array.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">8</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.sobel.Kernel</td>
-<td align="left">The II Violation in module 'sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2' (loop 'VITIS_LOOP_77_1_VITIS_LOOP_80_2'): Unable to schedule bus read operation ('sobel_kernel', <a href="file:///E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt\../source/sobel_base.cpp#line=91">sobel_base.cpp</a>) on port 'gmem' (<a href="file:///E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt\../source/sobel_base.cpp#line=91">sobel_base.cpp</a>) due to limited memory ports (II = 8). Please consider using a memory core with more ports or partitioning the array.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">11</td>
-<td align="left">Kernel</td>
+<td align="left">1</td>
+<td align="left">Interface</td>
 <td align="left">ADVISORY</td>
 <td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.sobel.Kernel</td>
-<td align="left">**** Loop Constraint Status: All loop constraints were NOT satisfied.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">12</td>
-<td align="left">Kernel</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.sobel.Kernel</td>
-<td align="left">**** Estimated Fmax: 136.99 MHz
+<td align="left">HLS Interface Related</td>
+<td align="left">Accelerator.sobel.Interface</td>
+<td align="left">Multiple burst writes of variable length and bit width 8 in loop 'VITIS_LOOP_103_2'(<a href="file:///E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt\../source/sobel_base.cpp#line=103">sobel_base.cpp</a>) has been inferred on bundle 'gmem'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (<a href="file:///E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt\../source/sobel_base.cpp#line=103">sobel_base.cpp</a>)
 </td>
 <td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2024.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>

@@ -174,7 +174,7 @@ set RtlHierarchyInfo {[
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "35", "EstimateLatencyMax" : "8294426",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "36", "EstimateLatencyMax" : "8294427",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -185,18 +185,18 @@ set RtlHierarchyInfo {[
 		"Port" : [
 			{"Name" : "gmem", "Type" : "MAXI", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94", "Port" : "gmem", "Inst_start_state" : "4", "Inst_end_state" : "5"}]},
+					{"ID" : "1", "SubInstance" : "grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94", "Port" : "gmem", "Inst_start_state" : "4", "Inst_end_state" : "5"}]},
 			{"Name" : "src", "Type" : "None", "Direction" : "I"},
 			{"Name" : "dst", "Type" : "None", "Direction" : "I"},
 			{"Name" : "rows", "Type" : "None", "Direction" : "I"},
 			{"Name" : "cols", "Type" : "None", "Direction" : "I"}]},
-	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94", "Parent" : "0", "Child" : ["2", "3"],
-		"CDFG" : "sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2",
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94", "Parent" : "0", "Child" : ["2", "3"],
+		"CDFG" : "sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "31", "EstimateLatencyMax" : "8294422",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "32", "EstimateLatencyMax" : "8294423",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -212,19 +212,19 @@ set RtlHierarchyInfo {[
 					{"Name" : "gmem_blk_n_B", "Type" : "RtlSignal"},
 					{"Name" : "gmem_blk_n_W", "Type" : "RtlSignal"},
 					{"Name" : "gmem_blk_n_AW", "Type" : "RtlSignal"}]},
-			{"Name" : "mul_ln66", "Type" : "None", "Direction" : "I"},
+			{"Name" : "mul_ln62", "Type" : "None", "Direction" : "I"},
 			{"Name" : "cols_cast6", "Type" : "None", "Direction" : "I"},
 			{"Name" : "src", "Type" : "None", "Direction" : "I"},
 			{"Name" : "cols_cast", "Type" : "None", "Direction" : "I"},
-			{"Name" : "sext_ln77", "Type" : "None", "Direction" : "I"},
+			{"Name" : "sext_ln100", "Type" : "None", "Direction" : "I"},
 			{"Name" : "sub2", "Type" : "None", "Direction" : "I"},
-			{"Name" : "zext_ln77", "Type" : "None", "Direction" : "I"},
+			{"Name" : "zext_ln100", "Type" : "None", "Direction" : "I"},
 			{"Name" : "dst", "Type" : "None", "Direction" : "I"}],
 		"Loop" : [
-			{"Name" : "VITIS_LOOP_77_1_VITIS_LOOP_80_2", "PipelineType" : "UPC",
-				"LoopDec" : {"FSMBitwidth" : "9", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage3", "LastStateIter" : "ap_enable_reg_pp0_iter3", "LastStateBlock" : "ap_block_pp0_stage3_subdone", "QuitState" : "ap_ST_fsm_pp0_stage3", "QuitStateIter" : "ap_enable_reg_pp0_iter3", "QuitStateBlock" : "ap_block_pp0_stage3_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
-	{"ID" : "2", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94.mul_31ns_32s_63_2_1_U1", "Parent" : "1"},
-	{"ID" : "3", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94.flow_control_loop_pipe_sequential_init_U", "Parent" : "1"},
+			{"Name" : "VITIS_LOOP_100_1_VITIS_LOOP_103_2", "PipelineType" : "UPC",
+				"LoopDec" : {"FSMBitwidth" : "9", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage4", "LastStateIter" : "ap_enable_reg_pp0_iter3", "LastStateBlock" : "ap_block_pp0_stage4_subdone", "QuitState" : "ap_ST_fsm_pp0_stage4", "QuitStateIter" : "ap_enable_reg_pp0_iter3", "QuitStateBlock" : "ap_block_pp0_stage4_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
+	{"ID" : "2", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94.mul_31ns_32s_63_2_1_U1", "Parent" : "1"},
+	{"ID" : "3", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94.flow_control_loop_pipe_sequential_init_U", "Parent" : "1"},
 	{"ID" : "4", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.CTRL_s_axi_U", "Parent" : "0"},
 	{"ID" : "5", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.gmem_m_axi_U", "Parent" : "0"},
 	{"ID" : "6", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_32ns_32ns_64_2_1_U12", "Parent" : "0"}]}
@@ -232,27 +232,27 @@ set RtlHierarchyInfo {[
 
 set ArgLastReadFirstWriteLatency {
 	sobel {
-		gmem {Type IO LastRead 26 FirstWrite 25}
+		gmem {Type IO LastRead 27 FirstWrite 26}
 		src {Type I LastRead 0 FirstWrite -1}
 		dst {Type I LastRead 0 FirstWrite -1}
 		rows {Type I LastRead 0 FirstWrite -1}
 		cols {Type I LastRead 0 FirstWrite -1}}
-	sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2 {
-		gmem {Type IO LastRead 26 FirstWrite 25}
-		mul_ln66 {Type I LastRead 0 FirstWrite -1}
+	sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2 {
+		gmem {Type IO LastRead 27 FirstWrite 26}
+		mul_ln62 {Type I LastRead 0 FirstWrite -1}
 		cols_cast6 {Type I LastRead 0 FirstWrite -1}
 		src {Type I LastRead 0 FirstWrite -1}
 		cols_cast {Type I LastRead 0 FirstWrite -1}
-		sext_ln77 {Type I LastRead 0 FirstWrite -1}
+		sext_ln100 {Type I LastRead 0 FirstWrite -1}
 		sub2 {Type I LastRead 0 FirstWrite -1}
-		zext_ln77 {Type I LastRead 0 FirstWrite -1}
+		zext_ln100 {Type I LastRead 0 FirstWrite -1}
 		dst {Type I LastRead 0 FirstWrite -1}}}
 
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "35", "Max" : "8294426"}
-	, {"Name" : "Interval", "Min" : "36", "Max" : "8294427"}
+	{"Name" : "Latency", "Min" : "36", "Max" : "8294427"}
+	, {"Name" : "Interval", "Min" : "37", "Max" : "8294428"}
 ]}
 
 set PipelineEnableSignalInfo {[

@@ -1,6 +1,0 @@
-   Build using "E:/vivado/Vitis_HLS/2024.1/vcxx/libexec/clang++"
-   Compiling sobel_tb.cpp_pre.cpp.tb.cpp
-   Compiling apatb_sobel.cpp
-   Compiling sobel_base.cpp_pre.cpp.tb.cpp
-   Compiling apatb_sobel_ir.ll
-   Generating cosim.tv.exe

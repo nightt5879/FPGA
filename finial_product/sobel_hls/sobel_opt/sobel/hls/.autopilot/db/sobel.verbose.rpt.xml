@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'sobel'" level="0">
-<item name = "Date">Sun Dec 29 09:48:54 2024
+<item name = "Date">Tue Dec 31 10:15:06 2024
 </item>
 <item name = "Version">2024.1 (Build 5069499 on May 21 2024)</item>
 <item name = "Project">sobel</item>
@@ -24,14 +24,14 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">35, 8294426, 0.350 us, 82.944 ms, 36, 8294427, no</column>
+<column name="">36, 8294427, 0.360 us, 82.944 ms, 37, 8294428, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94">sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2, 31, 8294422, 0.310 us, 82.944 ms, 18, 8294409, loop auto-rewind stp(delay=0 clock cycles(s))</column>
+<column name="grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94">sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2, 32, 8294423, 0.320 us, 82.944 ms, 18, 8294409, loop auto-rewind stp(delay=0 clock cycles(s))</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
@@ -50,7 +50,7 @@
 <column name="DSP">-, -, -, -, -</column>
 <column name="Expression">-, -, 0, 365, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">2, 8, 2657, 2893, -</column>
+<column name="Instance">2, 8, 2666, 2949, -</column>
 <column name="Memory">-, -, -, -, -</column>
 <column name="Multiplexer">-, -, 0, 76, -</column>
 <column name="Register">-, -, 357, -, -</column>
@@ -65,7 +65,7 @@
 <column name="CTRL_s_axi_U">CTRL_s_axi, 0, 0, 252, 424, 0</column>
 <column name="gmem_m_axi_U">gmem_m_axi, 2, 0, 860, 843, 0</column>
 <column name="mul_32ns_32ns_64_2_1_U12">mul_32ns_32ns_64_2_1, 0, 4, 165, 50, 0</column>
-<column name="grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94">sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2, 0, 4, 1380, 1576, 0</column>
+<column name="grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94">sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2, 0, 4, 1389, 1632, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -82,16 +82,16 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln77_1_fu_174_p2">+, 0, 0, 39, 32, 3</column>
-<column name="add_ln77_2_fu_188_p2">+, 0, 0, 39, 32, 3</column>
-<column name="add_ln77_fu_144_p2">+, 0, 0, 38, 31, 2</column>
+<column name="add_ln100_1_fu_174_p2">+, 0, 0, 39, 32, 3</column>
+<column name="add_ln100_2_fu_188_p2">+, 0, 0, 39, 32, 3</column>
+<column name="add_ln100_fu_144_p2">+, 0, 0, 38, 31, 2</column>
 <column name="sub2_fu_118_p2">+, 0, 0, 39, 32, 2</column>
 <column name="sub_fu_112_p2">+, 0, 0, 39, 32, 2</column>
 <column name="icmp17_fu_168_p2">icmp, 0, 0, 38, 31, 1</column>
 <column name="icmp_fu_134_p2">icmp, 0, 0, 38, 31, 1</column>
 <column name="empty_fu_150_p3">select, 0, 0, 31, 1, 31</column>
-<column name="select_ln77_1_fu_194_p3">select, 0, 0, 32, 1, 32</column>
-<column name="select_ln77_fu_180_p3">select, 0, 0, 32, 1, 32</column>
+<column name="select_ln100_1_fu_194_p3">select, 0, 0, 32, 1, 32</column>
+<column name="select_ln100_fu_180_p3">select, 0, 0, 32, 1, 32</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
@@ -110,10 +110,10 @@
 <column name="cols_read_reg_210">32, 0, 32, 0</column>
 <column name="dst_read_reg_217">64, 0, 64, 0</column>
 <column name="empty_reg_232">31, 0, 31, 0</column>
-<column name="grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_ap_start_reg">1, 0, 1, 0</column>
-<column name="mul_ln66_reg_257">64, 0, 64, 0</column>
-<column name="select_ln77_1_reg_242">32, 0, 32, 0</column>
-<column name="select_ln77_reg_237">32, 0, 32, 0</column>
+<column name="grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_ap_start_reg">1, 0, 1, 0</column>
+<column name="mul_ln62_reg_257">64, 0, 64, 0</column>
+<column name="select_ln100_1_reg_242">32, 0, 32, 0</column>
+<column name="select_ln100_reg_237">32, 0, 32, 0</column>
 <column name="src_read_reg_222">64, 0, 64, 0</column>
 <column name="sub2_reg_227">32, 0, 32, 0</column>
 </table>

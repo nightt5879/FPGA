@@ -1,6 +1,16 @@
-INFO: [vitis-run 60-1548] Creating build summary session with primary output E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel\sobel.hlsrun_csim_summary, at 12/29/24 09:46:10
+INFO: [vitis-run 60-1548] Creating build summary session with primary output E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel\sobel.hlsrun_csim_summary, at 12/31/24 10:14:24
 INFO: [vitis-run 82-31] Launching vitis_hls: vitis_hls -nolog -run csim -work_dir E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel -config E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/hls_config.cfg -cmdlineconfig E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel/hls/config.cmdline
-INFO: [HLS 200-10] For user '14692' on host 'nightt_insider' (Windows NT_amd64 version 10.0) on Sun Dec 29 09:46:12 +0800 2024
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2024.1 (64-bit)
+  **** SW Build 5069499 on May 21 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Tue Dec 31 10:14:26 2024
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source E:/vivado/Vitis_HLS/2024.1/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] For user '14692' on host 'nightt_insider' (Windows NT_amd64 version 10.0) on Tue Dec 31 10:14:27 +0800 2024
 INFO: [HLS 200-10] In directory 'E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt'
 INFO: [HLS 200-2005] Using work_dir E:/robot/project/FPGA/finial_product/sobel_hls/sobel_opt/sobel 
 INFO: [HLS 200-1505] Using default flow_target 'vivado'
@@ -22,26 +32,8 @@ INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from E:/rob
 INFO: [SIM 211-2] *************** CSIM start ***************
 INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
 INFO: [HLS 200-2036] Building debug C Simulation binaries
-   Compiling ../../../../../source/sobel_tb.cpp in debug mode
    Compiling ../../../../../source/sobel_base.cpp in debug mode
    Generating csim.exe
-In file included from ../../../../../source/sobel_tb.cpp:12:
-In file included from ../../../../../source/sobel.hpp:5:
-In file included from E:/vivado/Vitis_HLS/2024.1/include/ap_axi_sdata.h:15:
-In file included from E:/vivado/Vitis_HLS/2024.1/include/ap_int.h:10:
-In file included from E:/vivado/Vitis_HLS/2024.1/include/etc/ap_common.h:658:
-In file included from E:/vivado/Vitis_HLS/2024.1/include/etc/ap_private.h:68:
-In file included from E:/vivado/Vitis_HLS/2024.1/include/hls_half.h:26:
-In file included from E:/vivado/Vitis_HLS/2024.1/include/etc/hls_half_fpo.h:19:
-In file included from E:/vivado/Vitis_HLS/2024.1/include/hls_fpo.h:140:
-In file included from E:/vivado/Vitis_HLS/2024.1/include/floating_point_v7_1_bitacc_cmodel.h:150:
-E:/vivado/Vitis_HLS/2024.1/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
-#define __GMP_LIBGMP_DLL  0
-        ^
-E:/vivado/Vitis_HLS/2024.1/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
-#define __GMP_LIBGMP_DLL 1
-        ^
-1 warning generated.
 In file included from ../../../../../source/sobel_base.cpp:4:
 In file included from ../../../../../source/sobel.hpp:5:
 In file included from E:/vivado/Vitis_HLS/2024.1/include/ap_axi_sdata.h:15:
@@ -59,10 +51,8 @@ E:/vivado/Vitis_HLS/2024.1/include/floating_point_v7_1_bitacc_cmodel.h:142:9: no
 #define __GMP_LIBGMP_DLL 1
         ^
 1 warning generated.
-*******************************************
-PASS: The output matches the golden output!
-*******************************************
+ok
 INFO: [SIM 211-1] CSim done with 0 errors.
 INFO: [SIM 211-3] *************** CSIM finish ***************
-INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 8.102 seconds; peak allocated memory: 246.711 MB.
-INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 12s
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 0 seconds. Total elapsed time: 6.08 seconds; peak allocated memory: 246.355 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 11s

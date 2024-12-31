@@ -203,7 +203,7 @@
 						<name>cols_read</name>
 						<fileName>../source/sobel_base.cpp</fileName>
 						<fileDirectory>E:\robot\project\FPGA\finial_product\sobel_hls\sobel_opt</fileDirectory>
-						<lineNumber>66</lineNumber>
+						<lineNumber>62</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
 						<inlineStackInfo>
@@ -219,7 +219,7 @@
 											<first>../source/sobel_base.cpp</first>
 											<second>sobel</second>
 										</first>
-										<second>66</second>
+										<second>62</second>
 									</item>
 								</second>
 							</item>
@@ -260,7 +260,7 @@
 						<name>rows_read</name>
 						<fileName>../source/sobel_base.cpp</fileName>
 						<fileDirectory>E:\robot\project\FPGA\finial_product\sobel_hls\sobel_opt</fileDirectory>
-						<lineNumber>66</lineNumber>
+						<lineNumber>62</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
 						<inlineStackInfo>
@@ -276,7 +276,7 @@
 											<first>../source/sobel_base.cpp</first>
 											<second>sobel</second>
 										</first>
-										<second>66</second>
+										<second>62</second>
 									</item>
 								</second>
 							</item>
@@ -317,7 +317,7 @@
 						<name>dst_read</name>
 						<fileName>../source/sobel_base.cpp</fileName>
 						<fileDirectory>E:\robot\project\FPGA\finial_product\sobel_hls\sobel_opt</fileDirectory>
-						<lineNumber>66</lineNumber>
+						<lineNumber>62</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
 						<inlineStackInfo>
@@ -333,7 +333,7 @@
 											<first>../source/sobel_base.cpp</first>
 											<second>sobel</second>
 										</first>
-										<second>66</second>
+										<second>62</second>
 									</item>
 								</second>
 							</item>
@@ -374,7 +374,7 @@
 						<name>src_read</name>
 						<fileName>../source/sobel_base.cpp</fileName>
 						<fileDirectory>E:\robot\project\FPGA\finial_product\sobel_hls\sobel_opt</fileDirectory>
-						<lineNumber>66</lineNumber>
+						<lineNumber>62</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
 						<inlineStackInfo>
@@ -390,7 +390,7 @@
 											<first>../source/sobel_base.cpp</first>
 											<second>sobel</second>
 										</first>
-										<second>66</second>
+										<second>62</second>
 									</item>
 								</second>
 							</item>
@@ -431,7 +431,7 @@
 						<name>sub</name>
 						<fileName>../source/sobel_base.cpp</fileName>
 						<fileDirectory>E:\robot\project\FPGA\finial_product\sobel_hls\sobel_opt</fileDirectory>
-						<lineNumber>66</lineNumber>
+						<lineNumber>62</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
 						<inlineStackInfo>
@@ -447,7 +447,7 @@
 											<first>../source/sobel_base.cpp</first>
 											<second>sobel</second>
 										</first>
-										<second>66</second>
+										<second>62</second>
 									</item>
 								</second>
 							</item>
@@ -488,7 +488,7 @@
 						<name>sub2</name>
 						<fileName>../source/sobel_base.cpp</fileName>
 						<fileDirectory>E:\robot\project\FPGA\finial_product\sobel_hls\sobel_opt</fileDirectory>
-						<lineNumber>66</lineNumber>
+						<lineNumber>62</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
 						<inlineStackInfo>
@@ -504,7 +504,7 @@
 											<first>../source/sobel_base.cpp</first>
 											<second>sobel</second>
 										</first>
-										<second>66</second>
+										<second>62</second>
 									</item>
 								</second>
 							</item>
@@ -545,7 +545,7 @@
 						<name>tmp</name>
 						<fileName>../source/sobel_base.cpp</fileName>
 						<fileDirectory>E:\robot\project\FPGA\finial_product\sobel_hls\sobel_opt</fileDirectory>
-						<lineNumber>66</lineNumber>
+						<lineNumber>62</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
 						<inlineStackInfo>
@@ -561,7 +561,7 @@
 											<first>../source/sobel_base.cpp</first>
 											<second>sobel</second>
 										</first>
-										<second>66</second>
+										<second>62</second>
 									</item>
 								</second>
 							</item>
@@ -604,7 +604,7 @@
 						<name>icmp</name>
 						<fileName>../source/sobel_base.cpp</fileName>
 						<fileDirectory>E:\robot\project\FPGA\finial_product\sobel_hls\sobel_opt</fileDirectory>
-						<lineNumber>66</lineNumber>
+						<lineNumber>62</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
 						<inlineStackInfo>
@@ -620,7 +620,7 @@
 											<first>../source/sobel_base.cpp</first>
 											<second>sobel</second>
 										</first>
-										<second>66</second>
+										<second>62</second>
 									</item>
 								</second>
 							</item>
@@ -658,10 +658,10 @@
 					<Obj>
 						<type>0</type>
 						<id>28</id>
-						<name>trunc_ln77</name>
+						<name>trunc_ln100</name>
 						<fileName>../source/sobel_base.cpp</fileName>
 						<fileDirectory>E:\robot\project\FPGA\finial_product\sobel_hls\sobel_opt</fileDirectory>
-						<lineNumber>77</lineNumber>
+						<lineNumber>100</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
 						<inlineStackInfo>
@@ -677,7 +677,7 @@
 											<first>../source/sobel_base.cpp</first>
 											<second>sobel</second>
 										</first>
-										<second>77</second>
+										<second>100</second>
 									</item>
 								</second>
 							</item>
@@ -714,10 +714,10 @@
 					<Obj>
 						<type>0</type>
 						<id>29</id>
-						<name>add_ln77</name>
+						<name>add_ln100</name>
 						<fileName>../source/sobel_base.cpp</fileName>
 						<fileDirectory>E:\robot\project\FPGA\finial_product\sobel_hls\sobel_opt</fileDirectory>
-						<lineNumber>77</lineNumber>
+						<lineNumber>100</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
 						<inlineStackInfo>
@@ -733,7 +733,7 @@
 											<first>../source/sobel_base.cpp</first>
 											<second>sobel</second>
 										</first>
-										<second>77</second>
+										<second>100</second>
 									</item>
 								</second>
 							</item>
@@ -774,7 +774,7 @@
 						<name>empty</name>
 						<fileName>../source/sobel_base.cpp</fileName>
 						<fileDirectory>E:\robot\project\FPGA\finial_product\sobel_hls\sobel_opt</fileDirectory>
-						<lineNumber>66</lineNumber>
+						<lineNumber>62</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
 						<inlineStackInfo>
@@ -790,7 +790,7 @@
 											<first>../source/sobel_base.cpp</first>
 											<second>sobel</second>
 										</first>
-										<second>66</second>
+										<second>62</second>
 									</item>
 								</second>
 							</item>
@@ -829,10 +829,10 @@
 					<Obj>
 						<type>0</type>
 						<id>31</id>
-						<name>tmp_5</name>
+						<name>tmp_3</name>
 						<fileName>../source/sobel_base.cpp</fileName>
 						<fileDirectory>E:\robot\project\FPGA\finial_product\sobel_hls\sobel_opt</fileDirectory>
-						<lineNumber>66</lineNumber>
+						<lineNumber>62</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
 						<inlineStackInfo>
@@ -848,7 +848,7 @@
 											<first>../source/sobel_base.cpp</first>
 											<second>sobel</second>
 										</first>
-										<second>66</second>
+										<second>62</second>
 									</item>
 								</second>
 							</item>
@@ -891,7 +891,7 @@
 						<name>icmp17</name>
 						<fileName>../source/sobel_base.cpp</fileName>
 						<fileDirectory>E:\robot\project\FPGA\finial_product\sobel_hls\sobel_opt</fileDirectory>
-						<lineNumber>66</lineNumber>
+						<lineNumber>62</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
 						<inlineStackInfo>
@@ -907,7 +907,7 @@
 											<first>../source/sobel_base.cpp</first>
 											<second>sobel</second>
 										</first>
-										<second>66</second>
+										<second>62</second>
 									</item>
 								</second>
 							</item>
@@ -945,10 +945,10 @@
 					<Obj>
 						<type>0</type>
 						<id>33</id>
-						<name>add_ln77_1</name>
+						<name>add_ln100_1</name>
 						<fileName>../source/sobel_base.cpp</fileName>
 						<fileDirectory>E:\robot\project\FPGA\finial_product\sobel_hls\sobel_opt</fileDirectory>
-						<lineNumber>77</lineNumber>
+						<lineNumber>100</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
 						<inlineStackInfo>
@@ -964,7 +964,7 @@
 											<first>../source/sobel_base.cpp</first>
 											<second>sobel</second>
 										</first>
-										<second>77</second>
+										<second>100</second>
 									</item>
 								</second>
 							</item>
@@ -1002,10 +1002,10 @@
 					<Obj>
 						<type>0</type>
 						<id>34</id>
-						<name>select_ln77</name>
+						<name>select_ln100</name>
 						<fileName>../source/sobel_base.cpp</fileName>
 						<fileDirectory>E:\robot\project\FPGA\finial_product\sobel_hls\sobel_opt</fileDirectory>
-						<lineNumber>77</lineNumber>
+						<lineNumber>100</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
 						<inlineStackInfo>
@@ -1021,7 +1021,7 @@
 											<first>../source/sobel_base.cpp</first>
 											<second>sobel</second>
 										</first>
-										<second>77</second>
+										<second>100</second>
 									</item>
 								</second>
 							</item>
@@ -1060,10 +1060,10 @@
 					<Obj>
 						<type>0</type>
 						<id>35</id>
-						<name>add_ln77_2</name>
+						<name>add_ln100_2</name>
 						<fileName>../source/sobel_base.cpp</fileName>
 						<fileDirectory>E:\robot\project\FPGA\finial_product\sobel_hls\sobel_opt</fileDirectory>
-						<lineNumber>77</lineNumber>
+						<lineNumber>100</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
 						<inlineStackInfo>
@@ -1079,7 +1079,7 @@
 											<first>../source/sobel_base.cpp</first>
 											<second>sobel</second>
 										</first>
-										<second>77</second>
+										<second>100</second>
 									</item>
 								</second>
 							</item>
@@ -1117,10 +1117,10 @@
 					<Obj>
 						<type>0</type>
 						<id>36</id>
-						<name>select_ln77_1</name>
+						<name>select_ln100_1</name>
 						<fileName>../source/sobel_base.cpp</fileName>
 						<fileDirectory>E:\robot\project\FPGA\finial_product\sobel_hls\sobel_opt</fileDirectory>
-						<lineNumber>77</lineNumber>
+						<lineNumber>100</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
 						<inlineStackInfo>
@@ -1136,7 +1136,7 @@
 											<first>../source/sobel_base.cpp</first>
 											<second>sobel</second>
 										</first>
-										<second>77</second>
+										<second>100</second>
 									</item>
 								</second>
 							</item>
@@ -1175,10 +1175,10 @@
 					<Obj>
 						<type>0</type>
 						<id>37</id>
-						<name>zext_ln66</name>
+						<name>zext_ln62</name>
 						<fileName>../source/sobel_base.cpp</fileName>
 						<fileDirectory>E:\robot\project\FPGA\finial_product\sobel_hls\sobel_opt</fileDirectory>
-						<lineNumber>66</lineNumber>
+						<lineNumber>62</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
 						<inlineStackInfo>
@@ -1194,7 +1194,7 @@
 											<first>../source/sobel_base.cpp</first>
 											<second>sobel</second>
 										</first>
-										<second>66</second>
+										<second>62</second>
 									</item>
 								</second>
 							</item>
@@ -1231,10 +1231,10 @@
 					<Obj>
 						<type>0</type>
 						<id>38</id>
-						<name>zext_ln66_1</name>
+						<name>zext_ln62_1</name>
 						<fileName>../source/sobel_base.cpp</fileName>
 						<fileDirectory>E:\robot\project\FPGA\finial_product\sobel_hls\sobel_opt</fileDirectory>
-						<lineNumber>66</lineNumber>
+						<lineNumber>62</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
 						<inlineStackInfo>
@@ -1250,7 +1250,7 @@
 											<first>../source/sobel_base.cpp</first>
 											<second>sobel</second>
 										</first>
-										<second>66</second>
+										<second>62</second>
 									</item>
 								</second>
 							</item>
@@ -1287,10 +1287,10 @@
 					<Obj>
 						<type>0</type>
 						<id>39</id>
-						<name>mul_ln66</name>
+						<name>mul_ln62</name>
 						<fileName>../source/sobel_base.cpp</fileName>
 						<fileDirectory>E:\robot\project\FPGA\finial_product\sobel_hls\sobel_opt</fileDirectory>
-						<lineNumber>66</lineNumber>
+						<lineNumber>62</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
 						<inlineStackInfo>
@@ -1306,7 +1306,7 @@
 											<first>../source/sobel_base.cpp</first>
 											<second>sobel</second>
 										</first>
-										<second>66</second>
+										<second>62</second>
 									</item>
 								</second>
 							</item>
@@ -1344,10 +1344,10 @@
 					<Obj>
 						<type>0</type>
 						<id>40</id>
-						<name>_ln66</name>
+						<name>_ln62</name>
 						<fileName>../source/sobel_base.cpp</fileName>
 						<fileDirectory>E:\robot\project\FPGA\finial_product\sobel_hls\sobel_opt</fileDirectory>
-						<lineNumber>66</lineNumber>
+						<lineNumber>62</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
 						<inlineStackInfo>
@@ -1363,7 +1363,7 @@
 											<first>../source/sobel_base.cpp</first>
 											<second>sobel</second>
 										</first>
-										<second>66</second>
+										<second>62</second>
 									</item>
 								</second>
 							</item>
@@ -1409,10 +1409,10 @@
 					<Obj>
 						<type>0</type>
 						<id>41</id>
-						<name>_ln102</name>
+						<name>_ln125</name>
 						<fileName>../source/sobel_base.cpp</fileName>
 						<fileDirectory>E:\robot\project\FPGA\finial_product\sobel_hls\sobel_opt</fileDirectory>
-						<lineNumber>102</lineNumber>
+						<lineNumber>125</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
 						<inlineStackInfo>
@@ -1428,7 +1428,7 @@
 											<first>../source/sobel_base.cpp</first>
 											<second>sobel</second>
 										</first>
-										<second>102</second>
+										<second>125</second>
 									</item>
 								</second>
 							</item>
@@ -1685,7 +1685,7 @@
 					<Obj>
 						<type>2</type>
 						<id>97</id>
-						<name>sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2</name>
+						<name>sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -1709,7 +1709,7 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2&gt;</content>
+				<content>&lt;constant:sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2&gt;</content>
 			</item>
 		</consts>
 		<blocks class_id="17" tracking_level="0" version="0">
@@ -2130,8 +2130,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>35</mMinLatency>
-			<mMaxLatency>8294426</mMaxLatency>
+			<mMinLatency>36</mMinLatency>
+			<mMaxLatency>8294427</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>

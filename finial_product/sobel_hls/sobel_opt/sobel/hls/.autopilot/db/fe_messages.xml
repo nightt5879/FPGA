@@ -32,47 +32,47 @@
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="directive:1:9" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="directive" ARG_PragmaFunction="sobel" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=sobel" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/sobel_base.cpp:68:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/sobel_base.cpp:91:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="sobel" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=src depth=921600" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/sobel_base.cpp:69:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/sobel_base.cpp:92:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="sobel" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=dst depth=917604" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/sobel_base.cpp:70:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/sobel_base.cpp:93:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="sobel" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=rows bundle=CTRL" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/sobel_base.cpp:71:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/sobel_base.cpp:94:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="sobel" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=cols bundle=CTRL" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/sobel_base.cpp:72:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/sobel_base.cpp:95:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="sobel" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=return bundle=CTRL" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/sobel_base.cpp:79:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/sobel_base.cpp:102:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="sobel" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=1 max=720" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/sobel_base.cpp:82:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/sobel_base.cpp:105:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="sobel" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=1 max=1280" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../source/sobel_base.cpp:53:0" msg_body="Inlining function 'Gradient_X(unsigned char (*) [3])' into 'sobel3x3_kernel(unsigned char (*) [3])'">
-        <args Callee="Gradient_X(unsigned char (*) [3])" Callee-DebugLoc="File ../source/sobel_base.cpp Line 9 Column 0" Caller="sobel3x3_kernel(unsigned char (*) [3])" Caller-DebugLoc="File ../source/sobel_base.cpp Line 53 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../source/sobel_base.cpp:49:0" msg_body="Inlining function 'Gradient_X(unsigned char (*) [3])' into 'sobel3x3_kernel(unsigned char (*) [3])'">
+        <args Callee="Gradient_X(unsigned char (*) [3])" Callee-DebugLoc="File ../source/sobel_base.cpp Line 9 Column 0" Caller="sobel3x3_kernel(unsigned char (*) [3])" Caller-DebugLoc="File ../source/sobel_base.cpp Line 49 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../source/sobel_base.cpp:53:0" msg_body="Inlining function 'Gradient_Y(unsigned char (*) [3])' into 'sobel3x3_kernel(unsigned char (*) [3])'">
-        <args Callee="Gradient_Y(unsigned char (*) [3])" Callee-DebugLoc="File ../source/sobel_base.cpp Line 31 Column 0" Caller="sobel3x3_kernel(unsigned char (*) [3])" Caller-DebugLoc="File ../source/sobel_base.cpp Line 53 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../source/sobel_base.cpp:49:0" msg_body="Inlining function 'Gradient_Y(unsigned char (*) [3])' into 'sobel3x3_kernel(unsigned char (*) [3])'">
+        <args Callee="Gradient_Y(unsigned char (*) [3])" Callee-DebugLoc="File ../source/sobel_base.cpp Line 29 Column 0" Caller="sobel3x3_kernel(unsigned char (*) [3])" Caller-DebugLoc="File ../source/sobel_base.cpp Line 49 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../source/sobel_base.cpp:67:0" msg_body="Inlining function 'sobel3x3_kernel(unsigned char (*) [3])' into 'sobel(unsigned char*, unsigned char*, int, int)'">
-        <args Callee="sobel3x3_kernel(unsigned char (*) [3])" Callee-DebugLoc="File ../source/sobel_base.cpp Line 53 Column 0" Caller="sobel(unsigned char*, unsigned char*, int, int)" Caller-DebugLoc="File ../source/sobel_base.cpp Line 67 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../source/sobel_base.cpp:63:0" msg_body="Inlining function 'sobel3x3_kernel(unsigned char (*) [3])' into 'sobel(unsigned char*, unsigned char*, int, int)'">
+        <args Callee="sobel3x3_kernel(unsigned char (*) [3])" Callee-DebugLoc="File ../source/sobel_base.cpp Line 49 Column 0" Caller="sobel(unsigned char*, unsigned char*, int, int)" Caller-DebugLoc="File ../source/sobel_base.cpp Line 63 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../source/sobel_base.cpp:86:24" msg_body="Loop 'VITIS_LOOP_86_3' is marked as complete unroll implied by the pipeline pragma">
-        <args LoopName="VITIS_LOOP_86_3"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../source/sobel_base.cpp:109:25" msg_body="Loop 'VITIS_LOOP_109_3' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_109_3"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../source/sobel_base.cpp:88:28" msg_body="Loop 'VITIS_LOOP_88_4' is marked as complete unroll implied by the pipeline pragma">
-        <args LoopName="VITIS_LOOP_88_4"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../source/sobel_base.cpp:111:29" msg_body="Loop 'VITIS_LOOP_111_4' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_111_4"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../source/sobel_base.cpp:67:0" msg_body="Unrolling loop 'VITIS_LOOP_86_3' (../source/sobel_base.cpp:86:24) in function 'sobel' completely with a factor of 3">
-        <args Factor="3" LoopLoc="../source/sobel_base.cpp:86:24" LoopName="VITIS_LOOP_86_3"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../source/sobel_base.cpp:63:0" msg_body="Unrolling loop 'VITIS_LOOP_109_3' (../source/sobel_base.cpp:109:25) in function 'sobel' completely with a factor of 3">
+        <args Factor="3" LoopLoc="../source/sobel_base.cpp:109:25" LoopName="VITIS_LOOP_109_3"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../source/sobel_base.cpp:67:0" msg_body="Unrolling loop 'VITIS_LOOP_88_4' (../source/sobel_base.cpp:88:28) in function 'sobel' completely with a factor of 3">
-        <args Factor="3" LoopLoc="../source/sobel_base.cpp:88:28" LoopName="VITIS_LOOP_88_4"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../source/sobel_base.cpp:63:0" msg_body="Unrolling loop 'VITIS_LOOP_111_4' (../source/sobel_base.cpp:111:29) in function 'sobel' completely with a factor of 3">
+        <args Factor="3" LoopLoc="../source/sobel_base.cpp:111:29" LoopName="VITIS_LOOP_111_4"/>
     </msg>
 </xilinx:hls_fe_msgs>
 

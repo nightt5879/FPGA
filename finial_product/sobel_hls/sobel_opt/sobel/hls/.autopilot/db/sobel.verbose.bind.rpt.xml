@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'sobel'" level="0">
-<item name = "Date">Sun Dec 29 09:48:54 2024
+<item name = "Date">Tue Dec 31 10:15:05 2024
 </item>
 <item name = "Version">2024.1 (Build 5069499 on May 21 2024)</item>
 <item name = "Project">sobel</item>
@@ -24,14 +24,14 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">35, 8294426, 0.350 us, 82.944 ms, 36, 8294427, no</column>
+<column name="">36, 8294427, 0.360 us, 82.944 ms, 37, 8294428, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94">sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2, 31, 8294422, 0.310 us, 82.944 ms, 18, 8294409, loop auto-rewind stp(delay=0 clock cycles(s))</column>
+<column name="grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94">sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2, 32, 8294423, 0.320 us, 82.944 ms, 18, 8294409, loop auto-rewind stp(delay=0 clock cycles(s))</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

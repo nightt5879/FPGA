@@ -3,8 +3,8 @@
     "basicblocks": 13,
     "calls": "",
     "file": "sobel_base.cpp",
-    "fileloc": 66,
-    "instructions": 108,
+    "fileloc": 62,
+    "instructions": 110,
     "loads": {
       "L": 8,
       "T": 1
@@ -14,6 +14,6 @@
       "L": 1,
       "T": 1
     },
-    "total_instructions": 108
+    "total_instructions": 110
   }
 }

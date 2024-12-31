@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'sobel'" level="0">
-<item name = "Date">Sun Dec 29 09:48:54 2024
+<item name = "Date">Tue Dec 31 10:15:05 2024
 </item>
 <item name = "Version">2024.1 (Build 5069499 on May 21 2024)</item>
 <item name = "Project">sobel</item>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">35, 8294426, 0.350 us, 82.944 ms, 36, 8294427, no</column>
+<column name="">36, 8294427, 0.360 us, 82.944 ms, 37, 8294428, no</column>
 </table>
 </item>
 <item name = "Detail">

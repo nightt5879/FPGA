@@ -23,23 +23,23 @@ E:\robot\project\FPGA\finial_product\sobel_hls\sobel_opt\sobel\hls\.autopilot\db
       ^~~
       VITIS_LOOP_1247_1: 
 E:\robot\project\FPGA\finial_product\sobel_hls\sobel_opt\sobel\hls\.autopilot\db\sobel_base.pp.0.cpp:4081:7: note: FIX-IT applied suggested code changes
-E:\robot\project\FPGA\finial_product\sobel_hls\sobel_opt\sobel\hls\.autopilot\db\sobel_base.pp.0.cpp:31853:3: warning: Added loop label VITIS_LOOP_77_1:   [xilinx-label-all-loops]
+E:\robot\project\FPGA\finial_product\sobel_hls\sobel_opt\sobel\hls\.autopilot\db\sobel_base.pp.0.cpp:31850:3: warning: Added loop label VITIS_LOOP_100_1:   [xilinx-label-all-loops]
   for(row = 1; row < rows-1; row++)
   ^~~
-  VITIS_LOOP_77_1: 
-E:\robot\project\FPGA\finial_product\sobel_hls\sobel_opt\sobel\hls\.autopilot\db\sobel_base.pp.0.cpp:31853:3: note: FIX-IT applied suggested code changes
-E:\robot\project\FPGA\finial_product\sobel_hls\sobel_opt\sobel\hls\.autopilot\db\sobel_base.pp.0.cpp:31856:2: warning: Added loop label VITIS_LOOP_80_2:   [xilinx-label-all-loops]
+  VITIS_LOOP_100_1: 
+E:\robot\project\FPGA\finial_product\sobel_hls\sobel_opt\sobel\hls\.autopilot\db\sobel_base.pp.0.cpp:31850:3: note: FIX-IT applied suggested code changes
+E:\robot\project\FPGA\finial_product\sobel_hls\sobel_opt\sobel\hls\.autopilot\db\sobel_base.pp.0.cpp:31853:2: warning: Added loop label VITIS_LOOP_103_2:   [xilinx-label-all-loops]
  for(col = 1; col < cols-1; col++)
  ^~~
- VITIS_LOOP_80_2: 
-E:\robot\project\FPGA\finial_product\sobel_hls\sobel_opt\sobel\hls\.autopilot\db\sobel_base.pp.0.cpp:31856:2: note: FIX-IT applied suggested code changes
-E:\robot\project\FPGA\finial_product\sobel_hls\sobel_opt\sobel\hls\.autopilot\db\sobel_base.pp.0.cpp:31862:7: warning: Added loop label VITIS_LOOP_86_3:   [xilinx-label-all-loops]
+ VITIS_LOOP_103_2: 
+E:\robot\project\FPGA\finial_product\sobel_hls\sobel_opt\sobel\hls\.autopilot\db\sobel_base.pp.0.cpp:31853:2: note: FIX-IT applied suggested code changes
+E:\robot\project\FPGA\finial_product\sobel_hls\sobel_opt\sobel\hls\.autopilot\db\sobel_base.pp.0.cpp:31859:7: warning: Added loop label VITIS_LOOP_109_3:   [xilinx-label-all-loops]
       for(int i=0; i<3; i++)
       ^~~
-      VITIS_LOOP_86_3: 
-E:\robot\project\FPGA\finial_product\sobel_hls\sobel_opt\sobel\hls\.autopilot\db\sobel_base.pp.0.cpp:31862:7: note: FIX-IT applied suggested code changes
-E:\robot\project\FPGA\finial_product\sobel_hls\sobel_opt\sobel\hls\.autopilot\db\sobel_base.pp.0.cpp:31864:11: warning: Added loop label VITIS_LOOP_88_4:   [xilinx-label-all-loops]
+      VITIS_LOOP_109_3: 
+E:\robot\project\FPGA\finial_product\sobel_hls\sobel_opt\sobel\hls\.autopilot\db\sobel_base.pp.0.cpp:31859:7: note: FIX-IT applied suggested code changes
+E:\robot\project\FPGA\finial_product\sobel_hls\sobel_opt\sobel\hls\.autopilot\db\sobel_base.pp.0.cpp:31861:11: warning: Added loop label VITIS_LOOP_111_4:   [xilinx-label-all-loops]
           for(int j=0; j<3; j++)
           ^~~
-          VITIS_LOOP_88_4: 
-E:\robot\project\FPGA\finial_product\sobel_hls\sobel_opt\sobel\hls\.autopilot\db\sobel_base.pp.0.cpp:31864:11: note: FIX-IT applied suggested code changes
+          VITIS_LOOP_111_4: 
+E:\robot\project\FPGA\finial_product\sobel_hls\sobel_opt\sobel\hls\.autopilot\db\sobel_base.pp.0.cpp:31861:11: note: FIX-IT applied suggested code changes

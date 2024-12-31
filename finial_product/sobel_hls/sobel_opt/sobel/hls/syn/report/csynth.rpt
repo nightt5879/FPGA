@@ -4,7 +4,7 @@
 == Synthesis Summary Report of 'sobel'
 ================================================================
 + General Information: 
-    * Date:           Sun Dec 29 09:48:54 2024
+    * Date:           Tue Dec 31 10:15:06 2024
     * Version:        2024.1 (Build 5069499 on May 21 2024)
     * Project:        sobel
     * Solution:       hls (Vivado IP Flow Target)
@@ -15,14 +15,14 @@
 + Performance & Resource Estimates: 
     
     PS: '+' for module; 'o' for loop; '*' for dataflow
-    +---------------------------------------------------+------+------+---------+-----------+----------+---------+--------+----------+---------+--------+-----------+-----------+-----+
-    |                      Modules                      | Issue|      | Latency |  Latency  | Iteration|         |  Trip  |          |         |        |           |           |     |
-    |                      & Loops                      | Type | Slack| (cycles)|    (ns)   |  Latency | Interval|  Count | Pipelined|  BRAM   |   DSP  |     FF    |    LUT    | URAM|
-    +---------------------------------------------------+------+------+---------+-----------+----------+---------+--------+----------+---------+--------+-----------+-----------+-----+
-    |+ sobel                                            |     -|  0.00|  8294426|  8.294e+07|         -|  8294427|       -|        no|  2 (~0%)|  8 (3%)|  3014 (2%)|  3334 (6%)|    -|
-    | + sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2  |     -|  0.00|  8294422|  8.294e+07|         -|  8294422|       -|        no|        -|  4 (1%)|  1380 (1%)|  1576 (2%)|    -|
-    |  o VITIS_LOOP_77_1_VITIS_LOOP_80_2                |    II|  7.30|  8294420|  8.294e+07|        30|        9|  921600|       yes|        -|       -|          -|          -|    -|
-    +---------------------------------------------------+------+------+---------+-----------+----------+---------+--------+----------+---------+--------+-----------+-----------+-----+
+    +-----------------------------------------------------+------+------+---------+-----------+----------+---------+--------+----------+---------+--------+-----------+-----------+-----+
+    |                       Modules                       | Issue|      | Latency |  Latency  | Iteration|         |  Trip  |          |         |        |           |           |     |
+    |                       & Loops                       | Type | Slack| (cycles)|    (ns)   |  Latency | Interval|  Count | Pipelined|  BRAM   |   DSP  |     FF    |    LUT    | URAM|
+    +-----------------------------------------------------+------+------+---------+-----------+----------+---------+--------+----------+---------+--------+-----------+-----------+-----+
+    |+ sobel                                              |     -|  0.00|  8294427|  8.294e+07|         -|  8294428|       -|        no|  2 (~0%)|  8 (3%)|  3023 (2%)|  3390 (6%)|    -|
+    | + sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2  |     -|  0.00|  8294423|  8.294e+07|         -|  8294423|       -|        no|        -|  4 (1%)|  1389 (1%)|  1632 (3%)|    -|
+    |  o VITIS_LOOP_100_1_VITIS_LOOP_103_2                |    II|  7.30|  8294421|  8.294e+07|        31|        9|  921600|       yes|        -|       -|          -|          -|    -|
+    +-----------------------------------------------------+------+------+---------+-----------+----------+---------+--------+----------+---------+--------+-----------+-----------+-----+
 
 
 ================================================================
@@ -104,82 +104,82 @@
  Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings.
 
 * Inferred Burst Summary
-+--------------+-----------+----------+-------+-----------------+--------------------------------+
-| HW Interface | Direction | Length   | Width | Loop            | Loop Location                  |
-+--------------+-----------+----------+-------+-----------------+--------------------------------+
-| m_axi_gmem   | write     | variable | 8     | VITIS_LOOP_80_2 | ../source/sobel_base.cpp:80:19 |
-| m_axi_gmem   | read      | 3        | 8     |                 |                                |
-+--------------+-----------+----------+-------+-----------------+--------------------------------+
++--------------+-----------+----------+-------+------------------+---------------------------------+
+| HW Interface | Direction | Length   | Width | Loop             | Loop Location                   |
++--------------+-----------+----------+-------+------------------+---------------------------------+
+| m_axi_gmem   | write     | variable | 8     | VITIS_LOOP_103_2 | ../source/sobel_base.cpp:103:20 |
+| m_axi_gmem   | read      | 3        | 8     |                  |                                 |
++--------------+-----------+----------+-------+------------------+---------------------------------+
 
 * All M_AXI Variable Accesses
-+--------------+----------+--------------------------------+-----------+--------------+----------+-----------------+--------------------------------+------------+------------------------------------------------------------------------------------------------------+
-| HW Interface | Variable | Access Location                | Direction | Burst Status | Length   | Loop            | Loop Location                  | Resolution | Problem                                                                                              |
-+--------------+----------+--------------------------------+-----------+--------------+----------+-----------------+--------------------------------+------------+------------------------------------------------------------------------------------------------------+
-| m_axi_gmem   | src      | ../source/sobel_base.cpp:91:37 | read      | Widen Fail   |          | VITIS_LOOP_88_4 | ../source/sobel_base.cpp:88:28 | 214-353    | Could not widen since type i8 size is greater than or equal to the max_widen_bitwidth threshold of 0 |
-| m_axi_gmem   | src      | ../source/sobel_base.cpp:91:37 | read      | Fail         |          | VITIS_LOOP_86_3 | ../source/sobel_base.cpp:86:24 | 214-230    | Stride is incompatible                                                                               |
-| m_axi_gmem   | src      | ../source/sobel_base.cpp:91:37 | read      | Inferred     | 3        | VITIS_LOOP_88_4 | ../source/sobel_base.cpp:88:28 |            |                                                                                                      |
-| m_axi_gmem   | dst      | ../source/sobel_base.cpp:96:36 | write     | Widen Fail   |          | VITIS_LOOP_80_2 | ../source/sobel_base.cpp:80:19 | 214-353    | Could not widen since type i8 size is greater than or equal to the max_widen_bitwidth threshold of 0 |
-| m_axi_gmem   | dst      | ../source/sobel_base.cpp:96:36 | write     | Fail         |          | VITIS_LOOP_77_1 | ../source/sobel_base.cpp:77:20 | 214-230    | Stride is incompatible                                                                               |
-| m_axi_gmem   | dst      | ../source/sobel_base.cpp:96:36 | write     | Inferred     | variable | VITIS_LOOP_80_2 | ../source/sobel_base.cpp:80:19 |            |                                                                                                      |
-+--------------+----------+--------------------------------+-----------+--------------+----------+-----------------+--------------------------------+------------+------------------------------------------------------------------------------------------------------+
++--------------+----------+---------------------------------+-----------+--------------+----------+------------------+---------------------------------+------------+------------------------------------------------------------------------------------------------------+
+| HW Interface | Variable | Access Location                 | Direction | Burst Status | Length   | Loop             | Loop Location                   | Resolution | Problem                                                                                              |
++--------------+----------+---------------------------------+-----------+--------------+----------+------------------+---------------------------------+------------+------------------------------------------------------------------------------------------------------+
+| m_axi_gmem   | src      | ../source/sobel_base.cpp:114:37 | read      | Widen Fail   |          | VITIS_LOOP_111_4 | ../source/sobel_base.cpp:111:29 | 214-353    | Could not widen since type i8 size is greater than or equal to the max_widen_bitwidth threshold of 0 |
+| m_axi_gmem   | src      | ../source/sobel_base.cpp:114:37 | read      | Fail         |          | VITIS_LOOP_109_3 | ../source/sobel_base.cpp:109:25 | 214-230    | Stride is incompatible                                                                               |
+| m_axi_gmem   | src      | ../source/sobel_base.cpp:114:37 | read      | Inferred     | 3        | VITIS_LOOP_111_4 | ../source/sobel_base.cpp:111:29 |            |                                                                                                      |
+| m_axi_gmem   | dst      | ../source/sobel_base.cpp:119:36 | write     | Widen Fail   |          | VITIS_LOOP_103_2 | ../source/sobel_base.cpp:103:20 | 214-353    | Could not widen since type i8 size is greater than or equal to the max_widen_bitwidth threshold of 0 |
+| m_axi_gmem   | dst      | ../source/sobel_base.cpp:119:36 | write     | Fail         |          | VITIS_LOOP_100_1 | ../source/sobel_base.cpp:100:21 | 214-230    | Stride is incompatible                                                                               |
+| m_axi_gmem   | dst      | ../source/sobel_base.cpp:119:36 | write     | Inferred     | variable | VITIS_LOOP_103_2 | ../source/sobel_base.cpp:103:20 |            |                                                                                                      |
++--------------+----------+---------------------------------+-----------+--------------+----------+------------------+---------------------------------+------------+------------------------------------------------------------------------------------------------------+
 
     * Resolution URL: docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=XXX-YYY.html (replace XXX-YYY with column value)
 
 ================================================================
 == Bind Op Report
 ================================================================
-+---------------------------------------------------+-----+--------+---------------+--------+----------+---------+
-| Name                                              | DSP | Pragma | Variable      | Op     | Impl     | Latency |
-+---------------------------------------------------+-----+--------+---------------+--------+----------+---------+
-| + sobel                                           | 8   |        |               |        |          |         |
-|   sub_fu_112_p2                                   |     |        | sub           | add    | fabric   | 0       |
-|   sub2_fu_118_p2                                  |     |        | sub2          | add    | fabric   | 0       |
-|   icmp_fu_134_p2                                  |     |        | icmp          | setgt  | auto     | 0       |
-|   add_ln77_fu_144_p2                              |     |        | add_ln77      | add    | fabric   | 0       |
-|   empty_fu_150_p3                                 |     |        | empty         | select | auto_sel | 0       |
-|   icmp17_fu_168_p2                                |     |        | icmp17        | setgt  | auto     | 0       |
-|   add_ln77_1_fu_174_p2                            |     |        | add_ln77_1    | add    | fabric   | 0       |
-|   select_ln77_fu_180_p3                           |     |        | select_ln77   | select | auto_sel | 0       |
-|   add_ln77_2_fu_188_p2                            |     |        | add_ln77_2    | add    | fabric   | 0       |
-|   select_ln77_1_fu_194_p3                         |     |        | select_ln77_1 | select | auto_sel | 0       |
-|   mul_32ns_32ns_64_2_1_U12                        | 4   |        | mul_ln66      | mul    | auto     | 1       |
-|  + sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2 | 4   |        |               |        |          |         |
-|    icmp_ln77_fu_282_p2                            |     |        | icmp_ln77     | seteq  | auto     | 0       |
-|    icmp_ln80_fu_294_p2                            |     |        | icmp_ln80     | setlt  | auto     | 0       |
-|    add_ln77_fu_331_p2                             |     |        | add_ln77      | add    | fabric   | 0       |
-|    xor_ln77_fu_299_p2                             |     |        | xor_ln77      | xor    | auto     | 0       |
-|    or_ln77_fu_305_p2                              |     |        | or_ln77       | or     | auto     | 0       |
-|    select_ln77_fu_377_p3                          |     |        | select_ln77   | select | auto_sel | 0       |
-|    add_ln77_1_fu_311_p2                           |     |        | add_ln77_1    | add    | fabric   | 0       |
-|    select_ln77_1_fu_317_p3                        |     |        | select_ln77_1 | select | auto_sel | 0       |
-|    mul_31ns_32s_63_2_1_U1                         | 4   |        | mul_ln77      | mul    | auto     | 1       |
-|    add_ln77_2_fu_387_p2                           |     |        | add_ln77_2    | add    | fabric   | 0       |
-|    add_ln86_2_fu_369_p2                           |     |        | add_ln86_2    | add    | fabric   | 0       |
-|    empty_20_fu_436_p2                             |     |        | empty_20      | add    | fabric   | 0       |
-|    empty_22_fu_447_p2                             |     |        | empty_22      | add    | fabric   | 0       |
-|    empty_23_fu_454_p2                             |     |        | empty_23      | add    | fabric   | 0       |
-|    S00_fu_509_p2                                  |     |        | S00           | sub    | fabric   | 0       |
-|    icmp_ln23_fu_596_p2                            |     |        | icmp_ln23     | setgt  | auto     | 0       |
-|    xor_ln27_fu_606_p2                             |     |        | xor_ln27      | xor    | auto     | 0       |
-|    select_ln27_fu_612_p3                          |     |        | select_ln27   | select | auto_sel | 0       |
-|    or_ln27_fu_620_p2                              |     |        | or_ln27       | or     | auto     | 0       |
-|    g_x_fu_626_p3                                  |     |        | g_x           | select | auto_sel | 0       |
-|    add_ln34_1_fu_542_p2                           |     |        | add_ln34_1    | add    | fabric   | 0       |
-|    add_ln34_fu_552_p2                             |     |        | add_ln34      | add    | fabric   | 0       |
-|    add_ln39_fu_654_p2                             |     |        | add_ln39      | add    | fabric   | 0       |
-|    icmp_ln45_fu_688_p2                            |     |        | icmp_ln45     | setgt  | auto     | 0       |
-|    xor_ln49_fu_697_p2                             |     |        | xor_ln49      | xor    | auto     | 0       |
-|    select_ln49_fu_702_p3                          |     |        | select_ln49   | select | auto_sel | 0       |
-|    or_ln49_fu_710_p2                              |     |        | or_ln49       | or     | auto     | 0       |
-|    g_y_fu_714_p3                                  |     |        | g_y           | select | auto_sel | 0       |
-|    sobel_1_fu_729_p2                              |     |        | sobel_1       | add    | fabric   | 0       |
-|    temp_fu_734_p2                                 |     |        | temp          | add    | fabric   | 0       |
-|    sobel_2_fu_748_p3                              |     |        | sobel_2       | select | auto_sel | 0       |
-|    add_ln80_fu_325_p2                             |     |        | add_ln80      | add    | fabric   | 0       |
-|    select_ln80_fu_340_p3                          |     |        | select_ln80   | select | auto_sel | 0       |
-|    add_ln80_1_fu_422_p2                           |     |        | add_ln80_1    | add    | fabric   | 0       |
-|    icmp_ln80_1_fu_350_p2                          |     |        | icmp_ln80_1   | setlt  | auto     | 0       |
-+---------------------------------------------------+-----+--------+---------------+--------+----------+---------+
++-----------------------------------------------------+-----+--------+----------------+--------+----------+---------+
+| Name                                                | DSP | Pragma | Variable       | Op     | Impl     | Latency |
++-----------------------------------------------------+-----+--------+----------------+--------+----------+---------+
+| + sobel                                             | 8   |        |                |        |          |         |
+|   sub_fu_112_p2                                     |     |        | sub            | add    | fabric   | 0       |
+|   sub2_fu_118_p2                                    |     |        | sub2           | add    | fabric   | 0       |
+|   icmp_fu_134_p2                                    |     |        | icmp           | setgt  | auto     | 0       |
+|   add_ln100_fu_144_p2                               |     |        | add_ln100      | add    | fabric   | 0       |
+|   empty_fu_150_p3                                   |     |        | empty          | select | auto_sel | 0       |
+|   icmp17_fu_168_p2                                  |     |        | icmp17         | setgt  | auto     | 0       |
+|   add_ln100_1_fu_174_p2                             |     |        | add_ln100_1    | add    | fabric   | 0       |
+|   select_ln100_fu_180_p3                            |     |        | select_ln100   | select | auto_sel | 0       |
+|   add_ln100_2_fu_188_p2                             |     |        | add_ln100_2    | add    | fabric   | 0       |
+|   select_ln100_1_fu_194_p3                          |     |        | select_ln100_1 | select | auto_sel | 0       |
+|   mul_32ns_32ns_64_2_1_U12                          | 4   |        | mul_ln62       | mul    | auto     | 1       |
+|  + sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2 | 4   |        |                |        |          |         |
+|    icmp_ln100_fu_282_p2                             |     |        | icmp_ln100     | seteq  | auto     | 0       |
+|    icmp_ln103_fu_294_p2                             |     |        | icmp_ln103     | setlt  | auto     | 0       |
+|    add_ln100_fu_331_p2                              |     |        | add_ln100      | add    | fabric   | 0       |
+|    xor_ln100_fu_299_p2                              |     |        | xor_ln100      | xor    | auto     | 0       |
+|    or_ln100_fu_305_p2                               |     |        | or_ln100       | or     | auto     | 0       |
+|    select_ln100_fu_377_p3                           |     |        | select_ln100   | select | auto_sel | 0       |
+|    add_ln100_1_fu_311_p2                            |     |        | add_ln100_1    | add    | fabric   | 0       |
+|    select_ln100_1_fu_317_p3                         |     |        | select_ln100_1 | select | auto_sel | 0       |
+|    mul_31ns_32s_63_2_1_U1                           | 4   |        | mul_ln100      | mul    | auto     | 1       |
+|    add_ln100_2_fu_387_p2                            |     |        | add_ln100_2    | add    | fabric   | 0       |
+|    add_ln109_2_fu_369_p2                            |     |        | add_ln109_2    | add    | fabric   | 0       |
+|    empty_20_fu_436_p2                               |     |        | empty_20       | add    | fabric   | 0       |
+|    empty_22_fu_447_p2                               |     |        | empty_22       | add    | fabric   | 0       |
+|    empty_23_fu_454_p2                               |     |        | empty_23       | add    | fabric   | 0       |
+|    S00_fu_509_p2                                    |     |        | S00            | sub    | fabric   | 0       |
+|    neg_fu_582_p2                                    |     |        | neg            | sub    | fabric   | 0       |
+|    abscond_fu_588_p2                                |     |        | abscond        | setgt  | auto     | 0       |
+|    out_pix_3_fu_594_p3                              |     |        | out_pix_3      | select | auto_sel | 0       |
+|    icmp_ln21_fu_662_p2                              |     |        | icmp_ln21      | setne  | auto     | 0       |
+|    g_x_fu_667_p3                                    |     |        | g_x            | select | auto_sel | 0       |
+|    add_ln32_1_fu_542_p2                             |     |        | add_ln32_1     | add    | fabric   | 0       |
+|    add_ln32_fu_552_p2                               |     |        | add_ln32       | add    | fabric   | 0       |
+|    add_ln37_fu_636_p2                               |     |        | add_ln37       | add    | fabric   | 0       |
+|    neg2_fu_674_p2                                   |     |        | neg2           | sub    | fabric   | 0       |
+|    abscond3_fu_656_p2                               |     |        | abscond3       | setgt  | auto     | 0       |
+|    out_pix_6_fu_679_p3                              |     |        | out_pix_6      | select | auto_sel | 0       |
+|    icmp_ln41_fu_699_p2                              |     |        | icmp_ln41      | setne  | auto     | 0       |
+|    g_y_fu_705_p3                                    |     |        | g_y            | select | auto_sel | 0       |
+|    sobel_1_fu_721_p2                                |     |        | sobel_1        | add    | fabric   | 0       |
+|    temp_fu_727_p2                                   |     |        | temp           | add    | fabric   | 0       |
+|    sobel_2_fu_741_p3                                |     |        | sobel_2        | select | auto_sel | 0       |
+|    add_ln103_fu_325_p2                              |     |        | add_ln103      | add    | fabric   | 0       |
+|    select_ln103_fu_340_p3                           |     |        | select_ln103   | select | auto_sel | 0       |
+|    add_ln103_1_fu_422_p2                            |     |        | add_ln103_1    | add    | fabric   | 0       |
+|    icmp_ln103_1_fu_350_p2                           |     |        | icmp_ln103_1   | setlt  | auto     | 0       |
++-----------------------------------------------------+-----+--------+----------------+--------+----------+---------+
 
 
 ================================================================
@@ -202,13 +202,13 @@
 +----------------+-----------------------------------+----------------------------------------------+
 | Type           | Options                           | Location                                     |
 +----------------+-----------------------------------+----------------------------------------------+
-| interface      | m_axi port=src depth=921600       | ../source/sobel_base.cpp:68 in sobel, src    |
-| interface      | m_axi port=dst depth=917604       | ../source/sobel_base.cpp:69 in sobel, dst    |
-| interface      | s_axilite port=rows bundle=CTRL   | ../source/sobel_base.cpp:70 in sobel, rows   |
-| interface      | s_axilite port=cols bundle=CTRL   | ../source/sobel_base.cpp:71 in sobel, cols   |
-| interface      | s_axilite port=return bundle=CTRL | ../source/sobel_base.cpp:72 in sobel, return |
-| loop_tripcount | min=1 max=720                     | ../source/sobel_base.cpp:79 in sobel         |
-| loop_tripcount | min=1 max=1280                    | ../source/sobel_base.cpp:82 in sobel         |
+| interface      | m_axi port=src depth=921600       | ../source/sobel_base.cpp:91 in sobel, src    |
+| interface      | m_axi port=dst depth=917604       | ../source/sobel_base.cpp:92 in sobel, dst    |
+| interface      | s_axilite port=rows bundle=CTRL   | ../source/sobel_base.cpp:93 in sobel, rows   |
+| interface      | s_axilite port=cols bundle=CTRL   | ../source/sobel_base.cpp:94 in sobel, cols   |
+| interface      | s_axilite port=return bundle=CTRL | ../source/sobel_base.cpp:95 in sobel, return |
+| loop_tripcount | min=1 max=720                     | ../source/sobel_base.cpp:102 in sobel        |
+| loop_tripcount | min=1 max=1280                    | ../source/sobel_base.cpp:105 in sobel        |
 +----------------+-----------------------------------+----------------------------------------------+
 
 

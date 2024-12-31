@@ -6,7 +6,7 @@
 
 `timescale 1 ns / 1 ps 
 
-(* CORE_GENERATION_INFO="sobel_sobel,hls_ip_2024_1,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z020-clg400-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=7.300000,HLS_SYN_LAT=2073626,HLS_SYN_TPT=none,HLS_SYN_MEM=2,HLS_SYN_DSP=0,HLS_SYN_FF=3014,HLS_SYN_LUT=3334,HLS_VERSION=2024_1}" *)
+(* CORE_GENERATION_INFO="sobel_sobel,hls_ip_2024_1,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z020-clg400-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=7.300000,HLS_SYN_LAT=2073627,HLS_SYN_TPT=none,HLS_SYN_MEM=2,HLS_SYN_DSP=0,HLS_SYN_FF=3023,HLS_SYN_LUT=3390,HLS_VERSION=2024_1}" *)
 
 module sobel (
         ap_clk,
@@ -186,50 +186,50 @@ wire   [31:0] sub2_fu_118_p2;
 reg   [31:0] sub2_reg_227;
 wire   [30:0] empty_fu_150_p3;
 reg   [30:0] empty_reg_232;
-wire   [31:0] select_ln77_fu_180_p3;
-reg   [31:0] select_ln77_reg_237;
-wire   [31:0] select_ln77_1_fu_194_p3;
-reg   [31:0] select_ln77_1_reg_242;
+wire   [31:0] select_ln100_fu_180_p3;
+reg   [31:0] select_ln100_reg_237;
+wire   [31:0] select_ln100_1_fu_194_p3;
+reg   [31:0] select_ln100_1_reg_242;
 wire    ap_CS_fsm_state2;
 wire   [63:0] grp_fu_108_p2;
-reg   [63:0] mul_ln66_reg_257;
+reg   [63:0] mul_ln62_reg_257;
 wire    ap_CS_fsm_state3;
-wire    grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_ap_start;
-wire    grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_ap_done;
-wire    grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_ap_idle;
-wire    grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_ap_ready;
-wire    grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_m_axi_gmem_AWVALID;
-wire   [63:0] grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_m_axi_gmem_AWADDR;
-wire   [0:0] grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_m_axi_gmem_AWID;
-wire   [31:0] grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_m_axi_gmem_AWLEN;
-wire   [2:0] grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_m_axi_gmem_AWSIZE;
-wire   [1:0] grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_m_axi_gmem_AWBURST;
-wire   [1:0] grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_m_axi_gmem_AWLOCK;
-wire   [3:0] grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_m_axi_gmem_AWCACHE;
-wire   [2:0] grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_m_axi_gmem_AWPROT;
-wire   [3:0] grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_m_axi_gmem_AWQOS;
-wire   [3:0] grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_m_axi_gmem_AWREGION;
-wire   [0:0] grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_m_axi_gmem_AWUSER;
-wire    grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_m_axi_gmem_WVALID;
-wire   [7:0] grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_m_axi_gmem_WDATA;
-wire   [0:0] grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_m_axi_gmem_WSTRB;
-wire    grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_m_axi_gmem_WLAST;
-wire   [0:0] grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_m_axi_gmem_WID;
-wire   [0:0] grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_m_axi_gmem_WUSER;
-wire    grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_m_axi_gmem_ARVALID;
-wire   [63:0] grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_m_axi_gmem_ARADDR;
-wire   [0:0] grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_m_axi_gmem_ARID;
-wire   [31:0] grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_m_axi_gmem_ARLEN;
-wire   [2:0] grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_m_axi_gmem_ARSIZE;
-wire   [1:0] grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_m_axi_gmem_ARBURST;
-wire   [1:0] grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_m_axi_gmem_ARLOCK;
-wire   [3:0] grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_m_axi_gmem_ARCACHE;
-wire   [2:0] grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_m_axi_gmem_ARPROT;
-wire   [3:0] grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_m_axi_gmem_ARQOS;
-wire   [3:0] grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_m_axi_gmem_ARREGION;
-wire   [0:0] grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_m_axi_gmem_ARUSER;
-wire    grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_m_axi_gmem_RREADY;
-wire    grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_m_axi_gmem_BREADY;
+wire    grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_ap_start;
+wire    grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_ap_done;
+wire    grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_ap_idle;
+wire    grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_ap_ready;
+wire    grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_m_axi_gmem_AWVALID;
+wire   [63:0] grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_m_axi_gmem_AWADDR;
+wire   [0:0] grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_m_axi_gmem_AWID;
+wire   [31:0] grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_m_axi_gmem_AWLEN;
+wire   [2:0] grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_m_axi_gmem_AWSIZE;
+wire   [1:0] grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_m_axi_gmem_AWBURST;
+wire   [1:0] grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_m_axi_gmem_AWLOCK;
+wire   [3:0] grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_m_axi_gmem_AWCACHE;
+wire   [2:0] grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_m_axi_gmem_AWPROT;
+wire   [3:0] grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_m_axi_gmem_AWQOS;
+wire   [3:0] grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_m_axi_gmem_AWREGION;
+wire   [0:0] grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_m_axi_gmem_AWUSER;
+wire    grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_m_axi_gmem_WVALID;
+wire   [7:0] grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_m_axi_gmem_WDATA;
+wire   [0:0] grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_m_axi_gmem_WSTRB;
+wire    grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_m_axi_gmem_WLAST;
+wire   [0:0] grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_m_axi_gmem_WID;
+wire   [0:0] grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_m_axi_gmem_WUSER;
+wire    grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_m_axi_gmem_ARVALID;
+wire   [63:0] grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_m_axi_gmem_ARADDR;
+wire   [0:0] grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_m_axi_gmem_ARID;
+wire   [31:0] grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_m_axi_gmem_ARLEN;
+wire   [2:0] grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_m_axi_gmem_ARSIZE;
+wire   [1:0] grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_m_axi_gmem_ARBURST;
+wire   [1:0] grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_m_axi_gmem_ARLOCK;
+wire   [3:0] grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_m_axi_gmem_ARCACHE;
+wire   [2:0] grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_m_axi_gmem_ARPROT;
+wire   [3:0] grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_m_axi_gmem_ARQOS;
+wire   [3:0] grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_m_axi_gmem_ARREGION;
+wire   [0:0] grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_m_axi_gmem_ARUSER;
+wire    grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_m_axi_gmem_RREADY;
+wire    grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_m_axi_gmem_BREADY;
 reg    gmem_AWVALID;
 wire    gmem_AWREADY;
 reg    gmem_WVALID;
@@ -242,7 +242,7 @@ wire   [7:0] gmem_RDATA;
 wire   [10:0] gmem_RFIFONUM;
 wire    gmem_BVALID;
 reg    gmem_BREADY;
-reg    grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_ap_start_reg;
+reg    grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_ap_start_reg;
 reg   [4:0] ap_NS_fsm;
 wire    ap_NS_fsm_state4;
 wire    ap_CS_fsm_state4;
@@ -250,14 +250,14 @@ wire    ap_CS_fsm_state5;
 wire   [31:0] grp_fu_108_p0;
 wire   [31:0] grp_fu_108_p1;
 wire   [30:0] tmp_fu_124_p4;
-wire   [30:0] trunc_ln77_fu_140_p1;
+wire   [30:0] trunc_ln100_fu_140_p1;
 wire   [0:0] icmp_fu_134_p2;
-wire   [30:0] add_ln77_fu_144_p2;
+wire   [30:0] add_ln100_fu_144_p2;
 wire   [31:0] sub_fu_112_p2;
-wire   [30:0] tmp_5_fu_158_p4;
+wire   [30:0] tmp_3_fu_158_p4;
 wire   [0:0] icmp17_fu_168_p2;
-wire   [31:0] add_ln77_1_fu_174_p2;
-wire   [31:0] add_ln77_2_fu_188_p2;
+wire   [31:0] add_ln100_1_fu_174_p2;
+wire   [31:0] add_ln100_2_fu_188_p2;
 reg    ap_ST_fsm_state1_blk;
 wire    ap_ST_fsm_state2_blk;
 wire    ap_ST_fsm_state3_blk;
@@ -270,51 +270,51 @@ wire    ap_ce_reg;
 // power-on initialization
 initial begin
 #0 ap_CS_fsm = 5'd1;
-#0 grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_ap_start_reg = 1'b0;
+#0 grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_ap_start_reg = 1'b0;
 end
 
-sobel_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2 grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94(
+sobel_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2 grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst_n_inv),
-    .ap_start(grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_ap_start),
-    .ap_done(grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_ap_done),
-    .ap_idle(grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_ap_idle),
-    .ap_ready(grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_ap_ready),
-    .m_axi_gmem_AWVALID(grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_m_axi_gmem_AWVALID),
+    .ap_start(grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_ap_start),
+    .ap_done(grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_ap_done),
+    .ap_idle(grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_ap_idle),
+    .ap_ready(grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_ap_ready),
+    .m_axi_gmem_AWVALID(grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_m_axi_gmem_AWVALID),
     .m_axi_gmem_AWREADY(gmem_AWREADY),
-    .m_axi_gmem_AWADDR(grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_m_axi_gmem_AWADDR),
-    .m_axi_gmem_AWID(grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_m_axi_gmem_AWID),
-    .m_axi_gmem_AWLEN(grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_m_axi_gmem_AWLEN),
-    .m_axi_gmem_AWSIZE(grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_m_axi_gmem_AWSIZE),
-    .m_axi_gmem_AWBURST(grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_m_axi_gmem_AWBURST),
-    .m_axi_gmem_AWLOCK(grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_m_axi_gmem_AWLOCK),
-    .m_axi_gmem_AWCACHE(grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_m_axi_gmem_AWCACHE),
-    .m_axi_gmem_AWPROT(grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_m_axi_gmem_AWPROT),
-    .m_axi_gmem_AWQOS(grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_m_axi_gmem_AWQOS),
-    .m_axi_gmem_AWREGION(grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_m_axi_gmem_AWREGION),
-    .m_axi_gmem_AWUSER(grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_m_axi_gmem_AWUSER),
-    .m_axi_gmem_WVALID(grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_m_axi_gmem_WVALID),
+    .m_axi_gmem_AWADDR(grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_m_axi_gmem_AWADDR),
+    .m_axi_gmem_AWID(grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_m_axi_gmem_AWID),
+    .m_axi_gmem_AWLEN(grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_m_axi_gmem_AWLEN),
+    .m_axi_gmem_AWSIZE(grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_m_axi_gmem_AWSIZE),
+    .m_axi_gmem_AWBURST(grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_m_axi_gmem_AWBURST),
+    .m_axi_gmem_AWLOCK(grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_m_axi_gmem_AWLOCK),
+    .m_axi_gmem_AWCACHE(grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_m_axi_gmem_AWCACHE),
+    .m_axi_gmem_AWPROT(grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_m_axi_gmem_AWPROT),
+    .m_axi_gmem_AWQOS(grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_m_axi_gmem_AWQOS),
+    .m_axi_gmem_AWREGION(grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_m_axi_gmem_AWREGION),
+    .m_axi_gmem_AWUSER(grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_m_axi_gmem_AWUSER),
+    .m_axi_gmem_WVALID(grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_m_axi_gmem_WVALID),
     .m_axi_gmem_WREADY(gmem_WREADY),
-    .m_axi_gmem_WDATA(grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_m_axi_gmem_WDATA),
-    .m_axi_gmem_WSTRB(grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_m_axi_gmem_WSTRB),
-    .m_axi_gmem_WLAST(grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_m_axi_gmem_WLAST),
-    .m_axi_gmem_WID(grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_m_axi_gmem_WID),
-    .m_axi_gmem_WUSER(grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_m_axi_gmem_WUSER),
-    .m_axi_gmem_ARVALID(grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_m_axi_gmem_ARVALID),
+    .m_axi_gmem_WDATA(grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_m_axi_gmem_WDATA),
+    .m_axi_gmem_WSTRB(grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_m_axi_gmem_WSTRB),
+    .m_axi_gmem_WLAST(grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_m_axi_gmem_WLAST),
+    .m_axi_gmem_WID(grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_m_axi_gmem_WID),
+    .m_axi_gmem_WUSER(grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_m_axi_gmem_WUSER),
+    .m_axi_gmem_ARVALID(grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_m_axi_gmem_ARVALID),
     .m_axi_gmem_ARREADY(gmem_ARREADY),
-    .m_axi_gmem_ARADDR(grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_m_axi_gmem_ARADDR),
-    .m_axi_gmem_ARID(grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_m_axi_gmem_ARID),
-    .m_axi_gmem_ARLEN(grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_m_axi_gmem_ARLEN),
-    .m_axi_gmem_ARSIZE(grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_m_axi_gmem_ARSIZE),
-    .m_axi_gmem_ARBURST(grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_m_axi_gmem_ARBURST),
-    .m_axi_gmem_ARLOCK(grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_m_axi_gmem_ARLOCK),
-    .m_axi_gmem_ARCACHE(grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_m_axi_gmem_ARCACHE),
-    .m_axi_gmem_ARPROT(grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_m_axi_gmem_ARPROT),
-    .m_axi_gmem_ARQOS(grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_m_axi_gmem_ARQOS),
-    .m_axi_gmem_ARREGION(grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_m_axi_gmem_ARREGION),
-    .m_axi_gmem_ARUSER(grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_m_axi_gmem_ARUSER),
+    .m_axi_gmem_ARADDR(grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_m_axi_gmem_ARADDR),
+    .m_axi_gmem_ARID(grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_m_axi_gmem_ARID),
+    .m_axi_gmem_ARLEN(grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_m_axi_gmem_ARLEN),
+    .m_axi_gmem_ARSIZE(grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_m_axi_gmem_ARSIZE),
+    .m_axi_gmem_ARBURST(grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_m_axi_gmem_ARBURST),
+    .m_axi_gmem_ARLOCK(grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_m_axi_gmem_ARLOCK),
+    .m_axi_gmem_ARCACHE(grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_m_axi_gmem_ARCACHE),
+    .m_axi_gmem_ARPROT(grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_m_axi_gmem_ARPROT),
+    .m_axi_gmem_ARQOS(grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_m_axi_gmem_ARQOS),
+    .m_axi_gmem_ARREGION(grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_m_axi_gmem_ARREGION),
+    .m_axi_gmem_ARUSER(grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_m_axi_gmem_ARUSER),
     .m_axi_gmem_RVALID(gmem_RVALID),
-    .m_axi_gmem_RREADY(grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_m_axi_gmem_RREADY),
+    .m_axi_gmem_RREADY(grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_m_axi_gmem_RREADY),
     .m_axi_gmem_RDATA(gmem_RDATA),
     .m_axi_gmem_RLAST(1'b0),
     .m_axi_gmem_RID(1'd0),
@@ -322,17 +322,17 @@ sobel_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2 grp_sobel_Pipeline_VITIS_LO
     .m_axi_gmem_RUSER(1'd0),
     .m_axi_gmem_RRESP(2'd0),
     .m_axi_gmem_BVALID(gmem_BVALID),
-    .m_axi_gmem_BREADY(grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_m_axi_gmem_BREADY),
+    .m_axi_gmem_BREADY(grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_m_axi_gmem_BREADY),
     .m_axi_gmem_BRESP(2'd0),
     .m_axi_gmem_BID(1'd0),
     .m_axi_gmem_BUSER(1'd0),
-    .mul_ln66(mul_ln66_reg_257),
+    .mul_ln62(mul_ln62_reg_257),
     .cols_cast6(cols_read_reg_210),
     .src(src_read_reg_222),
     .cols_cast(cols_read_reg_210),
-    .sext_ln77(cols_read_reg_210),
+    .sext_ln100(cols_read_reg_210),
     .sub2(sub2_reg_227),
-    .zext_ln77(empty_reg_232),
+    .zext_ln100(empty_reg_232),
     .dst(dst_read_reg_217)
 );
 
@@ -443,20 +443,20 @@ gmem_m_axi_U(
     .ACLK_EN(1'b1),
     .I_CH0_ARVALID(gmem_ARVALID),
     .I_CH0_ARREADY(gmem_ARREADY),
-    .I_CH0_ARADDR(grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_m_axi_gmem_ARADDR),
-    .I_CH0_ARLEN(grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_m_axi_gmem_ARLEN),
+    .I_CH0_ARADDR(grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_m_axi_gmem_ARADDR),
+    .I_CH0_ARLEN(grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_m_axi_gmem_ARLEN),
     .I_CH0_RVALID(gmem_RVALID),
     .I_CH0_RREADY(gmem_RREADY),
     .I_CH0_RDATA(gmem_RDATA),
     .I_CH0_RFIFONUM(gmem_RFIFONUM),
     .I_CH0_AWVALID(gmem_AWVALID),
     .I_CH0_AWREADY(gmem_AWREADY),
-    .I_CH0_AWADDR(grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_m_axi_gmem_AWADDR),
-    .I_CH0_AWLEN(grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_m_axi_gmem_AWLEN),
+    .I_CH0_AWADDR(grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_m_axi_gmem_AWADDR),
+    .I_CH0_AWLEN(grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_m_axi_gmem_AWLEN),
     .I_CH0_WVALID(gmem_WVALID),
     .I_CH0_WREADY(gmem_WREADY),
-    .I_CH0_WDATA(grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_m_axi_gmem_WDATA),
-    .I_CH0_WSTRB(grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_m_axi_gmem_WSTRB),
+    .I_CH0_WDATA(grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_m_axi_gmem_WDATA),
+    .I_CH0_WSTRB(grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_m_axi_gmem_WSTRB),
     .I_CH0_BVALID(gmem_BVALID),
     .I_CH0_BREADY(gmem_BREADY)
 );
@@ -486,12 +486,12 @@ end
 
 always @ (posedge ap_clk) begin
     if (ap_rst_n_inv == 1'b1) begin
-        grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_ap_start_reg <= 1'b0;
+        grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_ap_start_reg <= 1'b0;
     end else begin
         if (((1'b1 == ap_NS_fsm_state4) & (1'b1 == ap_CS_fsm_state3))) begin
-            grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_ap_start_reg <= 1'b1;
-        end else if ((grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_ap_ready == 1'b1)) begin
-            grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_ap_start_reg <= 1'b0;
+            grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_ap_start_reg <= 1'b1;
+        end else if ((grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_ap_ready == 1'b1)) begin
+            grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_ap_start_reg <= 1'b0;
         end
     end
 end
@@ -501,8 +501,8 @@ always @ (posedge ap_clk) begin
         cols_read_reg_210 <= cols;
         dst_read_reg_217 <= dst;
         empty_reg_232 <= empty_fu_150_p3;
-        select_ln77_1_reg_242 <= select_ln77_1_fu_194_p3;
-        select_ln77_reg_237 <= select_ln77_fu_180_p3;
+        select_ln100_1_reg_242 <= select_ln100_1_fu_194_p3;
+        select_ln100_reg_237 <= select_ln100_fu_180_p3;
         src_read_reg_222 <= src;
         sub2_reg_227 <= sub2_fu_118_p2;
     end
@@ -510,7 +510,7 @@ end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state3)) begin
-        mul_ln66_reg_257 <= grp_fu_108_p2;
+        mul_ln62_reg_257 <= grp_fu_108_p2;
     end
 end
 
@@ -529,7 +529,7 @@ assign ap_ST_fsm_state3_blk = 1'b0;
 assign ap_ST_fsm_state4_blk = 1'b0;
 
 always @ (*) begin
-    if ((grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_ap_done == 1'b0)) begin
+    if ((grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_ap_done == 1'b0)) begin
         ap_ST_fsm_state5_blk = 1'b1;
     end else begin
         ap_ST_fsm_state5_blk = 1'b0;
@@ -537,7 +537,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state5) & (grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_ap_done == 1'b1))) begin
+    if (((1'b1 == ap_CS_fsm_state5) & (grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_ap_done == 1'b1))) begin
         ap_done = 1'b1;
     end else begin
         ap_done = 1'b0;
@@ -553,7 +553,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state5) & (grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_ap_done == 1'b1))) begin
+    if (((1'b1 == ap_CS_fsm_state5) & (grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_ap_done == 1'b1))) begin
         ap_ready = 1'b1;
     end else begin
         ap_ready = 1'b0;
@@ -562,7 +562,7 @@ end
 
 always @ (*) begin
     if (((1'b1 == ap_CS_fsm_state5) | (1'b1 == ap_CS_fsm_state4))) begin
-        gmem_ARVALID = grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_m_axi_gmem_ARVALID;
+        gmem_ARVALID = grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_m_axi_gmem_ARVALID;
     end else begin
         gmem_ARVALID = 1'b0;
     end
@@ -570,7 +570,7 @@ end
 
 always @ (*) begin
     if (((1'b1 == ap_CS_fsm_state5) | (1'b1 == ap_CS_fsm_state4))) begin
-        gmem_AWVALID = grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_m_axi_gmem_AWVALID;
+        gmem_AWVALID = grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_m_axi_gmem_AWVALID;
     end else begin
         gmem_AWVALID = 1'b0;
     end
@@ -578,7 +578,7 @@ end
 
 always @ (*) begin
     if (((1'b1 == ap_CS_fsm_state5) | (1'b1 == ap_CS_fsm_state4))) begin
-        gmem_BREADY = grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_m_axi_gmem_BREADY;
+        gmem_BREADY = grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_m_axi_gmem_BREADY;
     end else begin
         gmem_BREADY = 1'b0;
     end
@@ -586,7 +586,7 @@ end
 
 always @ (*) begin
     if (((1'b1 == ap_CS_fsm_state5) | (1'b1 == ap_CS_fsm_state4))) begin
-        gmem_RREADY = grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_m_axi_gmem_RREADY;
+        gmem_RREADY = grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_m_axi_gmem_RREADY;
     end else begin
         gmem_RREADY = 1'b0;
     end
@@ -594,7 +594,7 @@ end
 
 always @ (*) begin
     if (((1'b1 == ap_CS_fsm_state5) | (1'b1 == ap_CS_fsm_state4))) begin
-        gmem_WVALID = grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_m_axi_gmem_WVALID;
+        gmem_WVALID = grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_m_axi_gmem_WVALID;
     end else begin
         gmem_WVALID = 1'b0;
     end
@@ -619,7 +619,7 @@ always @ (*) begin
             ap_NS_fsm = ap_ST_fsm_state5;
         end
         ap_ST_fsm_state5 : begin
-            if (((1'b1 == ap_CS_fsm_state5) & (grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_ap_done == 1'b1))) begin
+            if (((1'b1 == ap_CS_fsm_state5) & (grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_ap_done == 1'b1))) begin
                 ap_NS_fsm = ap_ST_fsm_state1;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state5;
@@ -631,11 +631,11 @@ always @ (*) begin
     endcase
 end
 
-assign add_ln77_1_fu_174_p2 = ($signed(rows) + $signed(32'd4294967294));
+assign add_ln100_1_fu_174_p2 = ($signed(rows) + $signed(32'd4294967294));
 
-assign add_ln77_2_fu_188_p2 = ($signed(cols) + $signed(32'd4294967294));
+assign add_ln100_2_fu_188_p2 = ($signed(cols) + $signed(32'd4294967294));
 
-assign add_ln77_fu_144_p2 = ($signed(trunc_ln77_fu_140_p1) + $signed(31'd2147483647));
+assign add_ln100_fu_144_p2 = ($signed(trunc_ln100_fu_140_p1) + $signed(31'd2147483647));
 
 assign ap_CS_fsm_state1 = ap_CS_fsm[32'd0];
 
@@ -653,34 +653,34 @@ always @ (*) begin
     ap_rst_n_inv = ~ap_rst_n;
 end
 
-assign empty_fu_150_p3 = ((icmp_fu_134_p2[0:0] == 1'b1) ? add_ln77_fu_144_p2 : 31'd0);
+assign empty_fu_150_p3 = ((icmp_fu_134_p2[0:0] == 1'b1) ? add_ln100_fu_144_p2 : 31'd0);
 
 assign grp_fu_108_p0 = grp_fu_108_p00;
 
-assign grp_fu_108_p00 = select_ln77_reg_237;
+assign grp_fu_108_p00 = select_ln100_reg_237;
 
 assign grp_fu_108_p1 = grp_fu_108_p10;
 
-assign grp_fu_108_p10 = select_ln77_1_reg_242;
+assign grp_fu_108_p10 = select_ln100_1_reg_242;
 
-assign grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_ap_start = grp_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2_fu_94_ap_start_reg;
+assign grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_ap_start = grp_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2_fu_94_ap_start_reg;
 
-assign icmp17_fu_168_p2 = (($signed(tmp_5_fu_158_p4) > $signed(31'd0)) ? 1'b1 : 1'b0);
+assign icmp17_fu_168_p2 = (($signed(tmp_3_fu_158_p4) > $signed(31'd0)) ? 1'b1 : 1'b0);
 
 assign icmp_fu_134_p2 = (($signed(tmp_fu_124_p4) > $signed(31'd0)) ? 1'b1 : 1'b0);
 
-assign select_ln77_1_fu_194_p3 = ((icmp_fu_134_p2[0:0] == 1'b1) ? add_ln77_2_fu_188_p2 : 32'd0);
+assign select_ln100_1_fu_194_p3 = ((icmp_fu_134_p2[0:0] == 1'b1) ? add_ln100_2_fu_188_p2 : 32'd0);
 
-assign select_ln77_fu_180_p3 = ((icmp17_fu_168_p2[0:0] == 1'b1) ? add_ln77_1_fu_174_p2 : 32'd0);
+assign select_ln100_fu_180_p3 = ((icmp17_fu_168_p2[0:0] == 1'b1) ? add_ln100_1_fu_174_p2 : 32'd0);
 
 assign sub2_fu_118_p2 = ($signed(cols) + $signed(32'd4294967295));
 
 assign sub_fu_112_p2 = ($signed(rows) + $signed(32'd4294967295));
 
-assign tmp_5_fu_158_p4 = {{sub_fu_112_p2[31:1]}};
+assign tmp_3_fu_158_p4 = {{sub_fu_112_p2[31:1]}};
 
 assign tmp_fu_124_p4 = {{sub2_fu_118_p2[31:1]}};
 
-assign trunc_ln77_fu_140_p1 = sub2_fu_118_p2[30:0];
+assign trunc_ln100_fu_140_p1 = sub2_fu_118_p2[30:0];
 
 endmodule //sobel

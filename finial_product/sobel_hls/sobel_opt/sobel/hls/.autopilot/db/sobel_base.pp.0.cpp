@@ -31788,11 +31788,9 @@ static PIXEL Gradient_X(PIXEL WB[3][3])
  out_pix = out_pix + A00;
  out_pix = out_pix - S00;
 
- if(out_pix < 0)
- {
-  out_pix = 0;
- }
- else if(out_pix>255)
+    out_pix = abs(out_pix);
+
+ if(out_pix>255)
  {
   out_pix = 255;
  }
@@ -31810,11 +31808,9 @@ static PIXEL Gradient_Y(PIXEL WB[3][3])
  out_pix = out_pix + A00;
  out_pix = out_pix - S00;
 
- if(out_pix < 0)
- {
-  out_pix = 0;
- }
- else if(out_pix > 255)
+    out_pix = abs(out_pix);
+
+ if(out_pix > 255)
  {
   out_pix = 255;
  }
@@ -31839,8 +31835,9 @@ __attribute__((sdx_kernel("sobel", 0))) void sobel(PIXEL* src, PIXEL* dst, int r
 {
 #line 1 "directive"
 #pragma HLSDIRECTIVE TOP name=sobel
-# 67 "../source/sobel_base.cpp"
+# 63 "../source/sobel_base.cpp"
 
+# 91 "../source/sobel_base.cpp"
 #pragma HLS INTERFACE m_axi port=src depth=921600
 #pragma HLS INTERFACE m_axi port=dst depth=917604
 #pragma HLS INTERFACE s_axilite port=rows bundle=CTRL
@@ -31850,18 +31847,18 @@ __attribute__((sdx_kernel("sobel", 0))) void sobel(PIXEL* src, PIXEL* dst, int r
  int row, col;
   PIXEL sobel_kernel[3][3];
 
-  VITIS_LOOP_77_1: for(row = 1; row < rows-1; row++)
+  VITIS_LOOP_100_1: for(row = 1; row < rows-1; row++)
   {
 #pragma HLS LOOP_TRIPCOUNT min=1 max=720
- VITIS_LOOP_80_2: for(col = 1; col < cols-1; col++)
+ VITIS_LOOP_103_2: for(col = 1; col < cols-1; col++)
   {
 #pragma HLS LOOP_TRIPCOUNT min=1 max=1280
  PIXEL _sobel;
 
 
-      VITIS_LOOP_86_3: for(int i=0; i<3; i++)
+      VITIS_LOOP_109_3: for(int i=0; i<3; i++)
       {
-          VITIS_LOOP_88_4: for(int j=0; j<3; j++)
+          VITIS_LOOP_111_4: for(int j=0; j<3; j++)
           {
 
                sobel_kernel[i][j] = src[(row+i)*cols+(col+j)];

@@ -1,7 +1,7 @@
 --- !Passed
 Pass:            reflow-inliner
 Name:            Inline
-DebugLoc:        { File: ../source/sobel_base.cpp, Line: 53, Column: 0 }
+DebugLoc:        { File: ../source/sobel_base.cpp, Line: 49, Column: 0 }
 Function:        _ZL15sobel3x3_kernelPA3_h
 Args:            
   - String:          'Inlining function '''
@@ -9,41 +9,41 @@ Args:
     DebugLoc:        { File: ../source/sobel_base.cpp, Line: 9, Column: 0 }
   - String:          ''' into '''
   - Caller:          'sobel3x3_kernel(unsigned char (*) [3])'
-    DebugLoc:        { File: ../source/sobel_base.cpp, Line: 53, Column: 0 }
+    DebugLoc:        { File: ../source/sobel_base.cpp, Line: 49, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            reflow-inliner
 Name:            Inline
-DebugLoc:        { File: ../source/sobel_base.cpp, Line: 53, Column: 0 }
+DebugLoc:        { File: ../source/sobel_base.cpp, Line: 49, Column: 0 }
 Function:        _ZL15sobel3x3_kernelPA3_h
 Args:            
   - String:          'Inlining function '''
   - Callee:          'Gradient_Y(unsigned char (*) [3])'
-    DebugLoc:        { File: ../source/sobel_base.cpp, Line: 31, Column: 0 }
+    DebugLoc:        { File: ../source/sobel_base.cpp, Line: 29, Column: 0 }
   - String:          ''' into '''
   - Caller:          'sobel3x3_kernel(unsigned char (*) [3])'
-    DebugLoc:        { File: ../source/sobel_base.cpp, Line: 53, Column: 0 }
+    DebugLoc:        { File: ../source/sobel_base.cpp, Line: 49, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            reflow-inliner
 Name:            Inline
-DebugLoc:        { File: ../source/sobel_base.cpp, Line: 67, Column: 0 }
+DebugLoc:        { File: ../source/sobel_base.cpp, Line: 63, Column: 0 }
 Function:        _Z5sobelPhS_ii
 Args:            
   - String:          'Inlining function '''
   - Callee:          'sobel3x3_kernel(unsigned char (*) [3])'
-    DebugLoc:        { File: ../source/sobel_base.cpp, Line: 53, Column: 0 }
+    DebugLoc:        { File: ../source/sobel_base.cpp, Line: 49, Column: 0 }
   - String:          ''' into '''
   - Caller:          'sobel(unsigned char*, unsigned char*, int, int)'
-    DebugLoc:        { File: ../source/sobel_base.cpp, Line: 67, Column: 0 }
+    DebugLoc:        { File: ../source/sobel_base.cpp, Line: 63, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            reflow-burst-inference
 Name:            BurstInferred
-DebugLoc:        { File: ../source/sobel_base.cpp, Line: 88, Column: 28 }
+DebugLoc:        { File: ../source/sobel_base.cpp, Line: 111, Column: 29 }
 Function:        _Z5sobelPhS_ii
 Args:            
   - String:          'Sequential '
@@ -57,23 +57,23 @@ Args:
   - String:          ' '
   - BundleName:      gmem
   - String:          ' '
-  - LoopName:        VITIS_LOOP_88_4
+  - LoopName:        VITIS_LOOP_111_4
   - String:          ' '
-  - LoopLoc:         '../source/sobel_base.cpp:88:28'
+  - LoopLoc:         '../source/sobel_base.cpp:111:29'
   - String:          ' '
   - Function:        'sobel(unsigned char*, unsigned char*, int, int)'
-    DebugLoc:        { File: ../source/sobel_base.cpp, Line: 67, Column: 0 }
+    DebugLoc:        { File: ../source/sobel_base.cpp, Line: 63, Column: 0 }
   - String:          ' '
   - String:          ' _XLX_SEP_ '
   - OrigAccess:      load
-    DebugLoc:        { File: ../source/sobel_base.cpp, Line: 91, Column: 37 }
+    DebugLoc:        { File: ../source/sobel_base.cpp, Line: 114, Column: 37 }
   - OrigDirection:   read
   - OrigID:          for.inc.load.6
 ...
 --- !Passed
 Pass:            reflow-burst-inference
 Name:            BurstInferred
-DebugLoc:        { File: ../source/sobel_base.cpp, Line: 80, Column: 19 }
+DebugLoc:        { File: ../source/sobel_base.cpp, Line: 103, Column: 20 }
 Function:        _Z5sobelPhS_ii
 Args:            
   - String:          'Sequential '
@@ -88,71 +88,71 @@ Args:
   - String:          ' '
   - BundleName:      gmem
   - String:          ' '
-  - LoopName:        VITIS_LOOP_80_2
+  - LoopName:        VITIS_LOOP_103_2
   - String:          ' '
-  - LoopLoc:         '../source/sobel_base.cpp:80:19'
+  - LoopLoc:         '../source/sobel_base.cpp:103:20'
   - String:          ' '
   - Function:        'sobel(unsigned char*, unsigned char*, int, int)'
-    DebugLoc:        { File: ../source/sobel_base.cpp, Line: 67, Column: 0 }
+    DebugLoc:        { File: ../source/sobel_base.cpp, Line: 63, Column: 0 }
   - String:          ' '
   - String:          ' _XLX_SEP_ '
   - OrigAccess:      store
-    DebugLoc:        { File: ../source/sobel_base.cpp, Line: 96, Column: 36 }
+    DebugLoc:        { File: ../source/sobel_base.cpp, Line: 119, Column: 36 }
   - OrigDirection:   write
-  - OrigID:          for.inc27.store.75
+  - OrigID:          for.inc27.store.79
 ...
 --- !Missed
 Pass:            reflow-burst-inference
 Name:            IncompatibleStride
-DebugLoc:        { File: ../source/sobel_base.cpp, Line: 88, Column: 28 }
+DebugLoc:        { File: ../source/sobel_base.cpp, Line: 111, Column: 29 }
 Function:        _Z5sobelPhS_ii
 Args:            
   - String:          Stride is incompatible
   - String:          ' _XLX_SEP_ '
   - OrigAccess:      call
-    DebugLoc:        { File: ../source/sobel_base.cpp, Line: 88, Column: 28 }
+    DebugLoc:        { File: ../source/sobel_base.cpp, Line: 111, Column: 29 }
   - OrigDirection:   read
   - OrigID:          scevgepseq
   - ArrayName:       src
   - String:          ' '
   - BundleName:      gmem
   - String:          ' '
-  - LoopName:        VITIS_LOOP_86_3
+  - LoopName:        VITIS_LOOP_109_3
   - String:          ' '
-  - LoopLoc:         '../source/sobel_base.cpp:86:24'
+  - LoopLoc:         '../source/sobel_base.cpp:109:25'
   - String:          ' '
   - Function:        'sobel(unsigned char*, unsigned char*, int, int)'
-    DebugLoc:        { File: ../source/sobel_base.cpp, Line: 67, Column: 0 }
+    DebugLoc:        { File: ../source/sobel_base.cpp, Line: 63, Column: 0 }
   - String:          ' '
 ...
 --- !Missed
 Pass:            reflow-burst-inference
 Name:            IncompatibleStride
-DebugLoc:        { File: ../source/sobel_base.cpp, Line: 80, Column: 19 }
+DebugLoc:        { File: ../source/sobel_base.cpp, Line: 103, Column: 20 }
 Function:        _Z5sobelPhS_ii
 Args:            
   - String:          Stride is incompatible
   - String:          ' _XLX_SEP_ '
   - OrigAccess:      call
-    DebugLoc:        { File: ../source/sobel_base.cpp, Line: 80, Column: 19 }
+    DebugLoc:        { File: ../source/sobel_base.cpp, Line: 103, Column: 20 }
   - OrigDirection:   write
   - OrigID:          scevgep5seq
   - ArrayName:       dst
   - String:          ' '
   - BundleName:      gmem
   - String:          ' '
-  - LoopName:        VITIS_LOOP_77_1
+  - LoopName:        VITIS_LOOP_100_1
   - String:          ' '
-  - LoopLoc:         '../source/sobel_base.cpp:77:20'
+  - LoopLoc:         '../source/sobel_base.cpp:100:21'
   - String:          ' '
   - Function:        'sobel(unsigned char*, unsigned char*, int, int)'
-    DebugLoc:        { File: ../source/sobel_base.cpp, Line: 67, Column: 0 }
+    DebugLoc:        { File: ../source/sobel_base.cpp, Line: 63, Column: 0 }
   - String:          ' '
 ...
 --- !Missed
 Pass:            reflow-burst-widen
 Name:            GreaterOrEqualThreshold
-DebugLoc:        { File: ../source/sobel_base.cpp, Line: 80, Column: 19 }
+DebugLoc:        { File: ../source/sobel_base.cpp, Line: 103, Column: 20 }
 Function:        _Z5sobelPhS_ii
 Args:            
   - String:          'Could not widen since type '
@@ -161,25 +161,25 @@ Args:
   - Threshold:       '0'
   - String:          ' _XLX_SEP_ '
   - OrigAccess:      call
-    DebugLoc:        { File: ../source/sobel_base.cpp, Line: 80, Column: 19 }
+    DebugLoc:        { File: ../source/sobel_base.cpp, Line: 103, Column: 20 }
   - OrigDirection:   write
   - OrigID:          scevgep5seq
   - ArrayName:       dst
   - String:          ' '
   - BundleName:      gmem
   - String:          ' '
-  - LoopName:        VITIS_LOOP_80_2
+  - LoopName:        VITIS_LOOP_103_2
   - String:          ' '
-  - LoopLoc:         '../source/sobel_base.cpp:80:19'
+  - LoopLoc:         '../source/sobel_base.cpp:103:20'
   - String:          ' '
   - Function:        'sobel(unsigned char*, unsigned char*, int, int)'
-    DebugLoc:        { File: ../source/sobel_base.cpp, Line: 67, Column: 0 }
+    DebugLoc:        { File: ../source/sobel_base.cpp, Line: 63, Column: 0 }
   - String:          ' '
 ...
 --- !Missed
 Pass:            reflow-burst-widen
 Name:            GreaterOrEqualThreshold
-DebugLoc:        { File: ../source/sobel_base.cpp, Line: 88, Column: 28 }
+DebugLoc:        { File: ../source/sobel_base.cpp, Line: 111, Column: 29 }
 Function:        _Z5sobelPhS_ii
 Args:            
   - String:          'Could not widen since type '
@@ -188,19 +188,19 @@ Args:
   - Threshold:       '0'
   - String:          ' _XLX_SEP_ '
   - OrigAccess:      call
-    DebugLoc:        { File: ../source/sobel_base.cpp, Line: 88, Column: 28 }
+    DebugLoc:        { File: ../source/sobel_base.cpp, Line: 111, Column: 29 }
   - OrigDirection:   read
   - OrigID:          scevgepseq
   - ArrayName:       src
   - String:          ' '
   - BundleName:      gmem
   - String:          ' '
-  - LoopName:        VITIS_LOOP_88_4
+  - LoopName:        VITIS_LOOP_111_4
   - String:          ' '
-  - LoopLoc:         '../source/sobel_base.cpp:88:28'
+  - LoopLoc:         '../source/sobel_base.cpp:111:29'
   - String:          ' '
   - Function:        'sobel(unsigned char*, unsigned char*, int, int)'
-    DebugLoc:        { File: ../source/sobel_base.cpp, Line: 67, Column: 0 }
+    DebugLoc:        { File: ../source/sobel_base.cpp, Line: 63, Column: 0 }
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -208,41 +208,41 @@ Pass:            auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        VITIS_LOOP_80_2
+  - LoopName:        VITIS_LOOP_103_2
   - String:          '> at '
-  - LoopLoc:         '../source/sobel_base.cpp:80:19'
+  - LoopLoc:         '../source/sobel_base.cpp:103:20'
   - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: ../source/sobel_base.cpp, Line: 86, Column: 24 }
+DebugLoc:        { File: ../source/sobel_base.cpp, Line: 109, Column: 25 }
 Function:        _Z5sobelPhS_ii
 Args:            
   - String:          'Loop '''
-  - LoopName:        VITIS_LOOP_86_3
+  - LoopName:        VITIS_LOOP_109_3
   - String:          ''' is marked as complete unroll implied by the pipeline pragma'
 ...
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: ../source/sobel_base.cpp, Line: 88, Column: 28 }
+DebugLoc:        { File: ../source/sobel_base.cpp, Line: 111, Column: 29 }
 Function:        _Z5sobelPhS_ii
 Args:            
   - String:          'Loop '''
-  - LoopName:        VITIS_LOOP_88_4
+  - LoopName:        VITIS_LOOP_111_4
   - String:          ''' is marked as complete unroll implied by the pipeline pragma'
 ...
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: ../source/sobel_base.cpp, Line: 67, Column: 0 }
+DebugLoc:        { File: ../source/sobel_base.cpp, Line: 63, Column: 0 }
 Function:        _Z5sobelPhS_ii
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_86_3
+  - LoopName:        VITIS_LOOP_109_3
   - String:          ''' ('
-  - LoopLoc:         '../source/sobel_base.cpp:86:24'
+  - LoopLoc:         '../source/sobel_base.cpp:109:25'
   - String:          ') '
   - String:          'in function '''
   - String:          sobel
@@ -252,13 +252,13 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: ../source/sobel_base.cpp, Line: 67, Column: 0 }
+DebugLoc:        { File: ../source/sobel_base.cpp, Line: 63, Column: 0 }
 Function:        _Z5sobelPhS_ii
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_88_4
+  - LoopName:        VITIS_LOOP_111_4
   - String:          ''' ('
-  - LoopLoc:         '../source/sobel_base.cpp:88:28'
+  - LoopLoc:         '../source/sobel_base.cpp:111:29'
   - String:          ') '
   - String:          'in function '''
   - String:          sobel
@@ -268,13 +268,13 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: ../source/sobel_base.cpp, Line: 67, Column: 0 }
+DebugLoc:        { File: ../source/sobel_base.cpp, Line: 63, Column: 0 }
 Function:        _Z5sobelPhS_ii
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_88_4
+  - LoopName:        VITIS_LOOP_111_4
   - String:          ''' ('
-  - LoopLoc:         '../source/sobel_base.cpp:88:28'
+  - LoopLoc:         '../source/sobel_base.cpp:111:29'
   - String:          ') '
   - String:          'in function '''
   - String:          sobel
@@ -284,13 +284,13 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: ../source/sobel_base.cpp, Line: 67, Column: 0 }
+DebugLoc:        { File: ../source/sobel_base.cpp, Line: 63, Column: 0 }
 Function:        _Z5sobelPhS_ii
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_88_4
+  - LoopName:        VITIS_LOOP_111_4
   - String:          ''' ('
-  - LoopLoc:         '../source/sobel_base.cpp:88:28'
+  - LoopLoc:         '../source/sobel_base.cpp:111:29'
   - String:          ') '
   - String:          'in function '''
   - String:          sobel
@@ -300,7 +300,7 @@ Args:
 --- !Passed
 Pass:            reflow-burst-summary
 Name:            BurstInferredVerboseSummary
-DebugLoc:        { File: ../source/sobel_base.cpp, Line: 80, Column: 19 }
+DebugLoc:        { File: ../source/sobel_base.cpp, Line: 103, Column: 20 }
 Function:        _Z5sobelPhS_ii
 Args:            
   - String:          'Multiple burst '
@@ -317,18 +317,18 @@ Args:
   - String:          ' '
   - BundleName:      gmem
   - String:          ' '
-  - LoopName:        VITIS_LOOP_80_2
+  - LoopName:        VITIS_LOOP_103_2
   - String:          ' '
-  - LoopLoc:         '../source/sobel_base.cpp:80:19'
+  - LoopLoc:         '../source/sobel_base.cpp:103:20'
   - String:          ' '
   - Function:        'sobel(unsigned char*, unsigned char*, int, int)'
-    DebugLoc:        { File: ../source/sobel_base.cpp, Line: 67, Column: 0 }
+    DebugLoc:        { File: ../source/sobel_base.cpp, Line: 63, Column: 0 }
   - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-burst-summary
 Name:            BurstInferredSummary
-DebugLoc:        { File: ../source/sobel_base.cpp, Line: 80, Column: 19 }
+DebugLoc:        { File: ../source/sobel_base.cpp, Line: 103, Column: 20 }
 Function:        _Z5sobelPhS_ii
 Args:            
   - String:          'Multiple burst '
@@ -338,9 +338,9 @@ Args:
   - String:          ' length and bit width '
   - Width:           '8'
   - String:          ' in loop '''
-  - LoopName:        VITIS_LOOP_80_2
+  - LoopName:        VITIS_LOOP_103_2
   - String:          '''('
-  - LoopLoc:         '../source/sobel_base.cpp:80:19'
+  - LoopLoc:         '../source/sobel_base.cpp:103:20'
   - String:          ')'
   - String:          ' has been inferred on bundle '''
   - BundleName:      gmem
@@ -350,7 +350,7 @@ Args:
 --- !Passed
 Pass:            reflow-burst-summary
 Name:            BurstInferredVerboseSummary
-DebugLoc:        { File: ../source/sobel_base.cpp, Line: 88, Column: 28 }
+DebugLoc:        { File: ../source/sobel_base.cpp, Line: 111, Column: 29 }
 Function:        _Z5sobelPhS_ii
 Args:            
   - String:          'Multiple burst '
@@ -368,13 +368,13 @@ Args:
   - BundleName:      gmem
   - String:          ' '
   - Function:        'sobel(unsigned char*, unsigned char*, int, int)'
-    DebugLoc:        { File: ../source/sobel_base.cpp, Line: 67, Column: 0 }
+    DebugLoc:        { File: ../source/sobel_base.cpp, Line: 63, Column: 0 }
   - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-burst-summary
 Name:            BurstInferredSummary
-DebugLoc:        { File: ../source/sobel_base.cpp, Line: 88, Column: 28 }
+DebugLoc:        { File: ../source/sobel_base.cpp, Line: 111, Column: 29 }
 Function:        _Z5sobelPhS_ii
 Args:            
   - String:          'Multiple burst '
@@ -391,7 +391,7 @@ Args:
 --- !Passed
 Pass:            reflow-burst-summary
 Name:            BurstInferredVerboseSummary
-DebugLoc:        { File: ../source/sobel_base.cpp, Line: 88, Column: 28 }
+DebugLoc:        { File: ../source/sobel_base.cpp, Line: 111, Column: 29 }
 Function:        _Z5sobelPhS_ii
 Args:            
   - String:          'Multiple burst '
@@ -409,13 +409,13 @@ Args:
   - BundleName:      gmem
   - String:          ' '
   - Function:        'sobel(unsigned char*, unsigned char*, int, int)'
-    DebugLoc:        { File: ../source/sobel_base.cpp, Line: 67, Column: 0 }
+    DebugLoc:        { File: ../source/sobel_base.cpp, Line: 63, Column: 0 }
   - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-burst-summary
 Name:            BurstInferredSummary
-DebugLoc:        { File: ../source/sobel_base.cpp, Line: 88, Column: 28 }
+DebugLoc:        { File: ../source/sobel_base.cpp, Line: 111, Column: 29 }
 Function:        _Z5sobelPhS_ii
 Args:            
   - String:          'Multiple burst '
@@ -432,7 +432,7 @@ Args:
 --- !Passed
 Pass:            reflow-burst-summary
 Name:            BurstInferredVerboseSummary
-DebugLoc:        { File: ../source/sobel_base.cpp, Line: 88, Column: 28 }
+DebugLoc:        { File: ../source/sobel_base.cpp, Line: 111, Column: 29 }
 Function:        _Z5sobelPhS_ii
 Args:            
   - String:          'Multiple burst '
@@ -450,13 +450,13 @@ Args:
   - BundleName:      gmem
   - String:          ' '
   - Function:        'sobel(unsigned char*, unsigned char*, int, int)'
-    DebugLoc:        { File: ../source/sobel_base.cpp, Line: 67, Column: 0 }
+    DebugLoc:        { File: ../source/sobel_base.cpp, Line: 63, Column: 0 }
   - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-burst-summary
 Name:            BurstInferredSummary
-DebugLoc:        { File: ../source/sobel_base.cpp, Line: 88, Column: 28 }
+DebugLoc:        { File: ../source/sobel_base.cpp, Line: 111, Column: 29 }
 Function:        _Z5sobelPhS_ii
 Args:            
   - String:          'Multiple burst '

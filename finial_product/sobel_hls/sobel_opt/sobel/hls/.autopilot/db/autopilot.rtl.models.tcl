@@ -1,5 +1,5 @@
 set SynModuleInfo {
-  {SRCNAME sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2 MODELNAME sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2 RTLNAME sobel_sobel_Pipeline_VITIS_LOOP_77_1_VITIS_LOOP_80_2
+  {SRCNAME sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2 MODELNAME sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2 RTLNAME sobel_sobel_Pipeline_VITIS_LOOP_100_1_VITIS_LOOP_103_2
     SUBMODULES {
       {MODELNAME sobel_mul_31ns_32s_63_2_1 RTLNAME sobel_mul_31ns_32s_63_2_1 BINDTYPE op TYPE mul IMPL auto LATENCY 1 ALLOW_PRAGMA 1}
       {MODELNAME sobel_flow_control_loop_pipe_sequential_init RTLNAME sobel_flow_control_loop_pipe_sequential_init BINDTYPE interface TYPE internal_upc_flow_control INSTNAME sobel_flow_control_loop_pipe_sequential_init_U}
