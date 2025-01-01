@@ -16,7 +16,10 @@ static PIXEL Gradient_X(PIXEL WB[3][3])
 	out_pix = out_pix + A00;
 	out_pix = out_pix - S00;
 
-    out_pix = abs(out_pix);
+	if(out_pix<0)
+	{
+		out_pix = 0;
+	}
 
 	if(out_pix>255)
 	{
@@ -35,9 +38,11 @@ static PIXEL Gradient_Y(PIXEL WB[3][3])
 	out_pix = M01 - M00;
 	out_pix = out_pix + A00;
 	out_pix = out_pix - S00;
-
-    out_pix = abs(out_pix);
-
+    
+	if(out_pix<0)
+	{
+		out_pix = 0;
+	}
 	if(out_pix > 255)
 	{
 		out_pix = 255;
