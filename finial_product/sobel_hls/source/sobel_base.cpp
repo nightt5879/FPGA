@@ -58,36 +58,8 @@ static PIXEL sobel3x3_kernel(PIXEL WB[3][3])
 	return sobel;
 }
 
-//void sobel(hls::stream<trans_pkt>& src, hls::stream<trans_pkt>& dst, int rows, int cols)
 void sobel(PIXEL* src, PIXEL* dst, int rows, int cols)
 {
-//         int row, col;  
-//     PIXEL sobel_kernel[3][3];  
-//     for(row = 0; row < rows+1; row++)  
-//     {  
-// #pragma HLS LOOP_TRIPCOUNT min=1 max=720  
-//         for(col = 0; col < cols+1; col++)  
-//         {  
-// #pragma HLS LOOP_TRIPCOUNT min=1 max=1280  
-//             PIXEL _sobel;  
-  
-//             if(row<=1 || col<=1 || row>(rows-1) || col>(cols-1))  
-//                 _sobel = 0;  
-// 	        else  
-// 	        {  
-// 	            for(int i=0; i<3; i++)  
-// 	            {  
-// 	                for(int j=0; j<3; j++)  
-// 	                {  
-// 	                    sobel_kernel[i][j] = src[(row+i-1)*cols+(col+j-1)];  
-// 	                }  
-// 	            }  
-// 	            _sobel = sobel3x3_kernel(sobel_kernel);  
-// 	       }  
-// 	        if(row>1 && col>1)  
-// 	        dst[(row-1)*cols+(col-1)] = _sobel;  
-// 	    }  
-// 	}  
 #pragma HLS INTERFACE m_axi port=src depth=921600
 #pragma HLS INTERFACE m_axi port=dst depth=917604
 #pragma HLS INTERFACE s_axilite port=rows  bundle=CTRL
@@ -124,33 +96,117 @@ void sobel(PIXEL* src, PIXEL* dst, int rows, int cols)
 
 }
 
-// void naive_sobel(PIXEL* src, PIXEL* dst, int rows, int cols)  
-// {  
-//     int row, col;  
-//     PIXEL sobel_kernel[3][3];  
-//     for(row = 0; row < rows+1; row++)  
-//     {  
-// #pragma HLS LOOP_TRIPCOUNT min=1 max=720  
-//         for(col = 0; col < cols+1; col++)  
-//         {  
-// #pragma HLS LOOP_TRIPCOUNT min=1 max=1280  
-//             PIXEL _sobel;  
+void naive_sobel(PIXEL* src, PIXEL* dst, int rows, int cols)  
+{  
+    int row, col;  
+    PIXEL sobel_kernel[3][3];  
+    for(row = 0; row < rows+1; row++)  
+    {  
+#pragma HLS LOOP_TRIPCOUNT min=1 max=720  
+        for(col = 0; col < cols+1; col++)  
+        {  
+#pragma HLS LOOP_TRIPCOUNT min=1 max=1280  
+            PIXEL _sobel;  
   
-//             if(row<=1 || col<=1 || row>(rows-1) || col>(cols-1))  
-//                 _sobel = 0;  
-// 	        else  
-// 	        {  
-// 	            for(int i=0; i<3; i++)  
-// 	            {  
-// 	                for(int j=0; j<3; j++)  
-// 	                {  
-// 	                    sobel_kernel[i][j] = src[(row+i-1)*cols+(col+j-1)];  
-// 	                }  
-// 	            }  
-// 	            _sobel = sobel3x3_kernel(sobel_kernel);  
-// 	       }  
-// 	        if(row>1 && col>1)  
-// 	        dst[(row-1)*cols+(col-1)] = _sobel;  
-// 	    }  
-// 	}  
-// }
+            if(row<=1 || col<=1 || row>(rows-1) || col>(cols-1))  
+                _sobel = 0;  
+	        else  
+	        {  
+	            for(int i=0; i<3; i++)  
+	            {  
+	                for(int j=0; j<3; j++)  
+	                {  
+	                    sobel_kernel[i][j] = src[(row+i-1)*cols+(col+j-1)];  
+	                }  
+	            }  
+	            _sobel = sobel3x3_kernel(sobel_kernel);  
+	       }  
+	        if(row>1 && col>1)  
+	        dst[(row-1)*cols+(col-1)] = _sobel;  
+	    }  
+	}  
+}
+
+void sobel(hls::stream<trans_pkt>& src, hls::stream<trans_pkt>& dst, int rows, int cols)
+{
+	trans_pkt data_p;
+
+	PIXEL _sobel;
+
+	PIXEL LineBuffer[3][WIDTH];
+#pragma HLS ARRAY_PARTITION variable=LineBuffer complete dim=1
+
+	PIXEL WindowBuffer[3][3] = {{0,0,0},{0,0,0},{0,0,0}};
+#pragma HLS ARRAY_PARTITION variable=WindowBuffer complete dim=0
+
+	ap_uint<13> row, col;
+	ap_uint<2> lb_r_i;
+	ap_uint<2> top, mid, btm;//line buffer row index
+
+// Loop initialing the row buffer:
+	for(col = 0; col < cols; col++)
+	{
+#pragma HLS LOOP_TRIPCOUNT min=1 max=1280
+#pragma HLS pipeline
+		LineBuffer[0][col] = 0;
+		data_p = src.read();
+		LineBuffer[1][col] = (PIXEL) data_p.data;
+	}
+
+	lb_r_i = 2;
+	for(row = 1; row < rows + 1; row++)
+	{
+#pragma HLS LOOP_TRIPCOUNT min=1 max=720
+// Rotate the relative order among LineBuffer
+		if(lb_r_i == 2)
+		{
+			top = 0; mid = 1; btm = 2;
+		}
+		else if(lb_r_i == 0)
+		{
+			top = 1; mid = 2; btm = 0;
+		}
+		else if(lb_r_i == 1)
+		{
+			top = 2; mid = 0; btm = 1;
+		}
+
+		WindowBuffer[top][0] = WindowBuffer[top][1] = 0;
+		WindowBuffer[mid][0] = WindowBuffer[top][1] = 0;
+		WindowBuffer[btm][0] = WindowBuffer[top][1] = 0;
+
+// Loop iterating over images：
+		for(col = 0; col < cols; col++)
+		{
+#pragma HLS LOOP_TRIPCOUNT min=1 max=1280
+#pragma HLS pipeline
+			if(row < rows)
+			{
+				data_p = src.read();
+				LineBuffer[btm][col] = (PIXEL) data_p.data;
+			}
+			else
+				LineBuffer[btm][col] = 0;
+// Update the WindowBuffer
+			WindowBuffer[0][2] = LineBuffer[top][col];
+			WindowBuffer[1][2] = LineBuffer[mid][col];
+			WindowBuffer[2][2] = LineBuffer[btm][col];
+			_sobel = sobel3x3_kernel(WindowBuffer);
+			WindowBuffer[0][0] = WindowBuffer[0][1];
+			WindowBuffer[1][0] = WindowBuffer[1][1];
+			WindowBuffer[2][0] = WindowBuffer[2][1];
+			WindowBuffer[0][1] = WindowBuffer[0][2];
+			WindowBuffer[1][1] = WindowBuffer[1][2];
+			WindowBuffer[2][1] = WindowBuffer[2][2];
+
+			if ((row == rows ) && (col == cols - 1))
+				data_p.last = 1;
+			else
+				data_p.last= 0;
+			data_p.data = _sobel;
+			dst.write(data_p);
+		}
+		lb_r_i++;
+		if(lb_r_i == 3) lb_r_i = 0;
+	}
+}
