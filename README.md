@@ -1,4 +1,11 @@
 中文 | [English](README_EN.md)
+
+## 在线文档站
+
+### [点击这里打开网页版课程文档](https://nightt5879.github.io/FPGA/zh/)
+
+建议优先阅读网页版，图片、PDF、实验章节、ZedBoard / AX7010 内容和勘误都已经按页面整理好。
+
 - [数字集成电路前端设计与高层次综合](#数字集成电路前端设计与高层次综合)
   - [1.写在前面](#1写在前面)
     - [1.1 软件硬件环境](#11-软件硬件环境)
@@ -50,7 +57,7 @@
 
 **ZedBoard资料**
 - [ZedBoard原理图](./datasheet/AVNET%20Zedboard/zedbaord%20原理图.pdf)
-- [ZedBoard Zynq-7000 ARM FPGA进阶手册](./datasheet/AVNET%20Zedboard/ZedBoard%20Zynq-7000%20ARM%20FPGA进阶手册.pdf)
+- [ZedBoard Zynq-7000 ARM FPGA进阶手册](./datasheet/AVNET%20Zedboard/ZedBoard%20%20Zynq-7000%20ARM%20FPGA进阶级处理器%20全可编程逻辑智能互联开发系统%20用户手册.pdf)
 - [ZedBoard用户硬件手册](./datasheet/AVNET%20Zedboard/zedboard%20用户硬件手册.pdf)
 - [ZedBoard Schematic](./datasheet/AVNET%20Zedboard/ZedBoard_Schematic.pdf)
 - [ZedBoard上手手册](./datasheet/AVNET%20Zedboard/zedboard上手手册.pdf)
@@ -476,7 +483,7 @@ clogb2(DIVIDER)的作用是计算DIVIDER的二进制位数，这样就可以得�
 ## 4.HLS_lab
 ## 4.1 实验1
 这个实验可以注意到有很多个版本，首先是最原始的使用vivadoHLS的版本，这个适用较老的工具。其次是Vitis HLS的版本，这个适用于较新的工具。还有最新的Vitis版本，这个版本我使用跑完了实验1同时有一个教学文档。</p>
-> **Vitis的教学文档** [Vitis开发lab1](./datasheet/lab1_vitis.pdf)
+> **Vitis的教学文档** [Vitis开发lab1](./datasheet/High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/Vitis/Lab1.pdf)
 ## 4.2 实验2
 可与使用强制命令打开Vitis_HLS软件的项目，使用代码:</p>
 ```

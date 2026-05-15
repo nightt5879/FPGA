@@ -1,0 +1,148 @@
+/* =============================================================
+   Print stylesheet — turn any lab view into an A4 lab report
+   ============================================================= */
+
+@page {
+  size: A4;
+  margin: 18mm 16mm 20mm 16mm;
+  @bottom-right {
+    content: "中山大学 FPGA 课程 · " counter(page) " / " counter(pages);
+    font-family: "Noto Sans SC", sans-serif;
+    font-size: 9pt;
+    color: #6e7167;
+  }
+}
+
+body {
+  background: #ffffff !important;
+  background-image: none !important;
+  color: #161814;
+  font-size: 10.5pt;
+  line-height: 1.55;
+}
+
+/* Hide chrome: header, sidebar, footer, search, language toggle,
+   GitHub button, copy buttons, action buttons. */
+.site-header,
+.lab-sidebar,
+.site-footer,
+.hdr-nav,
+.lang-toggle,
+.gh-btn,
+.code-copy,
+.es-btn,
+.cta { display: none !important; }
+
+/* Single-column shell — drop the sidebar grid */
+.shell { display: block !important; max-width: 100% !important; padding: 0 !important; margin: 0 !important; }
+.article { font-family: "Noto Sans SC", sans-serif; }
+
+/* Lab hero — print-style cover headline */
+.lab-hero {
+  border-bottom: 1.5pt solid #161814;
+  margin: 0 0 14pt;
+  padding: 0 0 10pt;
+  page-break-after: avoid;
+}
+.hero-title { font-size: 22pt !important; line-height: 1.15; }
+.hero-sub   { font-size: 11pt !important; color: #2c2f29 !important; }
+.hero-meta .num { color: #7a4f1f !important; }
+.board-chip, .chip {
+  background: transparent !important; color: #161814 !important;
+  border: 0.75pt solid #4b4e47 !important; padding: 1pt 7pt !important;
+  font-size: 8.5pt !important;
+}
+.file-pill {
+  background: transparent !important;
+  border: 0.5pt solid #6e7167 !important;
+  color: #161814 !important;
+  font-size: 8.5pt !important;
+}
+
+/* Headings */
+.article h2 {
+  font-size: 14pt !important;
+  border-bottom: 0.5pt solid #d8d5cc;
+  padding-bottom: 4pt;
+  margin-top: 18pt !important;
+  page-break-after: avoid;
+}
+.article h3 { font-size: 11.5pt !important; margin-top: 12pt !important; page-break-after: avoid; }
+
+/* Body */
+.article p { font-size: 10.5pt !important; line-height: 1.65 !important; color: #2c2f29 !important; }
+.article :not(pre) > code {
+  background: #f6f3ea !important;
+  border: 0.5pt solid #d8d5cc !important;
+  color: #16573a !important;
+  padding: 0.5pt 3pt !important;
+}
+
+/* Code blocks — invert dark theme for paper */
+.code-block {
+  background: #f6f3ea !important;
+  border: 0.75pt solid #d8d5cc !important;
+  border-left: 2pt solid #16573a !important;
+  box-shadow: none !important;
+  page-break-inside: avoid;
+}
+.code-head {
+  background: #ebe7dc !important;
+  border-bottom: 0.5pt solid #d8d5cc !important;
+  color: #4b4e47 !important;
+}
+.code-file { color: #161814 !important; }
+.code-lang { color: #7a4f1f !important; }
+.code-block code { color: #161814 !important; font-size: 9pt !important; line-height: 1.5 !important; }
+.code-block .ln-no { color: #9a9d93 !important; }
+.tok-k { color: #0f5132 !important; font-weight: 700; }
+.tok-t { color: #7a4f1f !important; }
+.tok-n { color: #2c2f29 !important; }
+.tok-c { color: #6e7167 !important; font-style: italic; }
+.tok-s { color: #8a2424 !important; }
+.tok-p { color: #161814 !important; }
+
+/* Callouts — keep semantic color but lighter */
+.callout {
+  border: 0.5pt solid currentColor !important;
+  background: transparent !important;
+  page-break-inside: avoid;
+}
+.callout-icon { color: inherit !important; }
+
+/* Figures */
+.figure-grid, .diff-panel {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: 0.5pt solid #d8d5cc !important;
+  padding: 8pt !important;
+  page-break-inside: avoid;
+}
+.fg-cell, .diff-side { border: 0.5pt solid #ebe7dc; }
+.fg-label, .diff-tag { background: #ffffff !important; color: #161814 !important; border: 0.5pt solid #4b4e47; }
+.diff-arrow { background: #ffffff !important; box-shadow: none !important; border: 0.5pt solid #4b4e47; }
+figcaption, .diff-cap, .fg-cap { color: #4b4e47 !important; font-size: 9pt !important; }
+
+/* Spec list — table for printing */
+.spec-list {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: 0.5pt solid #d8d5cc !important;
+  page-break-inside: avoid;
+}
+.spec-list dt, .spec-list dd { padding: 3pt 0 !important; }
+
+/* Pin table */
+.pin-table { background: transparent !important; box-shadow: none !important; border: 0.5pt solid #d8d5cc !important; }
+.pin-table thead th { background: #ebe7dc !important; }
+.pin-table tbody tr:hover td { background: transparent !important; }
+
+/* Errata */
+.errata { page-break-inside: avoid; box-shadow: none !important; border: 0.5pt solid #d8d5cc !important; }
+.err-badge { background: #ffffff !important; color: #8a2424 !important; border: 0.5pt solid #8a2424 !important; }
+
+/* No empty / 404 in print */
+.empty-state, .sobel-hero { display: none !important; }
+
+a, a:hover { color: #16573a !important; text-decoration: none !important; }
+a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 8.5pt; color: #6e7167; word-break: break-all; }

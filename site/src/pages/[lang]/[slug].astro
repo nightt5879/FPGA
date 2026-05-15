@@ -1,0 +1,50 @@
+---
+import SiteLayout from "../../layouts/SiteLayout.astro";
+import content from "../../data/content.json";
+
+export function getStaticPaths() {
+  return content.pages.map((page) => ({
+    params: { lang: page.lang, slug: page.slug },
+  }));
+}
+
+const lang = Astro.params.lang as "zh" | "en";
+const slug = Astro.params.slug as string;
+const base = import.meta.env.BASE_URL.endsWith("/") ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+const page = content.pages.find((entry) => entry.lang === lang && entry.slug === slug);
+
+if (!page) {
+  throw new Error(`Missing page ${lang}/${slug}`);
+}
+
+const pages = content.pages
+  .filter((entry) => entry.lang === lang)
+  .sort((a, b) => a.order - b.order);
+const index = pages.findIndex((entry) => entry.slug === slug);
+const previous = index > 0 ? pages[index - 1] : undefined;
+const next = index < pages.length - 1 ? pages[index + 1] : undefined;
+const html = page.html
+  .replaceAll("__ASSET_BASE__", `${base}content-assets/`)
+  .replaceAll("__BASE__", base);
+---
+
+<SiteLayout title={page.title} lang={lang} currentSlug={slug}>
+  <article class="article">
+    <header class="page-hero">
+      <span class="eyebrow">{page.group}</span>
+      <h1>{page.title}</h1>
+      <p>{page.sourceHeading}</p>
+      <div class="hero-meta">
+        <span class="pill">{lang.toUpperCase()}</span>
+        <span class="pill">{page.slug}</span>
+      </div>
+    </header>
+
+    <div class="doc-content" set:html={html} />
+
+    <nav class="doc-pager" aria-label={lang === "zh" ? "上一页和下一页" : "Previous and next pages"}>
+      {previous && <a rel="prev" href={`${base}${lang}/${previous.slug}/`}>← {previous.title}</a>}
+      {next && <a rel="next" href={`${base}${lang}/${next.slug}/`}>{next.title} →</a>}
+    </nav>
+  </article>
+</SiteLayout>

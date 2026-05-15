@@ -1,4 +1,11 @@
 [中文](README.md) | English
+
+## Online Documentation Site
+
+### [Click here to open the course website](https://nightt5879.github.io/FPGA/en/)
+
+The website is the recommended reading path. Images, PDFs, lab sections, ZedBoard / AX7010 notes, and errata are organized as browsable pages.
+
 - [Front-end Design of Digital Integrated Circuits and High-level Synthesis](#front-end-design-of-digital-integrated-circuits-and-high-level-synthesis)
   - [1. Preface](#1-preface)
     - [1.1 Software and Hardware Environment](#11-software-and-hardware-environment)
@@ -52,7 +59,7 @@ The purpose of this project is, firstly, to complete the six labs and the course
 
 **ZedBoard Documentation**
 - [ZedBoard Schematic Diagram](./datasheet/AVNET%20Zedboard/zedbaord%20原理图.pdf)
-- [ZedBoard Zynq-7000 ARM FPGA Advanced Manual](./datasheet/AVNET%20Zedboard/ZedBoard%20Zynq-7000%20ARM%20FPGA进阶手册.pdf)
+- [ZedBoard Zynq-7000 ARM FPGA Advanced Manual](./datasheet/AVNET%20Zedboard/ZedBoard%20%20Zynq-7000%20ARM%20FPGA进阶级处理器%20全可编程逻辑智能互联开发系统%20用户手册.pdf)
 - [ZedBoard User Hardware Manual](./datasheet/AVNET%20Zedboard/zedboard%20用户硬件手册.pdf)
 - [ZedBoard Schematic](./datasheet/AVNET%20Zedboard/ZedBoard_Schematic.pdf)
 - [ZedBoard Getting Started Guide](./datasheet/AVNET%20Zedboard/zedboard上手手册.pdf)
@@ -506,7 +513,7 @@ This experiment primarily teaches how to use Debug for troubleshooting, and the 
 ### 4.1 Experiment 1
 This experiment has several versions. First, there is the original version using Vivado HLS, which is suitable for older tools. Then, there is the Vitis HLS version, which is for newer tools. Finally, there is the latest version for Vitis, which I used to complete Experiment 1, and I have also prepared a tutorial document for it.
 
-> **Vitis Tutorial Document** [Vitis Lab 1 Development](./datasheet/lab1_vitis.pdf)
+> **Vitis Tutorial Document** [Vitis Lab 1 Development](./datasheet/High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS/Vitis/Lab1.pdf)
 
 ### 4.2 Experiment 2 (Linux issues)
 ### 4.3 Experiment 3 (Linux issues)

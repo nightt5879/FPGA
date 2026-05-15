@@ -1,0 +1,18 @@
+---
+const base = import.meta.env.BASE_URL.endsWith("/") ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+const target = `${base}zh/`;
+---
+
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="refresh" content={`0; url=${target}`} />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SYSU FPGA Course</title>
+    <link rel="canonical" href={target} />
+  </head>
+  <body>
+    <a href={target}>进入 SYSU FPGA Course</a>
+  </body>
+</html>

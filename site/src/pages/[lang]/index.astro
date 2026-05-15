@@ -1,0 +1,76 @@
+---
+import SiteLayout from "../../layouts/SiteLayout.astro";
+import content from "../../data/content.json";
+
+export function getStaticPaths() {
+  return [{ params: { lang: "zh" } }, { params: { lang: "en" } }];
+}
+
+const lang = Astro.params.lang as "zh" | "en";
+const base = import.meta.env.BASE_URL.endsWith("/") ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+const home = content.home[lang];
+const pages = content.pages
+  .filter((page) => page.lang === lang)
+  .sort((a, b) => a.order - b.order);
+
+const featured = pages.filter((page) =>
+  ["preface", "zedboard-lab-1", "zedboard-lab-2", "hls-lab-1", "course-design", "resources"].includes(page.slug),
+);
+---
+
+<SiteLayout title={home.title} description={home.subtitle} lang={lang} showSidebar={false}>
+  <main>
+    <section class="home-hero">
+      <div class="home-copy">
+        <span class="eyebrow">{home.kicker}</span>
+        <h1>{home.title}</h1>
+        <p>{home.subtitle}</p>
+        <div class="cta-row">
+          <a class="button primary" href={`${base}${lang}/preface/`}>{home.startLabel}</a>
+          <a class="button secondary" href="https://github.com/nightt5879/FPGA" target="_blank" rel="noreferrer">{home.sourceLabel}</a>
+          <a class="button secondary" href={`${base}${lang}/resources/`}>{home.resourcesLabel}</a>
+        </div>
+      </div>
+      <figure class="hero-photo">
+        <img src={`${base}content-assets/images/ZedBoard.jpg`} alt="ZedBoard" />
+        <span>ZedBoard · AX7010 · Vivado 2024.1</span>
+      </figure>
+    </section>
+
+    <section aria-labelledby="featured-heading">
+      <div class="section-head">
+        <h2 id="featured-heading">{lang === "zh" ? "入口" : "Start Here"}</h2>
+      </div>
+      <div class="card-grid">
+        {featured.map((page) => (
+          <a class="lab-card" href={`${base}${lang}/${page.slug}/`}>
+            <span class="card-meta">
+              <span>{page.group}</span>
+              <span>{page.slug.replaceAll("-", " · ")}</span>
+            </span>
+            <h3>{page.title}</h3>
+            <p>{page.sourceHeading}</p>
+          </a>
+        ))}
+      </div>
+    </section>
+
+    <section aria-labelledby="all-heading">
+      <div class="section-head">
+        <h2 id="all-heading">{lang === "zh" ? "完整目录" : "Full Index"}</h2>
+      </div>
+      <div class="card-grid">
+        {pages.map((page) => (
+          <a class="lab-card" href={`${base}${lang}/${page.slug}/`}>
+            <span class="card-meta">
+              <span>{page.group}</span>
+              <span>{String(page.order).padStart(2, "0")}</span>
+            </span>
+            <h3>{page.title}</h3>
+            <p>{page.sourceHeading}</p>
+          </a>
+        ))}
+      </div>
+    </section>
+  </main>
+</SiteLayout>

@@ -1,0 +1,341 @@
+/* =============================================================
+   SYSU FPGA Course — Foundations
+   Colors + Type for a bilingual (中文 / English) technical
+   course documentation product. Inspired by the source
+   material: PCB green, LED red, copper traces, ink-on-paper.
+   ============================================================= */
+
+/* --- Webfonts (via Google Fonts; substitutions documented in
+       README.md → ICONOGRAPHY / Type) --------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;700;900&family=Noto+Sans+SC:wght@300;400;500;700&family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;1,400&display=swap');
+
+:root {
+  /* ── Brand palette ─────────────────────────────────────────
+     Sampled from the boards photographed in the source repo:
+     ZedBoard solder-mask green, AX7010 black mask, red DONE
+     LED, yellow/orange jumpers, copper traces.               */
+  --pcb-900: #0a1f15;      /* solder-mask deep — page bg dark */
+  --pcb-800: #0f3622;      /* boards in shadow                */
+  --pcb-700: #16573a;      /* primary PCB green               */
+  --pcb-600: #1f7048;      /* hover state                     */
+  --pcb-500: #2e8a5d;      /* trace lights / accents          */
+  --pcb-400: #59b07f;      /* tint                            */
+  --pcb-200: #d9ecdf;      /* surface wash                    */
+  --pcb-50:  #f1f7f3;      /* page surface alt                */
+
+  --led-red:    #d43838;   /* DONE LED, errata flag           */
+  --led-amber:  #e7a23a;   /* jumper yellow, warnings         */
+  --copper:     #b9803a;   /* trace copper                    */
+  --copper-deep:#7a4f1f;
+  --solder:     #c9c9cc;   /* solder pads / chrome            */
+
+  /* ── Neutrals (ink on paper, lab-manual feel) ──────────── */
+  --ink:        #161814;   /* primary text                    */
+  --ink-2:      #2c2f29;
+  --ink-3:      #4b4e47;
+  --ink-4:      #6e7167;   /* secondary text                  */
+  --ink-5:      #9a9d93;   /* tertiary text                   */
+  --rule:       #d8d5cc;   /* hairlines, paper rules          */
+  --rule-soft:  #ebe7dc;
+  --paper:      #f6f3ea;   /* main page bg — newsprint/manual */
+  --paper-2:    #fbf9f2;
+  --paper-card: #ffffff;
+  --ink-on-pcb: #eef4ee;   /* text on dark green surfaces     */
+
+  /* ── Semantic ──────────────────────────────────────────── */
+  --fg-1:        var(--ink);
+  --fg-2:        var(--ink-3);
+  --fg-3:        var(--ink-4);
+  --fg-muted:    var(--ink-5);
+  --fg-on-dark:  var(--ink-on-pcb);
+
+  --bg-page:     var(--paper);
+  --bg-surface:  var(--paper-card);
+  --bg-sunken:   var(--paper-2);
+  --bg-dark:     var(--pcb-900);
+  --bg-pcb:      var(--pcb-700);
+
+  --accent:        var(--pcb-700);
+  --accent-hover:  var(--pcb-600);
+  --accent-press:  var(--pcb-800);
+  --danger:        var(--led-red);
+  --warn:          var(--led-amber);
+  --info:          var(--copper);
+  --ok:            var(--pcb-500);
+
+  --link:        var(--pcb-700);
+  --link-hover:  var(--pcb-600);
+  --selection:   color-mix(in srgb, var(--pcb-400) 35%, transparent);
+
+  /* ── Typography stack ──────────────────────────────────── */
+  --font-display: "Noto Serif SC", "Source Han Serif SC",
+                  "Songti SC", "STSong", Georgia, serif;
+  --font-body:    "Noto Sans SC", "Source Han Sans SC",
+                  "PingFang SC", -apple-system, BlinkMacSystemFont,
+                  "Helvetica Neue", Arial, sans-serif;
+  --font-mono:    "JetBrains Mono", "SF Mono", Menlo,
+                  Consolas, "Liberation Mono", monospace;
+
+  /* Scale — 1.250 (Major third). Bilingual-safe; CJK reads
+     comfortably from 16px. Code never below 14px.            */
+  --fs-12: 0.75rem;
+  --fs-13: 0.8125rem;
+  --fs-14: 0.875rem;
+  --fs-15: 0.9375rem;
+  --fs-16: 1rem;       /* body */
+  --fs-18: 1.125rem;
+  --fs-20: 1.25rem;
+  --fs-24: 1.5rem;
+  --fs-28: 1.75rem;
+  --fs-32: 2rem;
+  --fs-40: 2.5rem;
+  --fs-48: 3rem;
+  --fs-56: 3.5rem;
+
+  /* Leading. CJK + Latin mixed → keep generous.              */
+  --lh-tight:    1.15;
+  --lh-snug:     1.35;
+  --lh-normal:   1.6;
+  --lh-relaxed:  1.75;
+
+  /* Tracking. Latin -0.01em looks crisp; CJK stays at 0.     */
+  --tr-tight:   -0.02em;
+  --tr-snug:    -0.01em;
+  --tr-normal:   0;
+  --tr-wide:     0.04em;
+  --tr-caps:     0.12em;
+
+  /* ── Spacing — 4px grid (lab grid feel) ────────────────── */
+  --s-1:  4px;
+  --s-2:  8px;
+  --s-3:  12px;
+  --s-4:  16px;
+  --s-5:  20px;
+  --s-6:  24px;
+  --s-8:  32px;
+  --s-10: 40px;
+  --s-12: 48px;
+  --s-16: 64px;
+  --s-20: 80px;
+  --s-24: 96px;
+
+  /* ── Radius — small, technical (silkscreen corners) ────── */
+  --r-1: 2px;
+  --r-2: 4px;
+  --r-3: 6px;
+  --r-4: 8px;
+  --r-pill: 999px;
+
+  /* ── Elevation — subtle paper shadows + a hard "etched"
+       option for callouts.                                    */
+  --shadow-1: 0 1px 0 rgba(22, 24, 20, 0.04),
+              0 1px 2px rgba(22, 24, 20, 0.06);
+  --shadow-2: 0 1px 0 rgba(22, 24, 20, 0.05),
+              0 2px 6px rgba(22, 24, 20, 0.08);
+  --shadow-3: 0 2px 0 rgba(22, 24, 20, 0.06),
+              0 8px 20px rgba(22, 24, 20, 0.10);
+  --shadow-etch: inset 0 0 0 1px var(--rule),
+                 0 1px 0 rgba(22,24,20,0.03);
+  --shadow-pcb:  0 0 0 1px rgba(255,255,255,0.04),
+                 0 8px 28px rgba(10, 31, 21, 0.45);
+}
+
+/* =============================================================
+   Dark theme — "midnight debugging"
+   Deep PCB-green base, ink-on-pcb body text, same accents.
+   Toggled via [data-theme="dark"] on <body>.
+   ============================================================= */
+[data-theme="dark"] {
+  --paper:      #0a1f15;
+  --paper-2:    #11281b;
+  --paper-card: #163228;
+
+  --ink:        #eef4ee;
+  --ink-2:      #c5d4c7;
+  --ink-3:      #a4baa7;
+  --ink-4:      #87a08a;
+  --ink-5:      #6a8470;
+  --rule:       rgba(255, 255, 255, 0.10);
+  --rule-soft:  rgba(255, 255, 255, 0.06);
+
+  --fg-1:        var(--ink);
+  --fg-2:        var(--ink-2);
+  --fg-3:        var(--ink-3);
+  --fg-muted:    var(--ink-5);
+
+  --bg-page:     var(--paper);
+  --bg-surface:  var(--paper-card);
+  --bg-sunken:   var(--paper-2);
+
+  --accent:        #59b07f;   /* pcb-400 — lighter on dark */
+  --accent-hover:  #7cc99a;
+  --accent-press:  #2e8a5d;
+
+  --link:        #7cc99a;
+  --link-hover:  #a5dcb8;
+  --selection:   color-mix(in srgb, #59b07f 35%, transparent);
+
+  --shadow-1: 0 1px 0 rgba(0, 0, 0, 0.5),
+              0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-2: 0 1px 0 rgba(0, 0, 0, 0.6),
+              0 4px 14px rgba(0, 0, 0, 0.45);
+  --shadow-3: 0 2px 0 rgba(0, 0, 0, 0.7),
+              0 12px 28px rgba(0, 0, 0, 0.55);
+  --shadow-etch: inset 0 0 0 1px rgba(255, 255, 255, 0.07),
+                 0 1px 0 rgba(0, 0, 0, 0.2);
+  --shadow-pcb:  0 0 0 1px rgba(46, 138, 93, 0.18),
+                 0 10px 32px rgba(0, 0, 0, 0.6);
+}
+
+/* =============================================================
+   Semantic / element styles
+   ============================================================= */
+
+html, body {
+  background: var(--bg-page);
+  color: var(--fg-1);
+  font-family: var(--font-body);
+  font-size: var(--fs-16);
+  line-height: var(--lh-normal);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+::selection { background: var(--selection); }
+
+/* Display + headings — serif for authority, mixed-script
+   line-height that doesn't crush Chinese descenders.         */
+.h-display, h1.display {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: var(--fs-56);
+  line-height: var(--lh-tight);
+  letter-spacing: var(--tr-tight);
+  color: var(--fg-1);
+}
+h1, .h1 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--fs-40);
+  line-height: var(--lh-tight);
+  letter-spacing: var(--tr-tight);
+  color: var(--fg-1);
+}
+h2, .h2 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--fs-28);
+  line-height: var(--lh-snug);
+  letter-spacing: var(--tr-snug);
+  color: var(--fg-1);
+}
+h3, .h3 {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: var(--fs-20);
+  line-height: var(--lh-snug);
+  color: var(--fg-1);
+}
+h4, .h4 {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: var(--fs-16);
+  line-height: var(--lh-snug);
+  color: var(--fg-2);
+}
+
+/* Body copy */
+p, .p {
+  font-family: var(--font-body);
+  font-size: var(--fs-16);
+  line-height: var(--lh-relaxed);
+  color: var(--fg-2);
+  text-wrap: pretty;
+}
+.lead {
+  font-size: var(--fs-18);
+  line-height: var(--lh-relaxed);
+  color: var(--fg-2);
+}
+.small, small {
+  font-size: var(--fs-13);
+  color: var(--fg-3);
+  line-height: var(--lh-snug);
+}
+.caption {
+  font-family: var(--font-body);
+  font-size: var(--fs-13);
+  color: var(--fg-3);
+  font-style: italic;
+}
+
+/* Eyebrow / kicker — used over section headers in the source
+   READMEs ("重要文件：", "实验结果"). Caps for Latin, gentle
+   tracking, copper color for technical authority.            */
+.eyebrow {
+  font-family: var(--font-body);
+  font-size: var(--fs-12);
+  font-weight: 700;
+  letter-spacing: var(--tr-caps);
+  text-transform: uppercase;
+  color: var(--copper-deep);
+}
+
+/* Code — Verilog/HDL is core to the brand. Always mono.     */
+code, kbd, samp, pre {
+  font-family: var(--font-mono);
+  font-size: var(--fs-14);
+  font-feature-settings: "calt" 1, "liga" 0;
+}
+:not(pre) > code {
+  background: var(--rule-soft);
+  padding: 0.15em 0.4em;
+  border-radius: var(--r-2);
+  color: var(--pcb-800);
+  font-size: 0.9em;
+}
+[data-theme="dark"] :not(pre) > code {
+  background: rgba(46, 138, 93, 0.12);
+  color: #a5dcb8;
+}
+pre {
+  background: var(--pcb-900);
+  color: var(--ink-on-pcb);
+  padding: var(--s-5) var(--s-6);
+  border-radius: var(--r-3);
+  line-height: var(--lh-snug);
+  overflow-x: auto;
+  border-left: 3px solid var(--pcb-500);
+}
+
+/* Links — academic underline, accent hover */
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  text-decoration-color: color-mix(in srgb, var(--link) 35%, transparent);
+  transition: color .12s ease, text-decoration-color .12s ease;
+}
+a:hover {
+  color: var(--link-hover);
+  text-decoration-color: var(--link-hover);
+}
+
+/* Hairlines */
+hr {
+  border: 0;
+  border-top: 1px solid var(--rule);
+  margin: var(--s-8) 0;
+}
+
+/* Blockquote — academic indented quote */
+blockquote {
+  border-left: 3px solid var(--pcb-500);
+  padding: var(--s-2) var(--s-5);
+  margin: var(--s-5) 0;
+  color: var(--fg-2);
+  background: var(--bg-sunken);
+  font-style: normal;
+}

@@ -1,0 +1,52 @@
+---
+import "../styles/tokens.css";
+import "../styles/site.css";
+import SiteHeader from "../components/SiteHeader.astro";
+import Sidebar from "../components/Sidebar.astro";
+import Footer from "../components/Footer.astro";
+import content from "../data/content.json";
+
+interface Props {
+  title: string;
+  description?: string;
+  lang: "zh" | "en";
+  currentSlug?: string;
+  showSidebar?: boolean;
+}
+
+const { title, description, lang, currentSlug, showSidebar = true } = Astro.props;
+const base = import.meta.env.BASE_URL.endsWith("/") ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+const pages = content.pages.filter((page) => page.lang === lang) as Array<{
+  lang: "zh" | "en";
+  slug: string;
+  title: string;
+  group: string;
+  order: number;
+}>;
+const pageDescription = description ?? content.home[lang].subtitle;
+---
+
+<!doctype html>
+<html lang={lang === "zh" ? "zh-CN" : "en"} data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title} · SYSU FPGA Course</title>
+    <meta name="description" content={pageDescription} />
+    <link rel="stylesheet" href={`${base}print.css`} media="print" />
+    <script is:inline>
+      const theme = localStorage.getItem("fpga-theme") || "light";
+      document.documentElement.setAttribute("data-theme", theme);
+    </script>
+  </head>
+  <body>
+    <SiteHeader lang={lang} currentSlug={currentSlug} />
+    <div class:list={["shell", !showSidebar && "no-sidebar"]}>
+      {showSidebar && <Sidebar lang={lang} currentSlug={currentSlug} pages={pages} />}
+      <div class="page">
+        <slot />
+      </div>
+    </div>
+    <Footer />
+  </body>
+</html>

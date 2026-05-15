@@ -1,0 +1,61 @@
+---
+import ThemeToggle from "./react/ThemeToggle";
+
+interface Props {
+  lang: "zh" | "en";
+  currentSlug?: string;
+}
+
+const { lang, currentSlug } = Astro.props;
+const base = import.meta.env.BASE_URL.endsWith("/") ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+const homeHref = `${base}${lang}/`;
+const otherLang = lang === "zh" ? "en" : "zh";
+const otherHref = `${base}${otherLang}/${currentSlug ? `${currentSlug}/` : ""}`;
+const nav =
+  lang === "zh"
+    ? [
+        ["课程说明", "preface"],
+        ["ZedBoard", "zedboard-lab-1"],
+        ["HLS", "hls-lab-1"],
+        ["资料", "resources"],
+        ["勘误", "errata"],
+      ]
+    : [
+        ["Course", "preface"],
+        ["ZedBoard", "zedboard-lab-1"],
+        ["HLS", "hls-lab-1"],
+        ["Resources", "resources"],
+        ["Errata", "errata"],
+      ];
+---
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href={homeHref}>
+      <span class="brand-logo" aria-hidden="true"><span>F</span></span>
+      <span class="brand-text">
+        <strong>{lang === "zh" ? "SYSU FPGA 课程" : "SYSU FPGA Course"}</strong>
+        <span>Digital IC · HLS</span>
+      </span>
+    </a>
+
+    <nav class="header-nav" aria-label={lang === "zh" ? "主导航" : "Primary navigation"}>
+      {nav.map(([label, slug]) => (
+        <a href={`${base}${lang}/${slug}/`} aria-current={currentSlug === slug ? "page" : undefined}>
+          {label}
+        </a>
+      ))}
+    </nav>
+
+    <div class="header-actions">
+      <div class="lang-switch" aria-label="Language">
+        <a href={`${base}zh/${currentSlug ? `${currentSlug}/` : ""}`} aria-current={lang === "zh" ? "true" : undefined}>中文</a>
+        <a href={otherHref} aria-current={lang === "en" ? "true" : undefined}>EN</a>
+      </div>
+      <ThemeToggle client:load />
+      <a class="source-link" href="https://github.com/nightt5879/FPGA" target="_blank" rel="noreferrer">
+        GitHub
+      </a>
+    </div>
+  </div>
+</header>

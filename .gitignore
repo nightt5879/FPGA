@@ -2,3 +2,9 @@
 * text=auto
 final_product/data/
 /finial_product/data
+site/node_modules/
+site/dist/
+site/.astro/
+site/public/content-assets/
+site/src/data/content.json
+site-preview.*.log

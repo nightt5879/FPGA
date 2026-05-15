@@ -1,0 +1,30 @@
+{
+  "name": "sysu-fpga-course-site",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "predev": "node scripts/generate-content.mjs",
+    "dev": "astro dev",
+    "prebuild": "node scripts/generate-content.mjs",
+    "build": "astro build",
+    "preview": "astro preview",
+    "precheck": "node scripts/generate-content.mjs",
+    "check": "astro check",
+    "check:links": "node scripts/check-links.mjs"
+  },
+  "dependencies": {
+    "@astrojs/mdx": "^4.0.0",
+    "@astrojs/react": "^4.0.0",
+    "astro": "^5.0.0",
+    "marked": "^15.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "typescript": "^5.7.0"
+  }
+}
