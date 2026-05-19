@@ -632,6 +632,17 @@ html[data-theme="dark"] .doc-content code {
   box-shadow: var(--shadow-etch);
 }
 
+.doc-content .pdf-embed {
+  display: block;
+  width: 100%;
+  min-height: 720px;
+  margin: var(--s-5) 0;
+  border: 1px solid var(--rule);
+  border-radius: var(--r-3);
+  background: var(--bg-surface);
+  box-shadow: var(--shadow-etch);
+}
+
 .doc-content .media-center {
   text-align: center;
 }

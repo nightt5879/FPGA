@@ -26,7 +26,7 @@ The website is the recommended reading path. Images, PDFs, lab sections, ZedBoar
     - [4.2 Experiment 2 (Linux issues)](#42-experiment-2-linux-issues)
     - [4.3 Experiment 3 (Linux issues)](#43-experiment-3-linux-issues)
     - [4.4 Experiment 4](#44-experiment-4)
-  - [5. Course Design (In Progress)](#5-course-design-in-progress)
+  - [5. Course Design](#5-course-design)
 - [Errata](#errata)
   - [Error 1](#error-1)
   - [Error 2](#error-2)
@@ -519,7 +519,17 @@ This experiment has several versions. First, there is the original version using
 ### 4.3 Experiment 3 (Linux issues)
 ### 4.4 Experiment 4
 
-## 5. Course Design (In Progress)
+## 5. Course Design
+
+- [X] **Remove personal information from the course report and upload it with a clear summary of the work**
+
+The course design has been organized and completed. The report has been anonymized, and the related HLS / Notebook files remain under `finial_product/`.
+
+[Open the anonymized course report PDF](./finial_product/course_design_report_anonymized.pdf)
+
+<object class="pdf-embed" data="./finial_product/course_design_report_anonymized.pdf" type="application/pdf" width="100%" height="720">
+  <a href="./finial_product/course_design_report_anonymized.pdf">Open the anonymized course report PDF</a>
+</object>
 
 
 # Errata

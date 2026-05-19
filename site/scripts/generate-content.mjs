@@ -45,8 +45,8 @@ const commonPages = {
     ["hls-lab-1", "4.1 Experiment 1", "HLS", "### 4.1 Experiment 1", "### 4.2 Experiment 2 (Linux issues)"],
     ["hls-lab-2", "4.2 Experiment 2", "HLS", "### 4.2 Experiment 2 (Linux issues)", "### 4.3 Experiment 3 (Linux issues)"],
     ["hls-lab-3", "4.3 Experiment 3", "HLS", "### 4.3 Experiment 3 (Linux issues)", "### 4.4 Experiment 4"],
-    ["hls-lab-4", "4.4 Experiment 4", "HLS", "### 4.4 Experiment 4", "## 5. Course Design (In Progress)"],
-    ["course-design", "5. Course Design", "Course Design", "## 5. Course Design (In Progress)", "# Errata"],
+    ["hls-lab-4", "4.4 Experiment 4", "HLS", "### 4.4 Experiment 4", "## 5. Course Design"],
+    ["course-design", "5. Course Design", "Course Design", "## 5. Course Design", "# Errata"],
     ["errata", "Errata", "Errata", "# Errata", null],
   ],
 };
@@ -155,7 +155,7 @@ function rewriteLocalUrls(markdown) {
     return normalized ? `${prefix}${normalized.url}${suffix}` : match;
   });
 
-  next = next.replace(/\b(src|href)(\s*=\s*["'])([^"']+)(["'])/gi, (match, attr, before, target, quote) => {
+  next = next.replace(/\b(src|href|data)(\s*=\s*["'])([^"']+)(["'])/gi, (match, attr, before, target, quote) => {
     const normalized = normalizeAssetPath(target);
     return normalized ? `${attr}${before}${normalized.url}${quote}` : match;
   });

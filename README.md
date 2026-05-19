@@ -26,7 +26,7 @@
   - [4.2 实验2](#42-实验2)
   - [4.3 实验3](#43-实验3)
   - [4.4 实验4](#44-实验4)
-  - [5.课程设计（开发中）](#5课程设计开发中)
+  - [5.课程设计](#5课程设计)
 - [勘误](#勘误)
   - [错误1](#错误1)
   - [错误2](#错误2)
@@ -505,8 +505,15 @@ make之后可以使用类似于lab1的教程部分，使用Vitis进行操作，�
 官方仓库有一个是直接打包好的prj，使用Vitis的terminal直接编译TCL文件即可直接输出最后的IP核文件。
 
 ## 5.课程设计
-- [ ] **将课程报告删去个人信息后上交说明清楚所作的事情**</p>  <!--需要联系老师-->
-已经做完了，只是暂时没有时间整理放上来
+- [X] **将课程报告删去个人信息后上交说明清楚所作的事情**
+
+课程设计已经整理完成。报告已去除个人信息，相关 HLS / Notebook 文件保留在 `finial_product/` 目录中。
+
+[打开匿名课程报告 PDF](./finial_product/course_design_report_anonymized.pdf)
+
+<object class="pdf-embed" data="./finial_product/course_design_report_anonymized.pdf" type="application/pdf" width="100%" height="720">
+  <a href="./finial_product/course_design_report_anonymized.pdf">打开匿名课程报告 PDF</a>
+</object>
 
 # 勘误
 ## 错误1
